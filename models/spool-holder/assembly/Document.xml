@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+ FreeCAD Document, see http://www.freecadweb.org for more information...
+-->
+<Document SchemaVersion="4" ProgramVersion="2023.131R26244 +5365 (Git)" FileVersion="2" Uid="dc83e234-55d5-4f48-b005-cdb5b74375d3" StringHasher="1">
+  <StringHasher saveall="0" threshold="0" count="0"></StringHasher>
+  <Properties Count="19" TransientCount="3">
+    <_Property name="FileName" type="App::PropertyString" status="50331649"/>
+    <_Property name="Tip" type="App::PropertyLink" status="33554433"/>
+    <_Property name="TransientDir" type="App::PropertyString" status="50331649"/>
+    <Property name="Comment" type="App::PropertyString" status="1">
+      <String value=""/>
+    </Property>
+    <Property name="Company" type="App::PropertyString">
+      <String value=""/>
+    </Property>
+    <Property name="CreatedBy" type="App::PropertyString">
+      <String value=""/>
+    </Property>
+    <Property name="CreationDate" type="App::PropertyString" status="16777217">
+      <String value="2023-11-19T22:08:00Z"/>
+    </Property>
+    <Property name="ForceXML" type="App::PropertyInteger" status="1">
+      <Integer value="3"/>
+    </Property>
+    <Property name="Id" type="App::PropertyString">
+      <String value=""/>
+    </Property>
+    <Property name="Label" type="App::PropertyString" status="1">
+      <String value="assembly"/>
+    </Property>
+    <Property name="LastModifiedBy" type="App::PropertyString">
+      <String value=""/>
+    </Property>
+    <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
+      <String value="2023-12-10T14:19:06Z"/>
+    </Property>
+    <Property name="License" type="App::PropertyString" status="1">
+      <String value="All rights reserved"/>
+    </Property>
+    <Property name="LicenseURL" type="App::PropertyString" status="1">
+      <String value="http://en.wikipedia.org/wiki/All_rights_reserved"/>
+    </Property>
+    <Property name="Material" type="App::PropertyMap" status="1">
+      <Map count="0">
+      </Map>
+    </Property>
+    <Property name="Meta" type="App::PropertyMap" status="1">
+      <Map count="0">
+      </Map>
+    </Property>
+    <Property name="PreferBinary" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+    <Property name="ShowHidden" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+    <Property name="SplitXML" type="App::PropertyBool" status="1">
+      <Bool value="true"/>
+    </Property>
+    <Property name="TipName" type="App::PropertyString" status="83886080">
+      <String value=""/>
+    </Property>
+    <Property name="Uid" type="App::PropertyUUID" status="16777217">
+      <Uuid value="dc83e234-55d5-4f48-b005-cdb5b74375d3"/>
+    </Property>
+    <Property name="UseHasher" type="App::PropertyBool" status="67108865">
+      <Bool value="true"/>
+    </Property>
+  </Properties>
+  <Objects Count="8" Dependencies="1">
+    <ObjectDeps Name="Assembly" Count="3">
+      <Dep Name="Constraints"/>
+      <Dep Name="Elements"/>
+      <Dep Name="Parts"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Constraints" Count="0"/>
+    <ObjectDeps Name="Elements" Count="0"/>
+    <ObjectDeps Name="Parts" Count="4">
+      <Dep Name="Link001"/>
+      <Dep Name="Link002"/>
+      <Dep Name="Link003"/>
+      <Dep Name="Link004"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Link001" Count="0"/>
+    <ObjectDeps Name="Link002" Count="0"/>
+    <ObjectDeps Name="Link003" Count="0"/>
+    <ObjectDeps Name="Link004" Count="0"/>
+    <Object type="Part::FeaturePython" name="Assembly" id="2956" revision="48" ViewType="Gui::ViewProviderLinkPython" file="Assembly.xml" />
+    <Object type="App::FeaturePython" name="Constraints" id="2957" revision="2" ViewType="Gui::ViewProviderLinkPython" file="Constraints.xml" />
+    <Object type="App::FeaturePython" name="Elements" id="2958" revision="2" ViewType="Gui::ViewProviderLinkPython" file="Elements.xml" />
+    <Object type="Part::FeaturePython" name="Parts" id="2959" revision="43" ViewType="Gui::ViewProviderLinkPython" Touched="1" file="Parts.xml" />
+    <Object type="App::Link" name="Link001" id="2962" revision="116" file="Link001.xml" />
+    <Object type="App::Link" name="Link002" id="2965" revision="37" Touched="1" Invalid="1" Error="Link broken!&#10;Object: Part&#10;File: /home/jan/projects/231130-spool-holder-v2/holder-b/src" file="Link002.xml" />
+    <Object type="App::Link" name="Link003" id="2966" revision="53" Touched="1" Invalid="1" Error="Link broken!&#10;Object: Part&#10;File: /home/jan/projects/231130-spool-holder-v2/holder-a/src" file="Link003.xml" />
+    <Object type="App::Link" name="Link004" id="2967" revision="55" Touched="1" Invalid="1" Error="Link broken!&#10;Object: Part&#10;File: /home/jan/projects/231130-spool-holder-v2/axis/src" file="Link004.xml" />
+  </Objects>
+  <ObjectData Count="0">
+  </ObjectData>
+</Document>
