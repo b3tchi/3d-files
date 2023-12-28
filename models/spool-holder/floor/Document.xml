@@ -4,7 +4,7 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2023.131R26244 +5365 (Git)" FileVersion="2" Uid="3c73481f-840b-4942-a35c-339ffe144f3f" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="313">
+  <StringHasher2  count="312">
 <![CDATA[
 -1.0 0:;SKT;:H91,E
 -1.c.1 g1
@@ -164,8 +164,7 @@
 -1.2c.1.b1.50.2
 -5.0 0:(#8b;:M;FUS;:H94:7,F)
 -1.2c.7.b9.53.1
--3.0 0:Shape cache
--1.0 0:;SKT;:H97,E
+-4.0 0:;SKT;:H97,E
 -1.c.1 g1
 -1.c.0 g5
 -1.0 0:;SKT;:H97,V
@@ -350,7 +349,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2023-11-26T11:56:23Z"/>
+      <String value="2023-12-28T16:36:48Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -358,11 +357,11 @@
     <Property name="LicenseURL" type="App::PropertyString" status="1">
       <String value="http://en.wikipedia.org/wiki/All_rights_reserved"/>
     </Property>
-    <Property name="Material" type="App::PropertyMap">
+    <Property name="Material" type="App::PropertyMap" status="1">
       <Map count="0">
       </Map>
     </Property>
-    <Property name="Meta" type="App::PropertyMap">
+    <Property name="Meta" type="App::PropertyMap" status="1">
       <Map count="0">
       </Map>
     </Property>
@@ -387,27 +386,27 @@
   </Properties>
   <Objects Count="18" Dependencies="1">
     <ObjectDeps Name="Part" Count="2">
-      <Dep Name="Body"/>
       <Dep Name="Origin"/>
+      <Dep Name="Body"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="0"/>
     <ObjectDeps Name="Body" Count="8">
       <Dep Name="Origin001"/>
-      <Dep Name="Pad"/>
-      <Dep Name="Pad002"/>
-      <Dep Name="Sketch001"/>
-      <Dep Name="Sketch002"/>
       <Dep Name="Sketch"/>
+      <Dep Name="Pad"/>
+      <Dep Name="Sketch001"/>
       <Dep Name="Pad001"/>
+      <Dep Name="Pad002"/>
+      <Dep Name="Sketch002"/>
       <Dep Name="Pocket"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin001" Count="6">
-      <Dep Name="XZ_Plane"/>
-      <Dep Name="YZ_Plane"/>
       <Dep Name="X_Axis"/>
+      <Dep Name="Y_Axis"/>
       <Dep Name="Z_Axis"/>
       <Dep Name="XY_Plane"/>
-      <Dep Name="Y_Axis"/>
+      <Dep Name="XZ_Plane"/>
+      <Dep Name="YZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
