@@ -4,10 +4,9 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.113R14555 (Git shallow)" FileVersion="2" Uid="08704b6d-b92e-4836-9f8d-5f88dee72eb9" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="20">
+  <StringHasher2  count="19">
 <![CDATA[
--1.0 0:Shape cache
--1.0 0:;SKT;:H36e,E
+-2.0 0:;SKT;:H36e,E
 -1.c.1 g2
 -1.0 0:;SKT;:H36e,V
 -1.c.1 g2v1
@@ -57,7 +56,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-01-21T21:08:52Z"/>
+      <String value="2024-01-21T21:29:27Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -65,11 +64,11 @@
     <Property name="LicenseURL" type="App::PropertyString" status="1">
       <String value="https://en.wikipedia.org/wiki/All_rights_reserved"/>
     </Property>
-    <Property name="Material" type="App::PropertyMap">
+    <Property name="Material" type="App::PropertyMap" status="1">
       <Map count="0">
       </Map>
     </Property>
-    <Property name="Meta" type="App::PropertyMap">
+    <Property name="Meta" type="App::PropertyMap" status="1">
       <Map count="0">
       </Map>
     </Property>
@@ -100,17 +99,17 @@
   </Properties>
   <Objects Count="10" Dependencies="1">
     <ObjectDeps Name="Body" Count="3">
-      <Dep Name="Sketch"/>
       <Dep Name="Origin"/>
       <Dep Name="Pad"/>
+      <Dep Name="Sketch"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
+      <Dep Name="X_Axis"/>
       <Dep Name="XY_Plane"/>
       <Dep Name="XZ_Plane"/>
-      <Dep Name="Y_Axis"/>
       <Dep Name="YZ_Plane"/>
       <Dep Name="Z_Axis"/>
-      <Dep Name="X_Axis"/>
+      <Dep Name="Y_Axis"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
