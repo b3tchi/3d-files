@@ -3,8 +3,8 @@ import FreeCAD as App
 import Mesh
 
 # sourceFile='/home/jan/repos/b3tchi/3d-files/main/models/assembly4-poc/assembly'
-sourceFile='/home/jan/repos/b3tchi/3d-files/main/models/assembly4-poc/part-base'
-exportFile='/home/jan/Documents/part-base.stl'
+# sourceFile='/home/jan/repos/b3tchi/3d-files/main/models/assembly4-poc/part-base'
+# exportFile='/home/jan/Documents/part-base.stl'
 
 def main(sourceFile, exportFile):
 
@@ -18,6 +18,8 @@ def main(sourceFile, exportFile):
     App.closeDocument(document.Name)
 
     exit()
+
+    sys.exit(1)
     # App.exit()
 
 # if __name__ == "__main__":
@@ -33,5 +35,6 @@ print(len(sys.argv))
 print(input_fcstd_path)
 print(output_stl_path)
     # main( sourceFile, exportFile)
-# main( sourceFile, exportFile)
-sys.exit(1)
+main( input_fcstd_path, output_stl_path)
+
+# sys.exit(1)
