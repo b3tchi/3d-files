@@ -1,5 +1,16 @@
 ## scripts
 ### poc in nushell
+
+#### current prerequisites
+under windows need to do aliases under nu shell
+```nu
+alias "freecad-linkstage3" = C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240123\bin\FreeCADLink.exe
+alias "freecad-linkstage3 --console" = C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240123\bin\FreeCADCmd.exe
+
+alias slicer-prusa = prusa-slicer-console.exe
+```
+
+
 #### create stl
 ```nu
 cd /home/jan/repos/b3tchi/3d-files/feat/xmas-tree-adapters/
@@ -23,6 +34,7 @@ slicer-prusa --load $printer_config --export-gcode --output $output_gcode $input
 ```nu
 
 ```
+
 
 ### alternative using bash
 ```bash
