@@ -38,8 +38,8 @@ slicer-prusa --load $printer_config --export-gcode --output $output_gcode $input
 - to browse the specs i can use [swager editor](https://editor.swagger.io/)
 - longer names are shortened there should be first get call to find shortened path but api works with long paths
 - TODO upload automatically trigger print dialog on the printer which block some of the operations
-  - maybe try run print imidiatly and then cancel it 
-  - :idea: seems more people have this issue
+  - :idea: maybe try run print imidiatly and then cancel it 
+  - seems more people have this issue
 
 ```nu
 let api_key = (input -s 'enter api key: ')
