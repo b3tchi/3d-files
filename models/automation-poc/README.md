@@ -35,10 +35,10 @@ slicer-prusa --load $printer_config --export-gcode --output $output_gcode $input
 - nu https post don't know form date yet
 - this is working one is to listen PrusaLink when connected to printer
 - specification could be found in the [github](https://github.com/prusa3d/Prusa-Link-Web/blob/master/spec/openapi.yaml)
-- to browse the specs i can use [swager editor](https://editor.swagger.io/)
+- to browse the specs i can use [swagger editor](https://editor.swagger.io/)
 - longer names are shortened there should be first get call to find shortened path but api works with long paths
 - TODO upload automatically trigger print dialog on the printer which block some of the operations
-  - :idea: maybe try run print imidiatly and then cancel it 
+  - :idea: maybe try run print immediatly and then cancel it 
   - seems more people have this issue
 
 ```nu
@@ -51,8 +51,14 @@ let printer_url = $"http://($printer_ip)/api/v1/files/usb/test_upload/level3/ano
 curl -X PUT --header $"X-Api-Key: ($api_key)" -H 'Print-After-Upload: ?0' -H 'Overwrite: ?0' -F $"file=@($input_gcode)" -F 'path=' $printer_url
 
 ```
+#### get file version from tag
+```nu
+let build_tag = (git discribe --tags --abbrev=0)
+```
 
-### Notes
+
+
+### Work Notes
 
 
 #### old api 
