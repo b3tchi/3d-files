@@ -9,6 +9,21 @@ alias "freecad-linkstage3 --console" = C:\Users\czjabeck\Dev\Applications\Freeca
 alias slicer-prusa = prusa-slicer-console.exe
 ```
 
+#### define model and part to print
+```nu
+let model = 'spool-holder'
+let part = 'ring'
+```
+
+#### get file version from tag
+```nu
+let branch = (git rev-parse --abbrev-ref HEAD)
+let build_tag = (git describe --tags --match $"($model)/($part)/*" --abbrev=0 HEAD)
+
+let time_stamp = (date now | format date %Y%m%d%H%M%S)
+let version = (if $branch == 'main' { $build_tag } else { [ $build_tag, '-next+', $time_stamp ] | str join })
+```
+
 #### create stl
 ```nu
 #linux path
@@ -50,10 +65,6 @@ let printer_ip = '192.168.1.224'
 let printer_url = $"http://($printer_ip)/api/v1/files/usb/test_upload/level3/anotherrr.gcode"
 curl -X PUT --header $"X-Api-Key: ($api_key)" -H 'Print-After-Upload: ?0' -H 'Overwrite: ?0' -F $"file=@($input_gcode)" -F 'path=' $printer_url
 
-```
-#### get file version from tag
-```nu
-let build_tag = (git discribe --tags --abbrev=0)
 ```
 
 
