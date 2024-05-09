@@ -4,8 +4,8 @@
 #### current prerequisites
 under windows need to do aliases under nu shell
 ```nu
-alias "freecad-linkstage3" = C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240123\bin\FreeCADLink.exe
-alias "freecad-linkstage3 --console" = C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240123\bin\FreeCADCmd.exe
+alias "freecad-linkstage3" = C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240407\bin\FreeCADLink.exe
+alias "freecad-linkstage3 --console" = C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240407\bin\FreeCADCmd.exe
 alias slicer-prusa = prusa-slicer-console.exe
 ```
 
@@ -65,11 +65,11 @@ slicer-prusa $output_gcode
 
 ```nu
 let api_key = (input -s 'enter api key: ')
-let input_gcode = ( $env.TEMP | path join 'part_base.gcode' | path expand)
+let input_gcode = ( $env.TEMP | path expand | path join $"($part)-($version).gcode" )
 let printer_ip = '192.168.1.224'
 
 #working !!!!
-let printer_url = $"http://($printer_ip)/api/v1/files/usb/test_upload/level3/anotherrr.gcode"
+let printer_url = $"http://($printer_ip)/api/v1/files/usb/($model)/($part)-($version).gcode"
 curl -X PUT --header $"X-Api-Key: ($api_key)" -H 'Print-After-Upload: ?0' -H 'Overwrite: ?0' -F $"file=@($input_gcode)" -F 'path=' $printer_url
 ```
 
