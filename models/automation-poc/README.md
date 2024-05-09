@@ -11,39 +11,46 @@ alias slicer-prusa = prusa-slicer-console.exe
 
 #### define model and part to print
 ```nu
-let model = 'spool-holder'
-let part = 'ring'
-```
-
-#### get file version from tag
-```nu
-let branch = (git rev-parse --abbrev-ref HEAD)
-let build_tag = (git describe --tags --match $"($model)/($part)/*" --abbrev=0 HEAD)
-
-let time_stamp = (date now | format date %Y%m%d%H%M%S)
-let version = (if $branch == 'main' { $build_tag } else { [ $build_tag, '-next+', $time_stamp ] | str join })
-```
-
-#### create stl
-```nu
 #linux path
 cd /home/jan/repos/b3tchi/3d-files/feat/xmas-tree-adapters/
 #win path
 cd C:/Users/czjabeck/Dev/Repositories/b3tchi/3d-files/feat/xmas-tree-adapters/
 
-let macro = ( './macros/export-to-stl.py' | path expand )
-let input_file = ( './models/automation-poc/part-base' | path expand)
-let output_stl = ( $env.TEMP | path join 'part-base.stl' | path expand)
+let model = 'automation-poc'
+let part = 'part-base'
+```
 
-freecad-linkstage3 --console $macro $input $output 
+#### get file version from tag
+```nu
+let branch = (git rev-parse --abbrev-ref HEAD)
+let tag_git = (git describe --tags --match $"($model)/($part)/*" --abbrev=0 HEAD)
+
+let tag_build = (if $tag_git  == '' { '0.1.0' } else { $tag_git })
+
+let time_stamp = (date now | format date %Y%m%d%H%M%S)
+let version = (if $branch == 'main' { $tag_build } else { [ $tag_build, '-next+', $time_stamp ] | str join })
+```
+
+#### create stl
+```nu
+let macro = ( './macros' | path expand | path join 'export-to-stl.py' )
+let input_file = ( './models' | path expand | path join $model $part )
+let output_stl = ( $env.TEMP | path expand | path join $"($part)-($version).stl" )
+
+freecad-linkstage3 --console $macro $input_file $output_stl
 ```
 #### generate gcode
 ```nu
-let printer_config = ( './models/automation-poc/config.ini' | path expand)
-let input_stl = ( $env.TEMP | path join 'part-base.stl' | path expand)
-let output_gcode = ( $env.TEMP | path join 'part_base.gcode' | path expand)
+let printer_config = ( './models' | path expand | path join $model config.ini )
+let input_stl = ( $env.TEMP | path expand | path join $"($part)-($version).stl" )
+let output_gcode = ( $env.TEMP | path expand | path join $"($part)-($version).gcode" )
 
 slicer-prusa --load $printer_config --export-gcode --output $output_gcode $input_stl
+```
+
+#### preview in slicer-prusa
+```nu
+slicer-prusa $output_gcode
 ```
 
 #### send to mini via curl
@@ -64,7 +71,6 @@ let printer_ip = '192.168.1.224'
 #working !!!!
 let printer_url = $"http://($printer_ip)/api/v1/files/usb/test_upload/level3/anotherrr.gcode"
 curl -X PUT --header $"X-Api-Key: ($api_key)" -H 'Print-After-Upload: ?0' -H 'Overwrite: ?0' -F $"file=@($input_gcode)" -F 'path=' $printer_url
-
 ```
 
 
