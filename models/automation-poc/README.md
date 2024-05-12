@@ -1,7 +1,6 @@
 ## scripts
-### poc in nushell
-
-#### current prerequisites
+### preparation
+#### current prerequisites in windows
 under windows need to do aliases under nu shell
 ```nu
 alias "freecad-linkstage3" = C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240407\bin\FreeCADLink.exe
@@ -9,18 +8,32 @@ alias "freecad-linkstage3 --console" = C:\Users\czjabeck\Dev\Applications\Freeca
 alias slicer-prusa = prusa-slicer-console.exe
 ```
 
-#### define model and part to print
+#### ensure current workdir is root of repository
 ```nu
 #linux path
 cd /home/jan/repos/b3tchi/3d-files/feat/xmas-tree-adapters/
 #win path
 cd C:/Users/czjabeck/Dev/Repositories/b3tchi/3d-files/feat/xmas-tree-adapters/
+```
 
+
+### poc automated script
+#### loading script module
+```nu
+source .\macros\prep-print.nu; use prep-print
+```
+
+
+### poc in nushell manual process
+
+
+#### define model and part to print
+```nu
 let model = 'automation-poc'
 let part = 'part-base'
 ```
 
-#### get file version from tag
+#### get file version from git tag
 ```nu
 let branch = (git rev-parse --abbrev-ref HEAD)
 let tag_git = (git describe --tags --match $"($model)/($part)/*" --abbrev=0 HEAD)
@@ -41,7 +54,7 @@ freecad-linkstage3 --console $macro $input_file $output_stl
 ```
 #### generate gcode
 ```nu
-let printer_config = ( './models' | path expand | path join $model config.ini )
+let printer_config = ( './configs' | path expand | path join $model prototype.ini )
 let input_stl = ( $env.TEMP | path expand | path join $"($part)-($version).stl" )
 let output_gcode = ( $env.TEMP | path expand | path join $"($part)-($version).gcode" )
 
