@@ -1,5 +1,5 @@
 export-env {
-    $env.3D_PRINTER_URL = ''
+    $env.3D_PRINTER_IP = ''
     $env.3D_PRINTER_KEY = ''
 }
 
@@ -18,14 +18,19 @@ def parts [context: string] {
 export def --env printer-setup [
     url: string
     ] {
-    $env.3D_PRINTER_URL = $url
+    $env.3D_PRINTER_IP = $url
     $env.3D_PRINTER_KEY = (input -s 'enter api key: ')
 }
 
 export def printer-check [ 
     ] {
-    print $"url:($env.3D_PRINTER_URL)"
+    print $"url:($env.3D_PRINTER_IP)"
     print $"api-key:($env.3D_PRINTER_KEY)"
+
+ 	let resp = http get --headers [X-Api-Key $env.3D_PRINTER_KEY] $"http://($env.3D_PRINTER_IP)/api/v1/status"
+
+	return $resp.printer.state
+
 }
 
 export def send [
@@ -102,7 +107,7 @@ def print-gcode [
 
 	let input_gcode = ( $env.TEMP | path expand | path join $"($part)-($version).gcode" )
 	let api_key = $env.3D_PRINTER_KEY
-	let printer_ip = $env.3D_PRINTER_URL
+	let printer_ip = $env.3D_PRINTER_IP
 
  	#working !!!!
 	let printer_url = $"http://($printer_ip)/api/v1/files/usb/($model)/($part)-($version).gcode"
