@@ -22,15 +22,11 @@ export def --env printer-setup [
     $env.3D_PRINTER_KEY = (input -s 'enter api key: ')
 }
 
-export def printer-check [ 
-    ] {
+export def printer-check [] {
     print $"url:($env.3D_PRINTER_IP)"
     print $"api-key:($env.3D_PRINTER_KEY)"
-
  	let resp = http get --headers [X-Api-Key $env.3D_PRINTER_KEY] $"http://($env.3D_PRINTER_IP)/api/v1/status"
-
 	return $resp.printer.state
-
 }
 
 export def send [
@@ -41,13 +37,11 @@ export def send [
 
     let $version = part-version $model $part
     print $version
-
     let $file_stl = create-stl $model $part $version
     print $file_stl
-
     let $file_gcode = create-gcode $model $part $version $config
     print $file_gcode
-
+	#printing code
 	print-gcode $model $part $version
 
 }
