@@ -4,14 +4,16 @@
 -->
 <!-- FreeCAD ViewProvider -->
 <Document SchemaVersion="1" FileVersion="2">
-<ViewProvider name="Cylinder" expanded="0" Extensions="True">
-  <Extensions Count="2">
+<ViewProvider name="Boolean" expanded="1" Extensions="True">
+  <Extensions Count="3">
+    <Extension type="Gui::ViewProviderGeoFeatureGroupExtension" name="ViewProviderGeoFeatureGroupExtension">
+    </Extension>
     <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
     </Extension>
     <Extension type="PartGui::ViewProviderAttachExtension" name="ViewProviderAttachExtension">
     </Extension>
   </Extensions>
-  <Properties Count="32" TransientCount="0">
+  <Properties Count="33" TransientCount="0">
     <Property name="AngularDeflection" type="App::PropertyAngle" status="1">
       <Float value="28.65"/>
     </Property>
@@ -26,8 +28,11 @@
 cccccc00
       </ColorList>
     </Property>
-    <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
+    <Property name="Display" type="App::PropertyEnumeration" status="1">
       <Integer value="0"/>
+    </Property>
+    <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
+      <Integer value="1"/>
     </Property>
     <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
       <Integer value="0"/>
@@ -112,7 +117,7 @@ cccccc00
       <Integer value="0"/>
     </Property>
     <Property name="Visibility" type="App::PropertyBool" status="1">
-      <Bool value="false"/>
+      <Bool value="true"/>
     </Property>
   </Properties>
 </ViewProvider>
