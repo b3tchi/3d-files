@@ -33,16 +33,19 @@ export def send [
     model: string@models
     part: string@parts
     config: string@configs
+	stl?: string
     ] {
 
     let $version = part-version $model $part
     print $version
-    let $file_stl = create-stl $model $part $version
+    let $file_stl = if $stl == null { create-stl $model $part $version } else { move-stl $model $part $version $stl }
     print $file_stl
     let $file_gcode = create-gcode $model $part $version $config
     print $file_gcode
 	#printing code
 	print-gcode $model $part $version
+
+	return $file_gcode
 
 }
 
@@ -60,6 +63,20 @@ def part-version [
     let version = (if $branch == 'main' { $tag_build } else { [ $tag_build, '-next+', $time_stamp ] | str join })
 
     return $version
+}
+
+def move-stl [
+    model: string@models
+    part: string@parts
+    version: string
+	stl: string
+	] {
+
+    let output_stl = ( $env.TEMP | path expand | path join $"($part)-($version).stl" )
+
+	cp -v $stl $output_stl
+
+    return $output_stl
 }
 
 def create-stl [
