@@ -32,16 +32,19 @@
       <Integer value="1"/>
     </Property>
     <Property name="Group" type="App::PropertyLinkList">
-      <LinkList count="2">
+      <LinkList count="5">
         <Link value="Sketch"/>
         <Link value="Pad"/>
+        <Link value="DatumPoint"/>
+        <Link value="DatumLine"/>
+        <Link value="DatumPlane"/>
       </LinkList>
     </Property>
     <Property name="InvalidShape" type="App::PropertyBool" status="67108864">
       <Bool value="false"/>
     </Property>
     <Property name="Label" type="App::PropertyString" status="134217728">
-      <String value="Body"/>
+      <String value="base"/>
     </Property>
     <Property name="Label2" type="App::PropertyString" status="128">
       <String value=""/>
@@ -751,8 +754,11 @@ EndMap
       <Bool value="true"/>
     </Property>
     <Property name="_ExportChildren" type="App::PropertyLinkList" status="218104320">
-      <LinkList count="1">
+      <LinkList count="4">
         <Link value="Pad"/>
+        <Link value="DatumPoint"/>
+        <Link value="DatumLine"/>
+        <Link value="DatumPlane"/>
       </LinkList>
     </Property>
     <Property name="_GroupVersion" type="App::PropertyInteger" status="218103808">

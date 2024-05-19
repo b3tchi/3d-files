@@ -60,7 +60,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-05-18T08:54:04Z"/>
+      <String value="2024-05-18T13:43:48Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -101,11 +101,16 @@
       <Bool value="true"/>
     </Property>
   </Properties>
-  <Objects Count="10" Dependencies="1">
-    <ObjectDeps Name="Body" Count="3">
+  <Objects Count="15" Dependencies="1">
+    <ObjectDeps Name="Body" Count="8">
+      <Dep Name="DatumLine001"/>
+      <Dep Name="Sketch001"/>
       <Dep Name="Sketch"/>
+      <Dep Name="DatumLine"/>
       <Dep Name="Origin"/>
+      <Dep Name="DatumPoint001"/>
       <Dep Name="Pad"/>
+      <Dep Name="DatumPoint"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
       <Dep Name="X_Axis"/>
@@ -128,7 +133,22 @@
       <Dep Name="Sketch"/>
       <Dep Name="Body"/>
     </ObjectDeps>
-    <Object type="PartDesign::Body" name="Body" id="4964" revision="8" file="Body.xml" />
+    <ObjectDeps Name="Sketch001" Count="1">
+      <Dep Name="XZ_Plane"/>
+    </ObjectDeps>
+    <ObjectDeps Name="DatumLine" Count="1">
+      <Dep Name="Sketch001"/>
+    </ObjectDeps>
+    <ObjectDeps Name="DatumPoint" Count="1">
+      <Dep Name="Sketch001"/>
+    </ObjectDeps>
+    <ObjectDeps Name="DatumLine001" Count="1">
+      <Dep Name="Sketch001"/>
+    </ObjectDeps>
+    <ObjectDeps Name="DatumPoint001" Count="1">
+      <Dep Name="Sketch001"/>
+    </ObjectDeps>
+    <Object type="PartDesign::Body" name="Body" id="4964" revision="21" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="4965" revision="0" file="Origin.xml" />
     <Object type="App::Line" name="X_Axis" id="4966" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="4967" revision="2" file="Y_Axis.xml" />
@@ -137,7 +157,12 @@
     <Object type="App::Plane" name="XZ_Plane" id="4970" revision="2" file="XZ_Plane.xml" />
     <Object type="App::Plane" name="YZ_Plane" id="4971" revision="2" file="YZ_Plane.xml" />
     <Object type="Sketcher::SketchObject" name="Sketch" id="4972" revision="17" file="Sketch.xml" />
-    <Object type="PartDesign::Pad" name="Pad" id="4973" revision="9" Touched="1" file="Pad.xml" />
+    <Object type="PartDesign::Pad" name="Pad" id="4973" revision="17" file="Pad.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch001" id="4974" revision="64" file="Sketch001.xml" />
+    <Object type="PartDesign::Line" name="DatumLine" id="4975" revision="11" file="DatumLine.xml" />
+    <Object type="PartDesign::Point" name="DatumPoint" id="4976" revision="11" file="DatumPoint.xml" />
+    <Object type="PartDesign::Line" name="DatumLine001" id="4977" revision="11" file="DatumLine001.xml" />
+    <Object type="PartDesign::Point" name="DatumPoint001" id="4978" revision="11" file="DatumPoint001.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>

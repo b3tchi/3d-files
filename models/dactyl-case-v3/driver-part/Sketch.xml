@@ -27,7 +27,7 @@
       </LinkSub>
     </Property>
     <Property name="Constraints" type="Sketcher::PropertyConstraintList">
-      <ConstraintList count="10">
+      <ConstraintList count="11">
         <Constrain Name="" Type="1" Value="0" First="0" FirstPos="2" Second="1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="1" Value="0" First="1" FirstPos="2" Second="2" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="1" Value="0" First="2" FirstPos="2" Second="3" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
@@ -38,6 +38,7 @@
         <Constrain Name="" Type="3" Value="0" First="3" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="7" Value="13.601038" First="0" FirstPos="1" Second="0" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="13.98963928222656" LabelPosition="3.044043302536011" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="8" Value="37.44" First="1" FirstPos="2" Second="1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="-15.28497409820557" LabelPosition="3.694092512130737" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="8" Value="6" First="-1" FirstPos="1" Second="0" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="1.755867958068848" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
       </ConstraintList>
     </Property>
     <Property name="Exports" type="App::PropertyLinkListHidden" status="67108864">
@@ -89,28 +90,28 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="1" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-6.735751" StartY="6.217616999999994" StartZ="0" EndX="6.865287" EndY="6.217616999999994" EndZ="0"/>
+          <LineSegment StartX="-6.735751" StartY="6" StartZ="0" EndX="6.865287" EndY="6" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="2" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="2" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="6.865287" StartY="6.217616999999994" StartZ="0" EndX="6.865287" EndY="-31.222383" EndZ="0"/>
+          <LineSegment StartX="6.865287" StartY="6" StartZ="0" EndX="6.865287" EndY="-31.44" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="3" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="3" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="6.865287" StartY="-31.222383" StartZ="0" EndX="-6.735751" EndY="-31.222383" EndZ="0"/>
+          <LineSegment StartX="6.865287" StartY="-31.44" StartZ="0" EndX="-6.735751" EndY="-31.44" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="4" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="4" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-6.735751" StartY="-31.222383" StartZ="0" EndX="-6.735751" EndY="6.217616999999997" EndZ="0"/>
+          <LineSegment StartX="-6.735751" StartY="-31.44" StartZ="0" EndX="-6.735751" EndY="6" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
       </GeometryList>
@@ -173,10 +174,10 @@ Locations 1
               0               0               1               0 
 Curve2ds 0
 Curves 4
-1 -6.7357510000000005 6.2176169999999935 0 1 0 0 
-1 6.8652870000000004 6.2176169999999935 0 0 -1 0 
-1 6.8652870000000004 -31.222383000000001 0 -1 0 0 
-1 -6.7357510000000005 -31.222383000000001 0 0 1 0 
+1 -6.7357510000000005 6 0 1 0 0 
+1 6.8652870000000004 6 0 0 -1 0 
+1 6.8652870000000004 -31.439999999999998 0 -1 0 0 
+1 -6.7357510000000005 -31.439999999999998 0 0 1 0 
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -184,15 +185,15 @@ Triangulations 0
 
 TShapes 9
 Ve
-1.00000001776357e-07
--6.735751 6.217617 0
+1e-07
+-6.735751 6 0
 0 0
 
 0101101
 *
 Ve
 1e-07
-6.865287 6.21761699999999 0
+6.865287 6 0
 0 0
 
 0101101
@@ -205,8 +206,8 @@ Ed
 0101000
 +9 0 -8 0 *
 Ve
-1.00000001776357e-07
-6.865287 -31.222383 0
+1e-07
+6.865287 -31.44 0
 0 0
 
 0101101
@@ -220,7 +221,7 @@ Ed
 +8 0 -6 0 *
 Ve
 1e-07
--6.735751 -31.222383 0
+-6.735751 -31.44 0
 0 0
 
 0101101
@@ -295,7 +296,7 @@ EndMap
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="649">
+    <Property name="Visibility" type="App::PropertyBool" status="648">
       <Bool value="false"/>
     </Property>
   </Properties>
