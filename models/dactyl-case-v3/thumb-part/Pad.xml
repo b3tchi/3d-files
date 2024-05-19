@@ -189,7 +189,7 @@ So
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="26">
 <![CDATA[
-2 PostfixCount 11
+4 PostfixCount 11
 Edge
 Face
 Vertex
@@ -204,7 +204,7 @@ Vertex
 
 MapCount 1
 
-ElementMap 1 2 3
+ElementMap 1 4 3
 
 Edge
 
@@ -444,10 +444,10 @@ Wi
 Fa
 0  1e-07 1 0
 
-0101000
+0111000
 +19 0 *
 Ve
-1e-07
+1.00000000030201e-05
 -25 -60 0
 0 0
 
@@ -474,10 +474,10 @@ Wi
 Fa
 0  1e-07 2 0
 
-0101000
+0111000
 +14 0 *
 Ve
-1e-07
+1.00000000030201e-05
 0 -60 0
 0 0
 
@@ -491,7 +491,7 @@ Ed
 0101000
 +12 4 -12 6 *
 Ed
- 1e-07 1 1 0
+ 1.00000000030201e-05 1 1 0
 1  7 0 0 25
 0
 
@@ -504,7 +504,7 @@ Wi
 Fa
 0  1e-07 3 0
 
-0101000
+0111000
 +9 0 *
 Ed
  1e-07 1 1 0
@@ -520,7 +520,7 @@ Wi
 Fa
 0  1e-07 4 0
 
-0101000
+0111000
 +6 0 *
 Wi
 
@@ -529,7 +529,7 @@ Wi
 Fa
 0  1e-07 5 0
 
-0101000
+0111000
 +4 4 *
 Sh
 
@@ -537,7 +537,7 @@ Sh
 +18 0 +13 0 +8 0 +5 0 +3 0 -3 5 *
 So
 
-1100000
+0100000
 -2 0 *
 
 +1 1 ]]>
@@ -545,7 +545,7 @@ So
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="26">
 <![CDATA[
-2 PostfixCount 11
+4 PostfixCount 11
 Edge
 Face
 Vertex
@@ -560,7 +560,7 @@ Vertex
 
 MapCount 1
 
-ElementMap 1 2 3
+ElementMap 1 4 3
 
 Edge
 
@@ -669,8 +669,8 @@ TShapes 0
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="true"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="648">
-      <Bool value="true"/>
+    <Property name="Visibility" type="App::PropertyBool" status="649">
+      <Bool value="false"/>
     </Property>
     <Property name="_ProfileBasedVersion" type="App::PropertyInteger" status="67108864">
       <Integer value="1"/>

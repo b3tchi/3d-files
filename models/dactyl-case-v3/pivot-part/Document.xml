@@ -301,7 +301,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-05-19T17:02:33Z"/>
+      <String value="2024-05-19T17:06:51Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -342,7 +342,7 @@
       <Bool value="true"/>
     </Property>
   </Properties>
-  <Objects Count="21" Dependencies="1">
+  <Objects Count="20" Dependencies="1">
     <ObjectDeps Name="Body" Count="10">
       <Dep Name="DatumLine001"/>
       <Dep Name="DatumPlane"/>
@@ -400,9 +400,6 @@
     </ObjectDeps>
     <ObjectDeps Name="Spreadsheet" Count="0"/>
     <ObjectDeps Name="Link" Count="0"/>
-    <ObjectDeps Name="Binder" Count="1">
-      <Dep Name="Link"/>
-    </ObjectDeps>
     <ObjectDeps Name="Boolean" Count="3">
       <Dep Name="Body"/>
       <Dep Name="Pad"/>
@@ -430,7 +427,6 @@
     <Object type="PartDesign::Plane" name="DatumPlane" id="1858" revision="15" file="DatumPlane.xml" />
     <Object type="Spreadsheet::Sheet" name="Spreadsheet" id="1859" revision="0" file="Spreadsheet.xml" />
     <Object type="App::Link" name="Link" id="1982" revision="8" file="Link.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder" id="1983" revision="10" file="Binder.xml" />
     <Object type="PartDesign::Boolean" name="Boolean" id="1984" revision="27" file="Boolean.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Reference" id="1985" revision="53" file="Reference.xml" />
   </Objects>
