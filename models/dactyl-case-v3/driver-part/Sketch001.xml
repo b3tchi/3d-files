@@ -15,7 +15,7 @@
       <String value="Attacher::AttachEnginePlane"/>
     </Property>
     <Property name="AttachmentOffset" type="App::PropertyPlacement">
-      <PropertyPlacement Px="0" Py="0" Pz="-6" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
+      <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
     </Property>
     <Property name="AttachmentSupport" type="App::PropertyLinkSubList">
       <LinkSubList count="1">
@@ -28,8 +28,8 @@
     </Property>
     <Property name="Constraints" type="Sketcher::PropertyConstraintList">
       <ConstraintList count="3">
-        <Constrain Name="" Type="7" Value="8" First="0" FirstPos="3" Second="-1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="1.123326063156128" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-        <Constrain Name="" Type="8" Value="1.5" First="0" FirstPos="3" Second="-1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="1.123326063156128" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="7" Value="6.85" First="0" FirstPos="3" Second="-1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="1.123326063156128" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="8" Value="1.85" First="0" FirstPos="3" Second="-1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="1.123326063156128" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="18" Value="2.1" First="0" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="0.876307487487793" LabelPosition="0.2617993950843811" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
       </ConstraintList>
     </Property>
@@ -38,7 +38,19 @@
       </LinkList>
     </Property>
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-      <ExpressionEngine count="0"></ExpressionEngine>
+      <ExpressionEngine count="2" cdata="1">
+        <Expressions><![CDATA[
+0:Constraints[0]
+0:<<sh>>.width / 2 + <<sh>>.height / 2
+0:
+
+0:Constraints[1]
+0:<<sh>>.height / 2
+0:
+
+]]>
+        </Expressions>
+      </ExpressionEngine>
     </Property>
     <Property name="ExternalBSplineMaxDegree" type="App::PropertyInteger">
       <Integer value="5"/>
@@ -82,7 +94,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="1" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <Circle CenterX="-8" CenterY="-1.5" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1.05"/>
+          <Circle CenterX="-6.85" CenterY="-1.85" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1.05"/>
           <Construction value="0"/>
         </Geometry>
       </GeometryList>
@@ -131,7 +143,7 @@ TShapes 0
       <Bool value="false"/>
     </Property>
     <Property name="Placement" type="App::PropertyPlacement" status="8388612">
-      <PropertyPlacement Px="0" Py="6" Pz="-1.332267629550188e-15" Q0="0.7071067811865475" Q1="0" Q2="0" Q3="0.7071067811865476" A="1.570796326794897" Ox="0.9999999999999997" Oy="0" Oz="0"/>
+      <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0.7071067811865477" Q1="0" Q2="0" Q3="0.7071067811865474" A="1.570796326794897" Ox="0.9999999999999997" Oy="0" Oz="0"/>
     </Property>
     <Property name="Shape" type="Part::PropertyPartShape">
       <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
@@ -141,11 +153,11 @@ CASCADE Topology V1, (c) Matra-Datavision
 Locations 1
 1
               1               0               0               0 
-              0 2.22044604925031e-16              -1               6 
-              0               1 2.22044604925031e-16 -1.33226762955019e-15 
+              0 2.22044604925031e-16              -1               0 
+              0               1 2.22044604925031e-16               0 
 Curve2ds 0
 Curves 1
-2 -8 -1.5 0 0 0 1 1 0 -0 -0 1 0 1.05
+2 -6.8499999999999996 -1.8500000000000001 0 0 0 1 1 0 -0 -0 1 0 1.05
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -154,7 +166,7 @@ Triangulations 0
 TShapes 3
 Ve
 1e-07
--6.95 -1.5 0
+-5.8 -1.85 0
 0 0
 
 0101101
