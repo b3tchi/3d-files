@@ -10,10 +10,13 @@ def main(sourceFile, exportFile):
 
     document=App.openDocument(sourceFile)
 
-    # objectToExport=document.getObject('base')
+    #export via mesh
     objectToExport=document.getObject('Body')
-
     Mesh.export([objectToExport], exportFile)
+
+    #export via shape file is much larger
+    # objectToExport=document.getObject('Body').Shape.exportStl(exportFile)
+
 
     App.closeDocument(document.Name)
 

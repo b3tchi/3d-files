@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+ FreeCAD Document, see http://www.freecadweb.org for more information...
+-->
+<Document SchemaVersion="4" ProgramVersion="2024.408R14555 (Git shallow)" FileVersion="2" Uid="9c6445c9-09e1-44bb-947a-a69b25cf32e4" StringHasher="1">
+  <StringHasher saveall="0" threshold="0" count="0" new="1"/>
+  <StringHasher2  count="26">
+<![CDATA[
+-1.0 0:Shape cache
+-2.0 0:;:M;FUS;:H686:7,V
+-1.c.1 Vertex1
+-1.0 0:;:H-687,V
+-1.c.1 Vertex1
+-1.c.0 Vertex2
+-1.0 0:;:M;FUS;:H686:7,E
+-1.c.1 Edge2
+-1.0 0:;:H-687,E
+-1.c.1 Edge2
+-1.c.0 Edge1
+-1.c.0 Edge3
+-2.0 0:;:M;FUS;:H-687:7,F
+-1.c.1 Face2
+-1.0 0:;:H-687,F
+-1.c.1 Face1
+-1.c.0 Face3
+-3.0 0:;:H686,V
+-1.c.1 Vertex2
+-10.c.-e Edge1
+-1.0 0:;:H686,E
+-1.c.1 Edge3
+-1.0 0:;:M;FUS;:H686:7,F
+-1.c.1 Face1
+-1.0 0:;:H686,F
+-1.c.1 Face3
+]]>
+  </StringHasher2>
+  <Properties Count="21" TransientCount="3">
+    <_Property name="FileName" type="App::PropertyString" status="50331649"/>
+    <_Property name="Tip" type="App::PropertyLink" status="33554433"/>
+    <_Property name="TransientDir" type="App::PropertyString" status="50331649"/>
+    <Property name="Comment" type="App::PropertyString">
+      <String value=""/>
+    </Property>
+    <Property name="Company" type="App::PropertyString">
+      <String value=""/>
+    </Property>
+    <Property name="CreatedBy" type="App::PropertyString">
+      <String value=""/>
+    </Property>
+    <Property name="CreationDate" type="App::PropertyString" status="16777217">
+      <String value="2024-05-19T21:09:56Z"/>
+    </Property>
+    <Property name="ForceXML" type="App::PropertyInteger" status="1">
+      <Integer value="3"/>
+    </Property>
+    <Property name="Id" type="App::PropertyString">
+      <String value=""/>
+    </Property>
+    <Property name="Label" type="App::PropertyString" status="1">
+      <String value="pivot-knob"/>
+    </Property>
+    <Property name="LastModifiedBy" type="App::PropertyString">
+      <String value=""/>
+    </Property>
+    <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
+      <String value="2024-05-19T21:49:24Z"/>
+    </Property>
+    <Property name="License" type="App::PropertyString" status="1">
+      <String value="All rights reserved"/>
+    </Property>
+    <Property name="LicenseURL" type="App::PropertyString" status="1">
+      <String value="https://en.wikipedia.org/wiki/All_rights_reserved"/>
+    </Property>
+    <Property name="Material" type="App::PropertyMap">
+      <Map count="0">
+      </Map>
+    </Property>
+    <Property name="Meta" type="App::PropertyMap">
+      <Map count="0">
+      </Map>
+    </Property>
+    <Property name="PreferBinary" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+    <Property name="SaveThumbnail" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+    <Property name="ShowHidden" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+    <Property name="SplitXML" type="App::PropertyBool" status="1">
+      <Bool value="true"/>
+    </Property>
+    <Property name="ThumbnailFile" type="App::PropertyFile">
+      <String value=""/>
+    </Property>
+    <Property name="TipName" type="App::PropertyString" status="83886080">
+      <String value=""/>
+    </Property>
+    <Property name="Uid" type="App::PropertyUUID" status="16777217">
+      <Uuid value="9c6445c9-09e1-44bb-947a-a69b25cf32e4"/>
+    </Property>
+    <Property name="UseHasher" type="App::PropertyBool" status="67108865">
+      <Bool value="true"/>
+    </Property>
+  </Properties>
+  <Objects Count="11" Dependencies="1">
+    <ObjectDeps Name="Body" Count="4">
+      <Dep Name="Cylinder"/>
+      <Dep Name="Origin"/>
+      <Dep Name="Cylinder001"/>
+      <Dep Name="Cylinder002"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Origin" Count="6">
+      <Dep Name="Z_Axis"/>
+      <Dep Name="XZ_Plane"/>
+      <Dep Name="X_Axis"/>
+      <Dep Name="Y_Axis"/>
+      <Dep Name="XY_Plane"/>
+      <Dep Name="YZ_Plane"/>
+    </ObjectDeps>
+    <ObjectDeps Name="X_Axis" Count="0"/>
+    <ObjectDeps Name="Y_Axis" Count="0"/>
+    <ObjectDeps Name="Z_Axis" Count="0"/>
+    <ObjectDeps Name="XY_Plane" Count="0"/>
+    <ObjectDeps Name="XZ_Plane" Count="0"/>
+    <ObjectDeps Name="YZ_Plane" Count="0"/>
+    <ObjectDeps Name="Cylinder" Count="2">
+      <Dep Name="XY_Plane"/>
+      <Dep Name="Body"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Cylinder001" Count="2">
+      <Dep Name="Body"/>
+      <Dep Name="Cylinder"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Cylinder002" Count="2">
+      <Dep Name="Body"/>
+      <Dep Name="Cylinder001"/>
+    </ObjectDeps>
+    <Object type="PartDesign::Body" name="Body" id="1662" revision="19" file="Body.xml" />
+    <Object type="App::Origin" name="Origin" id="1663" revision="0" file="Origin.xml" />
+    <Object type="App::Line" name="X_Axis" id="1664" revision="1" file="X_Axis.xml" />
+    <Object type="App::Line" name="Y_Axis" id="1665" revision="2" file="Y_Axis.xml" />
+    <Object type="App::Line" name="Z_Axis" id="1666" revision="2" file="Z_Axis.xml" />
+    <Object type="App::Plane" name="XY_Plane" id="1667" revision="1" file="XY_Plane.xml" />
+    <Object type="App::Plane" name="XZ_Plane" id="1668" revision="2" file="XZ_Plane.xml" />
+    <Object type="App::Plane" name="YZ_Plane" id="1669" revision="2" file="YZ_Plane.xml" />
+    <Object type="PartDesign::AdditiveCylinder" name="Cylinder" id="1670" revision="31" file="Cylinder.xml" />
+    <Object type="PartDesign::AdditiveCylinder" name="Cylinder001" id="1671" revision="43" file="Cylinder001.xml" />
+    <Object type="PartDesign::AdditiveCylinder" name="Cylinder002" id="1672" revision="69" file="Cylinder002.xml" />
+  </Objects>
+  <ObjectData Count="0">
+  </ObjectData>
+</Document>

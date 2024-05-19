@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+ FreeCAD Document, see http://www.freecadweb.org for more information...
+-->
+<Document SchemaVersion="4" ProgramVersion="2024.408R14555 (Git shallow)" FileVersion="2" Uid="d01deadd-9816-4f22-8ade-8e1c7b78687b" StringHasher="1">
+  <StringHasher saveall="0" threshold="0" count="0" new="1"/>
+  <StringHasher2  count="43">
+<![CDATA[
+-2.0 0:;SKT;:H9,E
+-1.c.1 g1
+-1.0 0:;SKT;:H9,V
+-1.c.1 g1v1
+-1.c.0 g1v2
+-1.c.0 g2v2
+-1.c.0 g3v2
+-1.c.0 g11v1
+-1.c.0 g11v2
+-1.c.0 g12v1
+-1.c.0 g13v2
+-1.c.0 g5v1
+-1.c.-2 g2
+-1.c.0 g3
+-1.c.0 g4
+-1.c.0 g11
+-1.c.0 g14
+-1.c.0 g12
+-1.c.0 g13
+-1.c.0 g5
+-1.0 0:;FAC;:H9:4,F
+-1.2c.1.14
+-1.0 0:;:G;XTR;:H9:7,F
+-1.2c.1.16
+-1.2c.0.b
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.0 0:;:G;XTR;:H9:7,E
+-1.2c.1.1e
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.0 0:Shape cache
+]]>
+  </StringHasher2>
+  <Properties Count="21" TransientCount="3">
+    <_Property name="FileName" type="App::PropertyString" status="50331649"/>
+    <_Property name="Tip" type="App::PropertyLink" status="33554433"/>
+    <_Property name="TransientDir" type="App::PropertyString" status="50331649"/>
+    <Property name="Comment" type="App::PropertyString">
+      <String value=""/>
+    </Property>
+    <Property name="Company" type="App::PropertyString">
+      <String value=""/>
+    </Property>
+    <Property name="CreatedBy" type="App::PropertyString">
+      <String value=""/>
+    </Property>
+    <Property name="CreationDate" type="App::PropertyString" status="16777217">
+      <String value="2024-05-16T22:27:35Z"/>
+    </Property>
+    <Property name="ForceXML" type="App::PropertyInteger" status="1">
+      <Integer value="3"/>
+    </Property>
+    <Property name="Id" type="App::PropertyString">
+      <String value=""/>
+    </Property>
+    <Property name="Label" type="App::PropertyString" status="1">
+      <String value="base"/>
+    </Property>
+    <Property name="LastModifiedBy" type="App::PropertyString">
+      <String value=""/>
+    </Property>
+    <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
+      <String value="2024-05-19T21:17:18Z"/>
+    </Property>
+    <Property name="License" type="App::PropertyString" status="1">
+      <String value="All rights reserved"/>
+    </Property>
+    <Property name="LicenseURL" type="App::PropertyString" status="1">
+      <String value="https://en.wikipedia.org/wiki/All_rights_reserved"/>
+    </Property>
+    <Property name="Material" type="App::PropertyMap" status="1">
+      <Map count="0">
+      </Map>
+    </Property>
+    <Property name="Meta" type="App::PropertyMap" status="1">
+      <Map count="0">
+      </Map>
+    </Property>
+    <Property name="PreferBinary" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+    <Property name="SaveThumbnail" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+    <Property name="ShowHidden" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+    <Property name="SplitXML" type="App::PropertyBool" status="1">
+      <Bool value="true"/>
+    </Property>
+    <Property name="ThumbnailFile" type="App::PropertyFile">
+      <String value=""/>
+    </Property>
+    <Property name="TipName" type="App::PropertyString" status="83886080">
+      <String value=""/>
+    </Property>
+    <Property name="Uid" type="App::PropertyUUID" status="16777217">
+      <Uuid value="d01deadd-9816-4f22-8ade-8e1c7b78687b"/>
+    </Property>
+    <Property name="UseHasher" type="App::PropertyBool" status="67108865">
+      <Bool value="true"/>
+    </Property>
+  </Properties>
+  <Objects Count="15" Dependencies="1">
+    <ObjectDeps Name="Body" Count="7">
+      <Dep Name="DatumPlane"/>
+      <Dep Name="Origin"/>
+      <Dep Name="Sketch"/>
+      <Dep Name="Pad"/>
+      <Dep Name="DatumPoint"/>
+      <Dep Name="DatumLine"/>
+      <Dep Name="Sketch001"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Origin" Count="6">
+      <Dep Name="Y_Axis"/>
+      <Dep Name="Z_Axis"/>
+      <Dep Name="XY_Plane"/>
+      <Dep Name="X_Axis"/>
+      <Dep Name="XZ_Plane"/>
+      <Dep Name="YZ_Plane"/>
+    </ObjectDeps>
+    <ObjectDeps Name="X_Axis" Count="0"/>
+    <ObjectDeps Name="Y_Axis" Count="0"/>
+    <ObjectDeps Name="Z_Axis" Count="0"/>
+    <ObjectDeps Name="XY_Plane" Count="0"/>
+    <ObjectDeps Name="XZ_Plane" Count="0"/>
+    <ObjectDeps Name="YZ_Plane" Count="0"/>
+    <ObjectDeps Name="Sketch" Count="2">
+      <Dep Name="XY_Plane"/>
+      <Dep Name="Spreadsheet"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Pad" Count="2">
+      <Dep Name="Body"/>
+      <Dep Name="Sketch"/>
+    </ObjectDeps>
+    <ObjectDeps Name="DatumPoint" Count="1">
+      <Dep Name="Pad"/>
+    </ObjectDeps>
+    <ObjectDeps Name="DatumLine" Count="1">
+      <Dep Name="Pad"/>
+    </ObjectDeps>
+    <ObjectDeps Name="DatumPlane" Count="1">
+      <Dep Name="XY_Plane"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Spreadsheet" Count="0"/>
+    <ObjectDeps Name="Sketch001" Count="2">
+      <Dep Name="XY_Plane"/>
+      <Dep Name="Sketch"/>
+    </ObjectDeps>
+    <Object type="PartDesign::Body" name="Body" id="1" revision="73" file="Body.xml" />
+    <Object type="App::Origin" name="Origin" id="2" revision="0" file="Origin.xml" />
+    <Object type="App::Line" name="X_Axis" id="3" revision="1" file="X_Axis.xml" />
+    <Object type="App::Line" name="Y_Axis" id="4" revision="2" file="Y_Axis.xml" />
+    <Object type="App::Line" name="Z_Axis" id="5" revision="2" file="Z_Axis.xml" />
+    <Object type="App::Plane" name="XY_Plane" id="6" revision="1" file="XY_Plane.xml" />
+    <Object type="App::Plane" name="XZ_Plane" id="7" revision="2" file="XZ_Plane.xml" />
+    <Object type="App::Plane" name="YZ_Plane" id="8" revision="2" file="YZ_Plane.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch" id="9" revision="945" file="Sketch.xml" />
+    <Object type="PartDesign::Pad" name="Pad" id="10" revision="46" file="Pad.xml" />
+    <Object type="PartDesign::Point" name="DatumPoint" id="15" revision="44" file="DatumPoint.xml" />
+    <Object type="PartDesign::Line" name="DatumLine" id="16" revision="52" file="DatumLine.xml" />
+    <Object type="PartDesign::Plane" name="DatumPlane" id="28" revision="29" file="DatumPlane.xml" />
+    <Object type="Spreadsheet::Sheet" name="Spreadsheet" id="29" revision="0" file="Spreadsheet.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch001" id="30" revision="389" file="Sketch001.xml" />
+  </Objects>
+  <ObjectData Count="0">
+  </ObjectData>
+</Document>
