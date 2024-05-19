@@ -117,21 +117,21 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="2" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <ArcOfCircle CenterX="10" CenterY="-10" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="10" StartAngle="2.567223414295938e-06" EndAngle="1.570796326794897"/>
+          <ArcOfCircle CenterX="10" CenterY="-10" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="10" StartAngle="2.5672234143e-06" EndAngle="1.570796326794897"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="3" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="3" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="10" StartY="1.082257997395337e-26" StartZ="0" EndX="0" EndY="1.082257997395337e-26" EndZ="0"/>
+          <LineSegment StartX="10" StartY="0" StartZ="0" EndX="0" EndY="0" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="4" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="4" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="0" StartY="1.082257997395337e-26" StartZ="0" EndX="0" EndY="-60" EndZ="0"/>
+          <LineSegment StartX="0" StartY="0" StartZ="0" EndX="0" EndY="-60" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="5" migrated="1">
@@ -224,8 +224,8 @@ Curve2ds 4
 Curves 6
 2 10 -10 0 0 0 1 1 0 0 0 1 0 4.0008949999999999
 2 10 -10 0 0 0 1 1 0 0 0 1 0 10
-1 10 1.0822579973953366e-26 0 -1 0 0 
-1 0 1.0822579973953366e-26 0 0 -1 0 
+1 10 0 0 -1 0 0 
+1 0 0 0 0 -1 0 
 1 0 -60 0 1 0 0 
 1 20 -60 0 0 1 0 
 Polygon3D 0
@@ -257,44 +257,44 @@ Wi
 0101100
 +14 0 *
 Ve
-1.00016477486066e-07
+1.00000000030201e-05
 19.9999999999835 -9.99997432776586 0
 0 0
 
 0101101
 *
 Ve
-1e-07
+1.00000000030201e-05
 10 0 0
 0 0
 
 0101101
 *
 Ed
- 1e-07 1 1 0
-1  2 0 2.56722341429594e-06 1.5707963267949
-2  3 2 3 2.56722341429594e-06 1.5707963267949
-2  4 2 5 2.56722341429594e-06 1.5707963267949
+ 1.00000000030201e-05 1 1 0
+1  2 0 2.5672234143e-06 1.5707963267949
+2  3 2 3 2.5672234143e-06 1.5707963267949
+2  4 2 5 2.5672234143e-06 1.5707963267949
 0
 
 0101000
 +12 0 -11 0 *
 Ve
-1e-07
-0 1.08225799739534e-26 0
+1.00000015461973e-07
+0 0 0
 0 0
 
 0101101
 *
 Ed
- 1e-07 1 1 0
+ 1.00000015461973e-07 1 1 0
 1  3 0 0 10
 0
 
 0101000
 +11 0 -9 0 *
 Ve
-1e-07
+1.00000000030201e-05
 0 -60 0
 0 0
 
@@ -308,21 +308,21 @@ Ed
 0101000
 +9 0 -7 0 *
 Ve
-1e-07
+1.00000000030201e-05
 20 -60 0
 0 0
 
 0101101
 *
 Ed
- 1e-07 1 1 0
+ 1.00000000030201e-05 1 1 0
 1  5 0 0 20
 0
 
 0101000
 +7 0 -5 0 *
 Ed
- 1e-07 1 1 0
+ 1.00000000030201e-05 1 1 0
 1  6 0 0 50.0000256722341
 0
 
@@ -407,7 +407,7 @@ EndMap
       </LinkSubList>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="11"/>
+      <Integer value="14"/>
     </Property>
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>

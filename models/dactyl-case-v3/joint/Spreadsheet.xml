@@ -4,14 +4,10 @@
 <Object name="Spreadsheet">
   <Properties Count="12" TransientCount="0">
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-      <ExpressionEngine count="2" cdata="1">
+      <ExpressionEngine count="1" cdata="1">
         <Expressions><![CDATA[
 0:.cells.Bind.B2.ZZ2
-0:tuple(.cells, <<B>> + str(hiddenref(Body.LinearType) + 3), <<ZZ>> + str(hiddenref(Body.LinearType) + 3))
-0:
-
-0:.cells.Bind.B52.ZZ52
-0:tuple(.cells, <<B>> + str(hiddenref(Body.LinearType) + 53), <<ZZ>> + str(hiddenref(Body.LinearType) + 53))
+0:tuple(.cells, <<B>> + str(hiddenref(Body.Variant) + 3), <<ZZ>> + str(hiddenref(Body.Variant) + 3))
 0:
 
 ]]>
@@ -19,7 +15,7 @@
       </ExpressionEngine>
     </Property>
     <Property name="Label" type="App::PropertyString" status="134217728">
-      <String value="Spreadsheet"/>
+      <String value="sh"/>
     </Property>
     <Property name="Label2" type="App::PropertyString" status="128">
       <String value=""/>
@@ -37,88 +33,77 @@
       <Bool value="true"/>
     </Property>
     <Property name="cells" type="Spreadsheet::PropertySheet" status="67108864">
-      <Cells Count="75">
-        <Cell address="B1" content="distance"/>
-        <Cell address="C1" content="iterations"/>
-        <Cell address="D1" content="extrusion"/>
-        <Cell address="E1" content="fulldistance"/>
-        <Cell address="F1" content="angleA"/>
-        <Cell address="G1" content="angleB"/>
-        <Cell address="H1" content="over"/>
-        <Cell address="I1" content="comments"/>
-        <Cell editMode="2" editModeName="Combo" editPersistent="1" address="A2" content="=dbind(Body.LinearType.All)"/>
-        <Cell alias="distance" address="B2" content="=.B6"/>
-        <Cell alias="iterations" address="C2" content="=.C6"/>
-        <Cell alias="extrusion" address="D2" content="=.D6"/>
-        <Cell alias="angleA" address="F2" content="=.F6"/>
-        <Cell alias="angleB" address="G2" content="=.G6"/>
-        <Cell alias="over" address="H2" content="=.H6"/>
-        <Cell address="I2" content="=.I6"/>
-        <Cell address="A3" content="first"/>
-        <Cell address="B3" content="=.B10"/>
-        <Cell address="C3" content="=.C10"/>
-        <Cell address="D3" content="=.D10"/>
-        <Cell address="F3" content="=.F10"/>
-        <Cell address="G3" content="=.G10"/>
-        <Cell address="H3" content="2"/>
-        <Cell address="A4" content="crossed"/>
-        <Cell address="B4" content="=sqrt(100 ^ 2 + 21 ^ 2) / 5 * 4 - 0.1"/>
-        <Cell address="C4" content="5"/>
-        <Cell address="D4" content="=sqrt(100 ^ 2 + 21 ^ 2) / 10 - 0.2"/>
-        <Cell address="F4" content="0"/>
-        <Cell address="G4" content="0"/>
-        <Cell address="H4" content="2"/>
-        <Cell address="A5" content="single"/>
-        <Cell address="B5" content="9.49"/>
-        <Cell address="C5" content="1"/>
-        <Cell address="D5" content="9.49"/>
-        <Cell address="F5" content="0"/>
-        <Cell address="G5" content="0"/>
-        <Cell address="H5" content="2"/>
-        <Cell address="A6" content="middle"/>
-        <Cell address="B6" content="=60 * 2 / 3 - 0.1"/>
-        <Cell address="C6" content="3"/>
-        <Cell address="D6" content="=60 / 6 - 0.2"/>
-        <Cell address="F6" content="90"/>
-        <Cell address="G6" content="0"/>
-        <Cell address="H6" content="2"/>
-        <Cell address="I6" content="distance should be -0.1"/>
-        <Cell address="A7" content="middle_top"/>
-        <Cell address="B7" content="=56 * 2 / 3"/>
-        <Cell address="C7" content="3"/>
-        <Cell address="D7" content="=56 / 6 - 0.2"/>
-        <Cell address="F7" content="0"/>
-        <Cell address="G7" content="0"/>
-        <Cell address="H7" content="2"/>
-        <Cell address="A8" content="middle_180"/>
-        <Cell address="B8" content="=E8 - D8"/>
-        <Cell address="C8" content="4"/>
-        <Cell address="D8" content="=E8 / (2 * C8 - 1) - 0.2"/>
-        <Cell address="E8" content="67.8"/>
-        <Cell address="F8" content="0"/>
-        <Cell address="G8" content="0"/>
-        <Cell address="H8" content="2"/>
-        <Cell address="A9" content="corner"/>
-        <Cell address="B9" content="=E9 - D9"/>
-        <Cell address="C9" content="2"/>
-        <Cell address="D9" content="=E9 / (2 * C9 - 1) - 0.2"/>
-        <Cell address="E9" content="33.7"/>
-        <Cell address="F9" content="0"/>
-        <Cell address="G9" content="0"/>
-        <Cell address="H9" content="2"/>
-        <Cell address="A10" content="corner_inner"/>
-        <Cell address="B10" content="=2 * D10"/>
-        <Cell address="C10" content="1"/>
-        <Cell address="D10" content="11.03"/>
-        <Cell address="F10" content="0"/>
-        <Cell address="G10" content="0"/>
-        <Cell address="H10" content="2"/>
+      <Cells Count="51">
+        <Cell style="bold" address="A1"/>
+        <Cell style="bold" address="B1" content="distance"/>
+        <Cell style="bold" address="C1" content="iterations"/>
+        <Cell style="bold" address="D1" content="extrusion"/>
+        <Cell style="bold" address="E1" content="angleA"/>
+        <Cell style="bold" address="F1" content="angleB"/>
+        <Cell style="bold" address="G1" content="over"/>
+        <Cell style="bold" address="H1" content="comments"/>
+        <Cell style="bold" address="I1" cdata="1"><![CDATA[
+3:variant
+1 - mirrored
+2 - both sides outer
+3 - both sides inner
+]]>
+</Cell>
+        <Cell style="bold" address="J1" content="full lenght"/>
+        <Cell style="bold" address="K1" content="total segments"/>
+        <Cell style="bold" address="L1" content="segmentns on attached side"/>
+        <Cell style="bold" address="M1" content="segments on for length"/>
+        <Cell alias="distance" address="B2" content="=.B3"/>
+        <Cell alias="iterations" address="C2" content="=.C3"/>
+        <Cell alias="extrusion" address="D2" content="=.D3"/>
+        <Cell alias="angleA" address="E2" content="=.E3"/>
+        <Cell alias="angleB" address="F2" content="=.F3"/>
+        <Cell alias="over" address="G2" content="=.G3"/>
+        <Cell address="H2" content="=.H3"/>
+        <Cell address="I2" content="=.I3"/>
+        <Cell address="J2" content="=.J3"/>
+        <Cell address="K2" content="=.K3"/>
+        <Cell address="L2" content="=.L3"/>
+        <Cell address="M2" content="=.M3"/>
+        <Cell address="A3" content="basic"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="B3" content="=J3 / K3 * M3 - 0.1"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="C3" content="5"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="D3" content="=J3 / K3 - 0.2"/>
+        <Cell backgroundColor="#dab860ff" address="E3" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="F3" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="G3" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="H3" content="comm"/>
+        <Cell backgroundColor="#dab860ff" address="I3" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="J3" content="60"/>
+        <Cell backgroundColor="#dab860ff" address="K3" content="10"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L3" content="=I3 == 1 ? K3 / 2 : 0"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M3" content="=I3 == 1 ? K3 - 2 : (I3 == 2 ? K3 - 1 : 0)"/>
+        <Cell address="A4" content="original_test"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="B4" content="=J4 / K4 * M4 - 0.1"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="C4" content="=L4"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="D4" content="=J4 / K4 - 0.2"/>
+        <Cell backgroundColor="#dab860ff" address="E4" content="0"/>
+        <Cell backgroundColor="#dab860ff" address="F4" content="0"/>
+        <Cell backgroundColor="#dab860ff" address="G4" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="H4" content="comme"/>
+        <Cell backgroundColor="#dab860ff" address="I4" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="J4" content="100"/>
+        <Cell backgroundColor="#dab860ff" address="K4" content="10"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L4" content="=I4 == 1 ? K4 / 2 : 0"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M4" content="=I4 == 1 ? K4 - 2 : (I4 == 2 ? K4 - 1 : 0)"/>
       </Cells>
     </Property>
     <Property name="columnWidths" type="Spreadsheet::PropertyColumnWidths" status="218103808">
-      <ColumnInfo Count="2">
+      <ColumnInfo Count="9">
+        <Column name="A" width="173" />
+        <Column name="D" width="193" />
+        <Column name="F" width="100" />
         <Column name="G" width="100" />
-        <Column name="I" width="247" />
+        <Column name="H" width="153" />
+        <Column name="I" width="122" />
+        <Column name="J" width="100" />
+        <Column name="L" width="167" />
+        <Column name="M" width="161" />
       </ColumnInfo>
     </Property>
     <Property name="hiddenColumns" type="App::PropertyIntegerSet" status="201326592">
@@ -130,7 +115,8 @@
       </IntegerSet>
     </Property>
     <Property name="rowHeights" type="Spreadsheet::PropertyRowHeights" status="218103808">
-      <RowInfo Count="0">
+      <RowInfo Count="1">
+        <Row name="1"  height="97" />
       </RowInfo>
     </Property>
   </Properties>

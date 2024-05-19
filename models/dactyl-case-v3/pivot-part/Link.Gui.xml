@@ -4,12 +4,12 @@
 -->
 <!-- FreeCAD ViewProvider -->
 <Document SchemaVersion="1" FileVersion="2">
-<ViewProvider name="Constraints" expanded="0" Extensions="True">
+<ViewProvider name="Link" expanded="0" Extensions="True">
   <Extensions Count="1">
     <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
     </Extension>
   </Extensions>
-  <Properties Count="18" TransientCount="0">
+  <Properties Count="17" TransientCount="0">
     <Property name="ChildViewProvider" type="App::PropertyPersistentObject" status="9">
       <String value=""/>
       <PersistentObject>
@@ -42,9 +42,6 @@
     <Property name="PointSize" type="App::PropertyFloatConstraint" status="1">
       <Float value="2"/>
     </Property>
-    <Property name="Proxy" type="App::PropertyPythonObject" status="1">
-      <Python  module="freecad.asm3.assembly" class="ViewProviderAsmConstraintGroup" value="null"/>
-    </Property>
     <Property name="ResetClipPlane" type="App::PropertyBool" status="1">
       <Bool value="false"/>
     </Property>
@@ -63,7 +60,7 @@
     <Property name="ShowInTree" type="App::PropertyBool" status="1">
       <Bool value="true"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="9">
+    <Property name="Visibility" type="App::PropertyBool" status="1">
       <Bool value="false"/>
     </Property>
   </Properties>

@@ -4,10 +4,9 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.408R14555 (Git shallow)" FileVersion="2" Uid="d01deadd-9816-4f22-8ade-8e1c7b78687b" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="97">
+  <StringHasher2  count="42">
 <![CDATA[
--1.0 0:Shape cache
--1.0 0:;SKT;:H9,E
+-2.0 0:;SKT;:H9,E
 -1.c.1 g1
 -1.0 0:;SKT;:H9,V
 -1.c.1 g1v1
@@ -49,60 +48,6 @@
 -1.2c.0.1
 -1.2c.0.1
 -1.2c.0.1
--16.0 0:;SKT;:H1e,E
--1.c.1 g2
--1.0 0:;SKT;:H1e,V
--1.c.1 g2v1
--1.0 0:;FAC;:H1e:4,F
--1.2c.1.4
--1.0 0:;:G;XTR;:H1e:7,F
--1.2c.1.6
--1.0 0:;:G;XTR;:H1e:7,E
--1.2c.1.6
--1.0 0:;:U;XTR;:H9:7,V
--1.2c.1.29
--1.2c.0.1
--1.2c.0.2
--1.2c.0.2
--1.2c.0.1
--1.0 0:;:U;XTR;:H9:7,E
--1.2c.1.36
--1.2c.0.2
--1.0 0:;:U;XTR;:H1e:7,V
--1.2c.1.b
--1.0 0:;:U;XTR;:H1e:7,E
--1.2c.1.f
--1.0 0:;:G0;XTR;:H1e:8,F
--1.2c.1.13
--1.0 0:(#19;K-1;:Ha:4,F)
--1.2c.a.42
--1.0 0:(#1b;K-1;:Ha:4,F)
--1.0 0:;:G0;XTR;:H9:8,F
--1.c.1.1c #17
--1.0 0:(#5e;K-3;:Ha:4,F)
--1.0 0:(#1d;K-1;:Ha:4,F)
--1.0 0:(#1f;K-1;:Ha:4,F)
--1.0 0:(#5e;K-2;:Ha:4,F)
--1.0 0:(#19;K-2;:Ha:4,F)
--1.0 0:(#5e;K-1;:Ha:4,F)
--1.0 0:(#1a;K-1;:Ha:4,F)
--1.2c.15.4b
--1.2c.0.2
--1.2c.0.2
--1.2c.0.-5
--1.0 0:(#17;K2;:Ha:3,F)
--1.0 0:(#3;K-1;:Ha:4,E)
--1.0 0:(#48;K-1;:H-24:4,F)
--1.0 0:(#f;K-1;:Ha:4,E)
--1.0 0:(#11;K-1;:Ha:4,E)
--1.0 0:(#13;K-1;:Ha:4,E)
--1.0 0:(#48;K-4;:H-24:4,F)
--1.0 0:(#48;K-5;:H-24:4,F)
--1.0 0:(#48;K-6;:H-24:4,F)
--1.0 0:(#3;K-2;:Ha:4,E)
--1.0 0:(#48;K-2;:H-24:4,F)
--1.0 0:(#48;K-3;:H-24:4,F)
--1.0 0:(#e;K-1;:Ha:4,E)
 ]]>
   </StringHasher2>
   <Properties Count="21" TransientCount="3">
@@ -134,7 +79,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-05-19T07:38:50Z"/>
+      <String value="2024-05-19T15:49:49Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -175,24 +120,23 @@
       <Bool value="true"/>
     </Property>
   </Properties>
-  <Objects Count="16" Dependencies="1">
-    <ObjectDeps Name="Body" Count="8">
-      <Dep Name="DatumPoint"/>
-      <Dep Name="Pad"/>
-      <Dep Name="Origin"/>
-      <Dep Name="Sketch001"/>
-      <Dep Name="Sketch"/>
+  <Objects Count="15" Dependencies="1">
+    <ObjectDeps Name="Body" Count="7">
       <Dep Name="DatumPlane"/>
+      <Dep Name="Origin"/>
+      <Dep Name="Sketch"/>
+      <Dep Name="Pad"/>
+      <Dep Name="DatumPoint"/>
       <Dep Name="DatumLine"/>
-      <Dep Name="Pad001"/>
+      <Dep Name="Sketch001"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
+      <Dep Name="X_Axis"/>
+      <Dep Name="XY_Plane"/>
+      <Dep Name="YZ_Plane"/>
+      <Dep Name="XZ_Plane"/>
       <Dep Name="Y_Axis"/>
       <Dep Name="Z_Axis"/>
-      <Dep Name="XY_Plane"/>
-      <Dep Name="X_Axis"/>
-      <Dep Name="XZ_Plane"/>
-      <Dep Name="YZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
@@ -222,12 +166,7 @@
       <Dep Name="XY_Plane"/>
       <Dep Name="Sketch"/>
     </ObjectDeps>
-    <ObjectDeps Name="Pad001" Count="3">
-      <Dep Name="Body"/>
-      <Dep Name="Pad"/>
-      <Dep Name="Sketch001"/>
-    </ObjectDeps>
-    <Object type="PartDesign::Body" name="Body" id="1" revision="70" file="Body.xml" />
+    <Object type="PartDesign::Body" name="Body" id="1" revision="73" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="2" revision="0" file="Origin.xml" />
     <Object type="App::Line" name="X_Axis" id="3" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="4" revision="2" file="Y_Axis.xml" />
@@ -242,7 +181,6 @@
     <Object type="PartDesign::Plane" name="DatumPlane" id="28" revision="29" file="DatumPlane.xml" />
     <Object type="Spreadsheet::Sheet" name="Spreadsheet" id="29" revision="0" file="Spreadsheet.xml" />
     <Object type="Sketcher::SketchObject" name="Sketch001" id="30" revision="389" file="Sketch001.xml" />
-    <Object type="PartDesign::Pad" name="Pad001" id="36" revision="16" file="Pad001.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>

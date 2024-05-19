@@ -28,7 +28,7 @@
     </Property>
     <Property name="Constraints" type="Sketcher::PropertyConstraintList">
       <ConstraintList count="3">
-        <Constrain Name="" Type="7" Value="1.85" First="0" FirstPos="3" Second="-1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="2.063966989517212" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="7" Value="2.05" First="0" FirstPos="3" Second="-1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="2.063966989517212" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="8" Value="1.85" First="-1" FirstPos="1" Second="0" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="2.063966989517212" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="18" Value="2.1" First="0" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="1.516339540481567" LabelPosition="0.2617993950843811" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
       </ConstraintList>
@@ -41,7 +41,7 @@
       <ExpressionEngine count="2" cdata="1">
         <Expressions><![CDATA[
 0:Constraints[0]
-0:<<sh>>.height / 2
+0:<<sh>>.height / 2 + 0.2
 0:
 
 0:Constraints[1]
@@ -94,7 +94,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="1" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <Circle CenterX="-1.85" CenterY="1.85" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1.05"/>
+          <Circle CenterX="-2.05" CenterY="1.85" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1.05"/>
           <Construction value="0"/>
         </Geometry>
       </GeometryList>
@@ -157,7 +157,7 @@ Locations 1
               0               1 -4.44089209850063e-16               0 
 Curve2ds 0
 Curves 1
-2 -1.8499999999999996 1.8500000000000001 0 0 0 1 1 0 0 0 1 0 1.05
+2 -2.0500000000000003 1.8500000000000001 0 0 0 1 1 0 -0 -0 1 0 1.05
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -166,7 +166,7 @@ Triangulations 0
 TShapes 3
 Ve
 1e-07
--0.8 1.85 0
+-1 1.85 0
 0 0
 
 0101101
@@ -188,14 +188,14 @@ Wi
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="2">
 <![CDATA[
-5 PostfixCount 3
+6 PostfixCount 3
 Edge
 Vertex
 ;SKT
 
 MapCount 1
 
-ElementMap 1 5 2
+ElementMap 1 6 2
 
 Edge
 
@@ -222,8 +222,8 @@ EndMap
         <Link obj="XZ_Plane" sub=""/>
       </LinkSubList>
     </Property>
-    <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="15"/>
+    <Property name="TreeRank" type="App::PropertyInteger" status="2185">
+      <Integer value="18"/>
     </Property>
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>

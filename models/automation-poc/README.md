@@ -20,7 +20,7 @@ cd C:/Users/czjabeck/Dev/Repositories/b3tchi/3d-files/feat/xmas-tree-adapters/
 ### poc automated script
 #### loading script module
 ```nu
-source .\macros\prep-print.nu; use prep-print
+use .\macros\prep-print.nu
 ```
 
 

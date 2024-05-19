@@ -4,11 +4,9 @@
 -->
 <!-- FreeCAD ViewProvider -->
 <Document SchemaVersion="1" FileVersion="2">
-<ViewProvider name="Pad" expanded="0" Extensions="True">
-  <Extensions Count="2">
+<ViewProvider name="Reference" expanded="0" Extensions="True">
+  <Extensions Count="1">
     <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-    </Extension>
-    <Extension type="PartGui::ViewProviderAttachExtension" name="ViewProviderAttachExtension">
     </Extension>
   </Extensions>
   <Properties Count="32" TransientCount="0">
@@ -33,10 +31,7 @@ cccccc00
       <Integer value="0"/>
     </Property>
     <Property name="ForceMapColors" type="App::PropertyBool" status="1">
-      <Bool value="false"/>
-    </Property>
-    <Property name="IconColor" type="App::PropertyColor" status="1">
-      <PropertyColor value="0"/>
+      <Bool value="true"/>
     </Property>
     <Property name="Lighting" type="App::PropertyEnumeration" status="1">
       <Integer value="1"/>
@@ -111,8 +106,11 @@ cccccc00
     <Property name="Transparency" type="App::PropertyPercent" status="1">
       <Integer value="0"/>
     </Property>
+    <Property name="UseBinderStyle" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
     <Property name="Visibility" type="App::PropertyBool" status="1">
-      <Bool value="true"/>
+      <Bool value="false"/>
     </Property>
   </Properties>
 </ViewProvider>
