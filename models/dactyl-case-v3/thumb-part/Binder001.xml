@@ -21,13 +21,21 @@
       </LinkSub>
     </Property>
     <Property name="Context" type="App::PropertyXLink" status="67108864">
-      <XLink file="" stamp="" name=""/>
+      <XLink file="" stamp="" name="Body" sub="Binder001."/>
     </Property>
     <Property name="EdgeTolerance" type="App::PropertyPrecision">
       <Float value="1e-06"/>
     </Property>
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-      <ExpressionEngine count="0"></ExpressionEngine>
+      <ExpressionEngine count="1" cdata="1">
+        <Expressions><![CDATA[
+0:.Placement.Base.x
+0:<<sh>>.width * -1
+0:
+
+]]>
+        </Expressions>
+      </ExpressionEngine>
     </Property>
     <Property name="FaceMaker" type="App::PropertyString">
       <String value=""/>
@@ -78,7 +86,7 @@
       <Bool value="false"/>
     </Property>
     <Property name="Placement" type="App::PropertyPlacement" status="8388608">
-      <PropertyPlacement Px="-25" Py="0" Pz="1.85" Q0="0" Q1="0" Q2="1" Q3="6.123233995736766e-17" A="3.141592653589793" Ox="0" Oy="0" Oz="1"/>
+      <PropertyPlacement Px="-36.5" Py="0" Pz="1.85" Q0="0" Q1="0" Q2="1" Q3="6.123233995736766e-17" A="3.141592653589793" Ox="0" Oy="0" Oz="1"/>
     </Property>
     <Property name="Refine" type="App::PropertyBool">
       <Bool value="false"/>
@@ -93,7 +101,7 @@
 CASCADE Topology V1, (c) Matra-Datavision
 Locations 58
 1
-             -1 -1.22464679914735e-16               0             -25 
+             -1 -1.22464679914735e-16               0           -36.5 
 1.22464679914735e-16              -1               0               0 
               0               0               1            1.85 
 1
@@ -1866,7 +1874,7 @@ Vertex
 
 MapCount 2
 
-ElementMap 1 7 3
+ElementMap 1 9 3
 
 Edge
 
@@ -1983,7 +1991,7 @@ EndMap
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="649">
+    <Property name="Visibility" type="App::PropertyBool" status="648">
       <Bool value="false"/>
     </Property>
     <Property name="_Version" type="App::PropertyInteger" status="83886080">
