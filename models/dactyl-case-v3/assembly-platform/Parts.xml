@@ -6,7 +6,7 @@
     <Extension type="App::LinkBaseExtensionPython" name="LinkBaseExtensionPython">
     </Extension>
   </Extensions>
-  <Properties Count="18" TransientCount="1">
+  <Properties Count="19" TransientCount="1">
     <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881024"/>
     <Property name="ColoredElements" type="App::PropertyLinkSubHidden" status="218103808">
       <LinkSub value="" count="0">
@@ -16,7 +16,15 @@
       <Link value=""/>
     </Property>
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-      <ExpressionEngine count="0"></ExpressionEngine>
+      <ExpressionEngine count="1" cdata="1">
+        <Expressions><![CDATA[
+0:.Variant.Enum
+0:Spreadsheet.cells[<<A2:|>>]
+0:
+
+]]>
+        </Expressions>
+      </ExpressionEngine>
     </Property>
     <Property name="FixShape" type="App::PropertyEnumeration">
       <Integer value="1"/>
@@ -73,10 +81,17 @@ TShapes 0
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
+    <Property name="Variant" type="App::PropertyEnumeration" group="Assembly Stage" attr="0" ro="0" hide="0" doc="" status="2162688">
+      <Integer value="0" CustomEnum="true"/>
+      <CustomEnumList count="2">
+<Enum value="folded"/>
+<Enum value="unfolded"/>
+      </CustomEnumList>
+    </Property>
     <Property name="Visibility" type="App::PropertyBool" status="648">
       <Bool value="false"/>
     </Property>
-    <Property name="VisibilityList" type="App::PropertyBoolList" group="Base" attr="0" ro="0" hide="0" doc="" status="2097419">
+    <Property name="VisibilityList" type="App::PropertyBoolList" group="Base" attr="0" ro="0" hide="0" doc="" status="2097418">
       <BoolList value="11111"/>
     </Property>
     <Property name="_LinkOwner" type="App::PropertyInteger" status="201326592">
