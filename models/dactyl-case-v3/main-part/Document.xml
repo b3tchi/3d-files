@@ -351,7 +351,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-05-26T12:21:38Z"/>
+      <String value="2024-05-26T12:38:40Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -392,12 +392,8 @@
       <Bool value="true"/>
     </Property>
   </Properties>
-  <Objects Count="21" Dependencies="1">
-    <ObjectDeps Name="Body" Count="9">
-      <Dep Name="DatumPoint"/>
-      <Dep Name="DatumPoint001"/>
-      <Dep Name="DatumLine"/>
-      <Dep Name="DatumLine002"/>
+  <Objects Count="17" Dependencies="1">
+    <ObjectDeps Name="Body" Count="5">
       <Dep Name="Sketch001"/>
       <Dep Name="Origin"/>
       <Dep Name="Sketch"/>
@@ -431,18 +427,6 @@
       <Dep Name="Spreadsheet"/>
       <Dep Name="Sketch"/>
     </ObjectDeps>
-    <ObjectDeps Name="DatumLine" Count="1">
-      <Dep Name="Sketch001"/>
-    </ObjectDeps>
-    <ObjectDeps Name="DatumLine002" Count="1">
-      <Dep Name="Sketch001"/>
-    </ObjectDeps>
-    <ObjectDeps Name="DatumPoint" Count="1">
-      <Dep Name="Sketch001"/>
-    </ObjectDeps>
-    <ObjectDeps Name="DatumPoint001" Count="1">
-      <Dep Name="Sketch001"/>
-    </ObjectDeps>
     <ObjectDeps Name="Spreadsheet" Count="0"/>
     <ObjectDeps Name="Link" Count="0"/>
     <ObjectDeps Name="Boolean" Count="5">
@@ -464,7 +448,7 @@
       <Dep Name="Body"/>
       <Dep Name="Link"/>
     </ObjectDeps>
-    <Object type="PartDesign::Body" name="Body" id="4655" revision="86" file="Body.xml" />
+    <Object type="PartDesign::Body" name="Body" id="4655" revision="88" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="4656" revision="0" file="Origin.xml" />
     <Object type="App::Line" name="X_Axis" id="4657" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="4658" revision="2" file="Y_Axis.xml" />
@@ -475,10 +459,6 @@
     <Object type="Sketcher::SketchObject" name="Sketch" id="4663" revision="33" file="Sketch.xml" />
     <Object type="Sketcher::SketchObject" name="Sketch001" id="4664" revision="146" file="Sketch001.xml" />
     <Object type="PartDesign::Pad" name="Pad" id="4665" revision="31" file="Pad.xml" />
-    <Object type="PartDesign::Line" name="DatumLine" id="4666" revision="36" file="DatumLine.xml" />
-    <Object type="PartDesign::Line" name="DatumLine002" id="4668" revision="31" file="DatumLine002.xml" />
-    <Object type="PartDesign::Point" name="DatumPoint" id="4669" revision="31" file="DatumPoint.xml" />
-    <Object type="PartDesign::Point" name="DatumPoint001" id="4670" revision="31" file="DatumPoint001.xml" />
     <Object type="Spreadsheet::Sheet" name="Spreadsheet" id="4671" revision="0" file="Spreadsheet.xml" />
     <Object type="App::Link" name="Link" id="4672" revision="8" file="Link.xml" />
     <Object type="PartDesign::Boolean" name="Boolean" id="4676" revision="82" file="Boolean.xml" />
