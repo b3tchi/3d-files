@@ -6,23 +6,40 @@
  FreeCAD Document, see http://www.freecadweb.org for more information...
 -->
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
-<Expand />
-  <Camera extra="0" id="8" binding="0" view3d="1">
+<Expand  count="1">
+  <Expand name="Assembly" count="2">
+    <Expand name="Constraints"/>
+    <Expand name="Parts" count="4">
+      <Expand name="Link" count="2">
+        <Expand name="Pad"/>
+        <Expand name="Pad003"/>
+      </Expand>
+      <Expand name="Link001" count="1">
+        <Expand name="Pad"/>
+      </Expand>
+      <Expand name="Link004"/>
+      <Expand name="Link005" count="1">
+        <Expand name="Pad001"/>
+      </Expand>
+    </Expand>
+  </Expand>
+</Expand>
+  <Camera extra="0" id="11" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position -115.51126 64.474846 87.425934
-  orientation 0.14856985 -0.36275023 -0.919967  2.4209201
-  nearDistance 41.688725
-  farDistance 215.26015
+  position -93.026558 -34.648117 -3.3990784
+  orientation 0.67060214 -0.27128592 -0.69043225  1.0600197
+  nearDistance -69.426201
+  farDistance 79.967804
   aspectRatio 1
-  focalDistance 161.59947
-  height 140.23033
+  focalDistance 115.2498
+  height 126.50092
 
 }
 ## overrideMode: As Is]]>
   </Camera>
-  <View3D id="8"><![CDATA[
+  <View3D id="11"><![CDATA[
   <Properties Count="3" TransientCount="0">
     <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
       <Integer value="0"/>

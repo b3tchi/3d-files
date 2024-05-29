@@ -25,8 +25,6 @@ use .\macros\prep-print.nu
 
 
 ### poc in nushell manual process
-
-
 #### define model and part to print
 ```nu
 let model = 'automation-poc'
