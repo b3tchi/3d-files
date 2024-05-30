@@ -4,7 +4,7 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.408R14555 (Git shallow)" FileVersion="2" Uid="8a46e80f-eb67-4fd6-8b13-f263fdedd5bb" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="6">
+  <StringHasher2  count="5">
 <![CDATA[
 -3a.0 1:Enforce an angle offset defined as yaw-pitch-roll angle of the
 second plane performed in the order of x-y-z
@@ -15,7 +15,6 @@ You need to enable LockAngle for this to take effect.
 -1.0 1:Rotation angle of the second plane about its x-axis
 You need to enable LockAngle for this to take effect.
 -31.0 0:If True, then the angle is calculated as 180-angle
--e.0 0:Shape cache
 ]]>
   </StringHasher2>
   <Properties Count="22" TransientCount="3">
@@ -47,7 +46,7 @@ You need to enable LockAngle for this to take effect.
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-05-29T16:40:53Z"/>
+      <String value="2024-05-30T19:58:31Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -94,39 +93,39 @@ You need to enable LockAngle for this to take effect.
   </Properties>
   <Objects Count="41" Dependencies="1">
     <ObjectDeps Name="Assembly" Count="3">
-      <Dep Name="Elements"/>
       <Dep Name="Constraints"/>
+      <Dep Name="Elements"/>
       <Dep Name="Parts"/>
     </ObjectDeps>
     <ObjectDeps Name="Constraints" Count="7">
-      <Dep Name="Constraint001"/>
       <Dep Name="Constraint"/>
-      <Dep Name="Constraint004"/>
+      <Dep Name="Constraint001"/>
       <Dep Name="Constraint002"/>
-      <Dep Name="Constraint003"/>
       <Dep Name="Constraint005"/>
+      <Dep Name="Constraint003"/>
+      <Dep Name="Constraint004"/>
       <Dep Name="Constraint006"/>
     </ObjectDeps>
     <ObjectDeps Name="Elements" Count="12">
-      <Dep Name="_Element002"/>
       <Dep Name="_Element"/>
+      <Dep Name="_Element002"/>
       <Dep Name="_Element001"/>
-      <Dep Name="_Element005"/>
+      <Dep Name="_Element003"/>
       <Dep Name="_Element006"/>
       <Dep Name="_Element004"/>
-      <Dep Name="_Element003"/>
-      <Dep Name="_Element010"/>
+      <Dep Name="_Element005"/>
+      <Dep Name="_Element009"/>
       <Dep Name="_Element007"/>
       <Dep Name="_Element008"/>
-      <Dep Name="_Element009"/>
+      <Dep Name="_Element010"/>
       <Dep Name="_Element011"/>
     </ObjectDeps>
     <ObjectDeps Name="Parts" Count="5">
-      <Dep Name="Link"/>
       <Dep Name="Link004"/>
+      <Dep Name="Link003"/>
+      <Dep Name="Link"/>
       <Dep Name="Link002"/>
       <Dep Name="Link001"/>
-      <Dep Name="Link003"/>
     </ObjectDeps>
     <ObjectDeps Name="Link" Count="0"/>
     <ObjectDeps Name="Link001" Count="0"/>
@@ -146,8 +145,8 @@ You need to enable LockAngle for this to take effect.
     </ObjectDeps>
     <ObjectDeps Name="Constraint001" Count="3">
       <Dep Name="ElementLink001"/>
-      <Dep Name="ElementLink002"/>
       <Dep Name="Constraints"/>
+      <Dep Name="ElementLink002"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink001" Count="2">
       <Dep Name="Constraint001"/>
@@ -166,8 +165,8 @@ You need to enable LockAngle for this to take effect.
       <Dep Name="Link"/>
     </ObjectDeps>
     <ObjectDeps Name="Constraint002" Count="3">
-      <Dep Name="Constraints"/>
       <Dep Name="ElementLink003"/>
+      <Dep Name="Constraints"/>
       <Dep Name="ElementLink004"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink003" Count="2">
@@ -188,8 +187,8 @@ You need to enable LockAngle for this to take effect.
     </ObjectDeps>
     <ObjectDeps Name="Constraint003" Count="3">
       <Dep Name="Constraints"/>
-      <Dep Name="ElementLink006"/>
       <Dep Name="ElementLink005"/>
+      <Dep Name="ElementLink006"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink005" Count="2">
       <Dep Name="Constraint003"/>
@@ -271,9 +270,9 @@ You need to enable LockAngle for this to take effect.
     <Object type="App::FeaturePython" name="Constraints" id="472" revision="30742" ViewType="Gui::ViewProviderLinkPython" file="Constraints.xml" />
     <Object type="App::FeaturePython" name="Elements" id="473" revision="30682" ViewType="Gui::ViewProviderLinkPython" file="Elements.xml" />
     <Object type="Part::FeaturePython" name="Parts" id="474" revision="30680" ViewType="Gui::ViewProviderLinkPython" file="Parts.xml" />
-    <Object type="App::Link" name="Link" id="475" revision="125" file="Link.xml" />
-    <Object type="App::Link" name="Link001" id="476" revision="73766" file="Link001.xml" />
-    <Object type="App::Link" name="Link002" id="477" revision="52081" file="Link002.xml" />
+    <Object type="App::Link" name="Link" id="475" revision="125" Touched="1" file="Link.xml" />
+    <Object type="App::Link" name="Link001" id="476" revision="73766" Touched="1" file="Link001.xml" />
+    <Object type="App::Link" name="Link002" id="477" revision="52081" Touched="1" file="Link002.xml" />
     <Object type="App::Link" name="Link003" id="478" revision="34119" file="Link003.xml" />
     <Object type="App::FeaturePython" name="Constraint" id="479" revision="12" ViewType="Gui::ViewProviderLinkPython" file="Constraint.xml" />
     <Object type="App::FeaturePython" name="ElementLink" id="480" revision="32" ViewType="Gui::ViewProviderLinkPython" file="ElementLink.xml" />
