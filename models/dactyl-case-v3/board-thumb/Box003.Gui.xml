@@ -11,19 +11,19 @@
     <Extension type="PartGui::ViewProviderAttachExtension" name="ViewProviderAttachExtension">
     </Extension>
   </Extensions>
-  <Properties Count="31" TransientCount="0">
+  <Properties Count="32" TransientCount="0">
     <Property name="AngularDeflection" type="App::PropertyAngle" status="1">
-      <Float value="28.5"/>
+      <Float value="28.65"/>
     </Property>
     <Property name="BoundingBox" type="App::PropertyBool" status="1">
       <Bool value="false"/>
     </Property>
     <Property name="Deviation" type="App::PropertyFloatConstraint" status="1">
-      <Float value="0.5"/>
+      <Float value="0.2"/>
     </Property>
     <Property name="DiffuseColor" type="App::PropertyColorList" status="1">
       <ColorList count="1" >
-ffffff00
+cccccc00
       </ColorList>
     </Property>
     <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
@@ -34,6 +34,9 @@ ffffff00
     </Property>
     <Property name="ForceMapColors" type="App::PropertyBool" status="1">
       <Bool value="false"/>
+    </Property>
+    <Property name="IconColor" type="App::PropertyColor" status="1">
+      <PropertyColor value="0"/>
     </Property>
     <Property name="Lighting" type="App::PropertyEnumeration" status="1">
       <Integer value="1"/>
@@ -46,7 +49,7 @@ ffffff00
 19191900
       </ColorList>
     </Property>
-    <Property name="LineMaterial" type="App::PropertyMaterial" status="1">
+    <Property name="LineMaterial" type="App::PropertyMaterial" status="33">
       <PropertyMaterial ambientColor="858993408" diffuseColor="421075200" specularColor="0" emissiveColor="0" shininess="1" transparency="0"/>
     </Property>
     <Property name="LineWidth" type="App::PropertyFloatConstraint" status="1">
@@ -78,7 +81,7 @@ ffffff00
 19191900
       </ColorList>
     </Property>
-    <Property name="PointMaterial" type="App::PropertyMaterial" status="1">
+    <Property name="PointMaterial" type="App::PropertyMaterial" status="33">
       <PropertyMaterial ambientColor="858993408" diffuseColor="421075200" specularColor="0" emissiveColor="0" shininess="1" transparency="0"/>
     </Property>
     <Property name="PointSize" type="App::PropertyFloatConstraint" status="1">
@@ -97,10 +100,10 @@ ffffff00
       <Integer value="0"/>
     </Property>
     <Property name="ShapeColor" type="App::PropertyColor" status="1">
-      <PropertyColor value="4294967040"/>
+      <PropertyColor value="3435973632"/>
     </Property>
-    <Property name="ShapeMaterial" type="App::PropertyMaterial" status="1">
-      <PropertyMaterial ambientColor="858993408" diffuseColor="4294967040" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0"/>
+    <Property name="ShapeMaterial" type="App::PropertyMaterial" status="33">
+      <PropertyMaterial ambientColor="858993408" diffuseColor="3435973632" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0"/>
     </Property>
     <Property name="ShowInTree" type="App::PropertyBool" status="1">
       <Bool value="true"/>
@@ -109,7 +112,7 @@ ffffff00
       <Integer value="0"/>
     </Property>
     <Property name="Visibility" type="App::PropertyBool" status="1">
-      <Bool value="false"/>
+      <Bool value="true"/>
     </Property>
   </Properties>
 </ViewProvider>
