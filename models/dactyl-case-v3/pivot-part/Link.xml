@@ -37,16 +37,16 @@
       <Bool value="false"/>
     </Property>
     <Property name="LinkCopyOnChange" type="App::PropertyEnumeration" status="256">
-      <Integer value="1"/>
+      <Integer value="2"/>
     </Property>
     <Property name="LinkCopyOnChangeGroup" type="App::PropertyLink" status="264">
-      <Link value=""/>
+      <Link value="CopyOnChangeGroup"/>
     </Property>
     <Property name="LinkCopyOnChangeSource" type="App::PropertyXLink" status="264">
-      <XLink file="joint" stamp="2024-05-30T19:58:31Z" name="Body"/>
+      <XLink file="joint" stamp="2024-06-01T15:02:04Z" name="Body"/>
     </Property>
     <Property name="LinkCopyOnChangeTouched" type="App::PropertyBool" status="264">
-      <Bool value="false"/>
+      <Bool value="true"/>
     </Property>
     <Property name="LinkExecute" type="App::PropertyString" status="256">
       <String value=""/>
@@ -58,7 +58,7 @@
       <Bool value="false"/>
     </Property>
     <Property name="LinkedObject" type="App::PropertyXLink" status="256">
-      <XLink file="joint" stamp="2024-05-30T19:58:31Z" name="Body"/>
+      <XLink file="" stamp="" name="Body006"/>
     </Property>
     <Property name="Matrix" type="App::PropertyMatrix" status="67109120">
       <PropertyMatrix a11="1" a12="0" a13="0" a14="0" a21="0" a22="1" a23="0" a24="0" a31="0" a32="0" a33="1" a34="0" a41="0" a42="0" a43="0" a44="1"/>
@@ -91,10 +91,11 @@
       <Integer value="23"/>
     </Property>
     <Property name="Variant" type="App::PropertyEnumeration" group="Configuration (Joint Setup)" attr="0" ro="0" hide="0" doc="" status="2162688">
-      <Integer value="0" CustomEnum="true"/>
-      <CustomEnumList count="2">
+      <Integer value="2" CustomEnum="true"/>
+      <CustomEnumList count="3">
 <Enum value="basic"/>
 <Enum value="original_test"/>
+<Enum value="short"/>
       </CustomEnumList>
     </Property>
     <Property name="Visibility" type="App::PropertyBool" status="648">

@@ -142,7 +142,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="11" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-9.860761315262648e-32" StartY="2.25" StartZ="0" EndX="-30" EndY="2.25" EndZ="0"/>
+          <LineSegment StartX="-0" StartY="2.25" StartZ="0" EndX="-30" EndY="2.25" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="12" migrated="1">
@@ -230,15 +230,15 @@ Curves 8
 1 4.5 4.5 0 0 -1 0 
 1 4.5 -4.5 0 -1 0 0 
 1 -40.799999999999997 -4.5 0 0 1 0 
-2 0 0 0 0 0 1 1 0 0 0 1 0 2.25
+2 0 0 0 0 0 1 1 0 -0 -0 1 0 2.25
 1 -9.8607613152626476e-32 2.25 0 -1 0 0 
-2 -30 0 0 0 0 1 1 0 0 0 1 0 2.25
+2 -30 0 0 0 0 1 1 0 -0 -0 1 0 2.25
 1 -30 -2.25 0 1 0 0 
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 2
-2 0 0 0 -0 -0 -1 1 0 0 0 1 0 2.25
-2 -30 0 0 -0 -0 -1 1 0 0 0 1 0 2.25
+2 0 0 0 -0 -0 -1 1 0 0 -0 1 -0 2.25
+2 -30 0 0 -0 -0 -1 1 0 0 -0 1 -0 2.25
 Triangulations 0
 
 TShapes 19
@@ -430,7 +430,7 @@ EndMap
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="649">
+    <Property name="Visibility" type="App::PropertyBool" status="648">
       <Bool value="false"/>
     </Property>
   </Properties>

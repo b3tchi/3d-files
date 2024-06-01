@@ -50,15 +50,15 @@
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 13
+Locations 14
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
 1
-              1               0               0 -132.700000000001 
-              0               1               0       5.161e-13 
-              0               0               1 7.39999999999907 
+              1               0               0 -110.799991730167 
+              0               1               0 -7.3595139904676e-07 
+              0               0               1 7.39999999999999 
 1
               1               0               0               0 
               0               1               0               0 
@@ -95,8 +95,12 @@ Locations 13
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
-2  3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 0
-2  11 -1 10 -1 9 -1 8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 0
+2  12 -1 11 -1 10 -1 9 -1 8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
 Curve2ds 0
 Curves 1
 2 0 0 0 0 0 1 1 0 -0 -0 1 0 2
@@ -119,11 +123,11 @@ Ed
 0
 
 0101100
-+4 13 -4 13 *
++4 14 -4 14 *
 Co
 
 0100000
-+3 12 *
++3 13 *
 Co
 
 1100000
@@ -134,13 +138,13 @@ Co
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="2">
 <![CDATA[
-34 PostfixCount 2
+18 PostfixCount 2
 Edge
 Vertex
 
 MapCount 1
 
-ElementMap 1 34 2
+ElementMap 1 18 2
 
 Edge
 
@@ -148,7 +152,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#d7;:X;:He34:3,E.0 0
+;#d4;:X;:He34:3,E.0 0
 
 Vertex
 
@@ -156,14 +160,14 @@ ChildCount 0
 
 NameCount 2
 0
-;#d5;:X;:He34:3,V.0 0
+;#d2;:X;:He34:3,V.0 0
 
 EndMap
 ]]>
       </ElementMap2>
     </Property>
-    <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="177"/>
+    <Property name="TreeRank" type="App::PropertyInteger" status="2185">
+      <Integer value="178"/>
     </Property>
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>

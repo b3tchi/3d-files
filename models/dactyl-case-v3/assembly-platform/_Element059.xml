@@ -50,7 +50,7 @@
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 14
+Locations 16
 1
               1               0               0               0 
               0               1               0               0 
@@ -67,14 +67,19 @@ Locations 14
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
+2  3 1 4 1 0
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
-2  4 1 5 1 0
-2  5 -1 4 -1 0
-2  3 -1 5 -1 4 -1 0
-2  3 -1 0
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  6 1 7 1 0
+2  7 -1 6 -1 0
+2  4 -1 3 -1 7 -1 6 -1 0
+2  4 -1 3 -1 0
 1
               1               0               0               0 
               0               1               0               0 
@@ -83,9 +88,9 @@ Locations 14
               1               0               0              -0 
               0               1               0              -0 
               0               0               1            -0.5 
-2  4 1 5 1 10 1 11 1 0
-2  11 -1 10 -1 5 -1 4 -1 0
-2  3 -1 11 -1 10 -1 5 -1 4 -1 0
+2  6 1 7 1 12 1 13 1 0
+2  13 -1 12 -1 7 -1 6 -1 0
+2  4 -1 3 -1 13 -1 12 -1 7 -1 6 -1 0
 Curve2ds 4
 1 0 0 1 0 
 1 62.600000000000001 0 0 -1 
@@ -120,11 +125,11 @@ Ve
 Ed
  1e-07 1 1 0
 1  1 0 0 62.6
-2  1 1 7 0 62.6
+2  1 1 9 0 62.6
 0
 
 0101000
-+12 8 -11 8 *
++12 10 -11 10 *
 Ve
 1.5e-07
 -102.4 -56.6 2.2
@@ -139,7 +144,7 @@ Ed
 0
 
 0101000
-+11 9 -9 9 *
++11 11 -9 11 *
 Ve
 1.50000001776357e-07
 -102.4 6 2.2
@@ -150,11 +155,11 @@ Ve
 Ed
  1e-07 1 1 0
 1  3 0 0 62.6
-2  3 1 13 0 62.6
+2  3 1 15 0 62.6
 0
 
 0101000
-+7 14 -9 14 *
++7 16 -9 16 *
 Ed
  1.50000001776357e-07 1 1 0
 1  4 0 0 2.2
@@ -162,11 +167,11 @@ Ed
 0
 
 0101000
-+12 9 -7 9 *
++12 11 -7 11 *
 Wi
 
 0101100
--10 6 -8 0 +6 12 +5 0 *
+-10 8 -8 0 +6 14 +5 0 *
 Fa
 0  1e-07 1 0
 
@@ -175,10 +180,10 @@ Fa
 Co
 
 0100000
--3 3 *
+-3 5 *
 Co
 
-0100000
+1100000
 +2 2 *
 
 +1 1 ]]>
@@ -186,14 +191,14 @@ Co
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="9">
 <![CDATA[
-36 PostfixCount 3
+20 PostfixCount 3
 Edge
 Face
 Vertex
 
 MapCount 1
 
-ElementMap 1 36 3
+ElementMap 1 20 3
 
 Edge
 
@@ -201,10 +206,10 @@ ChildCount 0
 
 NameCount 5
 0
-;#107;:X;:H23:3,E.0 0
-;#108;:X;:H23:3,E.0 0
-;#109;:X;:H23:3,E.0 0
-;#10a;:X;:H23:3,E.0 0
+;#e7;:X;:H23:3,E.0 0
+;#e8;:X;:H23:3,E.0 0
+;#e9;:X;:H23:3,E.0 0
+;#ea;:X;:H23:3,E.0 0
 
 Face
 
@@ -212,7 +217,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#10c;:X;:H23:3,F.0 0
+;#ec;:X;:H23:3,F.0 0
 
 Vertex
 
@@ -220,17 +225,17 @@ ChildCount 0
 
 NameCount 5
 0
-;#102;:X;:H23:3,V.0 0
-;#103;:X;:H23:3,V.0 0
-;#104;:X;:H23:3,V.0 0
-;#105;:X;:H23:3,V.0 0
+;#e2;:X;:H23:3,V.0 0
+;#e3;:X;:H23:3,V.0 0
+;#e4;:X;:H23:3,V.0 0
+;#e5;:X;:H23:3,V.0 0
 
 EndMap
 ]]>
       </ElementMap2>
     </Property>
-    <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="183"/>
+    <Property name="TreeRank" type="App::PropertyInteger" status="2185">
+      <Integer value="184"/>
     </Property>
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
@@ -242,7 +247,7 @@ EndMap
       <Integer value="0"/>
     </Property>
     <Property name="_LinkVersion" type="App::PropertyInteger" status="83886080">
-      <Integer value="0"/>
+      <Integer value="1"/>
     </Property>
     <Property name="_Parent" type="App::PropertyLinkHidden" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097162">
       <Link value="Elements"/>
