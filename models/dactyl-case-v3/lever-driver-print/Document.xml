@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+ FreeCAD Document, see http://www.freecadweb.org for more information...
+-->
+<Document SchemaVersion="4" ProgramVersion="2024.408R14555 (Git shallow)" FileVersion="2" Uid="c5668746-f931-434c-87d1-1a9e3f339ad2" StringHasher="1">
+  <StringHasher saveall="0" threshold="0" count="0" new="1"/>
+  <StringHasher2  count="1">
+<![CDATA[
+-1.0 0:Shape cache
+]]>
+  </StringHasher2>
+  <Properties Count="21" TransientCount="3">
+    <_Property name="FileName" type="App::PropertyString" status="50331649"/>
+    <_Property name="Tip" type="App::PropertyLink" status="33554433"/>
+    <_Property name="TransientDir" type="App::PropertyString" status="50331649"/>
+    <Property name="Comment" type="App::PropertyString">
+      <String value=""/>
+    </Property>
+    <Property name="Company" type="App::PropertyString">
+      <String value=""/>
+    </Property>
+    <Property name="CreatedBy" type="App::PropertyString">
+      <String value=""/>
+    </Property>
+    <Property name="CreationDate" type="App::PropertyString" status="16777217">
+      <String value="2024-06-02T20:57:18Z"/>
+    </Property>
+    <Property name="ForceXML" type="App::PropertyInteger" status="1">
+      <Integer value="3"/>
+    </Property>
+    <Property name="Id" type="App::PropertyString">
+      <String value=""/>
+    </Property>
+    <Property name="Label" type="App::PropertyString" status="1">
+      <String value="lever-driver-print"/>
+    </Property>
+    <Property name="LastModifiedBy" type="App::PropertyString">
+      <String value=""/>
+    </Property>
+    <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
+      <String value="2024-06-02T21:01:35Z"/>
+    </Property>
+    <Property name="License" type="App::PropertyString" status="1">
+      <String value="All rights reserved"/>
+    </Property>
+    <Property name="LicenseURL" type="App::PropertyString" status="1">
+      <String value="https://en.wikipedia.org/wiki/All_rights_reserved"/>
+    </Property>
+    <Property name="Material" type="App::PropertyMap">
+      <Map count="0">
+      </Map>
+    </Property>
+    <Property name="Meta" type="App::PropertyMap">
+      <Map count="0">
+      </Map>
+    </Property>
+    <Property name="PreferBinary" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+    <Property name="SaveThumbnail" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+    <Property name="ShowHidden" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+    <Property name="SplitXML" type="App::PropertyBool" status="1">
+      <Bool value="true"/>
+    </Property>
+    <Property name="ThumbnailFile" type="App::PropertyFile">
+      <String value=""/>
+    </Property>
+    <Property name="TipName" type="App::PropertyString" status="83886080">
+      <String value=""/>
+    </Property>
+    <Property name="Uid" type="App::PropertyUUID" status="16777217">
+      <Uuid value="c5668746-f931-434c-87d1-1a9e3f339ad2"/>
+    </Property>
+    <Property name="UseHasher" type="App::PropertyBool" status="67108865">
+      <Bool value="true"/>
+    </Property>
+  </Properties>
+  <Objects Count="15" Dependencies="1">
+    <ObjectDeps Name="Link" Count="0"/>
+    <ObjectDeps Name="Link001" Count="0"/>
+    <ObjectDeps Name="Body" Count="4">
+      <Dep Name="Boolean"/>
+      <Dep Name="Origin"/>
+      <Dep Name="Binder001"/>
+      <Dep Name="Binder"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Origin" Count="6">
+      <Dep Name="Y_Axis"/>
+      <Dep Name="X_Axis"/>
+      <Dep Name="Z_Axis"/>
+      <Dep Name="XY_Plane"/>
+      <Dep Name="XZ_Plane"/>
+      <Dep Name="YZ_Plane"/>
+    </ObjectDeps>
+    <ObjectDeps Name="X_Axis" Count="0"/>
+    <ObjectDeps Name="Y_Axis" Count="0"/>
+    <ObjectDeps Name="Z_Axis" Count="0"/>
+    <ObjectDeps Name="XY_Plane" Count="0"/>
+    <ObjectDeps Name="XZ_Plane" Count="0"/>
+    <ObjectDeps Name="YZ_Plane" Count="0"/>
+    <ObjectDeps Name="Binder" Count="2">
+      <Dep Name="Body"/>
+      <Dep Name="Link"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Binder001" Count="2">
+      <Dep Name="Body"/>
+      <Dep Name="Link001"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Boolean" Count="3">
+      <Dep Name="Body"/>
+      <Dep Name="Reference001"/>
+      <Dep Name="Reference"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Reference" Count="2">
+      <Dep Name="Body"/>
+      <Dep Name="Binder001"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Reference001" Count="2">
+      <Dep Name="Body"/>
+      <Dep Name="Binder"/>
+    </ObjectDeps>
+    <Object type="App::Link" name="Link" id="3132" revision="4" file="Link.xml" />
+    <Object type="App::Link" name="Link001" id="3133" revision="4" file="Link001.xml" />
+    <Object type="PartDesign::Body" name="Body" id="3134" revision="21" file="Body.xml" />
+    <Object type="App::Origin" name="Origin" id="3135" revision="0" file="Origin.xml" />
+    <Object type="App::Line" name="X_Axis" id="3136" revision="1" file="X_Axis.xml" />
+    <Object type="App::Line" name="Y_Axis" id="3137" revision="2" file="Y_Axis.xml" />
+    <Object type="App::Line" name="Z_Axis" id="3138" revision="2" file="Z_Axis.xml" />
+    <Object type="App::Plane" name="XY_Plane" id="3139" revision="1" file="XY_Plane.xml" />
+    <Object type="App::Plane" name="XZ_Plane" id="3140" revision="2" file="XZ_Plane.xml" />
+    <Object type="App::Plane" name="YZ_Plane" id="3141" revision="2" file="YZ_Plane.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder" id="3142" revision="90" file="Binder.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder001" id="3143" revision="7" file="Binder001.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean" id="3144" revision="23" file="Boolean.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Reference" id="3145" revision="7" file="Reference.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Reference001" id="3146" revision="15" file="Reference001.xml" />
+  </Objects>
+  <ObjectData Count="0">
+  </ObjectData>
+</Document>

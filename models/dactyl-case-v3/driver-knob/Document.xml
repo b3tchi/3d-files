@@ -4,7 +4,7 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.408R14555 (Git shallow)" FileVersion="2" Uid="66388d1f-7278-4391-afa2-bd9d84e3852b" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="31">
+  <StringHasher2  count="36">
 <![CDATA[
 -25.0 0:;:H-58c,V
 -1.c.1 Vertex2
@@ -34,9 +34,14 @@
 -2.c.-17 Edge1
 -3.8.-5 Edge1 ;:G#36;FUS;:H58b:a,V
 -1.8.1 Face3 ;:G2#37;FUS;:H-58c:b,E
--1.0 0:(Face3;:M3#48;FUS;:H-58d:b,F|Face3;:M;FUS;:H-58d:7,F)
--1.8.23.1a.19.17.13.1 Face3 ;:M2#42;FUS;:H-58d:b,F
--1.0 0:Shape cache
+-3.0 0:Shape cache
+-23.c.44 Edge2
+-1.c.-2 Edge2
+-1.0 0:(#3f;K-1;:H58c:4,F)
+-6.0 0:;:M;FUS;:H58b:7,V
+-1.c.1 Vertex1
+-2.c.-62 Vertex1
+-c.0 0:(Face3;K-1;:H-594:4,F)
 ]]>
   </StringHasher2>
   <Properties Count="21" TransientCount="3">
@@ -68,7 +73,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-06-01T22:54:35Z"/>
+      <String value="2024-06-02T18:26:13Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -111,10 +116,10 @@
   </Properties>
   <Objects Count="11" Dependencies="1">
     <ObjectDeps Name="Body" Count="4">
-      <Dep Name="Cone"/>
       <Dep Name="Cylinder001"/>
       <Dep Name="Cylinder002"/>
       <Dep Name="Origin"/>
+      <Dep Name="Cylinder"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
       <Dep Name="X_Axis"/>
@@ -139,12 +144,12 @@
       <Dep Name="Cylinder001"/>
       <Dep Name="XY_Plane"/>
     </ObjectDeps>
-    <ObjectDeps Name="Cone" Count="3">
+    <ObjectDeps Name="Cylinder" Count="3">
       <Dep Name="Body"/>
       <Dep Name="Cylinder002"/>
       <Dep Name="XY_Plane"/>
     </ObjectDeps>
-    <Object type="PartDesign::Body" name="Body" id="1409" revision="60" file="Body.xml" />
+    <Object type="PartDesign::Body" name="Body" id="1409" revision="73" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="1410" revision="0" file="Origin.xml" />
     <Object type="App::Line" name="X_Axis" id="1411" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="1412" revision="2" file="Y_Axis.xml" />
@@ -154,7 +159,7 @@
     <Object type="App::Plane" name="YZ_Plane" id="1416" revision="2" file="YZ_Plane.xml" />
     <Object type="PartDesign::AdditiveCylinder" name="Cylinder001" id="1419" revision="40" file="Cylinder001.xml" />
     <Object type="PartDesign::AdditiveCylinder" name="Cylinder002" id="1420" revision="26" file="Cylinder002.xml" />
-    <Object type="PartDesign::AdditiveCone" name="Cone" id="1421" revision="71" file="Cone.xml" />
+    <Object type="PartDesign::AdditiveCylinder" name="Cylinder" id="1428" revision="15" file="Cylinder.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>
