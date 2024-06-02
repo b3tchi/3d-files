@@ -33,7 +33,7 @@
       <Bool value="true"/>
     </Property>
     <Property name="cells" type="Spreadsheet::PropertySheet" status="67108864">
-      <Cells Count="51">
+      <Cells Count="64">
         <Cell style="bold" address="A1"/>
         <Cell style="bold" address="B1" content="distance"/>
         <Cell style="bold" address="C1" content="iterations"/>
@@ -91,6 +91,19 @@
         <Cell backgroundColor="#dab860ff" address="K4" content="10"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L4" content="=I4 == 1 ? K4 / 2 : 0"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M4" content="=I4 == 1 ? K4 - 2 : (I4 == 2 ? K4 - 1 : 0)"/>
+        <Cell address="A5" content="short"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="B5" content="=J5 / K5 * M5 - 0.1"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="C5" content="=L5"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="D5" content="=J5 / K5 - 0.2"/>
+        <Cell backgroundColor="#dab860ff" address="E5" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="F5" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="G5" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="H5" content="shorter version"/>
+        <Cell backgroundColor="#dab860ff" address="I5" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="J5" content="48"/>
+        <Cell backgroundColor="#dab860ff" address="K5" content="8"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L5" content="=I5 == 1 ? K5 / 2 : 0"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M5" content="=I5 == 1 ? K5 - 2 : (I5 == 2 ? K5 - 1 : 0)"/>
       </Cells>
     </Property>
     <Property name="columnWidths" type="Spreadsheet::PropertyColumnWidths" status="218103808">

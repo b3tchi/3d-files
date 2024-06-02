@@ -8,31 +8,92 @@
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
 <Expand  count="1">
   <Expand name="Assembly" count="2">
-    <Expand name="Elements"/>
+    <Expand name="Constraints" count="6">
+      <Expand name="Constraint015"/>
+      <Expand name="Constraint018"/>
+      <Expand name="Constraint019"/>
+      <Expand name="Constraint020"/>
+      <Expand name="Constraint021"/>
+      <Expand name="Constraint031"/>
+    </Expand>
     <Expand name="Parts" count="1">
-      <Expand name="Link"/>
+      <Expand name="Link006"/>
     </Expand>
   </Expand>
 </Expand>
-  <Camera extra="0" id="38" binding="0" view3d="1">
+  <Camera extra="0" id="6" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position 97.2733 282.12122 247.91562
-  orientation -0.14146127 -0.58298451 -0.80007362  3.5250957
-  nearDistance -12.751564
-  farDistance 328.7934
+  position -81.50444 9.3264427 -2.6826897
+  orientation 0.26984468 -0.53953439 -0.79755026  2.3824966
+  nearDistance -74.704155
+  farDistance 119.90383
   aspectRatio 1
-  focalDistance 131.23856
-  height 305.46484
+  focalDistance 67.864395
+  height 147.77061
 
 }
-## overrideMode: As Is]]>
+## overrideMode: Flat Lines]]>
   </Camera>
-  <View3D id="38"><![CDATA[
-  <Properties Count="3" TransientCount="0">
+  <View3D id="6"><![CDATA[
+  <Properties Count="21" TransientCount="0">
     <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
-      <Integer value="0"/>
+      <Integer value="6"/>
+    </Property>
+    <Property name="HiddenLine_Background" type="App::PropertyColor" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <PropertyColor value="4294967295"/>
+    </Property>
+    <Property name="HiddenLine_BackgroundOverride" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <Bool value="true"/>
+    </Property>
+    <Property name="HiddenLine_FaceColor" type="App::PropertyColor" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <PropertyColor value="4294967295"/>
+    </Property>
+    <Property name="HiddenLine_FaceColorOverride" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <Bool value="true"/>
+    </Property>
+    <Property name="HiddenLine_HideFace" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097152">
+      <Bool value="false"/>
+    </Property>
+    <Property name="HiddenLine_HideSeam" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <Bool value="true"/>
+    </Property>
+    <Property name="HiddenLine_HideVertex" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <Bool value="true"/>
+    </Property>
+    <Property name="HiddenLine_LineColor" type="App::PropertyColor" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <PropertyColor value="255"/>
+    </Property>
+    <Property name="HiddenLine_LineColorOverride" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <Bool value="true"/>
+    </Property>
+    <Property name="HiddenLine_LineWidth" type="App::PropertyFloatConstraint" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <Float value="1.5"/>
+    </Property>
+    <Property name="HiddenLine_OutlineWidth" type="App::PropertyFloatConstraint" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097152">
+      <Float value="0"/>
+    </Property>
+    <Property name="HiddenLine_PerFaceOutline" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097152">
+      <Bool value="false"/>
+    </Property>
+    <Property name="HiddenLine_PointSize" type="App::PropertyFloatConstraint" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <Float value="2"/>
+    </Property>
+    <Property name="HiddenLine_SceneOutline" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097152">
+      <Bool value="false"/>
+    </Property>
+    <Property name="HiddenLine_Shaded" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097152">
+      <Bool value="false"/>
+    </Property>
+    <Property name="HiddenLine_ShowOutline" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <Bool value="true"/>
+    </Property>
+    <Property name="HiddenLine_Transparency" type="App::PropertyFloatConstraint" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <Float value="0.4"/>
+    </Property>
+    <Property name="HiddenLine_TransparencyOverride" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <Bool value="true"/>
     </Property>
     <Property name="ShowNaviCube" type="App::PropertyBool" status="1">
       <Bool value="true"/>

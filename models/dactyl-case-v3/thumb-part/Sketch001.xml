@@ -27,15 +27,9 @@
       </LinkSub>
     </Property>
     <Property name="Constraints" type="Sketcher::PropertyConstraintList">
-      <ConstraintList count="8">
-        <Constrain Name="" Type="1" Value="0" First="2" FirstPos="1" Second="1" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-        <Constrain Name="" Type="1" Value="0" First="2" FirstPos="2" Second="0" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-        <Constrain Name="" Type="2" Value="0" First="2" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-        <Constrain Name="" Type="7" Value="2.05" First="-1" FirstPos="1" Second="0" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="4" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-        <Constrain Name="" Type="7" Value="38.55" First="1" FirstPos="3" Second="-1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="4" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-        <Constrain Name="" Type="8" Value="1.85" First="-1" FirstPos="1" Second="0" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="2.00630521774292" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-        <Constrain Name="" Type="12" Value="0" First="1" FirstPos="0" Second="0" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-        <Constrain Name="" Type="18" Value="2.1" First="1" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="1.531572699546814" LabelPosition="0.2617993950843811" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+      <ConstraintList count="2">
+        <Constrain Name="" Type="8" Value="2.1" First="-1" FirstPos="1" Second="0" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="2.00630521774292" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="7" Value="9.34" First="0" FirstPos="3" Second="-1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="16.40142059326172" LabelPosition="-0.6735191345214844" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
       </ConstraintList>
     </Property>
     <Property name="Exports" type="App::PropertyLinkListHidden" status="67108864">
@@ -43,18 +37,10 @@
       </LinkList>
     </Property>
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-      <ExpressionEngine count="3" cdata="1">
+      <ExpressionEngine count="1" cdata="1">
         <Expressions><![CDATA[
-0:Constraints[3]
-0:<<sh>>.height / 2 + 0.2
-0:
-
-0:Constraints[4]
-0:<<sh>>.width + <<sh>>.height / 2 + 0.2
-0:
-
-0:Constraints[5]
-0:<<sh>>.height / 2
+0:Constraints[1]
+0:9.5 - 0.16 mm
 0:
 
 ]]>
@@ -95,30 +81,16 @@
       <Integer value="1"/>
     </Property>
     <Property name="FullyConstrained" type="App::PropertyBool" status="218103808">
-      <Bool value="true"/>
+      <Bool value="false"/>
     </Property>
     <Property name="Geometry" type="Part::PropertyGeometryList" status="8192">
-      <GeometryList count="3">
+      <GeometryList count="1">
         <Geometry type="Part::GeomCircle" id="1" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="1" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <Circle CenterX="2.050000000000004" CenterY="1.85" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1.05"/>
+          <Circle CenterX="-9.34" CenterY="2.1" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1.05"/>
           <Construction value="0"/>
-        </Geometry>
-        <Geometry type="Part::GeomCircle" id="2" migrated="1">
-          <GeoExtensions count="1">
-            <GeoExtension type="Sketcher::SketchGeometryExtension" id="2" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
-          </GeoExtensions>
-          <Circle CenterX="-38.55" CenterY="1.85" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1.05"/>
-          <Construction value="0"/>
-        </Geometry>
-        <Geometry type="Part::GeomLineSegment" id="3" migrated="1">
-          <GeoExtensions count="1">
-            <GeoExtension type="Sketcher::SketchGeometryExtension" id="3" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
-          </GeoExtensions>
-          <LineSegment StartX="-38.55" StartY="1.85" StartZ="0" EndX="2.050000000000004" EndY="1.85" EndZ="0"/>
-          <Construction value="1"/>
         </Geometry>
       </GeometryList>
     </Property>
@@ -148,7 +120,7 @@ TShapes 0
       <Bool value="false"/>
     </Property>
     <Property name="Label" type="App::PropertyString" status="134217728">
-      <String value="Sketch001"/>
+      <String value="joint-points"/>
     </Property>
     <Property name="Label2" type="App::PropertyString" status="128">
       <String value=""/>
@@ -179,18 +151,17 @@ Locations 1
               0 -4.44089209850063e-16              -1               0 
               0               1 -4.44089209850063e-16               0 
 Curve2ds 0
-Curves 2
-2 2.0500000000000043 1.8500000000000001 0 0 0 1 1 0 0 0 1 0 1.05
-2 -38.550000000000004 1.8500000000000001 0 0 0 1 1 0 0 0 1 0 1.05
+Curves 1
+2 -9.3399999999999999 2.1000000000000001 0 0 0 1 1 0 0 0 1 0 1.05
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
 Triangulations 0
 
-TShapes 7
+TShapes 3
 Ve
 1e-07
-3.1 1.85 0
+-8.29 2.1 0
 0 0
 
 0101101
@@ -201,65 +172,41 @@ Ed
 0
 
 0101100
-+7 0 -7 0 *
++3 0 -3 0 *
 Wi
 
-0101100
-+6 0 *
-Ve
-1e-07
--37.5 1.85 0
-0 0
-
-0101101
-*
-Ed
- 1e-07 1 1 0
-1  2 0 0 6.28318530717959
-0
-
-0101100
-+4 0 -4 0 *
-Wi
-
-0101100
-+3 0 *
-Co
-
-1100000
-+5 0 +2 0 *
+1101100
++2 0 *
 
 +1 1 ]]>
       </Part>
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
-      <ElementMap2 count="4">
+      <ElementMap2 count="2">
 <![CDATA[
-5 PostfixCount 3
+11 PostfixCount 3
 Edge
 Vertex
 ;SKT
 
 MapCount 1
 
-ElementMap 1 5 2
+ElementMap 1 11 2
 
 Edge
 
 ChildCount 0
 
-NameCount 3
+NameCount 2
 0
 ;g1.3 0
-;g2.3 0
 
 Vertex
 
 ChildCount 0
 
-NameCount 3
+NameCount 2
 0
 ;g1v1.3 0
-;g2v1.3 0
 
 EndMap
 ]]>
@@ -271,13 +218,13 @@ EndMap
       </LinkSubList>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="13"/>
+      <Integer value="29"/>
     </Property>
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
     <Property name="Visibility" type="App::PropertyBool" status="648">
-      <Bool value="true"/>
+      <Bool value="false"/>
     </Property>
   </Properties>
 </Object>
