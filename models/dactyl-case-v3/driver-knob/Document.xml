@@ -43,7 +43,7 @@
     <_Property name="FileName" type="App::PropertyString" status="50331649"/>
     <_Property name="Tip" type="App::PropertyLink" status="33554433"/>
     <_Property name="TransientDir" type="App::PropertyString" status="50331649"/>
-    <Property name="Comment" type="App::PropertyString">
+    <Property name="Comment" type="App::PropertyString" status="1">
       <String value=""/>
     </Property>
     <Property name="Company" type="App::PropertyString">
@@ -68,7 +68,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-06-01T22:03:16Z"/>
+      <String value="2024-06-01T22:54:35Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -109,20 +109,19 @@
       <Bool value="true"/>
     </Property>
   </Properties>
-  <Objects Count="12" Dependencies="1">
-    <ObjectDeps Name="Body" Count="5">
-      <Dep Name="Origin"/>
+  <Objects Count="11" Dependencies="1">
+    <ObjectDeps Name="Body" Count="4">
+      <Dep Name="Cone"/>
       <Dep Name="Cylinder001"/>
       <Dep Name="Cylinder002"/>
-      <Dep Name="Cone"/>
-      <Dep Name="DatumLine"/>
+      <Dep Name="Origin"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
-      <Dep Name="XY_Plane"/>
-      <Dep Name="YZ_Plane"/>
       <Dep Name="X_Axis"/>
+      <Dep Name="YZ_Plane"/>
       <Dep Name="Y_Axis"/>
       <Dep Name="XZ_Plane"/>
+      <Dep Name="XY_Plane"/>
       <Dep Name="Z_Axis"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
@@ -136,8 +135,8 @@
       <Dep Name="XY_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="Cylinder002" Count="3">
-      <Dep Name="Cylinder001"/>
       <Dep Name="Body"/>
+      <Dep Name="Cylinder001"/>
       <Dep Name="XY_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="Cone" Count="3">
@@ -145,10 +144,7 @@
       <Dep Name="Cylinder002"/>
       <Dep Name="XY_Plane"/>
     </ObjectDeps>
-    <ObjectDeps Name="DatumLine" Count="1">
-      <Dep Name="Cone"/>
-    </ObjectDeps>
-    <Object type="PartDesign::Body" name="Body" id="1409" revision="45" file="Body.xml" />
+    <Object type="PartDesign::Body" name="Body" id="1409" revision="60" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="1410" revision="0" file="Origin.xml" />
     <Object type="App::Line" name="X_Axis" id="1411" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="1412" revision="2" file="Y_Axis.xml" />
@@ -159,7 +155,6 @@
     <Object type="PartDesign::AdditiveCylinder" name="Cylinder001" id="1419" revision="40" file="Cylinder001.xml" />
     <Object type="PartDesign::AdditiveCylinder" name="Cylinder002" id="1420" revision="26" file="Cylinder002.xml" />
     <Object type="PartDesign::AdditiveCone" name="Cone" id="1421" revision="71" file="Cone.xml" />
-    <Object type="PartDesign::Line" name="DatumLine" id="1422" revision="7" file="DatumLine.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>
