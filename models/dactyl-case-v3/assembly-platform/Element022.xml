@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!-- FreeCAD DocumentObject -->
 <Document SchemaVersion="4" FileVersion="2">
-<Object name="Element015" Extensions="True">
+<Object name="Element022" Extensions="True">
   <Extensions Count="1">
     <Extension type="App::LinkBaseExtensionPython" name="LinkBaseExtensionPython">
     </Extension>
@@ -25,7 +25,7 @@
       <Bool value="false"/>
     </Property>
     <Property name="Label" type="App::PropertyString" status="134217728">
-      <String value="Element015"/>
+      <String value="Element022"/>
     </Property>
     <Property name="Label2" type="App::PropertyString" status="128">
       <String value=""/>
@@ -34,7 +34,7 @@
       <Bool value="true"/>
     </Property>
     <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Binder001" sub="Edge101" shadow=";#1572;:H13a4,E;:H13a6,E;:X;:H122f:c,E;:H70d:17,E.Edge101"/>
+      <XLink file="" stamp="" name="Binder002" sub="Edge118" shadow=";#13d6;:H1386,E;:H1388,E;:X;:H1364:c,E;:H70c:17,E.Edge118"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -50,15 +50,15 @@
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 20
+Locations 23
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
 1
-              1 -7.9533814200982e-15 -3.78194350208975e-15 1.28110614325377e-11 
-7.95338142009825e-15               1 1.43504047498384e-14 0.0250000000257416 
-3.78194350208964e-15 -1.43504047498384e-14               1 -6.59543411586799e-13 
+0.130587903184493 -0.437390981910594 -0.889739247468136 -57.2564112052394 
+0.437391963350952 0.83078600098966 -0.344213438081095 -41.4419200278538 
+0.889738764996713 -0.344214685193551 0.299801902194145 104.228133590001 
 1
               1               0               0               0 
               0               1               0               0 
@@ -68,9 +68,9 @@ Locations 20
               0 -4.44089209850063e-16              -1               0 
               0               1 -4.44089209850063e-16               0 
 1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
+              1               0               0              -0 
+              0               1               0             5.8 
+              0               0               1 2.57571741713036e-15 
 1
               1               0               0               0 
               0               1               0               0 
@@ -92,21 +92,13 @@ Locations 20
               0               1               0               0 
               0               0               1               0 
 1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
+              1               0               0              -0 
+              0               1               0              -0 
+              0               0               1              -0 
 1
-              1               0 -1.03403659635882e-18               0 
-              0               1               0               0 
-1.03403659635882e-18               0               1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-1
-             -1               0 1.22464679914735e-16             -73 
-              0               1               0             -60 
--1.22464679914735e-16               0              -1            1.85 
+              1               0               0 7.97140131680862e-15 
+              0               1               0 23.9333333333333 
+              0               0               1 -7.97140131680862e-15 
 1
               1               0               0               0 
               0               1               0               0 
@@ -116,18 +108,38 @@ Locations 20
               0               1               0               0 
               0               0               1               0 
 1
-              1               0               0 -3.09999173021907 
-              0               1               0 6.47499926410568 
-              0               0               1 3.70000000000063 
-1
-              1 6.29878440980249e-31               0               0 
--6.29878440980249e-31               1               0               0 
+              1               0               0               0 
+              0               1               0               0 
               0               0               1               0 
-2  3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 0
-2  18 -1 17 -1 16 -1 15 -1 14 -1 13 -1 12 -1 11 -1 10 -1 9 -1 8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+             -1 -1.22464679914735e-16               0             -31 
+1.22464679914735e-16              -1               0               0 
+              0               0               1            1.85 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+0.780178740515846 0.360811480109956 0.511014881063136 -72.300163367579 
+-0.301829020074661 0.932638770275428 -0.197697159362262 28.185326472251 
+-0.547923694950199 -4.59820464949579e-14 0.836528316623007 -17.1200358260944 
+1
+              1 -7.18902715618714e-17 6.97846877333054e-17               0 
+7.18902715618714e-17               1 7.29573231645842e-17 7.105427357601e-15 
+-6.97846877333054e-17 -7.29573231645842e-17               1 -2.8421709430404e-14 
+2  3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 0
+2  21 -1 20 -1 19 -1 18 -1 17 -1 16 -1 15 -1 14 -1 13 -1 12 -1 11 -1 10 -1 9 -1 8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
 Curve2ds 0
 Curves 1
-2 2.0499999999999998 9.9999999999999998e-17 0 0 0 1 1 0 0 0 1 0 1.05
+2 2.0499999999999998 5.4027101302882546e-17 0 0 0 1 1 0 0 0 1 0 1.05
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -136,7 +148,7 @@ Triangulations 0
 TShapes 4
 Ve
 1e-07
--79.1999917302191 -53.5250007358943 5.55000000000063
+-108.687008897805 10.3814968757874 3.11173955746131
 0 0
 
 0101101
@@ -147,11 +159,11 @@ Ed
 0
 
 0101100
-+4 20 -4 20 *
++4 23 -4 23 *
 Co
 
 0100000
--3 19 *
++3 22 *
 Co
 
 0100000
@@ -162,7 +174,7 @@ Co
       <ElementMap/>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="258"/>
+      <Integer value="292"/>
     </Property>
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
@@ -174,7 +186,7 @@ Co
       <Integer value="0"/>
     </Property>
     <Property name="_LinkVersion" type="App::PropertyInteger" status="83886080">
-      <Integer value="1"/>
+      <Integer value="0"/>
     </Property>
     <Property name="_Parent" type="App::PropertyLinkHidden" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097162">
       <Link value="Elements"/>

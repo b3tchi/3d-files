@@ -4,7 +4,7 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.408R14555 (Git shallow)" FileVersion="2" Uid="d01deadd-9816-4f22-8ade-8e1c7b78687b" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="843">
+  <StringHasher2  count="868">
 <![CDATA[
 -2.0 0:;SKT;:H9,E
 -2.0 0:;SKT;:H9,V
@@ -489,11 +489,14 @@
 -1.2c.-4.7
 -1.2c.2.-3
 -1.2c.2.-3
--17.28.-5ac.-149.21d.1fa ;:G2#472;CUT;:H-20:c,E
+-e.0 0:(#3e3;K-1;:H-20:4,F)
+-9.28.5c7.226.21d.1fa ;:G2#472;CUT;:H-20:c,E
 -5.2c.1f.226
--40.0 0:(#671;:M;FUS;:H-21:7,F)
+-1f.2c.-2.-289
+-21.0 0:(#671;:M;FUS;:H-21:7,F)
 -1.2c.4bd.150.41.1
--33.0 0:Shape cache
+-2b.2c.319.12e
+-8.0 0:Shape cache
 -1.0 0:(#228;K-6;:Ha:4,F)
 -5.28.4c2.646.63d.65e ;:G#ae;CUT;:Ha:a,V;:H20,V
 -2.28.-184.17f.17a.659 ;:G6#6e6;CUT;:H-20:c,E
@@ -528,9 +531,7 @@
 -1.2c.9.-7
 -1.2c.0.1
 -1.2c.-15.-35d
--1.0 0:;:H-20,F
--1.2c.1.36a
--1.2c.-62b.366
+-3.2c.69.36a
 -1.2c.0.1
 -1.2c.0.-3a
 -1.2c.9.35
@@ -561,8 +562,7 @@
 -1.2c.0.1
 -1.28.38 ;:M#765;RFI;:H20:b,E
 -1.28.2 ;:M#767;RFI;:H20:b,E
--1.2c.-25a.2e
--1.28.1a4.-9.13 ;:M#769;RFI;:H20:b,F
+-2.28.-b6.38.13 ;:M#769;RFI;:H20:b,F
 -1.28.-36b.4.1 ;:M#76a;RFI;:H20:b,F
 -1.28.-2.-3.1 ;:M#76b;RFI;:H20:b,F
 -1.28.428 ;:M#76c;RFI;:H20:b,F
@@ -804,8 +804,7 @@
 -1.0 0:;:H-23,F
 -1.2c.1.225
 -1.2c.-10.-c0
--1.2c.-8.1e9
--1.2c.18.-126
+-2.2c.10.c3
 -2.0 0:;:U;XTR;:H24:7,V
 -1.2c.1.a1
 -4.2c.0.2
@@ -849,6 +848,32 @@
 -1.0 0:;:M;RFI;:H24:7,F
 -1.2c.1.13
 -3.2c.0.-1
+-1.c.-8a8 g39v1
+-1.c.-2 g39
+-1.2c.16.1
+-1.2c.a.-1
+-1.2c.21.3
+-1.2c.5.-1
+-1.0 0:(#8b3;K-1;:Ha:4,F)
+-1.2c.7e2.3
+-1.28.7de.-4d2.256.4ef ;:G#663;CUT;:Ha:b,V
+-1.2c.-7c4.4d3
+-1.28.2f3.-4.8.4 ;:G2#8b7;CUT;:H-20:c,E
+-1.2c.-2ae.2
+-1.2c.19.-1
+-1.2c.448.5
+-1.2c.0.1
+-1.2c.-8e.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.6.1
+-1.2c.2d7.1
+-1.2c.0.1
+-1.2c.34.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.45.1
+-1.2c.0.-1e6
 ]]>
   </StringHasher2>
   <Properties Count="21" TransientCount="3">
@@ -880,7 +905,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-06-02T07:02:46Z"/>
+      <String value="2024-06-06T06:55:33Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -921,8 +946,8 @@
       <Bool value="true"/>
     </Property>
   </Properties>
-  <Objects Count="21" Dependencies="1">
-    <ObjectDeps Name="Body" Count="13">
+  <Objects Count="20" Dependencies="1">
+    <ObjectDeps Name="Body" Count="12">
       <Dep Name="Sketch003"/>
       <Dep Name="Sketch"/>
       <Dep Name="Sketch002"/>
@@ -932,7 +957,6 @@
       <Dep Name="Pad"/>
       <Dep Name="Pad001"/>
       <Dep Name="Pad003"/>
-      <Dep Name="DatumLine"/>
       <Dep Name="Origin"/>
       <Dep Name="DatumPoint"/>
       <Dep Name="DatumPlane"/>
@@ -987,9 +1011,6 @@
     <ObjectDeps Name="DatumPoint" Count="1">
       <Dep Name="Pad"/>
     </ObjectDeps>
-    <ObjectDeps Name="DatumLine" Count="1">
-      <Dep Name="Pad"/>
-    </ObjectDeps>
     <ObjectDeps Name="Sketch003" Count="1">
       <Dep Name="XZ_Plane"/>
     </ObjectDeps>
@@ -998,7 +1019,7 @@
       <Dep Name="Pad003"/>
       <Dep Name="Body"/>
     </ObjectDeps>
-    <Object type="PartDesign::Body" name="Body" id="1" revision="187" file="Body.xml" />
+    <Object type="PartDesign::Body" name="Body" id="1" revision="190" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="2" revision="0" file="Origin.xml" />
     <Object type="App::Line" name="X_Axis" id="3" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="4" revision="2" file="Y_Axis.xml" />
@@ -1006,19 +1027,18 @@
     <Object type="App::Plane" name="XY_Plane" id="6" revision="1" file="XY_Plane.xml" />
     <Object type="App::Plane" name="XZ_Plane" id="7" revision="2" file="XZ_Plane.xml" />
     <Object type="App::Plane" name="YZ_Plane" id="8" revision="2" file="YZ_Plane.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch" id="9" revision="2526" file="Sketch.xml" />
-    <Object type="PartDesign::Pad" name="Pad" id="10" revision="136" file="Pad.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch" id="9" revision="2536" file="Sketch.xml" />
+    <Object type="PartDesign::Pad" name="Pad" id="10" revision="138" file="Pad.xml" />
     <Object type="PartDesign::Plane" name="DatumPlane" id="28" revision="29" file="DatumPlane.xml" />
     <Object type="Spreadsheet::Sheet" name="Spreadsheet" id="29" revision="0" file="Spreadsheet.xml" />
     <Object type="Sketcher::SketchObject" name="Sketch001" id="31" revision="952" file="Sketch001.xml" />
-    <Object type="PartDesign::Pad" name="Pad001" id="32" revision="107" file="Pad001.xml" />
-    <Object type="PartDesign::Pad" name="Pad002" id="33" revision="112" file="Pad002.xml" />
-    <Object type="PartDesign::Pad" name="Pad003" id="35" revision="124" file="Pad003.xml" />
+    <Object type="PartDesign::Pad" name="Pad001" id="32" revision="109" file="Pad001.xml" />
+    <Object type="PartDesign::Pad" name="Pad002" id="33" revision="115" file="Pad002.xml" />
+    <Object type="PartDesign::Pad" name="Pad003" id="35" revision="126" file="Pad003.xml" />
     <Object type="Sketcher::SketchObject" name="Sketch002" id="34" revision="170" file="Sketch002.xml" />
-    <Object type="PartDesign::Point" name="DatumPoint" id="15" revision="203" file="DatumPoint.xml" />
-    <Object type="PartDesign::Line" name="DatumLine" id="16" revision="211" file="DatumLine.xml" />
+    <Object type="PartDesign::Point" name="DatumPoint" id="15" revision="207" file="DatumPoint.xml" />
     <Object type="Sketcher::SketchObject" name="Sketch003" id="36" revision="376" file="Sketch003.xml" />
-    <Object type="PartDesign::Pad" name="Pad004" id="37" revision="47" file="Pad004.xml" />
+    <Object type="PartDesign::Pad" name="Pad004" id="37" revision="49" file="Pad004.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>
