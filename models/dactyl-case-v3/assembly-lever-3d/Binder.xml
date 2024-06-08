@@ -10,8 +10,8 @@
     <Property name="BindMode" type="App::PropertyEnumeration">
       <Integer value="0"/>
     </Property>
-    <Property name="Cache_Assembly" type="App::PropertyMatrix" group="Cache" attr="0" ro="0" hide="1" doc="" status="69206016">
-      <PropertyMatrix a11="1" a12="5.551115123125783e-17" a13="2.775557561562891e-17" a14="-7.105427357601002e-15" a21="0" a22="1" a23="2.775557561562891e-17" a24="0" a31="2.775557561562891e-17" a32="2.775557561562891e-17" a33="1" a34="1.77635683940025e-15" a41="0" a42="0" a43="0" a44="1"/>
+    <Property name="Cache_Assembly" type="App::PropertyMatrix" group="Cache" attr="0" ro="0" hide="1" doc="" status="69206017">
+      <PropertyMatrix a11="1" a12="1.110223024625157e-16" a13="1.387778780781446e-17" a14="7.105427357601002e-15" a21="0" a22="1" a23="0" a24="3.552713678800501e-15" a31="6.938893903907228e-17" a32="-5.551115123125783e-17" a33="1" a34="1.77635683940025e-15" a41="0" a42="0" a43="0" a44="1"/>
     </Property>
     <Property name="ClaimChildren" type="App::PropertyBool" status="134217728">
       <Bool value="false"/>
@@ -77,8 +77,8 @@
     <Property name="PartialLoad" type="App::PropertyBool" status="1024">
       <Bool value="false"/>
     </Property>
-    <Property name="Placement" type="App::PropertyPlacement" status="8388608">
-      <PropertyPlacement Px="-36.36664723516468" Py="-34.8768070075666" Pz="7.008515407600425" Q0="-0.3627596476999799" Q1="0.5044958340594685" Q2="0.7438839154943584" Q3="-0.2460205513488861" A="3.638737583807095" Ox="-0.3742627587583253" Oy="0.5204934006147715" Oz="0.7674724798473745"/>
+    <Property name="Placement" type="App::PropertyPlacement" status="8388609">
+      <PropertyPlacement Px="-45.47079642475557" Py="-22.96971759482901" Pz="7.053858557333359" Q0="-0.1516164368262476" Q1="0.5720784345112864" Q2="0.7987151180936669" Q3="-0.1085950320219489" A="3.359211881806903" Ox="-0.152518419742783" Oy="0.5754817922583021" Oz="0.8034667624851303"/>
     </Property>
     <Property name="Refine" type="App::PropertyBool">
       <Bool value="false"/>
@@ -86,24 +86,24 @@
     <Property name="Relative" type="App::PropertyBool">
       <Bool value="true"/>
     </Property>
-    <Property name="Shape" type="Part::PropertyPartShape">
+    <Property name="Shape" type="Part::PropertyPartShape" status="1">
       <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
 Locations 39
 1
--0.615758652629153 -5.99947026888449e-14 -0.787934820725883 -36.3666472351647 
--0.732042924118021 -0.369915683461263 0.572080015712946 -34.8768070075666 
--0.291469447731777 0.929065329850053 0.227778782834455 7.00851540760043 
+-0.930439150208529 1.14820954919004e-13 -0.366446432318874 -45.4707964247556 
+-0.346945975303071 -0.321866767574536 0.880925805134644 -22.969717594829 
+-0.117946928659596 0.946784972383445 0.299477441702457 7.05385855733336 
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
 1
-              1               0 -2.77555756156289e-17 -7.105427357601e-15 
--7.70371977754894e-34               1 -2.77555756156289e-17               0 
-2.77555756156289e-17 2.77555756156289e-17               1 1.77635683940025e-15 
+              1               0 -6.93889390390723e-17 7.105427357601e-15 
+3.85185988877447e-33               1 5.55111512312578e-17 3.5527136788005e-15 
+6.93889390390723e-17 -5.55111512312578e-17               1 1.77635683940025e-15 
 2  2 1 3 1 0
 1
              -1               0               0               0 
