@@ -33,18 +33,30 @@
       <Bool value="true"/>
     </Property>
     <Property name="cells" type="Spreadsheet::PropertySheet" status="67108864">
-      <Cells Count="11">
-        <Cell alias="pivot_angle" address="B1" content="=.B4"/>
-        <Cell alias="main_angle" address="C1" content="=.C4"/>
+      <Cells Count="23">
+        <Cell alias="pivot_angle" address="B1" content="=.B5"/>
+        <Cell alias="main_angle" address="C1" content="=.C5"/>
+        <Cell address="D1" content="=.D5"/>
         <Cell address="A2" content="default"/>
         <Cell address="B2" content="21.15"/>
         <Cell address="C2" content="16.77"/>
-        <Cell address="A3" content="unfolded"/>
-        <Cell address="B3" content="0"/>
-        <Cell address="C3" content="0"/>
+        <Cell address="D2" content="1"/>
+        <Cell address="A3" content="third"/>
+        <Cell address="B3" content="=B2 / 3"/>
+        <Cell address="C3" content="=B2 / 3"/>
+        <Cell address="D3" content="=1 / 3"/>
         <Cell address="A4" content="half"/>
         <Cell address="B4" content="=B2 / 2"/>
         <Cell address="C4" content="=C2 / 2"/>
+        <Cell address="D4" content="=1 / 2"/>
+        <Cell address="A5" content="two-third"/>
+        <Cell address="B5" content="=B2 * D5"/>
+        <Cell address="C5" content="=B2 * D5"/>
+        <Cell address="D5" content="=2 / 3"/>
+        <Cell address="A6" content="unfolded"/>
+        <Cell address="B6" content="0"/>
+        <Cell address="C6" content="0"/>
+        <Cell address="D6" content="0"/>
       </Cells>
     </Property>
     <Property name="columnWidths" type="Spreadsheet::PropertyColumnWidths" status="218103808">

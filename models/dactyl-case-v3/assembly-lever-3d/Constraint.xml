@@ -27,10 +27,9 @@
       <ExpressionEngine count="0"></ExpressionEngine>
     </Property>
     <Property name="Group" type="App::PropertyLinkList" group="Base" attr="0" ro="0" hide="0" doc="" status="2097418">
-      <LinkList count="3">
+      <LinkList count="2">
         <Link value="ElementLink"/>
-        <Link value="ElementLink001"/>
-        <Link value="ElementLink002"/>
+        <Link value="ElementLink063"/>
       </LinkList>
     </Property>
     <Property name="GroupMode" type="App::PropertyEnumeration" group="Base" attr="0" ro="0" hide="0" doc="" status="2097434"></Property>
@@ -44,19 +43,19 @@
       <Bool value="false"/>
     </Property>
     <Property name="Offset" type="App::PropertyDistance" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097152">
-      <Float value="0"/>
+      <Float value="-0.2"/>
     </Property>
     <Property name="Proxy" type="App::PropertyPythonObject">
       <Python  module="freecad.asm3.assembly" class="AsmConstraint" value="null"/>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="26"/>
+      <Integer value="257"/>
     </Property>
     <Property name="Visibility" type="App::PropertyBool" status="648">
       <Bool value="false"/>
     </Property>
     <Property name="VisibilityList" type="App::PropertyBoolList" group="Base" attr="0" ro="0" hide="0" doc="" status="2099082">
-      <BoolList value="000"/>
+      <BoolList value="00"/>
     </Property>
     <Property name="_ConstraintType" type="App::PropertyInteger" group="Base" attr="0" ro="0" hide="1" doc="" status="69206016">
       <Integer value="37"/>
