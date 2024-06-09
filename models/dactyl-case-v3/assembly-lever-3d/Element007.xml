@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!-- FreeCAD DocumentObject -->
 <Document SchemaVersion="4" FileVersion="2">
-<Object name="_Element021" Extensions="True">
+<Object name="Element007" Extensions="True">
   <Extensions Count="1">
     <Extension type="App::LinkBaseExtensionPython" name="LinkBaseExtensionPython">
     </Extension>
@@ -25,7 +25,7 @@
       <Bool value="false"/>
     </Property>
     <Property name="Label" type="App::PropertyString" status="134217728">
-      <String value="_Element021"/>
+      <String value="Element007"/>
     </Property>
     <Property name="Label2" type="App::PropertyString" status="128">
       <String value=""/>
@@ -34,7 +34,7 @@
       <Bool value="true"/>
     </Property>
     <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Link005" sub="Pad004.Edge8" shadow="Pad004.;#822;:H23,E.Edge8"/>
+      <XLink file="" stamp="" name="Link005" sub="Pad003.Edge8" shadow="Pad003.;#588;:M;CUT;:H-23:7,E.Edge8"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -56,17 +56,17 @@ Locations 7
               0               1               0               0 
               0               0               1               0 
 1
-              1 1.58277052023544e-26 1.13686837721616e-13 63.8639606371549 
-1.58277052023544e-26               1 -2.78443934575989e-13               0 
--1.13686837721616e-13 2.78443934575989e-13               1 -3.70000000000273 
+              1               0               0 63.8639606371549 
+              0               1               0               0 
+              0               0               1 -3.70000000000273 
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
 1
-2.22044604925031e-16 -3.33066907387547e-16               1            -124 
-              1 3.33066907387547e-16 -2.22044604925031e-16 4.13002965160558e-14 
--3.33066907387547e-16               1 3.33066907387547e-16 -4.13002965160558e-14 
+2.22044604925031e-16 -3.33066907387547e-16               1            -116 
+              1 3.33066907387547e-16 -2.22044604925031e-16 3.86357612569554e-14 
+-3.33066907387547e-16               1 3.33066907387547e-16 -3.86357612569554e-14 
 1
               1               0               0               0 
               0               1               0               0 
@@ -83,14 +83,14 @@ Triangulations 0
 
 TShapes 4
 Ve
-1.00000014210855e-07
--124 -57.4 1.84999999999998
+1e-07
+-116 -57.4 1.84999999999998
 0 0
 
 0101101
 *
 Ed
- 1.00000014210855e-07 1 1 0
+ 1e-07 1 1 0
 1  1 0 0 6.28318530717959
 0
 
@@ -110,13 +110,13 @@ Co
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="2">
 <![CDATA[
-16 PostfixCount 2
+38 PostfixCount 2
 Edge
 Vertex
 
 MapCount 1
 
-ElementMap 1 16 2
+ElementMap 1 38 2
 
 Edge
 
@@ -124,7 +124,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#c8;:X;:H25:3,E.0 0
+;#af;:X;:H23:3,E.0 0
 
 Vertex
 
@@ -132,14 +132,14 @@ ChildCount 0
 
 NameCount 2
 0
-;#c7;:X;:H25:3,V.0 0
+;#ae;:X;:H23:3,V.0 0
 
 EndMap
 ]]>
       </ElementMap2>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="96"/>
+      <Integer value="300"/>
     </Property>
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>

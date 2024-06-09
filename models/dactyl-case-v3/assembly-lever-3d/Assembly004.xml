@@ -43,7 +43,7 @@
     <Property name="Freeze" type="App::PropertyBool" group="Base" attr="0" ro="0" hide="0" doc="" status="2098176">
       <Bool value="false"/>
     </Property>
-    <Property name="Group" type="App::PropertyLinkList" group="Base" attr="0" ro="0" hide="0" doc="" status="2097418">
+    <Property name="Group" type="App::PropertyLinkList" group="Base" attr="0" ro="0" hide="0" doc="" status="2097419">
       <LinkList count="3">
         <Link value="Constraints004"/>
         <Link value="Elements004"/>
@@ -74,20 +74,20 @@
       <Bool value="false"/>
     </Property>
     <Property name="Variant" type="App::PropertyEnumeration" group="Variant" attr="0" ro="0" hide="0" doc="" status="2162688">
-      <Integer value="3" CustomEnum="true"/>
+      <Integer value="2" CustomEnum="true"/>
       <CustomEnumList count="5">
-<Enum value="default"/>
-<Enum value="third"/>
-<Enum value="half"/>
+<Enum value="folded"/>
 <Enum value="two-third"/>
+<Enum value="half"/>
+<Enum value="third"/>
 <Enum value="unfolded"/>
       </CustomEnumList>
     </Property>
     <Property name="Verbose" type="App::PropertyBool" group="Solver" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Bool value="false"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="649">
-      <Bool value="false"/>
+    <Property name="Visibility" type="App::PropertyBool" status="648">
+      <Bool value="true"/>
     </Property>
     <Property name="VisibilityList" type="App::PropertyBoolList" group="Base" attr="0" ro="0" hide="0" doc="" status="2099082">
       <BoolList value="111"/>
@@ -96,7 +96,7 @@
       <Integer value="0"/>
     </Property>
     <Property name="_LinkVersion" type="App::PropertyInteger" status="83886080">
-      <Integer value="0"/>
+      <Integer value="1"/>
     </Property>
     <Property name="_SolverType" type="App::PropertyInteger" group="Solver" attr="0" ro="0" hide="1" doc="" status="69206016">
       <Integer value="1"/>

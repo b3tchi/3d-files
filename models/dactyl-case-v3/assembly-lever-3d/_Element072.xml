@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!-- FreeCAD DocumentObject -->
 <Document SchemaVersion="4" FileVersion="2">
-<Object name="_Element015" Extensions="True">
+<Object name="_Element072" Extensions="True">
   <Extensions Count="1">
     <Extension type="App::LinkBaseExtensionPython" name="LinkBaseExtensionPython">
     </Extension>
@@ -25,7 +25,7 @@
       <Bool value="false"/>
     </Property>
     <Property name="Label" type="App::PropertyString" status="134217728">
-      <String value="_Element015"/>
+      <String value="_Element072"/>
     </Property>
     <Property name="Label2" type="App::PropertyString" status="128">
       <String value=""/>
@@ -34,7 +34,7 @@
       <Bool value="true"/>
     </Property>
     <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Link005" sub="Pad004.Edge34" shadow="Pad004.;#8c6;:H23,E.Edge34"/>
+      <XLink file="" stamp="" name="Link007" sub="Hole.Face3" shadow="Hole.;#16;:M;CUT;:H610:7,F.Face3"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -50,19 +50,15 @@
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 8
+Locations 13
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
 1
-              1 1.58277052023544e-26 1.13686837721616e-13 63.8639606371549 
-1.58277052023544e-26               1 -2.78443934575989e-13               0 
--1.13686837721616e-13 2.78443934575989e-13               1 -3.70000000000273 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
+1.14686038443779e-13 2.25652829755063e-14              -1 -48.1360393628406 
+-0.422637985322059 0.906298589518328 -2.80197920996635e-14 -20.1500000000064 
+0.906298589518328 0.422637985322059 1.13476740614032e-13 23.2000000000044 
 1
               1               0               0               0 
               0               1               0               0 
@@ -70,40 +66,148 @@ Locations 8
 1
               1               0               0               0 
               0               1               0               0 
-              0               0               1             3.7 
+              0               0               1               0 
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
-2  3 1 4 1 5 1 6 1 0
-2  6 -1 5 -1 4 -1 3 -1 0
-Curve2ds 0
-Curves 1
-2 -63.863960637154555 0 0 0 0 1 1 0 -0 -0 1 0 0.5
+2  4 1 5 1 0
+2  5 -1 4 -1 0
+2  3 -1 5 -1 4 -1 0
+2  3 -1 0
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               4 
+2  4 1 5 1 10 1 0
+2  10 -1 5 -1 4 -1 0
+2  3 -1 10 -1 5 -1 4 -1 0
+Curve2ds 6
+1 0 0 1 0 
+1 36.917424305044158 0 0 -1 
+8 15.699999999999999 16.167424305044158
+1 20.75 -2.5 1 0 
+8 -5.999999999062311e-07 1.5000005999999999
+1 36.862921178155368 -4 0 1 
+1 0 -4 1 0 
+1 0 0 0 -1 
+Curves 6
+1 -2 23 0 0 -1 0 
+1 -1.9999999999999998 -13.917424305044159 0 0 0 1 
+1 -2 2.25 2.5 0 -1 0 
+1 -2 -13.862921178155368 4 -0 -0 -1 
+1 -2 23 0 0 -1 0 
+1 -2 23 0 0 0 1 
 Polygon3D 0
 PolygonOnTriangulations 0
-Surfaces 0
+Surfaces 1
+1 -2 23 0 1 0 -0 0 -1 0 0 -0 -1 
 Triangulations 0
 
-TShapes 4
+TShapes 16
 Ve
 1e-07
--63.3639606371546 0 3.7
+-2 23 0
+0 0
+
+0101101
+*
+Ve
+1.00000001779823e-07
+-2 -13.9174243050442 0
 0 0
 
 0101101
 *
 Ed
  1e-07 1 1 0
-1  1 0 0 6.28318530717959
+1  1 0 0 36.9174243050442
+2  1 1 7 0 36.9174243050442
 0
 
+0101000
++16 8 -15 8 *
+Ve
+1.50000001790181e-07
+-2 -13.9174243050442 2.5
+0 0
+
+0101101
+*
+Ed
+ 1.00000001779823e-07 1 1 0
+1  2 0 0 2.5
+2  2 1 0 0 2.5
+0
+
+0101000
++15 9 -13 9 *
+Ve
+1.50000000444089e-07
+-2 -13.8629211781554 2.5
+0 0
+
+0101101
+*
+Ed
+ 1.5e-07 1 1 0
+1  3 0 16.1129211781554 16.1674243050442
+2  3 1 0 16.1129211781554 16.1674243050442
+0
+
+0101000
++11 9 -13 9 *
+Ve
+1.00000064837025e-07
+-2.00000000000005 -13.8629211781554 4
+0 0
+
+0101101
+*
+Ed
+ 1e-07 1 1 0
+1  4 0 0 1.5
+2  4 1 0 0 1.5
+0
+
+0101000
++9 9 -11 9 *
+Ve
+1e-07
+-2 23 4
+0 0
+
+0101101
+*
+Ed
+ 1e-07 1 1 0
+1  5 0 0 36.8629211781554
+2  5 1 12 0 36.8629211781554
+0
+
+0101000
++7 13 -9 13 *
+Ed
+ 1e-07 1 1 0
+1  6 0 0 4
+2  6 1 0 0 4
+0
+
+0101000
++16 9 -7 9 *
+Wi
+
 0101100
-+4 8 -4 8 *
+-14 6 -12 0 +10 0 +8 0 +6 11 +5 0 *
+Fa
+0  1e-07 1 0
+
+0101000
++4 0 *
 Co
 
 0100000
--3 7 *
+-3 3 *
 Co
 
 1100000
@@ -112,38 +216,83 @@ Co
 +1 1 ]]>
       </Part>
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
-      <ElementMap2 count="2">
+      <ElementMap2 count="13">
 <![CDATA[
-9 PostfixCount 2
+51 PostfixCount 3
 Edge
+Face
 Vertex
 
-MapCount 1
+MapCount 2
 
-ElementMap 1 9 2
+ElementMap 1 52 3
 
 Edge
 
 ChildCount 0
 
-NameCount 2
+NameCount 7
 0
-;#81;:X;:H25:3,E.0 0
+;#c;:H610,E;:X;:H611:3,E.0 0
+;#1f;:M;CUT;:H610:7,E;:X;:H611:3,E.0 0
+;#7b;:G4#53;CUT;:H-611:b,E;:X;:H611:3,E.0 0
+;#7a;:G#52;CUT;:H-611:a,E;:X;:H611:3,E.0 0
+;#3a;:M;CUT;:H610:7,E;:X;:H611:3,E.0 0
+;#1e;:H610,E;:X;:H611:3,E.0 0
 
-Vertex
+Face
 
 ChildCount 0
 
 NameCount 2
 0
-;#7f;:X;:H25:3,V.0 0
+;#216;:X;:H611:3,F.0 0
+
+Vertex
+
+ChildCount 0
+
+NameCount 7
+0
+;#6;:H610,V;:X;:H611:3,V.0 0
+;#7;:H610,V;:X;:H611:3,V.0 0
+;#1f;:G#80;CUT;:H610:a,V;:X;:H611:3,V.0 0
+;#7d;:G#59;CUT;:H-611:a,V;:X;:H611:3,V.0 0
+;#7c;:G#81;CUT;:H-611:a,V;:X;:H611:3,V.0 0
+;#32;:H610,V;:X;:H611:3,V.0 0
+
+EndMap
+
+ElementMap 2 51 3
+
+Edge
+
+ChildCount 1
+1 0 6 0 1 ;:H,E;:H:5,E 0
+
+NameCount 0
+
+Face
+
+ChildCount 0
+
+NameCount 2
+0
+;#216;:X;:H611:3,F.0 0
+
+Vertex
+
+ChildCount 1
+1 0 6 0 1 ;:H,V;:H:5,V 0
+
+NameCount 0
 
 EndMap
 ]]>
       </ElementMap2>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="75"/>
+      <Integer value="309"/>
     </Property>
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
@@ -158,7 +307,7 @@ EndMap
       <Integer value="0"/>
     </Property>
     <Property name="_Parent" type="App::PropertyLinkHidden" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097162">
-      <Link value="Elements002"/>
+      <Link value="Elements004"/>
     </Property>
   </Properties>
 </Object>
