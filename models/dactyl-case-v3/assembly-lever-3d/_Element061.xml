@@ -34,7 +34,7 @@
       <Bool value="true"/>
     </Property>
     <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Link011" sub="Hole.Edge32" shadow="Hole.;#a99;:He34,E.Edge32"/>
+      <XLink file="" stamp="" name="Link011" sub="Hole.Edge56" shadow="Hole.;#a99;:He34,E.Edge56"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -50,15 +50,15 @@
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 14
+Locations 13
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
 1
-0.999994365157259 -0.00335703049297708 6.68577444067332e-15 -41.4359383020742 
-0.00335703049297708 0.999994365157259 1.13525580986837e-15 0.0715054312754634 
--6.6895478557568e-15 -1.1128050642139e-15               1 3.6999999999973 
+0.99998464972425 0.00554078657499357 -2.8288148867962e-15 -41.4237279996767 
+-0.00554078657499357 0.99998464972425 8.21690359007339e-15 1.00839209080769 
+2.87429957280753e-15 -8.20110359878957e-15               1 3.69999999999718 
 1
               1               0               0               0 
               0               1               0               0 
@@ -95,15 +95,11 @@ Locations 14
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-2  3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 0
-2  12 -1 11 -1 10 -1 9 -1 8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
+2  3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 0
+2  11 -1 10 -1 9 -1 8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
 Curve2ds 0
 Curves 1
-2 0 0 0 0 0 1 1 0 -0 -0 1 0 2
+2 0 0 0 0 0 1 1 0 0 0 1 0 2
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -123,11 +119,11 @@ Ed
 0
 
 0101100
-+4 14 -4 14 *
++4 13 -4 13 *
 Co
 
 0100000
-+3 13 *
++3 12 *
 Co
 
 1100000
@@ -138,13 +134,13 @@ Co
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="2">
 <![CDATA[
-27 PostfixCount 2
+28 PostfixCount 2
 Edge
 Vertex
 
 MapCount 1
 
-ElementMap 1 27 2
+ElementMap 1 28 2
 
 Edge
 

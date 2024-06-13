@@ -4,7 +4,7 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.408R14555 (Git shallow)" FileVersion="2" Uid="5934a917-ee41-4a0d-9833-1098a6c65b1c" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="59">
+  <StringHasher2  count="101">
 <![CDATA[
 -1.0 0:Shape cache
 -1.0 0:;SKT;:H3dd,E
@@ -65,6 +65,48 @@
 -1.2c.0.1
 -1.2c.0.1
 -1.2c.0.1
+-1.0 0:;:U;XTR;:H3dd:7,V
+-1.2c.1.16
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.e
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.-10
+-1.0 0:;:U;XTR;:H3dd:7,E
+-1.2c.1.2a
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.14
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.-16
+-1.2c.0.-6
+-1.2c.0.-2
+-1.2c.0.3
+-1.2c.0.-2
+-1.0 0:;:G0;XTR;:H3dd:8,F
+-1.2c.1.3e
+-4.0 0:;:G;CHF;:H3de:7,F
+-6.0 0:;:M;CHF;:H3de:7,E
+-1.2c.1.3d
+-1.2c.0.1
+-1.2c.0.2
+-1.0 0:;:U3;CHF;:H3de:8,E
+-2.2c.6.40
+-18.2c.-6.-22
+-1.2c.0.d
+-1.2c.0.-2
+-1.2c.a.6f
+-1.2c.-4.-6e
+-16.2c.-23.14
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
 ]]>
   </StringHasher2>
   <Properties Count="21" TransientCount="3">
@@ -96,7 +138,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-06-13T20:16:16Z"/>
+      <String value="2024-06-13T21:07:01Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -137,11 +179,12 @@
       <Bool value="true"/>
     </Property>
   </Properties>
-  <Objects Count="10" Dependencies="1">
-    <ObjectDeps Name="Body" Count="3">
+  <Objects Count="11" Dependencies="1">
+    <ObjectDeps Name="Body" Count="4">
       <Dep Name="Pad"/>
       <Dep Name="Sketch"/>
       <Dep Name="Origin"/>
+      <Dep Name="Chamfer"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
       <Dep Name="Z_Axis"/>
@@ -164,7 +207,11 @@
       <Dep Name="Body"/>
       <Dep Name="Sketch"/>
     </ObjectDeps>
-    <Object type="PartDesign::Body" name="Body" id="981" revision="26" file="Body.xml" />
+    <ObjectDeps Name="Chamfer" Count="2">
+      <Dep Name="Body"/>
+      <Dep Name="Pad"/>
+    </ObjectDeps>
+    <Object type="PartDesign::Body" name="Body" id="981" revision="31" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="982" revision="0" file="Origin.xml" />
     <Object type="App::Line" name="X_Axis" id="983" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="984" revision="2" file="Y_Axis.xml" />
@@ -174,6 +221,7 @@
     <Object type="App::Plane" name="YZ_Plane" id="988" revision="2" file="YZ_Plane.xml" />
     <Object type="Sketcher::SketchObject" name="Sketch" id="989" revision="600" file="Sketch.xml" />
     <Object type="PartDesign::Pad" name="Pad" id="990" revision="51" file="Pad.xml" />
+    <Object type="PartDesign::Chamfer" name="Chamfer" id="991" revision="49" file="Chamfer.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>
