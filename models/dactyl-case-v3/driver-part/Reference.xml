@@ -21,7 +21,7 @@
       </LinkSub>
     </Property>
     <Property name="Context" type="App::PropertyXLink" status="67108864">
-      <XLink file="assembly-lever-3d" stamp="2024-06-13T07:25:37Z" name="Assembly004" sub="Parts004.Link011.Boolean.Reference."/>
+      <XLink file="assembly-lever-3d" stamp="2024-06-13T20:17:22Z" name="Assembly004" sub="Parts004.Link011.Boolean.Reference."/>
     </Property>
     <Property name="EdgeTolerance" type="App::PropertyPrecision">
       <Float value="1e-06"/>
@@ -144,9 +144,9 @@ Curves 16
 1 -10 -91 0 -1 0 0 
 1 -15 -91 0 0 1 0 
 1 -6 -28.5 0 -0 -0 -1 
-2 -9.5 -28.5 0 0 0 1 1 0 0 0 1 0 3.5
+2 -9.5 -28.5 0 0 0 1 1 0 -0 -0 1 0 3.5
 1 2 0 0 -0 -0 -1 
-2 0 0 0 0 0 1 1 0 0 0 1 0 2
+2 0 0 0 0 0 1 1 0 -0 -0 1 0 2
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 9
@@ -156,8 +156,8 @@ Surfaces 9
 1 -10 -36 0 -1 0 0 0 -1 0 0 0 1 
 1 -10 -91 0 0 1 -0 -1 0 0 0 0 1 
 1 -15 -91 0 1 0 0 -0 1 0 0 -0 1 
-2 -9.5 -28.5 0 0 0 1 1 0 0 0 1 0 3.5
-2 0 0 0 0 0 1 1 0 0 0 1 0 2
+2 -9.5 -28.5 0 0 0 1 1 0 -0 -0 1 0 3.5
+2 0 0 0 0 0 1 1 0 -0 -0 1 0 2
 1 -8.2556998190875923 -36.706370801441295 0 0 0 1 1 0 -0 -0 1 0 
 Triangulations 0
 
@@ -204,7 +204,7 @@ Wi
 Fa
 0  1e-07 1 0
 
-0111000
+0101000
 +42 0 *
 Ve
 1.00000000566534e-05
@@ -234,7 +234,7 @@ Wi
 Fa
 0  1e-07 2 0
 
-0111000
+0101000
 +37 0 *
 Ve
 1.00000000566534e-05
@@ -264,7 +264,7 @@ Wi
 Fa
 0  1e-07 3 0
 
-0111000
+0101000
 +32 0 *
 Ve
 1.00000000566534e-05
@@ -294,7 +294,7 @@ Wi
 Fa
 0  1e-07 4 0
 
-0111000
+0101000
 +27 0 *
 Ve
 1.00000000566534e-05
@@ -324,7 +324,7 @@ Wi
 Fa
 0  1e-07 5 0
 
-0111000
+0101000
 +22 0 *
 Ed
  1.00000000566534e-05 1 1 0
@@ -340,7 +340,7 @@ Wi
 Fa
 0  1e-07 6 0
 
-0111000
+0101000
 +19 0 *
 Ve
 1e-07
@@ -373,7 +373,7 @@ Wi
 Fa
 0  1e-07 7 0
 
-0111000
+0101000
 +14 0 *
 Ve
 1e-07
@@ -406,7 +406,7 @@ Wi
 Fa
 0  1e-07 8 0
 
-0111000
+0101000
 +9 0 *
 Wi
 
@@ -423,7 +423,7 @@ Wi
 Fa
 0  1e-07 9 0
 
-0111000
+0101000
 -7 7 -6 7 -5 7 *
 Sh
 
@@ -580,7 +580,7 @@ EndMap
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="649">
+    <Property name="Visibility" type="App::PropertyBool" status="648">
       <Bool value="true"/>
     </Property>
     <Property name="_Version" type="App::PropertyInteger" status="83886080">
