@@ -34,7 +34,7 @@
       <Bool value="true"/>
     </Property>
     <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Assembly002" sub="1.$_Element022."/>
+      <XLink file="" stamp="" name="Assembly002" sub="1.$Element008."/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -50,7 +50,7 @@
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 10
+Locations 11
 1
               1               0               0               0 
               0               1               0               0 
@@ -72,9 +72,13 @@ Locations 10
               0               1               0               0 
               0               0               1               0 
 1
-2.79776202205539e-14 1.13464793116691e-13              -1 -60.1360393628403 
-             -1 -2.99538172043864e-13 -2.79776202205879e-14 7.84999999999061 
--2.99538172043867e-13               1 1.13464793116683e-13 32.2000000000141 
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+-5.72875080706581e-14 2.82107670557252e-13              -1 -52.1360393628351 
+             -1 6.21169782277613e-14 5.72875080706756e-14 7.84999999999836 
+6.21169782277775e-14               1 2.82107670557248e-13 32.1999999999959 
 1
               1               0               0               0 
               0               1               0               0 
@@ -83,11 +87,11 @@ Locations 10
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
-2  3 1 4 1 5 1 6 1 7 1 8 1 0
-2  8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
+2  3 1 4 1 5 1 6 1 7 1 8 1 9 1 0
+2  9 -1 8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
 Curve2ds 0
 Curves 1
-2 25 -9 0 0 0 1 1 0 0 0 1 0 1.05
+2 25 -9 0 0 0 1 1 0 -0 -0 1 0 1.05
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -96,7 +100,7 @@ Triangulations 0
 TShapes 4
 Ve
 1e-07
--60.1360393628406 -18.2000000000067 23.2000000000063
+-52.1360393628392 -18.2000000000022 23.1999999999975
 0 0
 
 0101101
@@ -107,11 +111,11 @@ Ed
 0
 
 0101100
-+4 10 -4 10 *
++4 11 -4 11 *
 Co
 
 0100000
-+3 9 *
++3 10 *
 Co
 
 0100000
@@ -122,13 +126,13 @@ Co
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="2">
 <![CDATA[
-25 PostfixCount 2
+16 PostfixCount 2
 Edge
 Vertex
 
 MapCount 1
 
-ElementMap 1 25 2
+ElementMap 1 16 2
 
 Edge
 
@@ -136,7 +140,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#db;:X;:Hf72:3,E.0 0
+;#a7;:X;:Hf72:3,E.0 0
 
 Vertex
 
@@ -144,7 +148,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#da;:X;:Hf72:3,V.0 0
+;#a5;:X;:Hf72:3,V.0 0
 
 EndMap
 ]]>
@@ -163,7 +167,7 @@ EndMap
       <Integer value="0"/>
     </Property>
     <Property name="_LinkVersion" type="App::PropertyInteger" status="83886080">
-      <Integer value="0"/>
+      <Integer value="1"/>
     </Property>
     <Property name="_Parent" type="App::PropertyLinkHidden" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097162">
       <Link value="Elements004"/>
