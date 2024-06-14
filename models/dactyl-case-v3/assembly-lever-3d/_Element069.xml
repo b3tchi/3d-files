@@ -34,7 +34,7 @@
       <Bool value="true"/>
     </Property>
     <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Link011" sub="Hole.Edge60" shadow="Hole.;#cb3;:He34,E.Edge60"/>
+      <XLink file="" stamp="" name=""/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -50,23 +50,28 @@
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 4
+Locations 6
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
 1
-0.99998464972425 0.00554078657499357 -2.8288148867962e-15 -41.4237279996767 
--0.00554078657499357 0.99998464972425 8.21690359007339e-15 1.00839209080769 
-2.87429957280753e-15 -8.20110359878957e-15               1 3.69999999999718 
+0.99998464972425 0.00554078657491248 -2.82881488675513e-15 -41.4237279996767 
+-0.00554078657491248 0.99998464972425 8.21690358995303e-15 1.00839209080769 
+2.87429957276514e-15 -8.20110359866967e-15               1 3.69999999999718 
+1
+              1               0               0           -7.95 
+              0               1               0             -36 
+              0               0               1 -1.85000000000002 
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
-2  3 -1 0
+2  3 1 4 1 0
+2  4 -1 3 -1 0
 Curve2ds 0
 Curves 1
-2 -7.9499999999999993 -36 -1.8500000000000161 -0 1 4.4408920985006262e-16 1 0 0 0 4.4408920985006262e-16 -1 0.5
+2 0 0 0 -0 -1 -0 -1 0 0 0 0 -1 1.05
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -74,8 +79,8 @@ Triangulations 0
 
 TShapes 4
 Ve
-1.00000000222045e-07
--7.45 -36 -1.85000000000002
+1e-07
+-9 -36 -1.85000000000002
 0 0
 
 0101101
@@ -85,12 +90,12 @@ Ed
 1  1 0 0 6.28318530717959
 0
 
-0101100
-+4 4 -4 4 *
+0101000
++4 6 -4 6 *
 Co
 
 0100000
-+3 3 *
+-3 5 *
 Co
 
 1100000
@@ -115,7 +120,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#ff;:X;:He35:3,E.0 0
+;#46;:X;:He36:3,E.0 0
 
 Vertex
 
@@ -123,7 +128,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#fe;:X;:He35:3,V.0 0
+;#44;:X;:He36:3,V.0 0
 
 EndMap
 ]]>

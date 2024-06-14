@@ -4,10 +4,9 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.408R14555 (Git shallow)" FileVersion="2" Uid="4e80637c-dad5-4700-a1cf-4ab24776c658" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="120">
+  <StringHasher2  count="119">
 <![CDATA[
--1.0 0:Shape cache
--1.0 0:;SKT;:Hdcf,E
+-2.0 0:;SKT;:Hdcf,E
 -2.0 0:;SKT;:Hdcf,V
 -5.c.5 g1v1
 -4.c.-2 g1
@@ -157,7 +156,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-06-13T21:11:50Z"/>
+      <String value="2024-06-13T23:20:31Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -206,12 +205,12 @@
       <Dep Name="Chamfer"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
-      <Dep Name="XY_Plane"/>
+      <Dep Name="XZ_Plane"/>
       <Dep Name="YZ_Plane"/>
       <Dep Name="X_Axis"/>
       <Dep Name="Y_Axis"/>
       <Dep Name="Z_Axis"/>
-      <Dep Name="XZ_Plane"/>
+      <Dep Name="XY_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
@@ -227,8 +226,8 @@
       <Dep Name="Sketch"/>
     </ObjectDeps>
     <ObjectDeps Name="Chamfer" Count="2">
-      <Dep Name="Body"/>
       <Dep Name="Pad"/>
+      <Dep Name="Body"/>
     </ObjectDeps>
     <Object type="PartDesign::Body" name="Body" id="3527" revision="41" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="3528" revision="0" file="Origin.xml" />
