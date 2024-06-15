@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- FreeCAD DocumentObject -->
+<Document SchemaVersion="4" FileVersion="2">
+<Object name="Spreadsheet">
+  <Properties Count="12" TransientCount="0">
+    <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
+      <ExpressionEngine count="1" cdata="1">
+        <Expressions><![CDATA[
+0:.cells.Bind.B1.ZZ1
+0:tuple(.cells, <<B>> + str(hiddenref(Assembly004.Variant) + 2), <<ZZ>> + str(hiddenref(Assembly004.Variant) + 2))
+0:
+
+]]>
+        </Expressions>
+      </ExpressionEngine>
+    </Property>
+    <Property name="Label" type="App::PropertyString" status="134217728">
+      <String value="Spreadsheet"/>
+    </Property>
+    <Property name="Label2" type="App::PropertyString" status="128">
+      <String value=""/>
+    </Property>
+    <Property name="PythonMode" type="App::PropertyBool">
+      <Bool value="false"/>
+    </Property>
+    <Property name="ShowCells" type="App::PropertyEnumeration">
+      <Integer value="0"/>
+    </Property>
+    <Property name="TreeRank" type="App::PropertyInteger" status="2184">
+      <Integer value="196"/>
+    </Property>
+    <Property name="Visibility" type="App::PropertyBool" status="648">
+      <Bool value="true"/>
+    </Property>
+    <Property name="cells" type="Spreadsheet::PropertySheet" status="67108864">
+      <Cells Count="41">
+        <Cell alias="pivot_angle" address="B1" content="=.B4"/>
+        <Cell alias="main_angle" address="C1" content="=.C4"/>
+        <Cell address="D1" content="=.D4"/>
+        <Cell address="E1" content="=.E4"/>
+        <Cell address="F1" content="=.F4"/>
+        <Cell address="G1" content="=.G4"/>
+        <Cell address="H1" content="=.H4"/>
+        <Cell address="I1" content="=.I4"/>
+        <Cell address="A2" content="folded"/>
+        <Cell address="B2" content="21.15"/>
+        <Cell address="C2" content="16.77"/>
+        <Cell address="D2" content="0"/>
+        <Cell address="E2" content="105.3"/>
+        <Cell address="F2" content="87.6681"/>
+        <Cell address="A3" content="two-third"/>
+        <Cell address="B3" content="=B2 * D3"/>
+        <Cell address="C3" content="=C2 * D3"/>
+        <Cell address="D3" content="=2 / 3"/>
+        <Cell address="E3" content="105.3"/>
+        <Cell address="F3" content="87.6681"/>
+        <Cell address="A4" content="half"/>
+        <Cell address="B4" content="=B2 / 2"/>
+        <Cell address="C4" content="=C2 / 2"/>
+        <Cell address="D4" content="=1 / 2"/>
+        <Cell address="E4" content="105.3"/>
+        <Cell address="F4" content="87.6681"/>
+        <Cell address="G4" content="100.782"/>
+        <Cell address="H4" content="=G4 / E4"/>
+        <Cell address="I4" content="=E4 - F4"/>
+        <Cell address="A5" content="third"/>
+        <Cell address="B5" content="=B2 / 3"/>
+        <Cell address="C5" content="=B2 / 3"/>
+        <Cell address="D5" content="=1 / 3"/>
+        <Cell address="E5" content="105.3"/>
+        <Cell address="F5" content="87.6681"/>
+        <Cell address="A6" content="unfolded"/>
+        <Cell address="B6" content="21.15"/>
+        <Cell address="C6" content="16.77"/>
+        <Cell address="D6" content="1"/>
+        <Cell address="E6" content="105.3"/>
+        <Cell address="F6" content="87.6681"/>
+      </Cells>
+    </Property>
+    <Property name="columnWidths" type="Spreadsheet::PropertyColumnWidths" status="218103808">
+      <ColumnInfo Count="0">
+      </ColumnInfo>
+    </Property>
+    <Property name="hiddenColumns" type="App::PropertyIntegerSet" status="201326592">
+      <IntegerSet count="0">
+      </IntegerSet>
+    </Property>
+    <Property name="hiddenRows" type="App::PropertyIntegerSet" status="201326592">
+      <IntegerSet count="0">
+      </IntegerSet>
+    </Property>
+    <Property name="rowHeights" type="Spreadsheet::PropertyRowHeights" status="218103808">
+      <RowInfo Count="0">
+      </RowInfo>
+    </Property>
+  </Properties>
+</Object>
+</Document>

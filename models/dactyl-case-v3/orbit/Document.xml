@@ -4,7 +4,7 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.408R14555 (Git shallow)" FileVersion="2" Uid="e2c55a9f-c683-45e1-8758-b5b0d5653536" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="34">
+  <StringHasher2  count="74">
 <![CDATA[
 -2.0 0:;SKT;:H60f,E
 -1.c.1 g1
@@ -40,6 +40,46 @@
 -1.2c.0.1
 -1.2c.0.1
 -1.2c.0.1
+-4.0 0:;:G2;MAK;:H610:8,F
+-9.0 0:;:U;XTR;:H60f:7,V
+-1.2c.1.14
+-1.2c.0.1
+-4.2c.0.3
+-1.2c.0.1
+-1.0 0:;:U;XTR;:H60f:7,E
+-1.2c.1.24
+-1.2c.0.1
+-2.2c.0.2
+-2.2c.0.1
+-1.2c.0.1
+-1.0 0:;:G0;XTR;:H60f:8,F
+-1.2c.1.2e
+-1.0 0:;:U;MAK;:H610:7,E;:H-611,E
+-2.0 0:;:U2;MAK;:H610:8,E;:H-611,E
+-2.0 0:(#1b;K-1;:H610:4,F)
+-1.0 0:;:G3;MAK;:H610:8,F;:H-611,F
+-2.0 0:;:G2;MAK;:H610:8,F;:H-611,F
+-7.0 0:(#18;K-3;:H610:4,F)
+-1.0 0:(#18;K-2;:H610:4,F)
+-1.0 0:(#16;K-2;:H610:4,F)
+-1.0 0:(#16;K-3;:H610:4,F)
+-1.0 0:(#17;K-1;:H610:4,F)
+-1.0 0:(#18;K-1;:H610:4,F)
+-4.0 0:(#16;K-1;:H610:4,F)
+-5.0 0:;:U;XTR;:H60f:7,E;:H610,E
+-9.2c.9.4c
+-e.0 0:;WIR;:H610:4,E
+-1.2c.1.f
+-1.2c.-4e.f
+-3.2c.22.0.62.6c.29
+-1.2c.-2.0.0.0.-1
+-1.2c.-5.1
+-1.2c.2.0
+-1.0 0:(#3c;K-1;:H610:4,E)
+-1.0 0:(#7b;K-2;:H-611:4,F)
+-1.0 0:(#7b;K-1;:H-611:4,F)
+-1.0 0:(#3a;K-1;:H610:4,E)
+-1.0 0:(#7b;K-3;:H-611:4,F)
 ]]>
   </StringHasher2>
   <Properties Count="21" TransientCount="3">
@@ -71,7 +111,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-05-30T19:58:31Z"/>
+      <String value="2024-06-15T09:08:17Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -112,19 +152,20 @@
       <Bool value="true"/>
     </Property>
   </Properties>
-  <Objects Count="10" Dependencies="1">
-    <ObjectDeps Name="Body" Count="3">
+  <Objects Count="11" Dependencies="1">
+    <ObjectDeps Name="Body" Count="4">
       <Dep Name="Sketch"/>
-      <Dep Name="Pad"/>
       <Dep Name="Origin"/>
+      <Dep Name="Pad"/>
+      <Dep Name="Hole"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
-      <Dep Name="XY_Plane"/>
-      <Dep Name="XZ_Plane"/>
       <Dep Name="X_Axis"/>
-      <Dep Name="Z_Axis"/>
-      <Dep Name="YZ_Plane"/>
       <Dep Name="Y_Axis"/>
+      <Dep Name="YZ_Plane"/>
+      <Dep Name="Z_Axis"/>
+      <Dep Name="XZ_Plane"/>
+      <Dep Name="XY_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
@@ -133,13 +174,17 @@
     <ObjectDeps Name="XZ_Plane" Count="0"/>
     <ObjectDeps Name="YZ_Plane" Count="0"/>
     <ObjectDeps Name="Sketch" Count="1">
-      <Dep Name="XZ_Plane"/>
+      <Dep Name="XY_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad" Count="2">
-      <Dep Name="Sketch"/>
       <Dep Name="Body"/>
+      <Dep Name="Sketch"/>
     </ObjectDeps>
-    <Object type="PartDesign::Body" name="Body" id="1543" revision="26" file="Body.xml" />
+    <ObjectDeps Name="Hole" Count="2">
+      <Dep Name="Body"/>
+      <Dep Name="Pad"/>
+    </ObjectDeps>
+    <Object type="PartDesign::Body" name="Body" id="1543" revision="40" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="1544" revision="0" file="Origin.xml" />
     <Object type="App::Line" name="X_Axis" id="1545" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="1546" revision="2" file="Y_Axis.xml" />
@@ -147,8 +192,9 @@
     <Object type="App::Plane" name="XY_Plane" id="1548" revision="1" file="XY_Plane.xml" />
     <Object type="App::Plane" name="XZ_Plane" id="1549" revision="2" file="XZ_Plane.xml" />
     <Object type="App::Plane" name="YZ_Plane" id="1550" revision="2" file="YZ_Plane.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch" id="1551" revision="170" file="Sketch.xml" />
-    <Object type="PartDesign::Pad" name="Pad" id="1552" revision="40" file="Pad.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch" id="1551" revision="256" file="Sketch.xml" />
+    <Object type="PartDesign::Pad" name="Pad" id="1552" revision="57" file="Pad.xml" />
+    <Object type="PartDesign::Hole" name="Hole" id="1553" revision="72" file="Hole.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>

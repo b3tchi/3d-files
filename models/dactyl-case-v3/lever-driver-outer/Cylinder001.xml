@@ -1,0 +1,493 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- FreeCAD DocumentObject -->
+<Document SchemaVersion="4" FileVersion="2">
+<Object name="Cylinder001" Extensions="True">
+  <Extensions Count="2">
+    <Extension type="Part::AttachExtension" name="AttachExtension">
+    </Extension>
+    <Extension type="Part::PrismExtension" name="PrismExtension">
+    </Extension>
+  </Extensions>
+  <Properties Count="31" TransientCount="2">
+    <_Property name="_Body" type="App::PropertyLinkHidden" status="251658241"/>
+    <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881024"/>
+    <Property name="AddSubShape" type="Part::PropertyPartShape">
+      <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
+<![CDATA[
+
+CASCADE Topology V1, (c) Matra-Datavision
+Locations 2
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1             3.7 
+2  1 -1 0
+Curve2ds 5
+1 0 0 0 -1 
+1 6.2831853071795862 0 0 -1 
+2 0 0 1 0 -0 1 3.3999999999999999
+1 0 0 1 0 
+1 0 -3.7000000000000002 1 0 
+Curves 2
+1 3.3999999999999999 -8.3275982342020011e-16 0 0 0 1 
+2 0 0 0 0 0 1 1 0 -0 -0 1 0 3.3999999999999999
+Polygon3D 0
+PolygonOnTriangulations 0
+Surfaces 2
+2 0 0 0 -0 -0 -1 1 0 -0 -0 1 -0 3.3999999999999999
+1 0 0 0 0 0 1 1 0 -0 -0 1 0 
+Triangulations 0
+
+TShapes 9
+Ve
+1e-07
+3.4 -8.327598234202e-16 0
+0 0
+
+0101101
+*
+Ed
+ 1e-07 1 1 0
+1  1 0 0 3.7
+3  1 2CN 1 0 0 3.7
+0
+
+0101000
++9 0 -9 1 *
+Ed
+ 1e-07 1 1 0
+1  2 0 0 6.28318530717959
+2  3 2 0 0 6.28318530717959
+2  4 1 0 0 6.28318530717959
+2  5 1 2 0 6.28318530717959
+0
+
+0101000
++9 0 -9 0 *
+Wi
+
+0101100
++8 0 -8 0 -7 0 +7 1 *
+Fa
+0  1e-07 1 0
+
+0111000
++6 0 *
+Wi
+
+0101100
+-7 0 *
+Fa
+0  1e-07 2 0
+
+0111000
+-4 0 *
+Sh
+
+0101100
++5 0 +3 0 -3 1 *
+So
+
+1100000
+-2 0 *
+
++1 0 ]]>
+      </Part>
+      <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
+      <ElementMap2 count="8">
+<![CDATA[
+5 PostfixCount 3
+Edge
+Face
+Vertex
+
+MapCount 1
+
+ElementMap 1 5 3
+
+Edge
+
+ChildCount 1
+1 0 3 -3538 0 ;:H-dd2,E 0
+
+NameCount 0
+
+Face
+
+ChildCount 1
+1 0 3 -3538 0 ;:H-dd2,F 0
+
+NameCount 0
+
+Vertex
+
+ChildCount 1
+1 0 2 -3538 0 ;:H-dd2,V 0
+
+NameCount 0
+
+EndMap
+]]>
+      </ElementMap2>
+    </Property>
+    <Property name="AddSubType" type="App::PropertyEnumeration">
+      <Integer value="0"/>
+    </Property>
+    <Property name="Angle" type="App::PropertyAngle">
+      <Float value="360"/>
+    </Property>
+    <Property name="AttacherType" type="App::PropertyString" status="8">
+      <String value="Attacher::AttachEngine3D"/>
+    </Property>
+    <Property name="AttachmentOffset" type="App::PropertyPlacement">
+      <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
+    </Property>
+    <Property name="AttachmentSupport" type="App::PropertyLinkSubList">
+      <LinkSubList count="1">
+        <Link obj="XY_Plane" sub=""/>
+      </LinkSubList>
+    </Property>
+    <Property name="BaseFeature" type="App::PropertyLink" status="8">
+      <Link value="Cylinder"/>
+    </Property>
+    <Property name="ColoredElements" type="App::PropertyLinkSubHidden" status="218103808">
+      <LinkSub value="" count="0">
+      </LinkSub>
+    </Property>
+    <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
+      <ExpressionEngine count="0"></ExpressionEngine>
+    </Property>
+    <Property name="FirstAngle" type="App::PropertyAngle">
+      <Float value="0"/>
+    </Property>
+    <Property name="FixShape" type="App::PropertyEnumeration">
+      <Integer value="1"/>
+    </Property>
+    <Property name="Height" type="App::PropertyLength">
+      <Float value="3.7"/>
+    </Property>
+    <Property name="InvalidShape" type="App::PropertyBool" status="67108864">
+      <Bool value="false"/>
+    </Property>
+    <Property name="Label" type="App::PropertyString" status="134217728">
+      <String value="Cylinder001"/>
+    </Property>
+    <Property name="Label2" type="App::PropertyString" status="128">
+      <String value=""/>
+    </Property>
+    <Property name="MapMode" type="App::PropertyEnumeration">
+      <Integer value="5"/>
+    </Property>
+    <Property name="MapPathParameter" type="App::PropertyFloat" status="8">
+      <Float value="0"/>
+    </Property>
+    <Property name="MapReversed" type="App::PropertyBool">
+      <Bool value="false"/>
+    </Property>
+    <Property name="NewSolid" type="App::PropertyBool">
+      <Bool value="false"/>
+    </Property>
+    <Property name="Placement" type="App::PropertyPlacement" status="8388620">
+      <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
+    </Property>
+    <Property name="Radius" type="App::PropertyLength">
+      <Float value="3.4"/>
+    </Property>
+    <Property name="Refine" type="App::PropertyBool">
+      <Bool value="true"/>
+    </Property>
+    <Property name="SecondAngle" type="App::PropertyAngle">
+      <Float value="0"/>
+    </Property>
+    <Property name="Shape" type="Part::PropertyPartShape">
+      <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
+<![CDATA[
+
+CASCADE Topology V1, (c) Matra-Datavision
+Locations 9
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  2 1 3 -1 0
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1             1.4 
+2  5 -1 0
+2  5 1 2 1 3 -1 0
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1             3.7 
+2  8 -1 0
+Curve2ds 12
+1 0 0 0 -1 
+1 6.2831853071795862 0 0 -1 
+2 0 0 1 0 -0 1 4.9000000000000004
+1 0 0 1 0 
+1 0 -1.3999999999999999 1 0 
+2 0 0 1 0 0 -1 3.3999999999999999
+1 6.2831853071795862 -1.3999999999999999 -1 0 
+1 0 0 0 -1 
+1 6.2831853071795862 0 0 -1 
+2 0 0 1 0 -0 1 3.3999999999999999
+1 0 0 1 0 
+1 0 -3.7000000000000002 1 0 
+Curves 5
+1 4.9000000000000004 -1.2001538631644061e-15 0 0 0 1 
+2 0 0 0 0 0 1 1 0 -0 -0 1 0 4.9000000000000004
+2 0 0 1.3999999999999999 0 -0 -1 1 0 0 0 -1 0 3.3999999999999999
+1 3.3999999999999999 -8.3275982342020011e-16 0 0 0 1 
+2 0 0 0 0 0 1 1 0 -0 -0 1 0 3.3999999999999999
+Polygon3D 0
+PolygonOnTriangulations 0
+Surfaces 4
+2 0 0 0 -0 -0 -1 1 0 -0 -0 1 -0 4.9000000000000004
+1 0 0 0 0 0 1 1 0 -0 -0 1 0 
+2 0 0 0 -0 -0 -1 1 0 -0 -0 1 -0 3.3999999999999999
+1 0 0 0 0 0 1 1 0 -0 -0 1 0 
+Triangulations 0
+
+TShapes 21
+Ve
+1e-07
+4.9 -1.20015386316441e-15 0
+0 0
+
+0101101
+*
+Ed
+ 1e-07 1 1 0
+1  1 0 0 1.4
+3  1 2CN 1 0 0 1.4
+0
+
+0101000
++21 0 -21 5 *
+Ed
+ 1e-07 1 1 0
+1  2 0 0 6.28318530717959
+2  3 2 0 0 6.28318530717959
+2  4 1 0 0 6.28318530717959
+2  5 1 6 0 6.28318530717959
+0
+
+0101000
++21 0 -21 0 *
+Wi
+
+0101100
++20 0 -20 0 -19 0 +19 5 *
+Fa
+0  1e-07 1 0
+
+0101000
++18 0 *
+Wi
+
+0101100
++19 7 *
+Ve
+1.0000000166552e-07
+3.4 -8.327598234202e-16 1.4
+0 0
+
+0101101
+*
+Ed
+ 1e-07 1 1 0
+1  3 0 0 6.28318530717959
+2  6 2 7 0 6.28318530717959
+2  7 3 0 0 6.28318530717959
+0
+
+0101100
++15 0 -15 0 *
+Wi
+
+0101100
++14 0 *
+Fa
+0  1e-07 2 7
+
+0101000
++16 0 +13 0 *
+Ve
+1e-07
+3.4 -8.327598234202e-16 0
+0 0
+
+0101101
+*
+Ed
+ 1e-07 1 1 0
+1  4 0 1.4 3.7
+3  8 9CN 3 0 1.4 3.7
+0
+
+0101000
++15 0 -11 8 *
+Ed
+ 1e-07 1 1 0
+1  5 0 0 6.28318530717959
+2  10 4 0 0 6.28318530717959
+2  11 3 0 0 6.28318530717959
+2  12 3 9 0 6.28318530717959
+0
+
+0101000
++11 0 -11 0 *
+Wi
+
+0101100
++14 0 -10 0 +9 8 +10 0 *
+Fa
+0  1e-07 3 0
+
+0101000
++8 0 *
+Wi
+
+0101100
+-9 0 *
+Fa
+0  1e-07 4 0
+
+0101000
+-6 0 *
+Wi
+
+0101100
+-19 4 *
+Fa
+0  1e-07 2 4
+
+0101000
+-4 0 *
+Sh
+
+0101100
+-17 4 +12 0 -7 0 +5 8 -3 0 *
+So
+
+1100000
++2 0 *
+
++1 1 ]]>
+      </Part>
+      <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
+      <ElementMap2 count="15">
+<![CDATA[
+6 PostfixCount 15
+Edge
+Face
+Vertex
+;:M#e4;RFI;:Hdd1:a,F
+;:G#c2;FUS;:H-dd2:a,V
+;:Hdd1,E
+;:M;FUS;:H-dd2:7,E
+;:H-dd2,E
+;:G#c0;FUS;:H-dd2:a,E
+;:Hdd1,F
+;:M;FUS;:H-dd2:7,F
+;:H-dd2,F
+;:M;FUS;:Hdd1:7,F
+;:Hdd1,V
+;:H-dd2,V
+
+MapCount 1
+
+ElementMap 1 6 3
+
+Edge
+
+ChildCount 0
+
+NameCount 7
+0
+:1.1.6 0
+:1.2.6 0
+:1.3.6 0
+:2.1.9.c0 0
+:1.1.7 0
+:1.3.8 0
+
+Face
+
+ChildCount 0
+
+NameCount 6
+0
+:2.1.a 0
+:2.3.d 0
+:2.1.b 0
+:2.3.c 0
+$#cb.4.e3.e4 0
+
+Vertex
+
+ChildCount 0
+
+NameCount 5
+0
+:3.1.e 0
+:3.2.e 0
+:1.1.5.c2 0
+:3.2.f 0
+
+EndMap
+]]>
+      </ElementMap2>
+    </Property>
+    <Property name="Support" type="App::PropertyLinkSubList" status="67108864">
+      <LinkSubList count="1">
+        <Link obj="XY_Plane" sub=""/>
+      </LinkSubList>
+    </Property>
+    <Property name="Suppress" type="App::PropertyBool">
+      <Bool value="false"/>
+    </Property>
+    <Property name="SuppressedShape" type="Part::PropertyPartShape">
+      <Part ElementMap="0.15.70200.4" brep="1">
+<![CDATA[
+
+CASCADE Topology V1, (c) Matra-Datavision
+Locations 0
+Curve2ds 0
+Curves 0
+Polygon3D 0
+PolygonOnTriangulations 0
+Surfaces 0
+Triangulations 0
+
+TShapes 0
+
+*]]>
+      </Part>
+      <ElementMap/>
+    </Property>
+    <Property name="TreeRank" type="App::PropertyInteger" status="2184">
+      <Integer value="14"/>
+    </Property>
+    <Property name="ValidateShape" type="App::PropertyBool">
+      <Bool value="true"/>
+    </Property>
+    <Property name="Visibility" type="App::PropertyBool" status="648">
+      <Bool value="false"/>
+    </Property>
+    <Property name="_Siblings" type="App::PropertyLinkList" status="218103808">
+      <LinkList count="0">
+      </LinkList>
+    </Property>
+  </Properties>
+</Object>
+</Document>
