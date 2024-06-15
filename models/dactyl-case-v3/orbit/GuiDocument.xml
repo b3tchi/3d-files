@@ -11,21 +11,33 @@
     <Expand name="Pad"/>
   </Expand>
 </Expand>
-  <Camera>
+  <Camera extra="0" id="18" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
   position -80.266541 -35.265129 -59.393719
-  orientation 0.78202093 -0.53689241 -0.31652763  2.2775905
-  nearDistance 93.987587
+  orientation 0.78202105 -0.53689247 -0.31652766  2.2775905
+  nearDistance 93.993675
   farDistance 119.36682
   aspectRatio 1
   focalDistance 100
   height 92.774391
 
 }
-## overrideMode: As Is
-  
-  ]]>
+## overrideMode: As Is]]>
   </Camera>
+  <View3D id="18"><![CDATA[
+  <Properties Count="3" TransientCount="0">
+    <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
+      <Integer value="0"/>
+    </Property>
+    <Property name="ShowNaviCube" type="App::PropertyBool" status="1">
+      <Bool value="true"/>
+    </Property>
+    <Property name="ThumbnailView" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+  </Properties>
+]]>
+  </View3D>
 </Document>
