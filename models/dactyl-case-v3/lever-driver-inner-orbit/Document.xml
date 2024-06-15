@@ -156,7 +156,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-06-13T23:20:32Z"/>
+      <String value="2024-06-15T06:47:56Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -199,18 +199,18 @@
   </Properties>
   <Objects Count="11" Dependencies="1">
     <ObjectDeps Name="Body" Count="4">
-      <Dep Name="Sketch"/>
-      <Dep Name="Pad"/>
       <Dep Name="Origin"/>
+      <Dep Name="Pad"/>
+      <Dep Name="Sketch"/>
       <Dep Name="Chamfer"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
-      <Dep Name="X_Axis"/>
       <Dep Name="Y_Axis"/>
+      <Dep Name="X_Axis"/>
       <Dep Name="Z_Axis"/>
+      <Dep Name="YZ_Plane"/>
       <Dep Name="XY_Plane"/>
       <Dep Name="XZ_Plane"/>
-      <Dep Name="YZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
@@ -222,12 +222,12 @@
       <Dep Name="XY_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad" Count="2">
-      <Dep Name="Body"/>
       <Dep Name="Sketch"/>
+      <Dep Name="Body"/>
     </ObjectDeps>
     <ObjectDeps Name="Chamfer" Count="2">
-      <Dep Name="Body"/>
       <Dep Name="Pad"/>
+      <Dep Name="Body"/>
     </ObjectDeps>
     <Object type="PartDesign::Body" name="Body" id="3527" revision="44" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="3528" revision="0" file="Origin.xml" />
