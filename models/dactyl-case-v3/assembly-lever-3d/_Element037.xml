@@ -34,7 +34,7 @@
       <Bool value="true"/>
     </Property>
     <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Link015" sub="Chamfer.Edge28" shadow="Chamfer.;#1bd6;:He36,E.Edge28"/>
+      <XLink file="" stamp="" name="Binder003" sub="Edge51" shadow=";#ea;:Hdd2,E;:Hdd0,E;:X;:Hdc7:b,E;:H731:15,E;:H5a8:20,E.Edge51"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -46,48 +46,44 @@
       <Python  module="freecad.asm3.assembly" class="AsmElement" value="null"/>
     </Property>
     <Property name="Shape" type="Part::PropertyPartShape">
-      <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
+      <Part ElementMap="0.15.70200.4" brep="1">
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 10
+Locations 9
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
 1
-0.999758548307116 -0.0219737362969541 1.10794697050824e-15 -41.385428956107 
-0.0219737362969541 0.999758548307116 -4.51167584463531e-17 -2.04654980858703 
--1.10668807108391e-15 6.9451599489606e-17               1 3.69999999999731 
+-0.26148738062754 0.965206894801601 -1.0502625713611e-16 -46.4530956147474 
+-0.965206894801601 -0.26148738062754 -1.25644408218268e-15 -29.6860634133581 
+-1.24019153193103e-15 -2.27172204431943e-16               1 -7.10000000000275 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1             5.5 
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
 1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
+              1               0               0 1.66300000324178e-15 
+              0               1 -4.44089209850062e-16 3.74132414609565e-09 
+              0 4.44089209850062e-16               1 3.49999999999997 
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
 1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-2  3 1 4 1 5 1 6 1 7 1 8 1 0
-2  8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
+              1 1.11022302462516e-16 -9.42848577501243e-19 -7.105427357601e-15 
+-1.11022302462516e-16               1 -7.44317947938059e-18               0 
+9.42848577501242e-19 7.44317947938059e-18               1 8.88178419700125e-16 
+2  3 1 4 1 5 1 6 1 7 1 0
+2  7 -1 6 -1 5 -1 4 -1 3 -1 0
 Curve2ds 0
 Curves 1
-2 -4.8500000000000023 -28.5 0 0 0 1 1 0 -0 -0 1 0 3.5
+2 0 0 0 0 0 1 1 0 0 0 1 0 3.3999999999999999
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -96,7 +92,7 @@ Triangulations 0
 TShapes 4
 Ve
 1e-07
--1.35 -28.5 0
+3.39999999999999 3.74132042638073e-09 8.99999999999998
 0 0
 
 0101101
@@ -106,12 +102,12 @@ Ed
 1  1 0 0 6.28318530717959
 0
 
-0101100
-+4 10 -4 10 *
+0101000
++4 9 -4 9 *
 Co
 
 0100000
--3 9 *
+-3 8 *
 Co
 
 1100000
@@ -119,36 +115,7 @@ Co
 
 +1 1 ]]>
       </Part>
-      <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
-      <ElementMap2 count="2">
-<![CDATA[
-15 PostfixCount 2
-Edge
-Vertex
-
-MapCount 1
-
-ElementMap 1 15 2
-
-Edge
-
-ChildCount 0
-
-NameCount 2
-0
-;#69;:X;:He38:3,E.0 0
-
-Vertex
-
-ChildCount 0
-
-NameCount 2
-0
-;#67;:X;:He38:3,V.0 0
-
-EndMap
-]]>
-      </ElementMap2>
+      <ElementMap/>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
       <Integer value="159"/>

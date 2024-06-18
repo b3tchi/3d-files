@@ -6,30 +6,37 @@
  FreeCAD Document, see http://www.freecadweb.org for more information...
 -->
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
-<Expand  count="1">
-  <Expand name="Assembly004" count="1">
+<Expand  count="2">
+  <Expand name="Assembly004" count="3">
+    <Expand name="Constraints004" count="1">
+      <Expand name="Constraint018"/>
+    </Expand>
+    <Expand name="Elements004"/>
     <Expand name="Parts004"/>
   </Expand>
+  <Expand name="Assembly005" count="1">
+    <Expand name="Parts005"/>
+  </Expand>
 </Expand>
-  <Camera extra="0" id="47" binding="0" view3d="1">
+  <Camera extra="0" id="7" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position -40.154556 -59.264984 21.25704
-  orientation -0.56463796 0.31902808 0.76118696  5.0061035
-  nearDistance -40.949623
-  farDistance 111.60814
+  position -24.811043 -27.983479 -24.216284
+  orientation -0.95711386 0.12219404 0.26268169  5.3783774
+  nearDistance -98.678291
+  farDistance 51.440247
   aspectRatio 1
   focalDistance 1.4848053
-  height 153.21706
+  height 34.937393
 
 }
-## overrideMode: Flat Lines]]>
+## overrideMode: Wireframe]]>
   </Camera>
-  <View3D id="47"><![CDATA[
+  <View3D id="7"><![CDATA[
   <Properties Count="3" TransientCount="0">
     <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
-      <Integer value="6"/>
+      <Integer value="2"/>
     </Property>
     <Property name="ShowNaviCube" type="App::PropertyBool" status="1">
       <Bool value="true"/>

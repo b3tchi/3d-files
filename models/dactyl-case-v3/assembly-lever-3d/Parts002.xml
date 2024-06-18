@@ -21,7 +21,7 @@
     <Property name="FixShape" type="App::PropertyEnumeration">
       <Integer value="1"/>
     </Property>
-    <Property name="Group" type="App::PropertyLinkList" group="Base" attr="0" ro="0" hide="0" doc="" status="2097417">
+    <Property name="Group" type="App::PropertyLinkList" group="Base" attr="0" ro="0" hide="0" doc="" status="2097416">
       <LinkList count="2">
         <Link value="Link005"/>
         <Link value="Link006"/>
@@ -45,7 +45,7 @@
     <Property name="Proxy" type="App::PropertyPythonObject">
       <Python  module="freecad.asm3.assembly" class="AsmPartGroup" value="null"/>
     </Property>
-    <Property name="Shape" type="Part::PropertyPartShape">
+    <Property name="Shape" type="Part::PropertyPartShape" status="1">
       <Part ElementMap="0.15.70200.4" brep="1">
 <![CDATA[
 
