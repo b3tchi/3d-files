@@ -34,7 +34,7 @@
       <Bool value="true"/>
     </Property>
     <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Assembly002" sub="1.$Element008."/>
+      <XLink file="" stamp="" name="Link007" sub="Hole001.Edge22" shadow="Hole001.;#118;:H611,E.Edge22"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -50,19 +50,15 @@
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 11
+Locations 9
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
 1
-              1              -0               0               0 
-              0               1               0               0 
-             -0               0               1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
+-2.8244073746464e-13 -5.49274167815916e-14              -1 -48.13603936284 
+-0.00718978770097171 -0.999974153142378 5.69566860209472e-14 -17.1500000000024 
+-0.999974153142378 0.00718978770097171 2.82038520793489e-13 23.1999999999963 
 1
               1               0               0               0 
               0               1               0               0 
@@ -74,11 +70,7 @@ Locations 11
 1
               1               0               0               0 
               0               1               0               0 
-              0               0               1               0 
-1
--5.72875080706581e-14 2.82107670557252e-13              -1 -52.1360393628351 
-             -1 6.21169782277613e-14 5.72875080706756e-14 7.84999999999836 
-6.21169782277775e-14               1 2.82107670557248e-13 32.1999999999959 
+              0               0               1               4 
 1
               1               0               0               0 
               0               1               0               0 
@@ -87,11 +79,11 @@ Locations 11
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
-2  3 1 4 1 5 1 6 1 7 1 8 1 9 1 0
-2  9 -1 8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
+2  3 1 4 1 5 1 6 1 7 1 0
+2  7 -1 6 -1 5 -1 4 -1 3 -1 0
 Curve2ds 0
 Curves 1
-2 25 -9 0 0 0 1 1 0 -0 -0 1 0 1.05
+2 2.4543590269915324e-32 5.5011758622345634e-32 0 0 0 1 1 0 -0 -0 1 0 3.5
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -100,7 +92,7 @@ Triangulations 0
 TShapes 4
 Ve
 1e-07
--52.1360393628392 -18.2000000000022 23.1999999999975
+3.5 5.50117586223456e-32 4
 0 0
 
 0101101
@@ -111,14 +103,14 @@ Ed
 0
 
 0101100
-+4 11 -4 11 *
++4 9 -4 9 *
 Co
 
 0100000
-+3 10 *
+-3 8 *
 Co
 
-0100000
+1100000
 +2 2 *
 
 +1 1 ]]>
@@ -140,7 +132,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#a7;:X;:Hf72:3,E.0 0
+;#6d;:X;:H612:3,E.0 0
 
 Vertex
 
@@ -148,7 +140,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#a5;:X;:Hf72:3,V.0 0
+;#6b;:X;:H612:3,V.0 0
 
 EndMap
 ]]>

@@ -37,16 +37,16 @@
       <Bool value="false"/>
     </Property>
     <Property name="LinkCopyOnChange" type="App::PropertyEnumeration" status="256">
-      <Integer value="2"/>
+      <Integer value="3"/>
     </Property>
     <Property name="LinkCopyOnChangeGroup" type="App::PropertyLink" status="264">
-      <Link value="CopyOnChangeGroup001"/>
+      <Link value="CopyOnChangeGroup"/>
     </Property>
     <Property name="LinkCopyOnChangeSource" type="App::PropertyXLink" status="264">
-      <XLink file="joint" stamp="2024-06-15T09:08:16Z" name="Body"/>
+      <XLink file="joint" stamp="2024-06-18T02:13:13Z" name="Body"/>
     </Property>
     <Property name="LinkCopyOnChangeTouched" type="App::PropertyBool" status="264">
-      <Bool value="true"/>
+      <Bool value="false"/>
     </Property>
     <Property name="LinkExecute" type="App::PropertyString" status="256">
       <String value=""/>
@@ -58,7 +58,7 @@
       <Bool value="false"/>
     </Property>
     <Property name="LinkedObject" type="App::PropertyXLink" status="256">
-      <XLink file="" stamp="" name="Body011"/>
+      <XLink file="" stamp="" name="Body032"/>
     </Property>
     <Property name="Matrix" type="App::PropertyMatrix" status="67109120">
       <PropertyMatrix a11="1" a12="0" a13="0" a14="0" a21="0" a22="1" a23="0" a24="0" a31="0" a32="0" a33="1" a34="0" a41="0" a42="0" a43="0" a44="1"/>
@@ -88,14 +88,16 @@
       <Bool value="false"/>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="20"/>
+      <Integer value="299"/>
     </Property>
     <Property name="Variant" type="App::PropertyEnumeration" group="Configuration (Joint Setup)" attr="0" ro="0" hide="0" doc="" status="2162688">
-      <Integer value="0" CustomEnum="true"/>
-      <CustomEnumList count="3">
+      <Integer value="4" CustomEnum="true"/>
+      <CustomEnumList count="5">
 <Enum value="basic"/>
 <Enum value="original_test"/>
 <Enum value="short"/>
+<Enum value="main-thumb"/>
+<Enum value="main-pivot"/>
       </CustomEnumList>
     </Property>
     <Property name="Visibility" type="App::PropertyBool" status="648">

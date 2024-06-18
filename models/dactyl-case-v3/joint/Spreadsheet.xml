@@ -33,7 +33,7 @@
       <Bool value="true"/>
     </Property>
     <Property name="cells" type="Spreadsheet::PropertySheet" status="67108864">
-      <Cells Count="64">
+      <Cells Count="90">
         <Cell style="bold" address="A1"/>
         <Cell style="bold" address="B1" content="distance"/>
         <Cell style="bold" address="C1" content="iterations"/>
@@ -53,18 +53,18 @@
         <Cell style="bold" address="K1" content="total segments"/>
         <Cell style="bold" address="L1" content="segmentns on attached side"/>
         <Cell style="bold" address="M1" content="segments on for length"/>
-        <Cell alias="distance" address="B2" content="=.B5"/>
-        <Cell alias="iterations" address="C2" content="=.C5"/>
-        <Cell alias="extrusion" address="D2" content="=.D5"/>
-        <Cell alias="angleA" address="E2" content="=.E5"/>
-        <Cell alias="angleB" address="F2" content="=.F5"/>
-        <Cell alias="over" address="G2" content="=.G5"/>
-        <Cell address="H2" content="=.H5"/>
-        <Cell address="I2" content="=.I5"/>
-        <Cell address="J2" content="=.J5"/>
-        <Cell address="K2" content="=.K5"/>
-        <Cell address="L2" content="=.L5"/>
-        <Cell address="M2" content="=.M5"/>
+        <Cell alias="distance" address="B2" content="=.B3"/>
+        <Cell alias="iterations" address="C2" content="=.C3"/>
+        <Cell alias="extrusion" address="D2" content="=.D3"/>
+        <Cell alias="angleA" address="E2" content="=.E3"/>
+        <Cell alias="angleB" address="F2" content="=.F3"/>
+        <Cell alias="over" address="G2" content="=.G3"/>
+        <Cell address="H2" content="=.H3"/>
+        <Cell address="I2" content="=.I3"/>
+        <Cell address="J2" content="=.J3"/>
+        <Cell address="K2" content="=.K3"/>
+        <Cell address="L2" content="=.L3"/>
+        <Cell address="M2" content="=.M3"/>
         <Cell address="A3" content="basic"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="B3" content="=J3 / K3 * M3 - 0.1"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="C3" content="5"/>
@@ -104,6 +104,32 @@
         <Cell backgroundColor="#dab860ff" address="K5" content="8"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L5" content="=I5 == 1 ? K5 / 2 : 0"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M5" content="=I5 == 1 ? K5 - 2 : (I5 == 2 ? K5 - 1 : 0)"/>
+        <Cell address="A6" content="main-thumb"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="B6" content="=J6 / K6 * M6 - 0.1"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="C6" content="=L6"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="D6" content="=J6 / K6 - 0.2"/>
+        <Cell backgroundColor="#dab860ff" address="E6" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="F6" content="0"/>
+        <Cell backgroundColor="#dab860ff" address="G6" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="H6" content="keeping same 6mm"/>
+        <Cell backgroundColor="#dab860ff" address="I6" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="J6" content="60"/>
+        <Cell backgroundColor="#dab860ff" address="K6" content="10"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L6" content="=I6 == 1 ? K6 / 2 : 0"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M6" content="=I6 == 1 ? K6 - 2 : (I6 == 2 ? K6 - 1 : 0)"/>
+        <Cell address="A7" content="main-pivot"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="B7" content="=J7 / K7 * M7 - 0.1"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="C7" content="=L7"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="D7" content="=J7 / K7 - 0.2"/>
+        <Cell backgroundColor="#dab860ff" address="E7" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="F7" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="G7" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="H7" content="keeping same 6mm"/>
+        <Cell backgroundColor="#dab860ff" address="I7" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="J7" content="84"/>
+        <Cell backgroundColor="#dab860ff" address="K7" content="14"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L7" content="=I7 == 1 ? K7 / 2 : 0"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M7" content="=I7 == 1 ? K7 - 2 : (I7 == 2 ? K7 - 1 : 0)"/>
       </Cells>
     </Property>
     <Property name="columnWidths" type="Spreadsheet::PropertyColumnWidths" status="218103808">
