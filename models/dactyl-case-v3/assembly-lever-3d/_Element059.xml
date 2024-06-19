@@ -33,7 +33,7 @@
     <Property name="LinkTransform" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097418">
       <Bool value="true"/>
     </Property>
-    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097413">
+    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
       <XLink file="" stamp="" name="Binder003" sub="Edge12" shadow=";#d;:Hdd0,E;:Hdda,E;:X;:Hdc7:b,E;:H5ac:15,E;:H5a8:20,E.Edge12"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
@@ -45,7 +45,7 @@
     <Property name="Proxy" type="App::PropertyPythonObject">
       <Python  module="freecad.asm3.assembly" class="AsmElement" value="null"/>
     </Property>
-    <Property name="Shape" type="Part::PropertyPartShape" status="1">
+    <Property name="Shape" type="Part::PropertyPartShape">
       <Part ElementMap="0.15.70200.4" brep="1">
 <![CDATA[
 
@@ -56,9 +56,9 @@ Locations 10
               0               1               0               0 
               0               0               1               0 
 1
-0.170014980498471 0.985441477920482 -5.09707294659646e-15 -32.0947198926939 
--0.985441477920482 0.170014980498471 -1.43044890126185e-14 -53.8819906983779 
--1.32296580358772e-14 7.45484451808346e-15               1 -7.10000000000317 
+-0.251356576859977  0.967894555863 5.42262488750297e-15 -46.2855173251162 
+-0.967894555863 -0.251356576859977 1.40043660529897e-14 -30.2999999999997 
+1.49177620903198e-14 -1.72843959492777e-15               1 -7.10000000000258 
 1
               1               0               0               0 
               0               1               0               0 
@@ -80,9 +80,9 @@ Locations 10
               0               1               0               0 
               0               0               1               0 
 1
-              1 -7.29080039747232e-29 -4.55374176603608e-19               0 
-7.29080118927717e-29               1 1.73880050459958e-17               0 
-4.55374176603608e-19 -1.73880050459958e-17               1               0 
+              1 1.1102230246244e-16 1.02876424553312e-17 7.105427357601e-15 
+-1.1102230246244e-16               1 -3.9955208518498e-17               0 
+-1.02876424553312e-17 3.9955208518498e-17               1 1.77635683940025e-15 
 2  3 1 4 1 5 1 6 1 7 1 8 1 0
 2  8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
 Curve2ds 0
@@ -96,7 +96,7 @@ Triangulations 0
 TShapes 4
 Ve
 1e-07
-3.50000000000001 1.77500020861625 14.7
+3.50000000000002 1.77500020861625 14.7
 0 0
 
 0101101

@@ -33,7 +33,7 @@
     <Property name="LinkTransform" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097418">
       <Bool value="true"/>
     </Property>
-    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097413">
+    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
       <XLink file="" stamp="" name="Body" sub="Sketch.Edge2" shadow="Sketch.;g2;SKT.Edge2"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
@@ -45,7 +45,7 @@
     <Property name="Proxy" type="App::PropertyPythonObject">
       <Python  module="freecad.asm3.assembly" class="AsmElement" value="null"/>
     </Property>
-    <Property name="Shape" type="Part::PropertyPartShape" status="1">
+    <Property name="Shape" type="Part::PropertyPartShape">
       <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
 <![CDATA[
 
@@ -56,9 +56,9 @@ Locations 6
               0               1               0               0 
               0               0               1               0 
 1
-0.830418870741052 -0.557139568795069 1.44185359417916e-16 1.1831627522489e-18 
-0.557139568795069 0.830418870741052 -4.95768749862836e-15 -1.05688535993655e-18 
-2.64238963186129e-15 4.19728862307066e-15               1 -5.00000000000273 
+0.999988351315671 0.00482672072594754 4.26391590096736e-15 -1.31049231830041e-18 
+-0.00482672072594754 0.999988351315671 1.96683624166273e-15 -2.89113520721574e-18 
+-4.25437286270485e-15 -1.98739406186112e-15               1 -5.00000000000273 
 1
               1               0               0               0 
               0               1               0               0 

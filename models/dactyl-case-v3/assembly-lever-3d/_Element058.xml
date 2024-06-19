@@ -33,7 +33,7 @@
     <Property name="LinkTransform" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097418">
       <Bool value="true"/>
     </Property>
-    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097413">
+    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
       <XLink file="" stamp="" name="Binder007" sub="Edge37" shadow=";#15;:H3de,E;:H3df,E;:X;:H3d5:b,E;:H55f:15,E;:H564:20,E;:H565:2b,E.Edge37"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
@@ -45,7 +45,7 @@
     <Property name="Proxy" type="App::PropertyPythonObject">
       <Python  module="freecad.asm3.assembly" class="AsmElement" value="null"/>
     </Property>
-    <Property name="Shape" type="Part::PropertyPartShape" status="1">
+    <Property name="Shape" type="Part::PropertyPartShape">
       <Part ElementMap="0.15.70200.4" brep="1">
 <![CDATA[
 
@@ -56,9 +56,9 @@ Locations 13
               0               1               0               0 
               0               0               1               0 
 1
-0.0120572709205706 0.985441477920493 0.169586897524018 -36.3065480975467 
--0.0698863996618542 0.170014980498408 -0.982960221752859 -29.9105123756746 
--0.997482086736525 4.09386147868057e-14 0.0709188736497447 5.86957948294359 
+0.110838348820668 0.967894555863001 -0.225599178104604 -40.8534892691374 
+0.426803371308195 -0.251356576859976 -0.868710972366065 -9.08460058343941 
+-0.897526457922366 4.87247755061834e-14 -0.440960607457552 18.3594388219619 
 1
               1               0               0               0 
               0               1               0               0 
@@ -92,9 +92,9 @@ Locations 13
               0               1               0               0 
               0               0               1               0 
 1
-              1 -1.11022302462516e-16 3.29597460435593e-17               0 
-1.11022302462516e-16               1 9.14816723583937e-34 -3.5527136788005e-15 
--3.29597460435593e-17 2.74445017075181e-33               1 -8.88178419700125e-16 
+              1               0               0               0 
+              0               1               0 -3.5527136788005e-15 
+              0               0               1               0 
 2  3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 0
 2  11 -1 10 -1 9 -1 8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
 Curve2ds 0
