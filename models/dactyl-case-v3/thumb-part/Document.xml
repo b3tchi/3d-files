@@ -1990,7 +1990,7 @@ c82.0 0:(#767;K2;:H137d:3,F)
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-06-18T21:09:34Z"/>
+      <String value="2024-06-19T06:27:29Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -2031,7 +2031,7 @@ c82.0 0:(#767;K2;:H137d:3,F)
       <Bool value="true"/>
     </Property>
   </Properties>
-  <Objects Count="82" Dependencies="1">
+  <Objects Count="83" Dependencies="1">
     <ObjectDeps Name="Body" Count="9">
       <Dep Name="Pad"/>
       <Dep Name="Pad001"/>
@@ -2083,8 +2083,8 @@ c82.0 0:(#767;K2;:H137d:3,F)
     </ObjectDeps>
     <ObjectDeps Name="Reference002" Count="3">
       <Dep Name="Body"/>
+      <Dep Name="Sketch"/>
       <Dep Name="Link"/>
-      <Dep Name="Spreadsheet"/>
     </ObjectDeps>
     <ObjectDeps Name="Sketch001" Count="1">
       <Dep Name="XZ_Plane"/>
@@ -2355,7 +2355,11 @@ c82.0 0:(#767;K2;:H137d:3,F)
       <Dep Name="Boolean003"/>
       <Dep Name="LinearPattern"/>
     </ObjectDeps>
-    <Object type="PartDesign::Body" name="Body" id="4964" revision="236" file="Body.xml" />
+    <ObjectDeps Name="Sketch005" Count="2">
+      <Dep Name="XY_Plane"/>
+      <Dep Name="Spreadsheet"/>
+    </ObjectDeps>
+    <Object type="PartDesign::Body" name="Body" id="4964" revision="246" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="4965" revision="0" file="Origin.xml" />
     <Object type="App::Line" name="X_Axis" id="4966" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="4967" revision="2" file="Y_Axis.xml" />
@@ -2363,18 +2367,18 @@ c82.0 0:(#767;K2;:H137d:3,F)
     <Object type="App::Plane" name="XY_Plane" id="4969" revision="1" file="XY_Plane.xml" />
     <Object type="App::Plane" name="XZ_Plane" id="4970" revision="2" file="XZ_Plane.xml" />
     <Object type="App::Plane" name="YZ_Plane" id="4971" revision="2" file="YZ_Plane.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch" id="4972" revision="1125" file="Sketch.xml" />
-    <Object type="PartDesign::Pad" name="Pad" id="4973" revision="101" file="Pad.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch" id="4972" revision="2279" file="Sketch.xml" />
+    <Object type="PartDesign::Pad" name="Pad" id="4973" revision="111" file="Pad.xml" />
     <Object type="Spreadsheet::Sheet" name="Spreadsheet" id="4979" revision="0" file="Spreadsheet.xml" />
     <Object type="App::Link" name="Link" id="4980" revision="51" file="Link.xml" />
-    <Object type="PartDesign::Boolean" name="Boolean" id="4987" revision="243" file="Boolean.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean" id="4987" revision="263" file="Boolean.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Reference001" id="4989" revision="38" file="Reference001.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Reference002" id="4990" revision="152" file="Reference002.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Reference002" id="4990" revision="176" file="Reference002.xml" />
     <Object type="Sketcher::SketchObject" name="Sketch001" id="4974" revision="274" file="Sketch001.xml" />
-    <Object type="PartDesign::Pad" name="Pad001" id="4998" revision="194" file="Pad001.xml" />
+    <Object type="PartDesign::Pad" name="Pad001" id="4998" revision="214" file="Pad001.xml" />
     <Object type="Sketcher::SketchObject" name="Sketch002" id="4999" revision="244" file="Sketch002.xml" />
-    <Object type="PartDesign::Pad" name="Pad002" id="5000" revision="184" file="Pad002.xml" />
-    <Object type="PartDesign::Chamfer" name="Chamfer" id="5001" revision="46" file="Chamfer.xml" />
+    <Object type="PartDesign::Pad" name="Pad002" id="5000" revision="204" file="Pad002.xml" />
+    <Object type="PartDesign::Chamfer" name="Chamfer" id="5001" revision="58" file="Chamfer.xml" />
     <Object type="App::Line" name="Y_Axis001" id="5064" revision="2" file="Y_Axis001.xml" />
     <Object type="Spreadsheet::Sheet" name="Spreadsheet001" id="5065" revision="0" file="Spreadsheet001.xml" />
     <Object type="App::Plane" name="XZ_Plane001" id="5066" revision="2" file="XZ_Plane001.xml" />
@@ -2437,6 +2441,7 @@ c82.0 0:(#767;K2;:H137d:3,F)
     <Object type="App::Origin" name="Origin006" id="5123" revision="0" file="Origin006.xml" />
     <Object type="PartDesign::Body" name="Body006" id="5124" revision="864" file="Body006.xml" />
     <Object type="App::LinkGroup" name="CopyOnChangeGroup" id="5125" revision="3" file="CopyOnChangeGroup.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch005" id="5126" revision="2391" file="Sketch005.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>

@@ -24,7 +24,15 @@
       <Bool value="false"/>
     </Property>
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-      <ExpressionEngine count="0"></ExpressionEngine>
+      <ExpressionEngine count="1" cdata="1">
+        <Expressions><![CDATA[
+0:Angle
+0:Spreadsheet.pivot_angle
+0:
+
+]]>
+        </Expressions>
+      </ExpressionEngine>
     </Property>
     <Property name="Group" type="App::PropertyLinkList" group="Base" attr="0" ro="0" hide="0" doc="" status="2097418">
       <LinkList count="2">
@@ -40,7 +48,7 @@
       <String value=""/>
     </Property>
     <Property name="LockAngle" type="App::PropertyBool" group="Constraint" attr="0" ro="0" hide="0" docID="21" status="2097152">
-      <Bool value="false"/>
+      <Bool value="true"/>
     </Property>
     <Property name="Multiply" type="App::PropertyBool" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Bool value="false"/>
