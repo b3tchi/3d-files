@@ -5,7 +5,7 @@
   <Properties Count="47" TransientCount="2">
     <_Property name="_Body" type="App::PropertyLinkHidden" status="251658240"/>
     <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881024"/>
-    <Property name="AddSubShape" type="Part::PropertyPartShape" status="1">
+    <Property name="AddSubShape" type="Part::PropertyPartShape">
       <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
 <![CDATA[
 
@@ -1665,12 +1665,12 @@ EndMap
     <Property name="Placement" type="App::PropertyPlacement" status="8388620">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
     </Property>
-    <Property name="Profile" type="App::PropertyLinkSub" status="1">
+    <Property name="Profile" type="App::PropertyLinkSub">
       <LinkSub value="Sketch" count="1">
         <Sub value=""/>
       </LinkSub>
     </Property>
-    <Property name="ReferenceAxis" type="App::PropertyLinkSub" status="1">
+    <Property name="ReferenceAxis" type="App::PropertyLinkSub">
       <LinkSub value="Sketch" count="1">
         <Sub value="N_Axis"/>
       </LinkSub>
@@ -1681,7 +1681,7 @@ EndMap
     <Property name="Reversed" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
-    <Property name="Shape" type="Part::PropertyPartShape" status="1">
+    <Property name="Shape" type="Part::PropertyPartShape">
       <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
 <![CDATA[
 

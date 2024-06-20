@@ -33,7 +33,7 @@
     <Property name="LinkTransform" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097418">
       <Bool value="true"/>
     </Property>
-    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097413">
+    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
       <XLink file="" stamp="" name="Link005" sub="Pad003.Edge126" shadow="Pad003.;#1271;:H21,E.Edge126"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
@@ -45,7 +45,7 @@
     <Property name="Proxy" type="App::PropertyPythonObject">
       <Python  module="freecad.asm3.assembly" class="AsmElement" value="null"/>
     </Property>
-    <Property name="Shape" type="Part::PropertyPartShape" status="1">
+    <Property name="Shape" type="Part::PropertyPartShape">
       <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
 <![CDATA[
 
@@ -79,7 +79,7 @@ Locations 8
 2  6 -1 5 -1 4 -1 3 -1 0
 Curve2ds 0
 Curves 1
-2 -3.1554436208840472e-30 0 0 0 0 1 1 0 0 0 1 0 2
+2 2.6265220699143552e-28 -9.5634786688077224e-29 0 0 0 1 1 0 0 0 1 0 2
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -88,7 +88,7 @@ Triangulations 0
 TShapes 4
 Ve
 1e-07
-2 0 3.7
+2 -9.56347866880772e-29 3.7
 0 0
 
 0101101

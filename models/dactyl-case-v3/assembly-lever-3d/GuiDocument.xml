@@ -8,16 +8,17 @@
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
 <Expand  count="1">
   <Expand name="Assembly004" count="2">
-    <Expand name="Constraints004"/>
+    <Expand name="Constraints004" count="1">
+      <Expand name="Constraint019"/>
+    </Expand>
     <Expand name="Parts004" count="1">
       <Expand name="Assembly002" count="3">
-        <Expand name="Constraints002" count="1">
+        <Expand name="Constraints002" count="2">
           <Expand name="Constraint010"/>
+          <Expand name="Constraint011"/>
         </Expand>
         <Expand name="Elements002"/>
-        <Expand name="Parts002" count="1">
-          <Expand name="Link005"/>
-        </Expand>
+        <Expand name="Parts002"/>
       </Expand>
     </Expand>
   </Expand>
@@ -26,21 +27,21 @@
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position -77.328339 -56.582096 -15.127911
-  orientation 0.17465448 0.63130039 0.75561619  2.7294331
-  nearDistance -143.29233
-  farDistance 18.59572
+  position -106.05024 1.6871749 -12.232044
+  orientation 0.13206752 0.60403001 0.78594261  2.8012345
+  nearDistance -95.357925
+  farDistance 61.698502
   aspectRatio 1
   focalDistance 1.4848053
-  height 100.67669
+  height 150.1926
 
 }
-## overrideMode: Wireframe]]>
+## overrideMode: Flat Lines]]>
   </Camera>
   <View3D id="12"><![CDATA[
   <Properties Count="29" TransientCount="0">
     <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
-      <Integer value="2"/>
+      <Integer value="6"/>
     </Property>
     <Property name="Shadow_BoundBoxScale" type="App::PropertyFloatConstraint" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Float value="1.2"/>
