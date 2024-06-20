@@ -4,7 +4,7 @@
 -->
 <!-- FreeCAD ViewProvider -->
 <Document SchemaVersion="1" FileVersion="2">
-<ViewProvider name="Reference004" expanded="0" Extensions="True">
+<ViewProvider name="Binder003" expanded="0" Extensions="True">
   <Extensions Count="1">
     <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
     </Extension>
@@ -20,8 +20,16 @@
       <Float value="0.2"/>
     </Property>
     <Property name="DiffuseColor" type="App::PropertyColorList" status="1">
-      <ColorList count="1" >
-cccccc00
+      <ColorList count="9" >
+cccccc99
+cccccc99
+cccccc99
+cccccc99
+cccccc99
+cccccc99
+cccccc99
+cccccc99
+cccccc99
       </ColorList>
     </Property>
     <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
@@ -37,18 +45,18 @@ cccccc00
       <Integer value="1"/>
     </Property>
     <Property name="LineColor" type="App::PropertyColor" status="1">
-      <PropertyColor value="421075200"/>
+      <PropertyColor value="4292280473"/>
     </Property>
     <Property name="LineColorArray" type="App::PropertyColorList" status="1">
       <ColorList count="1" >
-19191900
+ffd70099
       </ColorList>
     </Property>
     <Property name="LineMaterial" type="App::PropertyMaterial" status="33">
-      <PropertyMaterial ambientColor="858993408" diffuseColor="421075200" specularColor="0" emissiveColor="0" shininess="1" transparency="0"/>
+      <PropertyMaterial ambientColor="858993408" diffuseColor="4292280473" specularColor="0" emissiveColor="0" shininess="1" transparency="0"/>
     </Property>
     <Property name="LineWidth" type="App::PropertyFloatConstraint" status="1">
-      <Float value="2"/>
+      <Float value="1"/>
     </Property>
     <Property name="MapFaceColor" type="App::PropertyBool" status="1">
       <Bool value="true"/>
@@ -69,15 +77,15 @@ cccccc00
       <Integer value="0"/>
     </Property>
     <Property name="PointColor" type="App::PropertyColor" status="1">
-      <PropertyColor value="421075200"/>
+      <PropertyColor value="4292280473"/>
     </Property>
     <Property name="PointColorArray" type="App::PropertyColorList" status="1">
       <ColorList count="1" >
-19191900
+ffd70099
       </ColorList>
     </Property>
     <Property name="PointMaterial" type="App::PropertyMaterial" status="33">
-      <PropertyMaterial ambientColor="858993408" diffuseColor="421075200" specularColor="0" emissiveColor="0" shininess="1" transparency="0"/>
+      <PropertyMaterial ambientColor="858993408" diffuseColor="4292280473" specularColor="0" emissiveColor="0" shininess="1" transparency="0"/>
     </Property>
     <Property name="PointSize" type="App::PropertyFloatConstraint" status="1">
       <Float value="2"/>
@@ -95,22 +103,22 @@ cccccc00
       <Integer value="0"/>
     </Property>
     <Property name="ShapeColor" type="App::PropertyColor" status="1">
-      <PropertyColor value="3435973632"/>
+      <PropertyColor value="4292280473"/>
     </Property>
     <Property name="ShapeMaterial" type="App::PropertyMaterial" status="33">
-      <PropertyMaterial ambientColor="858993408" diffuseColor="3435973632" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0"/>
+      <PropertyMaterial ambientColor="858993408" diffuseColor="3435973632" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.6000000238418579"/>
     </Property>
     <Property name="ShowInTree" type="App::PropertyBool" status="1">
       <Bool value="true"/>
     </Property>
     <Property name="Transparency" type="App::PropertyPercent" status="1">
-      <Integer value="0"/>
+      <Integer value="60"/>
     </Property>
     <Property name="UseBinderStyle" type="App::PropertyBool" status="1">
-      <Bool value="false"/>
+      <Bool value="true"/>
     </Property>
     <Property name="Visibility" type="App::PropertyBool" status="1">
-      <Bool value="true"/>
+      <Bool value="false"/>
     </Property>
   </Properties>
 </ViewProvider>

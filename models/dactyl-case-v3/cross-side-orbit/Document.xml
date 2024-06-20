@@ -4,7 +4,7 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.408R14555 (Git shallow)" FileVersion="2" Uid="5934a917-ee41-4a0d-9833-1098a6c65b1c" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="117">
+  <StringHasher2  count="116">
 <![CDATA[
 -2.0 0:;SKT;:H3dd,E
 -1.c.1 g2
@@ -96,8 +96,7 @@
 -1.2c.0.1
 -1.2c.0.1
 -12.2c.27.58
--5.0 0:Shape cache
--1.c.ae g18v1
+-6.c.-5f g18v1
 -1.c.0 g18v2
 -1.c.0 g19v2
 -1.c.0 g20v2
@@ -154,7 +153,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-06-16T06:38:28Z"/>
+      <String value="2024-06-20T19:25:13Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -197,18 +196,18 @@
   </Properties>
   <Objects Count="11" Dependencies="1">
     <ObjectDeps Name="Body" Count="4">
-      <Dep Name="Origin"/>
-      <Dep Name="Chamfer"/>
-      <Dep Name="Pad"/>
       <Dep Name="Sketch"/>
+      <Dep Name="Origin"/>
+      <Dep Name="Pad"/>
+      <Dep Name="Chamfer"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
+      <Dep Name="XZ_Plane"/>
+      <Dep Name="Z_Axis"/>
+      <Dep Name="XY_Plane"/>
       <Dep Name="Y_Axis"/>
       <Dep Name="YZ_Plane"/>
-      <Dep Name="XY_Plane"/>
       <Dep Name="X_Axis"/>
-      <Dep Name="Z_Axis"/>
-      <Dep Name="XZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>

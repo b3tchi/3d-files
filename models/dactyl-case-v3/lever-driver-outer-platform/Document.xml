@@ -4,7 +4,7 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.408R14555 (Git shallow)" FileVersion="2" Uid="4e80637c-dad5-4700-a1cf-4ab24776c658" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="68">
+  <StringHasher2  count="67">
 <![CDATA[
 -2.0 0:;SKT;:Hdcf,E
 -1.c.1 g2
@@ -66,8 +66,7 @@
 -1.0 0:(#f0;K-2;:Hdd2:4,F)
 -1.0 0:(#f0;K-4;:Hdd2:4,F)
 -1.0 0:(#f0;K-3;:Hdd2:4,F)
--1.0 0:Shape cache
--5.2c.e0.ee
+-6.2c.e0.ee
 -1.c.-1b g3v1
 -1.c.0 g5v2
 -1.c.0 g4v1
@@ -105,7 +104,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-06-18T21:24:11Z"/>
+      <String value="2024-06-20T19:25:13Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -148,17 +147,17 @@
   </Properties>
   <Objects Count="12" Dependencies="1">
     <ObjectDeps Name="Body" Count="5">
-      <Dep Name="Origin"/>
       <Dep Name="Sketch"/>
-      <Dep Name="Pad"/>
       <Dep Name="Cylinder"/>
       <Dep Name="Cylinder001"/>
+      <Dep Name="Origin"/>
+      <Dep Name="Pad"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
-      <Dep Name="Z_Axis"/>
-      <Dep Name="XY_Plane"/>
       <Dep Name="X_Axis"/>
+      <Dep Name="Z_Axis"/>
       <Dep Name="Y_Axis"/>
+      <Dep Name="XY_Plane"/>
       <Dep Name="XZ_Plane"/>
       <Dep Name="YZ_Plane"/>
     </ObjectDeps>
@@ -172,17 +171,17 @@
       <Dep Name="XZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad" Count="3">
-      <Dep Name="Body"/>
       <Dep Name="Sketch"/>
+      <Dep Name="Body"/>
       <Dep Name="Cylinder001"/>
     </ObjectDeps>
     <ObjectDeps Name="Cylinder" Count="2">
-      <Dep Name="Body"/>
       <Dep Name="XY_Plane"/>
+      <Dep Name="Body"/>
     </ObjectDeps>
     <ObjectDeps Name="Cylinder001" Count="3">
-      <Dep Name="Body"/>
       <Dep Name="XY_Plane"/>
+      <Dep Name="Body"/>
       <Dep Name="Cylinder"/>
     </ObjectDeps>
     <Object type="PartDesign::Body" name="Body" id="3527" revision="43" file="Body.xml" />

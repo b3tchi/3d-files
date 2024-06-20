@@ -33,8 +33,8 @@
     <Property name="LinkTransform" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097418">
       <Bool value="true"/>
     </Property>
-    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Link005" sub="Pad003.Edge8" shadow="Pad003.;#588;:M;CUT;:H-23:7,E.Edge8"/>
+    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097413">
+      <XLink file="" stamp="" name="Link005" sub="Pad003.Edge5" shadow="Pad003.;#588;:M;CUT;:H-23:7,E.Edge5"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -45,7 +45,7 @@
     <Property name="Proxy" type="App::PropertyPythonObject">
       <Python  module="freecad.asm3.assembly" class="AsmElement" value="null"/>
     </Property>
-    <Property name="Shape" type="Part::PropertyPartShape">
+    <Property name="Shape" type="Part::PropertyPartShape" status="1">
       <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
 <![CDATA[
 
@@ -64,9 +64,9 @@ Locations 7
               0               1               0               0 
               0               0               1               0 
 1
-4.44089209850063e-16 -3.33066907387547e-16               1            -116 
-              1 3.33066907387547e-16 -4.44089209850063e-16        3.86e-14 
--3.33066907387547e-16               1 3.33066907387547e-16       -3.86e-14 
+2.22044604925031e-16 -3.33066907387547e-16               1            -116 
+              1 3.33066907387547e-16 -2.22044604925031e-16 3.86357612569554e-14 
+-3.33066907387547e-16               1 3.33066907387547e-16 -3.86357612569554e-14 
 1
               1               0               0               0 
               0               1               0               0 
@@ -75,7 +75,7 @@ Locations 7
 2  5 -1 4 -1 3 -1 0
 Curve2ds 0
 Curves 1
-2 -58.450000000000003 1.8500000000000001 0 0 0 1 1 0 -0 -0 1 0 1.05
+2 -10.650000000000006 1.8500000000000001 0 0 0 1 1 0 0 0 1 0 1.05
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -84,7 +84,7 @@ Triangulations 0
 TShapes 4
 Ve
 1.00000028421709e-07
--116 -57.4 1.84999999999998
+-116 -9.59999999999997 1.84999999999996
 0 0
 
 0101101
@@ -124,7 +124,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#1f;:X;:H23:3,E.0 0
+;#165;:X;:H23:3,E.0 0
 
 Vertex
 
@@ -132,7 +132,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#1e;:X;:H23:3,V.0 0
+;#164;:X;:H23:3,V.0 0
 
 EndMap
 ]]>

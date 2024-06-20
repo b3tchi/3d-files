@@ -99,7 +99,7 @@
         <Constrain Name="" Type="1" Value="0" First="15" FirstPos="2" Second="20" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="1" Value="0" First="19" FirstPos="1" Second="15" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="13" Value="0" First="14" FirstPos="1" Second="15" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-        <Constrain Name="" Type="7" Value="18.56" First="1" FirstPos="2" Second="1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10.01157188415527" LabelPosition="-2.835109233856201" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="narrow_wdith" Type="7" Value="18.56" First="1" FirstPos="2" Second="1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10.01157188415527" LabelPosition="-2.835109233856201" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="1" Value="0" First="28" FirstPos="2" Second="29" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="3" Value="0" First="28" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="1" Value="0" First="29" FirstPos="2" Second="30" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
@@ -132,12 +132,12 @@
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
       <ExpressionEngine count="2" cdata="1">
         <Expressions><![CDATA[
-0:Constraints[3]
-0:<<sh>>.lenght
+0:.Constraints.narrow_wdith
+0:18.21 + 0.35 mm
 0:
 
-0:Constraints[71]
-0:18.21 + 0.35 mm
+0:Constraints[3]
+0:<<sh>>.lenght
 0:
 
 ]]>
@@ -186,21 +186,21 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="3" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-31.06" StartY="-96" StartZ="0" EndX="9.000000000000004" EndY="-96" EndZ="0"/>
+          <LineSegment StartX="-31.06" StartY="-96" StartZ="0" EndX="9" EndY="-96" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="5" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="5" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="0" StartY="-5.546678239835239e-32" StartZ="0" EndX="-18.56" EndY="-5.546678239835239e-32" EndZ="0"/>
+          <LineSegment StartX="0" StartY="0" StartZ="0" EndX="-18.56" EndY="0" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="9" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="9" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-18.56" StartY="-5.546678239835239e-32" StartZ="0" EndX="-18.56" EndY="-44.2" EndZ="0"/>
+          <LineSegment StartX="-18.56" StartY="0" StartZ="0" EndX="-18.56" EndY="-44.2" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="10" migrated="1">
@@ -214,49 +214,49 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="11" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-2.5" StartY="-2.5" StartZ="0" EndX="-16.06000000000001" EndY="-2.5" EndZ="0"/>
+          <LineSegment StartX="-2.5" StartY="-2.5" StartZ="0" EndX="-16.06" EndY="-2.5" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="13" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="13" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-16.06000000000001" StartY="-49.44999999999891" StartZ="0" EndX="-28.56" EndY="-49.44999999999891" EndZ="0"/>
+          <LineSegment StartX="-16.06" StartY="-49.44999999998844" StartZ="0" EndX="-28.56" EndY="-49.44999999998844" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomCircle" id="17" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="17" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
           </GeoExtensions>
-          <Circle CenterX="-16.06000000000001" CenterY="-2.5" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="2.5"/>
+          <Circle CenterX="-16.06" CenterY="-2.5" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="2.5"/>
           <Construction value="1"/>
         </Geometry>
         <Geometry type="Part::GeomCircle" id="18" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="18" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
           </GeoExtensions>
-          <Circle CenterX="-28.56" CenterY="-49.44999999999891" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="2.5"/>
+          <Circle CenterX="-28.56" CenterY="-49.44999999998844" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="2.5"/>
           <Construction value="1"/>
         </Geometry>
         <Geometry type="Part::GeomCircle" id="19" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="19" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
           </GeoExtensions>
-          <Circle CenterX="6.499999999999999" CenterY="-93.5" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="2.5"/>
+          <Circle CenterX="6.5" CenterY="-93.49999999999999" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="2.5"/>
           <Construction value="1"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="20" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="20" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-16.06000000000001" StartY="-2.5" StartZ="0" EndX="-16.06000000000001" EndY="-44.2" EndZ="0"/>
+          <LineSegment StartX="-16.06" StartY="-2.5" StartZ="0" EndX="-16.06" EndY="-44.2" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="21" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="21" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-16.06000000000001" StartY="-44.2" StartZ="0" EndX="-16.06000000000001" EndY="-49.44999999999891" EndZ="0"/>
+          <LineSegment StartX="-16.06" StartY="-44.2" StartZ="0" EndX="-16.06" EndY="-49.44999999998844" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="23" migrated="1">
@@ -277,56 +277,56 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="26" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-18.56" StartY="-44.2" StartZ="0" EndX="-16.06000000000001" EndY="-44.2" EndZ="0"/>
+          <LineSegment StartX="-18.56" StartY="-44.2" StartZ="0" EndX="-16.06" EndY="-44.2" EndZ="0"/>
           <Construction value="1"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="27" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="27" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-9" StartY="-71.25" StartZ="0" EndX="-9" EndY="-93.50000000000006" EndZ="0"/>
+          <LineSegment StartX="-9" StartY="-71.25" StartZ="0" EndX="-9" EndY="-93.49999999999997" EndZ="0"/>
           <Construction value="1"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="30" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="30" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-11.625" StartY="-71.25" StartZ="0" EndX="-6.374999999999999" EndY="-71.25" EndZ="0"/>
+          <LineSegment StartX="-11.625" StartY="-71.25" StartZ="0" EndX="-6.375000000000001" EndY="-71.25" EndZ="0"/>
           <Construction value="1"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="31" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="31" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-28.56" StartY="-93.50000000000007" StartZ="0" EndX="-11.625" EndY="-93.50000000000007" EndZ="0"/>
+          <LineSegment StartX="-28.56" StartY="-93.49999999999999" StartZ="0" EndX="-11.625" EndY="-93.49999999999999" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="32" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="32" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-11.625" StartY="-93.50000000000007" StartZ="0" EndX="-6.374999999999999" EndY="-93.5" EndZ="0"/>
+          <LineSegment StartX="-11.625" StartY="-93.49999999999999" StartZ="0" EndX="-6.375000000000001" EndY="-93.49999999999999" EndZ="0"/>
           <Construction value="1"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="15" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="15" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-6.374999999999999" StartY="-93.5" StartZ="0" EndX="6.499999999999999" EndY="-93.5" EndZ="0"/>
+          <LineSegment StartX="-6.375000000000001" StartY="-93.49999999999999" StartZ="0" EndX="6.499999999999999" EndY="-93.49999999999999" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="29" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="29" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-11.625" StartY="-71.25" StartZ="0" EndX="-11.625" EndY="-93.50000000000007" EndZ="0"/>
+          <LineSegment StartX="-11.625" StartY="-71.25" StartZ="0" EndX="-11.625" EndY="-93.49999999999999" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="33" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="33" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-6.374999999999999" StartY="-71.25" StartZ="0" EndX="-6.374999999999999" EndY="-93.5" EndZ="0"/>
+          <LineSegment StartX="-6.375000000000001" StartY="-71.25" StartZ="0" EndX="-6.375000000000001" EndY="-93.49999999999999" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="37" migrated="1">
@@ -340,14 +340,14 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="38" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="6.499999999999999" StartY="-93.5" StartZ="0" EndX="6.499999999999999" EndY="-71.25" EndZ="0"/>
+          <LineSegment StartX="6.5" StartY="-93.49999999999999" StartZ="0" EndX="6.5" EndY="-71.25" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="39" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="39" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="6.499999999999999" StartY="-71.25" StartZ="0" EndX="-2.500000000000001" EndY="-71.25" EndZ="0"/>
+          <LineSegment StartX="6.5" StartY="-71.25" StartZ="0" EndX="-2.5" EndY="-71.25" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="40" migrated="1">
@@ -382,7 +382,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="43" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-28.56" StartY="-49.44999999999891" StartZ="0" EndX="-28.56" EndY="-66" EndZ="0"/>
+          <LineSegment StartX="-28.56" StartY="-49.44999999998844" StartZ="0" EndX="-28.56" EndY="-66" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="45" migrated="1">
@@ -396,7 +396,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="14" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-28.56" StartY="-71.25" StartZ="0" EndX="-28.56" EndY="-93.50000000000007" EndZ="0"/>
+          <LineSegment StartX="-28.56" StartY="-71.25" StartZ="0" EndX="-28.56" EndY="-93.49999999999999" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="44" migrated="1">
@@ -417,7 +417,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="12" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-6.374999999999999" StartY="-71.25" StartZ="0" EndX="-2.5" EndY="-71.25" EndZ="0"/>
+          <LineSegment StartX="-6.375000000000001" StartY="-71.25" StartZ="0" EndX="-2.5" EndY="-71.25" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="36" migrated="1">
@@ -487,30 +487,30 @@ Locations 1
               0               0               1               0 
 Curve2ds 0
 Curves 24
-1 -31.059999999999999 -44.200000000000003 0 0 -1 0 
-1 -31.059999999999999 -96 0 1 0 0 
+1 -31.060000000000002 -44.200000000000003 0 0 -1 0 
+1 -31.060000000000002 -96 0 1 0 0 
 1 9 -96 0 0 1 0 
 1 0 -66 0 1 0 0 
 1 0 -66 0 0 1 0 
-1 0 -5.5466782398352393e-32 0 -1 0 0 
-1 -18.559999999999999 -5.5466782398352393e-32 0 0 -1 0 
-1 -31.059999999999999 -44.200000000000003 0 1 0 0 
-1 -2.5 -2.5 0 -1 0 0 
-1 -16.060000000000009 -2.5 0 0 -1 0 
-1 -16.060000000000009 -44.200000000000003 0 0 -1 0 
-1 -16.060000000000009 -49.449999999998909 0 -1 0 0 
-1 -28.559999999999999 -49.449999999998909 0 0 -1 0 
+1 0 0 0 -1 0 0 
+1 -18.560000000000002 0 0 0 -1 0 
+1 -31.060000000000002 -44.200000000000003 0 1 0 0 
+1 -2.4999999999999996 -2.5 0 -1 0 0 
+1 -16.060000000000002 -2.5 0 0 -1 0 
+1 -16.060000000000002 -44.200000000000003 0 0 -1 0 
+1 -16.060000000000002 -49.449999999988435 0 -1 0 0 
+1 -28.559999999999999 -49.449999999988435 0 0 -1 0 
 1 -28.559999999999999 -66 0 1 0 0 
-1 -2.5 -66 0 0 1 0 
+1 -2.4999999999999996 -66 0 0 1 0 
 1 -28.559999999999999 -71.25 0 0 -1 0 
-1 -28.559999999999999 -93.500000000000071 0 1 0 0 
+1 -28.559999999999999 -93.499999999999986 0 1 0 0 
 1 -11.625 -71.25 0 0 -1 0 
 1 -28.559999999999999 -71.25 0 1 0 0 
-1 -6.3749999999999991 -93.5 0 1 0 0 
-1 6.4999999999999991 -93.5 0 0 1 0 
-1 6.4999999999999991 -71.25 0 -1 0 0 
-1 -6.3749999999999991 -71.25 0 1 0 0 
-1 -6.3749999999999991 -71.25 0 0 -1 0 
+1 -6.3750000000000009 -93.499999999999986 0 1 0 0 
+1 6.5 -93.499999999999986 0 0 1 0 
+1 6.5 -71.25 0 -1 0 0 
+1 -6.3750000000000009 -71.25 0 1 0 0 
+1 -6.3750000000000009 -71.25 0 0 -1 0 
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -596,7 +596,7 @@ Ed
 +46 0 -44 0 *
 Ve
 1.00000000030201e-05
--18.56 -5.54667823983524e-32 0
+-18.56 0 0
 0 0
 
 0101101
@@ -670,21 +670,21 @@ Ed
 +35 0 -33 0 *
 Ve
 1e-07
--16.06 -49.4499999999989 0
+-16.06 -49.4499999999884 0
 0 0
 
 0101101
 *
 Ed
  1e-07 1 1 0
-1  11 0 0 5.24999999999891
+1  11 0 0 5.24999999998843
 0
 
 0101000
 +33 0 -31 0 *
 Ve
 1e-07
--28.56 -49.4499999999989 0
+-28.56 -49.4499999999884 0
 0 0
 
 0101101
@@ -705,13 +705,13 @@ Ve
 *
 Ed
  1e-07 1 1 0
-1  13 0 0 16.5500000000011
+1  13 0 0 16.5500000000116
 0
 
 0101000
 +29 0 -27 0 *
 Ve
-1e-07
+1.00000000222045e-07
 -2.5 -66 0
 0 0
 
@@ -744,21 +744,21 @@ Ve
 *
 Ve
 1e-07
--28.56 -93.5000000000001 0
+-28.56 -93.5 0
 0 0
 
 0101101
 *
 Ed
  1e-07 1 1 0
-1  16 0 0 22.2500000000001
+1  16 0 0 22.25
 0
 
 0101000
 +21 0 -20 0 *
 Ve
 1e-07
--11.625 -93.5000000000001 0
+-11.625 -93.5 0
 0 0
 
 0101101
@@ -779,7 +779,7 @@ Ve
 *
 Ed
  1e-07 1 1 0
-1  18 0 0 22.2500000000001
+1  18 0 0 22.25
 0
 
 0101000
@@ -803,7 +803,7 @@ Ve
 0101101
 *
 Ve
-1e-07
+1.00000000444089e-07
 6.5 -93.5 0
 0 0
 
@@ -831,7 +831,7 @@ Ed
 0101000
 +11 0 -9 0 *
 Ve
-1.00000000444089e-07
+1.00000000222045e-07
 -2.5 -71.25 0
 0 0
 

@@ -136,7 +136,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="2" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <ArcOfCircle CenterX="2.223863899570788e-16" CenterY="11" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="5" StartAngle="5.09139800108064" EndAngle="10.61656526686833"/>
+          <ArcOfCircle CenterX="2e-16" CenterY="11" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="5" StartAngle="5.09139800108064" EndAngle="10.61656526686833"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="3" migrated="1">
@@ -192,7 +192,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="10" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
           </GeoExtensions>
-          <GeomPoint X="-2.834906224289112e-32" Y="-9.499999999999998" Z="0"/>
+          <GeomPoint X="-0" Y="-9.499999999999998" Z="0"/>
           <Construction value="1"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="11" migrated="1">
@@ -227,7 +227,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="15" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
           </GeoExtensions>
-          <GeomPoint X="-1.173848658731136e-34" Y="0.7000000000000013" Z="0"/>
+          <GeomPoint X="-0" Y="0.7000000000000013" Z="0"/>
           <Construction value="1"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="16" migrated="1">
@@ -276,7 +276,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="22" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
           </GeoExtensions>
-          <GeomPoint X="2.223863899570788e-16" Y="11" Z="0"/>
+          <GeomPoint X="2e-16" Y="11" Z="0"/>
           <Construction value="1"/>
         </Geometry>
       </GeometryList>
@@ -351,7 +351,7 @@ Curve2ds 2
 1 0 0 1 0 
 1 0 -3 1 0 
 Curves 16
-2 2.2238638995707878e-16 11 0 0 0 1 1 0 0 0 1 0 5
+2 2.2238638995707878e-16 11 0 0 0 1 1 0 -0 -0 1 0 5
 1 -1.8500000000000001 -13 0 0 1 0 
 1 1.8500000000000001 -13 0 -1 0 0 
 1 1.8500000000000001 6.3548412298393924 0 0 -1 0 
@@ -370,7 +370,7 @@ Curves 16
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 1
-2 2.2238638995707878e-16 11 0 -0 -0 -1 1 0 0 0 1 0 5
+2 2.2238638995707878e-16 11 0 -0 -0 -1 1 0 0 -0 1 -0 5
 Triangulations 0
 
 TShapes 37

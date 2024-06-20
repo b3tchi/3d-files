@@ -4,7 +4,7 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.408R14555 (Git shallow)" FileVersion="2" Uid="4e80637c-dad5-4700-a1cf-4ab24776c658" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="241">
+  <StringHasher2  count="240">
 <![CDATA[
 -2.0 0:;SKT;:Hdcf,E
 -2.0 0:;SKT;:Hdcf,V
@@ -125,8 +125,7 @@
 -1.2c.0.-2
 -1.2c.0.-1b
 -1.2c.0.-1
--27.0 0:Shape cache
--1.0 0:;:U;CHF;:Hdd0:7,V
+-28.0 0:;:U;CHF;:Hdd0:7,V
 -1.2c.1.34
 -1.2c.0.1
 -1.2c.0.2
@@ -278,7 +277,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-06-18T21:21:58Z"/>
+      <String value="2024-06-20T19:25:13Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -321,19 +320,19 @@
   </Properties>
   <Objects Count="12" Dependencies="1">
     <ObjectDeps Name="Body" Count="5">
-      <Dep Name="Pad"/>
-      <Dep Name="Hole"/>
       <Dep Name="Sketch"/>
       <Dep Name="Origin"/>
+      <Dep Name="Pad"/>
       <Dep Name="Chamfer"/>
+      <Dep Name="Hole"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
+      <Dep Name="Z_Axis"/>
       <Dep Name="Y_Axis"/>
       <Dep Name="XY_Plane"/>
-      <Dep Name="X_Axis"/>
-      <Dep Name="Z_Axis"/>
       <Dep Name="XZ_Plane"/>
       <Dep Name="YZ_Plane"/>
+      <Dep Name="X_Axis"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
@@ -349,12 +348,12 @@
       <Dep Name="Body"/>
     </ObjectDeps>
     <ObjectDeps Name="Chamfer" Count="2">
-      <Dep Name="Pad"/>
       <Dep Name="Body"/>
+      <Dep Name="Pad"/>
     </ObjectDeps>
     <ObjectDeps Name="Hole" Count="2">
-      <Dep Name="Chamfer"/>
       <Dep Name="Body"/>
+      <Dep Name="Chamfer"/>
     </ObjectDeps>
     <Object type="PartDesign::Body" name="Body" id="3527" revision="51" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="3528" revision="0" file="Origin.xml" />

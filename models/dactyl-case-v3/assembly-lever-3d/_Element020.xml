@@ -34,7 +34,7 @@
       <Bool value="true"/>
     </Property>
     <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Link006" sub="Sketch001.Edge2" shadow="Sketch001.;g2;SKT.Edge2"/>
+      <XLink file="" stamp="" name="Link006" sub="Sketch001.Edge1" shadow="Sketch001.;g4;SKT.Edge1"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -58,7 +58,7 @@ Locations 6
 1
 -5.75095526755831e-14 2.81885625952327e-13              -1 -52.1360393628351 
              -1 6.1839422471605e-14 5.75095526756005e-14 7.84999999999836 
-6.18394224716212e-14               1 2.81885625952323e-13 32.1999999999959 
+6.18394224716212e-14               1 2.81885625952324e-13 32.1999999999959 
 1
               1               0               0               0 
               0               1               0               0 
@@ -71,40 +71,47 @@ Locations 6
 2  4 -1 3 -1 0
 Curve2ds 0
 Curves 1
-2 66.299999999999997 -34.050000000000004 0 0 0 1 1 0 -0 -0 1 0 1.05
+1 -1.8500000000438581 -17.500000000006995 0 1 0 0 
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
 Triangulations 0
 
-TShapes 4
+TShapes 5
 Ve
 1e-07
-67.35 -34.05 0
+-1.85000000004386 -17.500000000007 0
+0 0
+
+0101101
+*
+Ve
+1.00000000111022e-07
+1.85 -17.500000000007 0
 0 0
 
 0101101
 *
 Ed
  1e-07 1 1 0
-1  1 0 0 6.28318530717959
+1  1 0 0 3.70000000004386
 0
 
-0101100
-+4 6 -4 6 *
+0101000
++5 6 -4 6 *
 Co
 
 0100000
 +3 5 *
 Co
 
-0100000
+1100000
 +2 2 *
 
 +1 1 ]]>
       </Part>
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
-      <ElementMap2 count="2">
+      <ElementMap2 count="3">
 <![CDATA[
 9 PostfixCount 2
 Edge
@@ -120,15 +127,16 @@ ChildCount 0
 
 NameCount 2
 0
-;#90;:X;:Hf70:3,E.0 0
+;#11a;:X;:Hf70:3,E.0 0
 
 Vertex
 
 ChildCount 0
 
-NameCount 2
+NameCount 3
 0
-;#8f;:X;:Hf70:3,V.0 0
+;#118;:X;:Hf70:3,V.0 0
+;#119;:X;:Hf70:3,V.0 0
 
 EndMap
 ]]>
