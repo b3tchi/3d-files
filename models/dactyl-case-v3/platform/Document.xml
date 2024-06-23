@@ -4,7 +4,7 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.408R14555 (Git shallow)" FileVersion="2" Uid="d01deadd-9816-4f22-8ade-8e1c7b78687b" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="2228">
+  <StringHasher2  count="2227">
 <![CDATA[
 -2.0 0:;SKT;:H9,E
 -2.0 0:;SKT;:H9,V
@@ -254,8 +254,7 @@ a3e.c.4 g43v1
 -1.0 0:(#bc5;K-5;:H-20:4,F)
 -1.0 0:(#bc5;K-7;:H-20:4,F)
 -1.0 0:(#bc5;K-8;:H-20:4,F)
-e8c.0 0:Shape cache
--25.0 0:;SKT;:H,E;:H9:5,E
+eb1.0 0:;SKT;:H,E;:H9:5,E
 -1.c.1 g1
 -1.0 0:;SKT;:H,V;:H9:5,V
 -1.c.1 g1v1
@@ -570,7 +569,7 @@ e8c.0 0:Shape cache
 -1.2c.0.-d67
 -1.2c.0.846
 -1.2c.0.4cc
-1275.2c.122a.ecd
+-2.2c.0.14b
 -2.2c.0.1
 -2.2c.0.1
 -2.2c.0.1
@@ -582,7 +581,7 @@ e8c.0 0:Shape cache
 -1.2c.0.1
 -1.0 0:;:H-20,E;:H20,E
 -1.2c.1.ed
--16.2c.-42.-1b
+129b.2c.1242.117d
 -3.2c.42.24
 -2.2c.0.1
 -3.2c.-42.-63e
@@ -1243,7 +1242,7 @@ e8c.0 0:Shape cache
 -1.2c.0.1
 -1.2c.5.-14
 -1.2c.-a.25
-165d.2c.4c.1639
+-1.2c.0.1
 -1.2c.0.1
 -1.2c.0.1
 -1.2c.5.-12
@@ -1281,7 +1280,7 @@ e8c.0 0:Shape cache
 -1.2c.0.1
 -1.2c.0.1
 -1.2c.0.2
--1.28.431.-137.8bc ;:G2#14c0;CUT;:H-20:d,V;:H20,V
+1683.28.160b.14c0.dc7 ;:G2#14c0;CUT;:H-20:d,V;:H20,V
 -1.28.a.-6f9.8aa ;:G2#1671;CUT;:H-20:d,V;:H20,V
 -1.2c.-43b.83c
 -1.2c.0.-3
@@ -2214,7 +2213,7 @@ e8c.0 0:Shape cache
 -1.2c.0.-1c1
 -1.2c.4.-f0d
 -1.2c.0.3
-1a48.c.19cb.176e #15e2
+-7.c.-4.1119 #15e2
 -1.0 0:(#1a48;K-2;:H23:4,F)
 -1.c.7f.2dc #15e6
 -1.0 0:(#1a4a;K-2;:H23:4,F)
@@ -2265,7 +2264,7 @@ e8c.0 0:Shape cache
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-06-22T09:56:06Z"/>
+      <String value="2024-06-23T20:01:10Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -2308,25 +2307,25 @@ e8c.0 0:Shape cache
   </Properties>
   <Objects Count="20" Dependencies="1">
     <ObjectDeps Name="Body" Count="12">
-      <Dep Name="DatumPoint"/>
+      <Dep Name="Sketch"/>
+      <Dep Name="Sketch002"/>
       <Dep Name="Sketch003"/>
-      <Dep Name="Origin"/>
-      <Dep Name="Pad003"/>
-      <Dep Name="Pad"/>
+      <Dep Name="Sketch001"/>
       <Dep Name="Pad001"/>
       <Dep Name="Pad002"/>
-      <Dep Name="Sketch001"/>
-      <Dep Name="Sketch002"/>
-      <Dep Name="Sketch"/>
-      <Dep Name="DatumPlane"/>
+      <Dep Name="Pad"/>
       <Dep Name="Pad004"/>
+      <Dep Name="Pad003"/>
+      <Dep Name="DatumPlane"/>
+      <Dep Name="Origin"/>
+      <Dep Name="DatumPoint"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
-      <Dep Name="Y_Axis"/>
-      <Dep Name="X_Axis"/>
-      <Dep Name="Z_Axis"/>
-      <Dep Name="XY_Plane"/>
       <Dep Name="XZ_Plane"/>
+      <Dep Name="XY_Plane"/>
+      <Dep Name="X_Axis"/>
+      <Dep Name="Y_Axis"/>
+      <Dep Name="Z_Axis"/>
       <Dep Name="YZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
@@ -2340,8 +2339,8 @@ e8c.0 0:Shape cache
       <Dep Name="XY_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad" Count="2">
-      <Dep Name="Body"/>
       <Dep Name="Sketch"/>
+      <Dep Name="Body"/>
     </ObjectDeps>
     <ObjectDeps Name="DatumPlane" Count="1">
       <Dep Name="XY_Plane"/>
@@ -2352,18 +2351,18 @@ e8c.0 0:Shape cache
       <Dep Name="XY_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad001" Count="3">
-      <Dep Name="Pad"/>
-      <Dep Name="Body"/>
       <Dep Name="Sketch001"/>
+      <Dep Name="Body"/>
+      <Dep Name="Pad"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad002" Count="2">
-      <Dep Name="Pad001"/>
       <Dep Name="Body"/>
+      <Dep Name="Pad001"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad003" Count="3">
-      <Dep Name="Pad002"/>
-      <Dep Name="Body"/>
       <Dep Name="Sketch002"/>
+      <Dep Name="Body"/>
+      <Dep Name="Pad002"/>
     </ObjectDeps>
     <ObjectDeps Name="Sketch002" Count="2">
       <Dep Name="Sketch"/>
@@ -2377,8 +2376,8 @@ e8c.0 0:Shape cache
     </ObjectDeps>
     <ObjectDeps Name="Pad004" Count="3">
       <Dep Name="Sketch003"/>
-      <Dep Name="Pad003"/>
       <Dep Name="Body"/>
+      <Dep Name="Pad003"/>
     </ObjectDeps>
     <Object type="PartDesign::Body" name="Body" id="1" revision="256" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="2" revision="0" file="Origin.xml" />
