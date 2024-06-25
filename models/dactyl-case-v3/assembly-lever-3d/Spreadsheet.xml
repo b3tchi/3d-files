@@ -3,7 +3,7 @@
 <Document SchemaVersion="4" FileVersion="2">
 <Object name="Spreadsheet">
   <Properties Count="12" TransientCount="0">
-    <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108865">
+    <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
       <ExpressionEngine count="1" cdata="1">
         <Expressions><![CDATA[
 0:.cells.Bind.B1.ZZ1
@@ -14,71 +14,90 @@
         </Expressions>
       </ExpressionEngine>
     </Property>
-    <Property name="Label" type="App::PropertyString" status="134217729">
+    <Property name="Label" type="App::PropertyString" status="134217728">
       <String value="Spreadsheet"/>
     </Property>
     <Property name="Label2" type="App::PropertyString" status="128">
       <String value=""/>
     </Property>
-    <Property name="PythonMode" type="App::PropertyBool" status="1">
+    <Property name="PythonMode" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
-    <Property name="ShowCells" type="App::PropertyEnumeration" status="1">
+    <Property name="ShowCells" type="App::PropertyEnumeration">
       <Integer value="0"/>
     </Property>
-    <Property name="TreeRank" type="App::PropertyInteger" status="2185">
+    <Property name="TreeRank" type="App::PropertyInteger" status="2184">
       <Integer value="196"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="649">
+    <Property name="Visibility" type="App::PropertyBool" status="648">
       <Bool value="true"/>
     </Property>
-    <Property name="cells" type="Spreadsheet::PropertySheet" status="67108865">
-      <Cells Count="34">
-        <Cell alias="pivot_angle" address="B1" content="=.B4"/>
-        <Cell alias="main_angle" address="C1" content="=.C4"/>
-        <Cell address="D1" content="=.D4"/>
-        <Cell address="E1" content="=.E4"/>
-        <Cell address="A2" content="folded"/>
+    <Property name="cells" type="Spreadsheet::PropertySheet" status="67108864">
+      <Cells Count="53">
+        <Cell alias="pivot_angle" address="B1" content="=.B9"/>
+        <Cell alias="main_angle" address="C1" content="=.C9"/>
+        <Cell address="D1" content="=.D9"/>
+        <Cell address="E1" content="=.E9"/>
+        <Cell address="F1" content="=.F9"/>
+        <Cell address="A2" content="open 100%"/>
         <Cell address="B2" content="=D2 * E2"/>
         <Cell address="C2" content="16.77"/>
         <Cell address="D2" content="1"/>
-        <Cell address="E2" content="20.08"/>
-        <Cell address="A3" content="two-third"/>
+        <Cell address="E2" content="20.03"/>
+        <Cell address="F2" content="16.77"/>
+        <Cell address="A3" content="open 90%"/>
         <Cell address="B3" content="=D3 * E3"/>
-        <Cell address="C3" content="=C2 * D3"/>
-        <Cell address="D3" content="=2 / 3"/>
-        <Cell address="E3" content="20.08"/>
-        <Cell address="A4" content="half"/>
+        <Cell address="C3" content="=F3 * D3"/>
+        <Cell address="D3" content="0.9"/>
+        <Cell address="E3" content="20.03"/>
+        <Cell address="F3" content="16.77"/>
+        <Cell address="A4" content="open 75%"/>
         <Cell address="B4" content="=D4 * E4"/>
-        <Cell address="C4" content="=C2 / 2"/>
-        <Cell address="D4" content="=1 / 2"/>
-        <Cell address="E4" content="20.08"/>
-        <Cell address="A5" content="third"/>
+        <Cell address="C4" content="=C2 * D4"/>
+        <Cell address="D4" content="0.75"/>
+        <Cell address="E4" content="20.03"/>
+        <Cell address="F4" content="16.77"/>
+        <Cell address="A5" content="open 66%"/>
         <Cell address="B5" content="=D5 * E5"/>
-        <Cell address="C5" content="=B2 / 3"/>
-        <Cell address="D5" content="=1 / 3"/>
-        <Cell address="E5" content="20.08"/>
-        <Cell address="A6" content="unfolded"/>
+        <Cell address="C5" content="=C2 * D5"/>
+        <Cell address="D5" content="=2 / 3"/>
+        <Cell address="E5" content="20.03"/>
+        <Cell address="F5" content="16.77"/>
+        <Cell address="A6" content="open 50%"/>
         <Cell address="B6" content="=D6 * E6"/>
-        <Cell address="C6" content="16.77"/>
-        <Cell address="D6" content="0"/>
-        <Cell address="E6" content="20.08"/>
-        <Cell address="A7" content="&quot;75%&quot;"/>
+        <Cell address="C6" content="=C2 / 2"/>
+        <Cell address="D6" content="=1 / 2"/>
+        <Cell address="E6" content="20.03"/>
+        <Cell address="F6" content="16.77"/>
+        <Cell address="A7" content="open 33%"/>
         <Cell address="B7" content="=D7 * E7"/>
-        <Cell address="C7" content="=C6 * D7"/>
-        <Cell address="D7" content="=3 / 4"/>
-        <Cell address="E7" content="20.08"/>
+        <Cell address="C7" content="=B2 / 3"/>
+        <Cell address="D7" content="=1 / 3"/>
+        <Cell address="E7" content="20.03"/>
+        <Cell address="F7" content="16.77"/>
+        <Cell address="A8" content="open 25%"/>
+        <Cell address="B8" content="=D8 * E8"/>
+        <Cell address="C8" content="=B4 / 3"/>
+        <Cell address="D8" content="0.25"/>
+        <Cell address="E8" content="20.03"/>
+        <Cell address="F8" content="16.77"/>
+        <Cell address="A9" content="open 0%"/>
+        <Cell address="B9" content="=D9 * E9"/>
+        <Cell address="C9" content="16.77"/>
+        <Cell address="D9" content="0.015"/>
+        <Cell address="E9" content="20.03"/>
+        <Cell address="F9" content="16.77"/>
       </Cells>
     </Property>
     <Property name="columnWidths" type="Spreadsheet::PropertyColumnWidths" status="218103808">
       <ColumnInfo Count="0">
       </ColumnInfo>
     </Property>
-    <Property name="hiddenColumns" type="App::PropertyIntegerSet" status="201326593">
+    <Property name="hiddenColumns" type="App::PropertyIntegerSet" status="201326592">
       <IntegerSet count="0">
       </IntegerSet>
     </Property>
-    <Property name="hiddenRows" type="App::PropertyIntegerSet" status="201326593">
+    <Property name="hiddenRows" type="App::PropertyIntegerSet" status="201326592">
       <IntegerSet count="0">
       </IntegerSet>
     </Property>
