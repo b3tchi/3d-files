@@ -34,7 +34,7 @@
       <Bool value="true"/>
     </Property>
     <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Link007" sub="Hole.Edge20" shadow="Hole.;#3f;:H610,E.Edge20"/>
+      <XLink file="" stamp="" name="Assembly002" sub="1.$Element014."/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -50,27 +50,15 @@
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 9
+Locations 10
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
 1
--1.88293824976427e-13 -8.9830920479983e-14              -1 -48.136039362839 
-0.209004710594588 -0.977914633773967 4.84926753068148e-14 -17.1500000000024 
--0.977914633773967 -0.209004710594588 2.02910372431086e-13 23.1999999999966 
-1
-              1               0               0               0 
+              1              -0               0               0 
               0               1               0               0 
-              0               0               1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               4 
+             -0               0               1               0 
 1
               1               0               0               0 
               0               1               0               0 
@@ -79,52 +67,75 @@ Locations 9
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
-2  3 1 4 1 5 1 6 1 7 1 0
-2  7 -1 6 -1 5 -1 4 -1 3 -1 0
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+6.11621864265999e-13 4.58355575716496e-13              -1 -52.28603936283 
+             -1 4.48374670725144e-12 -6.11621864263944e-13 7.84999999998731 
+4.48374670725116e-12               1 4.58355575719238e-13 32.3000000000069 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  3 1 4 1 5 1 6 1 7 1 8 1 0
+2  8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
 Curve2ds 0
 Curves 1
-2 0 0 0 0 0 1 1 0 -0 -0 1 0 1.05
+2 25 -9 0 0 0 1 1 0 0 0 1 0 5
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
 Triangulations 0
 
-TShapes 4
+TShapes 5
 Ve
-1e-07
-1.05 0 4
+1.00000001776357e-07
+-52.286039362819 -20.0000000000715 19.1917765398025
+0 0
+
+0101101
+*
+Ve
+1.00000002512148e-07
+-52.2860393628208 -12.5048412298841 25.1500000000981
 0 0
 
 0101101
 *
 Ed
  1e-07 1 1 0
-1  1 0 0 6.28318530717959
+1  1 0 5.31889483559778 9.04576894007343
 0
 
-0101100
-+4 9 -4 9 *
+0101000
++5 10 -4 10 *
 Co
 
 0100000
--3 8 *
+-3 9 *
 Co
 
-1100000
+0100000
 +2 2 *
 
 +1 1 ]]>
       </Part>
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
-      <ElementMap2 count="2">
+      <ElementMap2 count="3">
 <![CDATA[
-16 PostfixCount 2
+17 PostfixCount 2
 Edge
 Vertex
 
 MapCount 1
 
-ElementMap 1 16 2
+ElementMap 1 17 2
 
 Edge
 
@@ -132,15 +143,16 @@ ChildCount 0
 
 NameCount 2
 0
-;#3c;:X;:H611:3,E.0 0
+;#ca;:X;:Hf7a:3,E.0 0
 
 Vertex
 
 ChildCount 0
 
-NameCount 2
+NameCount 3
 0
-;#3a;:X;:H611:3,V.0 0
+;#c8;:X;:Hf7a:3,V.0 0
+;#c9;:X;:Hf7a:3,V.0 0
 
 EndMap
 ]]>

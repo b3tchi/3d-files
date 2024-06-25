@@ -78,7 +78,7 @@
       <Bool value="false"/>
     </Property>
     <Property name="Placement" type="App::PropertyPlacement" status="8388608">
-      <PropertyPlacement Px="-15" Py="-15" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
+      <PropertyPlacement Px="30" Py="-25" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
     </Property>
     <Property name="Refine" type="App::PropertyBool">
       <Bool value="false"/>
@@ -93,8 +93,8 @@
 CASCADE Topology V1, (c) Matra-Datavision
 Locations 23
 1
-              1               0               0             -15 
-              0               1               0             -15 
+              1               0               0              30 
+              0               1               0             -25 
               0               0               1               0 
 1
               1               0               0               0 
@@ -284,7 +284,7 @@ Wi
 Fa
 0  1e-07 1 0
 
-0111000
+0101000
 +46 7 *
 Ve
 1e-07
@@ -328,7 +328,7 @@ Wi
 Fa
 0  1e-07 3 0
 
-0111000
+0101000
 +39 7 *
 Ve
 1e-07
@@ -358,7 +358,7 @@ Wi
 Fa
 0  1e-07 4 0
 
-0111000
+0101000
 +34 0 *
 Ve
 1e-07
@@ -388,7 +388,7 @@ Wi
 Fa
 0  1e-07 5 0
 
-0111000
+0101000
 +29 0 *
 Ve
 1.00002555894713e-07
@@ -438,7 +438,7 @@ Wi
 Fa
 0  1e-07 6 0
 
-0111000
+0101000
 +24 7 -21 19 *
 Ve
 1.00002555894713e-07
@@ -488,7 +488,7 @@ Wi
 Fa
 0  1e-07 8 0
 
-0111000
+0101000
 +16 21 -13 19 *
 Ed
  1.00002555894713e-07 1 1 0
@@ -505,7 +505,7 @@ Wi
 Fa
 0  1e-07 2 0
 
-0111000
+0101000
 +10 0 *
 Wi
 
@@ -514,7 +514,7 @@ Wi
 Fa
 0  1e-07 9 0
 
-0111000
+0101000
 +8 7 *
 Ed
  1e-07 1 1 0
@@ -531,7 +531,7 @@ Wi
 Fa
 0  1e-07 7 0
 
-0111000
+0101000
 +5 0 *
 Sh
 
@@ -551,7 +551,7 @@ Co
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="44">
 <![CDATA[
-19 PostfixCount 15
+17 PostfixCount 15
 Edge
 Face
 Vertex
@@ -570,7 +570,7 @@ Vertex
 
 MapCount 2
 
-ElementMap 1 20 3
+ElementMap 1 18 3
 
 Edge
 
@@ -639,7 +639,7 @@ NameCount 15
 
 EndMap
 
-ElementMap 2 19 3
+ElementMap 2 17 3
 
 Edge
 
@@ -678,13 +678,13 @@ EndMap
       <Bool value="false"/>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="29"/>
+      <Integer value="49"/>
     </Property>
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="649">
-      <Bool value="true"/>
+    <Property name="Visibility" type="App::PropertyBool" status="648">
+      <Bool value="false"/>
     </Property>
     <Property name="_Version" type="App::PropertyInteger" status="83886080">
       <Integer value="8"/>
