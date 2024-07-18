@@ -33,7 +33,7 @@
     <Property name="LinkTransform" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097418">
       <Bool value="true"/>
     </Property>
-    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097413">
+    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
       <XLink file="" stamp="" name="Link005" sub="Boolean003.Edge265" shadow="Boolean003.;#1fcd;:H68,E.Edge265"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
@@ -108,17 +108,17 @@ Locations 21
               0               1               0               0 
               0               0               1               0 
 1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
+             -1 4.62223186652936e-33 -1.22464679914735e-16               0 
+4.74301437319709e-33               1 -9.86264013034785e-19               0 
+1.22464679914735e-16 -9.86264013034785e-19              -1               0 
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
 1
--2.22044604925031e-16              -1 -8.65956056235493e-17               5 
-             -1 2.22044604925031e-16 -8.65956056235493e-17             -90 
-8.65956056235493e-17 8.65956056235493e-17              -1            1.85 
+-6.66133814775094e-16              -1 7.31809562383334e-17               5 
+              1 -6.66133814775094e-16 9.81307786677359e-17             -90 
+-9.81307786677359e-17 7.31809562383335e-17               1            1.85 
 1
               1               0               0               0 
               0               1               0               0 
@@ -140,7 +140,7 @@ Triangulations 0
 TShapes 4
 Ve
 1e-07
--112.825 -93.1 1.85000000000004
+-112.825 -93.1000000000001 1.85000000000004
 0 0
 
 0101101
@@ -166,13 +166,13 @@ Co
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="2">
 <![CDATA[
-104 PostfixCount 2
+101 PostfixCount 2
 Edge
 Vertex
 
 MapCount 1
 
-ElementMap 1 104 2
+ElementMap 1 101 2
 
 Edge
 
@@ -180,7 +180,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#31;:X;:H69:3,E.0 0
+;#39;:X;:H69:3,E.0 0
 
 Vertex
 
@@ -188,7 +188,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#2f;:X;:H69:3,V.0 0
+;#37;:X;:H69:3,V.0 0
 
 EndMap
 ]]>

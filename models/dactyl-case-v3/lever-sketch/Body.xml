@@ -31,10 +31,11 @@
     <Property name="FixShape" type="App::PropertyEnumeration">
       <Integer value="1"/>
     </Property>
-    <Property name="Group" type="App::PropertyLinkList">
-      <LinkList count="2">
+    <Property name="Group" type="App::PropertyLinkList" status="1">
+      <LinkList count="3">
         <Link value="Sketch"/>
         <Link value="Sketch001"/>
+        <Link value="Sketch002"/>
       </LinkList>
     </Property>
     <Property name="InvalidShape" type="App::PropertyBool" status="67108864">
@@ -87,9 +88,10 @@ TShapes 0
       <Bool value="true"/>
     </Property>
     <Property name="_ExportChildren" type="App::PropertyLinkList" status="218104320">
-      <LinkList count="2">
+      <LinkList count="3">
         <Link value="Sketch"/>
         <Link value="Sketch001"/>
+        <Link value="Sketch002"/>
       </LinkList>
     </Property>
     <Property name="_GroupVersion" type="App::PropertyInteger" status="218103808">

@@ -7,7 +7,7 @@
       <ExpressionEngine count="1" cdata="1">
         <Expressions><![CDATA[
 0:.cells.Bind.B2.ZZ2
-0:tuple(.cells, <<B>> + str(hiddenref(Body.Variant) + 3), <<ZZ>> + str(hiddenref(Body.Variant) + 3))
+0:tuple(.cells, <<B>> + str(hiddenref(Part.Variant) + 3), <<ZZ>> + str(hiddenref(Part.Variant) + 3))
 0:
 
 ]]>
@@ -53,18 +53,18 @@
         <Cell style="bold" address="K1" content="total segments"/>
         <Cell style="bold" address="L1" content="segmentns on attached side"/>
         <Cell style="bold" address="M1" content="segments on for length"/>
-        <Cell alias="distance" address="B2" content="=.B8"/>
-        <Cell alias="iterations" address="C2" content="=.C8"/>
-        <Cell alias="extrusion" address="D2" content="=.D8"/>
-        <Cell alias="angleA" address="E2" content="=.E8"/>
-        <Cell alias="angleB" address="F2" content="=.F8"/>
-        <Cell alias="over" address="G2" content="=.G8"/>
-        <Cell address="H2" content="=.H8"/>
-        <Cell address="I2" content="=.I8"/>
-        <Cell address="J2" content="=.J8"/>
-        <Cell address="K2" content="=.K8"/>
-        <Cell address="L2" content="=.L8"/>
-        <Cell address="M2" content="=.M8"/>
+        <Cell alias="distance" address="B2" content="=.B3"/>
+        <Cell alias="iterations" address="C2" content="=.C3"/>
+        <Cell alias="extrusion" address="D2" content="=.D3"/>
+        <Cell alias="angleA" address="E2" content="=.E3"/>
+        <Cell alias="angleB" address="F2" content="=.F3"/>
+        <Cell alias="over" address="G2" content="=.G3"/>
+        <Cell address="H2" content="=.H3"/>
+        <Cell address="I2" content="=.I3"/>
+        <Cell address="J2" content="=.J3"/>
+        <Cell address="K2" content="=.K3"/>
+        <Cell address="L2" content="=.L3"/>
+        <Cell address="M2" content="=.M3"/>
         <Cell address="A3" content="basic"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="B3" content="=J3 / K3 * M3 - 0.1"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="C3" content="5"/>
