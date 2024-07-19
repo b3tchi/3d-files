@@ -68,7 +68,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-07-18T21:48:37Z"/>
+      <String value="2024-07-19T16:43:52Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -76,11 +76,11 @@
     <Property name="LicenseURL" type="App::PropertyString" status="1">
       <String value="https://en.wikipedia.org/wiki/All_rights_reserved"/>
     </Property>
-    <Property name="Material" type="App::PropertyMap">
+    <Property name="Material" type="App::PropertyMap" status="1">
       <Map count="0">
       </Map>
     </Property>
-    <Property name="Meta" type="App::PropertyMap">
+    <Property name="Meta" type="App::PropertyMap" status="1">
       <Map count="0">
       </Map>
     </Property>
@@ -117,11 +117,11 @@
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
       <Dep Name="X_Axis"/>
-      <Dep Name="Y_Axis"/>
-      <Dep Name="YZ_Plane"/>
-      <Dep Name="XZ_Plane"/>
-      <Dep Name="Z_Axis"/>
       <Dep Name="XY_Plane"/>
+      <Dep Name="YZ_Plane"/>
+      <Dep Name="Y_Axis"/>
+      <Dep Name="Z_Axis"/>
+      <Dep Name="XZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
@@ -136,7 +136,7 @@
       <Dep Name="Body"/>
       <Dep Name="Sketch"/>
     </ObjectDeps>
-    <Object type="PartDesign::Body" name="Body" id="2740" revision="19" file="Body.xml" />
+    <Object type="PartDesign::Body" name="Body" id="2740" revision="20" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="2741" revision="0" file="Origin.xml" />
     <Object type="App::Line" name="X_Axis" id="2742" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="2743" revision="2" file="Y_Axis.xml" />
@@ -144,8 +144,8 @@
     <Object type="App::Plane" name="XY_Plane" id="2745" revision="1" file="XY_Plane.xml" />
     <Object type="App::Plane" name="XZ_Plane" id="2746" revision="2" file="XZ_Plane.xml" />
     <Object type="App::Plane" name="YZ_Plane" id="2747" revision="2" file="YZ_Plane.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch" id="2748" revision="188" file="Sketch.xml" />
-    <Object type="PartDesign::Pad" name="Pad" id="2749" revision="31" file="Pad.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch" id="2748" revision="193" file="Sketch.xml" />
+    <Object type="PartDesign::Pad" name="Pad" id="2749" revision="34" file="Pad.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>
