@@ -1,0 +1,1329 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- FreeCAD DocumentObject -->
+<Document SchemaVersion="4" FileVersion="2">
+<Object name="Sketch" Extensions="True">
+  <Extensions Count="1">
+    <Extension type="Part::AttachExtension" name="AttachExtension">
+    </Extension>
+  </Extensions>
+  <Properties Count="30" TransientCount="1">
+    <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881024"/>
+    <Property name="ArcFitTolerance" type="App::PropertyPrecision">
+      <Float value="1e-06"/>
+    </Property>
+    <Property name="AttacherType" type="App::PropertyString" status="8">
+      <String value="Attacher::AttachEnginePlane"/>
+    </Property>
+    <Property name="AttachmentOffset" type="App::PropertyPlacement">
+      <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
+    </Property>
+    <Property name="AttachmentSupport" type="App::PropertyLinkSubList">
+      <LinkSubList count="1">
+        <Link obj="XZ_Plane" sub=""/>
+      </LinkSubList>
+    </Property>
+    <Property name="ColoredElements" type="App::PropertyLinkSubHidden" status="218103808">
+      <LinkSub value="" count="0">
+      </LinkSub>
+    </Property>
+    <Property name="Constraints" type="Sketcher::PropertyConstraintList">
+      <ConstraintList count="11">
+        <Constrain Name="" Type="1" Value="0" First="2" FirstPos="1" Second="1" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="1" Value="0" First="2" FirstPos="2" Second="0" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="2" Value="0" First="2" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="8" Value="2.25" First="0" FirstPos="3" Second="-1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="2.349677085876465" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="12" Value="0" First="0" FirstPos="0" Second="1" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="18" Value="2.1" First="0" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="4.875773429870605" LabelPosition="0.2617993950843811" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="7" Value="9.625" First="-1" FirstPos="1" Second="0" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="13.06217861175537" LabelPosition="1.650917291641235" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="7" Value="67.375" First="-1" FirstPos="1" Second="1" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="48.96757507324219" LabelPosition="9.537456512451172" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="13" Value="0" First="3" FirstPos="3" Second="2" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="12" Value="0" First="0" FirstPos="0" Second="3" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="7" Value="38.5" First="0" FirstPos="3" Second="3" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="13.13354396820068" LabelPosition="3.116945266723633" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+      </ConstraintList>
+    </Property>
+    <Property name="Exports" type="App::PropertyLinkListHidden" status="67108864">
+      <LinkList count="0">
+      </LinkList>
+    </Property>
+    <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
+      <ExpressionEngine count="3" cdata="1">
+        <Expressions><![CDATA[
+0:Constraints[10]
+0:(14 + 5.25) * 2
+0:
+
+0:Constraints[6]
+0:14 / 2 + 5.25 / 2
+0:
+
+0:Constraints[7]
+0:3.5 * 14 + 3.5 * 5.25
+0:
+
+]]>
+        </Expressions>
+      </ExpressionEngine>
+    </Property>
+    <Property name="ExternalBSplineMaxDegree" type="App::PropertyInteger">
+      <Integer value="5"/>
+    </Property>
+    <Property name="ExternalBSplineTolerance" type="App::PropertyPrecision">
+      <Float value="0.0001"/>
+    </Property>
+    <Property name="ExternalGeo" type="Part::PropertyGeometryList" status="67108864">
+      <GeometryList count="2">
+        <Geometry type="Part::GeomLineSegment" id="-1" migrated="1">
+          <GeoExtensions count="2">
+            <GeoExtension type="Sketcher::SketchGeometryExtension" id="-1" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
+            <GeoExtension type="Sketcher::ExternalGeometryExtension" Ref="" Flags="0"/>
+          </GeoExtensions>
+          <LineSegment StartX="0" StartY="0" StartZ="0" EndX="1" EndY="0" EndZ="0"/>
+          <Construction value="1"/>
+        </Geometry>
+        <Geometry type="Part::GeomLineSegment" id="-2" migrated="1">
+          <GeoExtensions count="2">
+            <GeoExtension type="Sketcher::SketchGeometryExtension" id="-2" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
+            <GeoExtension type="Sketcher::ExternalGeometryExtension" Ref="" Flags="0"/>
+          </GeoExtensions>
+          <LineSegment StartX="0" StartY="0" StartZ="0" EndX="0" EndY="1" EndZ="0"/>
+          <Construction value="1"/>
+        </Geometry>
+      </GeometryList>
+    </Property>
+    <Property name="ExternalGeometry" type="App::PropertyLinkSubList" status="16777216">
+      <LinkSubList count="0">
+      </LinkSubList>
+    </Property>
+    <Property name="FixShape" type="App::PropertyEnumeration">
+      <Integer value="1"/>
+    </Property>
+    <Property name="FullyConstrained" type="App::PropertyBool" status="218103808">
+      <Bool value="true"/>
+    </Property>
+    <Property name="Geometry" type="Part::PropertyGeometryList" status="8192">
+      <GeometryList count="4">
+        <Geometry type="Part::GeomCircle" id="1" migrated="1">
+          <GeoExtensions count="1">
+            <GeoExtension type="Sketcher::SketchGeometryExtension" id="1" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
+          </GeoExtensions>
+          <Circle CenterX="9.625" CenterY="-2.25" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1.05"/>
+          <Construction value="0"/>
+        </Geometry>
+        <Geometry type="Part::GeomCircle" id="2" migrated="1">
+          <GeoExtensions count="1">
+            <GeoExtension type="Sketcher::SketchGeometryExtension" id="2" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
+          </GeoExtensions>
+          <Circle CenterX="67.375" CenterY="-2.25" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1.05"/>
+          <Construction value="0"/>
+        </Geometry>
+        <Geometry type="Part::GeomLineSegment" id="3" migrated="1">
+          <GeoExtensions count="1">
+            <GeoExtension type="Sketcher::SketchGeometryExtension" id="3" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
+          </GeoExtensions>
+          <LineSegment StartX="67.375" StartY="-2.25" StartZ="0" EndX="9.625" EndY="-2.25" EndZ="0"/>
+          <Construction value="1"/>
+        </Geometry>
+        <Geometry type="Part::GeomCircle" id="4" migrated="1">
+          <GeoExtensions count="1">
+            <GeoExtension type="Sketcher::SketchGeometryExtension" id="4" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
+          </GeoExtensions>
+          <Circle CenterX="48.125" CenterY="-2.25" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1.05"/>
+          <Construction value="0"/>
+        </Geometry>
+      </GeometryList>
+    </Property>
+    <Property name="InternalShape" type="Part::PropertyPartShape">
+      <Part ElementMap="0.15.70200.4" brep="1">
+<![CDATA[
+
+CASCADE Topology V1, (c) Matra-Datavision
+Locations 0
+Curve2ds 0
+Curves 0
+Polygon3D 0
+PolygonOnTriangulations 0
+Surfaces 0
+Triangulations 0
+
+TShapes 0
+
+*]]>
+      </Part>
+      <ElementMap/>
+    </Property>
+    <Property name="InternalTolerance" type="App::PropertyPrecision">
+      <Float value="1e-06"/>
+    </Property>
+    <Property name="InvalidShape" type="App::PropertyBool" status="67108864">
+      <Bool value="false"/>
+    </Property>
+    <Property name="Label" type="App::PropertyString" status="134217728">
+      <String value="Sketch"/>
+    </Property>
+    <Property name="Label2" type="App::PropertyString" status="128">
+      <String value=""/>
+    </Property>
+    <Property name="MakeInternals" type="App::PropertyBool">
+      <Bool value="false"/>
+    </Property>
+    <Property name="MapMode" type="App::PropertyEnumeration">
+      <Integer value="5"/>
+    </Property>
+    <Property name="MapPathParameter" type="App::PropertyFloat" status="8">
+      <Float value="0"/>
+    </Property>
+    <Property name="MapReversed" type="App::PropertyBool">
+      <Bool value="false"/>
+    </Property>
+    <Property name="Placement" type="App::PropertyPlacement" status="8388612">
+      <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0.7071067811865477" Q1="0" Q2="0" Q3="0.7071067811865474" A="1.570796326794897" Ox="1" Oy="0" Oz="0"/>
+    </Property>
+    <Property name="Shape" type="Part::PropertyPartShape">
+      <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
+<![CDATA[
+
+CASCADE Topology V1, (c) Matra-Datavision
+Locations 178
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  2 -1 3 -1 4 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  6 -1 2 -1 3 -1 4 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  8 -1 9 -1 4 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  11 -1 8 -1 9 -1 4 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  13 -1 14 -1 4 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  16 -1 13 -1 14 -1 4 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  18 -1 19 -1 20 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  22 -1 18 -1 19 -1 20 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  24 -1 25 -1 26 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  28 -1 24 -1 25 -1 26 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  30 -1 31 -1 32 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  34 -1 30 -1 31 -1 32 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  36 -1 37 -1 32 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  39 -1 36 -1 37 -1 32 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  41 -1 42 -1 32 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  44 -1 41 -1 42 -1 32 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  46 -1 47 -1 32 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  49 -1 46 -1 47 -1 32 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  51 -1 52 -1 32 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  54 -1 51 -1 52 -1 32 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  56 -1 57 -1 58 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  60 -1 56 -1 57 -1 58 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  62 -1 63 -1 58 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  65 -1 62 -1 63 -1 58 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  67 -1 68 -1 58 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  70 -1 67 -1 68 -1 58 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  72 -1 73 -1 58 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  75 -1 72 -1 73 -1 58 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  77 -1 78 -1 58 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  80 -1 77 -1 78 -1 58 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  82 -1 83 -1 58 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  85 -1 82 -1 83 -1 58 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  87 -1 88 -1 58 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  90 -1 87 -1 88 -1 58 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  92 -1 93 -1 58 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  95 -1 92 -1 93 -1 58 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  97 -1 98 -1 58 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  100 -1 97 -1 98 -1 58 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  102 -1 103 -1 58 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  105 -1 102 -1 103 -1 58 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  107 -1 108 -1 58 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  110 -1 107 -1 108 -1 58 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  112 -1 113 -1 58 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  115 -1 112 -1 113 -1 58 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  117 -1 118 -1 58 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  120 -1 117 -1 118 -1 58 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  122 -1 123 -1 58 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  125 -1 122 -1 123 -1 58 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  127 -1 128 -1 58 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  130 -1 127 -1 128 -1 58 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  132 -1 133 -1 58 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  135 -1 132 -1 133 -1 58 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  137 -1 138 -1 58 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  140 -1 137 -1 138 -1 58 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  142 -1 143 -1 144 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  146 -1 142 -1 143 -1 144 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  148 -1 149 -1 144 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  151 -1 148 -1 149 -1 144 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  153 -1 154 -1 144 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  156 -1 153 -1 154 -1 144 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  158 -1 159 -1 144 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  161 -1 158 -1 159 -1 144 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  163 -1 164 -1 144 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  166 -1 163 -1 164 -1 144 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  168 -1 169 -1 170 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  172 -1 168 -1 169 -1 170 -1 0
+1
+              1               0               0              -0 
+              0               1               0              50 
+              0               0               1 2.22044604925031e-14 
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  174 -1 175 -1 170 -1 0
+1
+              1               0               0               0 
+              0               1               0            -100 
+              0               0               1 -4.44089209850063e-14 
+2  177 -1 174 -1 175 -1 170 -1 0
+Curve2ds 204
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+1 0 0 1 0 
+1 0 -100 1 0 
+Curves 3
+2 9.625 -2.25 0 0 0 1 1 0 -0 -0 1 0 1.05
+2 67.375 -2.25 0 0 0 1 1 0 -0 -0 1 0 1.05
+2 48.125 -2.2500000000000004 0 0 0 1 1 0 -0 -0 1 0 1.05
+Polygon3D 0
+PolygonOnTriangulations 0
+Surfaces 102
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.05
+2 9.625 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.05
+2 67.375 50 -2.2499999999999778 -0 1 4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.05
+2 48.125 50 -2.2499999999999782 -0 1 4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.05
+Triangulations 0
+
+TShapes 10
+Ve
+1e-07
+10.675 -2.25 0
+0 0
+
+0101101
+*
+Ed
+ 1e-07 1 1 0
+1  1 0 0 6.28318530717959
+2  1 1 5 0 6.28318530717959
+2  2 1 7 0 6.28318530717959
+2  3 2 10 0 6.28318530717959
+2  4 2 12 0 6.28318530717959
+2  5 3 15 0 6.28318530717959
+2  6 3 17 0 6.28318530717959
+2  7 4 21 0 6.28318530717959
+2  8 4 23 0 6.28318530717959
+2  9 5 27 0 6.28318530717959
+2  10 5 29 0 6.28318530717959
+2  11 6 33 0 6.28318530717959
+2  12 6 35 0 6.28318530717959
+2  13 7 38 0 6.28318530717959
+2  14 7 40 0 6.28318530717959
+2  15 8 43 0 6.28318530717959
+2  16 8 45 0 6.28318530717959
+2  17 9 48 0 6.28318530717959
+2  18 9 50 0 6.28318530717959
+2  19 10 53 0 6.28318530717959
+2  20 10 55 0 6.28318530717959
+2  21 11 59 0 6.28318530717959
+2  22 11 61 0 6.28318530717959
+2  23 12 64 0 6.28318530717959
+2  24 12 66 0 6.28318530717959
+2  25 13 69 0 6.28318530717959
+2  26 13 71 0 6.28318530717959
+2  27 14 74 0 6.28318530717959
+2  28 14 76 0 6.28318530717959
+2  29 15 79 0 6.28318530717959
+2  30 15 81 0 6.28318530717959
+2  31 16 84 0 6.28318530717959
+2  32 16 86 0 6.28318530717959
+2  33 17 89 0 6.28318530717959
+2  34 17 91 0 6.28318530717959
+2  35 18 94 0 6.28318530717959
+2  36 18 96 0 6.28318530717959
+2  37 19 99 0 6.28318530717959
+2  38 19 101 0 6.28318530717959
+2  39 20 104 0 6.28318530717959
+2  40 20 106 0 6.28318530717959
+2  41 21 109 0 6.28318530717959
+2  42 21 111 0 6.28318530717959
+2  43 22 114 0 6.28318530717959
+2  44 22 116 0 6.28318530717959
+2  45 23 119 0 6.28318530717959
+2  46 23 121 0 6.28318530717959
+2  47 24 124 0 6.28318530717959
+2  48 24 126 0 6.28318530717959
+2  49 25 129 0 6.28318530717959
+2  50 25 131 0 6.28318530717959
+2  51 26 134 0 6.28318530717959
+2  52 26 136 0 6.28318530717959
+2  53 27 139 0 6.28318530717959
+2  54 27 141 0 6.28318530717959
+2  55 28 145 0 6.28318530717959
+2  56 28 147 0 6.28318530717959
+2  57 29 150 0 6.28318530717959
+2  58 29 152 0 6.28318530717959
+2  59 30 155 0 6.28318530717959
+2  60 30 157 0 6.28318530717959
+2  61 31 160 0 6.28318530717959
+2  62 31 162 0 6.28318530717959
+2  63 32 165 0 6.28318530717959
+2  64 32 167 0 6.28318530717959
+2  65 33 171 0 6.28318530717959
+2  66 33 173 0 6.28318530717959
+2  67 34 176 0 6.28318530717959
+2  68 34 178 0 6.28318530717959
+0
+
+0101100
++10 0 -10 0 *
+Wi
+
+0101100
++9 0 *
+Ve
+1e-07
+68.425 -2.25 0
+0 0
+
+0101101
+*
+Ed
+ 1e-07 1 1 0
+1  2 0 0 6.28318530717959
+2  69 35 5 0 6.28318530717959
+2  70 35 7 0 6.28318530717959
+2  71 36 10 0 6.28318530717959
+2  72 36 12 0 6.28318530717959
+2  73 37 15 0 6.28318530717959
+2  74 37 17 0 6.28318530717959
+2  75 38 21 0 6.28318530717959
+2  76 38 23 0 6.28318530717959
+2  77 39 27 0 6.28318530717959
+2  78 39 29 0 6.28318530717959
+2  79 40 33 0 6.28318530717959
+2  80 40 35 0 6.28318530717959
+2  81 41 38 0 6.28318530717959
+2  82 41 40 0 6.28318530717959
+2  83 42 43 0 6.28318530717959
+2  84 42 45 0 6.28318530717959
+2  85 43 48 0 6.28318530717959
+2  86 43 50 0 6.28318530717959
+2  87 44 53 0 6.28318530717959
+2  88 44 55 0 6.28318530717959
+2  89 45 59 0 6.28318530717959
+2  90 45 61 0 6.28318530717959
+2  91 46 64 0 6.28318530717959
+2  92 46 66 0 6.28318530717959
+2  93 47 69 0 6.28318530717959
+2  94 47 71 0 6.28318530717959
+2  95 48 74 0 6.28318530717959
+2  96 48 76 0 6.28318530717959
+2  97 49 79 0 6.28318530717959
+2  98 49 81 0 6.28318530717959
+2  99 50 84 0 6.28318530717959
+2  100 50 86 0 6.28318530717959
+2  101 51 89 0 6.28318530717959
+2  102 51 91 0 6.28318530717959
+2  103 52 94 0 6.28318530717959
+2  104 52 96 0 6.28318530717959
+2  105 53 99 0 6.28318530717959
+2  106 53 101 0 6.28318530717959
+2  107 54 104 0 6.28318530717959
+2  108 54 106 0 6.28318530717959
+2  109 55 109 0 6.28318530717959
+2  110 55 111 0 6.28318530717959
+2  111 56 114 0 6.28318530717959
+2  112 56 116 0 6.28318530717959
+2  113 57 119 0 6.28318530717959
+2  114 57 121 0 6.28318530717959
+2  115 58 124 0 6.28318530717959
+2  116 58 126 0 6.28318530717959
+2  117 59 129 0 6.28318530717959
+2  118 59 131 0 6.28318530717959
+2  119 60 134 0 6.28318530717959
+2  120 60 136 0 6.28318530717959
+2  121 61 139 0 6.28318530717959
+2  122 61 141 0 6.28318530717959
+2  123 62 145 0 6.28318530717959
+2  124 62 147 0 6.28318530717959
+2  125 63 150 0 6.28318530717959
+2  126 63 152 0 6.28318530717959
+2  127 64 155 0 6.28318530717959
+2  128 64 157 0 6.28318530717959
+2  129 65 160 0 6.28318530717959
+2  130 65 162 0 6.28318530717959
+2  131 66 165 0 6.28318530717959
+2  132 66 167 0 6.28318530717959
+2  133 67 171 0 6.28318530717959
+2  134 67 173 0 6.28318530717959
+2  135 68 176 0 6.28318530717959
+2  136 68 178 0 6.28318530717959
+0
+
+0101100
++7 0 -7 0 *
+Wi
+
+0101100
++6 0 *
+Ve
+1e-07
+49.175 -2.25 0
+0 0
+
+0101101
+*
+Ed
+ 1e-07 1 1 0
+1  3 0 0 6.28318530717959
+2  137 69 5 0 6.28318530717959
+2  138 69 7 0 6.28318530717959
+2  139 70 10 0 6.28318530717959
+2  140 70 12 0 6.28318530717959
+2  141 71 15 0 6.28318530717959
+2  142 71 17 0 6.28318530717959
+2  143 72 21 0 6.28318530717959
+2  144 72 23 0 6.28318530717959
+2  145 73 27 0 6.28318530717959
+2  146 73 29 0 6.28318530717959
+2  147 74 33 0 6.28318530717959
+2  148 74 35 0 6.28318530717959
+2  149 75 38 0 6.28318530717959
+2  150 75 40 0 6.28318530717959
+2  151 76 43 0 6.28318530717959
+2  152 76 45 0 6.28318530717959
+2  153 77 48 0 6.28318530717959
+2  154 77 50 0 6.28318530717959
+2  155 78 53 0 6.28318530717959
+2  156 78 55 0 6.28318530717959
+2  157 79 59 0 6.28318530717959
+2  158 79 61 0 6.28318530717959
+2  159 80 64 0 6.28318530717959
+2  160 80 66 0 6.28318530717959
+2  161 81 69 0 6.28318530717959
+2  162 81 71 0 6.28318530717959
+2  163 82 74 0 6.28318530717959
+2  164 82 76 0 6.28318530717959
+2  165 83 79 0 6.28318530717959
+2  166 83 81 0 6.28318530717959
+2  167 84 84 0 6.28318530717959
+2  168 84 86 0 6.28318530717959
+2  169 85 89 0 6.28318530717959
+2  170 85 91 0 6.28318530717959
+2  171 86 94 0 6.28318530717959
+2  172 86 96 0 6.28318530717959
+2  173 87 99 0 6.28318530717959
+2  174 87 101 0 6.28318530717959
+2  175 88 104 0 6.28318530717959
+2  176 88 106 0 6.28318530717959
+2  177 89 109 0 6.28318530717959
+2  178 89 111 0 6.28318530717959
+2  179 90 114 0 6.28318530717959
+2  180 90 116 0 6.28318530717959
+2  181 91 119 0 6.28318530717959
+2  182 91 121 0 6.28318530717959
+2  183 92 124 0 6.28318530717959
+2  184 92 126 0 6.28318530717959
+2  185 93 129 0 6.28318530717959
+2  186 93 131 0 6.28318530717959
+2  187 94 134 0 6.28318530717959
+2  188 94 136 0 6.28318530717959
+2  189 95 139 0 6.28318530717959
+2  190 95 141 0 6.28318530717959
+2  191 96 145 0 6.28318530717959
+2  192 96 147 0 6.28318530717959
+2  193 97 150 0 6.28318530717959
+2  194 97 152 0 6.28318530717959
+2  195 98 155 0 6.28318530717959
+2  196 98 157 0 6.28318530717959
+2  197 99 160 0 6.28318530717959
+2  198 99 162 0 6.28318530717959
+2  199 100 165 0 6.28318530717959
+2  200 100 167 0 6.28318530717959
+2  201 101 171 0 6.28318530717959
+2  202 101 173 0 6.28318530717959
+2  203 102 176 0 6.28318530717959
+2  204 102 178 0 6.28318530717959
+0
+
+0101100
++4 0 -4 0 *
+Wi
+
+0101100
++3 0 *
+Co
+
+0100000
++8 0 +5 0 +2 0 *
+
++1 1 ]]>
+      </Part>
+      <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
+      <ElementMap2 count="6">
+<![CDATA[
+15 PostfixCount 3
+Edge
+Vertex
+;SKT
+
+MapCount 1
+
+ElementMap 1 15 2
+
+Edge
+
+ChildCount 0
+
+NameCount 4
+0
+;g1.3 0
+;g2.3 0
+;g4.3 0
+
+Vertex
+
+ChildCount 0
+
+NameCount 4
+0
+;g1v1.3 0
+;g2v1.3 0
+;g4v1.3 0
+
+EndMap
+]]>
+      </ElementMap2>
+    </Property>
+    <Property name="Support" type="App::PropertyLinkSubList" status="67108864">
+      <LinkSubList count="1">
+        <Link obj="XZ_Plane" sub=""/>
+      </LinkSubList>
+    </Property>
+    <Property name="TreeRank" type="App::PropertyInteger" status="2184">
+      <Integer value="92"/>
+    </Property>
+    <Property name="ValidateShape" type="App::PropertyBool">
+      <Bool value="false"/>
+    </Property>
+    <Property name="Visibility" type="App::PropertyBool" status="648">
+      <Bool value="false"/>
+    </Property>
+  </Properties>
+</Object>
+</Document>
