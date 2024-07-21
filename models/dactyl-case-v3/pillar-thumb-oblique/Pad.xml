@@ -3,7 +3,7 @@
 <Document SchemaVersion="4" FileVersion="2">
 <Object name="Pad">
   <Properties Count="47" TransientCount="2">
-    <_Property name="_Body" type="App::PropertyLinkHidden" status="251658240"/>
+    <_Property name="_Body" type="App::PropertyLinkHidden" status="251658241"/>
     <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881024"/>
     <Property name="AddSubShape" type="Part::PropertyPartShape">
       <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
@@ -46,9 +46,9 @@ Curves 12
 1 1.6000000000000001 -1.8500000000000001 0 -1 0 0 
 1 -7.3999999999999986 -1.8500000000000001 0 0 1 0 
 1 1.05 0 0 0 -1 -4.4408920985006262e-16 
-2 0 0 0 0 0 1 1 0 0 0 1 0 1.05
+2 0 0 0 0 0 1 1 0 -0 -0 1 0 1.05
 1 -4.5 0 0 0 -1 -4.4408920985006262e-16 
-2 -5.5499999999999998 0 0 0 0 1 1 0 0 0 1 0 1.05
+2 -5.5499999999999998 0 0 0 0 1 1 0 -0 -0 1 0 1.05
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 7
@@ -56,8 +56,8 @@ Surfaces 7
 1 1.6000000000000001 -8.2156503822261588e-16 1.8500000000000001 1 0 0 0 4.4408920985006262e-16 -1 -0 1 4.4408920985006262e-16 
 1 1.6000000000000001 8.2156503822261588e-16 -1.8500000000000001 -0 4.4408920985006262e-16 -1 -1 -0 0 0 1 4.4408920985006262e-16 
 1 -7.3999999999999986 8.2156503822261588e-16 -1.8500000000000001 -1 -0 0 0 -4.4408920985006262e-16 1 0 1 4.4408920985006262e-16 
-2 0 0 0 -0 1 4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.05
-2 -5.5499999999999998 0 0 -0 1 4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.05
+2 0 0 0 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 -5.5499999999999998 0 0 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
 1 -2.86243685248076 0 0 0 1 4.4408920985006262e-16 0 -4.4408920985006262e-16 1 1 0 -0 
 Triangulations 0
 
@@ -492,7 +492,7 @@ TShapes 0
       </Part>
       <ElementMap/>
     </Property>
-    <Property name="TaperAngle" type="App::PropertyAngle">
+    <Property name="TaperAngle" type="App::PropertyAngle" status="4">
       <Float value="0"/>
     </Property>
     <Property name="TaperAngle2" type="App::PropertyAngle" status="4">
