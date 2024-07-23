@@ -38,7 +38,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-07-21T21:28:40Z"/>
+      <String value="2024-07-22T06:44:42Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -79,7 +79,7 @@
       <Bool value="true"/>
     </Property>
   </Properties>
-  <Objects Count="18" Dependencies="1">
+  <Objects Count="21" Dependencies="1">
     <ObjectDeps Name="Body" Count="2">
       <Dep Name="Boolean"/>
       <Dep Name="Origin"/>
@@ -107,8 +107,16 @@
       <Dep Name="Body"/>
       <Dep Name="Link"/>
     </ObjectDeps>
-    <ObjectDeps Name="Boolean" Count="3">
+    <ObjectDeps Name="Boolean" Count="11">
       <Dep Name="Body"/>
+      <Dep Name="Binder009"/>
+      <Dep Name="Binder008"/>
+      <Dep Name="Binder001"/>
+      <Dep Name="Binder"/>
+      <Dep Name="Binder002"/>
+      <Dep Name="Binder003"/>
+      <Dep Name="Binder005"/>
+      <Dep Name="Binder004"/>
       <Dep Name="Binder006"/>
       <Dep Name="Binder007"/>
     </ObjectDeps>
@@ -136,7 +144,16 @@
       <Dep Name="Body"/>
       <Dep Name="Link"/>
     </ObjectDeps>
-    <Object type="PartDesign::Body" name="Body" id="3172" revision="52" file="Body.xml" />
+    <ObjectDeps Name="Link001" Count="0"/>
+    <ObjectDeps Name="Binder008" Count="2">
+      <Dep Name="Body"/>
+      <Dep Name="Link001"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Binder009" Count="2">
+      <Dep Name="Body"/>
+      <Dep Name="Link001"/>
+    </ObjectDeps>
+    <Object type="PartDesign::Body" name="Body" id="3172" revision="75" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="3173" revision="0" file="Origin.xml" />
     <Object type="App::Line" name="X_Axis" id="3174" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="3175" revision="2" file="Y_Axis.xml" />
@@ -145,15 +162,18 @@
     <Object type="App::Plane" name="XZ_Plane" id="3178" revision="2" file="XZ_Plane.xml" />
     <Object type="App::Plane" name="YZ_Plane" id="3179" revision="2" file="YZ_Plane.xml" />
     <Object type="App::Link" name="Link" id="3180" revision="15" file="Link.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder" id="3181" revision="15" file="Binder.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder001" id="3182" revision="23" file="Binder001.xml" />
-    <Object type="PartDesign::Boolean" name="Boolean" id="3183" revision="27" file="Boolean.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder" id="3181" revision="19" file="Binder.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder001" id="3182" revision="27" file="Binder001.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean" id="3183" revision="59" file="Boolean.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Binder002" id="3185" revision="12" file="Binder002.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Binder003" id="3186" revision="16" file="Binder003.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Binder004" id="3187" revision="12" file="Binder004.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Binder005" id="3188" revision="14" file="Binder005.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Binder006" id="3189" revision="12" file="Binder006.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Binder007" id="3190" revision="14" file="Binder007.xml" />
+    <Object type="App::Link" name="Link001" id="3191" revision="4" file="Link001.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder008" id="3192" revision="21" file="Binder008.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder009" id="3193" revision="23" file="Binder009.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>

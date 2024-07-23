@@ -78,7 +78,7 @@
       <Bool value="false"/>
     </Property>
     <Property name="Placement" type="App::PropertyPlacement" status="8388608">
-      <PropertyPlacement Px="0" Py="41.1" Pz="-5.033298344495622e-15" Q0="1" Q1="0" Q2="0" Q3="6.123233995736766e-17" A="3.141592653589793" Ox="1" Oy="0" Oz="0"/>
+      <PropertyPlacement Px="0" Py="40" Pz="0" Q0="1" Q1="0" Q2="0" Q3="6.123233995736766e-17" A="3.141592653589793" Ox="1" Oy="0" Oz="0"/>
     </Property>
     <Property name="Refine" type="App::PropertyBool">
       <Bool value="false"/>
@@ -94,8 +94,8 @@ CASCADE Topology V1, (c) Matra-Datavision
 Locations 39
 1
               1               0               0               0 
-              0              -1 -1.22464679914735e-16            41.1 
-              0 1.22464679914735e-16              -1 -5.03329834449562e-15 
+              0              -1 -1.22464679914735e-16              40 
+              0 1.22464679914735e-16              -1               0 
 1
               1               0               0               0 
               0               1               0               0 
@@ -655,7 +655,7 @@ Ed
 0101000
 -153 17 +152 17 *
 Ve
-1e-07
+1.5e-07
 -6.9 -0.0173205080756818 -0.0100000000000002
 0 0
 
@@ -676,14 +676,14 @@ Ed
 0101000
 +152 17 -196 17 *
 Ve
-1.0000000588939e-07
+1.5e-07
 -6.9 1.14908083048704e-15 -1.53210777398272e-15
 0 0
 
 0101101
 *
 Ed
- 1e-07 1 1 0
+ 1.5e-07 1 1 0
 1  26 0 0 0.0199999999999934
 0
 
@@ -829,21 +829,21 @@ Fa
 0111000
 +125 0 *
 Ve
-1e-07
+1.5e-07
 6.9 -0.0173205080756945 -0.00999999999999934
 0 0
 
 0101101
 *
 Ve
-1.00000005308577e-07
+1.5e-07
 6.9 -1.14908083048704e-15 1.14908083048704e-15
 0 0
 
 0101101
 *
 Ed
- 1e-07 1 1 0
+ 1.5e-07 1 1 0
 1  37 0 0 0.020000000000004
 0
 
@@ -1164,21 +1164,21 @@ Fa
 0111000
 +70 10 *
 Ve
-1e-07
+1.5e-07
 -6.9 5 0
 0 0
 
 0101101
 *
 Ed
- 1e-07 1 1 0
+ 1.5e-07 1 1 0
 1  60 0 0 5
 0
 
 0101000
 +147 19 -68 19 *
 Ve
-1e-07
+1.5e-07
 6.9 5 0
 0 0
 
@@ -1192,7 +1192,7 @@ Ed
 0101000
 +68 19 -66 19 *
 Ed
- 1e-07 1 1 0
+ 1.5e-07 1 1 0
 1  62 0 0 5
 0
 
@@ -1263,21 +1263,21 @@ Fa
 0111000
 +54 20 *
 Ve
-1.0000000238634e-07
+1.5e-07
 -6.9 0 -0.0100000000000002
 0 0
 
 0101101
 *
 Ed
- 1e-07 1 1 0
+ 1.5e-07 1 1 0
 1  67 0 3.98267949192432 4
 0
 
 0101000
 +150 21 -52 21 *
 Ve
-1e-07
+1.5e-07
 -3.91 0 -3
 0 0
 
@@ -1333,7 +1333,7 @@ Fa
 0111000
 +42 0 *
 Ve
-1.00000003214096e-07
+1.5e-07
 6.9 0 -0.00999999999999979
 0 0
 
@@ -1347,7 +1347,7 @@ Ed
 0101000
 -40 17 +122 17 *
 Ed
- 1e-07 1 1 0
+ 1.5e-07 1 1 0
 1  72 0 -1.77635683940025e-15 0.0173205080756927
 0
 
@@ -1363,7 +1363,7 @@ Fa
 0111000
 +37 20 *
 Ve
-1e-07
+1.5e-07
 3.91 0 -3
 0 0
 
@@ -1403,21 +1403,21 @@ Fa
 0111000
 +30 0 *
 Ve
-1e-07
+1.5e-07
 -6.9 5 -0.00999999999999979
 0 0
 
 0101101
 *
 Ed
- 1e-07 1 1 0
+ 1.5e-07 1 1 0
 1  75 0 0 5
 0
 
 0101000
 +52 21 -28 21 *
 Ed
- 1e-07 1 1 0
+ 1.5e-07 1 1 0
 1  76 0 0 0.00999999999999979
 0
 
@@ -1461,14 +1461,14 @@ Ed
 0101000
 +23 15 -21 15 *
 Ve
-1e-07
+1.5e-07
 6.9 5 -0.00999999999999979
 0 0
 
 0101101
 *
 Ed
- 1e-07 1 1 0
+ 1.5e-07 1 1 0
 1  79 0 0 0.00999999999999979
 0
 
@@ -1491,7 +1491,7 @@ Fa
 0111000
 +16 20 *
 Ed
- 1e-07 1 1 0
+ 1.5e-07 1 1 0
 1  81 0 0 5
 0
 
@@ -1568,7 +1568,7 @@ Co
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="167">
 <![CDATA[
-4 PostfixCount 12
+12 PostfixCount 12
 Edge
 Face
 Vertex
@@ -1584,7 +1584,7 @@ Vertex
 
 MapCount 2
 
-ElementMap 1 5 3
+ElementMap 1 13 3
 
 Edge
 
@@ -1776,7 +1776,7 @@ $#691.5 0
 
 EndMap
 
-ElementMap 2 4 3
+ElementMap 2 12 3
 
 Edge
 
@@ -1814,13 +1814,13 @@ EndMap
     <Property name="TightBound" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
-    <Property name="TreeRank" type="App::PropertyInteger" status="2185">
+    <Property name="TreeRank" type="App::PropertyInteger" status="2184">
       <Integer value="31"/>
     </Property>
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="649">
+    <Property name="Visibility" type="App::PropertyBool" status="648">
       <Bool value="false"/>
     </Property>
     <Property name="_Version" type="App::PropertyInteger" status="83886080">
