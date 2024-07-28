@@ -7,28 +7,43 @@
 -->
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
 <Expand  count="1">
-  <Expand name="Body" count="5">
+  <Expand name="Body" count="7">
     <Expand name="Pad"/>
     <Expand name="Pad002"/>
     <Expand name="Pad001"/>
     <Expand name="Pad004"/>
     <Expand name="Pad005"/>
+    <Expand name="Pad006"/>
+    <Expand name="Pad007"/>
   </Expand>
 </Expand>
-  <Camera>
+  <Camera extra="0" id="6" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position 6.1373062 39.329247 70.472336
-  orientation -0.0057761744 0.035447389 -0.99935484  2.8187582
-  nearDistance 65.661995
-  farDistance 76.012833
+  position 57.462372 40.986801 30.024391
+  orientation -1.6727622e-008 0.3826834 0.9238795  3.1415927
+  nearDistance 24.696569
+  farDistance 52.810844
   aspectRatio 1
   focalDistance 52.737991
-  height 286.71368
+  height 86.357132
 
 }
-## overrideMode: As Is
-  ]]>
+## overrideMode: As Is]]>
   </Camera>
+  <View3D id="6"><![CDATA[
+  <Properties Count="3" TransientCount="0">
+    <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
+      <Integer value="0"/>
+    </Property>
+    <Property name="ShowNaviCube" type="App::PropertyBool" status="1">
+      <Bool value="true"/>
+    </Property>
+    <Property name="ThumbnailView" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+  </Properties>
+]]>
+  </View3D>
 </Document>

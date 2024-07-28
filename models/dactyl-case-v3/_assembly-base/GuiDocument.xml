@@ -7,47 +7,53 @@
 -->
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
 <Expand  count="1">
-  <Expand name="Assembly" count="3">
+  <Expand name="Assembly" count="2">
     <Expand name="Constraints"/>
-    <Expand name="Elements"/>
-    <Expand name="Parts" count="1">
+    <Expand name="Parts" count="2">
       <Expand name="Link002"/>
+      <Expand name="Link003" count="5">
+        <Expand name="Pad001"/>
+        <Expand name="Pad004"/>
+        <Expand name="Pad005"/>
+        <Expand name="Pad006"/>
+        <Expand name="Pad007"/>
+      </Expand>
     </Expand>
   </Expand>
 </Expand>
-  <Camera extra="0" id="12" binding="0" view3d="1">
+  <Camera extra="0" id="6" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position 113.96561 171.68896 136.30035
-  orientation 0.15156658 0.45889956 0.87546492  2.5786507
-  nearDistance 104.56815
-  farDistance 255.89919
+  position 9.0150185 121.49109 4.5273099
+  orientation -0.19833001 0.69049567 0.69561559  3.5359998
+  nearDistance 15.684541
+  farDistance 171.22241
   aspectRatio 1
   focalDistance 100
-  height 149.18301
+  height 222.5585
 
 }
 ## overrideMode: Flat Lines]]>
   </Camera>
-  <View3D id="12"><![CDATA[
+  <View3D id="6"><![CDATA[
   <Properties Count="29" TransientCount="0">
     <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
       <Integer value="6"/>
     </Property>
-    <Property name="Shadow_BoundBoxScale" type="App::PropertyFloatConstraint" group="Shadow" attr="0" ro="0" hide="0" docID="128" status="2097153">
+    <Property name="Shadow_BoundBoxScale" type="App::PropertyFloatConstraint" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Float value="1.2"/>
     </Property>
-    <Property name="Shadow_DisplayMode" type="App::PropertyEnumeration" group="Shadow" attr="0" ro="0" hide="0" docID="119" status="2097153">
-      <Integer value="2"/>
+    <Property name="Shadow_DisplayMode" type="App::PropertyEnumeration" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <Integer value="-1"/>
     </Property>
-    <Property name="Shadow_Epsilon" type="App::PropertyPrecision" group="Shadow" attr="0" ro="0" hide="0" docID="122" status="2097152">
+    <Property name="Shadow_Epsilon" type="App::PropertyPrecision" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Float value="0"/>
     </Property>
-    <Property name="Shadow_GroundAutoPosition" type="App::PropertyBool" group="Shadow" attr="0" ro="0" hide="0" docID="132" status="2097153">
+    <Property name="Shadow_GroundAutoPosition" type="App::PropertyBool" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Bool value="true"/>
     </Property>
-    <Property name="Shadow_GroundBackFaceCull" type="App::PropertyBool" group="Shadow" attr="0" ro="0" hide="0" docID="126" status="2097153">
+    <Property name="Shadow_GroundBackFaceCull" type="App::PropertyBool" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Bool value="true"/>
     </Property>
     <Property name="Shadow_GroundBumpMap" type="App::PropertyFileIncluded" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097152">
@@ -56,25 +62,25 @@ OrthographicCamera {
     <Property name="Shadow_GroundColor" type="App::PropertyColor" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097153">
       <PropertyColor value="2105376255"/>
     </Property>
-    <Property name="Shadow_GroundPlacement" type="App::PropertyPlacement" group="Shadow" attr="0" ro="0" hide="0" docID="131" status="2097152">
+    <Property name="Shadow_GroundPlacement" type="App::PropertyPlacement" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
     </Property>
-    <Property name="Shadow_GroundShading" type="App::PropertyBool" group="Shadow" attr="0" ro="0" hide="0" docID="137" status="2097153">
+    <Property name="Shadow_GroundShading" type="App::PropertyBool" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Bool value="true"/>
     </Property>
-    <Property name="Shadow_GroundSizeAuto" type="App::PropertyBool" group="Shadow" attr="0" ro="0" hide="0" docID="129" status="2097153">
+    <Property name="Shadow_GroundSizeAuto" type="App::PropertyBool" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Bool value="true"/>
     </Property>
-    <Property name="Shadow_GroundSizeScale" type="App::PropertyFloat" group="Shadow" attr="0" ro="0" hide="0" docID="130" status="2097153">
+    <Property name="Shadow_GroundSizeScale" type="App::PropertyFloat" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Float value="2"/>
     </Property>
     <Property name="Shadow_GroundTexture" type="App::PropertyFileIncluded" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097152">
       <FileIncluded data=""/>
     </Property>
-    <Property name="Shadow_GroundTextureSize" type="App::PropertyLength" group="Shadow" attr="0" ro="0" hide="0" docID="133" status="2097153">
+    <Property name="Shadow_GroundTextureSize" type="App::PropertyLength" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Float value="99.98999999999999"/>
     </Property>
-    <Property name="Shadow_GroundTransparency" type="App::PropertyFloatConstraint" group="Shadow" attr="0" ro="0" hide="0" docID="125" status="2097152">
+    <Property name="Shadow_GroundTransparency" type="App::PropertyFloatConstraint" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Float value="0"/>
     </Property>
     <Property name="Shadow_LightColor" type="App::PropertyColor" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097153">
@@ -86,31 +92,31 @@ OrthographicCamera {
     <Property name="Shadow_LightIntensity" type="App::PropertyFloatConstraint" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Float value="0.8"/>
     </Property>
-    <Property name="Shadow_MaxDistance" type="App::PropertyFloatConstraint" group="Shadow" attr="0" ro="0" hide="0" docID="124" status="2097152">
+    <Property name="Shadow_MaxDistance" type="App::PropertyFloatConstraint" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Float value="0"/>
     </Property>
-    <Property name="Shadow_Precision" type="App::PropertyFloatConstraint" group="Shadow" attr="0" ro="0" hide="0" docID="121" status="2097153">
+    <Property name="Shadow_Precision" type="App::PropertyFloatConstraint" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Float value="1"/>
     </Property>
-    <Property name="Shadow_ShowGround" type="App::PropertyBool" group="Shadow" attr="0" ro="0" hide="0" docID="127" status="2097153">
+    <Property name="Shadow_ShowGround" type="App::PropertyBool" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Bool value="true"/>
     </Property>
-    <Property name="Shadow_SmoothBorder" type="App::PropertyIntegerConstraint" group="Shadow" attr="0" ro="0" hide="0" docID="134" status="2097152">
+    <Property name="Shadow_SmoothBorder" type="App::PropertyIntegerConstraint" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Integer value="0"/>
     </Property>
-    <Property name="Shadow_SpotLight" type="App::PropertyBool" group="Shadow" attr="0" ro="0" hide="0" docID="120" status="2097152">
+    <Property name="Shadow_SpotLight" type="App::PropertyBool" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Bool value="false"/>
     </Property>
-    <Property name="Shadow_SpreadSampleSize" type="App::PropertyIntegerConstraint" group="Shadow" attr="0" ro="0" hide="0" docID="136" status="2097152">
+    <Property name="Shadow_SpreadSampleSize" type="App::PropertyIntegerConstraint" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Integer value="0"/>
     </Property>
-    <Property name="Shadow_SpreadSize" type="App::PropertyIntegerConstraint" group="Shadow" attr="0" ro="0" hide="0" docID="135" status="2097152">
+    <Property name="Shadow_SpreadSize" type="App::PropertyIntegerConstraint" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Integer value="0"/>
     </Property>
-    <Property name="Shadow_Threshold" type="App::PropertyFloatConstraint" group="Shadow" attr="0" ro="0" hide="0" docID="123" status="2097152">
+    <Property name="Shadow_Threshold" type="App::PropertyFloatConstraint" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Float value="0"/>
     </Property>
-    <Property name="Shadow_TransparentShadow" type="App::PropertyBool" group="Shadow" attr="0" ro="0" hide="0" docID="138" status="2097152">
+    <Property name="Shadow_TransparentShadow" type="App::PropertyBool" group="Shadow" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Bool value="false"/>
     </Property>
     <Property name="ShowNaviCube" type="App::PropertyBool" status="1">
