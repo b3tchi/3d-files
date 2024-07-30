@@ -4,7 +4,11 @@
 -->
 <!-- FreeCAD ViewProvider -->
 <Document SchemaVersion="1" FileVersion="2">
-<ViewProvider name="Binder005" expanded="0">
+<ViewProvider name="Binder005" expanded="0" Extensions="True">
+  <Extensions Count="1">
+    <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
+    </Extension>
+  </Extensions>
   <Properties Count="32" TransientCount="0">
     <Property name="AngularDeflection" type="App::PropertyAngle" status="1">
       <Float value="28.65"/>

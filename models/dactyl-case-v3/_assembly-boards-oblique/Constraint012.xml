@@ -6,7 +6,7 @@
     <Extension type="App::LinkBaseExtensionPython" name="LinkBaseExtensionPython">
     </Extension>
   </Extensions>
-  <Properties Count="21" TransientCount="0">
+  <Properties Count="24" TransientCount="0">
     <Property name="Angle" type="App::PropertyFloat" group="Constraint" attr="0" ro="0" hide="0" docID="33" status="2097152">
       <Float value="0"/>
     </Property>
@@ -34,7 +34,7 @@
     </Property>
     <Property name="GroupMode" type="App::PropertyEnumeration" group="Base" attr="0" ro="0" hide="0" doc="" status="2097434"></Property>
     <Property name="Label" type="App::PropertyString" status="134217728">
-      <String value="PlaneAlignment002"/>
+      <String value="PlaneCoincident006"/>
     </Property>
     <Property name="Label2" type="App::PropertyString" status="128">
       <String value=""/>
@@ -42,14 +42,23 @@
     <Property name="LockAngle" type="App::PropertyBool" group="Constraint" attr="0" ro="0" hide="0" docID="32" status="2097152">
       <Bool value="false"/>
     </Property>
+    <Property name="Multiply" type="App::PropertyBool" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097152">
+      <Bool value="false"/>
+    </Property>
     <Property name="Offset" type="App::PropertyDistance" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097152">
+      <Float value="0"/>
+    </Property>
+    <Property name="OffsetX" type="App::PropertyDistance" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097152">
+      <Float value="0"/>
+    </Property>
+    <Property name="OffsetY" type="App::PropertyDistance" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Float value="0"/>
     </Property>
     <Property name="Proxy" type="App::PropertyPythonObject">
       <Python  module="freecad.asm3.assembly" class="AsmConstraint" value="null"/>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="154"/>
+      <Integer value="181"/>
     </Property>
     <Property name="Visibility" type="App::PropertyBool" status="648">
       <Bool value="false"/>
@@ -58,7 +67,7 @@
       <BoolList value="00"/>
     </Property>
     <Property name="_ConstraintType" type="App::PropertyInteger" group="Base" attr="0" ro="0" hide="1" doc="" status="69206016">
-      <Integer value="37"/>
+      <Integer value="35"/>
     </Property>
     <Property name="_LinkOwner" type="App::PropertyInteger" status="201326592">
       <Integer value="0"/>
