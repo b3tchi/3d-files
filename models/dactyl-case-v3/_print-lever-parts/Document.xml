@@ -38,7 +38,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-07-25T20:34:50Z"/>
+      <String value="2024-08-02T21:58:36Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -79,18 +79,18 @@
       <Bool value="true"/>
     </Property>
   </Properties>
-  <Objects Count="43" Dependencies="1">
+  <Objects Count="52" Dependencies="1">
     <ObjectDeps Name="Body" Count="2">
-      <Dep Name="Origin"/>
       <Dep Name="Boolean"/>
+      <Dep Name="Origin"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
+      <Dep Name="XZ_Plane"/>
+      <Dep Name="YZ_Plane"/>
+      <Dep Name="Z_Axis"/>
+      <Dep Name="XY_Plane"/>
       <Dep Name="X_Axis"/>
       <Dep Name="Y_Axis"/>
-      <Dep Name="Z_Axis"/>
-      <Dep Name="XZ_Plane"/>
-      <Dep Name="XY_Plane"/>
-      <Dep Name="YZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
@@ -99,11 +99,35 @@
     <ObjectDeps Name="XZ_Plane" Count="0"/>
     <ObjectDeps Name="YZ_Plane" Count="0"/>
     <ObjectDeps Name="Link" Count="0"/>
-    <ObjectDeps Name="Boolean" Count="4">
+    <ObjectDeps Name="Boolean" Count="28">
       <Dep Name="Body"/>
-      <Dep Name="Binder012"/>
+      <Dep Name="Reference003"/>
+      <Dep Name="Reference"/>
+      <Dep Name="Binder019"/>
+      <Dep Name="Binder017"/>
+      <Dep Name="Binder020"/>
+      <Dep Name="Binder018"/>
       <Dep Name="Binder014"/>
       <Dep Name="Binder013"/>
+      <Dep Name="Binder012"/>
+      <Dep Name="Binder016"/>
+      <Dep Name="Binder015"/>
+      <Dep Name="Reference001"/>
+      <Dep Name="Reference002"/>
+      <Dep Name="Reference006"/>
+      <Dep Name="Reference005"/>
+      <Dep Name="Binder005"/>
+      <Dep Name="Binder001"/>
+      <Dep Name="Binder002"/>
+      <Dep Name="Binder"/>
+      <Dep Name="Binder003"/>
+      <Dep Name="Binder004"/>
+      <Dep Name="Binder006"/>
+      <Dep Name="Binder007"/>
+      <Dep Name="Binder011"/>
+      <Dep Name="Binder010"/>
+      <Dep Name="Binder009"/>
+      <Dep Name="Binder008"/>
     </ObjectDeps>
     <ObjectDeps Name="Reference" Count="2">
       <Dep Name="Body"/>
@@ -191,7 +215,32 @@
       <Dep Name="Body"/>
       <Dep Name="Link012"/>
     </ObjectDeps>
-    <Object type="PartDesign::Body" name="Body" id="1169" revision="170" file="Body.xml" />
+    <ObjectDeps Name="Link014" Count="0"/>
+    <ObjectDeps Name="Binder015" Count="1">
+      <Dep Name="Link014"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Binder016" Count="1">
+      <Dep Name="Link014"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Link015" Count="0"/>
+    <ObjectDeps Name="Binder017" Count="2">
+      <Dep Name="Body"/>
+      <Dep Name="Link015"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Link016" Count="0"/>
+    <ObjectDeps Name="Binder018" Count="2">
+      <Dep Name="Body"/>
+      <Dep Name="Link016"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Binder019" Count="2">
+      <Dep Name="Body"/>
+      <Dep Name="Link006"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Binder020" Count="2">
+      <Dep Name="Body"/>
+      <Dep Name="Link007"/>
+    </ObjectDeps>
+    <Object type="PartDesign::Body" name="Body" id="1169" revision="226" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="1170" revision="0" file="Origin.xml" />
     <Object type="App::Line" name="X_Axis" id="1171" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="1172" revision="2" file="Y_Axis.xml" />
@@ -200,40 +249,49 @@
     <Object type="App::Plane" name="XZ_Plane" id="1175" revision="2" file="XZ_Plane.xml" />
     <Object type="App::Plane" name="YZ_Plane" id="1176" revision="2" file="YZ_Plane.xml" />
     <Object type="App::Link" name="Link" id="1179" revision="25" file="Link.xml" />
-    <Object type="PartDesign::Boolean" name="Boolean" id="1185" revision="280" file="Boolean.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Reference" id="1186" revision="24" file="Reference.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Reference001" id="1187" revision="51" file="Reference001.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Reference002" id="1188" revision="31" file="Reference002.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Reference003" id="1190" revision="45" file="Reference003.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Reference005" id="1192" revision="39" file="Reference005.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Reference006" id="1193" revision="20" file="Reference006.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean" id="1185" revision="363" file="Boolean.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Reference" id="1186" revision="34" file="Reference.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Reference001" id="1187" revision="54" file="Reference001.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Reference002" id="1188" revision="35" file="Reference002.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Reference003" id="1190" revision="52" file="Reference003.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Reference005" id="1192" revision="50" file="Reference005.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Reference006" id="1193" revision="27" file="Reference006.xml" />
     <Object type="App::Link" name="Link002" id="1194" revision="4" file="Link002.xml" />
     <Object type="App::Link" name="Link003" id="1195" revision="6" file="Link003.xml" />
     <Object type="App::Link" name="Link004" id="1196" revision="6" file="Link004.xml" />
     <Object type="App::Link" name="Link005" id="1197" revision="6" file="Link005.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder" id="1198" revision="28" file="Binder.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder001" id="1199" revision="24" file="Binder001.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder002" id="1200" revision="46" file="Binder002.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder" id="1198" revision="32" file="Binder.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder001" id="1199" revision="32" file="Binder001.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder002" id="1200" revision="50" file="Binder002.xml" />
     <Object type="App::Link" name="Link006" id="1201" revision="6" file="Link006.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder003" id="1202" revision="12" file="Binder003.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder003" id="1202" revision="18" file="Binder003.xml" />
     <Object type="App::Link" name="Link007" id="1203" revision="4" file="Link007.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder004" id="1205" revision="30" file="Binder004.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder005" id="1206" revision="44" file="Binder005.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder006" id="1207" revision="19" file="Binder006.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder007" id="1208" revision="12" file="Binder007.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder004" id="1205" revision="34" file="Binder004.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder005" id="1206" revision="48" file="Binder005.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder006" id="1207" revision="29" file="Binder006.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder007" id="1208" revision="18" file="Binder007.xml" />
     <Object type="App::Link" name="Link008" id="1209" revision="4" file="Link008.xml" />
     <Object type="App::Link" name="Link009" id="1210" revision="4" file="Link009.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder008" id="1211" revision="10" file="Binder008.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder009" id="1212" revision="48" file="Binder009.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder008" id="1211" revision="12" file="Binder008.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder009" id="1212" revision="50" file="Binder009.xml" />
     <Object type="App::Link" name="Link010" id="1213" revision="4" file="Link010.xml" />
     <Object type="App::Link" name="Link011" id="1214" revision="8" file="Link011.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder010" id="1215" revision="13" file="Binder010.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder011" id="1216" revision="12" file="Binder011.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder010" id="1215" revision="25" file="Binder010.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder011" id="1216" revision="18" file="Binder011.xml" />
     <Object type="App::Link" name="Link012" id="1217" revision="19" file="Link012.xml" />
     <Object type="App::Link" name="Link013" id="1218" revision="17" file="Link013.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder012" id="1219" revision="17" file="Binder012.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder013" id="1221" revision="11" file="Binder013.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder014" id="1222" revision="14" file="Binder014.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder012" id="1219" revision="25" file="Binder012.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder013" id="1221" revision="19" file="Binder013.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder014" id="1222" revision="22" file="Binder014.xml" />
+    <Object type="App::Link" name="Link014" id="1223" revision="4" file="Link014.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder015" id="1224" revision="46" file="Binder015.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder016" id="1225" revision="22" file="Binder016.xml" />
+    <Object type="App::Link" name="Link015" id="1226" revision="4" file="Link015.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder017" id="1227" revision="43" file="Binder017.xml" />
+    <Object type="App::Link" name="Link016" id="1228" revision="4" file="Link016.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder018" id="1229" revision="49" file="Binder018.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder019" id="1230" revision="13" file="Binder019.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder020" id="1231" revision="47" file="Binder020.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>

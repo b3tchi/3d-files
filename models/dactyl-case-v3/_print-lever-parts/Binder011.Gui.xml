@@ -4,7 +4,11 @@
 -->
 <!-- FreeCAD ViewProvider -->
 <Document SchemaVersion="1" FileVersion="2">
-<ViewProvider name="Binder011" expanded="0">
+<ViewProvider name="Binder011" expanded="0" Extensions="True">
+  <Extensions Count="1">
+    <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
+    </Extension>
+  </Extensions>
   <Properties Count="32" TransientCount="0">
     <Property name="AngularDeflection" type="App::PropertyAngle" status="1">
       <Float value="28.65"/>
@@ -16,15 +20,8 @@
       <Float value="0.2"/>
     </Property>
     <Property name="DiffuseColor" type="App::PropertyColorList" status="1">
-      <ColorList count="8" >
-cccccc99
-cccccc99
-cccccc99
-cccccc99
-cccccc99
-cccccc99
-cccccc99
-cccccc99
+      <ColorList count="1" >
+ff55ff99
       </ColorList>
     </Property>
     <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
@@ -54,7 +51,7 @@ ffd70099
       <Float value="1"/>
     </Property>
     <Property name="MapFaceColor" type="App::PropertyBool" status="1">
-      <Bool value="true"/>
+      <Bool value="false"/>
     </Property>
     <Property name="MapLineColor" type="App::PropertyBool" status="1">
       <Bool value="false"/>
@@ -98,10 +95,10 @@ ffd70099
       <Integer value="0"/>
     </Property>
     <Property name="ShapeColor" type="App::PropertyColor" status="1">
-      <PropertyColor value="4292280473"/>
+      <PropertyColor value="4283826073"/>
     </Property>
     <Property name="ShapeMaterial" type="App::PropertyMaterial" status="33">
-      <PropertyMaterial ambientColor="858993408" diffuseColor="3435973632" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.6000000238418579"/>
+      <PropertyMaterial ambientColor="858993408" diffuseColor="4283826073" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.6000000238418579"/>
     </Property>
     <Property name="ShowInTree" type="App::PropertyBool" status="1">
       <Bool value="true"/>
@@ -113,7 +110,7 @@ ffd70099
       <Bool value="true"/>
     </Property>
     <Property name="Visibility" type="App::PropertyBool" status="1">
-      <Bool value="false"/>
+      <Bool value="true"/>
     </Property>
   </Properties>
 </ViewProvider>
