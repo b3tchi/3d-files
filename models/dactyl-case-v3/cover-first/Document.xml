@@ -4,7 +4,7 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.408R14555 (Git shallow)" FileVersion="2" Uid="98270c9b-a55b-4520-9c4f-8a8824a6e86b" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="2687">
+  <StringHasher2  count="2686">
 <![CDATA[
 -2.0 0:;SKT;:Hfe6,E
 -1.c.1 g1
@@ -244,8 +244,7 @@ c8d.2c.31e.14
 -1.c.0 g3v1
 -1.c.0 g6v1
 -1.c.0 g7v1
--1.0 0:Shape cache
--1b.0 0:(#ef2;K-1;:H1028:4,E)
+-1c.0 0:(#ef2;K-1;:H1028:4,E)
 -1.28.30a.e51.282.1 ;:G#1173;CUT;:H-1069:c,V
 -1.2c.221.bcf
 -1.2c.0.-3
@@ -2724,7 +2723,7 @@ c8d.2c.31e.14
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-07-26T16:51:43Z"/>
+      <String value="2024-08-03T10:15:26Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -2768,26 +2767,26 @@ c8d.2c.31e.14
   <Objects Count="86" Dependencies="1">
     <ObjectDeps Name="Body" Count="13">
       <Dep Name="Origin"/>
-      <Dep Name="Boolean003"/>
-      <Dep Name="Pad003"/>
-      <Dep Name="Pad"/>
       <Dep Name="Pad001"/>
-      <Dep Name="Pad002"/>
       <Dep Name="Pad004"/>
+      <Dep Name="Pad002"/>
+      <Dep Name="Pad003"/>
+      <Dep Name="Pad010"/>
+      <Dep Name="Pad"/>
+      <Dep Name="Sketch"/>
       <Dep Name="Sketch002"/>
       <Dep Name="Sketch001"/>
-      <Dep Name="Sketch003"/>
-      <Dep Name="Sketch"/>
       <Dep Name="Sketch008"/>
-      <Dep Name="Pad010"/>
+      <Dep Name="Sketch003"/>
+      <Dep Name="Boolean003"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
       <Dep Name="X_Axis"/>
+      <Dep Name="Y_Axis"/>
       <Dep Name="Z_Axis"/>
       <Dep Name="XY_Plane"/>
       <Dep Name="XZ_Plane"/>
       <Dep Name="YZ_Plane"/>
-      <Dep Name="Y_Axis"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
@@ -2803,16 +2802,16 @@ c8d.2c.31e.14
       <Dep Name="Sketch"/>
     </ObjectDeps>
     <ObjectDeps Name="Link001" Count="2">
-      <Dep Name="Part001"/>
       <Dep Name="CopyOnChangeGroup"/>
+      <Dep Name="Part001"/>
     </ObjectDeps>
     <ObjectDeps Name="Binder003" Count="2">
-      <Dep Name="Body"/>
       <Dep Name="Link001"/>
+      <Dep Name="Body"/>
     </ObjectDeps>
     <ObjectDeps Name="Boolean003" Count="3">
-      <Dep Name="Body"/>
       <Dep Name="Binder003"/>
+      <Dep Name="Body"/>
       <Dep Name="Pad"/>
     </ObjectDeps>
     <ObjectDeps Name="Sketch001" Count="1">
@@ -2820,94 +2819,94 @@ c8d.2c.31e.14
     </ObjectDeps>
     <ObjectDeps Name="Pad001" Count="3">
       <Dep Name="Body"/>
-      <Dep Name="Boolean003"/>
       <Dep Name="Sketch001"/>
+      <Dep Name="Boolean003"/>
     </ObjectDeps>
     <ObjectDeps Name="Sketch002" Count="1">
       <Dep Name="XZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad002" Count="3">
-      <Dep Name="Body"/>
       <Dep Name="Pad001"/>
+      <Dep Name="Body"/>
       <Dep Name="Sketch002"/>
     </ObjectDeps>
     <ObjectDeps Name="Sketch003" Count="1">
       <Dep Name="YZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad003" Count="3">
-      <Dep Name="Body"/>
       <Dep Name="Pad002"/>
+      <Dep Name="Body"/>
       <Dep Name="Sketch003"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad004" Count="3">
-      <Dep Name="Body"/>
       <Dep Name="Pad003"/>
+      <Dep Name="Body"/>
       <Dep Name="Sketch003"/>
     </ObjectDeps>
     <ObjectDeps Name="CopyOnChangeGroup" Count="63">
-      <Dep Name="YZ_Plane009"/>
-      <Dep Name="X_Axis010"/>
-      <Dep Name="Y_Axis010"/>
-      <Dep Name="XZ_Plane011"/>
-      <Dep Name="Origin009"/>
-      <Dep Name="Origin010"/>
+      <Dep Name="Origin012"/>
       <Dep Name="Spreadsheet001"/>
       <Dep Name="Origin008"/>
+      <Dep Name="Origin010"/>
+      <Dep Name="Origin009"/>
+      <Dep Name="Origin011"/>
+      <Dep Name="Origin013"/>
+      <Dep Name="Pad008"/>
+      <Dep Name="Pad009"/>
+      <Dep Name="Reference007"/>
+      <Dep Name="Reference006"/>
+      <Dep Name="Binder004"/>
+      <Dep Name="BaseFeature004"/>
+      <Dep Name="BaseFeature005"/>
+      <Dep Name="Reference008"/>
+      <Dep Name="YZ_Plane007"/>
+      <Dep Name="X_Axis008"/>
       <Dep Name="XZ_Plane010"/>
       <Dep Name="YZ_Plane008"/>
-      <Dep Name="XY_Plane008"/>
       <Dep Name="Z_Axis008"/>
-      <Dep Name="Part001"/>
-      <Dep Name="XZ_Plane007"/>
-      <Dep Name="Y_Axis006"/>
-      <Dep Name="XZ_Plane008"/>
-      <Dep Name="Y_Axis009"/>
-      <Dep Name="Z_Axis009"/>
-      <Dep Name="XY_Plane009"/>
       <Dep Name="X_Axis009"/>
-      <Dep Name="X_Axis008"/>
       <Dep Name="Y_Axis008"/>
-      <Dep Name="Y_Axis007"/>
-      <Dep Name="X_Axis007"/>
-      <Dep Name="XY_Plane007"/>
-      <Dep Name="XZ_Plane009"/>
-      <Dep Name="Z_Axis007"/>
-      <Dep Name="YZ_Plane007"/>
-      <Dep Name="Sketch006"/>
-      <Dep Name="Sketch007"/>
-      <Dep Name="Body011"/>
-      <Dep Name="Body008"/>
-      <Dep Name="Body007"/>
-      <Dep Name="Body009"/>
-      <Dep Name="Body010"/>
-      <Dep Name="BaseFeature004"/>
-      <Dep Name="Reference006"/>
-      <Dep Name="Boolean004"/>
+      <Dep Name="XY_Plane008"/>
+      <Dep Name="Binder005"/>
+      <Dep Name="BaseFeature006"/>
+      <Dep Name="Reference010"/>
+      <Dep Name="BaseFeature007"/>
+      <Dep Name="Reference009"/>
+      <Dep Name="LinearPattern001"/>
       <Dep Name="Boolean005"/>
       <Dep Name="Boolean006"/>
+      <Dep Name="Boolean004"/>
+      <Dep Name="Part001"/>
+      <Dep Name="Body008"/>
+      <Dep Name="Body007"/>
+      <Dep Name="Body010"/>
+      <Dep Name="Body011"/>
+      <Dep Name="Body009"/>
+      <Dep Name="Z_Axis009"/>
+      <Dep Name="X_Axis010"/>
+      <Dep Name="Y_Axis010"/>
+      <Dep Name="Y_Axis009"/>
+      <Dep Name="Z_Axis010"/>
+      <Dep Name="XY_Plane009"/>
+      <Dep Name="XZ_Plane011"/>
+      <Dep Name="YZ_Plane009"/>
+      <Dep Name="Sketch006"/>
+      <Dep Name="Sketch007"/>
+      <Dep Name="Y_Axis006"/>
+      <Dep Name="XZ_Plane009"/>
+      <Dep Name="X_Axis007"/>
+      <Dep Name="XZ_Plane007"/>
+      <Dep Name="Y_Axis007"/>
+      <Dep Name="XZ_Plane008"/>
+      <Dep Name="Z_Axis007"/>
+      <Dep Name="XY_Plane007"/>
+      <Dep Name="XZ_Plane012"/>
+      <Dep Name="XY_Plane010"/>
+      <Dep Name="YZ_Plane010"/>
       <Dep Name="X_Axis011"/>
       <Dep Name="Z_Axis011"/>
-      <Dep Name="YZ_Plane011"/>
       <Dep Name="XY_Plane011"/>
-      <Dep Name="Z_Axis010"/>
-      <Dep Name="XY_Plane010"/>
-      <Dep Name="XZ_Plane012"/>
-      <Dep Name="YZ_Plane010"/>
-      <Dep Name="Pad009"/>
-      <Dep Name="Pad008"/>
-      <Dep Name="Reference007"/>
-      <Dep Name="Binder004"/>
-      <Dep Name="BaseFeature005"/>
-      <Dep Name="BaseFeature006"/>
-      <Dep Name="Reference009"/>
-      <Dep Name="Binder005"/>
-      <Dep Name="Reference008"/>
-      <Dep Name="Reference010"/>
-      <Dep Name="LinearPattern001"/>
-      <Dep Name="BaseFeature007"/>
-      <Dep Name="Origin011"/>
-      <Dep Name="Origin012"/>
-      <Dep Name="Origin013"/>
+      <Dep Name="YZ_Plane011"/>
     </ObjectDeps>
     <ObjectDeps Name="Spreadsheet001" Count="1">
       <Dep Name="Part001"/>
@@ -2921,12 +2920,12 @@ c8d.2c.31e.14
     </ObjectDeps>
     <ObjectDeps Name="Pad008" Count="3">
       <Dep Name="Spreadsheet001"/>
-      <Dep Name="Sketch006"/>
       <Dep Name="Body011"/>
+      <Dep Name="Sketch006"/>
     </ObjectDeps>
     <ObjectDeps Name="Reference006" Count="2">
-      <Dep Name="Body011"/>
       <Dep Name="Pad008"/>
+      <Dep Name="Body011"/>
     </ObjectDeps>
     <ObjectDeps Name="XZ_Plane008" Count="0"/>
     <ObjectDeps Name="Sketch007" Count="1">
@@ -2938,8 +2937,8 @@ c8d.2c.31e.14
     </ObjectDeps>
     <ObjectDeps Name="BaseFeature004" Count="3">
       <Dep Name="Spreadsheet001"/>
-      <Dep Name="CopyOnChangeGroup"/>
       <Dep Name="Pad009"/>
+      <Dep Name="CopyOnChangeGroup"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis007" Count="0"/>
     <ObjectDeps Name="Y_Axis007" Count="0"/>
@@ -2948,12 +2947,12 @@ c8d.2c.31e.14
     <ObjectDeps Name="XZ_Plane009" Count="0"/>
     <ObjectDeps Name="YZ_Plane007" Count="0"/>
     <ObjectDeps Name="Origin009" Count="6">
-      <Dep Name="Y_Axis007"/>
-      <Dep Name="X_Axis007"/>
-      <Dep Name="XY_Plane007"/>
-      <Dep Name="XZ_Plane009"/>
-      <Dep Name="Z_Axis007"/>
       <Dep Name="YZ_Plane007"/>
+      <Dep Name="XZ_Plane009"/>
+      <Dep Name="X_Axis007"/>
+      <Dep Name="Y_Axis007"/>
+      <Dep Name="Z_Axis007"/>
+      <Dep Name="XY_Plane007"/>
     </ObjectDeps>
     <ObjectDeps Name="Body007" Count="2">
       <Dep Name="Origin009"/>
@@ -2964,17 +2963,17 @@ c8d.2c.31e.14
       <Dep Name="Body007"/>
     </ObjectDeps>
     <ObjectDeps Name="BaseFeature005" Count="2">
-      <Dep Name="CopyOnChangeGroup"/>
       <Dep Name="Pad009"/>
+      <Dep Name="CopyOnChangeGroup"/>
     </ObjectDeps>
     <ObjectDeps Name="Reference008" Count="2">
-      <Dep Name="Body008"/>
       <Dep Name="BaseFeature005"/>
+      <Dep Name="Body008"/>
     </ObjectDeps>
     <ObjectDeps Name="Boolean004" Count="3">
-      <Dep Name="Body008"/>
       <Dep Name="Reference007"/>
       <Dep Name="Reference008"/>
+      <Dep Name="Body008"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis008" Count="0"/>
     <ObjectDeps Name="Y_Axis008" Count="0"/>
@@ -2983,30 +2982,30 @@ c8d.2c.31e.14
     <ObjectDeps Name="XZ_Plane010" Count="0"/>
     <ObjectDeps Name="YZ_Plane008" Count="0"/>
     <ObjectDeps Name="Origin010" Count="6">
+      <Dep Name="X_Axis008"/>
       <Dep Name="XZ_Plane010"/>
       <Dep Name="YZ_Plane008"/>
-      <Dep Name="XY_Plane008"/>
       <Dep Name="Z_Axis008"/>
-      <Dep Name="X_Axis008"/>
       <Dep Name="Y_Axis008"/>
+      <Dep Name="XY_Plane008"/>
     </ObjectDeps>
     <ObjectDeps Name="Body008" Count="3">
       <Dep Name="Origin010"/>
-      <Dep Name="Boolean004"/>
       <Dep Name="BaseFeature005"/>
+      <Dep Name="Boolean004"/>
     </ObjectDeps>
     <ObjectDeps Name="Binder004" Count="2">
-      <Dep Name="Body008"/>
       <Dep Name="CopyOnChangeGroup"/>
+      <Dep Name="Body008"/>
     </ObjectDeps>
     <ObjectDeps Name="BaseFeature006" Count="3">
       <Dep Name="Spreadsheet001"/>
-      <Dep Name="CopyOnChangeGroup"/>
       <Dep Name="Pad009"/>
+      <Dep Name="CopyOnChangeGroup"/>
     </ObjectDeps>
     <ObjectDeps Name="BaseFeature007" Count="2">
-      <Dep Name="CopyOnChangeGroup"/>
       <Dep Name="Pad009"/>
+      <Dep Name="CopyOnChangeGroup"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis009" Count="0"/>
     <ObjectDeps Name="Y_Axis009" Count="0"/>
@@ -3015,30 +3014,30 @@ c8d.2c.31e.14
     <ObjectDeps Name="XZ_Plane011" Count="0"/>
     <ObjectDeps Name="YZ_Plane009" Count="0"/>
     <ObjectDeps Name="Origin011" Count="6">
-      <Dep Name="YZ_Plane009"/>
-      <Dep Name="XZ_Plane011"/>
-      <Dep Name="Y_Axis009"/>
-      <Dep Name="Z_Axis009"/>
-      <Dep Name="XY_Plane009"/>
       <Dep Name="X_Axis009"/>
+      <Dep Name="Z_Axis009"/>
+      <Dep Name="Y_Axis009"/>
+      <Dep Name="XY_Plane009"/>
+      <Dep Name="XZ_Plane011"/>
+      <Dep Name="YZ_Plane009"/>
     </ObjectDeps>
     <ObjectDeps Name="Body009" Count="2">
-      <Dep Name="BaseFeature007"/>
       <Dep Name="Origin011"/>
+      <Dep Name="BaseFeature007"/>
     </ObjectDeps>
     <ObjectDeps Name="Reference009" Count="2">
-      <Dep Name="Body009"/>
       <Dep Name="Body010"/>
+      <Dep Name="Body009"/>
     </ObjectDeps>
     <ObjectDeps Name="Reference010" Count="2">
-      <Dep Name="Body010"/>
       <Dep Name="BaseFeature006"/>
+      <Dep Name="Body010"/>
     </ObjectDeps>
     <ObjectDeps Name="Boolean005" Count="4">
-      <Dep Name="Body010"/>
       <Dep Name="BaseFeature006"/>
-      <Dep Name="Reference009"/>
       <Dep Name="Reference010"/>
+      <Dep Name="Reference009"/>
+      <Dep Name="Body010"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis010" Count="0"/>
     <ObjectDeps Name="Y_Axis010" Count="0"/>
@@ -3050,50 +3049,50 @@ c8d.2c.31e.14
       <Dep Name="X_Axis010"/>
       <Dep Name="Y_Axis010"/>
       <Dep Name="Z_Axis010"/>
-      <Dep Name="XY_Plane010"/>
       <Dep Name="XZ_Plane012"/>
+      <Dep Name="XY_Plane010"/>
       <Dep Name="YZ_Plane010"/>
     </ObjectDeps>
     <ObjectDeps Name="Body010" Count="3">
-      <Dep Name="Boolean005"/>
-      <Dep Name="BaseFeature006"/>
       <Dep Name="Origin012"/>
+      <Dep Name="BaseFeature006"/>
+      <Dep Name="Boolean005"/>
     </ObjectDeps>
     <ObjectDeps Name="Binder005" Count="2">
-      <Dep Name="Body010"/>
       <Dep Name="CopyOnChangeGroup"/>
+      <Dep Name="Body010"/>
     </ObjectDeps>
     <ObjectDeps Name="Boolean006" Count="5">
-      <Dep Name="Body011"/>
-      <Dep Name="Reference006"/>
       <Dep Name="Pad008"/>
+      <Dep Name="Reference006"/>
       <Dep Name="Binder004"/>
       <Dep Name="Binder005"/>
+      <Dep Name="Body011"/>
     </ObjectDeps>
     <ObjectDeps Name="LinearPattern001" Count="4">
       <Dep Name="Spreadsheet001"/>
-      <Dep Name="Y_Axis006"/>
-      <Dep Name="Body011"/>
       <Dep Name="Boolean006"/>
+      <Dep Name="Body011"/>
+      <Dep Name="Y_Axis006"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis011" Count="0"/>
     <ObjectDeps Name="Z_Axis011" Count="0"/>
     <ObjectDeps Name="XY_Plane011" Count="0"/>
     <ObjectDeps Name="YZ_Plane011" Count="0"/>
     <ObjectDeps Name="Origin013" Count="6">
-      <Dep Name="XZ_Plane007"/>
       <Dep Name="Y_Axis006"/>
+      <Dep Name="XZ_Plane007"/>
       <Dep Name="X_Axis011"/>
       <Dep Name="Z_Axis011"/>
-      <Dep Name="YZ_Plane011"/>
       <Dep Name="XY_Plane011"/>
+      <Dep Name="YZ_Plane011"/>
     </ObjectDeps>
     <ObjectDeps Name="Body011" Count="5">
-      <Dep Name="Sketch006"/>
-      <Dep Name="Boolean006"/>
+      <Dep Name="Origin013"/>
       <Dep Name="Pad008"/>
       <Dep Name="LinearPattern001"/>
-      <Dep Name="Origin013"/>
+      <Dep Name="Boolean006"/>
+      <Dep Name="Sketch006"/>
     </ObjectDeps>
     <ObjectDeps Name="Part001" Count="3">
       <Dep Name="Spreadsheet001"/>
@@ -3104,8 +3103,8 @@ c8d.2c.31e.14
       <Dep Name="XY_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad010" Count="3">
-      <Dep Name="Body"/>
       <Dep Name="Pad004"/>
+      <Dep Name="Body"/>
       <Dep Name="Sketch008"/>
     </ObjectDeps>
     <Object type="PartDesign::Body" name="Body" id="4062" revision="373" file="Body.xml" />
@@ -3120,7 +3119,7 @@ c8d.2c.31e.14
     <Object type="PartDesign::Pad" name="Pad" id="4071" revision="48" file="Pad.xml" />
     <Object type="App::Link" name="Link001" id="4199" revision="113" file="Link001.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Binder003" id="4196" revision="146" file="Binder003.xml" />
-    <Object type="PartDesign::Boolean" name="Boolean003" id="4136" revision="159" file="Boolean003.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean003" id="4136" revision="160" file="Boolean003.xml" />
     <Object type="Sketcher::SketchObject" name="Sketch001" id="4200" revision="131" file="Sketch001.xml" />
     <Object type="PartDesign::Pad" name="Pad001" id="4201" revision="119" file="Pad001.xml" />
     <Object type="Sketcher::SketchObject" name="Sketch002" id="4202" revision="738" file="Sketch002.xml" />
@@ -3151,7 +3150,7 @@ c8d.2c.31e.14
     <Object type="PartDesign::SubShapeBinder" name="Reference007" id="4293" revision="120" file="Reference007.xml" />
     <Object type="PartDesign::SubShapeBinder" name="BaseFeature005" id="4294" revision="123" file="BaseFeature005.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Reference008" id="4295" revision="108" file="Reference008.xml" />
-    <Object type="PartDesign::Boolean" name="Boolean004" id="4296" revision="336" file="Boolean004.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean004" id="4296" revision="337" file="Boolean004.xml" />
     <Object type="App::Line" name="X_Axis008" id="4297" revision="1" file="X_Axis008.xml" />
     <Object type="App::Line" name="Y_Axis008" id="4298" revision="2" file="Y_Axis008.xml" />
     <Object type="App::Line" name="Z_Axis008" id="4299" revision="2" file="Z_Axis008.xml" />
@@ -3173,7 +3172,7 @@ c8d.2c.31e.14
     <Object type="PartDesign::Body" name="Body009" id="4315" revision="105" file="Body009.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Reference009" id="4316" revision="107" file="Reference009.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Reference010" id="4317" revision="128" file="Reference010.xml" />
-    <Object type="PartDesign::Boolean" name="Boolean005" id="4318" revision="337" file="Boolean005.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean005" id="4318" revision="338" file="Boolean005.xml" />
     <Object type="App::Line" name="X_Axis010" id="4319" revision="1" file="X_Axis010.xml" />
     <Object type="App::Line" name="Y_Axis010" id="4320" revision="2" file="Y_Axis010.xml" />
     <Object type="App::Line" name="Z_Axis010" id="4321" revision="2" file="Z_Axis010.xml" />
@@ -3183,7 +3182,7 @@ c8d.2c.31e.14
     <Object type="App::Origin" name="Origin012" id="4325" revision="0" file="Origin012.xml" />
     <Object type="PartDesign::Body" name="Body010" id="4326" revision="146" file="Body010.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Binder005" id="4327" revision="125" file="Binder005.xml" />
-    <Object type="PartDesign::Boolean" name="Boolean006" id="4328" revision="653" file="Boolean006.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean006" id="4328" revision="654" file="Boolean006.xml" />
     <Object type="PartDesign::LinearPattern" name="LinearPattern001" id="4329" revision="561" file="LinearPattern001.xml" />
     <Object type="App::Line" name="X_Axis011" id="4330" revision="1" file="X_Axis011.xml" />
     <Object type="App::Line" name="Z_Axis011" id="4331" revision="2" file="Z_Axis011.xml" />
