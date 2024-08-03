@@ -175,12 +175,24 @@ TShapes 0
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 1
+Locations 5
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
-Curve2ds 0
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  2 -1 1 -1 0
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1             3.7 
+2  4 -1 2 -1 1 -1 0
+Curve2ds 2
+1 0 0 1 0 
+1 0 -3.7000000000000002 1 0 
 Curves 4
 1 0 0 0 -1 0 0 
 1 -126.7 0 0 0 1 0 
@@ -188,19 +200,20 @@ Curves 4
 1 0 30 0 0 -1 0 
 Polygon3D 0
 PolygonOnTriangulations 0
-Surfaces 0
+Surfaces 1
+1 0 30 0 1 0 -0 0 -1 0 0 -0 -1 
 Triangulations 0
 
 TShapes 9
 Ve
-1.00000000038202e-05
+1.00000000041935e-05
 0 0 0
 0 0
 
 0101101
 *
 Ve
-1.00000000038202e-05
+1.00500000038202e-05
 -126.7 0 0
 0 0
 
@@ -214,14 +227,14 @@ Ed
 0101000
 +9 0 -8 0 *
 Ve
-1.00000000038202e-05
+1.00500000038202e-05
 -126.7 30 0
 0 0
 
 0101101
 *
 Ed
- 1.00000000038202e-05 1 1 0
+ 1.00500000038202e-05 1 1 0
 1  2 0 0 30
 0
 
@@ -244,6 +257,8 @@ Ed
 Ed
  1.00000000038202e-05 1 1 0
 1  4 0 0 30
+2  1 1 3 0 30
+2  2 1 5 0 30
 0
 
 0101000
@@ -304,8 +319,8 @@ EndMap
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="648">
-      <Bool value="false"/>
+    <Property name="Visibility" type="App::PropertyBool" status="649">
+      <Bool value="true"/>
     </Property>
   </Properties>
 </Object>

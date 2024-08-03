@@ -34,7 +34,7 @@
       <Bool value="true"/>
     </Property>
     <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Link003" sub="Pad007.Edge338" shadow="Pad007.;#14ee;:Hf7c,E.Edge338"/>
+      <XLink file="" stamp="" name="Link003" sub="Pad010.Edge243" shadow="Pad010.;#5726;:Hf80,E.Edge243"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -50,20 +50,25 @@
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 4
+Locations 6
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
 1
-1.0325074129014e-14 1.6153745008296e-14               1          116.05 
-              1 9.71445146546995e-15 -1.03250741290142e-14 -7.8500000000003 
--9.71445146547012e-15               1 -1.61537450082959e-14 36.0499999999992 
+1.0325074129014e-14 1.60427227058335e-14               1          116.05 
+              1 9.82547376793247e-15 -1.03250741290141e-14 -7.8500000000003 
+-9.82547376793264e-15               1 -1.60427227058334e-14 36.0499999999992 
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
-2  3 -1 0
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  3 1 4 1 0
+2  4 -1 3 -1 0
 Curve2ds 0
 Curves 1
 2 0 -24.850000000000001 1.7999999999999889 -0 1 4.4408920985006262e-16 1 0 0 0 4.4408920985006262e-16 -1 1.05
@@ -86,11 +91,11 @@ Ed
 0
 
 0101100
-+4 4 -4 4 *
++4 6 -4 6 *
 Co
 
 0100000
-+3 3 *
++3 5 *
 Co
 
 1100000
@@ -115,7 +120,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#28;:X;:Hf7e:3,E.0 0
+;#20;:X;:Hf87:3,E.0 0
 
 Vertex
 
@@ -123,7 +128,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#26;:X;:Hf7e:3,V.0 0
+;#1e;:X;:Hf87:3,V.0 0
 
 EndMap
 ]]>
