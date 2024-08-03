@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- FreeCAD DocumentObject -->
+<Document SchemaVersion="4" FileVersion="2">
+<Object name="Constraint003" Extensions="True">
+  <Extensions Count="1">
+    <Extension type="App::LinkBaseExtensionPython" name="LinkBaseExtensionPython">
+    </Extension>
+  </Extensions>
+  <Properties Count="24" TransientCount="0">
+    <Property name="Angle" type="App::PropertyFloat" group="Constraint" attr="0" ro="0" hide="0" docID="3" status="2097153">
+      <Float value="0"/>
+    </Property>
+    <Property name="AnglePitch" type="App::PropertyAngle" group="Constraint" attr="0" ro="0" hide="0" docID="4" status="2097153">
+      <Float value="0"/>
+    </Property>
+    <Property name="AngleRoll" type="App::PropertyAngle" group="Constraint" attr="0" ro="0" hide="0" docID="5" status="2097153">
+      <Float value="0"/>
+    </Property>
+    <Property name="Cascade" type="App::PropertyBool" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <Bool value="false"/>
+    </Property>
+    <Property name="ConstraintType" type="App::PropertyEnumeration" group="Base" attr="2" ro="0" hide="0" doc="" status="35651585"></Property>
+    <Property name="Disabled" type="App::PropertyBool" group="Base" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <Bool value="false"/>
+    </Property>
+    <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
+      <ExpressionEngine count="0"></ExpressionEngine>
+    </Property>
+    <Property name="Group" type="App::PropertyLinkList" group="Base" attr="0" ro="0" hide="0" doc="" status="2097419">
+      <LinkList count="2">
+        <Link value="ElementLink005"/>
+        <Link value="ElementLink006"/>
+      </LinkList>
+    </Property>
+    <Property name="GroupMode" type="App::PropertyEnumeration" group="Base" attr="0" ro="0" hide="0" doc="" status="2097435"></Property>
+    <Property name="Label" type="App::PropertyString" status="134217729">
+      <String value="PlaneCoincident002"/>
+    </Property>
+    <Property name="Label2" type="App::PropertyString" status="128">
+      <String value=""/>
+    </Property>
+    <Property name="LockAngle" type="App::PropertyBool" group="Constraint" attr="0" ro="0" hide="0" docID="2" status="2097153">
+      <Bool value="true"/>
+    </Property>
+    <Property name="Multiply" type="App::PropertyBool" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <Bool value="false"/>
+    </Property>
+    <Property name="Offset" type="App::PropertyDistance" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <Float value="-0.2"/>
+    </Property>
+    <Property name="OffsetX" type="App::PropertyDistance" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <Float value="0"/>
+    </Property>
+    <Property name="OffsetY" type="App::PropertyDistance" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097153">
+      <Float value="0"/>
+    </Property>
+    <Property name="Proxy" type="App::PropertyPythonObject" status="1">
+      <Python  module="freecad.asm3.assembly" class="AsmConstraint" value="null"/>
+    </Property>
+    <Property name="TreeRank" type="App::PropertyInteger" status="2185">
+      <Integer value="26"/>
+    </Property>
+    <Property name="Visibility" type="App::PropertyBool" status="649">
+      <Bool value="false"/>
+    </Property>
+    <Property name="VisibilityList" type="App::PropertyBoolList" group="Base" attr="0" ro="0" hide="0" doc="" status="2099083">
+      <BoolList value="00"/>
+    </Property>
+    <Property name="_ConstraintType" type="App::PropertyInteger" group="Base" attr="0" ro="0" hide="1" doc="" status="69206017">
+      <Integer value="35"/>
+    </Property>
+    <Property name="_LinkOwner" type="App::PropertyInteger" status="201326593">
+      <Integer value="0"/>
+    </Property>
+    <Property name="_LinkVersion" type="App::PropertyInteger" status="83886081">
+      <Integer value="1"/>
+    </Property>
+    <Property name="_Parent" type="App::PropertyLinkHidden" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097163">
+      <Link value="Constraints"/>
+    </Property>
+  </Properties>
+</Object>
+</Document>

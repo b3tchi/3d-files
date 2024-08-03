@@ -7,45 +7,45 @@
     </Extension>
   </Extensions>
   <Properties Count="19" TransientCount="1">
-    <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881024"/>
-    <Property name="ColoredElements" type="App::PropertyLinkSubHidden" status="218103808">
+    <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881025"/>
+    <Property name="ColoredElements" type="App::PropertyLinkSubHidden" status="218103809">
       <LinkSub value="" count="0">
       </LinkSub>
     </Property>
-    <Property name="Detach" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
+    <Property name="Detach" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Bool value="false"/>
     </Property>
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
       <ExpressionEngine count="0"></ExpressionEngine>
     </Property>
-    <Property name="FixShape" type="App::PropertyEnumeration">
+    <Property name="FixShape" type="App::PropertyEnumeration" status="1">
       <Integer value="1"/>
     </Property>
-    <Property name="InvalidShape" type="App::PropertyBool" status="67108864">
+    <Property name="InvalidShape" type="App::PropertyBool" status="67108865">
       <Bool value="false"/>
     </Property>
-    <Property name="Label" type="App::PropertyString" status="134217728">
+    <Property name="Label" type="App::PropertyString" status="134217729">
       <String value="_Element085"/>
     </Property>
     <Property name="Label2" type="App::PropertyString" status="128">
       <String value=""/>
     </Property>
-    <Property name="LinkTransform" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097418">
+    <Property name="LinkTransform" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097419">
       <Bool value="true"/>
     </Property>
-    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Link006" sub="Pad005.Face6" shadow="Pad005.;#662;:M;CUT;:Hf78:7,F.Face6"/>
+    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097413">
+      <XLink file="" stamp="" name="Link006" sub="Pad005.?Face6" shadow="Pad005.;#662;:M;CUT;:Hf78:7,F.Face6"/>
     </Property>
-    <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
+    <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097153">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
     </Property>
-    <Property name="Placement" type="App::PropertyPlacement" status="8388872">
+    <Property name="Placement" type="App::PropertyPlacement" status="8388873">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
     </Property>
-    <Property name="Proxy" type="App::PropertyPythonObject">
+    <Property name="Proxy" type="App::PropertyPythonObject" status="1">
       <Python  module="freecad.asm3.assembly" class="AsmElement" value="null"/>
     </Property>
-    <Property name="Shape" type="Part::PropertyPartShape">
+    <Property name="Shape" type="Part::PropertyPartShape" status="1">
       <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
 <![CDATA[
 
@@ -275,7 +275,7 @@ Wi
 Fa
 0  1.50000041078251e-07 1 0
 
-0101000
+0111000
 +7 0 +4 0 *
 Co
 
@@ -283,7 +283,7 @@ Co
 +3 5 *
 Co
 
-0100000
+1100000
 +2 2 *
 
 +1 1 ]]>
@@ -291,14 +291,17 @@ Co
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="19">
 <![CDATA[
-89 PostfixCount 3
+85 PostfixCount 6
 Edge
 Face
 Vertex
+;:H779,F
+;:H,E;:H:5,E;:H779,E;:H:8,E
+;:H,V;:H:5,V;:H779,V;:H:8,V
 
 MapCount 2
 
-ElementMap 1 90 3
+ElementMap 1 86 3
 
 Edge
 
@@ -306,15 +309,15 @@ ChildCount 0
 
 NameCount 10
 0
-;#606;:Hf78,E;:X;:Hf7a:3,E.0 0
-;#5f2;:Hf78,E;:X;:Hf7a:3,E.0 0
-;#618;:Hf78,E;:X;:Hf7a:3,E.0 0
-;#61c;:Hf78,E;:X;:Hf7a:3,E.0 0
-;#619;:Hf78,E;:X;:Hf7a:3,E.0 0
-;#61b;:Hf78,E;:X;:Hf7a:3,E.0 0
-;#61a;:Hf78,E;:X;:Hf7a:3,E.0 0
-;#602;:Hf78,E;:X;:Hf7a:3,E.0 0
-;#594;:G2#6a3;CUT;:H-f7a:c,E;:X;:Hf7a:3,E.0 0
+;#606;:Hf78,E;:X;:Hf7a:3,E.5 0
+;#5f2;:Hf78,E;:X;:Hf7a:3,E.5 0
+;#618;:Hf78,E;:X;:Hf7a:3,E.5 0
+;#61c;:Hf78,E;:X;:Hf7a:3,E.5 0
+;#619;:Hf78,E;:X;:Hf7a:3,E.5 0
+;#61b;:Hf78,E;:X;:Hf7a:3,E.5 0
+;#61a;:Hf78,E;:X;:Hf7a:3,E.5 0
+;#602;:Hf78,E;:X;:Hf7a:3,E.5 0
+;#594;:G2#6a3;CUT;:H-f7a:c,E;:X;:Hf7a:3,E.5 0
 
 Face
 
@@ -322,7 +325,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#1f;:X;:Hf7a:3,F.0 0
+;#1f;:X;:Hf7a:3,F.4 0
 
 Vertex
 
@@ -330,24 +333,24 @@ ChildCount 0
 
 NameCount 10
 0
-;#59e;:Hf78,V;:X;:Hf7a:3,V.0 0
-;#5b6;:Hf78,V;:X;:Hf7a:3,V.0 0
-;#5a1;:Hf78,V;:X;:Hf7a:3,V.0 0
-;#5c7;:Hf78,V;:X;:Hf7a:3,V.0 0
-;#5c9;:Hf78,V;:X;:Hf7a:3,V.0 0
-;#5c8;:Hf78,V;:X;:Hf7a:3,V.0 0
-;#5b1;:Hf78,V;:X;:Hf7a:3,V.0 0
-;#5b3;:Hf78,V;:X;:Hf7a:3,V.0 0
-;#596;:G2#6a4;CUT;:H-f7a:c,V;:X;:Hf7a:3,V.0 0
+;#59e;:Hf78,V;:X;:Hf7a:3,V.6 0
+;#5b6;:Hf78,V;:X;:Hf7a:3,V.6 0
+;#5a1;:Hf78,V;:X;:Hf7a:3,V.6 0
+;#5c7;:Hf78,V;:X;:Hf7a:3,V.6 0
+;#5c9;:Hf78,V;:X;:Hf7a:3,V.6 0
+;#5c8;:Hf78,V;:X;:Hf7a:3,V.6 0
+;#5b1;:Hf78,V;:X;:Hf7a:3,V.6 0
+;#5b3;:Hf78,V;:X;:Hf7a:3,V.6 0
+;#596;:G2#6a4;CUT;:H-f7a:c,V;:X;:Hf7a:3,V.6 0
 
 EndMap
 
-ElementMap 2 89 3
+ElementMap 2 85 3
 
 Edge
 
 ChildCount 1
-1 0 9 0 1 ;:H,E;:H:5,E 0
+1 0 9 0 1 ;:H779,E;:H:8,E 0
 
 NameCount 0
 
@@ -357,12 +360,12 @@ ChildCount 0
 
 NameCount 2
 0
-;#1f;:X;:Hf7a:3,F.0 0
+;#1f;:X;:Hf7a:3,F.4 0
 
 Vertex
 
 ChildCount 1
-1 0 9 0 1 ;:H,V;:H:5,V 0
+1 0 9 0 1 ;:H779,V;:H:8,V 0
 
 NameCount 0
 
@@ -370,22 +373,22 @@ EndMap
 ]]>
       </ElementMap2>
     </Property>
-    <Property name="TreeRank" type="App::PropertyInteger" status="2184">
+    <Property name="TreeRank" type="App::PropertyInteger" status="2185">
       <Integer value="415"/>
     </Property>
-    <Property name="ValidateShape" type="App::PropertyBool">
+    <Property name="ValidateShape" type="App::PropertyBool" status="1">
       <Bool value="false"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="648">
+    <Property name="Visibility" type="App::PropertyBool" status="649">
       <Bool value="false"/>
     </Property>
-    <Property name="_LinkOwner" type="App::PropertyInteger" status="201326592">
+    <Property name="_LinkOwner" type="App::PropertyInteger" status="201326593">
       <Integer value="0"/>
     </Property>
-    <Property name="_LinkVersion" type="App::PropertyInteger" status="83886080">
+    <Property name="_LinkVersion" type="App::PropertyInteger" status="83886081">
       <Integer value="1"/>
     </Property>
-    <Property name="_Parent" type="App::PropertyLinkHidden" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097162">
+    <Property name="_Parent" type="App::PropertyLinkHidden" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097163">
       <Link value="Elements002"/>
     </Property>
   </Properties>

@@ -34,7 +34,7 @@
       <Bool value="true"/>
     </Property>
     <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Link006" sub="Pad001.Edge10" shadow="Pad001.;#265;:M;CUT;:Hf74:7,E.Edge10"/>
+      <XLink file="" stamp="" name="Link006" sub="Pad001.Edge10" shadow="Pad001.;#4b9a;:Hf74,E.Edge10"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -50,7 +50,7 @@
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 8
+Locations 9
 1
               1               0               0               0 
               0               1               0               0 
@@ -75,11 +75,15 @@ Locations 8
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
-2  3 1 4 1 5 1 6 1 0
-2  6 -1 5 -1 4 -1 3 -1 0
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  3 1 4 1 5 1 6 1 7 1 0
+2  7 -1 6 -1 5 -1 4 -1 3 -1 0
 Curve2ds 0
 Curves 1
-1 27.850000000000001 -32.299999999999997 0 1 0 0 
+2 25 -9 0 0 0 1 1 0 -0 -0 1 0 18
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -87,30 +91,30 @@ Triangulations 0
 
 TShapes 5
 Ve
-1e-07
-27.85 -32.3 0
+3.00000134781075e-07
+20.8287615072518 -26.5100191158267 0
 0 0
 
 0101101
 *
 Ve
-1e-07
-75.6499999999561 -32.3 0
+2.50000134781074e-07
+23.15 -26.9046781596319 0
 0 0
 
 0101101
 *
 Ed
- 1e-07 1 1 0
-1  1 0 0 47.7999999999561
+ 2.50000134781074e-07 1 1 0
+1  1 0 4.47852764018586 4.60942939211264
 0
 
 0101000
-+5 8 -4 8 *
++5 9 -4 9 *
 Co
 
 0100000
-+3 7 *
+-3 8 *
 Co
 
 1100000
@@ -135,7 +139,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#2b;:X;:Hf72:3,E.0 0
+;#48;:X;:Hf72:3,E.0 0
 
 Vertex
 
@@ -143,8 +147,8 @@ ChildCount 0
 
 NameCount 3
 0
-;#27;:X;:Hf72:3,V.0 0
-;#29;:X;:Hf72:3,V.0 0
+;#45;:X;:Hf72:3,V.0 0
+;#46;:X;:Hf72:3,V.0 0
 
 EndMap
 ]]>

@@ -27,7 +27,7 @@
       </LinkSub>
     </Property>
     <Property name="Constraints" type="Sketcher::PropertyConstraintList">
-      <ConstraintList count="60">
+      <ConstraintList count="61">
         <Constrain Name="" Type="18" Value="2.1" First="0" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="4.33315372467041" LabelPosition="0.2617993950843811" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="1" Value="0" First="1" FirstPos="2" Second="2" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="1" Value="0" First="3" FirstPos="2" Second="4" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
@@ -88,6 +88,7 @@
         <Constrain Name="" Type="12" Value="0" First="6" FirstPos="0" Second="18" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="7" Value="7.35" First="12" FirstPos="1" Second="12" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="1.797344923019409" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="7" Value="7.5" First="5" FirstPos="1" Second="5" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="2.195282459259033" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="3" Value="0" First="20" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
       </ConstraintList>
     </Property>
     <Property name="Exports" type="App::PropertyLinkListHidden" status="67108864">
@@ -139,7 +140,7 @@
       <Integer value="1"/>
     </Property>
     <Property name="FullyConstrained" type="App::PropertyBool" status="218103808">
-      <Bool value="false"/>
+      <Bool value="true"/>
     </Property>
     <Property name="Geometry" type="Part::PropertyGeometryList" status="8192">
       <GeometryList count="21">
@@ -280,14 +281,14 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="23" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="31.6" StartY="-36.05" StartZ="0" EndX="46.296474" EndY="-36.05" EndZ="0"/>
+          <LineSegment StartX="31.6" StartY="-36.05" StartZ="0" EndX="46.5" EndY="-36.05" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="24" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="24" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="46.5" StartY="-32.35" StartZ="0" EndX="46.296474" EndY="-36.05" EndZ="0"/>
+          <LineSegment StartX="46.5" StartY="-32.35" StartZ="0" EndX="46.5" EndY="-36.05" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
       </GeometryList>
@@ -356,15 +357,15 @@ Curves 16
 1 -1.8500000000000001 -24.850000000000001 0 0 1 0 
 1 9.1999999999999993 -32.350000000000001 0 1 0 0 
 1 16.699999999999999 -32.350000000000001 0 0 -1 0 
-1 16.699999999999999 -36.050000000000004 0 -1 0 0 
-1 9.1999999999999993 -36.050000000000004 0 0 1 0 
+1 16.699999999999999 -36.049999999999997 0 -1 0 0 
+1 9.1999999999999993 -36.049999999999997 0 0 1 0 
 1 90.5 -32.350000000000001 0 0 -1 0 
 1 90.5 -36.050000000004999 0 -1 0 0 
 1 75.599999999999994 -36.050000000004999 0 0 1 0 
 1 75.599999999999994 -32.350000000000001 0 1 0 0 
 1 31.600000000000001 -32.350000000000001 0 1 0 0 
-1 46.5 -32.350000000000001 0 -0.054923996015124717 -0.9984905380932414 0 
-1 31.600000000000001 -36.050000000000004 0 1 0 0 
+1 46.5 -32.350000000000001 0 0 -1 0 
+1 31.600000000000001 -36.049999999999997 0 1 0 0 
 1 31.600000000000001 -32.350000000000001 0 0 -1 0 
 Polygon3D 0
 PolygonOnTriangulations 0
@@ -380,7 +381,7 @@ Ve
 0101101
 *
 Ve
-2.00000121902488e-07
+1e-07
 1.85 -17.45 0
 0 0
 
@@ -394,7 +395,7 @@ Ed
 0101000
 +37 0 -36 0 *
 Ve
-2.50000122790666e-07
+1e-07
 1.85 -24.85 0
 0 0
 
@@ -575,14 +576,14 @@ Ed
 +10 0 -9 0 *
 Ve
 1e-07
-46.296474 -36.05 0
+46.5 -36.05 0
 0 0
 
 0101101
 *
 Ed
  1e-07 1 1 0
-1  14 0 0 3.70559345215797
+1  14 0 0 3.7
 0
 
 0101000
@@ -596,7 +597,7 @@ Ve
 *
 Ed
  1e-07 1 1 0
-1  15 0 0 14.696474
+1  15 0 0 14.9
 0
 
 0101000
