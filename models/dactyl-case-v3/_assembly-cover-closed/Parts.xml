@@ -22,12 +22,14 @@
       <Integer value="1"/>
     </Property>
     <Property name="Group" type="App::PropertyLinkList" group="Base" attr="0" ro="0" hide="0" doc="" status="2097416">
-      <LinkList count="5">
+      <LinkList count="7">
         <Link value="Binder"/>
         <Link value="Binder001"/>
         <Link value="Binder002"/>
         <Link value="Binder003"/>
         <Link value="Binder004"/>
+        <Link value="Binder005"/>
+        <Link value="Binder006"/>
       </LinkList>
     </Property>
     <Property name="GroupMode" type="App::PropertyEnumeration" group="Base" attr="0" ro="0" hide="0" doc="" status="2097408">
@@ -48,7 +50,7 @@
     <Property name="Proxy" type="App::PropertyPythonObject">
       <Python  module="freecad.asm3.assembly" class="AsmPartGroup" value="null"/>
     </Property>
-    <Property name="Shape" type="Part::PropertyPartShape">
+    <Property name="Shape" type="Part::PropertyPartShape" status="1">
       <Part ElementMap="0.15.70200.4" brep="1">
 <![CDATA[
 
@@ -77,7 +79,7 @@ TShapes 0
       <Bool value="false"/>
     </Property>
     <Property name="VisibilityList" type="App::PropertyBoolList" group="Base" attr="0" ro="0" hide="0" doc="" status="2097418">
-      <BoolList value="11111"/>
+      <BoolList value="1111111"/>
     </Property>
     <Property name="_LinkOwner" type="App::PropertyInteger" status="201326592">
       <Integer value="0"/>

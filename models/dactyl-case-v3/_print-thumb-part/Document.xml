@@ -4,10 +4,9 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.408R14555 (Git shallow)" FileVersion="2" Uid="0404fbb1-fec6-4b2b-8f1f-26fc4c88a167" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="1617">
+  <StringHasher2  count="1616">
 <![CDATA[
--1.0 0:Shape cache
--1.8 #6845 ;:G#7463;FUS;:H137e:c,V;:H155c,V;:X;BND:0:0;:H1364:14,V;:H-d46:20,V;:H,V
+-2.8 #6845 ;:G#7463;FUS;:H137e:c,V;:H155c,V;:X;BND:0:0;:H1364:14,V;:H-d46:20,V;:H,V
 -1.8 #6844 ;:G#7462;FUS;:H137e:c,V;:H155c,V;:X;BND:0:0;:H1364:14,V;:H-d46:20,V;:H,V
 -1.0 0:;:H137e,V;:H155c,V;:X;BND:0:0;:H1364:14,V;:H-d46:20,V;:H,V
 -1.c.1 #680a
@@ -1654,7 +1653,7 @@ b3f.0 0:;:H,E;:Hd53:5,E;:H:f,E
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-08-04T06:10:53Z"/>
+      <String value="2024-08-04T07:05:11Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -1702,11 +1701,11 @@ b3f.0 0:;:H,E;:Hd53:5,E;:H:f,E
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
       <Dep Name="YZ_Plane"/>
-      <Dep Name="X_Axis"/>
-      <Dep Name="Y_Axis"/>
       <Dep Name="Z_Axis"/>
+      <Dep Name="X_Axis"/>
       <Dep Name="XY_Plane"/>
       <Dep Name="XZ_Plane"/>
+      <Dep Name="Y_Axis"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
@@ -1718,18 +1717,18 @@ b3f.0 0:;:H,E;:Hd53:5,E;:H:f,E
       <Dep Name="Body"/>
     </ObjectDeps>
     <ObjectDeps Name="Body001" Count="4">
-      <Dep Name="Binder001"/>
       <Dep Name="Origin001"/>
+      <Dep Name="Binder001"/>
       <Dep Name="Mirrored"/>
       <Dep Name="Boolean"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin001" Count="6">
-      <Dep Name="X_Axis001"/>
-      <Dep Name="XY_Plane001"/>
-      <Dep Name="Z_Axis001"/>
-      <Dep Name="YZ_Plane001"/>
       <Dep Name="Y_Axis001"/>
+      <Dep Name="X_Axis001"/>
+      <Dep Name="Z_Axis001"/>
+      <Dep Name="XY_Plane001"/>
       <Dep Name="XZ_Plane001"/>
+      <Dep Name="YZ_Plane001"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis001" Count="0"/>
     <ObjectDeps Name="Y_Axis001" Count="0"/>
@@ -1741,42 +1740,42 @@ b3f.0 0:;:H,E;:Hd53:5,E;:H:f,E
       <Dep Name="Body001"/>
     </ObjectDeps>
     <ObjectDeps Name="Mirrored" Count="3">
+      <Dep Name="Body001"/>
       <Dep Name="XZ_Plane001"/>
       <Dep Name="Binder001"/>
-      <Dep Name="Body001"/>
     </ObjectDeps>
     <ObjectDeps Name="Boolean" Count="3">
-      <Dep Name="Reference"/>
       <Dep Name="Body001"/>
       <Dep Name="Mirrored"/>
+      <Dep Name="Reference"/>
     </ObjectDeps>
     <ObjectDeps Name="Reference" Count="2">
-      <Dep Name="Binder001"/>
       <Dep Name="Body001"/>
+      <Dep Name="Binder001"/>
     </ObjectDeps>
     <ObjectDeps Name="Binder002" Count="1">
       <Dep Name="Body001"/>
     </ObjectDeps>
     <ObjectDeps Name="Boolean001" Count="3">
-      <Dep Name="Binder002"/>
       <Dep Name="Body"/>
+      <Dep Name="Binder002"/>
       <Dep Name="Binder005"/>
     </ObjectDeps>
     <ObjectDeps Name="Binder003" Count="1">
       <Dep Name="Body"/>
     </ObjectDeps>
     <ObjectDeps Name="Body002" Count="4">
+      <Dep Name="Binder003"/>
       <Dep Name="Origin002"/>
       <Dep Name="Mirrored001"/>
-      <Dep Name="Binder003"/>
       <Dep Name="Boolean002"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin002" Count="6">
-      <Dep Name="Y_Axis002"/>
-      <Dep Name="XZ_Plane002"/>
-      <Dep Name="Z_Axis002"/>
-      <Dep Name="XY_Plane002"/>
       <Dep Name="X_Axis002"/>
+      <Dep Name="XY_Plane002"/>
+      <Dep Name="Y_Axis002"/>
+      <Dep Name="Z_Axis002"/>
+      <Dep Name="XZ_Plane002"/>
       <Dep Name="YZ_Plane002"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis002" Count="0"/>
@@ -1787,8 +1786,8 @@ b3f.0 0:;:H,E;:Hd53:5,E;:H:f,E
     <ObjectDeps Name="YZ_Plane002" Count="0"/>
     <ObjectDeps Name="Mirrored001" Count="3">
       <Dep Name="Body002"/>
-      <Dep Name="Binder003"/>
       <Dep Name="XZ_Plane002"/>
+      <Dep Name="Binder003"/>
     </ObjectDeps>
     <ObjectDeps Name="Boolean002" Count="3">
       <Dep Name="Body002"/>
@@ -1824,10 +1823,10 @@ b3f.0 0:;:H,E;:Hd53:5,E;:H:f,E
     <Object type="App::Plane" name="YZ_Plane001" id="3397" revision="2" file="YZ_Plane001.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Binder001" id="3398" revision="7" file="Binder001.xml" />
     <Object type="PartDesign::Mirrored" name="Mirrored" id="3399" revision="13" file="Mirrored.xml" />
-    <Object type="PartDesign::Boolean" name="Boolean" id="3400" revision="7" file="Boolean.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean" id="3400" revision="8" file="Boolean.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Reference" id="3401" revision="7" file="Reference.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Binder002" id="3402" revision="14" file="Binder002.xml" />
-    <Object type="PartDesign::Boolean" name="Boolean001" id="3409" revision="26" file="Boolean001.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean001" id="3409" revision="27" file="Boolean001.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Binder003" id="3411" revision="7" file="Binder003.xml" />
     <Object type="PartDesign::Body" name="Body002" id="3412" revision="17" file="Body002.xml" />
     <Object type="App::Origin" name="Origin002" id="3413" revision="0" file="Origin002.xml" />
@@ -1838,7 +1837,7 @@ b3f.0 0:;:H,E;:Hd53:5,E;:H:f,E
     <Object type="App::Plane" name="XZ_Plane002" id="3418" revision="2" file="XZ_Plane002.xml" />
     <Object type="App::Plane" name="YZ_Plane002" id="3419" revision="2" file="YZ_Plane002.xml" />
     <Object type="PartDesign::Mirrored" name="Mirrored001" id="3420" revision="13" file="Mirrored001.xml" />
-    <Object type="PartDesign::Boolean" name="Boolean002" id="3421" revision="7" file="Boolean002.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean002" id="3421" revision="8" file="Boolean002.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Reference001" id="3422" revision="7" file="Reference001.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Binder004" id="3423" revision="7" file="Binder004.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Binder005" id="3424" revision="10" file="Binder005.xml" />
