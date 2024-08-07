@@ -33,8 +33,8 @@
     <Property name="LinkTransform" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097418">
       <Bool value="true"/>
     </Property>
-    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Link007" sub="Hole001.Face10" shadow="Hole001.;#136;:H611,F.Face10"/>
+    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097413">
+      <XLink file="" stamp="" name="Link007" sub="Hole001.Face22" shadow="Hole001.;#136;:H611,F.Face22"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -89,12 +89,12 @@ Curve2ds 4
 1 0 -4 1 0 
 Curves 3
 1 1.05 27.245699999999999 0 0 0 1 
-2 0 27.245699999999999 0 0 0 1 1 0 -0 -0 1 0 1.05
-2 0 27.245699999999999 0 0 0 1 1 0 -0 -0 1 0 1.05
+2 9.6339109694792731e-29 27.245699999999999 0 0 0 1 1 0 0 0 1 0 1.05
+2 9.6339109694792731e-29 27.245699999999999 0 0 0 1 1 0 0 0 1 0 1.05
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 1
-2 0 27.245699999999999 0 -0 -0 -1 1 0 0 -0 1 -0 1.05
+2 9.6339109694792731e-29 27.245699999999999 0 -0 -0 -1 1 0 0 0 1 0 1.05
 Triangulations 0
 
 TShapes 9
@@ -159,14 +159,14 @@ Co
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="6">
 <![CDATA[
-92 PostfixCount 3
+95 PostfixCount 3
 Edge
 Face
 Vertex
 
 MapCount 1
 
-ElementMap 1 92 3
+ElementMap 1 95 3
 
 Edge
 
@@ -174,9 +174,9 @@ ChildCount 0
 
 NameCount 4
 0
-;#74;:X;:H612:3,E.0 0
-;#72;:X;:H612:3,E.0 0
-;#75;:X;:H612:3,E.0 0
+;#bc;:X;:H612:3,E.0 0
+;#ba;:X;:H612:3,E.0 0
+;#bd;:X;:H612:3,E.0 0
 
 Face
 
@@ -184,7 +184,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#77;:X;:H612:3,F.0 0
+;#bf;:X;:H612:3,F.0 0
 
 Vertex
 
@@ -192,8 +192,8 @@ ChildCount 0
 
 NameCount 3
 0
-;#71;:X;:H612:3,V.0 0
-;#73;:X;:H612:3,V.0 0
+;#b9;:X;:H612:3,V.0 0
+;#bb;:X;:H612:3,V.0 0
 
 EndMap
 ]]>

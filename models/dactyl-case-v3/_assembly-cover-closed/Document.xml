@@ -46,7 +46,7 @@ You need to enable LockAngle for this to take effect.
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-08-04T07:58:41Z"/>
+      <String value="2024-08-04T18:47:52Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -92,44 +92,44 @@ You need to enable LockAngle for this to take effect.
       <Dep Name="Assembly"/>
     </ObjectDeps>
     <ObjectDeps Name="Assembly" Count="3">
-      <Dep Name="Parts"/>
-      <Dep Name="Elements"/>
       <Dep Name="Constraints"/>
+      <Dep Name="Elements"/>
+      <Dep Name="Parts"/>
     </ObjectDeps>
     <ObjectDeps Name="Constraints" Count="7">
-      <Dep Name="Constraint006"/>
-      <Dep Name="Constraint004"/>
-      <Dep Name="Constraint005"/>
       <Dep Name="Constraint"/>
       <Dep Name="Constraint001"/>
-      <Dep Name="Constraint002"/>
       <Dep Name="Constraint003"/>
+      <Dep Name="Constraint004"/>
+      <Dep Name="Constraint002"/>
+      <Dep Name="Constraint005"/>
+      <Dep Name="Constraint006"/>
     </ObjectDeps>
     <ObjectDeps Name="Elements" Count="15">
-      <Dep Name="_Element002"/>
       <Dep Name="_Element"/>
       <Dep Name="_Element001"/>
-      <Dep Name="Element003"/>
-      <Dep Name="Element002"/>
-      <Dep Name="_Element007"/>
-      <Dep Name="Element"/>
       <Dep Name="Element001"/>
-      <Dep Name="_Element009"/>
-      <Dep Name="_Element008"/>
-      <Dep Name="_Element010"/>
-      <Dep Name="_Element005"/>
-      <Dep Name="_Element004"/>
+      <Dep Name="Element"/>
+      <Dep Name="Element002"/>
+      <Dep Name="Element003"/>
+      <Dep Name="_Element002"/>
       <Dep Name="_Element003"/>
+      <Dep Name="_Element004"/>
+      <Dep Name="_Element005"/>
       <Dep Name="_Element006"/>
+      <Dep Name="_Element007"/>
+      <Dep Name="_Element008"/>
+      <Dep Name="_Element009"/>
+      <Dep Name="_Element010"/>
     </ObjectDeps>
     <ObjectDeps Name="Parts" Count="7">
-      <Dep Name="Binder005"/>
-      <Dep Name="Binder004"/>
-      <Dep Name="Binder006"/>
-      <Dep Name="Binder001"/>
       <Dep Name="Binder"/>
+      <Dep Name="Binder001"/>
       <Dep Name="Binder002"/>
       <Dep Name="Binder003"/>
+      <Dep Name="Binder004"/>
+      <Dep Name="Binder005"/>
+      <Dep Name="Binder006"/>
     </ObjectDeps>
     <ObjectDeps Name="Link" Count="0"/>
     <ObjectDeps Name="Binder001" Count="2">
@@ -137,37 +137,37 @@ You need to enable LockAngle for this to take effect.
       <Dep Name="Link"/>
     </ObjectDeps>
     <ObjectDeps Name="Constraint" Count="2">
-      <Dep Name="Constraints"/>
       <Dep Name="ElementLink"/>
+      <Dep Name="Constraints"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink" Count="2">
-      <Dep Name="_Element"/>
       <Dep Name="Constraint"/>
+      <Dep Name="_Element"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element" Count="2">
-      <Dep Name="Elements"/>
       <Dep Name="Binder"/>
+      <Dep Name="Elements"/>
     </ObjectDeps>
     <ObjectDeps Name="Constraint001" Count="3">
-      <Dep Name="Constraints"/>
       <Dep Name="ElementLink001"/>
       <Dep Name="ElementLink002"/>
+      <Dep Name="Constraints"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink001" Count="2">
-      <Dep Name="_Element001"/>
       <Dep Name="Constraint001"/>
+      <Dep Name="_Element001"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element001" Count="2">
-      <Dep Name="Elements"/>
       <Dep Name="Binder"/>
+      <Dep Name="Elements"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink002" Count="2">
-      <Dep Name="_Element002"/>
       <Dep Name="Constraint001"/>
+      <Dep Name="_Element002"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element002" Count="2">
-      <Dep Name="Elements"/>
       <Dep Name="Binder001"/>
+      <Dep Name="Elements"/>
     </ObjectDeps>
     <ObjectDeps Name="Link001" Count="0"/>
     <ObjectDeps Name="Binder002" Count="2">
@@ -175,17 +175,17 @@ You need to enable LockAngle for this to take effect.
       <Dep Name="Link001"/>
     </ObjectDeps>
     <ObjectDeps Name="Constraint002" Count="3">
+      <Dep Name="ElementLink003"/>
       <Dep Name="Constraints"/>
       <Dep Name="ElementLink004"/>
-      <Dep Name="ElementLink003"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink003" Count="2">
       <Dep Name="Constraint002"/>
       <Dep Name="_Element003"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element003" Count="2">
-      <Dep Name="Elements"/>
       <Dep Name="Binder001"/>
+      <Dep Name="Elements"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink004" Count="2">
       <Dep Name="Constraint002"/>
@@ -201,8 +201,8 @@ You need to enable LockAngle for this to take effect.
       <Dep Name="Link002"/>
     </ObjectDeps>
     <ObjectDeps Name="Constraint003" Count="3">
-      <Dep Name="Constraints"/>
       <Dep Name="ElementLink006"/>
+      <Dep Name="Constraints"/>
       <Dep Name="ElementLink005"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink005" Count="2">
@@ -227,51 +227,51 @@ You need to enable LockAngle for this to take effect.
       <Dep Name="Link003"/>
     </ObjectDeps>
     <ObjectDeps Name="Constraint004" Count="3">
-      <Dep Name="ElementLink007"/>
       <Dep Name="ElementLink008"/>
       <Dep Name="Constraints"/>
+      <Dep Name="ElementLink007"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink007" Count="2">
       <Dep Name="Constraint004"/>
       <Dep Name="_Element007"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element007" Count="2">
-      <Dep Name="Binder004"/>
       <Dep Name="Elements"/>
+      <Dep Name="Binder004"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink008" Count="2">
       <Dep Name="Constraint004"/>
       <Dep Name="_Element008"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element008" Count="2">
-      <Dep Name="Elements"/>
       <Dep Name="Binder"/>
+      <Dep Name="Elements"/>
     </ObjectDeps>
     <ObjectDeps Name="Link004" Count="0"/>
     <ObjectDeps Name="Binder005" Count="2">
-      <Dep Name="Link004"/>
       <Dep Name="Assembly"/>
+      <Dep Name="Link004"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element009" Count="2">
-      <Dep Name="Binder005"/>
       <Dep Name="Elements"/>
+      <Dep Name="Binder005"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element010" Count="2">
-      <Dep Name="Elements"/>
       <Dep Name="Binder"/>
+      <Dep Name="Elements"/>
     </ObjectDeps>
     <ObjectDeps Name="Element" Count="2">
-      <Dep Name="Binder005"/>
       <Dep Name="Elements"/>
+      <Dep Name="Binder005"/>
     </ObjectDeps>
     <ObjectDeps Name="Element001" Count="2">
-      <Dep Name="Elements"/>
       <Dep Name="Binder"/>
+      <Dep Name="Elements"/>
     </ObjectDeps>
     <ObjectDeps Name="Constraint005" Count="3">
-      <Dep Name="ElementLink010"/>
       <Dep Name="ElementLink009"/>
       <Dep Name="Constraints"/>
+      <Dep Name="ElementLink010"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink009" Count="2">
       <Dep Name="Constraint005"/>
@@ -283,21 +283,21 @@ You need to enable LockAngle for this to take effect.
     </ObjectDeps>
     <ObjectDeps Name="Link005" Count="0"/>
     <ObjectDeps Name="Binder006" Count="2">
-      <Dep Name="Link005"/>
       <Dep Name="Assembly"/>
+      <Dep Name="Link005"/>
     </ObjectDeps>
     <ObjectDeps Name="Element002" Count="2">
-      <Dep Name="Binder006"/>
       <Dep Name="Elements"/>
+      <Dep Name="Binder006"/>
     </ObjectDeps>
     <ObjectDeps Name="Element003" Count="2">
-      <Dep Name="Binder005"/>
       <Dep Name="Elements"/>
+      <Dep Name="Binder005"/>
     </ObjectDeps>
     <ObjectDeps Name="Constraint006" Count="3">
+      <Dep Name="Constraints"/>
       <Dep Name="ElementLink011"/>
       <Dep Name="ElementLink012"/>
-      <Dep Name="Constraints"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink011" Count="2">
       <Dep Name="Constraint006"/>
@@ -307,7 +307,7 @@ You need to enable LockAngle for this to take effect.
       <Dep Name="Constraint006"/>
       <Dep Name="Element002"/>
     </ObjectDeps>
-    <Object type="PartDesign::SubShapeBinder" name="Binder" id="260" revision="44" file="Binder.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder" id="260" revision="44" Touched="1" file="Binder.xml" />
     <Object type="Part::FeaturePython" name="Assembly" id="261" revision="362" ViewType="Gui::ViewProviderLinkPython" file="Assembly.xml" />
     <Object type="App::FeaturePython" name="Constraints" id="262" revision="154" ViewType="Gui::ViewProviderLinkPython" file="Constraints.xml" />
     <Object type="App::FeaturePython" name="Elements" id="263" revision="144" ViewType="Gui::ViewProviderLinkPython" file="Elements.xml" />
@@ -352,7 +352,7 @@ You need to enable LockAngle for this to take effect.
     <Object type="App::FeaturePython" name="Constraint005" id="317" revision="19" ViewType="Gui::ViewProviderLinkPython" file="Constraint005.xml" />
     <Object type="App::FeaturePython" name="ElementLink009" id="318" revision="4" ViewType="Gui::ViewProviderLinkPython" file="ElementLink009.xml" />
     <Object type="App::FeaturePython" name="ElementLink010" id="319" revision="22" ViewType="Gui::ViewProviderLinkPython" file="ElementLink010.xml" />
-    <Object type="App::Link" name="Link005" id="320" revision="14" file="Link005.xml" />
+    <Object type="App::Link" name="Link005" id="320" revision="14" Touched="1" file="Link005.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Binder006" id="321" revision="47" file="Binder006.xml" />
     <Object type="Part::FeaturePython" name="Element002" id="322" revision="42" file="Element002.xml" />
     <Object type="Part::FeaturePython" name="Element003" id="323" revision="7" file="Element003.xml" />

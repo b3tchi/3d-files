@@ -8,30 +8,32 @@
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
 <Expand  count="1">
   <Expand name="Assembly" count="3">
-    <Expand name="Constraints"/>
+    <Expand name="Constraints" count="1">
+      <Expand name="Constraint005"/>
+    </Expand>
     <Expand name="Elements"/>
     <Expand name="Parts"/>
   </Expand>
 </Expand>
-  <Camera extra="0" id="32" binding="0" view3d="1">
+  <Camera extra="0" id="10" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position -85.796471 23.175011 47.046875
-  orientation -0.37711492 0.44546691 0.81199974  4.3460417
-  nearDistance 62.266193
-  farDistance 202.69771
+  position 112.42375 -109.83354 -0.1717186
+  orientation 0.91872811 0.24016209 0.3134664  1.3901682
+  nearDistance 69.954338
+  farDistance 227.2144
   aspectRatio 1
   focalDistance 100
-  height 205.44846
+  height 205.44867
 
 }
-## overrideMode: Flat Lines]]>
+## overrideMode: Wireframe]]>
   </Camera>
-  <View3D id="32"><![CDATA[
+  <View3D id="10"><![CDATA[
   <Properties Count="3" TransientCount="0">
     <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
-      <Integer value="6"/>
+      <Integer value="2"/>
     </Property>
     <Property name="ShowNaviCube" type="App::PropertyBool" status="1">
       <Bool value="true"/>

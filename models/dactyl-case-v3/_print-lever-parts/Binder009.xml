@@ -11,7 +11,7 @@
       <Integer value="0"/>
     </Property>
     <Property name="Cache_Link009" type="App::PropertyMatrix" group="Cache" attr="0" ro="0" hide="1" doc="" status="69206016">
-      <PropertyMatrix a11="1" a12="0" a13="0" a14="0" a21="0" a22="1" a23="0" a24="0" a31="0" a32="0" a33="1" a34="0" a41="0" a42="0" a43="0" a44="1"/>
+      <PropertyMatrix a11="1" a12="0" a13="0" a14="0" a21="-2.465190328815662e-32" a22="1" a23="0" a24="3.944304526105059e-31" a31="0" a32="0" a33="1" a34="0" a41="0" a42="0" a43="0" a44="1"/>
     </Property>
     <Property name="ClaimChildren" type="App::PropertyBool" status="134217728">
       <Bool value="false"/>
@@ -21,7 +21,7 @@
       </LinkSub>
     </Property>
     <Property name="Context" type="App::PropertyXLink" status="67108864">
-      <XLink file="" stamp="" name=""/>
+      <XLink file="" stamp="" name="Body" sub="Boolean.Binder009."/>
     </Property>
     <Property name="EdgeTolerance" type="App::PropertyPrecision">
       <Float value="1e-06"/>
@@ -105,8 +105,8 @@ Locations 15
               0               1               0               0 
               0               0               1               0 
 1
-              1               0               0               0 
-              0               1               0               0 
+              1 2.46519032881566e-32               0               0 
+-2.46519032881566e-32               1               0 3.94430452610506e-31 
               0               0               1               0 
 2  2 1 3 1 4 1 0
 1
@@ -819,7 +819,7 @@ Co
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="80">
 <![CDATA[
-57 PostfixCount 13
+32 PostfixCount 13
 Edge
 Face
 Vertex
@@ -836,7 +836,7 @@ Vertex
 
 MapCount 2
 
-ElementMap 1 58 3
+ElementMap 1 33 3
 
 Edge
 
@@ -844,45 +844,45 @@ ChildCount 0
 
 NameCount 40
 0
-;#207.6 0
-;#208.6 0
+$#207.6 0
+$#208.6 0
 ;g6.a 0
-;#221.8 0
-;#209.6 0
+$#221.8 0
+$#209.6 0
 ;g12.a 0
-;#222.8 0
-;#20a.6 0
+$#222.8 0
+$#20a.6 0
 ;g13.a 0
-;#223.8 0
-;#20b.6 0
+$#223.8 0
+$#20b.6 0
 ;g14.a 0
-;#224.8 0
-;#20c.6 0
+$#224.8 0
+$#20c.6 0
 ;g3.a 0
-;#225.8 0
-;#20d.6 0
+$#225.8 0
+$#20d.6 0
 ;g5.a 0
-;#226.8 0
-;#20e.6 0
+$#226.8 0
+$#20e.6 0
 ;g4.a 0
-;#227.8 0
-;#20f.6 0
+$#227.8 0
+$#20f.6 0
 ;g17.a 0
-;#228.8 0
-;#210.6 0
+$#228.8 0
+$#210.6 0
 ;g16.a 0
-;#229.8 0
-;#211.6 0
+$#229.8 0
+$#211.6 0
 ;g15.a 0
-;#22a.8 0
-;#212.6 0
+$#22a.8 0
+$#212.6 0
 ;g9.a 0
-;#22b.8 0
+$#22b.8 0
 ;g2.a 0
-;#22c.8 0
-;#213.6 0
+$#22c.8 0
+$#213.6 0
 ;g18.c 0
-;#22d.8 0
+$#22d.8 0
 
 Face
 
@@ -890,21 +890,21 @@ ChildCount 0
 
 NameCount 16
 0
-;#214.4 0
-;#215.4 0
-;#216.4 0
-;#217.4 0
-;#218.4 0
-;#219.4 0
-;#21a.4 0
-;#21b.4 0
-;#21c.4 0
-;#21d.4 0
-;#21e.4 0
-;#205.4 0
-;#21f.4 0
-;#205.5 0
-;#220.7 0
+$#214.4 0
+$#215.4 0
+$#216.4 0
+$#217.4 0
+$#218.4 0
+$#219.4 0
+$#21a.4 0
+$#21b.4 0
+$#21c.4 0
+$#21d.4 0
+$#21e.4 0
+$#205.4 0
+$#21f.4 0
+$#205.5 0
+$#220.7 0
 
 Vertex
 
@@ -913,35 +913,35 @@ ChildCount 0
 NameCount 27
 0
 ;g6v1.b ;g2v1.b 0
-;#22e.9 0
+$#22e.9 0
 ;g12v1.b ;g6v2.b 0
-;#22f.9 0
+$#22f.9 0
 ;g13v1.b ;g12v2.b 0
-;#230.9 0
+$#230.9 0
 ;g14v1.b ;g13v2.b 0
-;#231.9 0
+$#231.9 0
 ;g3v1.b ;g14v2.b 0
-;#232.9 0
+$#232.9 0
 ;g5v1.b ;g3v2.b 0
-;#233.9 0
+$#233.9 0
 ;g5v2.b ;g4v2.b 0
-;#234.9 0
+$#234.9 0
 ;g4v1.b ;g17v1.b 0
-;#235.9 0
+$#235.9 0
 ;g17v2.b ;g16v2.b 0
-;#236.9 0
+$#236.9 0
 ;g16v1.b ;g15v2.b 0
-;#237.9 0
+$#237.9 0
 ;g15v1.b ;g9v2.b 0
-;#238.9 0
+$#238.9 0
 ;g9v1.b ;g2v2.b 0
-;#239.9 0
+$#239.9 0
 ;g18v1.d 0
-;#23a.9 0
+$#23a.9 0
 
 EndMap
 
-ElementMap 2 57 3
+ElementMap 2 32 3
 
 Edge
 
@@ -979,14 +979,14 @@ EndMap
     <Property name="TightBound" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
-    <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="76"/>
+    <Property name="TreeRank" type="App::PropertyInteger" status="2185">
+      <Integer value="32"/>
     </Property>
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="648">
-      <Bool value="true"/>
+    <Property name="Visibility" type="App::PropertyBool" status="649">
+      <Bool value="false"/>
     </Property>
     <Property name="_Version" type="App::PropertyInteger" status="83886080">
       <Integer value="8"/>
