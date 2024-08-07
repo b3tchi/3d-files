@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- FreeCAD DocumentObject -->
+<Document SchemaVersion="4" FileVersion="2">
+<Object name="Spreadsheet002">
+  <Properties Count="12" TransientCount="0">
+    <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
+      <ExpressionEngine count="0"></ExpressionEngine>
+    </Property>
+    <Property name="Label" type="App::PropertyString" status="134217728">
+      <String value="switch002"/>
+    </Property>
+    <Property name="Label2" type="App::PropertyString" status="128">
+      <String value=""/>
+    </Property>
+    <Property name="PythonMode" type="App::PropertyBool">
+      <Bool value="false"/>
+    </Property>
+    <Property name="ShowCells" type="App::PropertyEnumeration">
+      <Integer value="0"/>
+    </Property>
+    <Property name="TreeRank" type="App::PropertyInteger" status="2185">
+      <Integer value="22"/>
+    </Property>
+    <Property name="Visibility" type="App::PropertyBool" status="648">
+      <Bool value="true"/>
+    </Property>
+    <Property name="cells" type="Spreadsheet::PropertySheet" status="67108864">
+      <Cells Count="51">
+        <Cell address="A1" content="h"/>
+        <Cell displayUnit="mm" alias="height" address="B1" content="14"/>
+        <Cell address="A2" content="w"/>
+        <Cell displayUnit="mm" alias="width" address="B2" content="=height"/>
+        <Cell address="A3" content="column"/>
+        <Cell displayUnit="mm" alias="column_space" address="B3" content="19.25"/>
+        <Cell address="A4" content="row"/>
+        <Cell displayUnit="mm" alias="row_space" address="B4" content="18.75"/>
+        <Cell address="A7" content="offset_1"/>
+        <Cell displayUnit="mm" alias="offset_1" address="B7" content="12.59"/>
+        <Cell address="A8" content="offset_2"/>
+        <Cell displayUnit="mm" alias="offset_2" address="B8" content="18.71"/>
+        <Cell address="A9" content="offset_3"/>
+        <Cell displayUnit="mm" alias="offset_3" address="B9" content="12.72"/>
+        <Cell address="A10" content="offset_4"/>
+        <Cell displayUnit="mm" alias="offset_4" address="B10" content="10.65"/>
+        <Cell address="A11" content="offset_5"/>
+        <Cell address="A13" content="thumb_1_d"/>
+        <Cell displayUnit="mm" alias="thumb_1_d" address="B13" content="80.58"/>
+        <Cell address="A14" content="thumb_1_a1"/>
+        <Cell displayUnit="°" alias="thumb_1_a1" address="B14" content="54"/>
+        <Cell address="A15" content="thumb_1_a2"/>
+        <Cell displayUnit="°" alias="thumb_1_a2" address="B15" content="60"/>
+        <Cell address="A17" content="thumb_2_d"/>
+        <Cell displayUnit="mm" alias="thumb_2_d" address="B17" content="22.65"/>
+        <Cell address="A18" content="thumb_2_a1"/>
+        <Cell displayUnit="°" alias="thumb_2_a1" address="B18" content="156"/>
+        <Cell address="A19" content="thumb_2_a2"/>
+        <Cell displayUnit="°" alias="thumb_2_a2" address="B19" content="95"/>
+        <Cell address="A21" content="border"/>
+        <Cell displayUnit="mm" alias="border" address="B21" content="3.8"/>
+        <Cell address="A23" content="cap_d"/>
+        <Cell displayUnit="mm" alias="cap_d" address="B23" content="18.5"/>
+        <Cell address="A25" content="bottom_offset"/>
+        <Cell displayUnit="mm" alias="bottom_offset" address="B25" content="3.7"/>
+        <Cell address="A26" content="bottom_height"/>
+        <Cell displayUnit="mm" alias="bottom_h" address="B26" content="1.2"/>
+        <Cell address="A27" content="bottom_B_width"/>
+        <Cell alias="bottom_B_width" address="B27" content="=14.47 mm"/>
+        <Cell address="A28" content="bottom_B_height"/>
+        <Cell alias="bottom_B_height" address="B28" content="=6.4 mm"/>
+        <Cell address="A30" content="cover_switch_min_width"/>
+        <Cell alias="cover_switch_min_width" address="B30" content="=1 mm"/>
+        <Cell address="A31" content="cover_width"/>
+        <Cell alias="cover_width" address="B31" content="=1.45 mm"/>
+        <Cell address="A32" content="cover_height"/>
+        <Cell alias="cover_height" address="B32" content="=0.85 mm"/>
+        <Cell address="A33" content="cover_border_width"/>
+        <Cell alias="cover_border_width" address="B33" content="=1.35 mm"/>
+        <Cell address="A34" content="cover_inner_height"/>
+        <Cell alias="cover_inner_height" address="B34" content="=2.3 mm"/>
+      </Cells>
+    </Property>
+    <Property name="columnWidths" type="Spreadsheet::PropertyColumnWidths" status="218103808">
+      <ColumnInfo Count="1">
+        <Column name="A" width="230" />
+      </ColumnInfo>
+    </Property>
+    <Property name="hiddenColumns" type="App::PropertyIntegerSet" status="201326592">
+      <IntegerSet count="0">
+      </IntegerSet>
+    </Property>
+    <Property name="hiddenRows" type="App::PropertyIntegerSet" status="201326592">
+      <IntegerSet count="0">
+      </IntegerSet>
+    </Property>
+    <Property name="rowHeights" type="Spreadsheet::PropertyRowHeights" status="218103808">
+      <RowInfo Count="0">
+      </RowInfo>
+    </Property>
+  </Properties>
+</Object>
+</Document>

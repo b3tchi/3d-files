@@ -1,0 +1,2398 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- FreeCAD DocumentObject -->
+<Document SchemaVersion="4" FileVersion="2">
+<Object name="Sketch001" Extensions="True">
+  <Extensions Count="1">
+    <Extension type="Part::AttachExtension" name="AttachExtension">
+    </Extension>
+  </Extensions>
+  <Properties Count="30" TransientCount="1">
+    <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881024"/>
+    <Property name="ArcFitTolerance" type="App::PropertyPrecision">
+      <Float value="1e-06"/>
+    </Property>
+    <Property name="AttacherType" type="App::PropertyString" status="8">
+      <String value="Attacher::AttachEnginePlane"/>
+    </Property>
+    <Property name="AttachmentOffset" type="App::PropertyPlacement">
+      <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
+    </Property>
+    <Property name="AttachmentSupport" type="App::PropertyLinkSubList">
+      <LinkSubList count="1">
+        <Link obj="XZ_Plane001" sub=""/>
+      </LinkSubList>
+    </Property>
+    <Property name="ColoredElements" type="App::PropertyLinkSubHidden" status="218103808">
+      <LinkSub value="" count="0">
+      </LinkSub>
+    </Property>
+    <Property name="Constraints" type="Sketcher::PropertyConstraintList">
+      <ConstraintList count="15">
+        <Constrain Name="" Type="1" Value="0" First="1" FirstPos="2" Second="0" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="2" Value="0" First="0" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="1" Value="0" First="2" FirstPos="3" Second="-1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="1" Value="0" First="3" FirstPos="3" Second="2" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="1" Value="0" First="3" FirstPos="1" Second="0" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="1" Value="0" First="3" FirstPos="2" Second="1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="3" Value="0" First="1" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="1" Value="0" First="4" FirstPos="1" Second="2" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="1" Value="0" First="4" FirstPos="2" Second="1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="1" Value="0" First="5" FirstPos="1" Second="2" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="1" Value="0" First="5" FirstPos="2" Second="0" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="2" Value="0" First="4" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="8" Value="1.85" First="5" FirstPos="1" Second="5" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="0.2146590501070023" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="3" Value="0" First="5" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="18" Value="2.2" First="2" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="0.2146590501070023" LabelPosition="0.2617993950843811" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+      </ConstraintList>
+    </Property>
+    <Property name="Exports" type="App::PropertyLinkListHidden" status="67108864">
+      <LinkList count="0">
+      </LinkList>
+    </Property>
+    <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
+      <ExpressionEngine count="0"></ExpressionEngine>
+    </Property>
+    <Property name="ExternalBSplineMaxDegree" type="App::PropertyInteger">
+      <Integer value="5"/>
+    </Property>
+    <Property name="ExternalBSplineTolerance" type="App::PropertyPrecision">
+      <Float value="0.0001"/>
+    </Property>
+    <Property name="ExternalGeo" type="Part::PropertyGeometryList" status="67108864">
+      <GeometryList count="2">
+        <Geometry type="Part::GeomLineSegment" id="-1" migrated="1">
+          <GeoExtensions count="2">
+            <GeoExtension type="Sketcher::SketchGeometryExtension" id="-1" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
+            <GeoExtension type="Sketcher::ExternalGeometryExtension" Ref="" Flags="0"/>
+          </GeoExtensions>
+          <LineSegment StartX="0" StartY="0" StartZ="0" EndX="1" EndY="0" EndZ="0"/>
+          <Construction value="1"/>
+        </Geometry>
+        <Geometry type="Part::GeomLineSegment" id="-2" migrated="1">
+          <GeoExtensions count="2">
+            <GeoExtension type="Sketcher::SketchGeometryExtension" id="-2" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
+            <GeoExtension type="Sketcher::ExternalGeometryExtension" Ref="" Flags="0"/>
+          </GeoExtensions>
+          <LineSegment StartX="0" StartY="0" StartZ="0" EndX="0" EndY="1" EndZ="0"/>
+          <Construction value="1"/>
+        </Geometry>
+      </GeometryList>
+    </Property>
+    <Property name="ExternalGeometry" type="App::PropertyLinkSubList" status="16777216">
+      <LinkSubList count="0">
+      </LinkSubList>
+    </Property>
+    <Property name="FixShape" type="App::PropertyEnumeration">
+      <Integer value="1"/>
+    </Property>
+    <Property name="FullyConstrained" type="App::PropertyBool" status="218103808">
+      <Bool value="true"/>
+    </Property>
+    <Property name="Geometry" type="Part::PropertyGeometryList" status="8192">
+      <GeometryList count="6">
+        <Geometry type="Part::GeomLineSegment" id="5" migrated="1">
+          <GeoExtensions count="1">
+            <GeoExtension type="Sketcher::SketchGeometryExtension" id="5" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
+          </GeoExtensions>
+          <LineSegment StartX="0" StartY="1.85" StartZ="0" EndX="1.85" EndY="1.85" EndZ="0"/>
+          <Construction value="0"/>
+        </Geometry>
+        <Geometry type="Part::GeomLineSegment" id="6" migrated="1">
+          <GeoExtensions count="1">
+            <GeoExtension type="Sketcher::SketchGeometryExtension" id="6" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
+          </GeoExtensions>
+          <LineSegment StartX="1.85" StartY="0" StartZ="0" EndX="1.85" EndY="1.85" EndZ="0"/>
+          <Construction value="0"/>
+        </Geometry>
+        <Geometry type="Part::GeomCircle" id="17" migrated="1">
+          <GeoExtensions count="1">
+            <GeoExtension type="Sketcher::SketchGeometryExtension" id="17" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
+          </GeoExtensions>
+          <Circle CenterX="0" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1.1"/>
+          <Construction value="0"/>
+        </Geometry>
+        <Geometry type="Part::GeomArcOfCircle" id="18" migrated="1">
+          <GeoExtensions count="1">
+            <GeoExtension type="Sketcher::SketchGeometryExtension" id="18" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
+          </GeoExtensions>
+          <ArcOfCircle CenterX="0" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1.85" StartAngle="1.570796326794897" EndAngle="6.283185307179586"/>
+          <Construction value="0"/>
+        </Geometry>
+        <Geometry type="Part::GeomLineSegment" id="19" migrated="1">
+          <GeoExtensions count="1">
+            <GeoExtension type="Sketcher::SketchGeometryExtension" id="19" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
+          </GeoExtensions>
+          <LineSegment StartX="0" StartY="0" StartZ="0" EndX="1.85" EndY="0" EndZ="0"/>
+          <Construction value="1"/>
+        </Geometry>
+        <Geometry type="Part::GeomLineSegment" id="11" migrated="1">
+          <GeoExtensions count="1">
+            <GeoExtension type="Sketcher::SketchGeometryExtension" id="11" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
+          </GeoExtensions>
+          <LineSegment StartX="0" StartY="0" StartZ="0" EndX="0" EndY="1.85" EndZ="0"/>
+          <Construction value="1"/>
+        </Geometry>
+      </GeometryList>
+    </Property>
+    <Property name="InternalShape" type="Part::PropertyPartShape">
+      <Part ElementMap="0.15.70200.4" brep="1">
+<![CDATA[
+
+CASCADE Topology V1, (c) Matra-Datavision
+Locations 0
+Curve2ds 0
+Curves 0
+Polygon3D 0
+PolygonOnTriangulations 0
+Surfaces 0
+Triangulations 0
+
+TShapes 0
+
+*]]>
+      </Part>
+      <ElementMap/>
+    </Property>
+    <Property name="InternalTolerance" type="App::PropertyPrecision">
+      <Float value="1e-06"/>
+    </Property>
+    <Property name="InvalidShape" type="App::PropertyBool" status="67108864">
+      <Bool value="false"/>
+    </Property>
+    <Property name="Label" type="App::PropertyString" status="134217728">
+      <String value="Sketch001"/>
+    </Property>
+    <Property name="Label2" type="App::PropertyString" status="128">
+      <String value=""/>
+    </Property>
+    <Property name="MakeInternals" type="App::PropertyBool">
+      <Bool value="false"/>
+    </Property>
+    <Property name="MapMode" type="App::PropertyEnumeration">
+      <Integer value="5"/>
+    </Property>
+    <Property name="MapPathParameter" type="App::PropertyFloat" status="8">
+      <Float value="0"/>
+    </Property>
+    <Property name="MapReversed" type="App::PropertyBool">
+      <Bool value="false"/>
+    </Property>
+    <Property name="Placement" type="App::PropertyPlacement" status="8388612">
+      <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0.7071067811865477" Q1="0" Q2="0" Q3="0.7071067811865474" A="1.570796326794897" Ox="1" Oy="0" Oz="0"/>
+    </Property>
+    <Property name="Shape" type="Part::PropertyPartShape">
+      <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
+<![CDATA[
+
+CASCADE Topology V1, (c) Matra-Datavision
+Locations 427
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  2 -1 3 -1 0
+1
+              1               0               0              -0 
+              0               1               0              10 
+              0               0               1           2e-15 
+2  5 -1 2 -1 3 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  7 -1 8 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.9 
+              0               0               1           2e-15 
+2  10 -1 7 -1 8 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  12 -1 13 -1 0
+1
+              1               0               0              -0 
+              0               1               0 10.1181211580212 
+              0               0               1           2e-15 
+2  15 -1 12 -1 13 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  17 -1 18 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.9 
+              0               0               1           2e-15 
+2  20 -1 17 -1 18 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  22 -1 23 -1 0
+1
+              1               0               0              -0 
+              0               1               0 10.1181211580212 
+              0               0               1           2e-15 
+2  25 -1 22 -1 23 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  27 -1 28 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.9 
+              0               0               1           2e-15 
+2  30 -1 27 -1 28 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  32 -1 33 -1 0
+1
+              1               0               0              -0 
+              0               1               0            9.85 
+              0               0               1           2e-15 
+2  35 -1 32 -1 33 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  37 -1 38 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.8 
+              0               0               1           2e-15 
+2  40 -1 37 -1 38 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  42 -1 43 -1 0
+1
+              1               0               0              -0 
+              0               1               0 2.20740740740741 
+              0               0               1               0 
+2  45 -1 42 -1 43 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  47 -1 48 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.8 
+              0               0               1           2e-15 
+2  50 -1 47 -1 48 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  52 -1 53 -1 0
+1
+              1               0               0              -0 
+              0               1               0 2.20740740740741 
+              0               0               1               0 
+2  55 -1 52 -1 53 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  57 -1 58 -1 0
+1
+              1               0               0              -0 
+              0               1               0 7.02222222222222 
+              0               0               1           2e-15 
+2  60 -1 57 -1 58 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  62 -1 63 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.8 
+              0               0               1           2e-15 
+2  65 -1 62 -1 63 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  67 -1 68 -1 0
+1
+              1               0               0              -0 
+              0               1               0 7.02222222222222 
+              0               0               1           2e-15 
+2  70 -1 67 -1 68 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  72 -1 73 -1 0
+1
+              1               0               0              -0 
+              0               1               0 8.46666666666667 
+              0               0               1           2e-15 
+2  75 -1 72 -1 73 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  77 -1 78 -1 0
+1
+              1               0               0              -0 
+              0               1               0            64.8 
+              0               0               1         1.4e-14 
+2  80 -1 77 -1 78 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  82 -1 83 -1 0
+1
+              1               0               0              -0 
+              0               1               0            10.2 
+              0               0               1           2e-15 
+2  85 -1 82 -1 83 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  87 -1 88 -1 0
+1
+              1               0               0              -0 
+              0               1               0 8.46666666666667 
+              0               0               1           2e-15 
+2  90 -1 87 -1 88 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  92 -1 93 -1 0
+1
+              1               0               0              -0 
+              0               1               0            12.8 
+              0               0               1           3e-15 
+2  95 -1 92 -1 93 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  97 -1 98 -1 0
+1
+              1               0               0              -0 
+              0               1               0            12.9 
+              0               0               1           3e-15 
+2  100 -1 97 -1 98 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  102 -1 103 -1 0
+1
+              1               0               0              -0 
+              0               1               0              13 
+              0               0               1           3e-15 
+2  105 -1 102 -1 103 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  107 -1 108 -1 0
+1
+              1               0               0              -0 
+              0               1               0            12.5 
+              0               0               1           3e-15 
+2  110 -1 107 -1 108 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  112 -1 113 -1 0
+1
+              1               0               0              -0 
+              0               1               0           12.95 
+              0               0               1           3e-15 
+2  115 -1 112 -1 113 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  117 -1 118 -1 0
+1
+              1               0               0              -0 
+              0               1               0            13.2 
+              0               0               1           3e-15 
+2  120 -1 117 -1 118 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  122 -1 123 -1 0
+1
+              1               0               0              -0 
+              0               1               0              13 
+              0               0               1           3e-15 
+2  125 -1 122 -1 123 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  127 -1 128 -1 0
+1
+              1               0               0              -0 
+              0               1               0 10.8333333333333 
+              0               0               1           2e-15 
+2  130 -1 127 -1 128 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  132 -1 133 -1 0
+1
+              1               0               0              -0 
+              0               1               0              13 
+              0               0               1           3e-15 
+2  135 -1 132 -1 133 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  137 -1 138 -1 0
+1
+              1               0               0              -0 
+              0               1               0            12.6 
+              0               0               1           3e-15 
+2  140 -1 137 -1 138 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  142 -1 143 -1 0
+1
+              1               0               0              -0 
+              0               1               0 10.6333333333333 
+              0               0               1           2e-15 
+2  145 -1 142 -1 143 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  147 -1 148 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.8 
+              0               0               1           2e-15 
+2  150 -1 147 -1 148 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  152 -1 153 -1 0
+1
+              1               0               0              -0 
+              0               1               0            11.8 
+              0               0               1           3e-15 
+2  155 -1 152 -1 153 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  157 -1 158 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.8 
+              0               0               1           2e-15 
+2  160 -1 157 -1 158 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  162 -1 163 -1 0
+1
+              1               0               0              -0 
+              0               1               0            11.8 
+              0               0               1           3e-15 
+2  165 -1 162 -1 163 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  167 -1 168 -1 0
+1
+              1               0               0              -0 
+              0               1               0 8.37142857142857 
+              0               0               1           2e-15 
+2  170 -1 167 -1 168 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  172 -1 173 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.8 
+              0               0               1           2e-15 
+2  175 -1 172 -1 173 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  177 -1 178 -1 0
+1
+              1               0               0              -0 
+              0               1               0            11.8 
+              0               0               1           3e-15 
+2  180 -1 177 -1 178 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  182 -1 183 -1 0
+1
+              1               0               0              -0 
+              0               1               0 8.37142857142857 
+              0               0               1           2e-15 
+2  185 -1 182 -1 183 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  187 -1 188 -1 0
+1
+              1               0               0              -0 
+              0               1               0 9.48571428571429 
+              0               0               1           2e-15 
+2  190 -1 187 -1 188 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  192 -1 193 -1 0
+1
+              1               0               0              -0 
+              0               1               0 11.0333333333333 
+              0               0               1           2e-15 
+2  195 -1 192 -1 193 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  197 -1 198 -1 0
+1
+              1               0               0              -0 
+              0               1               0           11.03 
+              0               0               1           2e-15 
+2  200 -1 197 -1 198 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  202 -1 203 -1 0
+1
+              1               0               0              -0 
+              0               1               0 10.0181211580212 
+              0               0               1           2e-15 
+2  205 -1 202 -1 203 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  207 -1 208 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.8 
+              0               0               1           2e-15 
+2  210 -1 207 -1 208 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  212 -1 213 -1 0
+1
+              1               0               0              -0 
+              0               1               0 10.0181211580212 
+              0               0               1           2e-15 
+2  215 -1 212 -1 213 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  217 -1 218 -1 0
+1
+              1               0               0               0 
+              0               1               0             -10 
+              0               0               1          -2e-15 
+2  220 -1 217 -1 218 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  222 -1 223 -1 0
+1
+              1               0               0              -0 
+              0               1               0              10 
+              0               0               1           2e-15 
+2  225 -1 222 -1 223 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  227 -1 228 -1 0
+1
+              1               0               0              -0 
+              0               1               0              10 
+              0               0               1           2e-15 
+2  230 -1 227 -1 228 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  232 -1 233 -1 0
+1
+              1               0               0              -0 
+              0               1               0 10.0181211580212 
+              0               0               1           2e-15 
+2  235 -1 232 -1 233 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  237 -1 238 -1 0
+1
+              1               0               0              -0 
+              0               1               0 10.0181211580212 
+              0               0               1           2e-15 
+2  240 -1 237 -1 238 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  242 -1 243 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.8 
+              0               0               1           2e-15 
+2  245 -1 242 -1 243 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  247 -1 248 -1 0
+1
+              1               0               0              -0 
+              0               1               0 9.13333333333333 
+              0               0               1           2e-15 
+2  250 -1 247 -1 248 -1 0
+1
+              1               0               0               0 
+              0              -0              -1               0 
+              0               1              -0               0 
+2  252 -1 248 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.8 
+              0               0               1           2e-15 
+2  254 -1 252 -1 248 -1 0
+1
+              1               0               0               0 
+              0 -2.22044604925031e-16              -1               0 
+              0               1 -2.22044604925031e-16               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  256 -1 257 -1 0
+1
+              1               0               0              -0 
+              0               1               0            9.49 
+              0               0               1 2.10720330073855e-15 
+2  259 -1 256 -1 257 -1 0
+1
+              1               0               0               0 
+              0 -2.22044604925031e-16              -1               0 
+              0               1 -2.22044604925031e-16               0 
+2  261 -1 257 -1 0
+1
+              1               0               0              -0 
+              0               1               0 11.0333333333333 
+              0               0               1 2.44989214100618e-15 
+2  263 -1 261 -1 257 -1 0
+1
+              1               0               0               0 
+              0 -2.22044604925031e-16              -1               0 
+              0               1 -2.22044604925031e-16               0 
+2  265 -1 257 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.8 
+              0               0               1 2.17603712826531e-15 
+2  267 -1 265 -1 257 -1 0
+1
+              1               0               0               0 
+              0 -2.22044604925031e-16              -1               0 
+              0               1 -2.22044604925031e-16               0 
+2  269 -1 257 -1 0
+1
+              1               0               0              -0 
+              0               1               0 10.0181211580212 
+              0               0               1 2.22446975462391e-15 
+2  271 -1 269 -1 257 -1 0
+1
+              1               0               0               0 
+              0 -2.22044604925031e-16              -1               0 
+              0               1 -2.22044604925031e-16               0 
+2  273 -1 257 -1 0
+1
+              1               0               0              -0 
+              0               1               0 11.0333333333333 
+              0               0               1 2.44989214100618e-15 
+2  275 -1 273 -1 257 -1 0
+1
+              1               0               0               0 
+              0 -2.22044604925031e-16              -1               0 
+              0               1 -2.22044604925031e-16               0 
+2  277 -1 257 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.8 
+              0               0               1 2.17603712826531e-15 
+2  279 -1 277 -1 257 -1 0
+1
+              1               0               0               0 
+              0 -2.22044604925031e-16              -1               0 
+              0               1 -2.22044604925031e-16               0 
+2  281 -1 257 -1 0
+1
+              1               0               0              -0 
+              0               1               0 10.0181211580212 
+              0               0               1 2.22446975462391e-15 
+2  283 -1 281 -1 257 -1 0
+1
+              1               0               0               0 
+              0 -2.22044604925031e-16              -1               0 
+              0               1 -2.22044604925031e-16               0 
+2  285 -1 257 -1 0
+1
+              1               0               0              -0 
+              0               1               0           11.03 
+              0               0               1 2.4491519923231e-15 
+2  287 -1 285 -1 257 -1 0
+1
+              1               0               0               0 
+              0 -2.22044604925031e-16              -1               0 
+              0               1 -2.22044604925031e-16               0 
+2  289 -1 257 -1 0
+1
+              1               0               0              -0 
+              0               1               0 9.13333333333333 
+              0               0               1 2.02800739164862e-15 
+2  291 -1 289 -1 257 -1 0
+1
+              1               0               0               0 
+              0 -2.22044604925031e-16              -1               0 
+              0               1 -2.22044604925031e-16               0 
+2  293 -1 257 -1 0
+1
+              1               0               0              -0 
+              0               1               0 11.0333333333333 
+              0               0               1 2.44989214100618e-15 
+2  295 -1 293 -1 257 -1 0
+1
+              1               0               0               0 
+              0 -2.22044604925031e-16              -1               0 
+              0               1 -2.22044604925031e-16               0 
+2  297 -1 257 -1 0
+1
+              1               0               0              -0 
+              0               1               0 11.0333333333333 
+              0               0               1 2.44989214100618e-15 
+2  299 -1 297 -1 257 -1 0
+1
+              1               0               0               0 
+              0 -2.22044604925031e-16              -1               0 
+              0               1 -2.22044604925031e-16               0 
+2  301 -1 257 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.8 
+              0               0               1 2.17603712826531e-15 
+2  303 -1 301 -1 257 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  305 -1 306 -1 0
+1
+              1               0               0              -0 
+              0               1               0 6.46666666666667 
+              0               0               1 2.87177689036374e-15 
+2  308 -1 305 -1 306 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  310 -1 306 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.8 
+              0               0               1 4.35207425653061e-15 
+2  312 -1 310 -1 306 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  314 -1 306 -1 0
+1
+              1               0               0              -0 
+              0               1               0 6.46666666666667 
+              0               0               1 2.87177689036374e-15 
+2  316 -1 314 -1 306 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  318 -1 306 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.8 
+              0               0               1 4.35207425653061e-15 
+2  320 -1 318 -1 306 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  322 -1 306 -1 0
+1
+              1               0               0              -0 
+              0               1               0 6.46666666666667 
+              0               0               1 2.87177689036374e-15 
+2  324 -1 322 -1 306 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  326 -1 306 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.8 
+              0               0               1 4.35207425653061e-15 
+2  328 -1 326 -1 306 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  330 -1 306 -1 0
+1
+              1               0               0              -0 
+              0               1               0 6.46666666666667 
+              0               0               1 2.87177689036374e-15 
+2  332 -1 330 -1 306 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  334 -1 306 -1 0
+1
+              1               0               0              -0 
+              0               1               0             5.8 
+              0               0               1 2.57571741713036e-15 
+2  336 -1 334 -1 306 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  338 -1 339 -1 0
+1
+              1               0               0              -0 
+              0               1               0           7.675 
+              0               0               1 3.40838468559923e-15 
+2  341 -1 338 -1 339 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  343 -1 344 -1 0
+1
+              1               0               0              -0 
+              0               1               0             5.8 
+              0               0               1 2.57571741713036e-15 
+2  346 -1 343 -1 344 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  348 -1 349 -1 0
+1
+              1               0               0              -0 
+              0               1               0           7.675 
+              0               0               1 3.40838468559923e-15 
+2  351 -1 348 -1 349 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  353 -1 354 -1 0
+1
+              1               0               0              -0 
+              0               1               0             5.8 
+              0               0               1 2.57571741713036e-15 
+2  356 -1 353 -1 354 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  358 -1 359 -1 0
+1
+              1               0               0              -0 
+              0               1               0           7.675 
+              0               0               1 3.40838468559923e-15 
+2  361 -1 358 -1 359 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  363 -1 364 -1 0
+1
+              1               0               0              -0 
+              0               1               0             5.8 
+              0               0               1 2.57571741713036e-15 
+2  366 -1 363 -1 364 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  368 -1 369 -1 0
+1
+              1               0               0              -0 
+              0               1               0           7.675 
+              0               0               1 3.40838468559923e-15 
+2  371 -1 368 -1 369 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  373 -1 369 -1 0
+1
+              1               0               0              -0 
+              0               1               0             5.8 
+              0               0               1 2.57571741713036e-15 
+2  375 -1 373 -1 369 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  377 -1 369 -1 0
+1
+              1               0               0              -0 
+              0               1               0           7.675 
+              0               0               1 3.40838468559923e-15 
+2  379 -1 377 -1 369 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  381 -1 382 -1 0
+1
+              1               0               0              -0 
+              0               1               0             5.8 
+              0               0               1 2.57571741713036e-15 
+2  384 -1 381 -1 382 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  386 -1 387 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.8 
+              0               0               1 4.35207425653061e-15 
+2  389 -1 386 -1 387 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  391 -1 387 -1 0
+1
+              1               0               0              -0 
+              0               1               0             5.8 
+              0               0               1 2.57571741713036e-15 
+2  393 -1 391 -1 387 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  395 -1 396 -1 0
+1
+              1               0               0              -0 
+              0               1               0            27.8 
+              0               0               1 1.23456800338317e-14 
+2  398 -1 395 -1 396 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  400 -1 396 -1 0
+1
+              1               0               0              -0 
+              0               1               0           7.675 
+              0               0               1 3.40838468559923e-15 
+2  402 -1 400 -1 396 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  404 -1 396 -1 0
+1
+              1               0               0              -0 
+              0               1               0            27.8 
+              0               0               1 1.23456800338317e-14 
+2  406 -1 404 -1 396 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  408 -1 396 -1 0
+1
+              1               0               0              -0 
+              0               1               0            13.8 
+              0               0               1 6.12843109593086e-15 
+2  410 -1 408 -1 396 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  412 -1 396 -1 0
+1
+              1               0               0              -0 
+              0               1               0            10.3 
+              0               0               1 4.57411886145565e-15 
+2  414 -1 412 -1 396 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  416 -1 396 -1 0
+1
+              1               0               0              -0 
+              0               1               0 9.13333333333333 
+              0               0               1 4.05601478329724e-15 
+2  418 -1 416 -1 396 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  420 -1 396 -1 0
+1
+              1               0               0              -0 
+              0               1               0            41.8 
+              0               0               1 1.85629289717326e-14 
+2  422 -1 420 -1 396 -1 0
+1
+              1               0               0               0 
+              0 -4.44089209850063e-16              -1               0 
+              0               1 -4.44089209850063e-16               0 
+2  424 -1 396 -1 0
+1
+              1               0               0              -0 
+              0               1               0             9.8 
+              0               0               1 4.35207425653061e-15 
+2  426 -1 424 -1 396 -1 0
+Curve2ds 364
+1 0 0 1 0 
+1 0 -10 1 0 
+1 0 0 1 0 
+1 0 -9.9000000000000004 1 0 
+1 0 0 1 0 
+1 0 -10.118121158021175 1 0 
+1 0 0 1 0 
+1 0 -9.9000000000000004 1 0 
+1 0 0 1 0 
+1 0 -10.118121158021175 1 0 
+1 0 0 1 0 
+1 0 -9.9000000000000004 1 0 
+1 0 0 1 0 
+1 0 -9.8499999999999996 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -2.2074074074074073 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -2.2074074074074073 1 0 
+1 0 0 1 0 
+1 0 -7.0222222222222221 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -7.0222222222222221 1 0 
+1 0 0 1 0 
+1 0 -8.4666666666666686 1 0 
+1 0 0 1 0 
+1 0 -64.799999999999997 1 0 
+1 0 0 1 0 
+1 0 -10.200000000000001 1 0 
+1 0 0 1 0 
+1 0 -8.4666666666666686 1 0 
+1 0 0 1 0 
+1 0 -12.800000000000001 1 0 
+1 0 0 1 0 
+1 0 -12.9 1 0 
+1 0 0 1 0 
+1 0 -13 1 0 
+1 0 0 1 0 
+1 0 -12.5 1 0 
+1 0 0 1 0 
+1 0 -12.949999999999999 1 0 
+1 0 0 1 0 
+1 0 -13.199999999999999 1 0 
+1 0 0 1 0 
+1 0 -13 1 0 
+1 0 0 1 0 
+1 0 -10.833333333333334 1 0 
+1 0 0 1 0 
+1 0 -13 1 0 
+1 0 0 1 0 
+1 0 -12.6 1 0 
+1 0 0 1 0 
+1 0 -10.633333333333335 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -11.800000000000001 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -11.800000000000001 1 0 
+1 0 0 1 0 
+1 0 -8.3714285714285719 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -11.800000000000001 1 0 
+1 0 0 1 0 
+1 0 -8.3714285714285719 1 0 
+1 0 0 1 0 
+1 0 -9.4857142857142858 1 0 
+1 0 0 1 0 
+1 0 -11.033333333333335 1 0 
+1 0 0 1 0 
+1 0 -11.029999999999999 1 0 
+1 0 0 1 0 
+1 0 -10.018121158021176 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -10.018121158021176 1 0 
+1 0 0 1 0 
+1 0 -10 1 0 
+1 0 0 1 0 
+1 0 -10 1 0 
+1 0 0 1 0 
+1 0 -10 1 0 
+1 0 0 1 0 
+1 0 -10.018121158021176 1 0 
+1 0 0 1 0 
+1 0 -10.018121158021176 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -9.1333333333333346 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -9.4900000000000002 1 0 
+1 0 0 1 0 
+1 0 -11.033333333333335 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -10.018121158021176 1 0 
+1 0 0 1 0 
+1 0 -11.033333333333335 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -10.018121158021176 1 0 
+1 0 0 1 0 
+1 0 -11.029999999999999 1 0 
+1 0 0 1 0 
+1 0 -9.1333333333333346 1 0 
+1 0 0 1 0 
+1 0 -11.033333333333335 1 0 
+1 0 0 1 0 
+1 0 -11.033333333333335 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -6.4666666666666668 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -6.4666666666666668 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -6.4666666666666668 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -6.4666666666666668 1 0 
+1 0 0 1 0 
+1 0 -5.7999999999999998 1 0 
+1 0 0 1 0 
+1 0 -7.6749999999999998 1 0 
+1 0 0 1 0 
+1 0 -5.7999999999999998 1 0 
+1 0 0 1 0 
+1 0 -7.6749999999999998 1 0 
+1 0 0 1 0 
+1 0 -5.7999999999999998 1 0 
+1 0 0 1 0 
+1 0 -7.6749999999999998 1 0 
+1 0 0 1 0 
+1 0 -5.7999999999999998 1 0 
+1 0 0 1 0 
+1 0 -7.6749999999999998 1 0 
+1 0 0 1 0 
+1 0 -5.7999999999999998 1 0 
+1 0 0 1 0 
+1 0 -7.6749999999999998 1 0 
+1 0 0 1 0 
+1 0 -5.7999999999999998 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -5.7999999999999998 1 0 
+1 0 0 1 0 
+1 0 -27.800000000000001 1 0 
+1 0 0 1 0 
+1 0 -7.6749999999999998 1 0 
+1 0 0 1 0 
+1 0 -27.800000000000001 1 0 
+1 0 0 1 0 
+1 0 -13.800000000000001 1 0 
+1 0 0 1 0 
+1 0 -10.300000000000001 1 0 
+1 0 0 1 0 
+1 0 -9.1333333333333346 1 0 
+1 0 0 1 0 
+1 0 -41.799999999999997 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -10 1 0 
+1 0 0 1 0 
+1 0 -9.9000000000000004 1 0 
+1 0 0 1 0 
+1 0 -10.118121158021175 1 0 
+1 0 0 1 0 
+1 0 -9.9000000000000004 1 0 
+1 0 0 1 0 
+1 0 -10.118121158021175 1 0 
+1 0 0 1 0 
+1 0 -9.9000000000000004 1 0 
+1 0 0 1 0 
+1 0 -9.8499999999999996 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -2.2074074074074073 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -2.2074074074074073 1 0 
+1 0 0 1 0 
+1 0 -7.0222222222222221 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -7.0222222222222221 1 0 
+1 0 0 1 0 
+1 0 -8.4666666666666686 1 0 
+1 0 0 1 0 
+1 0 -64.799999999999997 1 0 
+1 0 0 1 0 
+1 0 -10.200000000000001 1 0 
+1 0 0 1 0 
+1 0 -8.4666666666666686 1 0 
+1 0 0 1 0 
+1 0 -12.800000000000001 1 0 
+1 0 0 1 0 
+1 0 -12.9 1 0 
+1 0 0 1 0 
+1 0 -13 1 0 
+1 0 0 1 0 
+1 0 -12.5 1 0 
+1 0 0 1 0 
+1 0 -12.949999999999999 1 0 
+1 0 0 1 0 
+1 0 -13.199999999999999 1 0 
+1 0 0 1 0 
+1 0 -13 1 0 
+1 0 0 1 0 
+1 0 -10.833333333333334 1 0 
+1 0 0 1 0 
+1 0 -13 1 0 
+1 0 0 1 0 
+1 0 -12.6 1 0 
+1 0 0 1 0 
+1 0 -10.633333333333335 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -11.800000000000001 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -11.800000000000001 1 0 
+1 0 0 1 0 
+1 0 -8.3714285714285719 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -11.800000000000001 1 0 
+1 0 0 1 0 
+1 0 -8.3714285714285719 1 0 
+1 0 0 1 0 
+1 0 -9.4857142857142858 1 0 
+1 0 0 1 0 
+1 0 -11.033333333333335 1 0 
+1 0 0 1 0 
+1 0 -11.029999999999999 1 0 
+1 0 0 1 0 
+1 0 -10.018121158021176 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -10.018121158021176 1 0 
+1 0 0 1 0 
+1 0 -10 1 0 
+1 0 0 1 0 
+1 0 -10 1 0 
+1 0 0 1 0 
+1 0 -10 1 0 
+1 0 0 1 0 
+1 0 -10.018121158021176 1 0 
+1 0 0 1 0 
+1 0 -10.018121158021176 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -9.1333333333333346 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -9.4900000000000002 1 0 
+1 0 0 1 0 
+1 0 -11.033333333333335 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -10.018121158021176 1 0 
+1 0 0 1 0 
+1 0 -11.033333333333335 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -10.018121158021176 1 0 
+1 0 0 1 0 
+1 0 -11.029999999999999 1 0 
+1 0 0 1 0 
+1 0 -9.1333333333333346 1 0 
+1 0 0 1 0 
+1 0 -11.033333333333335 1 0 
+1 0 0 1 0 
+1 0 -11.033333333333335 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -6.4666666666666668 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -6.4666666666666668 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -6.4666666666666668 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -6.4666666666666668 1 0 
+1 0 0 1 0 
+1 0 -5.7999999999999998 1 0 
+1 0 0 1 0 
+1 0 -7.6749999999999998 1 0 
+1 0 0 1 0 
+1 0 -5.7999999999999998 1 0 
+1 0 0 1 0 
+1 0 -7.6749999999999998 1 0 
+1 0 0 1 0 
+1 0 -5.7999999999999998 1 0 
+1 0 0 1 0 
+1 0 -7.6749999999999998 1 0 
+1 0 0 1 0 
+1 0 -5.7999999999999998 1 0 
+1 0 0 1 0 
+1 0 -7.6749999999999998 1 0 
+1 0 0 1 0 
+1 0 -5.7999999999999998 1 0 
+1 0 0 1 0 
+1 0 -7.6749999999999998 1 0 
+1 0 0 1 0 
+1 0 -5.7999999999999998 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+1 0 0 1 0 
+1 0 -5.7999999999999998 1 0 
+1 0 0 1 0 
+1 0 -27.800000000000001 1 0 
+1 0 0 1 0 
+1 0 -7.6749999999999998 1 0 
+1 0 0 1 0 
+1 0 -27.800000000000001 1 0 
+1 0 0 1 0 
+1 0 -13.800000000000001 1 0 
+1 0 0 1 0 
+1 0 -10.300000000000001 1 0 
+1 0 0 1 0 
+1 0 -9.1333333333333346 1 0 
+1 0 0 1 0 
+1 0 -41.799999999999997 1 0 
+1 0 0 1 0 
+1 0 -9.8000000000000007 1 0 
+Curves 4
+1 0 1.8500000000000001 0 1 0 0 
+1 1.8500000000000001 0 0 0 1 0 
+2 0 0 0 0 0 1 1 0 -0 -0 1 0 1.8500000000000001
+2 0 0 0 0 0 1 1 0 -0 -0 1 0 1.1000000000000001
+Polygon3D 0
+PolygonOnTriangulations 0
+Surfaces 182
+2 0 -0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 -0 1 2.2e-16 1 0 0 -0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.8500000000000001
+2 0 -0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 -0 1 2.2e-16 1 0 0 -0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2e-16 1 0 0 0 -2.2e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -2.2204460492503131e-16 1 0 0 0 -2.2204460492503131e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+2 0 0 0 0 -1 -4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.1000000000000001
+Triangulations 0
+
+TShapes 11
+Ve
+1e-07
+0 1.85 0
+0 0
+
+0101101
+*
+Ve
+1e-07
+1.85 1.85 0
+0 0
+
+0101101
+*
+Ed
+ 1e-07 1 1 0
+1  1 0 0 1.85
+0
+
+0101000
++11 0 -10 0 *
+Ve
+1e-07
+1.85 -0 0
+0 0
+
+0101101
+*
+Ed
+ 1e-07 1 1 0
+1  2 0 0 1.85
+0
+
+0101000
++8 0 -10 0 *
+Ed
+ 1e-07 1 1 0
+1  3 0 1.5707963267949 6.28318530717959
+2  1 1 4 1.5707963267949 6.28318530717959
+2  2 1 6 1.5707963267949 6.28318530717959
+2  3 2 9 1.5707963267949 6.28318530717959
+2  4 2 11 1.5707963267949 6.28318530717959
+2  5 3 14 1.5707963267949 6.28318530717959
+2  6 3 16 1.5707963267949 6.28318530717959
+2  7 4 19 1.5707963267949 6.28318530717959
+2  8 4 21 1.5707963267949 6.28318530717959
+2  9 5 24 1.5707963267949 6.28318530717959
+2  10 5 26 1.5707963267949 6.28318530717959
+2  11 6 29 1.5707963267949 6.28318530717959
+2  12 6 31 1.5707963267949 6.28318530717959
+2  13 7 34 1.5707963267949 6.28318530717959
+2  14 7 36 1.5707963267949 6.28318530717959
+2  15 8 39 1.5707963267949 6.28318530717959
+2  16 8 41 1.5707963267949 6.28318530717959
+2  17 9 44 1.5707963267949 6.28318530717959
+2  18 9 46 1.5707963267949 6.28318530717959
+2  19 10 49 1.5707963267949 6.28318530717959
+2  20 10 51 1.5707963267949 6.28318530717959
+2  21 11 54 1.5707963267949 6.28318530717959
+2  22 11 56 1.5707963267949 6.28318530717959
+2  23 12 59 1.5707963267949 6.28318530717959
+2  24 12 61 1.5707963267949 6.28318530717959
+2  25 13 64 1.5707963267949 6.28318530717959
+2  26 13 66 1.5707963267949 6.28318530717959
+2  27 14 69 1.5707963267949 6.28318530717959
+2  28 14 71 1.5707963267949 6.28318530717959
+2  29 15 74 1.5707963267949 6.28318530717959
+2  30 15 76 1.5707963267949 6.28318530717959
+2  31 16 79 1.5707963267949 6.28318530717959
+2  32 16 81 1.5707963267949 6.28318530717959
+2  33 17 84 1.5707963267949 6.28318530717959
+2  34 17 86 1.5707963267949 6.28318530717959
+2  35 18 89 1.5707963267949 6.28318530717959
+2  36 18 91 1.5707963267949 6.28318530717959
+2  37 19 94 1.5707963267949 6.28318530717959
+2  38 19 96 1.5707963267949 6.28318530717959
+2  39 20 99 1.5707963267949 6.28318530717959
+2  40 20 101 1.5707963267949 6.28318530717959
+2  41 21 104 1.5707963267949 6.28318530717959
+2  42 21 106 1.5707963267949 6.28318530717959
+2  43 22 109 1.5707963267949 6.28318530717959
+2  44 22 111 1.5707963267949 6.28318530717959
+2  45 23 114 1.5707963267949 6.28318530717959
+2  46 23 116 1.5707963267949 6.28318530717959
+2  47 24 119 1.5707963267949 6.28318530717959
+2  48 24 121 1.5707963267949 6.28318530717959
+2  49 25 124 1.5707963267949 6.28318530717959
+2  50 25 126 1.5707963267949 6.28318530717959
+2  51 26 129 1.5707963267949 6.28318530717959
+2  52 26 131 1.5707963267949 6.28318530717959
+2  53 27 134 1.5707963267949 6.28318530717959
+2  54 27 136 1.5707963267949 6.28318530717959
+2  55 28 139 1.5707963267949 6.28318530717959
+2  56 28 141 1.5707963267949 6.28318530717959
+2  57 29 144 1.5707963267949 6.28318530717959
+2  58 29 146 1.5707963267949 6.28318530717959
+2  59 30 149 1.5707963267949 6.28318530717959
+2  60 30 151 1.5707963267949 6.28318530717959
+2  61 31 154 1.5707963267949 6.28318530717959
+2  62 31 156 1.5707963267949 6.28318530717959
+2  63 32 159 1.5707963267949 6.28318530717959
+2  64 32 161 1.5707963267949 6.28318530717959
+2  65 33 164 1.5707963267949 6.28318530717959
+2  66 33 166 1.5707963267949 6.28318530717959
+2  67 34 169 1.5707963267949 6.28318530717959
+2  68 34 171 1.5707963267949 6.28318530717959
+2  69 35 174 1.5707963267949 6.28318530717959
+2  70 35 176 1.5707963267949 6.28318530717959
+2  71 36 179 1.5707963267949 6.28318530717959
+2  72 36 181 1.5707963267949 6.28318530717959
+2  73 37 184 1.5707963267949 6.28318530717959
+2  74 37 186 1.5707963267949 6.28318530717959
+2  75 38 189 1.5707963267949 6.28318530717959
+2  76 38 191 1.5707963267949 6.28318530717959
+2  77 39 194 1.5707963267949 6.28318530717959
+2  78 39 196 1.5707963267949 6.28318530717959
+2  79 40 199 1.5707963267949 6.28318530717959
+2  80 40 201 1.5707963267949 6.28318530717959
+2  81 41 204 1.5707963267949 6.28318530717959
+2  82 41 206 1.5707963267949 6.28318530717959
+2  83 42 209 1.5707963267949 6.28318530717959
+2  84 42 211 1.5707963267949 6.28318530717959
+2  85 43 214 1.5707963267949 6.28318530717959
+2  86 43 216 1.5707963267949 6.28318530717959
+2  87 44 219 1.5707963267949 6.28318530717959
+2  88 44 221 1.5707963267949 6.28318530717959
+2  89 45 224 1.5707963267949 6.28318530717959
+2  90 45 226 1.5707963267949 6.28318530717959
+2  91 46 229 1.5707963267949 6.28318530717959
+2  92 46 231 1.5707963267949 6.28318530717959
+2  93 47 234 1.5707963267949 6.28318530717959
+2  94 47 236 1.5707963267949 6.28318530717959
+2  95 48 239 1.5707963267949 6.28318530717959
+2  96 48 241 1.5707963267949 6.28318530717959
+2  97 49 244 1.5707963267949 6.28318530717959
+2  98 49 246 1.5707963267949 6.28318530717959
+2  99 50 249 1.5707963267949 6.28318530717959
+2  100 50 251 1.5707963267949 6.28318530717959
+2  101 51 253 1.5707963267949 6.28318530717959
+2  102 51 255 1.5707963267949 6.28318530717959
+2  103 52 258 1.5707963267949 6.28318530717959
+2  104 52 260 1.5707963267949 6.28318530717959
+2  105 53 262 1.5707963267949 6.28318530717959
+2  106 53 264 1.5707963267949 6.28318530717959
+2  107 54 266 1.5707963267949 6.28318530717959
+2  108 54 268 1.5707963267949 6.28318530717959
+2  109 55 270 1.5707963267949 6.28318530717959
+2  110 55 272 1.5707963267949 6.28318530717959
+2  111 56 274 1.5707963267949 6.28318530717959
+2  112 56 276 1.5707963267949 6.28318530717959
+2  113 57 278 1.5707963267949 6.28318530717959
+2  114 57 280 1.5707963267949 6.28318530717959
+2  115 58 282 1.5707963267949 6.28318530717959
+2  116 58 284 1.5707963267949 6.28318530717959
+2  117 59 286 1.5707963267949 6.28318530717959
+2  118 59 288 1.5707963267949 6.28318530717959
+2  119 60 290 1.5707963267949 6.28318530717959
+2  120 60 292 1.5707963267949 6.28318530717959
+2  121 61 294 1.5707963267949 6.28318530717959
+2  122 61 296 1.5707963267949 6.28318530717959
+2  123 62 298 1.5707963267949 6.28318530717959
+2  124 62 300 1.5707963267949 6.28318530717959
+2  125 63 302 1.5707963267949 6.28318530717959
+2  126 63 304 1.5707963267949 6.28318530717959
+2  127 64 307 1.5707963267949 6.28318530717959
+2  128 64 309 1.5707963267949 6.28318530717959
+2  129 65 311 1.5707963267949 6.28318530717959
+2  130 65 313 1.5707963267949 6.28318530717959
+2  131 66 315 1.5707963267949 6.28318530717959
+2  132 66 317 1.5707963267949 6.28318530717959
+2  133 67 319 1.5707963267949 6.28318530717959
+2  134 67 321 1.5707963267949 6.28318530717959
+2  135 68 323 1.5707963267949 6.28318530717959
+2  136 68 325 1.5707963267949 6.28318530717959
+2  137 69 327 1.5707963267949 6.28318530717959
+2  138 69 329 1.5707963267949 6.28318530717959
+2  139 70 331 1.5707963267949 6.28318530717959
+2  140 70 333 1.5707963267949 6.28318530717959
+2  141 71 335 1.5707963267949 6.28318530717959
+2  142 71 337 1.5707963267949 6.28318530717959
+2  143 72 340 1.5707963267949 6.28318530717959
+2  144 72 342 1.5707963267949 6.28318530717959
+2  145 73 345 1.5707963267949 6.28318530717959
+2  146 73 347 1.5707963267949 6.28318530717959
+2  147 74 350 1.5707963267949 6.28318530717959
+2  148 74 352 1.5707963267949 6.28318530717959
+2  149 75 355 1.5707963267949 6.28318530717959
+2  150 75 357 1.5707963267949 6.28318530717959
+2  151 76 360 1.5707963267949 6.28318530717959
+2  152 76 362 1.5707963267949 6.28318530717959
+2  153 77 365 1.5707963267949 6.28318530717959
+2  154 77 367 1.5707963267949 6.28318530717959
+2  155 78 370 1.5707963267949 6.28318530717959
+2  156 78 372 1.5707963267949 6.28318530717959
+2  157 79 374 1.5707963267949 6.28318530717959
+2  158 79 376 1.5707963267949 6.28318530717959
+2  159 80 378 1.5707963267949 6.28318530717959
+2  160 80 380 1.5707963267949 6.28318530717959
+2  161 81 383 1.5707963267949 6.28318530717959
+2  162 81 385 1.5707963267949 6.28318530717959
+2  163 82 388 1.5707963267949 6.28318530717959
+2  164 82 390 1.5707963267949 6.28318530717959
+2  165 83 392 1.5707963267949 6.28318530717959
+2  166 83 394 1.5707963267949 6.28318530717959
+2  167 84 397 1.5707963267949 6.28318530717959
+2  168 84 399 1.5707963267949 6.28318530717959
+2  169 85 401 1.5707963267949 6.28318530717959
+2  170 85 403 1.5707963267949 6.28318530717959
+2  171 86 405 1.5707963267949 6.28318530717959
+2  172 86 407 1.5707963267949 6.28318530717959
+2  173 87 409 1.5707963267949 6.28318530717959
+2  174 87 411 1.5707963267949 6.28318530717959
+2  175 88 413 1.5707963267949 6.28318530717959
+2  176 88 415 1.5707963267949 6.28318530717959
+2  177 89 417 1.5707963267949 6.28318530717959
+2  178 89 419 1.5707963267949 6.28318530717959
+2  179 90 421 1.5707963267949 6.28318530717959
+2  180 90 423 1.5707963267949 6.28318530717959
+2  181 91 425 1.5707963267949 6.28318530717959
+2  182 91 427 1.5707963267949 6.28318530717959
+0
+
+0101000
++11 0 -8 0 *
+Wi
+
+0101100
++9 0 -7 0 -6 0 *
+Ve
+1e-07
+1.1 0 0
+0 0
+
+0101101
+*
+Ed
+ 1e-07 1 1 0
+1  4 0 0 6.28318530717959
+2  183 92 4 0 6.28318530717959
+2  184 92 6 0 6.28318530717959
+2  185 93 9 0 6.28318530717959
+2  186 93 11 0 6.28318530717959
+2  187 94 14 0 6.28318530717959
+2  188 94 16 0 6.28318530717959
+2  189 95 19 0 6.28318530717959
+2  190 95 21 0 6.28318530717959
+2  191 96 24 0 6.28318530717959
+2  192 96 26 0 6.28318530717959
+2  193 97 29 0 6.28318530717959
+2  194 97 31 0 6.28318530717959
+2  195 98 34 0 6.28318530717959
+2  196 98 36 0 6.28318530717959
+2  197 99 39 0 6.28318530717959
+2  198 99 41 0 6.28318530717959
+2  199 100 44 0 6.28318530717959
+2  200 100 46 0 6.28318530717959
+2  201 101 49 0 6.28318530717959
+2  202 101 51 0 6.28318530717959
+2  203 102 54 0 6.28318530717959
+2  204 102 56 0 6.28318530717959
+2  205 103 59 0 6.28318530717959
+2  206 103 61 0 6.28318530717959
+2  207 104 64 0 6.28318530717959
+2  208 104 66 0 6.28318530717959
+2  209 105 69 0 6.28318530717959
+2  210 105 71 0 6.28318530717959
+2  211 106 74 0 6.28318530717959
+2  212 106 76 0 6.28318530717959
+2  213 107 79 0 6.28318530717959
+2  214 107 81 0 6.28318530717959
+2  215 108 84 0 6.28318530717959
+2  216 108 86 0 6.28318530717959
+2  217 109 89 0 6.28318530717959
+2  218 109 91 0 6.28318530717959
+2  219 110 94 0 6.28318530717959
+2  220 110 96 0 6.28318530717959
+2  221 111 99 0 6.28318530717959
+2  222 111 101 0 6.28318530717959
+2  223 112 104 0 6.28318530717959
+2  224 112 106 0 6.28318530717959
+2  225 113 109 0 6.28318530717959
+2  226 113 111 0 6.28318530717959
+2  227 114 114 0 6.28318530717959
+2  228 114 116 0 6.28318530717959
+2  229 115 119 0 6.28318530717959
+2  230 115 121 0 6.28318530717959
+2  231 116 124 0 6.28318530717959
+2  232 116 126 0 6.28318530717959
+2  233 117 129 0 6.28318530717959
+2  234 117 131 0 6.28318530717959
+2  235 118 134 0 6.28318530717959
+2  236 118 136 0 6.28318530717959
+2  237 119 139 0 6.28318530717959
+2  238 119 141 0 6.28318530717959
+2  239 120 144 0 6.28318530717959
+2  240 120 146 0 6.28318530717959
+2  241 121 149 0 6.28318530717959
+2  242 121 151 0 6.28318530717959
+2  243 122 154 0 6.28318530717959
+2  244 122 156 0 6.28318530717959
+2  245 123 159 0 6.28318530717959
+2  246 123 161 0 6.28318530717959
+2  247 124 164 0 6.28318530717959
+2  248 124 166 0 6.28318530717959
+2  249 125 169 0 6.28318530717959
+2  250 125 171 0 6.28318530717959
+2  251 126 174 0 6.28318530717959
+2  252 126 176 0 6.28318530717959
+2  253 127 179 0 6.28318530717959
+2  254 127 181 0 6.28318530717959
+2  255 128 184 0 6.28318530717959
+2  256 128 186 0 6.28318530717959
+2  257 129 189 0 6.28318530717959
+2  258 129 191 0 6.28318530717959
+2  259 130 194 0 6.28318530717959
+2  260 130 196 0 6.28318530717959
+2  261 131 199 0 6.28318530717959
+2  262 131 201 0 6.28318530717959
+2  263 132 204 0 6.28318530717959
+2  264 132 206 0 6.28318530717959
+2  265 133 209 0 6.28318530717959
+2  266 133 211 0 6.28318530717959
+2  267 134 214 0 6.28318530717959
+2  268 134 216 0 6.28318530717959
+2  269 135 219 0 6.28318530717959
+2  270 135 221 0 6.28318530717959
+2  271 136 224 0 6.28318530717959
+2  272 136 226 0 6.28318530717959
+2  273 137 229 0 6.28318530717959
+2  274 137 231 0 6.28318530717959
+2  275 138 234 0 6.28318530717959
+2  276 138 236 0 6.28318530717959
+2  277 139 239 0 6.28318530717959
+2  278 139 241 0 6.28318530717959
+2  279 140 244 0 6.28318530717959
+2  280 140 246 0 6.28318530717959
+2  281 141 249 0 6.28318530717959
+2  282 141 251 0 6.28318530717959
+2  283 142 253 0 6.28318530717959
+2  284 142 255 0 6.28318530717959
+2  285 143 258 0 6.28318530717959
+2  286 143 260 0 6.28318530717959
+2  287 144 262 0 6.28318530717959
+2  288 144 264 0 6.28318530717959
+2  289 145 266 0 6.28318530717959
+2  290 145 268 0 6.28318530717959
+2  291 146 270 0 6.28318530717959
+2  292 146 272 0 6.28318530717959
+2  293 147 274 0 6.28318530717959
+2  294 147 276 0 6.28318530717959
+2  295 148 278 0 6.28318530717959
+2  296 148 280 0 6.28318530717959
+2  297 149 282 0 6.28318530717959
+2  298 149 284 0 6.28318530717959
+2  299 150 286 0 6.28318530717959
+2  300 150 288 0 6.28318530717959
+2  301 151 290 0 6.28318530717959
+2  302 151 292 0 6.28318530717959
+2  303 152 294 0 6.28318530717959
+2  304 152 296 0 6.28318530717959
+2  305 153 298 0 6.28318530717959
+2  306 153 300 0 6.28318530717959
+2  307 154 302 0 6.28318530717959
+2  308 154 304 0 6.28318530717959
+2  309 155 307 0 6.28318530717959
+2  310 155 309 0 6.28318530717959
+2  311 156 311 0 6.28318530717959
+2  312 156 313 0 6.28318530717959
+2  313 157 315 0 6.28318530717959
+2  314 157 317 0 6.28318530717959
+2  315 158 319 0 6.28318530717959
+2  316 158 321 0 6.28318530717959
+2  317 159 323 0 6.28318530717959
+2  318 159 325 0 6.28318530717959
+2  319 160 327 0 6.28318530717959
+2  320 160 329 0 6.28318530717959
+2  321 161 331 0 6.28318530717959
+2  322 161 333 0 6.28318530717959
+2  323 162 335 0 6.28318530717959
+2  324 162 337 0 6.28318530717959
+2  325 163 340 0 6.28318530717959
+2  326 163 342 0 6.28318530717959
+2  327 164 345 0 6.28318530717959
+2  328 164 347 0 6.28318530717959
+2  329 165 350 0 6.28318530717959
+2  330 165 352 0 6.28318530717959
+2  331 166 355 0 6.28318530717959
+2  332 166 357 0 6.28318530717959
+2  333 167 360 0 6.28318530717959
+2  334 167 362 0 6.28318530717959
+2  335 168 365 0 6.28318530717959
+2  336 168 367 0 6.28318530717959
+2  337 169 370 0 6.28318530717959
+2  338 169 372 0 6.28318530717959
+2  339 170 374 0 6.28318530717959
+2  340 170 376 0 6.28318530717959
+2  341 171 378 0 6.28318530717959
+2  342 171 380 0 6.28318530717959
+2  343 172 383 0 6.28318530717959
+2  344 172 385 0 6.28318530717959
+2  345 173 388 0 6.28318530717959
+2  346 173 390 0 6.28318530717959
+2  347 174 392 0 6.28318530717959
+2  348 174 394 0 6.28318530717959
+2  349 175 397 0 6.28318530717959
+2  350 175 399 0 6.28318530717959
+2  351 176 401 0 6.28318530717959
+2  352 176 403 0 6.28318530717959
+2  353 177 405 0 6.28318530717959
+2  354 177 407 0 6.28318530717959
+2  355 178 409 0 6.28318530717959
+2  356 178 411 0 6.28318530717959
+2  357 179 413 0 6.28318530717959
+2  358 179 415 0 6.28318530717959
+2  359 180 417 0 6.28318530717959
+2  360 180 419 0 6.28318530717959
+2  361 181 421 0 6.28318530717959
+2  362 181 423 0 6.28318530717959
+2  363 182 425 0 6.28318530717959
+2  364 182 427 0 6.28318530717959
+0
+
+0101100
++4 0 -4 0 *
+Wi
+
+0101100
++3 0 *
+Co
+
+0100000
++5 0 +2 0 *
+
++1 1 ]]>
+      </Part>
+      <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
+      <ElementMap2 count="8">
+<![CDATA[
+6 PostfixCount 3
+Edge
+Vertex
+;SKT
+
+MapCount 1
+
+ElementMap 1 6 2
+
+Edge
+
+ChildCount 0
+
+NameCount 5
+0
+;g5.3 0
+;g6.3 0
+;g18.3 0
+;g17.3 0
+
+Vertex
+
+ChildCount 0
+
+NameCount 5
+0
+;g5v1.3 0
+;g5v2.3 0
+;g6v1.3 0
+;g17v1.3 0
+
+EndMap
+]]>
+      </ElementMap2>
+    </Property>
+    <Property name="Support" type="App::PropertyLinkSubList" status="67108864">
+      <LinkSubList count="1">
+        <Link obj="XZ_Plane001" sub=""/>
+      </LinkSubList>
+    </Property>
+    <Property name="TreeRank" type="App::PropertyInteger" status="2184">
+      <Integer value="16"/>
+    </Property>
+    <Property name="ValidateShape" type="App::PropertyBool">
+      <Bool value="false"/>
+    </Property>
+    <Property name="Visibility" type="App::PropertyBool" status="648">
+      <Bool value="false"/>
+    </Property>
+  </Properties>
+</Object>
+</Document>

@@ -7,7 +7,7 @@
       <ExpressionEngine count="1" cdata="1">
         <Expressions><![CDATA[
 0:.cells.Bind.B2.ZZ2
-0:tuple(.cells, <<B>> + str(hiddenref(Body006.Variant) + 3), <<ZZ>> + str(hiddenref(Body006.Variant) + 3))
+0:tuple(.cells, <<B>> + str(hiddenref(Part.Variant) + 3), <<ZZ>> + str(hiddenref(Part.Variant) + 3))
 0:
 
 ]]>
@@ -27,7 +27,7 @@
       <Integer value="0"/>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="105"/>
+      <Integer value="170"/>
     </Property>
     <Property name="Visibility" type="App::PropertyBool" status="648">
       <Bool value="true"/>

@@ -3,7 +3,7 @@
 <Document SchemaVersion="4" FileVersion="2">
 <Object name="Pad001">
   <Properties Count="47" TransientCount="2">
-    <_Property name="_Body" type="App::PropertyLinkHidden" status="251658240"/>
+    <_Property name="_Body" type="App::PropertyLinkHidden" status="251658241"/>
     <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881024"/>
     <Property name="AddSubShape" type="Part::PropertyPartShape">
       <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
@@ -44,9 +44,9 @@ Curves 10
 1 -1 -1.8500000000000001 0 0 1 0 
 1 2.0499999999999998 -8.2156503822261588e-16 1.8500000000000001 -0 1 4.4408920985006262e-16 
 1 -1 1.8500000000000001 0 1 0 0 
-2 2.0499999999999998 9.9999999999999998e-17 0 0 0 1 1 0 0 0 1 0 1.8500000000000001
+2 2.0499999999999998 9.9999999999999998e-17 0 0 0 1 1 0 -0 -0 1 0 1.8500000000000001
 1 3.0999999999999996 -4.4408920985006261e-32 9.9999999999999998e-17 -0 1 4.4408920985006262e-16 
-2 2.0499999999999998 9.9999999999999998e-17 0 0 0 1 1 0 0 0 1 0 1.05
+2 2.0499999999999998 9.9999999999999998e-17 0 0 0 1 1 0 -0 -0 1 0 1.05
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 6
@@ -245,22 +245,22 @@ So
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="32">
 <![CDATA[
-6 PostfixCount 11
+16 PostfixCount 11
 Edge
 Face
 Vertex
-;:G;XTR;:Hfec:7,F
-;FAC;:Hfec:4,F
-;:G;XTR;:Hfec:7,E
-;:G0;XTR;:Hfec:8,F
-;:U;XTR;:Hfec:7,E
-;:U;XTR;:Hfec:7,V
-;SKT;:Hfec,E
-;SKT;:Hfec,V
+;:G;XTR;:H1078:7,F
+;FAC;:H1078:4,F
+;:G;XTR;:H1078:7,E
+;:G0;XTR;:H1078:8,F
+;:U;XTR;:H1078:7,E
+;:U;XTR;:H1078:7,V
+;SKT;:H1078,E
+;SKT;:H1078,V
 
 MapCount 1
 
-ElementMap 1 6 3
+ElementMap 1 16 3
 
 Edge
 
@@ -268,21 +268,21 @@ ChildCount 0
 
 NameCount 16
 0
-$#1b.6 0
-$#1c.6 0
+$#165a.6 0
+$#165b.6 0
 ;g21.a 0
-$#27.8 0
-$#1d.6 0
+$#1666.8 0
+$#165c.6 0
 ;g4.a 0
-$#28.8 0
-$#1e.6 0
+$#1667.8 0
+$#165d.6 0
 ;g18.a 0
-$#29.8 0
+$#1668.8 0
 ;g15.a 0
-$#2a.8 0
-$#1f.6 0
+$#1669.8 0
+$#165e.6 0
 ;g6.a 0
-$#2b.8 0
+$#166a.8 0
 
 Face
 
@@ -290,13 +290,13 @@ ChildCount 0
 
 NameCount 8
 0
-$#20.4 0
-$#19.4 0
-$#21.4 0
-$#22.4 0
-$#23.4 0
-$#19.5 0
-$#25.7 0
+$#165f.4 0
+$#1658.4 0
+$#1660.4 0
+$#1661.4 0
+$#1662.4 0
+$#1658.5 0
+$#1664.7 0
 
 Vertex
 
@@ -305,15 +305,15 @@ ChildCount 0
 NameCount 11
 0
 ;g21v1.b 0
-$#2d.9 0
+$#166c.9 0
 ;g4v1.b 0
-$#2e.9 0
+$#166d.9 0
 ;g4v2.b 0
-$#2f.9 0
+$#166e.9 0
 ;g18v2.b 0
-$#30.9 0
+$#166f.9 0
 ;g6v1.b 0
-$#31.9 0
+$#1670.9 0
 
 EndMap
 ]]>
@@ -345,7 +345,7 @@ EndMap
       </LinkSub>
     </Property>
     <Property name="Direction" type="App::PropertyVector" status="4">
-      <PropertyVector valueX="0" valueY="-1" valueZ="-4.440892098500626e-16"/>
+      <PropertyVector valueX="0" valueY="-1" valueZ="-4e-16"/>
     </Property>
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
       <ExpressionEngine count="1" cdata="1">
@@ -404,7 +404,7 @@ EndMap
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
     </Property>
     <Property name="Profile" type="App::PropertyLinkSub">
-      <LinkSub value="Sketch001" count="1">
+      <LinkSub value="Sketch005" count="1">
         <Sub value=""/>
       </LinkSub>
     </Property>
@@ -423,7 +423,11 @@ EndMap
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 7
+Locations 8
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
 1
               1               0               0               0 
               0               1               0               0 
@@ -432,14 +436,14 @@ Locations 7
               1               0               0               0 
               0 -4.44089209850063e-16              -1               0 
               0               1 -4.44089209850063e-16               0 
-2  1 1 2 1 0
+2  2 1 3 1 0
 1
               1               0               0              -0 
               0               1               0           7.675 
               0               0               1 3.40838468559923e-15 
-2  1 1 2 1 4 1 0
-2  2 -1 1 -1 0
-2  4 -1 2 -1 1 -1 0
+2  2 1 3 1 5 1 0
+2  3 -1 2 -1 0
+2  5 -1 3 -1 2 -1 0
 Curve2ds 8
 1 4.7123889803846897 0 0 -1 
 1 7.8539816339744828 0 0 -1 
@@ -457,9 +461,9 @@ Curves 10
 1 -1 -1.8500000000000001 0 0 1 0 
 1 2.0499999999999998 -8.2156503822261588e-16 1.8500000000000001 -0 1 4.4408920985006262e-16 
 1 -1 1.8500000000000001 0 1 0 0 
-2 2.0499999999999998 9.9999999999999998e-17 0 0 0 1 1 0 0 0 1 0 1.8500000000000001
+2 2.0499999999999998 9.9999999999999998e-17 0 0 0 1 1 0 -0 -0 1 0 1.8500000000000001
 1 3.0999999999999996 -4.4408920985006261e-32 9.9999999999999998e-17 -0 1 4.4408920985006262e-16 
-2 2.0499999999999998 9.9999999999999998e-17 0 0 0 1 1 0 0 0 1 0 1.05
+2 2.0499999999999998 9.9999999999999998e-17 0 0 0 1 1 0 -0 -0 1 0 1.05
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 6
@@ -487,7 +491,7 @@ Ed
 0
 
 0101000
-+30 3 -30 5 *
++30 4 -30 6 *
 Ve
 1.00000006970187e-07
 -1 -1.85 0
@@ -501,7 +505,7 @@ Ed
 0
 
 0101000
-+28 3 -28 5 *
++28 4 -28 6 *
 Ed
  1e-07 1 1 0
 1  3 0 0 3.05
@@ -512,11 +516,11 @@ Ed
 Wi
 
 0101100
-+29 0 -27 0 -26 3 +26 5 *
++29 0 -27 0 -26 4 +26 6 *
 Fa
 0  1e-07 1 0
 
-0111000
+0101000
 +25 0 *
 Ve
 1.00000006970187e-07
@@ -531,7 +535,7 @@ Ed
 0
 
 0101000
-+23 3 -23 5 *
++23 4 -23 6 *
 Ed
  1.00000006970187e-07 1 1 0
 1  5 0 0 3.7
@@ -542,11 +546,11 @@ Ed
 Wi
 
 0101100
-+27 0 -22 0 -21 3 +21 5 *
++27 0 -22 0 -21 4 +21 6 *
 Fa
 0  1e-07 3 0
 
-0111000
+0101000
 +20 0 *
 Ve
 1.00000000222045e-07
@@ -563,7 +567,7 @@ Ed
 0
 
 0101000
-+18 3 -18 5 *
++18 4 -18 6 *
 Ed
  1e-07 1 1 0
 1  7 0 0 3.05
@@ -574,17 +578,17 @@ Ed
 Wi
 
 0101100
-+22 0 -17 0 -16 3 +16 5 *
++22 0 -17 0 -16 4 +16 6 *
 Fa
 0  1e-07 4 0
 
-0111000
+0101000
 +15 0 *
 Ed
  1e-07 1 1 0
 1  8 0 4.71238898038469 7.85398163397448
-2  3 2 6 4.71238898038469 7.85398163397448
-2  4 2 7 4.71238898038469 7.85398163397448
+2  3 2 7 4.71238898038469 7.85398163397448
+2  4 2 8 4.71238898038469 7.85398163397448
 0
 
 0101000
@@ -592,11 +596,11 @@ Ed
 Wi
 
 0101100
-+29 0 -17 0 -13 3 +13 5 *
++29 0 -17 0 -13 4 +13 6 *
 Fa
 0  1e-07 2 0
 
-0111000
+0101000
 +12 0 *
 Ve
 1e-07
@@ -612,12 +616,12 @@ Ed
 0
 
 0101000
-+10 3 -10 5 *
++10 4 -10 6 *
 Ed
  1e-07 1 1 0
 1  10 0 0 6.28318530717959
-2  7 5 6 0 6.28318530717959
-2  8 5 7 0 6.28318530717959
+2  7 5 7 0 6.28318530717959
+2  8 5 8 0 6.28318530717959
 0
 
 0101100
@@ -625,11 +629,11 @@ Ed
 Wi
 
 0101100
-+9 0 -9 0 -8 3 +8 5 *
++9 0 -9 0 -8 4 +8 6 *
 Fa
 0  1e-07 5 0
 
-0111000
+0101000
 +7 0 *
 Wi
 
@@ -642,38 +646,38 @@ Wi
 Fa
 0  1e-07 6 0
 
-0111000
-+5 3 +4 3 *
+0101000
++5 4 +4 4 *
 Sh
 
 0101100
-+24 0 +19 0 +14 0 -11 0 +6 0 +3 0 -3 4 *
++24 0 +19 0 +14 0 -11 0 +6 0 +3 0 -3 5 *
 So
 
 0100000
 -2 0 *
 
-+1 0 ]]>
++1 1 ]]>
       </Part>
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="32">
 <![CDATA[
-6 PostfixCount 11
+16 PostfixCount 11
 Edge
 Face
 Vertex
-;:G;XTR;:Hfec:7,F
-;FAC;:Hfec:4,F
-;:G;XTR;:Hfec:7,E
-;:G0;XTR;:Hfec:8,F
-;:U;XTR;:Hfec:7,E
-;:U;XTR;:Hfec:7,V
-;SKT;:Hfec,E
-;SKT;:Hfec,V
+;:G;XTR;:H1078:7,F
+;FAC;:H1078:4,F
+;:G;XTR;:H1078:7,E
+;:G0;XTR;:H1078:8,F
+;:U;XTR;:H1078:7,E
+;:U;XTR;:H1078:7,V
+;SKT;:H1078,E
+;SKT;:H1078,V
 
 MapCount 1
 
-ElementMap 1 6 3
+ElementMap 1 16 3
 
 Edge
 
@@ -681,21 +685,21 @@ ChildCount 0
 
 NameCount 16
 0
-$#1b.6 0
-$#1c.6 0
+$#165a.6 0
+$#165b.6 0
 ;g21.a 0
-$#27.8 0
-$#1d.6 0
+$#1666.8 0
+$#165c.6 0
 ;g4.a 0
-$#28.8 0
-$#1e.6 0
+$#1667.8 0
+$#165d.6 0
 ;g18.a 0
-$#29.8 0
+$#1668.8 0
 ;g15.a 0
-$#2a.8 0
-$#1f.6 0
+$#1669.8 0
+$#165e.6 0
 ;g6.a 0
-$#2b.8 0
+$#166a.8 0
 
 Face
 
@@ -703,13 +707,13 @@ ChildCount 0
 
 NameCount 8
 0
-$#20.4 0
-$#19.4 0
-$#21.4 0
-$#22.4 0
-$#23.4 0
-$#19.5 0
-$#25.7 0
+$#165f.4 0
+$#1658.4 0
+$#1660.4 0
+$#1661.4 0
+$#1662.4 0
+$#1658.5 0
+$#1664.7 0
 
 Vertex
 
@@ -718,15 +722,15 @@ ChildCount 0
 NameCount 11
 0
 ;g21v1.b 0
-$#2d.9 0
+$#166c.9 0
 ;g4v1.b 0
-$#2e.9 0
+$#166d.9 0
 ;g4v2.b 0
-$#2f.9 0
+$#166e.9 0
 ;g18v2.b 0
-$#30.9 0
+$#166f.9 0
 ;g6v1.b 0
-$#31.9 0
+$#1670.9 0
 
 EndMap
 ]]>
@@ -754,7 +758,7 @@ TShapes 0
       </Part>
       <ElementMap/>
     </Property>
-    <Property name="TaperAngle" type="App::PropertyAngle">
+    <Property name="TaperAngle" type="App::PropertyAngle" status="4">
       <Float value="0"/>
     </Property>
     <Property name="TaperAngle2" type="App::PropertyAngle" status="4">
@@ -770,7 +774,7 @@ TShapes 0
       <Float value="0"/>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="108"/>
+      <Integer value="230"/>
     </Property>
     <Property name="Type" type="App::PropertyEnumeration">
       <Integer value="0"/>

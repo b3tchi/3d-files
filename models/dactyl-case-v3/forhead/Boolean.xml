@@ -32,8 +32,8 @@
     <Property name="Group" type="App::PropertyLinkList">
       <LinkList count="3">
         <Link value="Reference"/>
-        <Link value="Binder"/>
         <Link value="Binder001"/>
+        <Link value="Binder002"/>
       </LinkList>
     </Property>
     <Property name="InvalidShape" type="App::PropertyBool" status="67108864">
@@ -492,34 +492,34 @@ So
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="36">
 <![CDATA[
-40 PostfixCount 23
+12 PostfixCount 23
 Edge
 Face
 Vertex
-;:H3e5,V
-;:H3e5,E
-;:H3e5,F
-;:M#2a3;FUS;:H3e5:b,E
-;:M2#2a9;FUS;:H3e5:c,E
-;:M;FUS;:H3e5:7,E
-;:M#2b5;FUS;:H3e5:b,E
-;:M#2bb;FUS;:H3e5:b,E
-;:M2#2c1;FUS;:H3e5:c,E
-;:M#2c4;FUS;:H3e5:b,E
-;:M#2db;FUS;:H3e5:b,F
-;:M;FUS;:H3e5:7,F
-;:M#2eb;FUS;:H3e5:b,V
-;:M#2ef;FUS;:H3fe:b,V
-;:M#2f4;FUS;:H3e5:b,V
-;:M#2fa;FUS;:H3e5:b,V
-;:M#2fd;FUS;:H3fe:b,V
-;:M#301;FUS;:H3e5:b,V
-;:M#308;RFI;:H3e5:b,F
-;:M#30a;RFI;:H3e5:b,F
+;:H428,V
+;:H428,E
+;:H428,F
+;:M#bca;FUS;:H428:b,E
+;:M2#bd0;FUS;:H428:c,E
+;:M;FUS;:H428:7,E
+;:M#bdc;FUS;:H428:b,E
+;:M#be2;FUS;:H428:b,E
+;:M2#be8;FUS;:H428:c,E
+;:M#beb;FUS;:H428:b,E
+;:M#c02;FUS;:H428:b,F
+;:M;FUS;:H428:7,F
+;:M#c12;FUS;:H428:b,V
+;:M#c16;FUS;:H441:b,V
+;:M#c1b;FUS;:H428:b,V
+;:M#c21;FUS;:H428:b,V
+;:M#c24;FUS;:H441:b,V
+;:M#c28;FUS;:H428:b,V
+;:M#c2f;RFI;:H428:b,F
+;:M#c31;RFI;:H428:b,F
 
 MapCount 1
 
-ElementMap 1 40 3
+ElementMap 1 12 3
 
 Edge
 
@@ -527,23 +527,23 @@ ChildCount 0
 
 NameCount 18
 0
-$#2a4.8.2a8.2a9 0
-$#2a4.7 0
-$#2b6.a 0
-$#2bc.b 0
-$#2bc.c.2c0.2c1 0
-$#2c5.d 0
-$#291.5 0
-$#2c6.9 0
-$#2b1.9 0
-$#290.5 0
-$#293.5 0
-$#295.5 0
-$#2c7.9 0
-$#2b2.9 0
-$#298.5 0
-$#296.5 0
-$#297.5 0
+$#bcb.8.bcf.bd0 0
+$#bcb.7 0
+$#bdd.a 0
+$#be3.b 0
+$#be3.c.be7.be8 0
+$#bec.d 0
+$#bb8.5 0
+$#bed.9 0
+$#bd8.9 0
+$#bb7.5 0
+$#bba.5 0
+$#bbc.5 0
+$#bee.9 0
+$#bd9.9 0
+$#bbf.5 0
+$#bbd.5 0
+$#bbe.5 0
 
 Face
 
@@ -551,13 +551,13 @@ ChildCount 0
 
 NameCount 8
 0
-$#2dc.e 0
-$#2dd.f 0
-$#29a.6 0
-$#2de.f 0
-$#309.16 0
-$#29b.6 0
-$#30c.17 0
+$#c03.e 0
+$#c04.f 0
+$#bc1.6 0
+$#c05.f 0
+$#c30.16 0
+$#bc2.6 0
+$#c33.17 0
 
 Vertex
 
@@ -565,18 +565,18 @@ ChildCount 0
 
 NameCount 13
 0
-$#2f1.11 0
-$#2f5.12 0
-$#2ec.10 0
-$#2fb.13 0
-$#2fe.14 0
-$#302.15 0
-$#28b.4 0
-$#28c.4 0
-$#288.4 0
-$#28a.4 0
-$#28e.4 0
-$#28d.4 0
+$#c18.11 0
+$#c1c.12 0
+$#c13.10 0
+$#c22.13 0
+$#c25.14 0
+$#c29.15 0
+$#bb2.4 0
+$#bb3.4 0
+$#baf.4 0
+$#bb1.4 0
+$#bb5.4 0
+$#bb4.4 0
 
 EndMap
 ]]>
@@ -605,7 +605,7 @@ TShapes 0
       <ElementMap/>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="157"/>
+      <Integer value="224"/>
     </Property>
     <Property name="Type" type="App::PropertyEnumeration">
       <Integer value="0"/>
@@ -619,8 +619,8 @@ TShapes 0
     <Property name="_ExportChildren" type="App::PropertyLinkList" status="218104320">
       <LinkList count="3">
         <Link value="Reference"/>
-        <Link value="Binder"/>
         <Link value="Binder001"/>
+        <Link value="Binder002"/>
       </LinkList>
     </Property>
     <Property name="_GroupVersion" type="App::PropertyInteger" status="218103808">
