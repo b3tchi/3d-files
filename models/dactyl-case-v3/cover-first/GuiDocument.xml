@@ -6,10 +6,8 @@
  FreeCAD Document, see http://www.freecadweb.org for more information...
 -->
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
-<Expand  count="1">
-  <Expand name="Body" count="11">
-    <Expand name="Origin"/>
-    <Expand name="Pad"/>
+<Expand  count="2">
+  <Expand name="Body" count="9">
     <Expand name="Boolean003"/>
     <Expand name="Pad002"/>
     <Expand name="Pad003"/>
@@ -20,21 +18,39 @@
     <Expand name="Pad012"/>
     <Expand name="Pad013"/>
   </Expand>
+  <Expand name="CopyOnChangeGroup" count="1">
+    <Expand name="Part" count="1">
+      <Expand name="Body012"/>
+    </Expand>
+  </Expand>
 </Expand>
-  <Camera>
+  <Camera extra="0" id="24" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position 34.367805 52.171425 51.472904
-  orientation 0.22059397 0.33869049 0.91467321  2.0670273
-  nearDistance 60.360367
-  farDistance 148.88963
+  position -96.132759 -26.044777 -77.700356
+  orientation 0.47758007 0.7669192 -0.42866331  3.6633065
+  nearDistance 27.067305
+  farDistance 138.64601
   aspectRatio 1
   focalDistance 72.697922
-  height 21.82016
+  height 74.776344
 
 }
-## overrideMode: Flat Lines
-  ]]>
+## overrideMode: Flat Lines]]>
   </Camera>
+  <View3D id="24"><![CDATA[
+  <Properties Count="3" TransientCount="0">
+    <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
+      <Integer value="6"/>
+    </Property>
+    <Property name="ShowNaviCube" type="App::PropertyBool" status="1">
+      <Bool value="true"/>
+    </Property>
+    <Property name="ThumbnailView" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+  </Properties>
+]]>
+  </View3D>
 </Document>

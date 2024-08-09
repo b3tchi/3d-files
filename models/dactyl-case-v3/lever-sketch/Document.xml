@@ -38,7 +38,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-08-07T22:51:06Z"/>
+      <String value="2024-08-09T03:56:22Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -81,19 +81,19 @@
   </Properties>
   <Objects Count="12" Dependencies="1">
     <ObjectDeps Name="Body" Count="5">
-      <Dep Name="Origin"/>
       <Dep Name="Sketch"/>
-      <Dep Name="Sketch001"/>
       <Dep Name="Sketch002"/>
+      <Dep Name="Sketch001"/>
       <Dep Name="Sketch003"/>
+      <Dep Name="Origin"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
-      <Dep Name="Z_Axis"/>
-      <Dep Name="YZ_Plane"/>
       <Dep Name="XZ_Plane"/>
-      <Dep Name="XY_Plane"/>
       <Dep Name="X_Axis"/>
       <Dep Name="Y_Axis"/>
+      <Dep Name="Z_Axis"/>
+      <Dep Name="XY_Plane"/>
+      <Dep Name="YZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
@@ -111,10 +111,10 @@
       <Dep Name="XZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="Sketch003" Count="2">
-      <Dep Name="XZ_Plane"/>
       <Dep Name="Sketch001"/>
+      <Dep Name="XZ_Plane"/>
     </ObjectDeps>
-    <Object type="PartDesign::Body" name="Body" id="392" revision="79" file="Body.xml" />
+    <Object type="PartDesign::Body" name="Body" id="392" revision="89" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="393" revision="0" file="Origin.xml" />
     <Object type="App::Line" name="X_Axis" id="394" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="395" revision="2" file="Y_Axis.xml" />
@@ -125,7 +125,7 @@
     <Object type="Sketcher::SketchObject" name="Sketch" id="400" revision="3677" file="Sketch.xml" />
     <Object type="Sketcher::SketchObject" name="Sketch001" id="401" revision="1398" file="Sketch001.xml" />
     <Object type="Sketcher::SketchObject" name="Sketch002" id="402" revision="869" file="Sketch002.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch003" id="405" revision="556" file="Sketch003.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch003" id="405" revision="2248" Touched="1" file="Sketch003.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>
