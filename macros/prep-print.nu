@@ -35,6 +35,8 @@ export def --env printer-setup [
 		alias "freecad-linkstage3 --console" = C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240407\bin\FreeCADCmd.exe
 		alias slicer-prusa = prusa-slicer-console.exe
 	}
+
+	# print (scope aliases)
 }
 
 export def printer-check [] {
