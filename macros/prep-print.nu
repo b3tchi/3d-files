@@ -1,6 +1,10 @@
 export-env {
     $env.3D_PRINTER_IP = ''
     $env.3D_PRINTER_KEY = ''
+
+	if $nu.os-info.name == 'linux' {
+		$env.TEMP = '/tmp/3d-files' 
+	}
 }
 
 def configs [] {
@@ -21,9 +25,16 @@ export def --env printer-setup [
     $env.3D_PRINTER_IP = $url
     $env.3D_PRINTER_KEY = (input -s 'enter api key: ')
 
-	alias "freecad-linkstage3" = C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240407\bin\FreeCADLink.exe
-	alias "freecad-linkstage3 --console" = C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240407\bin\FreeCADCmd.exe
-	alias slicer-prusa = prusa-slicer-console.exe
+	if $nu.os-info.name == 'linux' {
+		mkdir $env.TEMP
+		alias slicer-prusa = prusa-slicer
+	}
+
+	if $nu.os-info.name == 'windows' {
+		alias "freecad-linkstage3" = C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240407\bin\FreeCADLink.exe
+		alias "freecad-linkstage3 --console" = C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240407\bin\FreeCADCmd.exe
+		alias slicer-prusa = prusa-slicer-console.exe
+	}
 }
 
 export def printer-check [] {
