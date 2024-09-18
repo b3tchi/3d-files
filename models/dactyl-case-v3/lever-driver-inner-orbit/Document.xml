@@ -2,7 +2,7 @@
 <!--
  FreeCAD Document, see http://www.freecadweb.org for more information...
 -->
-<Document SchemaVersion="4" ProgramVersion="2024.408R14555 (Git shallow)" FileVersion="2" Uid="4e80637c-dad5-4700-a1cf-4ab24776c658" StringHasher="1">
+<Document SchemaVersion="4" ProgramVersion="2024.409R14555 (Git shallow)" FileVersion="2" Uid="4e80637c-dad5-4700-a1cf-4ab24776c658" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
   <StringHasher2  count="245">
 <![CDATA[
@@ -282,7 +282,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-08-04T19:23:22Z"/>
+      <String value="2024-09-18T08:21:25Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -325,16 +325,16 @@
   </Properties>
   <Objects Count="12" Dependencies="1">
     <ObjectDeps Name="Body" Count="5">
-      <Dep Name="Origin"/>
       <Dep Name="Pad"/>
       <Dep Name="Hole"/>
       <Dep Name="Chamfer"/>
+      <Dep Name="Origin"/>
       <Dep Name="Sketch"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
+      <Dep Name="X_Axis"/>
       <Dep Name="Y_Axis"/>
       <Dep Name="Z_Axis"/>
-      <Dep Name="X_Axis"/>
       <Dep Name="XY_Plane"/>
       <Dep Name="XZ_Plane"/>
       <Dep Name="YZ_Plane"/>
@@ -353,12 +353,12 @@
       <Dep Name="Sketch"/>
     </ObjectDeps>
     <ObjectDeps Name="Hole" Count="2">
-      <Dep Name="Body"/>
       <Dep Name="Pad"/>
+      <Dep Name="Body"/>
     </ObjectDeps>
     <ObjectDeps Name="Chamfer" Count="2">
-      <Dep Name="Body"/>
       <Dep Name="Hole"/>
+      <Dep Name="Body"/>
     </ObjectDeps>
     <Object type="PartDesign::Body" name="Body" id="3527" revision="67" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="3528" revision="0" file="Origin.xml" />
