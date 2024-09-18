@@ -33,7 +33,7 @@
     <Property name="LinkTransform" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097418">
       <Bool value="true"/>
     </Property>
-    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
+    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097413">
       <XLink file="" stamp="" name="Link005" sub="Box003.Edge461" shadow="Box003.;#7135;:H8a6,E.Edge461"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
@@ -50,7 +50,7 @@
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 10
+Locations 21
 1
               1               0               0               0 
               0               1               0               0 
@@ -59,6 +59,50 @@ Locations 10
              -1 -3.34246625178994e-19 -1.65389215948552e-15 66.724999999984 
 -3.34246625178731e-19               1 -1.59012168205525e-16 -28.6000000000016 
 1.65389215948552e-15 -1.59012168205525e-16              -1 8.89999999999914 
+1
+              1               0               0            -2.5 
+              0               1               0            -7.5 
+              0               0               1              -3 
+1
+              1               0               0              -9 
+              0               1               0              -9 
+              0               0               1               3 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+-1.68587396487396e-07 -0.999999999999986               0              77 
+0.999999999999986 -1.68587396487396e-07               0            -8.1 
+              0               0               1              -3 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
 1
               1               0               0              -0 
               0               1               0              -0 
@@ -83,44 +127,51 @@ Locations 10
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
-2  3 1 4 1 5 1 6 -1 7 1 8 1 0
-2  8 -1 7 -1 6 1 5 -1 4 -1 3 -1 0
+2  3 1 4 -1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 -1 18 1 19 1 0
+2  19 -1 18 -1 17 1 16 -1 15 -1 14 -1 13 -1 12 -1 11 -1 10 -1 9 -1 8 -1 7 -1 6 -1 5 -1 4 1 3 -1 0
 Curve2ds 0
 Curves 1
-2 9.625 -20 2.2500000000000089 0 -1 4.4408920985006262e-16 1 0 0 -0 4.4408920985006262e-16 1 1.05
+1 -9 -8.5 15 -0 -0 -1 
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
 Triangulations 0
 
-TShapes 4
+TShapes 5
 Ve
-1.00000000444089e-07
-10.675 -20 2.25000000000001
+1.50000014321447e-07
+84.0000004214684 -10.5999988198882 4
+0 0
+
+0101101
+*
+Ve
+1.5e-07
+84.0000004214684 -10.5999988198882 1.5
 0 0
 
 0101101
 *
 Ed
- 1e-07 1 1 0
-1  1 0 0 6.28318530717959
+ 1.5e-07 1 1 0
+1  1 0 2 4.5
 0
 
-0101100
-+4 10 -4 10 *
+0101000
++5 21 -4 21 *
 Co
 
 0100000
-+3 9 *
++3 20 *
 Co
 
-0100000
+1100000
 +2 2 *
 
 +1 1 ]]>
       </Part>
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
-      <ElementMap2 count="2">
+      <ElementMap2 count="3">
 <![CDATA[
 11 PostfixCount 2
 Edge
@@ -136,15 +187,16 @@ ChildCount 0
 
 NameCount 2
 0
-;#141;:X;:H8a7:3,E.0 0
+;#14a;:X;:H8a7:3,E.0 0
 
 Vertex
 
 ChildCount 0
 
-NameCount 2
+NameCount 3
 0
-;#13f;:X;:H8a7:3,V.0 0
+;#147;:X;:H8a7:3,V.0 0
+;#148;:X;:H8a7:3,V.0 0
 
 EndMap
 ]]>
