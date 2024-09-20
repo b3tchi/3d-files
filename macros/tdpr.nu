@@ -48,7 +48,7 @@ def parts-v2 [context: string] {
 	ls -s ($env.PWD | path join models $model ) | where type == dir |get name
 }
 
-export def --env printer-setup [
+export def --env setup [
     url: string
     ] {
 
@@ -65,14 +65,14 @@ def logd [
 	log debug $"(ansi yellow)($description): ($msg)(ansi reset)"
 }
 
-export def printer-check [] {
+export def check [] {
     print $"url:($env.3D_PRINTER_IP)"
     print $"api-key:($env.3D_PRINTER_KEY)"
  	let resp = http get --headers [X-Api-Key $env.3D_PRINTER_KEY] $"http://($env.3D_PRINTER_IP)/api/v1/status"
 	return $resp.printer.state
 }
 
-export def send [
+export def send-v1 [
     model: string@models
     part: string@parts
     config: string@configs
@@ -85,7 +85,7 @@ export def send [
     print $version
     let $file_stl = if $stl == null { create-stl $model $part $version } else { move-stl $model $part $version $stl }
     print $file_stl
-    let $file_gcode = create-gcode $model $part $version $config
+    let $file_gcode = create-gcode-v1 $model $part $version $config
     print $file_gcode
 	#printing code
 	print-gcode $model $part $version
@@ -102,29 +102,23 @@ export def part-version [
     ] {
 
     let branch = (git rev-parse --abbrev-ref HEAD)
-    let tag_git = (git describe --tags --match $"($model)/($part)/*" --abbrev=0 HEAD)
+	logd branch $branch
 
+    let tag_git = (git describe --tags --match $"($model)/($part)/*" --abbrev=0 HEAD)
     let tag_build = (if $tag_git  == '' { '0.1.0' } else { $tag_git })
 
 	mut tag_parts = [$tag_build]
-
-	print $branch
-
 	if ($branch != 'main') {
-
 		if ($next_timestamp == null) {
 			$tag_parts = ( $tag_parts | append '-next' )
 		} else {
 			$tag_parts = ( $tag_parts | append '-next+' )
 			$tag_parts = ( $tag_parts | append $next_timestamp )
 		}
-
-	} else {
-		print 'wtf'
 	}
 
-	print ($tag_parts)
     let version = ( $tag_parts | str join )
+	logd version ($version)
 
     return $version
 }
@@ -162,7 +156,7 @@ export def create-stl [
     return $output_stl
 }
 
-export def send-v2 [
+export def send [
     --config: string@configs
     model: string@models
     ...parts: string@parts-v2
@@ -194,12 +188,26 @@ export def send-v2 [
 	logd stls ($stls | to text)
 
 	let part_names = $part_names | str join '-'
-	let gcode_name = if (( $parts | length ) > 1) { 'multi-' + $next_timestamp + '-' + $part_names } else { $part_names }
 
+	if (( $parts | length ) > 1) { 
+		'multi-' + $next_timestamp + '-' + $part_names 
+	} else { 
+		$part_names 
+	}
+
+	let final_name = if (( $parts | length ) > 1) { 'multi-' + $next_timestamp + '-' + $part_names } else { $part_names }
+	
+	let final_stl = if (( $parts | length ) > 1) {
+		merge-stl $final_name $stls
+	} else {
+		$stls | get 0
+	}
+
+	# let stl_name = if (( $parts | length ) > 1) { 'multi-' + $next_timestamp + '-' + $part_names } else { $part_names }
 	logd part_names ($part_names | to text)
-	logd gcode_name $gcode_name
+	logd gcode_name $final_name
 
-    let file_gcode = create-gcode-v2 $config_name $gcode_name $stls
+    let file_gcode = create-gcode $config_name $final_name $final_stl
 
 	print $file_gcode
 	#printing code
@@ -208,23 +216,83 @@ export def send-v2 [
 	return $file_gcode
 
 }
-def create-gcode-v2 [
+
+def generate-thumb [ 
+    stl_name: string
+    png_name: string
+	] {
+
+#	using latest version of stl-thumb stl-thumb-git standard version not working for me
+#	installed via yay -S stl-thumb-git
+	
+	stl-thumb -s 124 $stl_name $png_name
+}
+
+def merge-stl [
+    output_name: string
+    stls: list
+    ] {
+
+    let output_stl = ( $env.TEMP | path expand | path join $"($output_name).stl" )
+
+	let args = [--export-stl --merge --ensure-on-bed --output $output_stl] | append $stls
+
+	logd slicer-args ($args | to text)
+	
+	try { prusa-slicer ...$args } catch { log error 'slicer command issue' }
+
+    return $output_stl
+}
+
+export def embed-thumbnail [
+	img_path: string 
+	gcode_path: string
+] {
+    let width = 124
+    let height = 124
+
+    # Convert image to base64 and save to a temporary variable
+    let image_base64 = (open $img_path | encode base64)
+
+    # Calculate the size of the base64 data
+    let size = ($image_base64 | str length)
+
+	let fixed_width = ($image_base64 | str replace --all -r '(.{78})' "; $1\n")
+
+	let img_encoded = [
+		$"; thumbnail begin ($width) x ($height) ($size)" 
+		$"; ($image_base64)"
+		"; thumbnail end"
+	]
+
+	logd encoded ( $fixed_width | to text )
+
+    # Open the G-code file and embed the thumbnail
+    open $gcode_path 
+		| prepend $fixed_width
+		| save --force ($gcode_path | path parse --extension gcode |  upsert extension { '-thumb.gcode'} | path join)
+}
+
+def create-gcode [
     config: string
     gcode_name: string
-    stls: list
+    stl_name: string
     ] {
 
 
     let printer_config = ( './configs' | path expand | path join $config )
-    # let input_stl = ( $env.TEMP | path expand | path join $"($part)-($version).stl" )
     let output_gcode = ( $env.TEMP | path expand | path join $"($gcode_name).gcode" )
 
-	prusa-slicer --load $printer_config --export-gcode --output $output_gcode ...$stls
+	let args = [--load $printer_config --export-gcode --merge --ensure-on-bed --output $output_gcode $stl_name]
+
+	logd slicer-args ($args | to text)
+	
+	try { prusa-slicer ...$args } catch { log error 'slicer command issue' }
 
     return $output_gcode
 }
 
-def create-gcode [
+def create-gcode-v1 [
     model: string@models
     part: string@parts
     version: string
