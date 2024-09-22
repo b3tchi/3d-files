@@ -88,7 +88,7 @@ export def send-v1 [
     let $file_gcode = create-gcode-v1 $model $part $version $config
     print $file_gcode
 	#printing code
-	print-gcode $model $part $version
+	print-gcode-v1 $model $part $version
 
 	return $file_gcode
 
@@ -189,35 +189,30 @@ export def send [
 
 	let part_names = $part_names | str join '-'
 
-	if (( $parts | length ) > 1) { 
-		'multi-' + $next_timestamp + '-' + $part_names 
-	} else { 
-		$part_names 
-	}
-
 	let final_name = if (( $parts | length ) > 1) { 'multi-' + $next_timestamp + '-' + $part_names } else { $part_names }
 	
-	let final_stl = if (( $parts | length ) > 1) {
-		merge-stl $final_name $stls
-	} else {
-		$stls | get 0
+	let final_stl = if (( $parts | length ) > 1) { 
+		merge-stl $final_name $stls 
+	} else { 
+		$stls | get 0 
 	}
 
-	# let stl_name = if (( $parts | length ) > 1) { 'multi-' + $next_timestamp + '-' + $part_names } else { $part_names }
 	logd part_names ($part_names | to text)
 	logd gcode_name $final_name
 
-    let file_gcode = create-gcode $config_name $final_name $final_stl
+	let thumb_path = generate-thumb $final_stl
+    let gcode_path = create-gcode $config_name $final_stl
 
-	print $file_gcode
-	#printing code
-	#print-gcode $model $part $version
+	embed-thumbnail $thumb_path $gcode_path 
 
-	return $file_gcode
+	print-gcode $model $gcode_path
+	print $gcode_path
+
+	return $gcode_path
 
 }
 
-def generate-thumb [ 
+def generate-thumb-v0 [ 
     stl_name: string
     png_name: string
 	] {
@@ -225,7 +220,30 @@ def generate-thumb [
 #	using latest version of stl-thumb stl-thumb-git standard version not working for me
 #	installed via yay -S stl-thumb-git
 	
-	stl-thumb -s 124 $stl_name $png_name
+	stl-thumb -s 220 $stl_name $png_name
+}
+
+export def generate-thumb [ 
+    stl_path: string
+	] {
+	let scad_path = ( $stl_path | path parse --extension stl | upsert extension { 'scad'} | path join )
+	'import("' + $stl_path + '");' | save --force $scad_path
+
+	let output_png = ($stl_path | path parse --extension 'stl' | upsert extension { 'png'} | path join)
+
+	let args = [
+		-o $output_png
+		'--imgsize=220,124'
+		--viewall
+		'--colorscheme=Tomorrow Night'
+		$scad_path
+
+	]
+	logd args ( $args | to text) 
+
+	try { openscad ...$args } catch { log error 'thumb gen error' }
+
+    return $output_png
 }
 
 def merge-stl [
@@ -245,45 +263,52 @@ def merge-stl [
 }
 
 export def embed-thumbnail [
-	img_path: string 
+	png_path: string 
 	gcode_path: string
 ] {
-    let width = 124
+    let width = 220
     let height = 124
 
     # Convert image to base64 and save to a temporary variable
-    let image_base64 = (open $img_path | encode base64)
+    let image_base64 = (open $png_path | encode base64)
 
     # Calculate the size of the base64 data
     let size = ($image_base64 | str length)
 
-	let fixed_width = ($image_base64 | str replace --all -r '(.{78})' "; $1\n")
+	let fixed_width = ( $image_base64 | str replace --all -r '(.{78})' "; $1\n" | str replace -r "(.{1,78})$" "; $1" )
 
 	let img_encoded = [
-		$"; thumbnail begin ($width) x ($height) ($size)" 
-		$"; ($image_base64)"
-		"; thumbnail end"
+		';'
+		$"; thumbnail begin ($width)x($height) ($size)" 
+		$"($fixed_width)"
+		'; thumbnail end'
+		';'
 	]
 
 	logd encoded ( $fixed_width | to text )
 
+	mut gcode_content = open $gcode_path | lines
+
+	$gcode_content
+		| save --force ($gcode_path | path parse | upsert extension { '.gcode.bckp'} | path join)
+	
     # Open the G-code file and embed the thumbnail
-    open $gcode_path 
-		| prepend $fixed_width
-		| save --force ($gcode_path | path parse --extension gcode |  upsert extension { '-thumb.gcode'} | path join)
+	$gcode_content = ( $gcode_content | insert 2 $img_encoded | flatten | flatten )
+    $gcode_content | save --force ( $gcode_path )
+
 }
 
-def create-gcode [
+export def create-gcode [
     config: string
-    gcode_name: string
-    stl_name: string
+    stl_path: string
     ] {
 
 
     let printer_config = ( './configs' | path expand | path join $config )
-    let output_gcode = ( $env.TEMP | path expand | path join $"($gcode_name).gcode" )
 
-	let args = [--load $printer_config --export-gcode --merge --ensure-on-bed --output $output_gcode $stl_name]
+	let output_gcode = ($stl_path | path parse --extension 'stl' | upsert extension { 'gcode'} | path join)
+
+	let args = [--load $printer_config --export-gcode --ensure-on-bed --output $output_gcode $stl_path]
 
 	logd slicer-args ($args | to text)
 	
@@ -308,7 +333,7 @@ def create-gcode-v1 [
     return $output_gcode
 }
 
-def print-gcode [
+def print-gcode-v1 [
     model: string@models
     part: string@parts
     version: string
@@ -322,4 +347,26 @@ def print-gcode [
 	let printer_url = $"http://($printer_ip)/api/v1/files/usb/($model)/($part)-($version).gcode"
 	curl -X PUT --header $"X-Api-Key: ($api_key)" -H 'Print-After-Upload: ?0' -H 'Overwrite: ?0' -F $"file=@($input_gcode)" -F 'path=' $printer_url
 
+}
+def print-gcode [
+    model: string@models
+	gcode_path: string
+	] {
+
+	let gcode_name = ( $gcode_path | path basename )
+	let api_key = $env.3D_PRINTER_KEY
+	let printer_ip = $env.3D_PRINTER_IP
+
+	if ( gcode_name | length ) > 88 {
+		
+
+	}
+
+	logd gcode_name $gcode_name
+
+ 	#working !!!!
+	let printer_url = $"http://($printer_ip)/api/v1/files/usb/($model)/($gcode_name)"
+	curl -X PUT --header $"X-Api-Key: ($api_key)" -H 'Print-After-Upload: ?0' -H 'Overwrite: ?0' -F $"file=@($gcode_path)" -F 'path=' $printer_url
+
+	logd printer_url $printer_url
 }
