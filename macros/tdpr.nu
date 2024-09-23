@@ -54,7 +54,6 @@ export def --env setup [
 
     $env.3D_PRINTER_IP = $url
     $env.3D_PRINTER_KEY = (input -s 'enter api key: ')
-
 }
 
 def logd [
@@ -91,7 +90,6 @@ export def send-v1 [
 	print-gcode-v1 $model $part $version
 
 	return $file_gcode
-
 }
 
 
@@ -162,43 +160,51 @@ export def send [
     ...parts: string@parts-v2
     ] {
 
-	log debug test
-	log error test
-
-	mut stls = []
-	mut part_names = []
-
 	let next_timestamp = (date now | format date %Y%m%d%H%M%S)
-
-	let $config_name = if ($config == null) { 'prototype.ini' } else { $config }
-
-	for $part in $parts {
-		let file_version = part-version $model $part $next_timestamp 
-		let name_version = part-version $model $part
-
-		logd version $file_version
-
-		$part_names = $part_names | append $"($part)-(if ( $parts | length ) > 1 { $name_version } else { $file_version})"
-		let file_stl = create-stl $model $part $file_version
-
-		logd stl_name $file_stl
-		$stls = ( $stls | append $file_stl )
-	}
-
-	logd stls ($stls | to text)
-
-	let part_names = $part_names | str join '-'
-
-	let final_name = if (( $parts | length ) > 1) { 'multi-' + $next_timestamp + '-' + $part_names } else { $part_names }
 	
-	let final_stl = if (( $parts | length ) > 1) { 
-		merge-stl $final_name $stls 
-	} else { 
-		$stls | get 0 
-	}
+	mut final_stl = ''
 
-	logd part_names ($part_names | to text)
-	logd gcode_name $final_name
+	if ( $parts | length ) > 1 {
+
+		mut stls = []
+		mut part_names = []
+		mut multi_part_names = []
+
+		for $part in $parts {
+
+			let name_version = ( (part-version $model $part) | str replace '-next' 'n' )
+			$part_names = $part_names | append $"($part | split row '-' | each {|row| $row |str substring 0..1}| str join '' )@($name_version)"
+
+			let file_version = part-version $model $part $next_timestamp 
+			let file_stl = create-stl $model $part $file_version
+
+			logd version $file_version
+			logd stl_name $file_stl
+
+			$stls = ( $stls | append $file_stl )
+		}
+
+		logd stls ($stls | to text)
+		logd part_names ($part_names | to text)
+
+		let part_names = $part_names | uniq --count | each {|row| $"($row.count)($row.value)"}| str join '-'
+
+		let final_name =  ['x' $part_names $next_timestamp] | str join '-' 
+
+		logd final_name ($final_name | to text)
+
+		$final_stl = merge-stl $final_name $stls 
+
+	} else {
+
+		let $part = ( $parts | get 0 )
+
+		let file_version = part-version $model $part $next_timestamp
+
+		$final_stl = create-stl $model $part $file_version
+	}
+	
+	let $config_name = if ($config == null) { 'prototype.ini' } else { $config }
 
 	let thumb_path = generate-thumb $final_stl
     let gcode_path = create-gcode $config_name $final_stl
@@ -209,7 +215,6 @@ export def send [
 	print $gcode_path
 
 	return $gcode_path
-
 }
 
 def generate-thumb-v0 [ 
@@ -265,15 +270,15 @@ def merge-stl [
 export def embed-thumbnail [
 	png_path: string 
 	gcode_path: string
-] {
-    let width = 220
-    let height = 124
+	] {
+	let width = 220
+	let height = 124
 
-    # Convert image to base64 and save to a temporary variable
-    let image_base64 = (open $png_path | encode base64)
+	# Convert image to base64 and save to a temporary variable
+	let image_base64 = (open $png_path | encode base64)
 
-    # Calculate the size of the base64 data
-    let size = ($image_base64 | str length)
+	# Calculate the size of the base64 data
+	let size = ($image_base64 | str length)
 
 	let fixed_width = ( $image_base64 | str replace --all -r '(.{78})' "; $1\n" | str replace -r "(.{1,78})$" "; $1" )
 
@@ -290,12 +295,11 @@ export def embed-thumbnail [
 	mut gcode_content = open $gcode_path | lines
 
 	$gcode_content
-		| save --force ($gcode_path | path parse | upsert extension { '.gcode.bckp'} | path join)
-	
-    # Open the G-code file and embed the thumbnail
-	$gcode_content = ( $gcode_content | insert 2 $img_encoded | flatten | flatten )
-    $gcode_content | save --force ( $gcode_path )
+	| save --force ($gcode_path | path parse | upsert extension { 'gcode.bckp'} | path join)
 
+	# Open the G-code file and embed the thumbnail
+	$gcode_content = ( $gcode_content | insert 2 $img_encoded | flatten | flatten )
+	$gcode_content | save --force ( $gcode_path )
 }
 
 export def create-gcode [
@@ -356,11 +360,6 @@ def print-gcode [
 	let gcode_name = ( $gcode_path | path basename )
 	let api_key = $env.3D_PRINTER_KEY
 	let printer_ip = $env.3D_PRINTER_IP
-
-	if ( gcode_name | length ) > 88 {
-		
-
-	}
 
 	logd gcode_name $gcode_name
 
