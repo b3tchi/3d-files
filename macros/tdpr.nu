@@ -42,7 +42,11 @@ def parts [context: string] {
 def parts-v2 [context: string] {
 	logd context $context
 	let arguments = $context | split row ' ' | skip 2
-	let model_position = if ('--config' in $arguments) { 2 } else { 0 }
+	mut model_position = 0
+
+	$model_position += (if ('--config' in $arguments) { 2 } else {0})
+	$model_position += (if ('--validate' in $arguments) { 1 } else {0})
+
 	let model = $arguments | get $model_position
 
 	ls -s ($env.PWD | path join models $model ) | where type == dir |get name
@@ -155,12 +159,15 @@ export def create-stl [
 }
 
 export def send [
-    --config: string@configs
-    model: string@models
-    ...parts: string@parts-v2
+    --config: string@configs #prit settings
+	--validate #validate layout is properly set
+    model: string@models #select what model is used
+    ...parts: string@parts-v2 #select which parts to print
     ] {
 
 	let next_timestamp = (date now | format date %Y%m%d%H%M%S)
+
+	let $config_name = if ($config == null) { 'prototype.ini' } else { $config }
 	
 	mut final_stl = ''
 
@@ -193,7 +200,7 @@ export def send [
 
 		logd final_name ($final_name | to text)
 
-		$final_stl = merge-stl $final_name $stls 
+		$final_stl = merge-stl $validate $final_name $config_name $stls 
 
 	} else {
 
@@ -204,7 +211,6 @@ export def send [
 		$final_stl = create-stl $model $part $file_version
 	}
 	
-	let $config_name = if ($config == null) { 'prototype.ini' } else { $config }
 
 	let thumb_path = generate-thumb $final_stl
     let gcode_path = create-gcode $config_name $final_stl
@@ -252,17 +258,26 @@ export def generate-thumb [
 }
 
 def merge-stl [
+	validate: bool
     output_name: string
+	config_name:string
     stls: list
     ] {
 
     let output_stl = ( $env.TEMP | path expand | path join $"($output_name).stl" )
+    let config_path = ( './configs' | path expand | path join $config_name )
 
-	let args = [--export-stl --merge --ensure-on-bed --output $output_stl] | append $stls
+	let args = [--load $config_path --export-stl --merge --split --ensure-on-bed --output $output_stl] | append $stls
+
+	try { prusa-slicer ...$args } catch { log error 'slicer command issue' }
 
 	logd slicer-args ($args | to text)
-	
-	try { prusa-slicer ...$args } catch { log error 'slicer command issue' }
+
+	if $validate {
+		cd $env.TEMP
+		prusa-slicer $output_stl --output $output_stl
+		cd -
+	}
 
     return $output_stl
 }
