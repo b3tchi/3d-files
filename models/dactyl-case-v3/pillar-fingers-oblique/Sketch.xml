@@ -26,7 +26,7 @@
       <LinkSub value="" count="0">
       </LinkSub>
     </Property>
-    <Property name="Constraints" type="Sketcher::PropertyConstraintList">
+    <Property name="Constraints" type="Sketcher::PropertyConstraintList" status="1">
       <ConstraintList count="16">
         <Constrain Name="" Type="1" Value="0" First="0" FirstPos="3" Second="-1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="13" Value="0" First="1" FirstPos="3" Second="-1" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
@@ -40,7 +40,7 @@
         <Constrain Name="" Type="14" Value="0" First="2" FirstPos="1" Second="4" SecondPos="2" Third="-1" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="7" Value="1.85" First="2" FirstPos="1" Second="1" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="10.56955432891846" LabelPosition="-1.369748830795288" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="7" Value="1.6" First="0" FirstPos="3" Second="2" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="4" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-        <Constrain Name="" Type="7" Value="8" First="2" FirstPos="1" Second="2" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="4" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="7" Value="8" First="2" FirstPos="1" Second="2" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="7.368756771087646" LabelPosition="0.2583992481231689" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="12" Value="0" First="1" FirstPos="0" Second="0" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="18" Value="2.1" First="1" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="4" LabelPosition="0.2617993950843811" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="8" Value="3.7" First="3" FirstPos="2" Second="3" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="3.084208011627197" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
@@ -211,17 +211,17 @@ Curve2ds 4
 1 0 0 1 0 
 1 0 -19.800000000000001 1 0 
 Curves 6
-2 2.7755575615628914e-17 0 0 0 0 1 1 0 -0 -0 1 0 1.05
-2 -4.5499999999999989 0 0 0 0 1 1 0 -0 -0 1 0 1.05
-1 -6.3999999999999995 1.8500000000000001 0 1 0 0 
+2 2.775557561562891e-17 0 0 0 0 1 1 0 0 0 1 0 1.05
+2 -4.5499999999999989 0 0 0 0 1 1 0 0 0 1 0 1.05
+1 -6.3999999999999986 1.8500000000000001 0 1 0 0 
 1 1.6000000000000001 1.8500000000000001 0 0 -1 0 
 1 1.6000000000000001 -1.8500000000000001 0 -1 0 0 
-1 -6.3999999999999995 -1.8500000000000001 0 0 1 0 
+1 -6.3999999999999986 -1.8500000000000001 0 0 1 0 
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 2
-2 2.7755575615628914e-17 0 0 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
-2 -4.5499999999999989 0 0 -0 1 4.4408920985006262e-16 1 0 0 -0 -4.4408920985006262e-16 1 1.05
+2 2.775557561562891e-17 0 0 -0 1 4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.05
+2 -4.5499999999999989 0 0 -0 1 4.4408920985006262e-16 1 0 0 0 -4.4408920985006262e-16 1 1.05
 Triangulations 0
 
 TShapes 16
@@ -273,7 +273,7 @@ Ve
 0101101
 *
 Ve
-1.00000000222045e-07
+1.00000000666134e-07
 1.6 1.85 0
 0 0
 
@@ -301,7 +301,7 @@ Ed
 0101000
 +9 0 -7 0 *
 Ve
-1.00000000444089e-07
+1.00000000888178e-07
 -6.4 -1.85 0
 0 0
 

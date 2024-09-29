@@ -2,12 +2,11 @@
 <!--
  FreeCAD Document, see http://www.freecadweb.org for more information...
 -->
-<Document SchemaVersion="4" ProgramVersion="2024.408R14555 (Git shallow)" FileVersion="2" Uid="b88e6d89-e0c7-4a3d-ad77-331cb4c89252" StringHasher="1">
+<Document SchemaVersion="4" ProgramVersion="2024.409R14555 (Git shallow)" FileVersion="2" Uid="b88e6d89-e0c7-4a3d-ad77-331cb4c89252" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="579">
+  <StringHasher2  count="578">
 <![CDATA[
--1.0 0:Shape cache
--1.0 0:;SKT;:H12bf,E
+-2.0 0:;SKT;:H12bf,E
 -1.c.1 g2
 -1.0 0:;SKT;:H12bf,V
 -1.c.1 g2v1
@@ -616,7 +615,7 @@ e8e.0 0:(#33;K2;:H12d0:3,E)
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-07-30T06:01:47Z"/>
+      <String value="2024-09-18T17:12:14Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -662,24 +661,24 @@ e8e.0 0:(#33;K2;:H12d0:3,E)
   </Properties>
   <Objects Count="17" Dependencies="1">
     <ObjectDeps Name="Body" Count="10">
-      <Dep Name="Sketch003"/>
-      <Dep Name="Chamfer"/>
-      <Dep Name="Origin"/>
-      <Dep Name="Chamfer001"/>
-      <Dep Name="Pad001"/>
       <Dep Name="Pad"/>
       <Dep Name="Pad002"/>
-      <Dep Name="Sketch001"/>
+      <Dep Name="Pad001"/>
+      <Dep Name="Chamfer"/>
+      <Dep Name="Chamfer001"/>
       <Dep Name="Sketch"/>
+      <Dep Name="Sketch003"/>
+      <Dep Name="Sketch001"/>
       <Dep Name="Sketch002"/>
+      <Dep Name="Origin"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
       <Dep Name="XY_Plane"/>
+      <Dep Name="X_Axis"/>
+      <Dep Name="Z_Axis"/>
       <Dep Name="XZ_Plane"/>
       <Dep Name="YZ_Plane"/>
       <Dep Name="Y_Axis"/>
-      <Dep Name="X_Axis"/>
-      <Dep Name="Z_Axis"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
@@ -701,8 +700,8 @@ e8e.0 0:(#33;K2;:H12d0:3,E)
       <Dep Name="Sketch"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad001" Count="3">
-      <Dep Name="Body"/>
       <Dep Name="Pad"/>
+      <Dep Name="Body"/>
       <Dep Name="Sketch001"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad002" Count="3">
