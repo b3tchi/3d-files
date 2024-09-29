@@ -184,7 +184,6 @@ export def send [
 
 			let file_version = part-version $model $part $next_timestamp 
 			let file_stl = create-stl $model $part $file_version
-
 			logd version $file_version
 			logd stl_name $file_stl
 
@@ -211,10 +210,9 @@ export def send [
 		$final_stl = create-stl $model $part $file_version
 	}
 	
+    let gcode_path = create-gcode $validate $config_name $final_stl
 
 	let thumb_path = generate-thumb $final_stl
-    let gcode_path = create-gcode $config_name $final_stl
-
 	embed-thumbnail $thumb_path $gcode_path 
 
 	print-gcode $model $gcode_path
@@ -318,6 +316,7 @@ export def embed-thumbnail [
 }
 
 export def create-gcode [
+	validate: bool
     config: string
     stl_path: string
     ] {
@@ -332,6 +331,12 @@ export def create-gcode [
 	logd slicer-args ($args | to text)
 	
 	try { prusa-slicer ...$args } catch { log error 'slicer command issue' }
+
+	if $validate {
+		cd $env.TEMP
+		prusa-slicer --load $printer_config --output $output_gcode $stl_path
+		cd -
+	}
 
     return $output_gcode
 }
