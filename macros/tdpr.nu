@@ -1,23 +1,25 @@
-# three dimension printer alias  = tdpr scripts to manager printing
+#!/usr/bin/nu
+
+# tHREE dIMENSION pRINTEr alias  = tdpr scripts to manager printing
 use std log
 export-env {
     # $env.3D_PRINTER_IP# = ''
     # $env.3D_PRINTER_KEY# = ''
 
-	# if $nu.os-info.name == 'linux' {
-	$env.NU_LOG_LEVEL = 'DEBUG'
-	# $env.NU_LOG_LEVEL = ''
-	$env.TEMP = '/tmp/3d-files' 
-	mkdir $env.TEMP
-	# export alias slicer-prusa =  
-	# 	print (scope aliases)
-	# }
+    # if $nu.os-info.name == 'linux' {
+    $env.NU_LOG_LEVEL = 'DEBUG'
+    # $env.NU_LOG_LEVEL = ''
+    $env.TEMP = '/tmp/3d-files'
+    mkdir $env.TEMP
+    # export alias slicer-prusa =
+    # 	print (scope aliases)
+    # }
 
-	# if $nu.os-info.name == 'windows' {
-	# 	export alias "freecad-linkstage3" = C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240407\bin\FreeCADLink.exe
-	# 	export alias "freecad-linkstage3 --console" = C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240407\bin\FreeCADCmd.exe
-	# 	export alias slicer-prusa = prusa-slicer-console.exe
-	# }
+    # if $nu.os-info.name == 'windows' {
+    # 	export alias "freecad-linkstage3" = C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240407\bin\FreeCADLink.exe
+    # 	export alias "freecad-linkstage3 --console" = C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240407\bin\FreeCADCmd.exe
+    # 	export alias slicer-prusa = prusa-slicer-console.exe
+    # }
 }
 
 # def slicer-command [...args: string] {
@@ -79,10 +81,10 @@ export def send-v1 [
     model: string@models
     part: string@parts
     config: string@configs
-	stl?: string
+    stl?: string
     ] {
 
-	let next_timestamp = (date now | format date %Y%m%d%H%M%S)
+    let next_timestamp = (date now | format date %Y%m%d%H%M%S)
 
     let $version = part-version $model $part $next_timestamp
     print $version
@@ -90,12 +92,11 @@ export def send-v1 [
     print $file_stl
     let $file_gcode = create-gcode-v1 $model $part $version $config
     print $file_gcode
-	#printing code
-	print-gcode-v1 $model $part $version
+    #printing code
+    print-gcode-v1 $model $part $version
 
-	return $file_gcode
+    return $file_gcode
 }
-
 
 export def part-version [
     model: string@models
@@ -258,32 +259,32 @@ export def generate-thumb [
 }
 
 def merge-stl [
-	validate: bool
+    validate: bool
     output_name: string
-	config_name:string
+    config_name:string
     stls: list
     ] {
 
     let output_stl = ( $env.TEMP | path expand | path join $"($output_name).stl" )
     let config_path = ( './configs' | path expand | path join $config_name )
 
-	let args = [--load $config_path --export-stl --merge --split --ensure-on-bed --output $output_stl] | append $stls
+    let args = [--load $config_path --export-stl --merge --split --ensure-on-bed --output $output_stl] | append $stls
 
-	try { prusa-slicer ...$args } catch { log error 'slicer command issue' }
+    try { prusa-slicer ...$args } catch { log error 'slicer command issue' }
 
-	logd slicer-args ($args | to text)
+    logd slicer-args ($args | to text)
 
-	if $validate {
-		cd $env.TEMP
-		prusa-slicer $output_stl --output $output_stl
-		cd -
-	}
+    if $validate {
+        cd $env.TEMP
+        prusa-slicer $output_stl --output $output_stl
+        cd -
+    }
 
     return $output_stl
 }
 
 export def embed-thumbnail [
-	png_path: string 
+	png_path: string
 	gcode_path: string
 	] {
 	let width = 220
@@ -367,6 +368,7 @@ def print-gcode-v1 [
 	curl -X PUT --header $"X-Api-Key: ($api_key)" -H 'Print-After-Upload: ?0' -H 'Overwrite: ?0' -F $"file=@($input_gcode)" -F 'path=' $printer_url
 
 }
+
 def print-gcode [
     model: string@models
 	gcode_path: string

@@ -6,17 +6,18 @@ import Mesh
 # sourceFile='/home/jan/repos/b3tchi/3d-files/main/models/assembly4-poc/part-base'
 # exportFile='/home/jan/Documents/part-base.stl'
 
-def main(sourceFile, exportFile):
 
-    document=App.openDocument(sourceFile)
+def main(source_file, export_file):
+    '''Execute acttion.'''
 
-    #export via mesh
-    objectToExport=document.getObject('Body')
-    Mesh.export([objectToExport], exportFile)
+    document = App.openDocument(source_file)
 
-    #export via shape file is much larger
+    # export via mesh
+    object_to_export = document.getObject('Body')
+    Mesh.export([object_to_export], export_file)
+
+    # export via shape file is much larger
     # objectToExport=document.getObject('Body').Shape.exportStl(exportFile)
-
 
     App.closeDocument(document.Name)
 
@@ -24,6 +25,7 @@ def main(sourceFile, exportFile):
 
     sys.exit(1)
     # App.exit()
+
 
 # if __name__ == "__main__":
 if len(sys.argv) != 5:
@@ -37,7 +39,7 @@ output_stl_path = sys.argv[4]
 print(len(sys.argv))
 print(input_fcstd_path)
 print(output_stl_path)
-    # main( sourceFile, exportFile)
-main( input_fcstd_path, output_stl_path)
+# main( sourceFile, exportFile)
+main(input_fcstd_path, output_stl_path)
 
 # sys.exit(1)
