@@ -1,11 +1,116 @@
 * Printing
 
 #+begin_src mermaid :file ./test.png
+---
+config:
+  look: handDrawn
+  theme: forrest
+---
 flowchart LR
-first-->abc{text saving}
-abc-->def
-abc-->xxx
+input["enter model/s"]
+export("export as stl")
+output("printing model")
+multiple_models{"contains multiple models?"}
+combine("combine multiple models")
+convert("convert to gcode")
+preview("generate preview")
+validate("validate setup")
+
+trigger-->input
+output-->get_print
+
+subgraph user
+  trigger
+  get_print
+end
+subgraph script
+  input-->
+  export-->
+  multiple_models--yes-->
+    combine-->
+    convert
+  multiple_models--no-->
+    convert
+  convert-->
+  validate-->
+  preview-->
+  output
+end
 #+end_src
 
 #+RESULTS:
 [[file:./test.png]]
+
+#+begin_src emacs-lisp
+(setq plantuml-default-exec-mode 'executable)
+(setq plantuml-executable-path "/usr/bin/plantuml")
+
+(setq org-plantuml-exec-mode 'plantuml)
+(setq org-plantuml-executable-path "/usr/bin/plantuml")
+
+(org-babel-do-load-languages 'org-babel-load-languages
+        (append org-babel-load-languages '((plantuml . t))))
+
+;; Enable plantuml-mode for PlantUML files
+(require 'plantuml-mode)
+(add-to-list 'auto-mode-alist '("\\.plantuml\\'" . plantuml-mode))
+
+(add-to-list
+  'org-src-lang-modes '("plantuml" . plantuml))
+#+end_src
+
+#+RESULTS:
+: ((plantuml . plantuml) (nu . nushell-ts) (mermaid . mermaid-ts) (tmux . sh) (md . markdown) (C . c) (C++ . c++) (asymptote . asy) (beamer . latex) (calc . fundamental) (cpp . c++) (ditaa . artist) (desktop . conf-desktop) (dot . fundamental) (elisp . emacs-lisp) (ocaml . tuareg) (screen . shell-script) (sqlite . sql) (toml . conf-toml) (shell . sh) (ash . sh) (sh . sh) (bash . sh) (jsh . sh) (bash2 . sh) (dash . sh) (dtksh . sh) (ksh . sh) (es . sh) (rc . sh) (itcsh . sh) (tcsh . sh) (jcsh . sh) (csh . sh) (ksh88 . sh) (oash . sh) (pdksh . sh) (mksh . sh) (posix . sh) (wksh . sh) (wsh . sh) (zsh . sh) (rpm . sh))
+
+#+begin_src plantuml :file hello-uml.svg
+!theme crt-amber
+'skinparam handwritten true
+skinparam defaultFontName Iosevka
+|user|
+start
+    :runscript;
+    |script|
+    :export stl;
+    if (contains multiple files ?) then (yes)
+        :generate composite file name;
+        :merge all stls to one file;
+    endif
+    :generate gcode;
+    :generate preview;
+stop
+#+end_src
+
+#+RESULTS:
+[[file:hello-uml.svg]]
+
+#+begin_src plantuml :file hello-font.png
+listfont
+#+end_src
+
+#+RESULTS:
+[[file:hello-font.png]]
+
+#+begin_src sh
+# ls -a
+echo 'abc'
+#+end_src
+
+#+RESULTS:
+: abc
+
+#+begin_src nu :var test='macros'
+# echo 'abc'
+try { echo 'abc' | to csv } catch { ls | where name == $test }
+#+end_src
+
+#+RESULTS:
+: ╭───┬────────┬──────┬─────────┬────────────╮
+: │ # │  name  │ type │  size   │  modified  │
+: ├───┼────────┼──────┼─────────┼────────────┤
+: │ 0 │ macros │ dir  │ 4.0 KiB │ 2 days ago │
+: ╰───┴────────┴──────┴─────────┴────────────╯
+
+#+begin_src nu :var test='macros'
+use ./macros/tdpr.nu
+tdpr setup --help
+#+end_src

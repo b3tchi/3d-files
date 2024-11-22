@@ -1,15 +1,11 @@
+"""Exporting freecad model as stl."""
 import sys
 import FreeCAD as App
 import Mesh
 
-# sourceFile='/home/jan/repos/b3tchi/3d-files/main/models/assembly4-poc/assembly'
-# sourceFile='/home/jan/repos/b3tchi/3d-files/main/models/assembly4-poc/part-base'
-# exportFile='/home/jan/Documents/part-base.stl'
-
 
 def main(source_file, export_file):
-    '''Execute acttion.'''
-
+    """Execute acttion."""
     document = App.openDocument(source_file)
 
     # export via mesh
@@ -27,11 +23,10 @@ def main(source_file, export_file):
     # App.exit()
 
 
-# if __name__ == "__main__":
 if len(sys.argv) != 5:
-    print("Usage: freecad-linkstage3 --console <path_to_freecad_macro.py> <input_path> <output_stl_path>")
+    print("Usage: freecad-linkstage3 --console <path_to_freecad_macro.py>\
+ <input_path> <output_stl_path>")
     sys.exit(1)
-#     print("Usage: freecad_cmd <path_to_freecad_macro.py> <input_path> <output_stl_path>")
 
 input_fcstd_path = sys.argv[3]
 output_stl_path = sys.argv[4]
