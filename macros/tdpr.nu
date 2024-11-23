@@ -42,16 +42,16 @@ def parts [context: string] {
 }
 
 def parts-v2 [context: string] {
-	logd context $context
-	let arguments = $context | split row ' ' | skip 2
-	mut model_position = 0
+    logd context $context
+    let arguments = $context | split row ' ' | skip 2
+    mut model_position = 0
 
-	$model_position += (if ('--config' in $arguments) { 2 } else {0})
-	$model_position += (if ('--validate' in $arguments) { 1 } else {0})
+    $model_position += (if ('--config' in $arguments) { 2 } else {0})
+    $model_position += (if ('--validate' in $arguments) { 1 } else {0})
 
-	let model = $arguments | get $model_position
+    let model = $arguments | get $model_position
 
-	ls -s ($env.PWD | path join models $model ) | where type == dir |get name
+    ls -s ($env.PWD | path join models $model ) | where type == dir |get name
 }
 
 export def --env setup [
@@ -63,18 +63,18 @@ export def --env setup [
 }
 
 def logd [
-	description:string
-	msg:string
-	] {
+    description:string
+    msg:string
+    ] {
 
-	log debug $"(ansi yellow)($description): ($msg)(ansi reset)"
+    log debug $"(ansi yellow)($description): ($msg)(ansi reset)"
 }
 
 export def check [] {
     print $"url:($env.3D_PRINTER_IP)"
     print $"api-key:($env.3D_PRINTER_KEY)"
- 	let resp = http get --headers [X-Api-Key $env.3D_PRINTER_KEY] $"http://($env.3D_PRINTER_IP)/api/v1/status"
-	return $resp.printer.state
+    let resp = http get --headers [X-Api-Key $env.3D_PRINTER_KEY] $"http://($env.3D_PRINTER_IP)/api/v1/status"
+    return $resp.printer.state
 }
 
 export def send-v1 [
@@ -229,23 +229,22 @@ def generate-thumb-v0 [
 
 export def generate-thumb [ 
     stl_path: string
-	] {
-	let scad_path = ( $stl_path | path parse --extension stl | upsert extension { 'scad'} | path join )
-	'import("' + $stl_path + '");' | save --force $scad_path
+] {
+    let scad_path = ( $stl_path | path parse --extension stl | upsert extension { 'scad'} | path join )
+    'import("' + $stl_path + '");' | save --force $scad_path
 
-	let output_png = ($stl_path | path parse --extension 'stl' | upsert extension { 'png'} | path join)
+    let output_png = ($stl_path | path parse --extension 'stl' | upsert extension { 'png'} | path join)
 
-	let args = [
-		-o $output_png
-		'--imgsize=220,124'
-		--viewall
-		'--colorscheme=Tomorrow Night'
-		$scad_path
-
+    let args = [
+        -o $output_png
+        '--imgsize=220,124'
+        --viewall
+        '--colorscheme=Tomorrow Night'
+        $scad_path
     ]
-	logd args ( $args | to text) 
 
-	try { openscad ...$args } catch { log error 'thumb gen error' }
+    logd args ( $args | to text)
+    try { openscad ...$args } catch { log error 'thumb gen error' }
 
     return $output_png
 }
@@ -276,38 +275,38 @@ def merge-stl [
 }
 
 export def embed-thumbnail [
-	png_path: string
-	gcode_path: string
-	] {
-	let width = 220
-	let height = 124
+    png_path: string
+    gcode_path: string
+] {
+    let width = 220
+    let height = 124
 
-	# Convert image to base64 and save to a temporary variable
-	let image_base64 = (open $png_path | encode base64)
+    # Convert image to base64 and save to a temporary variable
+    let image_base64 = (open $png_path | encode base64)
 
-	# Calculate the size of the base64 data
-	let size = ($image_base64 | str length)
+    # Calculate the size of the base64 data
+    let size = ($image_base64 | str length)
 
-	let fixed_width = ( $image_base64 | str replace --all -r '(.{78})' "; $1\n" | str replace -r "(.{1,78})$" "; $1" )
+    let fixed_width = ( $image_base64 | str replace --all -r '(.{78})' "; $1\n" | str replace -r "(.{1,78})$" "; $1" )
 
-	let img_encoded = [
-		';'
-		$"; thumbnail begin ($width)x($height) ($size)" 
-		$"($fixed_width)"
-		'; thumbnail end'
-		';'
-	]
+    let img_encoded = [
+        ';'
+        $"; thumbnail begin ($width)x($height) ($size)"
+        $"($fixed_width)"
+        '; thumbnail end'
+        ';'
+    ]
 
-	logd encoded ( $fixed_width | to text )
+    logd encoded ( $fixed_width | to text )
 
-	mut gcode_content = open $gcode_path | lines
+    mut gcode_content = open $gcode_path | lines
 
-	$gcode_content
-	| save --force ($gcode_path | path parse | upsert extension { 'gcode.bckp'} | path join)
+    $gcode_content
+    | save --force ($gcode_path | path parse | upsert extension { 'gcode.bckp'} | path join)
 
-	# Open the G-code file and embed the thumbnail
-	$gcode_content = ( $gcode_content | insert 2 $img_encoded | flatten | flatten )
-	$gcode_content | save --force ( $gcode_path )
+    # Open the G-code file and embed the thumbnail
+    $gcode_content = ( $gcode_content | insert 2 $img_encoded | flatten | flatten )
+    $gcode_content | save --force ( $gcode_path )
 }
 
 export def create-gcode [
@@ -318,13 +317,13 @@ export def create-gcode [
 
     let printer_config = ( './configs' | path expand | path join $config )
 
-	let output_gcode = ($stl_path | path parse --extension 'stl' | upsert extension { 'gcode'} | path join)
+    let output_gcode = ($stl_path | path parse --extension 'stl' | upsert extension { 'gcode'} | path join)
 
-	let args = [--load $printer_config --export-gcode --ensure-on-bed --output $output_gcode $stl_path]
+    let args = [--load $printer_config --export-gcode --ensure-on-bed --output $output_gcode $stl_path]
 
-	logd slicer-args ($args | to text)
-	
-	try { prusa-slicer ...$args } catch { log error 'slicer command issue' }
+    logd slicer-args ($args | to text)
+
+    try { prusa-slicer ...$args } catch { log error 'slicer command issue' }
 
     return $output_gcode
 }
@@ -349,33 +348,33 @@ def print-gcode-v1 [
     model: string@models
     part: string@parts
     version: string
-	] {
+] {
 
-	let input_gcode = ( $env.TEMP | path expand | path join $"($part)-($version).gcode" )
-	let api_key = $env.3D_PRINTER_KEY
-	let printer_ip = $env.3D_PRINTER_IP
+    let input_gcode = ( $env.TEMP | path expand | path join $"($part)-($version).gcode" )
+    let api_key = $env.3D_PRINTER_KEY
+    let printer_ip = $env.3D_PRINTER_IP
 
- 	#working !!!!
-	let printer_url = $"http://($printer_ip)/api/v1/files/usb/($model)/($part)-($version).gcode"
-	curl -X PUT --header $"X-Api-Key: ($api_key)" -H 'Print-After-Upload: ?0' -H 'Overwrite: ?0' -F $"file=@($input_gcode)" -F 'path=' $printer_url
+    #working !!!!
+    let printer_url = $"http://($printer_ip)/api/v1/files/usb/($model)/($part)-($version).gcode"
+    curl -X PUT --header $"X-Api-Key: ($api_key)" -H 'Print-After-Upload: ?0' -H 'Overwrite: ?0' -F $"file=@($input_gcode)" -F 'path=' $printer_url
 
 }
 
 def print-gcode [
     model: string@models
-	gcode_path: string
-	] {
+    gcode_path: string
+] {
 
-	let gcode_name = ( $gcode_path | path basename )
-	let api_key = $env.3D_PRINTER_KEY
-	let printer_ip = $env.3D_PRINTER_IP
+    let gcode_name = ( $gcode_path | path basename )
+    let api_key = $env.3D_PRINTER_KEY
+    let printer_ip = $env.3D_PRINTER_IP
 
-	logd gcode_name $gcode_name
+    logd gcode_name $gcode_name
 
- 	#working !!!!
+    #working !!!!
     let printer_url = $"http://($printer_ip)/api/v1/files/usb/($model)/($gcode_name)"
-	curl -X PUT --header $"X-Api-Key: ($api_key)" -H 'Print-After-Upload: ?0' -H 'Overwrite: ?0' -F $"file=@($gcode_path)" -F 'path=' $printer_url
+    curl -X PUT --header $"X-Api-Key: ($api_key)" -H 'Print-After-Upload: ?0' -H 'Overwrite: ?0' -F $"file=@($gcode_path)" -F 'path=' $printer_url
 
-	logd printer_url $printer_url
+    logd printer_url $printer_url
 
 }
