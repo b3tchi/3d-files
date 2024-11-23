@@ -101,27 +101,27 @@ export def send-v1 [
 export def part-version [
     model: string@models
     part: string@parts
-	next_timestamp?: string
+    next_timestamp?: string
     ] {
 
     let branch = (git rev-parse --abbrev-ref HEAD)
-	logd branch $branch
+    logd branch $branch
 
     let tag_git = (git describe --tags --match $"($model)/($part)/*" --abbrev=0 HEAD)
     let tag_build = (if $tag_git  == '' { '0.1.0' } else { $tag_git })
 
-	mut tag_parts = [$tag_build]
-	if ($branch != 'main') {
-		if ($next_timestamp == null) {
-			$tag_parts = ( $tag_parts | append '-next' )
-		} else {
-			$tag_parts = ( $tag_parts | append '-next+' )
-			$tag_parts = ( $tag_parts | append $next_timestamp )
-		}
-	}
+    mut tag_parts = [$tag_build]
+    if ($branch != 'main') {
+        if ($next_timestamp == null) {
+            $tag_parts = ( $tag_parts | append '-next' )
+        } else {
+            $tag_parts = ( $tag_parts | append '-next+' )
+            $tag_parts = ( $tag_parts | append $next_timestamp )
+        }
+    }
 
     let version = ( $tag_parts | str join )
-	logd version ($version)
+    logd version ($version)
 
     return $version
 }
@@ -219,7 +219,7 @@ export def send [
 def generate-thumb-v0 [ 
     stl_name: string
     png_name: string
-] {
+    ] {
 
 #	using latest version of stl-thumb stl-thumb-git standard version not working for me
 #	installed via yay -S stl-thumb-git
@@ -229,7 +229,7 @@ def generate-thumb-v0 [
 
 export def generate-thumb [ 
     stl_path: string
-] {
+    ] {
     let scad_path = ( $stl_path | path parse --extension stl | upsert extension { 'scad'} | path join )
     'import("' + $stl_path + '");' | save --force $scad_path
 
@@ -277,7 +277,8 @@ def merge-stl [
 export def embed-thumbnail [
     png_path: string
     gcode_path: string
-] {
+    ] {
+
     let width = 220
     let height = 124
 
@@ -339,7 +340,7 @@ def create-gcode-v1 [
     let input_stl = ( $env.TEMP | path expand | path join $"($part)-($version).stl" )
     let output_gcode = ( $env.TEMP | path expand | path join $"($part)-($version).gcode" )
 
-	prusa-slicer --load $printer_config --export-gcode --output $output_gcode $input_stl
+    prusa-slicer --load $printer_config --export-gcode --output $output_gcode $input_stl
 
     return $output_gcode
 }
