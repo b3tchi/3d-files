@@ -2,6 +2,7 @@
 
 # tHREE dIMENSION pRINTEr alias  = tdpr scripts to manager printing
 use std log
+use ./fx.nu
 export-env {
     # $env.3D_PRINTER_IP# = ''
     # $env.3D_PRINTER_KEY# = ''
@@ -27,6 +28,10 @@ export-env {
 # 		prusa-slicer ...$args
 # 	}
 # }
+
+export def test [] {
+    fx xtest
+}
 
 def configs [] {
     ls -s ($env.PWD | path join configs) | get name
@@ -139,24 +144,24 @@ def move-stl [
     return $output_stl
 }
 
-export def create-stl [
-    model: string@models
-    part: string@parts
-    version: string
-] {
+# export def create-stl [
+#     model: string@models
+#     part: string@parts
+#     version: string
+# ] {
 
-    let macro = ( './macros' | path expand | path join 'export-to-stl.py' )
-    let input_file = ( './models' | path expand | path join $model $part )
-    let output_stl = ( $env.TEMP | path expand | path join $"($part)-($version).stl" )
+#     let macro = ( './macros' | path expand | path join 'export-to-stl.py' )
+#     let input_file = ( './models' | path expand | path join $model $part )
+#     let output_stl = ( $env.TEMP | path expand | path join $"($part)-($version).stl" )
 
-    logd output1 $output_stl
+#     logd output1 $output_stl
 
-    try { freecad-linkstage3 --console $macro $input_file $output_stl } catch { 'freecad linking '}
+#     try { freecad-linkstage3 --console $macro $input_file $output_stl } catch { 'freecad linking '}
 
-    logd output2 $output_stl
+#     logd output2 $output_stl
 
-    return $output_stl
-}
+#     return $output_stl
+# }
 
 export def send [
     --config: string@configs #prit settings
@@ -168,6 +173,9 @@ export def send [
     let next_timestamp = (date now | format date %Y%m%d%H%M%S)
     let $config_name = if ($config == null) { 'prototype.ini' } else { $config }
     mut final_stl = ''
+    let temp_path = $env.TEMP
+
+    let branch_name = git rev-parse --abbrev-ref HEAD
 
     if ( $parts | length ) > 1 {
 
@@ -177,10 +185,11 @@ export def send [
 
         for $part in $parts {
 
-            let name_version = ( (part-version $model $part) | str replace '-next' 'n' )
+            let part_last_tag = git describe --tags --match $"($model)/($part)/*" --abbrev=0 HEAD
+            let name_version = (fx part-version $branch_name $part_last_tag) | str replace '-next' 'n'
             $part_names = $part_names | append $"($part | split row '-' | each {|row| $row |str substring 0..1}| str join '' )@($name_version)"
 
-            let file_version = part-version $model $part $next_timestamp
+            let file_version = fx part-version $branch_name $part_last_tag $next_timestamp
             let file_stl = create-stl $model $part $file_version
 
             logd version $file_version
@@ -200,19 +209,28 @@ export def send [
 
     } else {
 
-        let $part = ( $parts | get 0 )
-        let file_version = part-version $model $part $next_timestamp
-        $final_stl = create-stl $model $part $file_version
+        #parts
+        let $part = $parts | get 0
+        let part_last_tag = git describe --tags --match $"($model)/($part)/*" --abbrev=0 HEAD
+        let file_version = fx part-version $branch_name $part_last_tag $next_timestamp
+
+        #create stl
+        let freecad_args = fx create-stl $model $part $file_version $temp_path
+        $final_stl = $freecad_args | reverse | get 0
+        try { freecad-linkstage3 ...$freecad_args } catch { log error 'slicer command issue' }
     }
 
-    let thumb_path = generate-thumb $final_stl
-    let gcode_path = create-gcode $config_name $final_stl
+    # let thumb_path = generate-thumb $final_stl
+    let slicer_args = fx create-gcode $config_name $final_stl
+    let gcode_path = $slicer_args | reverse | get 1
+    try { prusa-slicer ...$slicer_args } catch { log error 'slicer command issue' }
 
-    embed-thumbnail $thumb_path $gcode_path
+    #TBD
+    # fx embed-thumbnail $thumb_path $gcode_path
+    let curl_args = fx print-gcode $model $gcode_path $env.3D_PRINTER_KEY $env.PRINTER_IP
+    try { curl ...$slicer_args } catch { log error 'slicer command issue' }
 
-    print-gcode $model $gcode_path
-    print $gcode_path
-
+    # print $gcode_path
     return $gcode_path
 }
 
@@ -274,60 +292,7 @@ def merge-stl [
     return $output_stl
 }
 
-export def embed-thumbnail [
-    png_path: string
-    gcode_path: string
-    ] {
 
-    let width = 220
-    let height = 124
-
-    # Convert image to base64 and save to a temporary variable
-    let image_base64 = (open $png_path | encode base64)
-
-    # Calculate the size of the base64 data
-    let size = ($image_base64 | str length)
-
-    let fixed_width = ( $image_base64 | str replace --all -r '(.{78})' "; $1\n" | str replace -r "(.{1,78})$" "; $1" )
-
-    let img_encoded = [
-        ';'
-        $"; thumbnail begin ($width)x($height) ($size)"
-        $"($fixed_width)"
-        '; thumbnail end'
-        ';'
-    ]
-
-    logd encoded ( $fixed_width | to text )
-
-    mut gcode_content = open $gcode_path | lines
-
-    $gcode_content
-    | save --force ($gcode_path | path parse | upsert extension { 'gcode.bckp'} | path join)
-
-    # Open the G-code file and embed the thumbnail
-    $gcode_content = ( $gcode_content | insert 2 $img_encoded | flatten | flatten )
-    $gcode_content | save --force ( $gcode_path )
-}
-
-export def create-gcode [
-    config: string
-    stl_path: string
-    ] {
-
-
-    let printer_config = ( './configs' | path expand | path join $config )
-
-    let output_gcode = ($stl_path | path parse --extension 'stl' | upsert extension { 'gcode'} | path join)
-
-    let args = [--load $printer_config --export-gcode --ensure-on-bed --output $output_gcode $stl_path]
-
-    logd slicer-args ($args | to text)
-
-    try { prusa-slicer ...$args } catch { log error 'slicer command issue' }
-
-    return $output_gcode
-}
 
 def create-gcode-v1 [
     model: string@models
@@ -345,11 +310,29 @@ def create-gcode-v1 [
     return $output_gcode
 }
 
+# export def create-gcode [
+#     config: string
+#     stl_path: string
+#     ] {
+
+#     let printer_config = ( './configs' | path expand | path join $config )
+
+#     let output_gcode = ($stl_path | path parse --extension 'stl' | upsert extension { 'gcode'} | path join)
+
+#     let args = [--load $printer_config --export-gcode --ensure-on-bed --output $output_gcode $stl_path]
+
+#     logd slicer-args ($args | to text)
+
+#     try { prusa-slicer ...$args } catch { log error 'slicer command issue' }
+
+#     return $output_gcode
+# }
+
 def print-gcode-v1 [
     model: string@models
     part: string@parts
     version: string
-] {
+    ] {
 
     let input_gcode = ( $env.TEMP | path expand | path join $"($part)-($version).gcode" )
     let api_key = $env.3D_PRINTER_KEY
@@ -361,21 +344,3 @@ def print-gcode-v1 [
 
 }
 
-def print-gcode [
-    model: string@models
-    gcode_path: string
-] {
-
-    let gcode_name = ( $gcode_path | path basename )
-    let api_key = $env.3D_PRINTER_KEY
-    let printer_ip = $env.3D_PRINTER_IP
-
-    logd gcode_name $gcode_name
-
-    #working !!!!
-    let printer_url = $"http://($printer_ip)/api/v1/files/usb/($model)/($gcode_name)"
-    curl -X PUT --header $"X-Api-Key: ($api_key)" -H 'Print-After-Upload: ?0' -H 'Overwrite: ?0' -F $"file=@($gcode_path)" -F 'path=' $printer_url
-
-    logd printer_url $printer_url
-
-}

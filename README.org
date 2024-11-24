@@ -114,3 +114,160 @@ try { echo 'abc' | to csv } catch { ls | where name == $test }
 use ./macros/tdpr.nu
 tdpr setup --help
 #+end_src
+
+#+begin_src nu :var test='macros'
+use ./macros/tdpr/fx.nu; (fx create-gcode 'name' 'stl_path') | reverse | get 1
+#+end_src
+
+#+RESULTS:
+: stl_path.gcode
+
+#+begin_src nu :var test='macros'
+use ./macros/tdpr/fx.nu; (fx create-stl 'model_name' 'part' 'version' 'tmp_path') | to text
+#+end_src
+
+#+RESULTS:
+: --console
+: /home/jan/repos/b3tchi/3d-files/feat/popup-mvp1/macros/export-to-stl.py
+: /home/jan/repos/b3tchi/3d-files/feat/popup-mvp1/models/model_name/part
+: /home/jan/repos/b3tchi/3d-files/feat/popup-mvp1/tmp_path/part-version.stl
+
+#+begin_src nu :var test='macros'
+use ./macros/tdpr/fx.nu; (fx part-version 'xmain' '') | to text
+#+end_src
+
+#+begin_src nu :var test='macros'
+use ./macros/tdpr/fx.nu
+let branch = 'feat/popup-mvp1'
+
+let parts_base = fx build-short 'feat/test' 'test' '0.1' '1'
+let resp = $parts_base
+$resp | to yaml
+
+#+end_src
+
+#+RESULTS:
+: 1te@0.1n
+:
+
+#+begin_src nu :var test='macros'
+use std
+use ./macros/tdpr/fx.nu
+let model = 'spool-holder'
+let branch = 'feat/popup-mvp1'
+let timestamp = (date now | format date %Y%m%d%H%M%S)
+let parts = [base base floor demi-sec]
+
+let parts_base = fx build-base $model $branch $timestamp $parts
+let resp = $parts_base
+$resp | to yaml
+
+#+end_src
+#+RESULTS:
+#+begin_example
+- part: base
+  count: 2
+  model: spool-holder
+  branch: feat/popup-mvp1
+  timestamp: '20241125004405'
+  test: xx
+  testx: xx
+- part: floor
+  count: 1
+  model: spool-holder
+  branch: feat/popup-mvp1
+  timestamp: '20241125004405'
+  test: xx
+  testx: xx
+- part: demi-sec
+  count: 1
+  model: spool-holder
+  branch: feat/popup-mvp1
+  timestamp: '20241125004405'
+  test: xx
+  testx: xx
+
+#+end_example
+
+#+begin_src nu :var test='macros'
+use std
+use ./macros/tdpr/fx.nu
+let model = 'spool-holder'
+let branch = 'feat/popup-mvp1'
+let timestamp = (date now | format date %Y%m%d%H%M%S)
+let parts = [base base floor demi-sec]
+
+let parts_base = (fx build-base $model $branch $timestamp $parts)
+    | insert last_tag {|row|
+        try {git describe --tags --match $"($row.model)/($row.part)/*" --abbrev=0 HEAD e> (std null-device)}}
+    | insert version {|row|
+        fx build-version $row.last_tag}
+    | insert stem {|row|
+        fx part-version $row.branch $row.part $row.version $row.timestamp}
+    | insert short {|row|
+        fx build-short $row.branch $row.part $row.version $count}
+
+let multi_name = 'x'
+    | append ($parts_name | get short)
+    | append $timestamp
+    | str join '-'
+
+# let parts_version =
+let resp = $parts_base
+# let resp = $multi_name
+$resp | to yaml
+#      name: $part
+#    , tag:
+# }} | to text
+
+#+end_src
+
+#+RESULTS:
+#+begin_example
+Error: [31mnu::parser::variable_not_found[0m
+
+  [31m×[0m Variable not found.
+     ╭─[[36;1;4m/home/jan/repos/b3tchi/3d-files/feat/popup-mvp1/macros/tdpr/fx.nu[0m:175:13]
+ [2m174[0m │     if ($branch != 'main') {
+ [2m175[0m │         if ($next_timestamp == null) {
+     · [35;1m            ───────┬───────[0m
+     ·                    [35;1m╰── [35;1mvariable not found. [0m[0m
+ [2m176[0m │             $tag_parts = ( $tag_parts | append '-next' )
+     ╰────
+
+#+end_example
+
+#+begin_src emacs-lisp
+   (defun my-remove-variables-from-imenu-index (index)
+     "Remove 'Variables' category entries from imenu INDEX."
+     (seq-filter
+      (lambda (item)
+        (let ((name (car item)))
+          (not (and (stringp name) (string-equal name "Variables")))))
+      index))
+
+   (defun my-customize-imenu ()
+     "Customize imenu to exclude 'Variables' entries."
+     ;; Set custom index function that includes post-processing
+     (setq imenu-create-index-function
+           (lambda ()
+             (my-remove-variables-from-imenu-index (imenu-default-create-index-function)))))
+
+   ;; Add to desired mode hooks, for example, for programming modes:
+   (add-hook 'nushell-ts-mode-hook 'my-customize-imenu)
+#+end_src
+
+#+RESULTS:
+#+begin_example
+Error: [31mnu::parser::unbalanced_delimiter[0m
+
+  [31m×[0m Unbalanced delimiter.
+    ╭─[[36;1;4m/home/jan/repos/b3tchi/3d-files/feat/popup-mvp1/nushell-5YbmJ5[0m:14:20]
+ [2m13[0m │  [2m7[0m │         name: $part
+ [2m14[0m │  [2m8[0m │     }
+    · [35;1m         ┬[0m
+    ·          [35;1m╰── [35;1munbalanced { and }[0m[0m
+ [2m15[0m │    · [35;1m     ┬[0m
+    ╰────
+
+#+end_example
