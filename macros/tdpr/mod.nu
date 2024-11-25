@@ -4,8 +4,9 @@
 use std log
 use ./fx.nu
 export-env {
-    # $env.3D_PRINTER_IP# = ''
-    # $env.3D_PRINTER_KEY# = ''
+    print 'export'
+    # $env | get --ignore-errors 3D_PRINTER_IP | default ''
+    # $env | get --ignore-errors 3D_PRINTER_KEY | default ''
 
     # if $nu.os-info.name == 'linux' {
     $env.NU_LOG_LEVEL = 'DEBUG'
@@ -60,11 +61,14 @@ def parts-v2 [context: string] {
 }
 
 export def --env setup [
-    url: string
+    url: string # printer local url
+    password?: string # carefull here! avoid enter key directly it will be kept in history!!!
     ] {
 
     $env.3D_PRINTER_IP = $url
-    $env.3D_PRINTER_KEY = (input -s 'enter api key: ')
+    $env.3D_PRINTER_KEY = if $password == null {
+        input -s 'enter api key: '
+    } else {$password}
 }
 
 def logd [
@@ -163,147 +167,156 @@ def move-stl [
 #     return $output_stl
 # }
 
-export def send [
+export def --env send [
     --config: string@configs #print settings
+    --arrange #validate layout is properly set
     --validate #validate layout is properly set
     model: string@models #select what model is used
     ...parts: string@parts-v2 #select which parts to print
-] {
+    ] {
 
-    let next_timestamp = (date now | format date %Y%m%d%H%M%S)
+    #header items
+    let timestamp = (date now | format date %Y%m%d%H%M%S)
+    let branch_name = git rev-parse --abbrev-ref HEAD #I/O
     let $config_name = if ($config == null) { 'prototype.ini' } else { $config }
-    mut final_stl = ''
-    let temp_path = $env.TEMP
 
-    let branch_name = git rev-parse --abbrev-ref HEAD
+    let temp_path = '/tmp/3d-files'
+    let macro_path = ( './macros' | path expand | path join 'export-to-stl.py' )
+    let model_root = ( './models' | path expand )
+    let config_path = ( './configs' | path expand | path join $config_name )
 
-    if ( $parts | length ) > 1 {
+    #pepare parts list
+    let parts_base = (fx build-base $model $branch_name $timestamp $parts)
+        | insert last_tag {|row|
+            try {git ...(fx last-tag-args $model $row.part) e> (std null-device)} catch {''}} #I/O
+        | insert version {|row|
+            fx build-version $row.last_tag}
+        | insert stem {|row|
+            fx part-version $row.branch $row.part $row.version $row.timestamp}
+        | insert short {|row|
+            fx build-short $row.branch $row.part $row.version $row.count}
+        | insert stl_path {|row|
+            fx build-stl-path $temp_path $model $row.stem $timestamp}
+        | insert fcad_dir {|row|
+            fx build-part-dir $model_root $model $row.part}
 
-        mut stls = []
-        mut part_names = []
-        mut multi_part_names = []
+    let final_stem = fx build-final-name $parts_base $timestamp
+    let final_stl = fx build-final-file $temp_path $timestamp $model $final_stem 'stl'
+    let final_3mf = fx build-final-file $temp_path $timestamp $model $final_stem '3mf'
+    let final_gcode = fx build-final-file $temp_path $timestamp $model $final_stem 'gcode'
 
-        for $part in $parts {
+    mkdir ($final_gcode | path dirname) #I/O
 
-            let part_last_tag = git describe --tags --match $"($model)/($part)/*" --abbrev=0 HEAD
-            let name_version = (fx part-version $branch_name $part_last_tag) | str replace '-next' 'n'
-            $part_names = $part_names | append $"($part | split row '-' | each {|row| $row |str substring 0..1}| str join '' )@($name_version)"
-
-            let file_version = fx part-version $branch_name $part_last_tag $next_timestamp
-            let file_stl = create-stl $model $part $file_version
-
-            logd version $file_version
-            logd stl_name $file_stl
-
-            $stls = ( $stls | append $file_stl )
-        }
-
-        logd stls ($stls | to text)
-        logd part_names ($part_names | to text)
-
-        let part_names = $part_names | uniq --count | each {|row| $"($row.count)($row.value)"}| str join '-'
-        let final_name =  ['x' $part_names $next_timestamp] | str join '-'
-
-        logd final_name ($final_name | to text)
-        $final_stl = merge-stl $validate $final_name $config_name $stls
-
-    } else {
-
-        #parts
-        let $part = $parts | get 0
-        let part_last_tag = git describe --tags --match $"($model)/($part)/*" --abbrev=0 HEAD
-        let file_version = fx part-version $branch_name $part_last_tag $next_timestamp
-
-        #create stl
-        let freecad_args = fx create-stl $model $part $file_version $temp_path
-        $final_stl = $freecad_args | reverse | get 0
-        try { freecad-linkstage3 ...$freecad_args } catch { log error 'slicer command issue' }
+    $parts_base | each {|part|
+        let freecad_args = fx create-stl $macro_path $part.fcad_dir $part.stl_path
+        try { freecad-linkstage3 ...$freecad_args } catch { log error 'slicer command issue' } #I/O
     }
 
-    # let thumb_path = generate-thumb $final_stl
-    let slicer_args = fx create-gcode $config_name $final_stl
-    let gcode_path = $slicer_args | reverse | get 1
-    try { prusa-slicer ...$slicer_args } catch { log error 'slicer command issue' }
+    let merge_args = fx merge-stl $config_path $final_3mf ($parts_base | select stl_path count)
+    try { prusa-slicer ...$merge_args } catch { log error 'slicer command issue' } #I/O
 
-    #TBD
-    # fx embed-thumbnail $thumb_path $gcode_path
-    let curl_args = fx print-gcode $model $gcode_path $env.3D_PRINTER_KEY $env.PRINTER_IP
-    try { curl ...$slicer_args } catch { log error 'slicer command issue' }
-
-    # print $gcode_path
-    return $gcode_path
-}
-
-export def send-v2 [
-    --config: string@configs #prit settings
-    --validate #validate layout is properly set
-    model: string@models #select what model is used
-    ...parts: string@parts-v2 #select which parts to print
-] {
-
-    let next_timestamp = (date now | format date %Y%m%d%H%M%S)
-    let $config_name = if ($config == null) { 'prototype.ini' } else { $config }
-    mut final_stl = ''
-    let temp_path = $env.TEMP
-
-    let branch_name = git rev-parse --abbrev-ref HEAD
-
-    if ( $parts | length ) > 1 {
-
-        mut stls = []
-        mut part_names = []
-        mut multi_part_names = []
-
-        for $part in $parts {
-
-            let part_last_tag = git describe --tags --match $"($model)/($part)/*" --abbrev=0 HEAD
-            let name_version = (fx part-version $branch_name $part_last_tag) | str replace '-next' 'n'
-            $part_names = $part_names | append $"($part | split row '-' | each {|row| $row |str substring 0..1}| str join '' )@($name_version)"
-
-            let file_version = fx part-version $branch_name $part_last_tag $next_timestamp
-            let file_stl = create-stl $model $part $file_version
-
-            logd version $file_version
-            logd stl_name $file_stl
-
-            $stls = ( $stls | append $file_stl )
-        }
-
-        logd stls ($stls | to text)
-        logd part_names ($part_names | to text)
-
-        let part_names = $part_names | uniq --count | each {|row| $"($row.count)($row.value)"}| str join '-'
-        let final_name =  ['x' $part_names $next_timestamp] | str join '-'
-
-        logd final_name ($final_name | to text)
-        $final_stl = merge-stl $validate $final_name $config_name $stls
-
-    } else {
-
-        #parts
-        let $part = $parts | get 0
-        let part_last_tag = git describe --tags --match $"($model)/($part)/*" --abbrev=0 HEAD
-        let file_version = fx part-version $branch_name $part_last_tag $next_timestamp
-
-        #create stl
-        let freecad_args = fx create-stl $model $part $file_version $temp_path
-        $final_stl = $freecad_args | reverse | get 0
-        try { freecad-linkstage3 ...$freecad_args } catch { log error 'slicer command issue' }
+    # validate source input
+    if $arrange {
+        prusa-slicer $final_3mf #I/O
     }
 
-    # let thumb_path = generate-thumb $final_stl
-    let slicer_args = fx create-gcode $config_name $final_stl
-    let gcode_path = $slicer_args | reverse | get 1
-    try { prusa-slicer ...$slicer_args } catch { log error 'slicer command issue' }
+    #create final stl
+    # TBD let thumb_path = generate-thumb $final_stl
 
-    #TBD
-    # fx embed-thumbnail $thumb_path $gcode_path
-    let curl_args = fx print-gcode $model $gcode_path $env.3D_PRINTER_KEY $env.PRINTER_IP
-    try { curl ...$slicer_args } catch { log error 'slicer command issue' }
+    # create gcode
+    let slicer_args = fx create-gcode $config_path $final_3mf $final_gcode
+    try { prusa-slicer ...$slicer_args } catch { log error 'slicer command issue' } #I/O
 
-    # print $gcode_path
-    return $gcode_path
+
+    # validate source input
+    if $validate {
+        prusa-slicer $final_gcode #I/O
+
+        if ([yes no] | input list 'Please confirm, that gcode is ok, ready to be send to printer?') == 'no' {
+            print 'Print script is cancelled'
+            return
+        }
+    }
+
+    # print gcode
+    # TBD fx embed-thumbnail $thumb_path $gcode_path
+    let curl_args = fx print-gcode $model $final_gcode $env.3D_PRINTER_KEY $env.3D_PRINTER_IP
+    # try { curl ...$slicer_args } catch { log error 'slicer command issue' } #I/O
+    print $curl_args
+
+    return $final_gcode
 }
+
+# export def send-v2 [
+#     --config: string@configs #prit settings
+#     --validate #validate layout is properly set
+#     model: string@models #select what model is used
+#     ...parts: string@parts-v2 #select which parts to print
+# ] {
+
+#     let next_timestamp = (date now | format date %Y%m%d%H%M%S)
+#     let $config_name = if ($config == null) { 'prototype.ini' } else { $config }
+#     mut final_stl = ''
+#     let temp_path = $env.TEMP
+
+#     let branch_name = git rev-parse --abbrev-ref HEAD
+
+#     if ( $parts | length ) > 1 {
+
+#         mut stls = []
+#         mut part_names = []
+#         mut multi_part_names = []
+
+#         for $part in $parts {
+
+#             let part_last_tag = git describe --tags --match $"($model)/($part)/*" --abbrev=0 HEAD
+#             let name_version = (fx part-version $branch_name $part_last_tag) | str replace '-next' 'n'
+#             $part_names = $part_names | append $"($part | split row '-' | each {|row| $row |str substring 0..1}| str join '' )@($name_version)"
+
+#             let file_version = fx part-version $branch_name $part_last_tag $next_timestamp
+#             let file_stl = create-stl $model $part $file_version
+
+#             logd version $file_version
+#             logd stl_name $file_stl
+
+#             $stls = ( $stls | append $file_stl )
+#         }
+
+#         logd stls ($stls | to text)
+#         logd part_names ($part_names | to text)
+
+#         let part_names = $part_names | uniq --count | each {|row| $"($row.count)($row.value)"}| str join '-'
+#         let final_name =  ['x' $part_names $next_timestamp] | str join '-'
+
+#         logd final_name ($final_name | to text)
+#         $final_stl = merge-stl $validate $final_name $config_name $stls
+
+#     } else {
+
+#         #parts
+#         let $part = $parts | get 0
+#         let part_last_tag = git describe --tags --match $"($model)/($part)/*" --abbrev=0 HEAD
+#         let file_version = fx part-version $branch_name $part_last_tag $next_timestamp
+
+#         #create stl
+#         let freecad_args = fx create-stl $model $part $file_version $temp_path
+#         $final_stl = $freecad_args | reverse | get 0
+#         try { freecad-linkstage3 ...$freecad_args } catch { log error 'slicer command issue' }
+#     }
+
+#     # let thumb_path = generate-thumb $final_stl
+#     let slicer_args = fx create-gcode $config_name $final_stl
+#     let gcode_path = $slicer_args | reverse | get 1
+#     try { prusa-slicer ...$slicer_args } catch { log error 'slicer command issue' }
+
+#     #TBD
+#     # fx embed-thumbnail $thumb_path $gcode_path
+#     let curl_args = fx print-gcode $model $gcode_path $env.3D_PRINTER_KEY $env.PRINTER_IP
+#     try { curl ...$curl_args } catch { log error 'slicer command issue' }
+
+#     # print $gcode_path
+#     return $gcode_path
+# }
 
 def generate-thumb-v0 [ 
     stl_name: string

@@ -1,4 +1,5 @@
 #!/usr/bin/nu
+use std repeat
 
 export def xtest [] {
     return 'tex1'
@@ -68,26 +69,22 @@ export def embed-thumbnail [
 }
 
 export def create-gcode [
-    config_name: string
-    stl_path: string
+    config_path: string
+    file_path: string
+    gcode_path: string
     ] {
 
-    let printer_config = ( './configs' | path expand | path join $config_name )
-    let output_gcode = ($stl_path | path parse --extension 'stl' | upsert extension { 'gcode'} | path join)
     let args = [
-        --load $printer_config
+        --load $config_path
         --export-gcode
         --ensure-on-bed
-        --output $output_gcode
-        $stl_path
+        --output $gcode_path
+        $file_path
     ]
-
-    # logd slicer-args ($args | to text)
-
-    # try { prusa-slicer ...$args } catch { log error 'slicer command issue' }
 
     return $args
 }
+
 export def last-tag-args [
     model: string
     part: string
@@ -104,20 +101,54 @@ export def last-tag-args [
     return $args
 }
 
-export def create-stl [
-    model: string
-    part: string
-    version: string
-    tmp_path: string
+export def merge-stl [
+    config_path:string
+    output_file: string
+    stls: list
     ] {
 
-    let macro = ( './macros' | path expand | path join 'export-to-stl.py' )
-    let input_file = ( './models' | path expand | path join $model $part )
-    let output_stl = ( $tmp_path | path expand | path join $"($part)-($version).stl" )
+    # let output_stl = ( $env.TEMP | path expand | path join $"($output_name).stl" )
+    # let config_path = ( './configs' | path expand | path join $config_name )
+    let stls_expanded = $stls | insert expanded {|row|
+        $row.stl_path | repeat $row.count}
+        | get expanded
+        | flatten
 
     let args = [
-        --console $macro
-        $input_file
+        --load $config_path
+        --export-3mf
+        --merge
+        --split
+        --ensure-on-bed
+        --output $output_file
+    ] | append $stls_expanded
+
+    # try { prusa-slicer ...$args } catch { log error 'slicer command issue' }
+
+    # logd slicer-args ($args | to text)
+
+    # if $validate {
+    #     cd $env.TEMP
+    #     prusa-slicer $output_stl --output $output_stl
+    #     cd -
+    # }
+
+    return $args
+}
+
+export def create-stl [
+    macro_path: string
+    input_dir: string
+    output_stl: string
+    ] {
+
+    # let macro = ( './macros' | path expand | path join 'export-to-stl.py' )
+    # let input_dir = ( $model_root | path join $part )
+    # let output_stl = ( $tmp_path | path expand | path join $"($part)-($version).stl" )
+
+    let args = [
+        --console $macro_path
+        $input_dir
         $output_stl
     ]
 
@@ -129,7 +160,7 @@ export def build-version [
     ] {
 
     let resp = if ($last_tag == '') {
-            "0.1.0"
+            '0.1.0'
         } else {
             $last_tag | split row '/' | last
         }
@@ -191,6 +222,70 @@ export def build-short [
 
     return $resp
 }
+
+export def build-final-name [
+    $parts_base: table
+    $timestamp: string
+    ] {
+
+      let multi_name = if (( $parts_base | length ) > 1
+        ) or (($parts_base | first | get count ) > 1) {
+        'x'
+        | append ($parts_base | get short)
+        | append $timestamp
+        | str join '-'
+    } else {
+        $parts_base | first | get stem
+    }
+
+    return $multi_name
+
+}
+
+export def build-stl-path [
+    $temp_root: string
+    $model: string
+    $stem: string
+    $timestamp: string
+    ] {
+
+    let stl_path = $temp_root
+        | path expand
+        | path join $"($timestamp)-($model)" $"($stem).stl"
+
+    return $stl_path
+
+}
+
+export def build-final-file [
+    $temp_root: string
+    $timestamp: string
+    $model: string
+    $stem: string
+    $suffix: string
+    ] {
+
+    let stl_path = $temp_root
+        | path expand
+        | path join $"($timestamp)-($model)" $"($stem).($suffix)"
+
+    return $stl_path
+
+}
+
+export def build-part-dir [
+    $model_root: string
+    $model: string
+    $part: string
+    ] {
+
+    let model_dir = $model_root
+        | path join $model $part
+
+    return $model_dir
+
+}
+
 # export def part-version-old [
 #     model: string
 #     part: string
