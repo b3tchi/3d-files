@@ -164,6 +164,77 @@ def move-stl [
 # }
 
 export def send [
+    --config: string@configs #print settings
+    --validate #validate layout is properly set
+    model: string@models #select what model is used
+    ...parts: string@parts-v2 #select which parts to print
+] {
+
+    let next_timestamp = (date now | format date %Y%m%d%H%M%S)
+    let $config_name = if ($config == null) { 'prototype.ini' } else { $config }
+    mut final_stl = ''
+    let temp_path = $env.TEMP
+
+    let branch_name = git rev-parse --abbrev-ref HEAD
+
+    if ( $parts | length ) > 1 {
+
+        mut stls = []
+        mut part_names = []
+        mut multi_part_names = []
+
+        for $part in $parts {
+
+            let part_last_tag = git describe --tags --match $"($model)/($part)/*" --abbrev=0 HEAD
+            let name_version = (fx part-version $branch_name $part_last_tag) | str replace '-next' 'n'
+            $part_names = $part_names | append $"($part | split row '-' | each {|row| $row |str substring 0..1}| str join '' )@($name_version)"
+
+            let file_version = fx part-version $branch_name $part_last_tag $next_timestamp
+            let file_stl = create-stl $model $part $file_version
+
+            logd version $file_version
+            logd stl_name $file_stl
+
+            $stls = ( $stls | append $file_stl )
+        }
+
+        logd stls ($stls | to text)
+        logd part_names ($part_names | to text)
+
+        let part_names = $part_names | uniq --count | each {|row| $"($row.count)($row.value)"}| str join '-'
+        let final_name =  ['x' $part_names $next_timestamp] | str join '-'
+
+        logd final_name ($final_name | to text)
+        $final_stl = merge-stl $validate $final_name $config_name $stls
+
+    } else {
+
+        #parts
+        let $part = $parts | get 0
+        let part_last_tag = git describe --tags --match $"($model)/($part)/*" --abbrev=0 HEAD
+        let file_version = fx part-version $branch_name $part_last_tag $next_timestamp
+
+        #create stl
+        let freecad_args = fx create-stl $model $part $file_version $temp_path
+        $final_stl = $freecad_args | reverse | get 0
+        try { freecad-linkstage3 ...$freecad_args } catch { log error 'slicer command issue' }
+    }
+
+    # let thumb_path = generate-thumb $final_stl
+    let slicer_args = fx create-gcode $config_name $final_stl
+    let gcode_path = $slicer_args | reverse | get 1
+    try { prusa-slicer ...$slicer_args } catch { log error 'slicer command issue' }
+
+    #TBD
+    # fx embed-thumbnail $thumb_path $gcode_path
+    let curl_args = fx print-gcode $model $gcode_path $env.3D_PRINTER_KEY $env.PRINTER_IP
+    try { curl ...$slicer_args } catch { log error 'slicer command issue' }
+
+    # print $gcode_path
+    return $gcode_path
+}
+
+export def send-v2 [
     --config: string@configs #prit settings
     --validate #validate layout is properly set
     model: string@models #select what model is used

@@ -88,6 +88,21 @@ export def create-gcode [
 
     return $args
 }
+export def last-tag-args [
+    model: string
+    part: string
+    ] {
+
+    let args = [
+        describe
+        --tags
+        --match $"($model)/($part)/*"
+        --abbrev=0
+        HEAD
+    ]
+
+    return $args
+}
 
 export def create-stl [
     model: string
@@ -100,10 +115,6 @@ export def create-stl [
     let input_file = ( './models' | path expand | path join $model $part )
     let output_stl = ( $tmp_path | path expand | path join $"($part)-($version).stl" )
 
-    # logd output1 $output_stl
-    # try { freecad-linkstage3 --console $macro $input_file $output_stl } catch { 'freecad linking '}
-    # logd output2 $output_stl
-
     let args = [
         --console $macro
         $input_file
@@ -111,8 +122,8 @@ export def create-stl [
     ]
 
     return $args
-    # return $output_stl
 }
+
 export def build-version [
     last_tag: string
     ] {
@@ -167,7 +178,7 @@ export def build-short [
     branch: string
     part: string
     version: string
-    count: string
+    count: int
     ] {
 
     let resp = $count
