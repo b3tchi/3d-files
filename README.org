@@ -1,21 +1,24 @@
-* Printing
+* 3D models repository
+** Model printing automation via nu scripts
 
-- prerequisites
-  freecad-linkstage3
-  prusa-slicer
+*** prerequisites
+- freecad-linkstage3
+- prusa-slicer
+- nushell
 
-- load printing module
+
+*** load printing module
 #+begin_src nu
 use ./macros/tdpr
 #+end_src
 
-- setup printer variables
+*** setup printer variables
 #+begin_src nu
 tdpr setup '10.0.0.1' (pass show printer-token)
 #+end_src
 
-- print piece/s from repostiory
-
+*** print piece/s from repostiory
+model and part have built in autocompletion in nushell
 #+begin_src nu
 tdpr send 'model' 'partA' # basic single piece
 
@@ -23,19 +26,31 @@ tdpr send 'model' 'partA' 'partB' 'partC' # print multiple pieces
 tdpr send 'model' 'partA' 'partB' 'partB' # print piece multiple times
 #+end_src
 
-there are optional flags for interaction
---arrange for interactively arrange items on the board
---validate for interactively check gcode in prusa slicer
+there is option to load slicer config stored in ~./configs/*~
+- ~--config profile.ini~ name of profile can be picked via autocompletion
 
-* Scripts
+there are optional flags for interaction
+- ~--arrange~ for interactively arrange items on the board
+- ~--validate~ for interactively check gcode in prusa slicer
+
+*** in windows alias excutables
+#+begin_src nu
+alias 'freecad-linkstage3' = 'C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240407\bin\FreeCADLink.exe'
+alias 'freecad-linkstage3 --console' = 'C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240407\bin\FreeCADCmd.exe'
+alias slicer-prusa = prusa-slicer-console.exe
+#+end_src
+
+** Scripts - documentation
+
+there is separate README.md in ~./models/automation-poc/~ about cli interaction
 
 #+begin_src nu
 use ./macros/tdpr
 tdpr setup --help
 #+end_src
 
-** Functions
-*** build-short
+*** Functions
+**** build-short
 #+begin_src nu
 use ./macros/tdpr/fx.nu
 fx build-short 'feat/test' 'test' '0.1' 3 | to yaml
@@ -45,7 +60,7 @@ fx build-short 'feat/test' 'test' '0.1' 3 | to yaml
 : 3te@0.1n
 :
 
-*** merge-stl
+**** merge-stl
 #+begin_src nu
 use ./macros/tdpr/fx.nu
 let t = [[count stl_path];
@@ -98,7 +113,7 @@ fx merge-stl 'conf' 'output.stl' $t
 ╰────┴────────────────────────────╯
 #+end_example
 
-*** build-final-name
+**** build-final-name
 #+begin_src nu
 use ./macros/tdpr/fx.nu
 let t = [[short stem];
@@ -121,7 +136,7 @@ fx build-final-name $t '241003'
 #+RESULTS:
 : capillar-0.1.1-next+240103
 
-*** build-final-file
+**** build-final-file
 #+begin_src nu
 use ./macros/tdpr/fx.nu
 
@@ -150,7 +165,7 @@ fx build-final-file $temp_path $timestamp $model $final_stem 'gcode'
 #+RESULTS:
 : /tmp/3d-files/230110-model1/partx-0.1-next+230412.gcode
 
-*** last-tag-args
+**** last-tag-args
 #+begin_src nu
 use ./macros/tdpr/fx.nu
 git ...(fx last-tag-args 'model' 'rote')
@@ -159,7 +174,7 @@ git ...(fx last-tag-args 'model' 'rote')
 #+RESULTS:
 : fatal: No names found, cannot describe anything.
 
-*** build-base
+**** build-base
 #+begin_src nu
 use std
 use ./macros/tdpr/fx.nu
@@ -200,7 +215,7 @@ $resp | to yaml
 
 #+end_example
 
-*** send
+**** send
 #+begin_src nu
 use std
 use ./macros/tdpr/fx.nu
