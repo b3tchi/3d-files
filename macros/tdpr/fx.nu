@@ -77,6 +77,8 @@ export def create-gcode [
     let args = [
         --load $config_path
         --export-gcode
+        --merge
+        --split
         --ensure-on-bed
         --output $gcode_path
         $file_path
@@ -119,6 +121,7 @@ export def merge-stl [
         --export-3mf
         --merge
         --split
+        --center '90,90'
         --ensure-on-bed
         --output $output_file
     ] | append $stls_expanded

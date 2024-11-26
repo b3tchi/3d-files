@@ -1,12 +1,9 @@
 #!/usr/bin/nu
 
 # tHREE dIMENSION pRINTEr alias  = tdpr scripts to manager printing
-use std log
+# use std log
 use ./fx.nu
 export-env {
-    print 'export'
-    # $env | get --ignore-errors 3D_PRINTER_IP | default ''
-    # $env | get --ignore-errors 3D_PRINTER_KEY | default ''
 
     # if $nu.os-info.name == 'linux' {
     $env.NU_LOG_LEVEL = 'DEBUG'
@@ -30,9 +27,9 @@ export-env {
 # 	}
 # }
 
-export def test [] {
-    fx xtest
-}
+# export def test [] {
+#     fx xtest
+# }
 
 def configs [] {
     ls -s ($env.PWD | path join configs) | get name
@@ -71,13 +68,13 @@ export def --env setup [
     } else {$password}
 }
 
-def logd [
-    description:string
-    msg:string
-    ] {
+# def logd [
+#     description:string
+#     msg:string
+#     ] {
 
-    log debug $"(ansi yellow)($description): ($msg)(ansi reset)"
-}
+#     log debug $"(ansi yellow)($description): ($msg)(ansi reset)"
+# }
 
 export def check [] {
     print $"url:($env.3D_PRINTER_IP)"
@@ -86,67 +83,67 @@ export def check [] {
     return $resp.printer.state
 }
 
-export def send-v1 [
-    model: string@models
-    part: string@parts
-    config: string@configs
-    stl?: string
-    ] {
+# export def send-v1 [
+#     model: string@models
+#     part: string@parts
+#     config: string@configs
+#     stl?: string
+#     ] {
 
-    let next_timestamp = (date now | format date %Y%m%d%H%M%S)
+#     let next_timestamp = (date now | format date %Y%m%d%H%M%S)
 
-    let $version = part-version $model $part $next_timestamp
-    print $version
-    let $file_stl = if $stl == null { create-stl $model $part $version } else { move-stl $model $part $version $stl }
-    print $file_stl
-    let $file_gcode = create-gcode-v1 $model $part $version $config
-    print $file_gcode
-    #printing code
-    print-gcode-v1 $model $part $version
+#     let $version = part-version $model $part $next_timestamp
+#     print $version
+#     let $file_stl = if $stl == null { create-stl $model $part $version } else { move-stl $model $part $version $stl }
+#     print $file_stl
+#     let $file_gcode = create-gcode-v1 $model $part $version $config
+#     print $file_gcode
+#     #printing code
+#     print-gcode-v1 $model $part $version
 
-    return $file_gcode
-}
+#     return $file_gcode
+# }
 
-export def part-version [
-    model: string@models
-    part: string@parts
-    next_timestamp?: string
-    ] {
+# export def part-version [
+#     model: string@models
+#     part: string@parts
+#     next_timestamp?: string
+#     ] {
 
-    let branch = (git rev-parse --abbrev-ref HEAD)
-    logd branch $branch
+#     let branch = (git rev-parse --abbrev-ref HEAD)
+#     logd branch $branch
 
-    let tag_git = (git describe --tags --match $"($model)/($part)/*" --abbrev=0 HEAD)
-    let tag_build = (if $tag_git  == '' { '0.1.0' } else { $tag_git })
+#     let tag_git = (git describe --tags --match $"($model)/($part)/*" --abbrev=0 HEAD)
+#     let tag_build = (if $tag_git  == '' { '0.1.0' } else { $tag_git })
 
-    mut tag_parts = [$tag_build]
-    if ($branch != 'main') {
-        if ($next_timestamp == null) {
-            $tag_parts = ( $tag_parts | append '-next' )
-        } else {
-            $tag_parts = ( $tag_parts | append '-next+' )
-            $tag_parts = ( $tag_parts | append $next_timestamp )
-        }
-    }
+#     mut tag_parts = [$tag_build]
+#     if ($branch != 'main') {
+#         if ($next_timestamp == null) {
+#             $tag_parts = ( $tag_parts | append '-next' )
+#         } else {
+#             $tag_parts = ( $tag_parts | append '-next+' )
+#             $tag_parts = ( $tag_parts | append $next_timestamp )
+#         }
+#     }
 
-    let version = ( $tag_parts | str join )
-    logd version ($version)
+#     let version = ( $tag_parts | str join )
+#     logd version ($version)
 
-    return $version
-}
+#     return $version
+# }
 
-def move-stl [
-    model: string@models
-    part: string@parts
-    version: string
-    stl: string
-] {
+# def move-stl [
+#     model: string@models
+#     part: string@parts
+#     version: string
+#     stl: string
+# ] {
 
-    let output_stl = ( $env.TEMP | path expand | path join $"($part)-($version).stl" )
-    cp -v $stl $output_stl
+#     let output_stl = ( $env.TEMP | path expand | path join $"($part)-($version).stl" )
+#     cp -v $stl $output_stl
 
-    return $output_stl
-}
+#     return $output_stl
+# }
 
 # export def create-stl [
 #     model: string@models
@@ -209,11 +206,11 @@ export def --env send [
 
     $parts_base | each {|part|
         let freecad_args = fx create-stl $macro_path $part.fcad_dir $part.stl_path
-        try { freecad-linkstage3 ...$freecad_args } catch { log error 'slicer command issue' } #I/O
+        try { freecad-linkstage3 ...$freecad_args } catch { 'export command issue' } #I/O
     }
 
     let merge_args = fx merge-stl $config_path $final_3mf ($parts_base | select stl_path count)
-    try { prusa-slicer ...$merge_args } catch { log error 'slicer command issue' } #I/O
+    try { prusa-slicer ...$merge_args } catch { 'merge command issue' } #I/O
 
     # validate source input
     if $arrange {
@@ -225,7 +222,7 @@ export def --env send [
 
     # create gcode
     let slicer_args = fx create-gcode $config_path $final_3mf $final_gcode
-    try { prusa-slicer ...$slicer_args } catch { log error 'slicer command issue' } #I/O
+    try { prusa-slicer ...$slicer_args } catch { 'gcode command issue' } #I/O
 
 
     # validate source input
@@ -241,7 +238,7 @@ export def --env send [
     # print gcode
     # TBD fx embed-thumbnail $thumb_path $gcode_path
     let curl_args = fx print-gcode $model $final_gcode $env.3D_PRINTER_KEY $env.3D_PRINTER_IP
-    # try { curl ...$slicer_args } catch { log error 'slicer command issue' } #I/O
+    try { curl ...$slicer_args } catch { 'print command issue' } #I/O
     print $curl_args
 
     return $final_gcode
@@ -351,48 +348,48 @@ export def generate-thumb [
     return $output_png
 }
 
-def merge-stl [
-    validate: bool
-    output_name: string
-    config_name:string
-    stls: list
-    ] {
+# def merge-stl [
+#     validate: bool
+#     output_name: string
+#     config_name:string
+#     stls: list
+#     ] {
 
-    let output_stl = ( $env.TEMP | path expand | path join $"($output_name).stl" )
-    let config_path = ( './configs' | path expand | path join $config_name )
+#     let output_stl = ( $env.TEMP | path expand | path join $"($output_name).stl" )
+#     let config_path = ( './configs' | path expand | path join $config_name )
 
-    let args = [--load $config_path --export-stl --merge --split --ensure-on-bed --output $output_stl] | append $stls
+#     let args = [--load $config_path --export-stl --merge --split --ensure-on-bed --output $output_stl] | append $stls
 
-    try { prusa-slicer ...$args } catch { log error 'slicer command issue' }
+#     try { prusa-slicer ...$args } catch { log error 'slicer command issue' }
 
-    logd slicer-args ($args | to text)
+#     logd slicer-args ($args | to text)
 
-    if $validate {
-        cd $env.TEMP
-        prusa-slicer $output_stl --output $output_stl
-        cd -
-    }
+#     if $validate {
+#         cd $env.TEMP
+#         prusa-slicer $output_stl --output $output_stl
+#         cd -
+#     }
 
-    return $output_stl
-}
+#     return $output_stl
+# }
 
 
 
-def create-gcode-v1 [
-    model: string@models
-    part: string@parts
-    version: string
-    config: string
-    ] {
+# def create-gcode-v1 [
+#     model: string@models
+#     part: string@parts
+#     version: string
+#     config: string
+#     ] {
 
-    let printer_config = ( './configs' | path expand | path join $config )
-    let input_stl = ( $env.TEMP | path expand | path join $"($part)-($version).stl" )
-    let output_gcode = ( $env.TEMP | path expand | path join $"($part)-($version).gcode" )
+#     let printer_config = ( './configs' | path expand | path join $config )
+#     let input_stl = ( $env.TEMP | path expand | path join $"($part)-($version).stl" )
+#     let output_gcode = ( $env.TEMP | path expand | path join $"($part)-($version).gcode" )
 
-    prusa-slicer --load $printer_config --export-gcode --output $output_gcode $input_stl
+#     prusa-slicer --load $printer_config --export-gcode --output $output_gcode $input_stl
 
-    return $output_gcode
-}
+#     return $output_gcode
+# }
 
 # export def create-gcode [
 #     config: string
@@ -412,19 +409,18 @@ def create-gcode-v1 [
 #     return $output_gcode
 # }
 
-def print-gcode-v1 [
-    model: string@models
-    part: string@parts
-    version: string
-    ] {
+# def print-gcode-v1 [
+#     model: string@models
+#     part: string@parts
+#     version: string
+#     ] {
 
-    let input_gcode = ( $env.TEMP | path expand | path join $"($part)-($version).gcode" )
-    let api_key = $env.3D_PRINTER_KEY
-    let printer_ip = $env.3D_PRINTER_IP
+#     let input_gcode = ( $env.TEMP | path expand | path join $"($part)-($version).gcode" )
+#     let api_key = $env.3D_PRINTER_KEY
+#     let printer_ip = $env.3D_PRINTER_IP
 
-    #working !!!!
-    let printer_url = $"http://($printer_ip)/api/v1/files/usb/($model)/($part)-($version).gcode"
-    curl -X PUT --header $"X-Api-Key: ($api_key)" -H 'Print-After-Upload: ?0' -H 'Overwrite: ?0' -F $"file=@($input_gcode)" -F 'path=' $printer_url
+#     #working !!!!
+#     let printer_url = $"http://($printer_ip)/api/v1/files/usb/($model)/($part)-($version).gcode"
+#     curl -X PUT --header $"X-Api-Key: ($api_key)" -H 'Print-After-Upload: ?0' -H 'Overwrite: ?0' -F $"file=@($input_gcode)" -F 'path=' $printer_url
 
-}
-
+# }
