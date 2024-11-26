@@ -1,147 +1,52 @@
 * Printing
 
-#+begin_src mermaid :file ./test.png
----
-config:
-  look: handDrawn
-  theme: forrest
----
-flowchart LR
-input["enter model/s"]
-export("export as stl")
-output("printing model")
-multiple_models{"contains multiple models?"}
-combine("combine multiple models")
-convert("convert to gcode")
-preview("generate preview")
-validate("validate setup")
+- prerequisites
+  freecad-linkstage3
+  prusa-slicer
 
-trigger-->input
-output-->get_print
-
-subgraph user
-  trigger
-  get_print
-end
-subgraph script
-  input-->
-  export-->
-  multiple_models--yes-->
-    combine-->
-    convert
-  multiple_models--no-->
-    convert
-  convert-->
-  validate-->
-  preview-->
-  output
-end
+- load printing module
+#+begin_src nu
+use ./macros/tdpr
 #+end_src
 
-#+RESULTS:
-[[file:./test.png]]
-
-#+begin_src emacs-lisp
-(setq plantuml-default-exec-mode 'executable)
-(setq plantuml-executable-path "/usr/bin/plantuml")
-
-(setq org-plantuml-exec-mode 'plantuml)
-(setq org-plantuml-executable-path "/usr/bin/plantuml")
-
-(org-babel-do-load-languages 'org-babel-load-languages
-        (append org-babel-load-languages '((plantuml . t))))
-
-;; Enable plantuml-mode for PlantUML files
-(require 'plantuml-mode)
-(add-to-list 'auto-mode-alist '("\\.plantuml\\'" . plantuml-mode))
-
-(add-to-list
-  'org-src-lang-modes '("plantuml" . plantuml))
+- setup printer variables
+#+begin_src nu
+tdpr setup '10.0.0.1' (pass show printer-token)
 #+end_src
 
-#+RESULTS:
-: ((plantuml . plantuml) (nu . nushell-ts) (mermaid . mermaid-ts) (tmux . sh) (md . markdown) (C . c) (C++ . c++) (asymptote . asy) (beamer . latex) (calc . fundamental) (cpp . c++) (ditaa . artist) (desktop . conf-desktop) (dot . fundamental) (elisp . emacs-lisp) (ocaml . tuareg) (screen . shell-script) (sqlite . sql) (toml . conf-toml) (shell . sh) (ash . sh) (sh . sh) (bash . sh) (jsh . sh) (bash2 . sh) (dash . sh) (dtksh . sh) (ksh . sh) (es . sh) (rc . sh) (itcsh . sh) (tcsh . sh) (jcsh . sh) (csh . sh) (ksh88 . sh) (oash . sh) (pdksh . sh) (mksh . sh) (posix . sh) (wksh . sh) (wsh . sh) (zsh . sh) (rpm . sh))
-
-#+begin_src plantuml :file hello-uml.svg
-!theme crt-amber
-'skinparam handwritten true
-skinparam defaultFontName Iosevka
-|user|
-start
-    :runscript;
-    |script|
-    :export stl;
-    if (contains multiple files ?) then (yes)
-        :generate composite file name;
-        :merge all stls to one file;
-    endif
-    :generate gcode;
-    :generate preview;
-stop
-#+end_src
-
-#+RESULTS:
-[[file:hello-uml.svg]]
-
-#+begin_src plantuml :file hello-font.png
-listfont
-#+end_src
-
-#+RESULTS:
-[[file:hello-font.png]]
-
-#+begin_src sh
-# ls -a
-echo 'abc'
-#+end_src
-
-#+RESULTS:
-: abc
-
-#+begin_src nu :var test='macros'
-# echo 'abc'
-try { echo 'abc' | to csv } catch { ls | where name == $test }
-#+end_src
-
-#+RESULTS:
-: ╭───┬────────┬──────┬─────────┬────────────╮
-: │ # │  name  │ type │  size   │  modified  │
-: ├───┼────────┼──────┼─────────┼────────────┤
-: │ 0 │ macros │ dir  │ 4.0 KiB │ 2 days ago │
-: ╰───┴────────┴──────┴─────────┴────────────╯
+- print piece/s from repostiory
 
 #+begin_src nu
-use ./macros/tdpr.nu
+tdpr send 'model' 'partA' # basic single piece
+
+tdpr send 'model' 'partA' 'partB' 'partC' # print multiple pieces
+tdpr send 'model' 'partA' 'partB' 'partB' # print piece multiple times
+#+end_src
+
+there are optional flags for interaction
+--arrange for interactively arrange items on the board
+--validate for interactively check gcode in prusa slicer
+
+* Scripts
+
+#+begin_src nu
+use ./macros/tdpr
 tdpr setup --help
 #+end_src
 
-#+begin_src nu :var test='macros'
-use ./macros/tdpr/fx.nu; (fx create-gcode 'name' 'stl_path') | reverse | get 1
-#+end_src
-
-#+RESULTS:
-: stl_path.gcode
-
-#+begin_src nu :var test='macros'
-use ./macros/tdpr/fx.nu; (fx create-stl 'model_name' 'part' 'version' 'tmp_path') | to text
-#+end_src
-
-#+RESULTS:
-: --console
-: /home/jan/repos/b3tchi/3d-files/feat/popup-mvp1/macros/export-to-stl.py
-: /home/jan/repos/b3tchi/3d-files/feat/popup-mvp1/models/model_name/part
-: /home/jan/repos/b3tchi/3d-files/feat/popup-mvp1/tmp_path/part-version.stl
-
-#+begin_src nu :var test='macros'
-use ./macros/tdpr/fx.nu; (fx part-version 'xmain' '') | to text
-#+end_src
-
-#+begin_src nu :var test='macros'
+** Functions
+*** build-short
+#+begin_src nu
 use ./macros/tdpr/fx.nu
 fx build-short 'feat/test' 'test' '0.1' 3 | to yaml
 #+end_src
 
-#+begin_src nu :var test='macros'
+#+RESULTS:
+: 3te@0.1n
+:
+
+*** merge-stl
+#+begin_src nu
 use ./macros/tdpr/fx.nu
 let t = [[count stl_path];
             [3 'darfour-1.1.0-next+240103']
@@ -154,7 +59,7 @@ fx merge-stl 'conf' 'output.stl' $t
 ╭────┬───────────────────────────╮
 │  0 │ --load                    │
 │  1 │ conf                      │
-│  2 │ --export-stl              │
+│  2 │ --export-3mf              │
 │  3 │ --merge                   │
 │  4 │ --split                   │
 │  5 │ --ensure-on-bed           │
@@ -166,7 +71,7 @@ fx merge-stl 'conf' 'output.stl' $t
 ╰────┴───────────────────────────╯
 #+end_example
 
-#+begin_src nu :var test='macros'
+#+begin_src nu
 use ./macros/tdpr/fx.nu
 let t = [[count stl_path];
             [1 'capillar-0.1.1-next+240103']
@@ -193,7 +98,8 @@ fx merge-stl 'conf' 'output.stl' $t
 ╰────┴────────────────────────────╯
 #+end_example
 
-#+begin_src nu :var test='macros'
+*** build-final-name
+#+begin_src nu
 use ./macros/tdpr/fx.nu
 let t = [[short stem];
             ['1ca@0.1.1n' 'capillar-0.1.1-next+240103']
@@ -205,7 +111,7 @@ fx build-final-name $t '241003'
 #+RESULTS:
 : x-1ca@0.1.1n-3da@1.1.0n-241003
 
-#+begin_src nu :var test='macros'
+#+begin_src nu
 use ./macros/tdpr/fx.nu
 let t = [[short stem]; ['1ca@0.1.1' 'capillar-0.1.1-next+240103']]
 $t
@@ -215,7 +121,8 @@ fx build-final-name $t '241003'
 #+RESULTS:
 : capillar-0.1.1-next+240103
 
-#+begin_src nu :var test='macros'
+*** build-final-file
+#+begin_src nu
 use ./macros/tdpr/fx.nu
 
 let temp_path = '/tmp/3d-files'
@@ -229,7 +136,7 @@ fx build-final-file $temp_path $timestamp $model $final_stem 'gcode'
 #+RESULTS:
 : /tmp/3d-files/230110-model1/partx-0.1-next+230412.gcode
 
-#+begin_src nu :var test='macros'
+#+begin_src nu
 use ./macros/tdpr/fx.nu
 
 let temp_path = '/tmp/3d-files'
@@ -243,7 +150,8 @@ fx build-final-file $temp_path $timestamp $model $final_stem 'gcode'
 #+RESULTS:
 : /tmp/3d-files/230110-model1/partx-0.1-next+230412.gcode
 
-#+begin_src nu :var test='macros'
+*** last-tag-args
+#+begin_src nu
 use ./macros/tdpr/fx.nu
 git ...(fx last-tag-args 'model' 'rote')
 #+end_src
@@ -251,7 +159,8 @@ git ...(fx last-tag-args 'model' 'rote')
 #+RESULTS:
 : fatal: No names found, cannot describe anything.
 
-#+begin_src nu :var test='macros'
+*** build-base
+#+begin_src nu
 use std
 use ./macros/tdpr/fx.nu
 let model = 'spool-holder'
@@ -264,6 +173,7 @@ let resp = $parts_base
 $resp | to yaml
 
 #+end_src
+
 #+RESULTS:
 #+begin_example
 - part: base
@@ -290,7 +200,8 @@ $resp | to yaml
 
 #+end_example
 
-#+begin_src nu :var test='macros'
+*** send
+#+begin_src nu
 use std
 use ./macros/tdpr/fx.nu
 let model = 'spool-holder'
@@ -362,40 +273,5 @@ $resp | to yaml
   short: 1dese@0.1.0n
   stl_path: /tmp/3d-files/20241125114828-spool-holder/demi-sec-0.1.0-next+20241125114828.stl
   fcad_dir: /home/jan/repos/b3tchi/3d-files/feat/popup-mvp1/model/spool-holder/demi-sec
-
-#+end_example
-
-#+begin_src emacs-lisp
-   (defun my-remove-variables-from-imenu-index (index)
-     "Remove 'Variables' category entries from imenu INDEX."
-     (seq-filter
-      (lambda (item)
-        (let ((name (car item)))
-          (not (and (stringp name) (string-equal name "Variables")))))
-      index))
-
-   (defun my-customize-imenu ()
-     "Customize imenu to exclude 'Variables' entries."
-     ;; Set custom index function that includes post-processing
-     (setq imenu-create-index-function
-           (lambda ()
-             (my-remove-variables-from-imenu-index (imenu-default-create-index-function)))))
-
-   ;; Add to desired mode hooks, for example, for programming modes:
-   (add-hook 'nushell-ts-mode-hook 'my-customize-imenu)
-#+end_src
-
-#+RESULTS:
-#+begin_example
-Error: [31mnu::parser::unbalanced_delimiter[0m
-
-  [31m×[0m Unbalanced delimiter.
-    ╭─[[36;1;4m/home/jan/repos/b3tchi/3d-files/feat/popup-mvp1/nushell-5YbmJ5[0m:14:20]
- [2m13[0m │  [2m7[0m │         name: $part
- [2m14[0m │  [2m8[0m │     }
-    · [35;1m         ┬[0m
-    ·          [35;1m╰── [35;1munbalanced { and }[0m[0m
- [2m15[0m │    · [35;1m     ┬[0m
-    ╰────
 
 #+end_example
