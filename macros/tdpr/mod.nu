@@ -23,17 +23,17 @@ def parts [context: string] {
     ls -s ($env.PWD | path join models $model ) | where type == dir |get name
 }
 
-def parts-v2 [context: string] {
-    logd context $context
+def --env parts-v2 [context: string] {
     let arguments = $context | split row ' ' | skip 2
     mut model_position = 0
 
     $model_position += (if ('--config' in $arguments) { 2 } else {0})
+    $model_position += (if ('--arrange' in $arguments) { 1 } else {0})
     $model_position += (if ('--validate' in $arguments) { 1 } else {0})
 
     let model = $arguments | get $model_position
 
-    ls -s ($env.PWD | path join models $model ) | where type == dir |get name
+    ls -s ($env.PWD | path join models $model ) | where type == dir | get name
 }
 
 export def --env setup [
@@ -128,7 +128,7 @@ export def --env send [
     # print gcode
     # TBD fx embed-thumbnail $thumb_path $gcode_path
     let curl_args = fx print-gcode $model $final_gcode $env.3D_PRINTER_KEY $env.3D_PRINTER_IP
-    try { curl ...$slicer_args } catch { 'print command issue' } #I/O
+    try { curl ...$curl_args } catch { 'print command issue' } #I/O
     print $curl_args
 
     return $final_gcode
