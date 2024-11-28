@@ -19,7 +19,7 @@
       <ExpressionEngine count="0"></ExpressionEngine>
     </Property>
     <Property name="FixShape" type="App::PropertyEnumeration">
-      <Integer value="1"/>
+      <Integer value="0"/>
     </Property>
     <Property name="InvalidShape" type="App::PropertyBool" status="67108864">
       <Bool value="false"/>
@@ -34,7 +34,7 @@
       <Bool value="true"/>
     </Property>
     <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Link008" sub="Pad.Face1" shadow="Pad.;#3;:G;XTR;:H857:7,F.Face1"/>
+      <XLink file="" stamp="" name="Binder" sub="Edge367" shadow=";#b951;:H13a6,E;:H193e,E;:X;:H122f:c,E;:H1a2:17,E.Edge367"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -46,187 +46,75 @@
       <Python  module="freecad.asm3.assembly" class="AsmElement" value="null"/>
     </Property>
     <Property name="Shape" type="Part::PropertyPartShape">
-      <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
+      <Part ElementMap="0.15.70200.4" brep="1">
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 13
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-1
-3.37174206554991e-07 -3.17723221867523e-13 0.999999999999943 57.0999999999836 
--3.17095299737334e-13               1 3.17723328783897e-13 -28.8000000000016 
--0.999999999999943 -3.17095406865427e-13 3.37174206554991e-07 2.09999999999607 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-2  3 -1 0
+Locations 8
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
 1
               1               0               0               0 
-              0 -4.44089209850063e-16              -1               0 
-              0               1 -4.44089209850063e-16               0 
-2  5 1 6 1 0
-2  6 -1 5 -1 0
-2  3 -1 6 -1 5 -1 0
+              0               1               0               0 
+              0               0               1               0 
 1
               1               0               0               0 
-              0               1               0           -19.8 
-              0               0               1 -8.79296635503124e-15 
-2  5 1 6 1 10 1 0
-2  10 -1 6 -1 5 -1 0
-2  3 -1 10 -1 6 -1 5 -1 0
-Curve2ds 4
-1 0 0 0 -1 
-1 7.9999999999999991 0 0 -1 
-1 0 0 1 0 
-1 0 -19.800000000000001 1 0 
-Curves 4
-1 -6.3999999999999986 -8.2156503822261588e-16 1.8500000000000001 0 -1 -4.4408920985006262e-16 
-1 1.6000000000000008 -8.2156503822261588e-16 1.8500000000000001 0 -1 -4.4408920985006262e-16 
-1 -6.3999999999999986 1.8500000000000001 0 1 0 0 
-1 -6.3999999999999986 1.8500000000000001 0 1 0 0 
+              0               1               0               0 
+              0               0               1               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+              1               0               0 77.0999999999836 
+              0               1               0 0.399999999998421 
+              0               0               1 -9.06434649561305e-13 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  3 1 4 1 5 1 6 1 0
+2  6 -1 5 -1 4 -1 3 -1 0
+Curve2ds 0
+Curves 1
+2 -20 -49 2.0999999999999783 -0 1 4.4408920985006262e-16 1 0 0 0 4.4408920985006262e-16 -1 1.05
 Polygon3D 0
 PolygonOnTriangulations 0
-Surfaces 1
-1 -6.3999999999999986 -8.2156503822261588e-16 1.8500000000000001 0 -4.4408920985006262e-16 1 1 0 0 -0 1 4.4408920985006262e-16 
+Surfaces 0
 Triangulations 0
 
-TShapes 12
+TShapes 4
 Ve
-1e-07
--6.4 -8.21565038222616e-16 1.85
-0 0
-
-0101101
-*
-Ve
-1e-07
--6.4 -19.8 1.84999999999999
+1.00000000444089e-07
+58.1499999999835 -48.6000000000016 2.09999999999907
 0 0
 
 0101101
 *
 Ed
  1e-07 1 1 0
-1  1 0 0 19.8
-2  1 1 0 0 19.8
+1  1 0 0 6.28318530717959
 0
-
-0101000
-+12 4 -11 4 *
-Ve
-1.00000000666134e-07
-1.6 -8.21565038222616e-16 1.85
-0 0
-
-0101101
-*
-Ve
-1.00000000666134e-07
-1.6 -19.8 1.84999999999999
-0 0
-
-0101101
-*
-Ed
- 1.00000000666134e-07 1 1 0
-1  2 0 0 19.8
-2  2 1 0 0 19.8
-0
-
-0101000
-+9 4 -8 4 *
-Ed
- 1e-07 1 1 0
-1  3 0 0 8
-2  3 1 8 0 8
-0
-
-0101000
-+12 9 -9 9 *
-Ed
- 1e-07 1 1 0
-1  4 0 0 8
-2  4 1 12 0 8
-0
-
-0101000
-+11 13 -8 13 *
-Wi
 
 0101100
-+10 0 -7 0 -6 7 +5 11 *
-Fa
-0  1e-07 1 0
-
-0101000
-+4 0 *
++4 8 -4 8 *
 Co
 
 0100000
-+3 3 *
+-3 7 *
 Co
 
-1100000
+0100000
 +2 2 *
 
 +1 1 ]]>
       </Part>
-      <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
-      <ElementMap2 count="9">
-<![CDATA[
-9 PostfixCount 3
-Edge
-Face
-Vertex
-
-MapCount 1
-
-ElementMap 1 9 3
-
-Edge
-
-ChildCount 0
-
-NameCount 5
-0
-;#13d;:X;:H858:3,E.0 0
-;#13e;:X;:H858:3,E.0 0
-;#140;:X;:H858:3,E.0 0
-;#141;:X;:H858:3,E.0 0
-
-Face
-
-ChildCount 0
-
-NameCount 2
-0
-;#143;:X;:H858:3,F.0 0
-
-Vertex
-
-ChildCount 0
-
-NameCount 5
-0
-;#138;:X;:H858:3,V.0 0
-;#139;:X;:H858:3,V.0 0
-;#13a;:X;:H858:3,V.0 0
-;#13b;:X;:H858:3,V.0 0
-
-EndMap
-]]>
-      </ElementMap2>
+      <ElementMap/>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="80"/>
+      <Integer value="200"/>
     </Property>
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>

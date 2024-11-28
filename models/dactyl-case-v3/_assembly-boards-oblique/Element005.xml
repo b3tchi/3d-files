@@ -19,7 +19,7 @@
       <ExpressionEngine count="0"></ExpressionEngine>
     </Property>
     <Property name="FixShape" type="App::PropertyEnumeration">
-      <Integer value="1"/>
+      <Integer value="0"/>
     </Property>
     <Property name="InvalidShape" type="App::PropertyBool" status="67108864">
       <Bool value="false"/>
@@ -34,7 +34,7 @@
       <Bool value="true"/>
     </Property>
     <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Link" sub="Chamfer001.Vertex43" shadow="Chamfer001.;#6bc;:H91c,V.Vertex43"/>
+      <XLink file="" stamp="" name="Binder003" sub="Edge199" shadow=";#4e7a;:Hb1,E;:Hbe,E;:X;:Ha2:a,E;:H2b3:13,E.Edge199"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -46,38 +46,60 @@
       <Python  module="freecad.asm3.assembly" class="AsmElement" value="null"/>
     </Property>
     <Property name="Shape" type="Part::PropertyPartShape">
-      <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
+      <Part ElementMap="0.15.70200.4" brep="1">
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 2
+Locations 7
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
 1
-0.999999974453319 0.00021835059480662 5.84498045542844e-05 66.7249976711938 
--0.000218322064108361 0.866025378217765 0.499999996618254 -59.0621875049699 
-5.8556282569025e-05 -0.499999996605795 0.866025403764443 8.90621495277934 
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+              1               0               0 37.8499999992177 
+              0               1               0 -78.3000000000036 
+              0               0               1 0.0999999999194832 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  3 1 4 1 5 1 0
+2  5 -1 4 -1 3 -1 0
 Curve2ds 0
-Curves 0
+Curves 1
+2 -19.25 -13.600000000000001 1.9999999999999942 -0 1 4.4408920985006262e-16 1 0 0 0 4.4408920985006262e-16 -1 1.05
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
 Triangulations 0
 
-TShapes 3
+TShapes 4
 Ve
-1e-07
--6.9 5 0
+1.00000000222045e-07
+19.6499999992177 -91.9000000000036 2.09999999991948
 0 0
 
 0101101
 *
+Ed
+ 1e-07 1 1 0
+1  1 0 0 6.28318530717959
+0
+
+0101100
++4 7 -4 7 *
 Co
 
 0100000
-+3 0 *
+-3 6 *
 Co
 
 1100000
@@ -85,30 +107,10 @@ Co
 
 +1 1 ]]>
       </Part>
-      <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
-      <ElementMap2 count="1">
-<![CDATA[
-25 PostfixCount 1
-Vertex
-
-MapCount 1
-
-ElementMap 1 25 1
-
-Vertex
-
-ChildCount 0
-
-NameCount 2
-0
-;#153;:X;:H91d:3,V.0 0
-
-EndMap
-]]>
-      </ElementMap2>
+      <ElementMap/>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="122"/>
+      <Integer value="212"/>
     </Property>
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
