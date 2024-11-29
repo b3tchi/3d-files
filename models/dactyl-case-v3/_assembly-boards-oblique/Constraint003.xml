@@ -26,7 +26,7 @@
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
       <ExpressionEngine count="0"></ExpressionEngine>
     </Property>
-    <Property name="Group" type="App::PropertyLinkList" group="Base" attr="0" ro="0" hide="0" doc="" status="2097419">
+    <Property name="Group" type="App::PropertyLinkList" group="Base" attr="0" ro="0" hide="0" doc="" status="2097418">
       <LinkList count="2">
         <Link value="ElementLink005"/>
         <Link value="ElementLink006"/>
@@ -34,13 +34,13 @@
     </Property>
     <Property name="GroupMode" type="App::PropertyEnumeration" group="Base" attr="0" ro="0" hide="0" doc="" status="2097434"></Property>
     <Property name="Label" type="App::PropertyString" status="134217728">
-      <String value="PlaneCoincident001"/>
+      <String value="PlaneCoincident002"/>
     </Property>
     <Property name="Label2" type="App::PropertyString" status="128">
       <String value=""/>
     </Property>
     <Property name="LockAngle" type="App::PropertyBool" group="Constraint" attr="0" ro="0" hide="0" docID="32" status="2097152">
-      <Bool value="false"/>
+      <Bool value="true"/>
     </Property>
     <Property name="Multiply" type="App::PropertyBool" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Bool value="false"/>
@@ -58,7 +58,7 @@
       <Python  module="freecad.asm3.assembly" class="AsmConstraint" value="null"/>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="86"/>
+      <Integer value="213"/>
     </Property>
     <Property name="Visibility" type="App::PropertyBool" status="648">
       <Bool value="false"/>

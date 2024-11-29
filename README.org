@@ -1,0 +1,292 @@
+* 3D models repository
+** Model printing automation via nu scripts
+
+*** prerequisites
+- freecad-linkstage3
+- prusa-slicer
+- nushell
+
+
+*** load printing module
+#+begin_src nu
+use ./macros/tdpr
+#+end_src
+
+*** setup printer variables
+#+begin_src nu
+tdpr setup '10.0.0.1' (pass show printer-token)
+#+end_src
+
+*** print piece/s from repostiory
+model and part have built in autocompletion in nushell
+#+begin_src nu
+tdpr send 'model' 'partA' # basic single piece
+
+tdpr send 'model' 'partA' 'partB' 'partC' # print multiple pieces
+tdpr send 'model' 'partA' 'partB' 'partB' # print piece multiple times
+#+end_src
+
+there is option to load slicer config stored in ~./configs/*~
+- ~--config profile.ini~ name of profile can be picked via autocompletion
+
+there are optional flags for interaction
+- ~--arrange~ for interactively arrange items on the board
+- ~--validate~ for interactively check gcode in prusa slicer
+
+*** in windows alias excutables
+#+begin_src nu
+alias 'freecad-linkstage3' = 'C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240407\bin\FreeCADLink.exe'
+alias 'freecad-linkstage3 --console' = 'C:\Users\czjabeck\Dev\Applications\Freecad-Linkstage3\py3.11-20240407\bin\FreeCADCmd.exe'
+alias slicer-prusa = prusa-slicer-console.exe
+#+end_src
+
+** Scripts - documentation
+
+there is separate README.md in ~./models/automation-poc/~ about cli interaction
+
+#+begin_src nu
+use ./macros/tdpr
+tdpr setup --help
+#+end_src
+
+*** Functions
+**** build-short
+#+begin_src nu
+use ./macros/tdpr/fx.nu
+fx build-short 'feat/test' 'test' '0.1' 3 | to yaml
+#+end_src
+
+#+RESULTS:
+: 3te@0.1n
+:
+
+**** merge-stl
+#+begin_src nu
+use ./macros/tdpr/fx.nu
+let t = [[count stl_path];
+            [3 'darfour-1.1.0-next+240103']
+        ]
+fx merge-stl 'conf' 'output.stl' $t
+#+end_src
+
+#+RESULTS:
+#+begin_example
+╭────┬───────────────────────────╮
+│  0 │ --load                    │
+│  1 │ conf                      │
+│  2 │ --export-3mf              │
+│  3 │ --merge                   │
+│  4 │ --split                   │
+│  5 │ --ensure-on-bed           │
+│  6 │ --output                  │
+│  7 │ output.stl                │
+│  8 │ darfour-1.1.0-next+240103 │
+│  9 │ darfour-1.1.0-next+240103 │
+│ 10 │ darfour-1.1.0-next+240103 │
+╰────┴───────────────────────────╯
+#+end_example
+
+#+begin_src nu
+use ./macros/tdpr/fx.nu
+let t = [[count stl_path];
+            [1 'capillar-0.1.1-next+240103']
+            [3 'darfour-1.1.0-next+240103']
+        ]
+fx merge-stl 'conf' 'output.stl' $t
+#+end_src
+
+#+RESULTS:
+#+begin_example
+╭────┬────────────────────────────╮
+│  0 │ --load                     │
+│  1 │ conf                       │
+│  2 │ --export-stl               │
+│  3 │ --merge                    │
+│  4 │ --split                    │
+│  5 │ --ensure-on-bed            │
+│  6 │ --output                   │
+│  7 │ output.stl                 │
+│  8 │ capillar-0.1.1-next+240103 │
+│  9 │ darfour-1.1.0-next+240103  │
+│ 10 │ darfour-1.1.0-next+240103  │
+│ 11 │ darfour-1.1.0-next+240103  │
+╰────┴────────────────────────────╯
+#+end_example
+
+**** build-final-name
+#+begin_src nu
+use ./macros/tdpr/fx.nu
+let t = [[short stem];
+            ['1ca@0.1.1n' 'capillar-0.1.1-next+240103']
+            ['3da@1.1.0n' 'darfour-1.1.0-next+240103']
+        ]
+fx build-final-name $t '241003'
+#+end_src
+
+#+RESULTS:
+: x-1ca@0.1.1n-3da@1.1.0n-241003
+
+#+begin_src nu
+use ./macros/tdpr/fx.nu
+let t = [[short stem]; ['1ca@0.1.1' 'capillar-0.1.1-next+240103']]
+$t
+fx build-final-name $t '241003'
+#+end_src
+
+#+RESULTS:
+: capillar-0.1.1-next+240103
+
+**** build-final-file
+#+begin_src nu
+use ./macros/tdpr/fx.nu
+
+let temp_path = '/tmp/3d-files'
+let timestamp = '230110'
+let model = 'model1'
+let final_stem = 'partx-0.1-next+230412'
+
+fx build-final-file $temp_path $timestamp $model $final_stem 'gcode'
+#+end_src
+
+#+RESULTS:
+: /tmp/3d-files/230110-model1/partx-0.1-next+230412.gcode
+
+#+begin_src nu
+use ./macros/tdpr/fx.nu
+
+let temp_path = '/tmp/3d-files'
+let timestamp = '230110'
+let model = 'model1'
+let final_stem = 'partx-0.1-next+230412'
+
+fx build-final-file $temp_path $timestamp $model $final_stem 'gcode'
+#+end_src
+
+#+RESULTS:
+: /tmp/3d-files/230110-model1/partx-0.1-next+230412.gcode
+
+**** last-tag-args
+#+begin_src nu
+use ./macros/tdpr/fx.nu
+git ...(fx last-tag-args 'model' 'rote')
+#+end_src
+
+#+RESULTS:
+: fatal: No names found, cannot describe anything.
+
+**** build-base
+#+begin_src nu
+use std
+use ./macros/tdpr/fx.nu
+let model = 'spool-holder'
+let branch = 'feat/popup-mvp1'
+let timestamp = (date now | format date %Y%m%d%H%M%S)
+let parts = [base base floor demi-sec]
+
+let parts_base = fx build-base $model $branch $timestamp $parts
+let resp = $parts_base
+$resp | to yaml
+
+#+end_src
+
+#+RESULTS:
+#+begin_example
+- part: base
+  count: 2
+  model: spool-holder
+  branch: feat/popup-mvp1
+  timestamp: '20241125004405'
+  test: xx
+  testx: xx
+- part: floor
+  count: 1
+  model: spool-holder
+  branch: feat/popup-mvp1
+  timestamp: '20241125004405'
+  test: xx
+  testx: xx
+- part: demi-sec
+  count: 1
+  model: spool-holder
+  branch: feat/popup-mvp1
+  timestamp: '20241125004405'
+  test: xx
+  testx: xx
+
+#+end_example
+
+**** send
+#+begin_src nu
+use std
+use ./macros/tdpr/fx.nu
+let model = 'spool-holder'
+let branch = 'feat/popup-mvp1'
+let timestamp = (date now | format date %Y%m%d%H%M%S)
+let temp_path = '/tmp/3d-files'
+let parts = [base base floor demi-sec]
+let macro_path = ( './macros' | path expand | path join 'export-to-stl.py' )
+let model_root = ( './model' | path expand )
+
+let parts_base = (fx build-base $model $branch $timestamp $parts)
+    | insert last_tag {|row|
+        try {git ...(fx last-tag-args $model $row.part) e> (std null-device)}}
+    | insert version {|row|
+        fx build-version $row.last_tag}
+    | insert stem {|row|
+        fx part-version $branch $row.part $row.version $timestamp}
+    | insert short {|row|
+        fx build-short $branch $row.part $row.version $row.count}
+    | insert stl_path {|row|
+        fx build-stl-path $temp_path $model $row.stem $timestamp}
+    | insert fcad_dir {|row|
+        fx build-part-dir $model_root $model $row.part}
+    # | insert fcad_path {|row|
+    #     fx build-short $row.branch $row.part $row.version $row.count}
+
+# let parts_version =
+let resp = $parts_base
+# let resp = $multi_name
+$resp | to yaml
+#      name: $part
+#    , tag:
+# }} | to text
+
+#+end_src
+
+#+RESULTS:
+#+begin_example
+- part: base
+  count: 2
+  model: spool-holder
+  branch: feat/popup-mvp1
+  timestamp: '20241125114828'
+  last_tag: ''
+  version: 0.1.0
+  stem: base-0.1.0-next+20241125114828
+  short: 2ba@0.1.0n
+  stl_path: /tmp/3d-files/20241125114828-spool-holder/base-0.1.0-next+20241125114828.stl
+  fcad_dir: /home/jan/repos/b3tchi/3d-files/feat/popup-mvp1/model/spool-holder/base
+- part: floor
+  count: 1
+  model: spool-holder
+  branch: feat/popup-mvp1
+  timestamp: '20241125114828'
+  last_tag: spool-holder/floor/1.0.0
+  version: 1.0.0
+  stem: floor-1.0.0-next+20241125114828
+  short: 1fl@1.0.0n
+  stl_path: /tmp/3d-files/20241125114828-spool-holder/floor-1.0.0-next+20241125114828.stl
+  fcad_dir: /home/jan/repos/b3tchi/3d-files/feat/popup-mvp1/model/spool-holder/floor
+- part: demi-sec
+  count: 1
+  model: spool-holder
+  branch: feat/popup-mvp1
+  timestamp: '20241125114828'
+  last_tag: ''
+  version: 0.1.0
+  stem: demi-sec-0.1.0-next+20241125114828
+  short: 1dese@0.1.0n
+  stl_path: /tmp/3d-files/20241125114828-spool-holder/demi-sec-0.1.0-next+20241125114828.stl
+  fcad_dir: /home/jan/repos/b3tchi/3d-files/feat/popup-mvp1/model/spool-holder/demi-sec
+
+#+end_example
