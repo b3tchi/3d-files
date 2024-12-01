@@ -4,7 +4,15 @@
 <Object name="Spreadsheet">
   <Properties Count="12" TransientCount="0">
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-      <ExpressionEngine count="0"></ExpressionEngine>
+      <ExpressionEngine count="1" cdata="1">
+        <Expressions><![CDATA[
+0:.cells.Bind.B14.ZZ14
+0:tuple(.cells, <<B>> + str(hiddenref(Part.inner_diamater) + 15), <<ZZ>> + str(hiddenref(Part.inner_diamater) + 15))
+0:
+
+]]>
+        </Expressions>
+      </ExpressionEngine>
     </Property>
     <Property name="Label" type="App::PropertyString" status="134217728">
       <String value="sh"/>
@@ -25,9 +33,9 @@
       <Bool value="true"/>
     </Property>
     <Property name="cells" type="Spreadsheet::PropertySheet" status="67108864">
-      <Cells Count="18">
+      <Cells Count="30">
         <Cell address="A1" content="inner diameter"/>
-        <Cell alias="inner_diametter" address="B1" content="54"/>
+        <Cell alias="inner_diametter" address="B1" content="=B14"/>
         <Cell address="A2" content="wall thickness"/>
         <Cell alias="wall_thickness" address="B2" content="3"/>
         <Cell address="A3" content="height"/>
@@ -44,11 +52,24 @@
         <Cell alias="profile_cut_lenght" address="B9" content="1.5"/>
         <Cell address="A11" content="tolerarnce"/>
         <Cell alias="t" address="B11" content="0.3"/>
+        <Cell address="B13" content="inner_diameter"/>
+        <Cell address="B14" content="=.B18"/>
+        <Cell address="A15" content="inner 48"/>
+        <Cell address="B15" content="48"/>
+        <Cell address="A16" content="inner 54"/>
+        <Cell address="B16" content="54"/>
+        <Cell address="A17" content="inner 60"/>
+        <Cell address="B17" content="60"/>
+        <Cell address="A18" content="inner 66"/>
+        <Cell address="B18" content="66"/>
+        <Cell address="A19" content="inner 72"/>
+        <Cell address="B19" content="72"/>
       </Cells>
     </Property>
     <Property name="columnWidths" type="Spreadsheet::PropertyColumnWidths" status="218103808">
-      <ColumnInfo Count="1">
+      <ColumnInfo Count="2">
         <Column name="A" width="205" />
+        <Column name="B" width="135" />
       </ColumnInfo>
     </Property>
     <Property name="hiddenColumns" type="App::PropertyIntegerSet" status="201326592">

@@ -38,7 +38,7 @@
         <Constrain Name="" Type="14" Value="0" First="1" FirstPos="2" Second="2" SecondPos="2" Third="-2" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="7" Value="10.6" First="3" FirstPos="1" Second="3" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="1.196470260620117" LabelPosition="7.439934730529785" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="8" Value="10" First="1" FirstPos="2" Second="1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="2.894933938980103" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-        <Constrain Name="" Type="18" Value="57.6" First="0" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="2.704387664794922" LabelPosition="1.329058647155762" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="18" Value="69.59999999999999" First="0" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="2.704387664794922" LabelPosition="1.329058647155762" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
       </ConstraintList>
     </Property>
     <Property name="Exports" type="App::PropertyLinkListHidden" status="67108864">
@@ -102,28 +102,28 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="2" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <ArcOfCircle CenterX="0" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="28.8" StartAngle="1.385713671507609" EndAngle="1.755878982082184"/>
+          <ArcOfCircle CenterX="0" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="34.8" StartAngle="1.417902484246415" EndAngle="1.723690169343378"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="3" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="3" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-5.3" StartY="28.30812604182764" StartZ="0" EndX="-5.3" EndY="18.30812604182764" EndZ="0"/>
+          <LineSegment StartX="-5.3" StartY="34.39404018140352" StartZ="0" EndX="-5.3" EndY="24.39404018140352" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="4" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="4" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="5.3" StartY="28.30812604182764" StartZ="0" EndX="5.3" EndY="18.30812604182764" EndZ="0"/>
+          <LineSegment StartX="5.3" StartY="34.39404018140352" StartZ="0" EndX="5.3" EndY="24.39404018140352" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="5" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="5" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-5.3" StartY="18.30812604182764" StartZ="0" EndX="5.3" EndY="18.30812604182764" EndZ="0"/>
+          <LineSegment StartX="-5.3" StartY="24.39404018140352" StartZ="0" EndX="5.3" EndY="24.39404018140352" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
       </GeometryList>
@@ -214,50 +214,50 @@ Locations 10
 Curve2ds 4
 1 0 0 1 0 
 1 0 -18 1 0 
-1 0 16 1 0 
-1 0 16 1 0 
+1 0 17 1 0 
+1 0 17 1 0 
 Curves 4
-2 0 0 0 0 0 1 1 0 -0 -0 1 0 28.800000000000001
-1 -5.2999999999999998 28.308126041827641 0 0 -1 0 
-1 -5.2999999999999998 18.308126041827641 0 1 0 0 
-1 5.2999999999999998 28.308126041827641 0 0 -1 0 
+2 0 0 0 0 0 1 1 0 0 0 1 0 34.799999999999997
+1 -5.2999999999999998 34.394040181403518 0 0 -1 0 
+1 -5.2999999999999998 24.394040181403518 0 1 0 0 
+1 5.2999999999999998 34.394040181403518 0 0 -1 0 
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 3
-2 0 0 0 -0 -0 -1 1 0 0 -0 1 -0 28.800000000000001
-2 4.5218388080925853e-22 0 16 -0 -0 -1 1 0 0 -0 1 -0 28.799999999975203
-2 4.5218388080925853e-22 0 16 -0 -0 -1 1 0 0 -0 1 -0 28.799999999975203
+2 0 0 0 -0 -0 -1 1 0 0 0 1 0 34.799999999999997
+2 0 0 17 -0 -0 -1 1 0 0 0 1 0 34.799999999991435
+2 0 0 17 -0 -0 -1 1 0 0 0 1 0 34.799999999991435
 Triangulations 0
 
 TShapes 9
 Ve
-1.5e-07
-5.3 28.3081260418276 0
+1.0000924496079e-07
+5.3 34.3940401814035 0
 0 0
 
 0101101
 *
 Ve
-1.00000001831027e-07
--5.3 28.3081260418276 0
+1.0000924496079e-07
+-5.3 34.3940401814035 0
 0 0
 
 0101101
 *
 Ed
- 1e-07 1 1 0
-1  1 0 1.38571367150761 1.75587898208218
-2  1 1 3 1.38571367150761 1.75587898208218
-2  2 1 5 1.38571367150761 1.75587898208218
-2  3 2 3 1.38571367150761 1.75587898208218
-2  4 3 10 1.38571367150761 1.75587898208218
+ 1.0000924496079e-07 1 1 0
+1  1 0 1.41790248424641 1.72369016934338
+2  1 1 3 1.41790248424641 1.72369016934338
+2  2 1 5 1.41790248424641 1.72369016934338
+2  3 2 3 1.41790248424641 1.72369016934338
+2  4 3 10 1.41790248424641 1.72369016934338
 0
 
 0101000
 +9 0 -8 0 *
 Ve
 1e-07
--5.3 18.3081260418276 0
+-5.3 24.3940401814035 0
 0 0
 
 0101101
@@ -270,8 +270,8 @@ Ed
 0101000
 +8 0 -6 0 *
 Ve
-1.5e-07
-5.3 18.3081260418276 0
+1.0000924496079e-07
+5.3 24.3940401814035 0
 0 0
 
 0101101
@@ -284,7 +284,7 @@ Ed
 0101000
 +6 0 -4 0 *
 Ed
- 1.5e-07 1 1 0
+ 1.0000924496079e-07 1 1 0
 1  4 0 0 10
 0
 
@@ -347,7 +347,7 @@ EndMap
       <Bool value="false"/>
     </Property>
     <Property name="Visibility" type="App::PropertyBool" status="648">
-      <Bool value="false"/>
+      <Bool value="true"/>
     </Property>
   </Properties>
 </Object>

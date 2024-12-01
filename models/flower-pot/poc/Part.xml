@@ -6,7 +6,7 @@
     <Extension type="App::OriginGroupExtension" name="OriginGroupExtension">
     </Extension>
   </Extensions>
-  <Properties Count="20" TransientCount="2">
+  <Properties Count="21" TransientCount="2">
     <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881024"/>
     <_Property name="_GroupTouched" type="App::PropertyBool" status="100663296"/>
     <Property name="ClaimAllChildren" type="App::PropertyBool" status="8">
@@ -20,9 +20,17 @@
       <Integer value="1"/>
     </Property>
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-      <ExpressionEngine count="0"></ExpressionEngine>
+      <ExpressionEngine count="1" cdata="1">
+        <Expressions><![CDATA[
+0:.inner_diamater.Enum
+0:Spreadsheet.cells[<<A15:|>>]
+0:
+
+]]>
+        </Expressions>
+      </ExpressionEngine>
     </Property>
-    <Property name="Group" type="App::PropertyLinkList" status="1">
+    <Property name="Group" type="App::PropertyLinkList">
       <LinkList count="2">
         <Link value="Body"/>
         <Link value="Body001"/>
@@ -31,7 +39,7 @@
     <Property name="Id" type="App::PropertyString">
       <String value=""/>
     </Property>
-    <Property name="Label" type="App::PropertyString" status="134217729">
+    <Property name="Label" type="App::PropertyString" status="134217728">
       <String value="pot-part"/>
     </Property>
     <Property name="Label2" type="App::PropertyString" status="128">
@@ -76,6 +84,16 @@
     </Property>
     <Property name="_GroupVersion" type="App::PropertyInteger" status="218103808">
       <Integer value="1"/>
+    </Property>
+    <Property name="inner_diamater" type="App::PropertyEnumeration" group="pot-dimensions" attr="0" ro="0" hide="0" doc="" status="2162688">
+      <Integer value="3" CustomEnum="true"/>
+      <CustomEnumList count="5">
+<Enum value="inner 48"/>
+<Enum value="inner 54"/>
+<Enum value="inner 60"/>
+<Enum value="inner 66"/>
+<Enum value="inner 72"/>
+      </CustomEnumList>
     </Property>
   </Properties>
 </Object>

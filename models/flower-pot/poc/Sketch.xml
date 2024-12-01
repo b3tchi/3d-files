@@ -27,11 +27,12 @@
       </LinkSub>
     </Property>
     <Property name="Constraints" type="Sketcher::PropertyConstraintList">
-      <ConstraintList count="4">
+      <ConstraintList count="5">
         <Constrain Name="" Type="1" Value="0" First="0" FirstPos="3" Second="-1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="1" Value="0" First="1" FirstPos="3" Second="0" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-        <Constrain Name="" Type="6" Value="3" First="0" FirstPos="0" Second="1" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="-3.039735078811646" LabelPosition="-6.834243774414062" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-        <Constrain Name="" Type="18" Value="54" First="1" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="-4.834377765655518" LabelPosition="0.4347734451293945" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="6" Value="2.950000000000006" First="0" FirstPos="0" Second="1" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="-3.039735078811646" LabelPosition="-6.834243774414062" IsDriving="0" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="18" Value="66.09999999999999" First="1" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="-4.834377765655518" LabelPosition="0.4347734451293945" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="18" Value="72" First="0" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="3.244877338409424" LabelPosition="0.2617993950843811" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
       </ConstraintList>
     </Property>
     <Property name="Exports" type="App::PropertyLinkListHidden" status="67108864">
@@ -41,12 +42,12 @@
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
       <ExpressionEngine count="2" cdata="1">
         <Expressions><![CDATA[
-0:Constraints[2]
-0:<<sh>>.wall_thickness
+0:Constraints[3]
+0:<<sh>>.inner_diametter + 0.1
 0:
 
-0:Constraints[3]
-0:<<sh>>.inner_diametter
+0:Constraints[4]
+0:<<sh>>.inner_diametter + 2 * <<sh>>.wall_thickness
 0:
 
 ]]>
@@ -95,14 +96,14 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="1" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <Circle CenterX="0" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="30"/>
+          <Circle CenterX="0" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="36"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomCircle" id="2" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="2" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <Circle CenterX="0" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="27"/>
+          <Circle CenterX="0" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="33.05"/>
           <Construction value="0"/>
         </Geometry>
       </GeometryList>
@@ -179,19 +180,19 @@ Curve2ds 4
 1 0 0 1 0 
 1 0 -20 1 0 
 Curves 2
-2 0 0 0 0 0 1 1 0 -0 -0 1 0 30
-2 0 0 0 0 0 1 1 0 -0 -0 1 0 27
+2 0 0 0 0 0 1 1 0 0 0 1 0 36
+2 0 0 0 0 0 1 1 0 0 0 1 0 33.049999999999997
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 2
-2 0 0 0 -0 -0 -1 1 0 0 -0 1 -0 30
-2 0 0 0 -0 -0 -1 1 0 0 -0 1 -0 27
+2 0 0 0 -0 -0 -1 1 0 0 0 1 0 36
+2 0 0 0 -0 -0 -1 1 0 0 0 1 0 33.049999999999997
 Triangulations 0
 
 TShapes 7
 Ve
 1e-07
-30 0 0
+36 0 0
 0 0
 
 0101101
@@ -211,7 +212,7 @@ Wi
 +6 0 *
 Ve
 1e-07
-27 0 0
+33.05 0 0
 0 0
 
 0101101

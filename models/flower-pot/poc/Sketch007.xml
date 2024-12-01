@@ -36,8 +36,8 @@
         <Constrain Name="" Type="1" Value="0" First="3" FirstPos="2" Second="1" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="3" Value="0" First="2" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="3" Value="0" First="3" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-        <Constrain Name="" Type="8" Value="1.5" First="2" FirstPos="1" Second="2" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="1.250581622123718" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-        <Constrain Name="" Type="18" Value="60" First="0" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="4.504280567169189" LabelPosition="1.868780612945557" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="8" Value="1.7" First="2" FirstPos="1" Second="2" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="1.250581622123718" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="18" Value="71.8" First="0" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="4.504280567169189" LabelPosition="1.868780612945557" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="1" Value="0" First="4" FirstPos="1" Second="0" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="1" Value="0" First="4" FirstPos="2" Second="0" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="2" Value="0" First="4" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
@@ -56,11 +56,11 @@
 0:
 
 0:Constraints[8]
-0:<<sh>>.profile_cut_lenght
+0:<<sh>>.profile_cut_lenght + 0.2
 0:
 
 0:Constraints[9]
-0:<<sh>>.inner_diametter + 2 * <<sh>>.wall_thickness
+0:<<sh>>.inner_diametter + 2 * <<sh>>.wall_thickness - 0.2
 0:
 
 ]]>
@@ -109,35 +109,35 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="1" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <ArcOfCircle CenterX="0" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="30" StartAngle="1.403348247575211" EndAngle="1.738244406014583"/>
+          <ArcOfCircle CenterX="0" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="35.9" StartAngle="1.431066311874929" EndAngle="1.710526341714864"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomArcOfCircle" id="2" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="2" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <ArcOfCircle CenterX="0" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="31.48001265480197" StartAngle="1.411289878052211" EndAngle="1.730302775537583"/>
+          <ArcOfCircle CenterX="0" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="37.58417697182229" StartAngle="1.437366047226516" EndAngle="1.704226606363276"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="3" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="3" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="4.999999999999995" StartY="29.58039891549875" StartZ="0" EndX="4.999999999999995" EndY="31.08039891549875" EndZ="0"/>
+          <LineSegment StartX="5.00000000000001" StartY="35.55010548507557" StartZ="0" EndX="5.00000000000001" EndY="37.25010548507557" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="4" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="4" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-5.000000000000005" StartY="29.58039891549875" StartZ="0" EndX="-5.000000000000005" EndY="31.08039891549875" EndZ="0"/>
+          <LineSegment StartX="-4.99999999999999" StartY="35.55010548507557" StartZ="0" EndX="-4.99999999999999" EndY="37.25010548507558" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="5" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="5" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-5.000000000000005" StartY="29.58039891549875" StartZ="0" EndX="4.999999999999995" EndY="29.58039891549875" EndZ="0"/>
+          <LineSegment StartX="-4.99999999999999" StartY="35.55010548507557" StartZ="0" EndX="5.00000000000001" EndY="35.55010548507557" EndZ="0"/>
           <Construction value="1"/>
         </Geometry>
       </GeometryList>
@@ -193,7 +193,7 @@ TShapes 0
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 26
+Locations 6
 1
               1               0               0               0 
               0               1               0               0 
@@ -212,176 +212,80 @@ Locations 26
               0               1               0              -0 
               0               0               1              -2 
 2  5 -1 2 -1 3 -1 1 -1 0
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               3 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-2  7 -1 8 -1 1 -1 0
-1
-              1               0               0              -0 
-              0               1               0              -0 
-              0               0               1              -2 
-2  10 -1 7 -1 8 -1 1 -1 0
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               3 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-2  12 -1 13 -1 1 -1 0
-1
-              1               0               0              -0 
-              0               1               0              -0 
-              0               0               1              -2 
-2  15 -1 12 -1 13 -1 1 -1 0
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               3 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-2  17 -1 18 -1 1 -1 0
-1
-              1               0               0              -0 
-              0               1               0              -0 
-              0               0               1              -2 
-2  20 -1 17 -1 18 -1 1 -1 0
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               3 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-2  22 -1 23 -1 1 -1 0
-1
-              1               0               0              -0 
-              0               1               0              -0 
-              0               0               1              -2 
-2  25 -1 22 -1 23 -1 1 -1 0
-Curve2ds 20
-1 0 0 1 0 
-1 0 -2 1 0 
-1 0 0 1 0 
-1 0 -2 1 0 
-1 0 0 1 0 
-1 0 -2 1 0 
-1 0 0 1 0 
-1 0 -2 1 0 
-1 0 0 1 0 
-1 0 -2 1 0 
-1 0 0 1 0 
-1 0 -2 1 0 
-1 0 0 1 0 
-1 0 -2 1 0 
-1 0 0 1 0 
-1 0 -2 1 0 
+Curve2ds 4
 1 0 0 1 0 
 1 0 -2 1 0 
 1 0 0 1 0 
 1 0 -2 1 0 
 Curves 4
-1 4.9999999999999947 29.580398915498751 0 0 1 0 
-2 0 0 0 0 0 1 1 0 -0 -0 1 0 30
-1 -5.0000000000000053 29.580398915498751 0 0 1 0 
-2 0 0 0 0 0 1 1 0 -0 -0 1 0 31.480012654801971
+1 5.0000000000000098 35.550105485075569 0 0 1 0 
+2 0 0 0 0 0 1 1 0 0 0 1 0 35.899999999999999
+1 -4.9999999999999902 35.550105485075569 0 0 1 0 
+2 0 0 0 0 0 1 1 0 0 0 1 0 37.584176971822295
 Polygon3D 0
 PolygonOnTriangulations 0
-Surfaces 10
-2 0 0 3 0 0 1 1 0 -0 -0 1 0 30
-2 0 0 3 0 0 1 1 0 0 0 1 0 30
-2 0 0 3 0 0 1 1 0 0 0 1 0 30
-2 0 0 3 0 0 1 1 0 0 0 1 0 30
-2 0 0 3 0 0 1 1 0 0 0 1 0 30
-2 0 0 3 0 0 1 1 0 -0 -0 1 0 31.480012654801971
-2 0 0 3 0 0 1 1 0 0 0 1 0 31.480012654801971
-2 0 0 3 0 0 1 1 0 0 0 1 0 31.480012654801971
-2 0 0 3 0 0 1 1 0 0 0 1 0 31.480012654801971
-2 0 0 3 0 0 1 1 0 0 0 1 0 31.480012654801971
+Surfaces 2
+2 0 0 3 0 0 1 1 0 0 0 1 0 35.899999999999999
+2 0 0 3 0 0 1 1 0 0 0 1 0 37.584176971822295
 Triangulations 0
 
 TShapes 9
 Ve
-1.00000329853968e-07
-4.99999999999994 29.5803989154984 0
+1.000000037943e-07
+5.00000000000001 35.5501054850756 0
 0 0
 
 0101101
 *
 Ve
-1.00000521222456e-07
-4.99999999999956 31.0803989154985 0
+1.00000003580362e-07
+5.00000000000001 37.2501054850756 0
 0 0
 
 0101101
 *
 Ed
  1e-07 1 1 0
-1  1 0 0 1.5
+1  1 0 0 1.7
 0
 
 0101000
 +9 0 -8 0 *
 Ve
-1.00000331165515e-07
--4.99999999999995 29.5803989154984 0
+1.00000000888178e-07
+-4.99999999999999 35.5501054850756 0
 0 0
 
 0101101
 *
 Ed
  1e-07 1 1 0
-1  2 0 1.40334824757521 1.73824440601458
-2  1 1 4 1.40334824757521 1.73824440601458
-2  2 1 6 1.40334824757521 1.73824440601458
-2  3 2 9 1.40334824757521 1.73824440601458
-2  4 2 11 1.40334824757521 1.73824440601458
-2  5 3 14 1.40334824757521 1.73824440601458
-2  6 3 16 1.40334824757521 1.73824440601458
-2  7 4 19 1.40334824757521 1.73824440601458
-2  8 4 21 1.40334824757521 1.73824440601458
-2  9 5 24 1.40334824757521 1.73824440601458
-2  10 5 26 1.40334824757521 1.73824440601458
+1  2 0 1.43106631187493 1.71052634171486
+2  1 1 4 1.43106631187493 1.71052634171486
+2  2 1 6 1.43106631187493 1.71052634171486
 0
 
 0101000
 +9 0 -6 0 *
 Ve
-1.00000519941991e-07
--4.99999999999957 31.0803989154985 0
+1.00000003552714e-07
+-4.99999999999999 37.2501054850756 0
 0 0
 
 0101101
 *
 Ed
  1e-07 1 1 0
-1  3 0 0 1.5
+1  3 0 0 1.70000000000001
 0
 
 0101000
 +6 0 -4 0 *
 Ed
  1e-07 1 1 0
-1  4 0 1.41128987805221 1.73030277553758
-2  11 6 4 1.41128987805221 1.73030277553758
-2  12 6 6 1.41128987805221 1.73030277553758
-2  13 7 9 1.41128987805221 1.73030277553758
-2  14 7 11 1.41128987805221 1.73030277553758
-2  15 8 14 1.41128987805221 1.73030277553758
-2  16 8 16 1.41128987805221 1.73030277553758
-2  17 9 19 1.41128987805221 1.73030277553758
-2  18 9 21 1.41128987805221 1.73030277553758
-2  19 10 24 1.41128987805221 1.73030277553758
-2  20 10 26 1.41128987805221 1.73030277553758
+1  4 0 1.43736604722652 1.70422660636328
+2  3 2 4 1.43736604722652 1.70422660636328
+2  4 2 6 1.43736604722652 1.70422660636328
 0
 
 0101000
@@ -396,14 +300,14 @@ Wi
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="12">
 <![CDATA[
-24 PostfixCount 3
+26 PostfixCount 3
 Edge
 Vertex
 ;SKT
 
 MapCount 1
 
-ElementMap 1 24 2
+ElementMap 1 26 2
 
 Edge
 
