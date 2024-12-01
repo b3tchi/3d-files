@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- FreeCAD DocumentObject -->
+<Document SchemaVersion="4" FileVersion="2">
+<Object name="Spreadsheet006">
+  <Properties Count="12" TransientCount="0">
+    <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
+      <ExpressionEngine count="1" cdata="1">
+        <Expressions><![CDATA[
+0:.cells.Bind.B14.ZZ14
+0:tuple(.cells, <<B>> + str(hiddenref(Part006.inner_diamater) + 15), <<ZZ>> + str(hiddenref(Part006.inner_diamater) + 15))
+0:
+
+]]>
+        </Expressions>
+      </ExpressionEngine>
+    </Property>
+    <Property name="Label" type="App::PropertyString" status="134217728">
+      <String value="sh006"/>
+    </Property>
+    <Property name="Label2" type="App::PropertyString" status="128">
+      <String value=""/>
+    </Property>
+    <Property name="PythonMode" type="App::PropertyBool">
+      <Bool value="false"/>
+    </Property>
+    <Property name="ShowCells" type="App::PropertyEnumeration">
+      <Integer value="0"/>
+    </Property>
+    <Property name="TreeRank" type="App::PropertyInteger" status="2184">
+      <Integer value="474"/>
+    </Property>
+    <Property name="Visibility" type="App::PropertyBool" status="648">
+      <Bool value="true"/>
+    </Property>
+    <Property name="cells" type="Spreadsheet::PropertySheet" status="67108864">
+      <Cells Count="30">
+        <Cell address="A1" content="inner diameter"/>
+        <Cell alias="inner_diametter" address="B1" content="=B14"/>
+        <Cell address="A2" content="wall thickness"/>
+        <Cell alias="wall_thickness" address="B2" content="3"/>
+        <Cell address="A3" content="height"/>
+        <Cell alias="heights" address="B3" content="20"/>
+        <Cell address="A5" content="profile width"/>
+        <Cell alias="profile_width" address="B5" content="10"/>
+        <Cell address="A6" content="profile heigth"/>
+        <Cell alias="profile_heigth" address="B6" content="2"/>
+        <Cell address="A7" content="inner profile count"/>
+        <Cell alias="inner_profile_count" address="B7" content="4"/>
+        <Cell address="A8" content="outer profile count"/>
+        <Cell alias="outer_profile_count" address="B8" content="4"/>
+        <Cell address="A9" content="profile cut lenght"/>
+        <Cell alias="profile_cut_lenght" address="B9" content="1.5"/>
+        <Cell address="A11" content="tolerarnce"/>
+        <Cell alias="t" address="B11" content="0.3"/>
+        <Cell address="B13" content="inner_diameter"/>
+        <Cell address="B14" content="=.B17"/>
+        <Cell address="A15" content="inner 48"/>
+        <Cell address="B15" content="48"/>
+        <Cell address="A16" content="inner 54"/>
+        <Cell address="B16" content="54"/>
+        <Cell address="A17" content="inner 60"/>
+        <Cell address="B17" content="60"/>
+        <Cell address="A18" content="inner 66"/>
+        <Cell address="B18" content="66"/>
+        <Cell address="A19" content="inner 72"/>
+        <Cell address="B19" content="72"/>
+      </Cells>
+    </Property>
+    <Property name="columnWidths" type="Spreadsheet::PropertyColumnWidths" status="218103808">
+      <ColumnInfo Count="2">
+        <Column name="A" width="205" />
+        <Column name="B" width="135" />
+      </ColumnInfo>
+    </Property>
+    <Property name="hiddenColumns" type="App::PropertyIntegerSet" status="201326592">
+      <IntegerSet count="0">
+      </IntegerSet>
+    </Property>
+    <Property name="hiddenRows" type="App::PropertyIntegerSet" status="201326592">
+      <IntegerSet count="0">
+      </IntegerSet>
+    </Property>
+    <Property name="rowHeights" type="Spreadsheet::PropertyRowHeights" status="218103808">
+      <RowInfo Count="0">
+      </RowInfo>
+    </Property>
+  </Properties>
+</Object>
+</Document>
