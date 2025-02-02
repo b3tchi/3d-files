@@ -3,7 +3,12 @@
  FreeCAD Document, see http://www.freecadweb.org for more information...
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.409R14555 (Git shallow)" FileVersion="2" Uid="6ffeaade-ced0-4724-a698-7873b50246ac" StringHasher="1">
-  <StringHasher saveall="0" threshold="0" count="0"></StringHasher>
+  <StringHasher saveall="0" threshold="0" count="0" new="1"/>
+  <StringHasher2  count="1">
+<![CDATA[
+-1.0 0:Shape cache
+]]>
+  </StringHasher2>
   <Properties Count="21" TransientCount="3">
     <_Property name="FileName" type="App::PropertyString" status="50331649"/>
     <_Property name="Tip" type="App::PropertyLink" status="33554433"/>
@@ -33,7 +38,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2025-01-26T22:36:38Z"/>
+      <String value="2025-02-02T13:13:24Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -81,16 +86,16 @@
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="0"/>
     <ObjectDeps Name="Body" Count="2">
-      <Dep Name="Origin001"/>
       <Dep Name="Sketch"/>
+      <Dep Name="Origin001"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin001" Count="6">
-      <Dep Name="X_Axis"/>
       <Dep Name="Y_Axis"/>
-      <Dep Name="Z_Axis"/>
-      <Dep Name="XY_Plane"/>
       <Dep Name="XZ_Plane"/>
       <Dep Name="YZ_Plane"/>
+      <Dep Name="XY_Plane"/>
+      <Dep Name="Z_Axis"/>
+      <Dep Name="X_Axis"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
@@ -101,9 +106,9 @@
     <ObjectDeps Name="Sketch" Count="1">
       <Dep Name="XY_Plane"/>
     </ObjectDeps>
-    <Object type="App::Part" name="Part" id="4618" revision="28" file="Part.xml" />
+    <Object type="App::Part" name="Part" id="4618" revision="36" file="Part.xml" />
     <Object type="App::Origin" name="Origin" id="4619" revision="0" file="Origin.xml" />
-    <Object type="PartDesign::Body" name="Body" id="4620" revision="8" file="Body.xml" />
+    <Object type="PartDesign::Body" name="Body" id="4620" revision="9" file="Body.xml" />
     <Object type="App::Origin" name="Origin001" id="4621" revision="0" file="Origin001.xml" />
     <Object type="App::Line" name="X_Axis" id="4622" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="4623" revision="2" file="Y_Axis.xml" />
@@ -111,7 +116,7 @@
     <Object type="App::Plane" name="XY_Plane" id="4625" revision="1" file="XY_Plane.xml" />
     <Object type="App::Plane" name="XZ_Plane" id="4626" revision="2" file="XZ_Plane.xml" />
     <Object type="App::Plane" name="YZ_Plane" id="4627" revision="2" file="YZ_Plane.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch" id="4628" revision="69" file="Sketch.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch" id="4628" revision="74" file="Sketch.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>
