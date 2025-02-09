@@ -15,21 +15,33 @@
     <Expand name="Boolean003"/>
   </Expand>
 </Expand>
-  <Camera>
+  <Camera extra="0" id="5" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position 85.782074 -57.979744 -73.711365
-  orientation 0.047818571 0.99783456 -0.045163117  3.1459212
-  nearDistance 65.645149
-  farDistance 79.868774
+  position 63.935371 -61.700596 -65.696472
+  orientation -0.0077202939 0.98239952 -0.1866325  3.1386592
+  nearDistance 45.50378
+  farDistance 87.785172
   aspectRatio 1
   focalDistance 79.849655
-  height 126.04425
+  height 124.16771
 
 }
-## overrideMode: As Is
-  
-  ]]>
+## overrideMode: As Is]]>
   </Camera>
+  <View3D id="5"><![CDATA[
+  <Properties Count="3" TransientCount="0">
+    <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
+      <Integer value="0"/>
+    </Property>
+    <Property name="ShowNaviCube" type="App::PropertyBool" status="1">
+      <Bool value="true"/>
+    </Property>
+    <Property name="ThumbnailView" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+  </Properties>
+]]>
+  </View3D>
 </Document>
