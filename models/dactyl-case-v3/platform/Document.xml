@@ -4,7 +4,7 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.409R14555 (Git shallow)" FileVersion="2" Uid="d01deadd-9816-4f22-8ade-8e1c7b78687b" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="3791">
+  <StringHasher2  count="3792">
 <![CDATA[
 -2.0 0:;SKT;:H9,E
 -2.0 0:;SKT;:H9,V
@@ -3797,6 +3797,7 @@ eb1.0 0:;SKT;:H,E;:H9:5,E
 -1.2c.302.1
 -1.2c.0.1
 -1.2c.158.1
+-1.0 0:Shape cache
 ]]>
   </StringHasher2>
   <Properties Count="21" TransientCount="3">
@@ -3828,7 +3829,7 @@ eb1.0 0:;SKT;:H,E;:H9:5,E
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2024-09-28T18:25:06Z"/>
+      <String value="2025-02-02T15:57:31Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -3873,9 +3874,9 @@ eb1.0 0:;SKT;:H,E;:H9:5,E
     <ObjectDeps Name="Body" Count="11">
       <Dep Name="Origin"/>
       <Dep Name="Sketch"/>
-      <Dep Name="Pad"/>
       <Dep Name="Sketch001"/>
       <Dep Name="Pad001"/>
+      <Dep Name="Pad"/>
       <Dep Name="Pad002"/>
       <Dep Name="Pad003"/>
       <Dep Name="Sketch002"/>
@@ -3884,12 +3885,12 @@ eb1.0 0:;SKT;:H,E;:H9:5,E
       <Dep Name="Boolean003"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
-      <Dep Name="X_Axis"/>
       <Dep Name="Y_Axis"/>
+      <Dep Name="X_Axis"/>
       <Dep Name="Z_Axis"/>
-      <Dep Name="XY_Plane"/>
-      <Dep Name="XZ_Plane"/>
       <Dep Name="YZ_Plane"/>
+      <Dep Name="XZ_Plane"/>
+      <Dep Name="XY_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
@@ -3907,15 +3908,15 @@ eb1.0 0:;SKT;:H,E;:H9:5,E
     </ObjectDeps>
     <ObjectDeps Name="Spreadsheet" Count="0"/>
     <ObjectDeps Name="Sketch001" Count="4">
-      <Dep Name="XY_Plane"/>
       <Dep Name="Sketch"/>
+      <Dep Name="XY_Plane"/>
       <Dep Name="Pad"/>
       <Dep Name="Spreadsheet"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad001" Count="3">
       <Dep Name="Body"/>
-      <Dep Name="Pad"/>
       <Dep Name="Sketch001"/>
+      <Dep Name="Pad"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad002" Count="2">
       <Dep Name="Body"/>
@@ -4200,7 +4201,7 @@ eb1.0 0:;SKT;:H,E;:H9:5,E
       <Dep Name="Pad004"/>
       <Dep Name="Binder002"/>
     </ObjectDeps>
-    <Object type="PartDesign::Body" name="Body" id="1" revision="339" file="Body.xml" />
+    <Object type="PartDesign::Body" name="Body" id="1" revision="340" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="2" revision="2" file="Origin.xml" />
     <Object type="App::Line" name="X_Axis" id="3" revision="2" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="4" revision="3" file="Y_Axis.xml" />
@@ -4208,16 +4209,16 @@ eb1.0 0:;SKT;:H,E;:H9:5,E
     <Object type="App::Plane" name="XY_Plane" id="6" revision="2" file="XY_Plane.xml" />
     <Object type="App::Plane" name="XZ_Plane" id="7" revision="3" file="XZ_Plane.xml" />
     <Object type="App::Plane" name="YZ_Plane" id="8" revision="3" file="YZ_Plane.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch" id="9" revision="4536" file="Sketch.xml" />
-    <Object type="PartDesign::Pad" name="Pad" id="10" revision="251" file="Pad.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch" id="9" revision="4589" file="Sketch.xml" />
+    <Object type="PartDesign::Pad" name="Pad" id="10" revision="254" file="Pad.xml" />
     <Object type="Spreadsheet::Sheet" name="Spreadsheet" id="29" revision="0" file="Spreadsheet.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch001" id="31" revision="4940" file="Sketch001.xml" />
-    <Object type="PartDesign::Pad" name="Pad001" id="32" revision="326" file="Pad001.xml" />
-    <Object type="PartDesign::Pad" name="Pad002" id="33" revision="267" file="Pad002.xml" />
-    <Object type="PartDesign::Pad" name="Pad003" id="35" revision="379" file="Pad003.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch001" id="31" revision="4944" file="Sketch001.xml" />
+    <Object type="PartDesign::Pad" name="Pad001" id="32" revision="329" file="Pad001.xml" />
+    <Object type="PartDesign::Pad" name="Pad002" id="33" revision="269" file="Pad002.xml" />
+    <Object type="PartDesign::Pad" name="Pad003" id="35" revision="383" file="Pad003.xml" />
     <Object type="Sketcher::SketchObject" name="Sketch002" id="34" revision="293" file="Sketch002.xml" />
     <Object type="Sketcher::SketchObject" name="Sketch003" id="39" revision="51" file="Sketch003.xml" />
-    <Object type="PartDesign::Pad" name="Pad004" id="40" revision="156" file="Pad004.xml" />
+    <Object type="PartDesign::Pad" name="Pad004" id="40" revision="159" file="Pad004.xml" />
     <Object type="App::Link" name="Link" id="41" revision="362" file="Link.xml" />
     <Object type="App::Line" name="Y_Axis001" id="42" revision="3" file="Y_Axis001.xml" />
     <Object type="Spreadsheet::Sheet" name="Spreadsheet001" id="43" revision="0" file="Spreadsheet001.xml" />
@@ -4240,7 +4241,7 @@ eb1.0 0:;SKT;:H,E;:H9:5,E
     <Object type="PartDesign::SubShapeBinder" name="Reference004" id="60" revision="100" file="Reference004.xml" />
     <Object type="PartDesign::SubShapeBinder" name="BaseFeature003" id="61" revision="104" file="BaseFeature003.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Reference005" id="62" revision="89" file="Reference005.xml" />
-    <Object type="PartDesign::Boolean" name="Boolean002" id="63" revision="288" file="Boolean002.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean002" id="63" revision="289" file="Boolean002.xml" />
     <Object type="App::Line" name="X_Axis005" id="64" revision="2" file="X_Axis005.xml" />
     <Object type="App::Line" name="Y_Axis005" id="65" revision="3" file="Y_Axis005.xml" />
     <Object type="App::Line" name="Z_Axis005" id="66" revision="3" file="Z_Axis005.xml" />
@@ -4262,7 +4263,7 @@ eb1.0 0:;SKT;:H,E;:H9:5,E
     <Object type="PartDesign::Body" name="Body002" id="82" revision="86" file="Body002.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Reference002" id="83" revision="88" file="Reference002.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Reference003" id="84" revision="105" file="Reference003.xml" />
-    <Object type="PartDesign::Boolean" name="Boolean001" id="85" revision="283" file="Boolean001.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean001" id="85" revision="284" file="Boolean001.xml" />
     <Object type="App::Line" name="X_Axis003" id="86" revision="2" file="X_Axis003.xml" />
     <Object type="App::Line" name="Y_Axis003" id="87" revision="3" file="Y_Axis003.xml" />
     <Object type="App::Line" name="Z_Axis003" id="88" revision="3" file="Z_Axis003.xml" />
@@ -4272,7 +4273,7 @@ eb1.0 0:;SKT;:H,E;:H9:5,E
     <Object type="App::Origin" name="Origin003" id="92" revision="2" file="Origin003.xml" />
     <Object type="PartDesign::Body" name="Body003" id="93" revision="123" file="Body003.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Binder001" id="94" revision="101" file="Binder001.xml" />
-    <Object type="PartDesign::Boolean" name="Boolean" id="95" revision="595" file="Boolean.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean" id="95" revision="596" file="Boolean.xml" />
     <Object type="PartDesign::LinearPattern" name="LinearPattern" id="96" revision="400" file="LinearPattern.xml" />
     <Object type="App::Line" name="X_Axis006" id="97" revision="2" file="X_Axis006.xml" />
     <Object type="App::Line" name="Z_Axis006" id="98" revision="3" file="Z_Axis006.xml" />
@@ -4282,7 +4283,7 @@ eb1.0 0:;SKT;:H,E;:H9:5,E
     <Object type="PartDesign::Body" name="Body006" id="102" revision="872" file="Body006.xml" />
     <Object type="App::LinkGroup" name="CopyOnChangeGroup" id="103" revision="5" file="CopyOnChangeGroup.xml" />
     <Object type="PartDesign::SubShapeBinder" name="Binder002" id="104" revision="74" file="Binder002.xml" />
-    <Object type="PartDesign::Boolean" name="Boolean003" id="105" revision="201" file="Boolean003.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean003" id="105" revision="205" file="Boolean003.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>

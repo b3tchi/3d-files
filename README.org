@@ -1,11 +1,9 @@
 * 3D models repository
 ** Model printing automation via nu scripts
-
 *** prerequisites
 - freecad-linkstage3
 - prusa-slicer
 - nushell
-
 
 *** load printing module
 #+begin_src nu
@@ -290,3 +288,38 @@ $resp | to yaml
   fcad_dir: /home/jan/repos/b3tchi/3d-files/feat/popup-mvp1/model/spool-holder/demi-sec
 
 #+end_example
+
+* adding macro for the animation control
+#+begin_src python
+from PySide.QtGui import *
+from PySide.QtCore import *
+
+class AnimeWidget(QWidget):
+	def __init__(self):
+		super(AnimeWidget, self).__init__()
+		self.setWindowFlags(Qt.WindowStaysOnTopHint)
+		self.setWindowTitle("animation")
+		self.slider1 = QSlider(Qt.Horizontal)
+		self.slider1.setMinimum(0)
+		self.slider1.setMaximum(90)
+		self.slider1.valueChanged.connect(self.sliderMoved)
+		layout = QHBoxLayout()
+		layout.addWidget(self.slider1)
+		self.setLayout(layout)
+		self.show()
+
+	def sliderMoved(self):
+		val = self.slider1.value()
+		#App.console.PrintMessage(str(val))
+		App.getDocument('_assembly_poc').getObject('Constraint').LockAngle = True
+		App.getDocument('_assembly_poc').getObject('Constraint003').LockAngle = True
+		App.getDocument('_assembly_poc').getObject('Constraint002').LockAngle = True
+		#App.getDocument('_assembly_poc').getObject('Constraint').Angle = 0
+		App.getDocument('_assembly_poc').getObject('Constraint').Angle = val
+		App.getDocument('_assembly_poc').getObject('Constraint003').Angle = (val/90 * -16)
+		App.getDocument('_assembly_poc').getObject('Constraint002').Angle = (val/90 * 21)
+		Gui.runCommand('asm3CmdQuickSolve',0)
+		FreeCADGui.updateGui()
+
+myWin = AnimeWidget()
+#+end_src
