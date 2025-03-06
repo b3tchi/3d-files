@@ -7,44 +7,49 @@
 -->
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
 <Expand  count="1">
-  <Expand name="Assembly" count="2">
-    <Expand name="Constraints" count="2">
-      <Expand name="Constraint019"/>
-      <Expand name="Constraint026"/>
-    </Expand>
-    <Expand name="Parts" count="3">
-      <Expand name="Link009" count="1">
+  <Expand name="Assembly" count="1">
+    <Expand name="Parts" count="5">
+      <Expand name="Link001" count="1">
         <Expand name="Body"/>
       </Expand>
-      <Expand name="Link010" count="1">
-        <Expand name="Body" count="3">
-          <Expand name="Pad"/>
-          <Expand name="Pad001"/>
-          <Expand name="Pad002"/>
-        </Expand>
+      <Expand name="Link009" count="1">
+        <Expand name="Body"/>
       </Expand>
       <Expand name="Link011" count="1">
         <Expand name="Body"/>
       </Expand>
+      <Expand name="Link012" count="1">
+        <Expand name="Body" count="2">
+          <Expand name="Pad001"/>
+          <Expand name="Pad002"/>
+        </Expand>
+      </Expand>
+      <Expand name="Link013" count="1">
+        <Expand name="Body" count="3">
+          <Expand name="Pad"/>
+          <Expand name="Boolean"/>
+          <Expand name="Pad005"/>
+        </Expand>
+      </Expand>
     </Expand>
   </Expand>
 </Expand>
-  <Camera extra="0" id="28" binding="0" view3d="1">
+  <Camera extra="0" id="5" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position -49.829506 -109.86942 42.195946
-  orientation -0.84186679 0.3809633 0.38226625  4.5444627
-  nearDistance 32.521805
-  farDistance 125.26968
+  position -16.639057 -80.970879 31.333191
+  orientation 0.99998468 -0.0033561026 -0.0043795072  1.3074675
+  nearDistance -38.587109
+  farDistance 91.497795
   aspectRatio 1
   focalDistance 71.786949
-  height 180.70659
+  height 181.30971
 
 }
 ## overrideMode: Flat Lines]]>
   </Camera>
-  <View3D id="28"><![CDATA[
+  <View3D id="5"><![CDATA[
   <Properties Count="3" TransientCount="0">
     <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
       <Integer value="6"/>

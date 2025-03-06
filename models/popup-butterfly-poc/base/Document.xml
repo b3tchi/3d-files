@@ -4,10 +4,9 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.1006R14555 (Git shallow)" FileVersion="2" Uid="b59b68f4-7b3b-4c23-8aa2-786f27d3605c" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="657">
+  <StringHasher2  count="675">
 <![CDATA[
--1.0 0:Shape cache
--1.0 0:;SKT;:Hd58,E
+-2.0 0:;SKT;:Hd58,E
 -1.c.1 g7
 -1.0 0:;SKT;:Hd58,V
 -1.c.1 g7v1
@@ -363,26 +362,22 @@
 -1.c.0 g15v2
 -1.c.0 g16v2
 -1.c.0 g17v2
--1.c.0 g19v1
--1.c.-2 g16
+-2.c.-2 g16
 -1.c.0 g17
 -1.c.0 g18
--1.c.0 g19
--1.0 0:;FAC;:Hd67:4,F
+-2.0 0:;FAC;:Hd67:4,F
 -1.2c.1.c
 -1.0 0:;:G;XTR;:Hd67:7,F
 -1.2c.1.e
 -1.2c.0.7
 -1.2c.0.1
 -1.2c.0.1
--1.2c.0.1
--1.0 0:;:G;XTR;:Hd67:7,E
+-2.0 0:;:G;XTR;:Hd67:7,E
 -1.2c.1.12
 -1.2c.0.1
 -1.2c.0.1
 -1.2c.0.1
--1.2c.0.1
--1.0 0:;:Hd5e,V
+-2.0 0:;:Hd5e,V
 -1.2c.1.14f
 -4.2c.0.1
 -2.28.-136.39.37 ;:G#2a4;FUS;:Hd5e:b,V
@@ -624,13 +619,11 @@
 -1.2c.0.1
 -1.2c.0.1
 -1.2c.0.1
--1.2c.0.1
--1.0 0:;:U;XTR;:Hd67:7,E
+-2.0 0:;:U;XTR;:Hd67:7,E
 -2.2c.2.152
 -1.2c.0.1
 -1.2c.0.1
--1.2c.0.1
--1.0 0:;:G0;XTR;:Hd67:8,F
+-2.0 0:;:G0;XTR;:Hd67:8,F
 -1.2c.1.15a
 -1.2c.-e5.-122
 -5.c.9f.11f #1b7
@@ -663,6 +656,31 @@
 -1.c.-3.110 #3ef
 -1.0 0:(#45f;K2;:Hd63:3,F|#455;K2;:H-d68:3,F)
 -1.2c.10.85.83.80.7d.7a.1d
+-1.0 0:Shape cache
+-b9.c.25f g23v1
+-1.c.0 g23v2
+-1.c.0 g24v2
+-1.c.0 g25v2
+-1.c.-2 g23
+-1.c.0 g24
+-1.c.0 g25
+-1.c.0 g26
+-1.2c.e.4
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.6.-7
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.146.9
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.6.-7
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
 ]]>
   </StringHasher2>
   <Properties Count="21" TransientCount="3">
@@ -694,7 +712,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2025-03-02T01:51:08Z"/>
+      <String value="2025-03-06T20:35:19Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -742,24 +760,24 @@
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="0"/>
     <ObjectDeps Name="Body" Count="10">
-      <Dep Name="Sketch004"/>
-      <Dep Name="Sketch002"/>
-      <Dep Name="Boolean"/>
       <Dep Name="Origin001"/>
       <Dep Name="Sketch"/>
-      <Dep Name="Sketch003"/>
-      <Dep Name="Pad"/>
-      <Dep Name="Pad001"/>
       <Dep Name="Sketch001"/>
+      <Dep Name="Sketch002"/>
+      <Dep Name="Pad"/>
+      <Dep Name="Sketch003"/>
+      <Dep Name="Pad001"/>
+      <Dep Name="Boolean"/>
+      <Dep Name="Sketch004"/>
       <Dep Name="Pad002"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin001" Count="6">
-      <Dep Name="YZ_Plane"/>
       <Dep Name="X_Axis"/>
-      <Dep Name="XY_Plane"/>
       <Dep Name="Y_Axis"/>
       <Dep Name="Z_Axis"/>
+      <Dep Name="XY_Plane"/>
       <Dep Name="XZ_Plane"/>
+      <Dep Name="YZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
@@ -770,48 +788,50 @@
     <ObjectDeps Name="Sketch" Count="1">
       <Dep Name="XZ_Plane"/>
     </ObjectDeps>
-    <ObjectDeps Name="Sketch001" Count="1">
+    <ObjectDeps Name="Sketch001" Count="2">
       <Dep Name="XY_Plane"/>
+      <Dep Name="Sketch"/>
     </ObjectDeps>
-    <ObjectDeps Name="Sketch002" Count="2">
+    <ObjectDeps Name="Sketch002" Count="3">
       <Dep Name="XY_Plane"/>
+      <Dep Name="Sketch"/>
       <Dep Name="Sketch001"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad" Count="2">
-      <Dep Name="Sketch002"/>
       <Dep Name="Body"/>
+      <Dep Name="Sketch002"/>
     </ObjectDeps>
     <ObjectDeps Name="Sketch003" Count="2">
       <Dep Name="XY_Plane"/>
       <Dep Name="Sketch001"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad001" Count="3">
-      <Dep Name="Sketch003"/>
-      <Dep Name="Pad"/>
       <Dep Name="Body"/>
+      <Dep Name="Pad"/>
+      <Dep Name="Sketch003"/>
     </ObjectDeps>
     <ObjectDeps Name="Link" Count="0"/>
     <ObjectDeps Name="Boolean" Count="3">
-      <Dep Name="Reference"/>
-      <Dep Name="Pad001"/>
       <Dep Name="Body"/>
+      <Dep Name="Pad001"/>
+      <Dep Name="Reference"/>
     </ObjectDeps>
     <ObjectDeps Name="Reference" Count="2">
-      <Dep Name="Link"/>
       <Dep Name="Part"/>
+      <Dep Name="Link"/>
     </ObjectDeps>
     <ObjectDeps Name="Sketch004" Count="2">
-      <Dep Name="Sketch"/>
       <Dep Name="XZ_Plane"/>
+      <Dep Name="Sketch"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad002" Count="3">
-      <Dep Name="Sketch004"/>
-      <Dep Name="Boolean"/>
       <Dep Name="Body"/>
+      <Dep Name="Boolean"/>
+      <Dep Name="Sketch004"/>
     </ObjectDeps>
-    <Object type="App::Part" name="Part" id="3404" revision="341" file="Part.xml" />
+    <Object type="App::Part" name="Part" id="3404" revision="411" file="Part.xml" />
     <Object type="App::Origin" name="Origin" id="3405" revision="0" file="Origin.xml" />
-    <Object type="PartDesign::Body" name="Body" id="3406" revision="134" file="Body.xml" />
+    <Object type="PartDesign::Body" name="Body" id="3406" revision="145" file="Body.xml" />
     <Object type="App::Origin" name="Origin001" id="3407" revision="0" file="Origin001.xml" />
     <Object type="App::Line" name="X_Axis" id="3408" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="3409" revision="2" file="Y_Axis.xml" />
@@ -819,17 +839,17 @@
     <Object type="App::Plane" name="XY_Plane" id="3411" revision="1" file="XY_Plane.xml" />
     <Object type="App::Plane" name="XZ_Plane" id="3412" revision="2" file="XZ_Plane.xml" />
     <Object type="App::Plane" name="YZ_Plane" id="3413" revision="2" file="YZ_Plane.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch" id="3414" revision="259" file="Sketch.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch001" id="3415" revision="78" file="Sketch001.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch002" id="3416" revision="108" file="Sketch002.xml" />
-    <Object type="PartDesign::Pad" name="Pad" id="3417" revision="31" file="Pad.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch003" id="3421" revision="124" file="Sketch003.xml" />
-    <Object type="PartDesign::Pad" name="Pad001" id="3422" revision="25" file="Pad001.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch" id="3414" revision="275" file="Sketch.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch001" id="3415" revision="104" file="Sketch001.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch002" id="3416" revision="149" file="Sketch002.xml" />
+    <Object type="PartDesign::Pad" name="Pad" id="3417" revision="35" file="Pad.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch003" id="3421" revision="135" file="Sketch003.xml" />
+    <Object type="PartDesign::Pad" name="Pad001" id="3422" revision="29" file="Pad001.xml" />
     <Object type="App::Link" name="Link" id="3423" revision="56" file="Link.xml" />
-    <Object type="PartDesign::Boolean" name="Boolean" id="3427" revision="119" file="Boolean.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Reference" id="3430" revision="24" file="Reference.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch004" id="3431" revision="400" file="Sketch004.xml" />
-    <Object type="PartDesign::Pad" name="Pad002" id="3432" revision="63" file="Pad002.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean" id="3427" revision="131" file="Boolean.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Reference" id="3430" revision="34" file="Reference.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch004" id="3431" revision="480" file="Sketch004.xml" />
+    <Object type="PartDesign::Pad" name="Pad002" id="3432" revision="85" file="Pad002.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>

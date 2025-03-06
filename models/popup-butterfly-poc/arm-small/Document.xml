@@ -4,10 +4,9 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.1006R14555 (Git shallow)" FileVersion="2" Uid="6ffeaade-ced0-4724-a698-7873b50246ac" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="31">
+  <StringHasher2  count="96">
 <![CDATA[
--1.0 0:Shape cache
--1.0 0:;SKT;:H1215,E
+-2.0 0:;SKT;:H1215,E
 -1.c.1 g9
 -1.0 0:;SKT;:H1215,V
 -1.c.1 g9v1
@@ -37,6 +36,72 @@
 -1.2c.0.1
 -1.2c.0.1
 -1.2c.0.1
+-1.0 0:Shape cache
+-1.0 0:;SKT;:H1217,E
+-1.c.1 g9
+-1.c.0 g10
+-1.0 0:;SKT;:H1217,V
+-1.c.1 g9v1
+-1.c.0 g10v1
+-1.0 0:;FAC;:H1217:4,F
+-1.2c.1.6
+-1.2c.0.1
+-1.0 0:;:G;XTR;:H1217:7,F
+-1.2c.1.9
+-1.2c.0.1
+-1.0 0:;:G;XTR;:H1217:7,E
+-1.2c.1.9
+-1.2c.0.1
+-1.0 0:;:U;XTR;:H1217:7,V
+-1.2c.1.3
+-1.0 0:;:U;XTR;:H1217:7,E
+-1.2c.1.8
+-1.0 0:;:G0;XTR;:H1217:8,F
+-1.2c.1.d
+-2.2c.-2.4
+-1.2c.2.-3
+-1.0 0:;:G0;XTR;:H1215:8,F
+-1.c.1.18 #11
+-2.0 0:(#16;K-1;:H1216:4,F)
+-1.0 0:(#14;K-1;:H1216:4,F)
+-2.0 0:;:U;XTR;:H1215:7,E
+-1.2c.1.2a
+-1.0 0:(#16;K-2;:H1216:4,F)
+-1.0 0:(#14;K-2;:H1216:4,F)
+-1.2c.4.2f
+-4.0 0:(#d;K-1;:H1216:4,E)
+-1.0 0:(#b;K-1;:H1216:4,E)
+-1.0 0:(#d;K-2;:H1216:4,E)
+-1.0 0:(#b;K-2;:H1216:4,E)
+-6.0 0:;:U;XTR;:H1215:7,V
+-1.2c.1.37
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.-11.-c
+-1.2c.0.2
+-1.2c.0.2
+-1.2c.0.1
+-1.0 0:(#14;K-3;:H1216:4,F)
+-1.0 0:(#16;K-3;:H1216:4,F)
+-1.0 0:(#16;K-6;:H1216:4,F)
+-1.0 0:(#16;K-5;:H1216:4,F)
+-1.0 0:(#16;K-4;:H1216:4,F)
+-1.0 0:(#14;K-4;:H1216:4,F)
+-1.0 0:(#14;K-5;:H1216:4,F)
+-1.0 0:(#14;K-6;:H1216:4,F)
+-1.0 0:(#13;K-1;:H1216:4,F)
+-1.0 0:(#15;K-1;:H1216:4,F)
+-1.0 0:(#17;K-1;:H1216:4,F)
+-1.0 0:(#18;K-1;:H1216:4,F)
+-1.0 0:(#38;K-2;:H-1218:4,F)
+-1.0 0:(#35;K-1;:H-1218:4,F)
+-1.0 0:(#35;K-2;:H-1218:4,F)
+-1.0 0:(#38;K-1;:H-1218:4,F)
+-1.0 0:(#35;K-3;:H-1218:4,F)
+-1.0 0:(#38;K-3;:H-1218:4,F)
 ]]>
   </StringHasher2>
   <Properties Count="21" TransientCount="3">
@@ -68,7 +133,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2025-03-02T18:36:52Z"/>
+      <String value="2025-03-06T22:51:31Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -109,25 +174,27 @@
       <Bool value="true"/>
     </Property>
   </Properties>
-  <Objects Count="13" Dependencies="1">
+  <Objects Count="15" Dependencies="1">
     <ObjectDeps Name="Part" Count="2">
-      <Dep Name="Body"/>
       <Dep Name="Origin"/>
+      <Dep Name="Body"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="0"/>
-    <ObjectDeps Name="Body" Count="4">
+    <ObjectDeps Name="Body" Count="6">
       <Dep Name="Origin001"/>
       <Dep Name="Sketch"/>
       <Dep Name="Sketch001"/>
       <Dep Name="Pad"/>
+      <Dep Name="Sketch002"/>
+      <Dep Name="Pad001"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin001" Count="6">
-      <Dep Name="XY_Plane"/>
-      <Dep Name="Z_Axis"/>
-      <Dep Name="YZ_Plane"/>
-      <Dep Name="Y_Axis"/>
       <Dep Name="X_Axis"/>
+      <Dep Name="Y_Axis"/>
+      <Dep Name="Z_Axis"/>
+      <Dep Name="XY_Plane"/>
       <Dep Name="XZ_Plane"/>
+      <Dep Name="YZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
@@ -146,9 +213,18 @@
       <Dep Name="Body"/>
       <Dep Name="Sketch001"/>
     </ObjectDeps>
-    <Object type="App::Part" name="Part" id="4618" revision="108" file="Part.xml" />
+    <ObjectDeps Name="Sketch002" Count="2">
+      <Dep Name="XY_Plane"/>
+      <Dep Name="Sketch"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Pad001" Count="3">
+      <Dep Name="Body"/>
+      <Dep Name="Pad"/>
+      <Dep Name="Sketch002"/>
+    </ObjectDeps>
+    <Object type="App::Part" name="Part" id="4618" revision="183" file="Part.xml" />
     <Object type="App::Origin" name="Origin" id="4619" revision="0" file="Origin.xml" />
-    <Object type="PartDesign::Body" name="Body" id="4620" revision="36" file="Body.xml" />
+    <Object type="PartDesign::Body" name="Body" id="4620" revision="50" file="Body.xml" />
     <Object type="App::Origin" name="Origin001" id="4621" revision="0" file="Origin001.xml" />
     <Object type="App::Line" name="X_Axis" id="4622" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="4623" revision="2" file="Y_Axis.xml" />
@@ -156,9 +232,11 @@
     <Object type="App::Plane" name="XY_Plane" id="4625" revision="1" file="XY_Plane.xml" />
     <Object type="App::Plane" name="XZ_Plane" id="4626" revision="2" file="XZ_Plane.xml" />
     <Object type="App::Plane" name="YZ_Plane" id="4627" revision="2" file="YZ_Plane.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch" id="4628" revision="160" file="Sketch.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch001" id="4629" revision="222" file="Sketch001.xml" />
-    <Object type="PartDesign::Pad" name="Pad" id="4630" revision="17" file="Pad.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch" id="4628" revision="173" file="Sketch.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch001" id="4629" revision="330" file="Sketch001.xml" />
+    <Object type="PartDesign::Pad" name="Pad" id="4630" revision="26" file="Pad.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch002" id="4631" revision="209" file="Sketch002.xml" />
+    <Object type="PartDesign::Pad" name="Pad001" id="4632" revision="27" file="Pad001.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>
