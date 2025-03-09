@@ -27,9 +27,11 @@
       </LinkSub>
     </Property>
     <Property name="Constraints" type="Sketcher::PropertyConstraintList">
-      <ConstraintList count="2">
+      <ConstraintList count="4">
         <Constrain Name="" Type="12" Value="0" First="1" FirstPos="0" Second="0" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="18" Value="10.1" First="1" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="2.327111482620239" LabelPosition="0.2617993950843811" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="1" Value="0" First="1" FirstPos="3" Second="-4" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="1" Value="0" First="0" FirstPos="3" Second="-3" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
       </ConstraintList>
     </Property>
     <Property name="Exports" type="App::PropertyLinkListHidden" status="67108864">
@@ -68,7 +70,7 @@
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="14" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
             <GeoExtension type="Sketcher::ExternalGeometryExtension" Ref="Sketch.;g7;SKT" Flags="0"/>
           </GeoExtensions>
-          <Circle CenterX="0" CenterY="-2.947547989461254e-24" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1"/>
+          <Circle CenterX="0" CenterY="-9.015751999869212e-24" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1"/>
           <Construction value="1"/>
         </Geometry>
         <Geometry type="Part::GeomCircle" id="15" ref="Sketch.;g2;SKT" migrated="1">
@@ -76,7 +78,7 @@
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="15" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
             <GeoExtension type="Sketcher::ExternalGeometryExtension" Ref="Sketch.;g2;SKT" Flags="0"/>
           </GeoExtensions>
-          <Circle CenterX="52.33709043630631" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1"/>
+          <Circle CenterX="51.83019697542453" CenterY="-2.341208282904355e-26" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1"/>
           <Construction value="1"/>
         </Geometry>
       </GeometryList>
@@ -91,7 +93,7 @@
       <Integer value="0"/>
     </Property>
     <Property name="FullyConstrained" type="App::PropertyBool" status="218103808">
-      <Bool value="false"/>
+      <Bool value="true"/>
     </Property>
     <Property name="Geometry" type="Part::PropertyGeometryList" status="8192">
       <GeometryList count="2">
@@ -106,7 +108,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="11" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <Circle CenterX="52.34668087259951" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="5.05"/>
+          <Circle CenterX="51.83019697542453" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="5.05"/>
           <Construction value="0"/>
         </Geometry>
       </GeometryList>
@@ -162,7 +164,7 @@ TShapes 0
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 5
+Locations 9
 1
               1               0               0               0 
               0               1               0               0 
@@ -177,19 +179,35 @@ Locations 5
               0               1               0               0 
               0               0               1            1.85 
 2  4 -1 2 -1 1 -1 0
-Curve2ds 4
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  6 -1 1 -1 0
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1            1.85 
+2  8 -1 6 -1 1 -1 0
+Curve2ds 8
+1 0 0 1 0 
+1 0 -1.8500000000000001 1 0 
+1 0 0 1 0 
+1 0 -1.8500000000000001 1 0 
 1 0 0 1 0 
 1 0 -1.8500000000000001 1 0 
 1 0 0 1 0 
 1 0 -1.8500000000000001 1 0 
 Curves 2
 2 0 0 0 0 0 1 1 0 0 0 1 0 5.0499999999999998
-2 52.346680872599507 0 0 0 0 1 1 0 0 0 1 0 5.0499999999999998
+2 51.830196975424535 0 0 0 0 1 1 0 0 0 1 0 5.0499999999999998
 Polygon3D 0
 PolygonOnTriangulations 0
-Surfaces 2
+Surfaces 4
 2 0 0 0 -0 -0 -1 1 0 0 0 1 0 5.0499999999999998
-2 52.346680872599507 0 0 -0 -0 -1 1 0 0 0 1 0 5.0499999999999998
+2 0 0 0 -0 -0 -1 1 0 0 0 1 0 5.0499999999999998
+2 51.830196975424535 0 0 -0 -0 -1 1 0 0 0 1 0 5.0499999999999998
+2 51.830196975424535 0 0 -0 -0 -1 1 0 0 0 1 0 5.0499999999999998
 Triangulations 0
 
 TShapes 7
@@ -205,6 +223,8 @@ Ed
 1  1 0 0 6.28318530717959
 2  1 1 3 0 6.28318530717959
 2  2 1 5 0 6.28318530717959
+2  3 2 7 0 6.28318530717959
+2  4 2 9 0 6.28318530717959
 0
 
 0101100
@@ -215,7 +235,7 @@ Wi
 +6 0 *
 Ve
 1e-07
-57.3966808725995 0 0
+56.8801969754245 0 0
 0 0
 
 0101101
@@ -223,8 +243,10 @@ Ve
 Ed
  1e-07 1 1 0
 1  2 0 0 6.28318530717959
-2  3 2 3 0 6.28318530717959
-2  4 2 5 0 6.28318530717959
+2  5 3 3 0 6.28318530717959
+2  6 3 5 0 6.28318530717959
+2  7 4 7 0 6.28318530717959
+2  8 4 9 0 6.28318530717959
 0
 
 0101100
@@ -243,14 +265,14 @@ Co
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="4">
 <![CDATA[
-6 PostfixCount 3
+7 PostfixCount 3
 Edge
 Vertex
 ;SKT
 
 MapCount 1
 
-ElementMap 1 6 2
+ElementMap 1 7 2
 
 Edge
 
