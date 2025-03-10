@@ -3,7 +3,121 @@
  FreeCAD Document, see http://www.freecadweb.org for more information...
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.1006R14555 (Git shallow)" FileVersion="2" Uid="aa45dbb8-f3b3-4fb8-816f-2023e9039a16" StringHasher="1">
-  <StringHasher saveall="0" threshold="0" count="0"></StringHasher>
+  <StringHasher saveall="0" threshold="0" count="0" new="1"/>
+  <StringHasher2  count="110">
+<![CDATA[
+-1.0 0:Shape cache
+-1.0 0:;SKT;:H,E;:H9d:5,E
+-1.c.1 g6
+-1.0 0:;SKT;:H,V;:H9d:5,V
+-5.c.5 g7v1
+-2.0 0:;SKT;:H9d,V
+-1.c.1 g70v1
+-1.c.0 g70v2
+-1.c.0 g73v1
+-1.c.0 g78v1
+-1.c.0 g57v1
+-8.c.0 g60v2
+-1.c.0 g67v2
+-1.c.0 g45v2
+-1.c.0 g44v2
+-1.c.0 g37v1
+-1.c.0 g11v1
+-1.c.0 g11v2
+-1.c.0 g54v2
+-2.c.-9 g34
+-1.c.0 g39
+-1.c.0 g7
+-1.c.0 g8
+-1.0 0:;SKT;:H9d,E
+-1.c.1 g70
+-1.c.0 g73
+-1.c.0 g78
+-1.c.0 g48
+-1.c.0 g57
+-1.c.0 g15
+-1.c.0 g58
+-1.c.0 g66
+-1.c.0 g47
+-3.c.0 g60
+-1.c.0 g67
+-1.c.0 g69
+-1.c.0 g45
+-1.c.0 g44
+-1.c.0 g37
+-1.c.0 g11
+-1.c.0 g54
+-1.c.0 g14
+-1.0 0:;FAC;:H9d:4,F
+-1.2c.1.38
+-1.0 0:;:G;XTR;:H9d:7,F
+-1.2c.1.3a
+-2.2c.0.1e
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.2
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-3.2c.0.3
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.0 0:;:G;XTR;:H9d:7,E
+-5.2c.5.53
+-2.2c.0.3
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-8.2c.0.8
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.2c.0.1
+-1.c.-53 g34v1
+-1.c.0 g39v1
+-1.c.0 g7v2
+-1.c.0 g8v2
+-1.c.0 g84v2
+-1.c.7 g58v1
+-1.c.0 g66v2
+-1.c.0 g57v2
+-1.c.0 g87v2
+-1.c.0 g86v2
+-1.c.0 g47v2
+-1.c.0 g44v1
+-1.c.-9 g84
+-1.c.23 g87
+-1.c.0 g86
+-1.2c.17.3
+-1.2c.0.1
+-1.2c.0.1
+-1.0 0:;:U;XTR;:H9d:7,E
+-1.2c.1.46
+-1.2c.0.2
+-1.2c.0.-4
+-1.2c.0.c
+-1.2c.0.-2
+-1.2c.0.1
+-1.2c.-2d.33
+-1.2c.2d.-30
+]]>
+  </StringHasher2>
   <Properties Count="21" TransientCount="3">
     <_Property name="FileName" type="App::PropertyString" status="50331649"/>
     <_Property name="Tip" type="App::PropertyLink" status="33554433"/>
@@ -33,7 +147,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2025-03-08T19:08:35Z"/>
+      <String value="2025-03-09T23:58:18Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -74,23 +188,26 @@
       <Bool value="true"/>
     </Property>
   </Properties>
-  <Objects Count="11" Dependencies="1">
+  <Objects Count="14" Dependencies="1">
     <ObjectDeps Name="Part" Count="2">
-      <Dep Name="Origin"/>
       <Dep Name="Body"/>
+      <Dep Name="Origin"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="0"/>
-    <ObjectDeps Name="Body" Count="2">
-      <Dep Name="Origin001"/>
+    <ObjectDeps Name="Body" Count="5">
+      <Dep Name="Sketch001"/>
       <Dep Name="Sketch"/>
+      <Dep Name="Pad"/>
+      <Dep Name="Sketch002"/>
+      <Dep Name="Origin001"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin001" Count="6">
-      <Dep Name="X_Axis"/>
-      <Dep Name="Y_Axis"/>
-      <Dep Name="Z_Axis"/>
       <Dep Name="XZ_Plane"/>
+      <Dep Name="Z_Axis"/>
       <Dep Name="YZ_Plane"/>
+      <Dep Name="X_Axis"/>
       <Dep Name="XY_Plane"/>
+      <Dep Name="Y_Axis"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
@@ -101,9 +218,21 @@
     <ObjectDeps Name="Sketch" Count="1">
       <Dep Name="XZ_Plane"/>
     </ObjectDeps>
-    <Object type="App::Part" name="Part" id="145" revision="45" file="Part.xml" />
+    <ObjectDeps Name="Sketch001" Count="2">
+      <Dep Name="Sketch"/>
+      <Dep Name="XY_Plane"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Sketch002" Count="2">
+      <Dep Name="Sketch001"/>
+      <Dep Name="XY_Plane"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Pad" Count="2">
+      <Dep Name="Body"/>
+      <Dep Name="Sketch002"/>
+    </ObjectDeps>
+    <Object type="App::Part" name="Part" id="145" revision="93" Touched="1" file="Part.xml" />
     <Object type="App::Origin" name="Origin" id="146" revision="0" file="Origin.xml" />
-    <Object type="PartDesign::Body" name="Body" id="147" revision="13" file="Body.xml" />
+    <Object type="PartDesign::Body" name="Body" id="147" revision="31" file="Body.xml" />
     <Object type="App::Origin" name="Origin001" id="148" revision="0" file="Origin001.xml" />
     <Object type="App::Line" name="X_Axis" id="149" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="150" revision="2" file="Y_Axis.xml" />
@@ -111,7 +240,10 @@
     <Object type="App::Plane" name="XY_Plane" id="152" revision="1" file="XY_Plane.xml" />
     <Object type="App::Plane" name="XZ_Plane" id="153" revision="2" file="XZ_Plane.xml" />
     <Object type="App::Plane" name="YZ_Plane" id="154" revision="2" file="YZ_Plane.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch" id="155" revision="180" file="Sketch.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch" id="155" revision="189" file="Sketch.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch001" id="156" revision="59" file="Sketch001.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch002" id="157" revision="1809" file="Sketch002.xml" />
+    <Object type="PartDesign::Pad" name="Pad" id="158" revision="24" file="Pad.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>

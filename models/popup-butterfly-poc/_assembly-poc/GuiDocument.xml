@@ -7,40 +7,60 @@
 -->
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
 <Expand  count="1">
-  <Expand name="Assembly" count="1">
-    <Expand name="Parts" count="3">
+  <Expand name="Assembly" count="2">
+    <Expand name="Constraints" count="1">
+      <Expand name="Constraint019"/>
+    </Expand>
+    <Expand name="Parts" count="8">
       <Expand name="Link001" count="1">
         <Expand name="Body"/>
       </Expand>
-      <Expand name="Link010" count="1">
-        <Expand name="Body" count="3">
+      <Expand name="Link003" count="1">
+        <Expand name="Body" count="1">
           <Expand name="Pad"/>
-          <Expand name="Pad001"/>
-          <Expand name="Pad002"/>
+        </Expand>
+      </Expand>
+      <Expand name="Link004" count="1">
+        <Expand name="Body" count="1">
+          <Expand name="Pad"/>
+        </Expand>
+      </Expand>
+      <Expand name="Link005" count="1">
+        <Expand name="Body"/>
+      </Expand>
+      <Expand name="Link009" count="1">
+        <Expand name="Body"/>
+      </Expand>
+      <Expand name="Link010" count="1">
+        <Expand name="Body" count="1">
+          <Expand name="Pad"/>
         </Expand>
       </Expand>
       <Expand name="Link011" count="1">
         <Expand name="Body"/>
       </Expand>
+      <Expand name="Link012" count="1">
+        <Expand name="Body"/>
+      </Expand>
     </Expand>
   </Expand>
 </Expand>
-  <Camera extra="0" id="11" binding="0" view3d="1">
+  <Camera extra="0" id="27" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position -63.115036 -22.560469 32.383858
-  orientation -0.58719569 0.59384632 0.5500434  4.1378593
-  nearDistance 42.803421
-  farDistance 87.877632
+  position -65.096802 -10.24498 1.4529343
+  orientation -9.227777e-007 -1 9.124023e-007  1.5594893
+  nearDistance 45.837322
+  farDistance 83.220238
   aspectRatio 1
   focalDistance 71.786949
-  height 75.204872
+  height 198.73213
 
 }
 ## overrideMode: Flat Lines]]>
   </Camera>
-  <View3D id="11"><![CDATA[
+  <View3D id="27"><![CDATA[
   <Properties Count="3" TransientCount="0">
     <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
       <Integer value="6"/>
