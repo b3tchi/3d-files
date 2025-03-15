@@ -112,7 +112,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="1" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <ArcOfCircle CenterX="-122" CenterY="1.97215226305253e-31" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1.85" StartAngle="1.570796326794899" EndAngle="4.712388980384691"/>
+          <ArcOfCircle CenterX="-122" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1.85" StartAngle="1.570796326794899" EndAngle="4.712388980384691"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="3" migrated="1">
@@ -133,7 +133,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="5" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <Circle CenterX="-122" CenterY="1.97215226305253e-31" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1"/>
+          <Circle CenterX="-122" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="2" migrated="1">
@@ -238,11 +238,11 @@ Locations 1
               0               1 -4.44089209850063e-16               0 
 Curve2ds 0
 Curves 6
-2 -122 1.9721522630525295e-31 0 0 0 1 1 0 0 0 1 0 1.8500000000000001
+2 -122 1.9721522630525295e-31 0 0 0 1 1 0 -0 -0 1 0 1.8500000000000001
 1 -122 -1.8500000000000001 0 1 0 0 
 1 5 1.8500000000000001 0 0 -1 0 
 1 5 1.8500000000000001 0 -1 0 0 
-2 -122 1.9721522630525295e-31 0 0 0 1 1 0 0 0 1 0 1
+2 -122 1.9721522630525295e-31 0 0 0 1 1 0 -0 -0 1 0 1
 1 -112 8 0 1 0 0 
 Polygon3D 0
 PolygonOnTriangulations 0
@@ -414,7 +414,7 @@ EndMap
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="649">
+    <Property name="Visibility" type="App::PropertyBool" status="648">
       <Bool value="true"/>
     </Property>
   </Properties>

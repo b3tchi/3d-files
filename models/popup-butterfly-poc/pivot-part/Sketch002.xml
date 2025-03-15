@@ -112,7 +112,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="3" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-2.664535259100376e-15" StartY="3.342023550533414e-16" StartZ="0" EndX="-6" EndY="3.342023550533414e-16" EndZ="0"/>
+          <LineSegment StartX="-2.7e-15" StartY="3e-16" StartZ="0" EndX="-6" EndY="3e-16" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="6" migrated="1">
@@ -126,7 +126,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="7" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-6" StartY="3.342023550533414e-16" StartZ="0" EndX="-6" EndY="-12" EndZ="0"/>
+          <LineSegment StartX="-6" StartY="3e-16" StartZ="0" EndX="-6" EndY="-12" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="9" migrated="1">
@@ -221,17 +221,17 @@ Curve2ds 4
 1 0 0 1 0 
 1 0 -3.7000000000000002 1 0 
 Curves 6
-2 0 -6 0 0 0 1 1 0 0 0 1 0 3.5
+2 0 -6 0 0 0 1 1 0 -0 -0 1 0 3.5
 1 -2.6645352591003761e-15 3.342023550533414e-16 0 -1 0 0 
 1 -6 3.342023550533414e-16 0 0 -1 0 
 1 -6 -12 0 1 0 0 
 1 5 -12 0 0 1 0 
-2 0 -6 0 0 0 1 1 0 0 0 1 0 5.9999999999999982
+2 0 -6 0 0 0 1 1 0 -0 -0 1 0 5.9999999999999982
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 2
-2 0 -6 -1.8500000000000001 -0 -0 -1 1 0 0 0 1 0 3.5
-2 0 -6 -1.8500000000000001 -0 -0 -1 1 0 0 0 1 0 5.9999999999999982
+2 0 -6 -1.8500000000000001 -0 -0 -1 1 0 0 -0 1 -0 3.5
+2 0 -6 -1.8500000000000001 -0 -0 -1 1 0 0 -0 1 -0 5.9999999999999982
 Triangulations 0
 
 TShapes 15
@@ -256,35 +256,35 @@ Wi
 0101100
 +14 0 *
 Ve
-1.00000001071149e-07
+1.00000000033894e-05
 -2.48083824028325e-15 -7.21077236112982e-16 0
 0 0
 
 0101101
 *
 Ve
-1e-07
+1.00000000033894e-05
 -6 3.34202355053341e-16 0
 0 0
 
 0101101
 *
 Ed
- 1e-07 1 1 0
+ 1.00000000033894e-05 1 1 0
 1  2 0 0 6
 0
 
 0101000
 +12 0 -11 0 *
 Ve
-1e-07
+1.00000000033894e-05
 -6 -12 0
 0 0
 
 0101101
 *
 Ed
- 1e-07 1 1 0
+ 1.00000000033894e-05 1 1 0
 1  3 0 0 12
 0
 
@@ -305,7 +305,7 @@ Ed
 0101000
 +9 0 -7 0 *
 Ve
-1.00002638019728e-07
+1.00000000033894e-05
 4.9999999999978 -2.68337520963652 0
 0 0
 
@@ -319,7 +319,7 @@ Ed
 0101000
 +7 0 -5 0 *
 Ed
- 1e-07 1 1 0
+ 1.00000000033894e-05 1 1 0
 1  6 0 0.585685543458475 1.5707963267949
 2  3 2 4 0.585685543458475 1.5707963267949
 2  4 2 6 0.585685543458475 1.5707963267949

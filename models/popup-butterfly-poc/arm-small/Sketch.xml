@@ -99,7 +99,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="2" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <Circle CenterX="50.2307" CenterY="1.041892662802518e-26" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1"/>
+          <Circle CenterX="50.2307" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomArcOfCircle" id="3" migrated="1">
@@ -113,14 +113,14 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="4" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <ArcOfCircle CenterX="50.2307" CenterY="1.041892662802518e-26" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1.85" StartAngle="4.71238898038469" EndAngle="7.853981633974482"/>
+          <ArcOfCircle CenterX="50.2307" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1.85" StartAngle="4.71238898038469" EndAngle="7.853981633974482"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="5" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="5" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="8.198884172046882e-16" StartY="-1.85" StartZ="0" EndX="50.2307" EndY="-1.85" EndZ="0"/>
+          <LineSegment StartX="8e-16" StartY="-1.85" StartZ="0" EndX="50.2307" EndY="-1.85" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="6" migrated="1">
@@ -190,11 +190,11 @@ Locations 1
               0               0               1               0 
 Curve2ds 0
 Curves 6
-2 0 0 0 0 0 1 1 0 0 0 1 0 1
-2 50.230699999999999 1.0418926628025179e-26 0 0 0 1 1 0 0 0 1 0 1
-2 0 0 0 0 0 1 1 0 0 0 1 0 1.8500000000000001
+2 0 0 0 0 0 1 1 0 -0 -0 1 0 1
+2 50.230699999999999 1.0418926628025179e-26 0 0 0 1 1 0 -0 -0 1 0 1
+2 0 0 0 0 0 1 1 0 -0 -0 1 0 1.8500000000000001
 1 8.1988841720468823e-16 -1.8500000000000001 0 1 0 0 
-2 50.230699999999999 1.0418926628025179e-26 0 0 0 1 1 0 0 0 1 0 1.8500000000000001
+2 50.230699999999999 1.0418926628025179e-26 0 0 0 1 1 0 -0 -0 1 0 1.8500000000000001
 1 50.230699999999999 1.8500000000000001 0 -1 0 0 
 Polygon3D 0
 PolygonOnTriangulations 0
@@ -358,7 +358,7 @@ EndMap
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="649">
+    <Property name="Visibility" type="App::PropertyBool" status="648">
       <Bool value="true"/>
     </Property>
   </Properties>

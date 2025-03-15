@@ -90,7 +90,7 @@
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="8" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
             <GeoExtension type="Sketcher::ExternalGeometryExtension" Ref="Sketch.;g2;SKT" Flags="0"/>
           </GeoExtensions>
-          <Circle CenterX="50.2307" CenterY="1.041892662802518e-26" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1"/>
+          <Circle CenterX="50.2307" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1"/>
           <Construction value="1"/>
         </Geometry>
       </GeometryList>
@@ -120,7 +120,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="10" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <ArcOfCircle CenterX="50.2307" CenterY="1.041892662802518e-26" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="5" StartAngle="3.52060167428565" EndAngle="9.045768940073522"/>
+          <ArcOfCircle CenterX="50.2307" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="5" StartAngle="3.52060167428565" EndAngle="9.045768940073522"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="11" migrated="1">
@@ -148,7 +148,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="14" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <Circle CenterX="50.2307" CenterY="1.041892662802518e-26" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="3.5"/>
+          <Circle CenterX="50.2307" CenterY="0" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="3.5"/>
           <Construction value="0"/>
         </Geometry>
       </GeometryList>
@@ -229,19 +229,19 @@ Curve2ds 8
 1 0 0 1 0 
 1 0 -3.7000000000000002 1 0 
 Curves 6
-2 0 0 0 0 0 1 1 0 0 0 1 0 5
+2 0 0 0 0 0 1 1 0 -0 -0 1 0 5
 1 4.6451587701606067 -1.8500000000000001 0 1 0 0 
-2 50.230699999999999 1.0418926628025179e-26 0 0 0 1 1 0 0 0 1 0 5
+2 50.230699999999999 1.0418926628025179e-26 0 0 0 1 1 0 -0 -0 1 0 5
 1 45.585541229838121 1.8500000000000001 0 -1 0 0 
-2 0 0 0 0 0 1 1 0 0 0 1 0 3.5
-2 50.230699999999999 1.0418926628025179e-26 0 0 0 1 1 0 0 0 1 0 3.5
+2 0 0 0 0 0 1 1 0 -0 -0 1 0 3.5
+2 50.230699999999999 1.0418926628025179e-26 0 0 0 1 1 0 -0 -0 1 0 3.5
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 4
-2 0 0 0 -0 -0 -1 1 0 0 0 1 0 5
-2 50.230699999999999 1.0418926628025179e-26 0 -0 -0 -1 1 0 0 0 1 0 5
-2 0 0 0 -0 -0 -1 1 0 0 0 1 0 3.5
-2 50.230699999999999 1.0418926628025179e-26 0 -0 -0 -1 1 0 0 0 1 0 3.5
+2 0 0 0 -0 -0 -1 1 0 0 -0 1 -0 5
+2 50.230699999999999 1.0418926628025179e-26 0 -0 -0 -1 1 0 0 -0 1 -0 5
+2 0 0 0 -0 -0 -1 1 0 0 -0 1 -0 3.5
+2 50.230699999999999 1.0418926628025179e-26 0 -0 -0 -1 1 0 0 -0 1 -0 3.5
 Triangulations 0
 
 TShapes 16

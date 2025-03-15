@@ -80,7 +80,7 @@
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="2" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
             <GeoExtension type="Sketcher::ExternalGeometryExtension" Ref="Sketch.;g5;SKT" Flags="0"/>
           </GeoExtensions>
-          <LineSegment StartX="5" StartY="8.215650382226151e-16" StartZ="0" EndX="-1.05" EndY="8.215650382226151e-16" EndZ="0"/>
+          <LineSegment StartX="5" StartY="8e-16" StartZ="0" EndX="-1.05" EndY="8e-16" EndZ="0"/>
           <Construction value="1"/>
         </Geometry>
       </GeometryList>
@@ -109,14 +109,14 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="3" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="5" StartY="8.881784197001252e-16" StartZ="0" EndX="1" EndY="8.881784197001252e-16" EndZ="0"/>
+          <LineSegment StartX="5" StartY="9e-16" StartZ="0" EndX="1" EndY="9e-16" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="4" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="4" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="1" StartY="8.881784197001252e-16" StartZ="0" EndX="1" EndY="-96" EndZ="0"/>
+          <LineSegment StartX="1" StartY="9e-16" StartZ="0" EndX="1" EndY="-96" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="5" migrated="1">
@@ -193,7 +193,7 @@ Locations 1
               0               0               1           -1.85 
 Curve2ds 0
 Curves 5
-2 0 -6 0 0 0 1 1 0 0 0 1 0 1
+2 0 -6 0 0 0 1 1 0 -0 -0 1 0 1
 1 5 8.8817841970012523e-16 0 -1 0 0 
 1 1.0000000000000002 8.8817841970012523e-16 0 0 -1 0 
 1 1.0000000000000002 -96 0 1 0 0 
@@ -340,7 +340,7 @@ EndMap
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="649">
+    <Property name="Visibility" type="App::PropertyBool" status="648">
       <Bool value="true"/>
     </Property>
   </Properties>
