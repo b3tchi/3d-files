@@ -101,6 +101,7 @@ export def --env send [
 
     let merge_args = fx merge-stl $config_path $final_3mf ($parts_base | select stl_path count)
     try { prusa-slicer ...$merge_args } catch { 'merge command issue' } #I/O
+	# print $merge_args
 
     # validate source input
     if $arrange {

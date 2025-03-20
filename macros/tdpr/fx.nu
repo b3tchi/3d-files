@@ -116,10 +116,11 @@ export def merge-stl [
         | get expanded
         | flatten
 
+	# --merge #moving out
     let args = [
         --load $config_path
         --export-3mf
-        --merge
+		--merge #causing issue with 2.9.1 working with 2.8.1
         --split
         --center '90,90'
         --ensure-on-bed
