@@ -6,19 +6,7 @@
     <Extension type="App::LinkBaseExtensionPython" name="LinkBaseExtensionPython">
     </Extension>
   </Extensions>
-  <Properties Count="24" TransientCount="0">
-    <Property name="Angle" type="App::PropertyFloat" group="Constraint" attr="0" ro="0" hide="0" docID="4" status="2097152">
-      <Float value="0"/>
-    </Property>
-    <Property name="AnglePitch" type="App::PropertyAngle" group="Constraint" attr="0" ro="0" hide="0" docID="5" status="2097152">
-      <Float value="0"/>
-    </Property>
-    <Property name="AngleRoll" type="App::PropertyAngle" group="Constraint" attr="0" ro="0" hide="0" docID="6" status="2097152">
-      <Float value="0"/>
-    </Property>
-    <Property name="Cascade" type="App::PropertyBool" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097152">
-      <Bool value="false"/>
-    </Property>
+  <Properties Count="15" TransientCount="0">
     <Property name="ConstraintType" type="App::PropertyEnumeration" group="Base" attr="2" ro="0" hide="0" doc="" status="35651584"></Property>
     <Property name="Disabled" type="App::PropertyBool" group="Base" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Bool value="false"/>
@@ -27,47 +15,31 @@
       <ExpressionEngine count="0"></ExpressionEngine>
     </Property>
     <Property name="Group" type="App::PropertyLinkList" group="Base" attr="0" ro="0" hide="0" doc="" status="2097418">
-      <LinkList count="2">
-        <Link value="ElementLink001"/>
+      <LinkList count="1">
         <Link value="ElementLink002"/>
       </LinkList>
     </Property>
     <Property name="GroupMode" type="App::PropertyEnumeration" group="Base" attr="0" ro="0" hide="0" doc="" status="2097434"></Property>
     <Property name="Label" type="App::PropertyString" status="134217728">
-      <String value="PlaneCoincident"/>
+      <String value="Locked"/>
     </Property>
     <Property name="Label2" type="App::PropertyString" status="128">
       <String value=""/>
-    </Property>
-    <Property name="LockAngle" type="App::PropertyBool" group="Constraint" attr="0" ro="0" hide="0" docID="3" status="2097152">
-      <Bool value="false"/>
-    </Property>
-    <Property name="Multiply" type="App::PropertyBool" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097152">
-      <Bool value="false"/>
-    </Property>
-    <Property name="Offset" type="App::PropertyDistance" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097152">
-      <Float value="-7"/>
-    </Property>
-    <Property name="OffsetX" type="App::PropertyDistance" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097152">
-      <Float value="0"/>
-    </Property>
-    <Property name="OffsetY" type="App::PropertyDistance" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097152">
-      <Float value="0"/>
     </Property>
     <Property name="Proxy" type="App::PropertyPythonObject">
       <Python  module="freecad.asm3.assembly" class="AsmConstraint" value="null"/>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="19"/>
+      <Integer value="0"/>
     </Property>
     <Property name="Visibility" type="App::PropertyBool" status="648">
       <Bool value="false"/>
     </Property>
     <Property name="VisibilityList" type="App::PropertyBoolList" group="Base" attr="0" ro="0" hide="0" doc="" status="2099082">
-      <BoolList value="00"/>
+      <BoolList value="0"/>
     </Property>
     <Property name="_ConstraintType" type="App::PropertyInteger" group="Base" attr="0" ro="0" hide="1" doc="" status="69206016">
-      <Integer value="35"/>
+      <Integer value="0"/>
     </Property>
     <Property name="_LinkOwner" type="App::PropertyInteger" status="201326592">
       <Integer value="0"/>

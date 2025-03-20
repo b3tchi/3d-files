@@ -34,7 +34,7 @@
       <Bool value="true"/>
     </Property>
     <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Link001" sub="Body.Sketch.Edge8" shadow="Body.Sketch.;g8;SKT.Edge8"/>
+      <XLink file="" stamp="" name="Link002" sub="Body.Sketch014.Edge1" shadow="Body.Sketch014.;g1;SKT.Edge1"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -56,13 +56,13 @@ Locations 6
               0               1               0               0 
               0               0               1               0 
 1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
+             -1 1.59187235475981e-16 -6.24469235094676e-16              -7 
+-2.81208087691076e-16 -0.979677352801861 0.200579870393662 -20.2539505390125 
+-5.79848612083657e-16 0.200579870393662 0.979677352801861 -1.85248165308041 
 1
-2.22044604925031e-16 -2.22044604925031e-16               1               0 
-              1 2.22044604925031e-16 -2.22044604925031e-16               0 
--2.22044604925031e-16               1 2.22044604925031e-16               0 
+2.22044604925031e-16 -3.33066907387547e-16               1               0 
+              1 3.33066907387547e-16 -2.22044604925031e-16               0 
+-3.33066907387547e-16               1 3.33066907387547e-16               0 
 1
               1               0               0               0 
               0               1               0               0 
@@ -71,7 +71,7 @@ Locations 6
 2  4 -1 3 -1 0
 Curve2ds 0
 Curves 1
-2 -22.061878445815896 11.819414977690792 0 0 0 1 1 0 -0 -0 1 0 1.05
+2 0 0 0 0 0 1 1 0 0 0 1 0 1.05
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -80,7 +80,7 @@ Triangulations 0
 TShapes 4
 Ve
 1e-07
--7.29001157740032e-15 -21.0118784458159 11.8194149776908
+2.33146835171283e-16 1.05 -3.49720252756924e-16
 0 0
 
 0101101
@@ -98,7 +98,7 @@ Co
 +3 5 *
 Co
 
-0100000
+1100000
 +2 2 *
 
 +1 1 ]]>
@@ -106,13 +106,13 @@ Co
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="2">
 <![CDATA[
-8 PostfixCount 2
+6 PostfixCount 2
 Edge
 Vertex
 
 MapCount 1
 
-ElementMap 1 8 2
+ElementMap 1 6 2
 
 Edge
 
@@ -120,7 +120,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#3d;:X;:Hed9:3,E.0 0
+;#58;:X;:H961:3,E.0 0
 
 Vertex
 
@@ -128,14 +128,14 @@ ChildCount 0
 
 NameCount 2
 0
-;#3c;:X;:Hed9:3,V.0 0
+;#57;:X;:H961:3,V.0 0
 
 EndMap
 ]]>
       </ElementMap2>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="31"/>
+      <Integer value="0"/>
     </Property>
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
