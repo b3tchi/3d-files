@@ -558,13 +558,13 @@
       <String value=""/>
     </Property>
     <Property name="Label" type="App::PropertyString" status="1">
-      <String value="rib-pinky"/>
+      <String value="rib-index"/>
     </Property>
     <Property name="LastModifiedBy" type="App::PropertyString">
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2025-03-22T10:38:01Z"/>
+      <String value="2025-03-22T18:21:29Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -572,11 +572,11 @@
     <Property name="LicenseURL" type="App::PropertyString" status="1">
       <String value="https://en.wikipedia.org/wiki/All_rights_reserved"/>
     </Property>
-    <Property name="Material" type="App::PropertyMap">
+    <Property name="Material" type="App::PropertyMap" status="1">
       <Map count="0">
       </Map>
     </Property>
-    <Property name="Meta" type="App::PropertyMap">
+    <Property name="Meta" type="App::PropertyMap" status="1">
       <Map count="0">
       </Map>
     </Property>
@@ -605,25 +605,33 @@
       <Bool value="true"/>
     </Property>
   </Properties>
-  <Objects Count="16" Dependencies="1">
+  <Objects Count="23" Dependencies="1">
     <ObjectDeps Name="Part" Count="3">
       <Dep Name="Origin"/>
       <Dep Name="Body"/>
       <Dep Name="Binder"/>
     </ObjectDeps>
-    <ObjectDeps Name="Origin" Count="0"/>
-    <ObjectDeps Name="Body" Count="5">
+    <ObjectDeps Name="Origin" Count="6">
+      <Dep Name="X_Axis001"/>
+      <Dep Name="Y_Axis001"/>
+      <Dep Name="Z_Axis001"/>
+      <Dep Name="XY_Plane001"/>
+      <Dep Name="XZ_Plane001"/>
+      <Dep Name="YZ_Plane001"/>
+    </ObjectDeps>
+    <ObjectDeps Name="Body" Count="6">
+      <Dep Name="Origin001"/>
+      <Dep Name="Sketch"/>
       <Dep Name="Pad"/>
       <Dep Name="Boolean"/>
-      <Dep Name="Sketch"/>
-      <Dep Name="Origin001"/>
       <Dep Name="Sketch001"/>
+      <Dep Name="Sketch002"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin001" Count="6">
-      <Dep Name="Y_Axis"/>
-      <Dep Name="XY_Plane"/>
-      <Dep Name="Z_Axis"/>
       <Dep Name="X_Axis"/>
+      <Dep Name="Y_Axis"/>
+      <Dep Name="Z_Axis"/>
+      <Dep Name="XY_Plane"/>
       <Dep Name="XZ_Plane"/>
       <Dep Name="YZ_Plane"/>
     </ObjectDeps>
@@ -640,13 +648,13 @@
       <Dep Name="YZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad" Count="2">
-      <Dep Name="Sketch"/>
       <Dep Name="Body"/>
+      <Dep Name="Sketch"/>
     </ObjectDeps>
     <ObjectDeps Name="Boolean" Count="3">
+      <Dep Name="Body"/>
       <Dep Name="Pad"/>
       <Dep Name="Reference"/>
-      <Dep Name="Body"/>
     </ObjectDeps>
     <ObjectDeps Name="Reference" Count="2">
       <Dep Name="Part"/>
@@ -655,9 +663,19 @@
     <ObjectDeps Name="Sketch001" Count="1">
       <Dep Name="XZ_Plane"/>
     </ObjectDeps>
-    <Object type="App::Part" name="Part" id="4997" revision="116" file="Part.xml" />
+    <ObjectDeps Name="X_Axis001" Count="0"/>
+    <ObjectDeps Name="Y_Axis001" Count="0"/>
+    <ObjectDeps Name="Z_Axis001" Count="0"/>
+    <ObjectDeps Name="XY_Plane001" Count="0"/>
+    <ObjectDeps Name="XZ_Plane001" Count="0"/>
+    <ObjectDeps Name="YZ_Plane001" Count="0"/>
+    <ObjectDeps Name="Sketch002" Count="2">
+      <Dep Name="YZ_Plane"/>
+      <Dep Name="Boolean"/>
+    </ObjectDeps>
+    <Object type="App::Part" name="Part" id="4997" revision="281" file="Part.xml" />
     <Object type="App::Origin" name="Origin" id="4998" revision="0" file="Origin.xml" />
-    <Object type="PartDesign::Body" name="Body" id="4999" revision="44" file="Body.xml" />
+    <Object type="PartDesign::Body" name="Body" id="4999" revision="84" file="Body.xml" />
     <Object type="App::Origin" name="Origin001" id="5000" revision="0" file="Origin001.xml" />
     <Object type="App::Line" name="X_Axis" id="5001" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="5002" revision="2" file="Y_Axis.xml" />
@@ -665,12 +683,19 @@
     <Object type="App::Plane" name="XY_Plane" id="5004" revision="1" file="XY_Plane.xml" />
     <Object type="App::Plane" name="XZ_Plane" id="5005" revision="2" file="XZ_Plane.xml" />
     <Object type="App::Plane" name="YZ_Plane" id="5006" revision="2" file="YZ_Plane.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder" id="5007" revision="7" file="Binder.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch" id="5008" revision="100" file="Sketch.xml" />
-    <Object type="PartDesign::Pad" name="Pad" id="5009" revision="53" file="Pad.xml" />
-    <Object type="PartDesign::Boolean" name="Boolean" id="5012" revision="34" file="Boolean.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Reference" id="5013" revision="37" file="Reference.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch001" id="5014" revision="42" file="Sketch001.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder" id="5007" revision="35" file="Binder.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch" id="5008" revision="146" file="Sketch.xml" />
+    <Object type="PartDesign::Pad" name="Pad" id="5009" revision="65" file="Pad.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean" id="5012" revision="79" file="Boolean.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Reference" id="5013" revision="54" file="Reference.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch001" id="5014" revision="60" file="Sketch001.xml" />
+    <Object type="App::Line" name="X_Axis001" id="5015" revision="1" file="X_Axis001.xml" />
+    <Object type="App::Line" name="Y_Axis001" id="5016" revision="2" file="Y_Axis001.xml" />
+    <Object type="App::Line" name="Z_Axis001" id="5017" revision="2" file="Z_Axis001.xml" />
+    <Object type="App::Plane" name="XY_Plane001" id="5018" revision="1" file="XY_Plane001.xml" />
+    <Object type="App::Plane" name="XZ_Plane001" id="5019" revision="2" file="XZ_Plane001.xml" />
+    <Object type="App::Plane" name="YZ_Plane001" id="5020" revision="2" file="YZ_Plane001.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch002" id="5027" revision="245" file="Sketch002.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>

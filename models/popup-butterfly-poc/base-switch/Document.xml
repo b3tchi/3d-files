@@ -855,7 +855,7 @@
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2025-03-22T13:27:50Z"/>
+      <String value="2025-03-22T16:28:20Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -898,29 +898,29 @@
   </Properties>
   <Objects Count="21" Dependencies="1">
     <ObjectDeps Name="Part" Count="2">
-      <Dep Name="Body"/>
       <Dep Name="Origin001"/>
+      <Dep Name="Body"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin001" Count="0"/>
     <ObjectDeps Name="Body" Count="11">
       <Dep Name="Pad014"/>
-      <Dep Name="Sketch013"/>
-      <Dep Name="Sketch015"/>
-      <Dep Name="Pad"/>
-      <Dep Name="Sketch014"/>
-      <Dep Name="Sketch017"/>
       <Dep Name="Sketch012"/>
-      <Dep Name="Pad012"/>
+      <Dep Name="Sketch017"/>
+      <Dep Name="Sketch015"/>
+      <Dep Name="Sketch013"/>
+      <Dep Name="Sketch014"/>
+      <Dep Name="Chamfer"/>
+      <Dep Name="Pad"/>
       <Dep Name="Origin"/>
       <Dep Name="Pad013"/>
-      <Dep Name="Chamfer"/>
+      <Dep Name="Pad012"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
-      <Dep Name="Y_Axis"/>
-      <Dep Name="X_Axis"/>
       <Dep Name="Z_Axis"/>
-      <Dep Name="YZ_Plane"/>
+      <Dep Name="X_Axis"/>
       <Dep Name="XY_Plane"/>
+      <Dep Name="YZ_Plane"/>
+      <Dep Name="Y_Axis"/>
       <Dep Name="XZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
@@ -934,14 +934,14 @@
       <Dep Name="Body"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad013" Count="3">
-      <Dep Name="Body"/>
       <Dep Name="Sketch012"/>
+      <Dep Name="Body"/>
       <Dep Name="Pad012"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad014" Count="3">
       <Dep Name="Sketch015"/>
-      <Dep Name="Body"/>
       <Dep Name="Pad013"/>
+      <Dep Name="Body"/>
     </ObjectDeps>
     <ObjectDeps Name="Sketch012" Count="2">
       <Dep Name="Sketch013"/>
@@ -971,9 +971,9 @@
       <Dep Name="Pad"/>
       <Dep Name="Body"/>
     </ObjectDeps>
-    <Object type="App::Part" name="Part" id="2341" revision="840" file="Part.xml" />
+    <Object type="App::Part" name="Part" id="2341" revision="843" file="Part.xml" />
     <Object type="App::Origin" name="Origin001" id="2342" revision="0" file="Origin001.xml" />
-    <Object type="PartDesign::Body" name="Body" id="2384" revision="105" file="Body.xml" />
+    <Object type="PartDesign::Body" name="Body" id="2384" revision="108" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="2385" revision="0" file="Origin.xml" />
     <Object type="App::Line" name="X_Axis" id="2386" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="2387" revision="2" file="Y_Axis.xml" />
@@ -982,16 +982,16 @@
     <Object type="App::Plane" name="XZ_Plane" id="2390" revision="2" file="XZ_Plane.xml" />
     <Object type="App::Plane" name="YZ_Plane" id="2391" revision="2" file="YZ_Plane.xml" />
     <Object type="PartDesign::Pad" name="Pad012" id="2392" revision="77" file="Pad012.xml" />
-    <Object type="PartDesign::Pad" name="Pad013" id="2393" revision="130" file="Pad013.xml" />
-    <Object type="PartDesign::Pad" name="Pad014" id="2394" revision="232" file="Pad014.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch012" id="2399" revision="904" file="Sketch012.xml" />
+    <Object type="PartDesign::Pad" name="Pad013" id="2393" revision="135" file="Pad013.xml" />
+    <Object type="PartDesign::Pad" name="Pad014" id="2394" revision="238" file="Pad014.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch012" id="2399" revision="914" file="Sketch012.xml" />
     <Object type="Sketcher::SketchObject" name="Sketch013" id="2400" revision="767" file="Sketch013.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch014" id="2401" revision="608" file="Sketch014.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch015" id="2402" revision="890" file="Sketch015.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch017" id="2404" revision="684" file="Sketch017.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch014" id="2401" revision="609" file="Sketch014.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch015" id="2402" revision="891" file="Sketch015.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch017" id="2404" revision="685" file="Sketch017.xml" />
     <Object type="Spreadsheet::Sheet" name="Spreadsheet001" id="2407" revision="0" file="Spreadsheet001.xml" />
-    <Object type="PartDesign::Pad" name="Pad" id="2410" revision="20" file="Pad.xml" />
-    <Object type="PartDesign::Chamfer" name="Chamfer" id="2412" revision="24" file="Chamfer.xml" />
+    <Object type="PartDesign::Pad" name="Pad" id="2410" revision="25" file="Pad.xml" />
+    <Object type="PartDesign::Chamfer" name="Chamfer" id="2412" revision="29" file="Chamfer.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>
