@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- FreeCAD DocumentObject -->
+<Document SchemaVersion="4" FileVersion="2">
+<Object name="_Element" Extensions="True">
+  <Extensions Count="1">
+    <Extension type="App::LinkBaseExtensionPython" name="LinkBaseExtensionPython">
+    </Extension>
+  </Extensions>
+  <Properties Count="19" TransientCount="1">
+    <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881024"/>
+    <Property name="ColoredElements" type="App::PropertyLinkSubHidden" status="218103808">
+      <LinkSub value="" count="0">
+      </LinkSub>
+    </Property>
+    <Property name="Detach" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
+      <Bool value="false"/>
+    </Property>
+    <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
+      <ExpressionEngine count="0"></ExpressionEngine>
+    </Property>
+    <Property name="FixShape" type="App::PropertyEnumeration">
+      <Integer value="0"/>
+    </Property>
+    <Property name="InvalidShape" type="App::PropertyBool" status="67108864">
+      <Bool value="false"/>
+    </Property>
+    <Property name="Label" type="App::PropertyString" status="134217728">
+      <String value="_Element"/>
+    </Property>
+    <Property name="Label2" type="App::PropertyString" status="128">
+      <String value=""/>
+    </Property>
+    <Property name="LinkTransform" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097418">
+      <Bool value="true"/>
+    </Property>
+    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
+      <XLink file="" stamp="" name="Link" sub="Body.Pad001.Face6" shadow="Body.Pad001.;#291;:M;CUT;:H-13a5:7,F.Face6"/>
+    </Property>
+    <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
+      <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
+    </Property>
+    <Property name="Placement" type="App::PropertyPlacement" status="8388872">
+      <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
+    </Property>
+    <Property name="Proxy" type="App::PropertyPythonObject">
+      <Python  module="freecad.asm3.assembly" class="AsmElement" value="null"/>
+    </Property>
+    <Property name="Shape" type="Part::PropertyPartShape">
+      <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
+<![CDATA[
+
+CASCADE Topology V1, (c) Matra-Datavision
+Locations 12
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  3 -1 0
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+1
+2.22044604925031e-16 -3.33066907387547e-16               1               0 
+              1 3.33066907387547e-16 -2.22044604925031e-16               0 
+-3.33066907387547e-16               1 3.33066907387547e-16               0 
+1
+              1               0               0            -1.2 
+              0               1               0 3.99680288865056e-16 
+              0               0               1 -4.66293670342566e-16 
+1
+              1               0               0            3.65 
+              0               1               0 -1.21569421196455e-15 
+              0               0               1 1.41830991395864e-15 
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  5 1 6 1 7 1 8 1 9 1 0
+2  9 -1 8 -1 7 -1 6 -1 5 -1 0
+2  3 -1 9 -1 8 -1 7 -1 6 -1 5 -1 0
+Curve2ds 5
+8 -1.7222849024957969 1.9345358052592347
+1 1.9345358052592347 -13.261483000766049 -1 3.7988991641413298e-16 
+1 3.6568207077550343 0 0 -1 
+8 -1.5335678452892925 2.1232528624657356
+1 2.1232528624657356 -29.261483000766049 -1 3.7988991641413298e-16 
+1 -5.7811968501758039e-15 -20.443638389091376 -2.6907469292537766e-16 -1 
+1 -3.5599539660895943e-15 -13.26148300076605 -2.6813099997323947e-16 -1 
+Curves 5
+1 0.51907249397767929 13.261483000766049 -0.64189941441120069 0.99813479842187236 -3.5277891872963741e-16 -0.061048539534768326 
+1 -1.1999999999999997 2.3836774174548539e-16 -0.53675643645105731 -0 1 4.4408920985006262e-16 
+1 0.3307074321240997 29.261483000766049 -0.63037851368343678 0.99813479842187236 -3.5277891872963741e-16 -0.061048539534768326 
+1 20.443638389091376 -0.7599999999999999 0 1 0 0 
+1 13.26148300076605 -0.76000000000000001 0 1 1.5458075808688805e-17 0 
+Polygon3D 0
+PolygonOnTriangulations 0
+Surfaces 1
+1 2.4500000000000002 3.3750779948604759e-16 -0.76000000000000001 0.061048539534768326 -4.4326089395502082e-16 0.99813479842187236 -0.99813479842187236 -2.7110997684495575e-17 0.061048539534768326 0 -1 -4.4408920985006262e-16 
+Triangulations 0
+
+TShapes 14
+Ve
+1.5000000222322e-07
+-1.2 13.2614830007661 -0.536756436451051
+0 0
+
+0101101
+*
+Ve
+2.12133034355964e-07
+2.45 13.2614830007661 -0.760000000000004
+0 0
+
+0101101
+*
+Ed
+ 1.5e-07 1 1 0
+1  1 0 -1.7222849024958 1.93453580525923
+2  1 1 0 -1.7222849024958 1.93453580525923
+0
+
+0101000
++14 4 -13 4 *
+Ve
+1.50000003360145e-07
+-1.2 29.261483000766 -0.536756436451044
+0 0
+
+0101101
+*
+Ed
+ 1.00000004884981e-07 1 1 0
+1  2 0 13.2614830007661 29.261483000766
+2  2 1 0 13.2614830007661 29.261483000766
+0
+
+0101000
++14 4 -11 4 *
+Ve
+2.12133034355964e-07
+2.45000000000001 29.261483000766 -0.760000000000009
+0 0
+
+0101101
+*
+Ed
+ 1.5e-07 1 1 0
+1  3 0 -1.53356784528929 2.12325286246574
+2  3 1 0 -1.53356784528929 2.12325286246574
+0
+
+0101000
++11 4 -9 4 *
+Ve
+1.00000022015194e-07
+2.45000000000001 20.4436383890914 -0.760000000000006
+0 0
+
+0101101
+*
+Ed
+ 1.00000022015194e-07 1 1 0
+1  4 0 0 8.81784461167467
+2  4 1 11 0 8.81784461167467
+0
+
+0101000
++7 12 -9 12 *
+Ed
+ 1.00000014994589e-07 1 1 0
+1  5 0 0 7.18215538832533
+2  5 1 11 0 7.18215538832533
+0
+
+0101000
++13 12 -7 12 *
+Wi
+
+0101100
++12 0 -10 0 -8 0 +6 10 +5 10 *
+Fa
+0  1e-07 1 0
+
+0101000
++4 0 *
+Co
+
+0100000
+-3 3 *
+Co
+
+1100000
++2 2 *
+
++1 1 ]]>
+      </Part>
+      <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
+      <ElementMap2 count="11">
+<![CDATA[
+4 PostfixCount 3
+Edge
+Face
+Vertex
+
+MapCount 2
+
+ElementMap 1 5 3
+
+Edge
+
+ChildCount 0
+
+NameCount 6
+0
+;#291;:G2#4d5;CUT;:H-13a5:c,E;:X;:H13a5:3,E.0 0
+;#296;:M;CUT;:H-13a5:7,E;:X;:H13a5:3,E.0 0
+;#291;:G#4d4;CUT;:H-13a5:b,E;:X;:H13a5:3,E.0 0
+;#295;:M2#49c;CUT;:H-13a5:c,E;:X;:H13a5:3,E.0 0
+;#295;:M#49e;CUT;:H-13a5:b,E;:X;:H13a5:3,E.0 0
+
+Face
+
+ChildCount 0
+
+NameCount 2
+0
+;#25;:X;:H13a5:3,F.0 0
+
+Vertex
+
+ChildCount 0
+
+NameCount 6
+0
+;#296;:G2#4a5;CUT;:H-13a5:c,V;:X;:H13a5:3,V.0 0
+;#4a8;:M;CUT;:H1394:7,V;:X;:H13a5:3,V.0 0
+;#296;:G#4a4;CUT;:H-13a5:b,V;:X;:H13a5:3,V.0 0
+;#4a6;:M;CUT;:H1394:7,V;:X;:H13a5:3,V.0 0
+;#4a7;:M;CUT;:H1394:7,V;:X;:H13a5:3,V.0 0
+
+EndMap
+
+ElementMap 2 4 3
+
+Edge
+
+ChildCount 1
+1 0 5 0 1 ;:H,E;:H:5,E 0
+
+NameCount 0
+
+Face
+
+ChildCount 0
+
+NameCount 2
+0
+;#25;:X;:H13a5:3,F.0 0
+
+Vertex
+
+ChildCount 1
+1 0 5 0 1 ;:H,V;:H:5,V 0
+
+NameCount 0
+
+EndMap
+]]>
+      </ElementMap2>
+    </Property>
+    <Property name="TreeRank" type="App::PropertyInteger" status="2184">
+      <Integer value="30"/>
+    </Property>
+    <Property name="ValidateShape" type="App::PropertyBool">
+      <Bool value="false"/>
+    </Property>
+    <Property name="Visibility" type="App::PropertyBool" status="648">
+      <Bool value="false"/>
+    </Property>
+    <Property name="_LinkOwner" type="App::PropertyInteger" status="201326592">
+      <Integer value="0"/>
+    </Property>
+    <Property name="_LinkVersion" type="App::PropertyInteger" status="83886080">
+      <Integer value="1"/>
+    </Property>
+    <Property name="_Parent" type="App::PropertyLinkHidden" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097162">
+      <Link value="Elements"/>
+    </Property>
+  </Properties>
+</Object>
+</Document>
