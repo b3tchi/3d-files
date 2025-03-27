@@ -7,7 +7,7 @@
       <ExpressionEngine count="1" cdata="1">
         <Expressions><![CDATA[
 0:.cells.Bind.B2.ZZ2
-0:tuple(.cells, <<B>> + str(hiddenref(Part001.Variant) + 3), <<ZZ>> + str(hiddenref(Part001.Variant) + 3))
+0:tuple(.cells, <<B>> + str(hiddenref(Part003.Variant) + 3), <<ZZ>> + str(hiddenref(Part003.Variant) + 3))
 0:
 
 ]]>
@@ -27,13 +27,13 @@
       <Integer value="0"/>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="107"/>
+      <Integer value="245"/>
     </Property>
     <Property name="Visibility" type="App::PropertyBool" status="648">
       <Bool value="true"/>
     </Property>
     <Property name="cells" type="Spreadsheet::PropertySheet" status="67108864">
-      <Cells Count="806">
+      <Cells Count="819">
         <Cell style="bold" address="A1"/>
         <Cell style="bold" address="B1" content="distance"/>
         <Cell style="bold" address="C1" content="iterations"/>
@@ -773,7 +773,7 @@
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="C4" content="=L4"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="D4" content="=J4 / K4 - 0.2"/>
         <Cell backgroundColor="#dab860ff" address="E4" content="90"/>
-        <Cell backgroundColor="#dab860ff" address="F4" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="F4" content="0"/>
         <Cell backgroundColor="#dab860ff" address="G4" content="1"/>
         <Cell backgroundColor="#dab860ff" address="H4" content="comme"/>
         <Cell backgroundColor="#dab860ff" address="I4" content="1"/>
@@ -799,12 +799,12 @@
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="C6" content="=L6"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="D6" content="=J6 / K6 - 0.2"/>
         <Cell backgroundColor="#dab860ff" address="E6" content="90"/>
-        <Cell backgroundColor="#dab860ff" address="F6" content="0"/>
+        <Cell backgroundColor="#dab860ff" address="F6" content="90"/>
         <Cell backgroundColor="#dab860ff" address="G6" content="1"/>
         <Cell backgroundColor="#dab860ff" address="H6" content="keeping same 6mm"/>
         <Cell backgroundColor="#dab860ff" address="I6" content="1"/>
         <Cell backgroundColor="#dab860ff" address="J6" content="60"/>
-        <Cell backgroundColor="#dab860ff" address="K6" content="10"/>
+        <Cell backgroundColor="#dab860ff" address="K6" content="8"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L6" content="=I6 == 1 ? K6 / 2 : 0"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M6" content="=I6 == 1 ? K6 - 2 : (I6 == 2 ? K6 - 1 : 0)"/>
         <Cell address="A7" content="main-pivot"/>
@@ -816,8 +816,8 @@
         <Cell backgroundColor="#dab860ff" address="G7" content="1"/>
         <Cell backgroundColor="#dab860ff" address="H7" content="keeping same 6mm"/>
         <Cell backgroundColor="#dab860ff" address="I7" content="1"/>
-        <Cell backgroundColor="#dab860ff" address="J7" content="84"/>
-        <Cell backgroundColor="#dab860ff" address="K7" content="14"/>
+        <Cell backgroundColor="#dab860ff" address="J7" content="75"/>
+        <Cell backgroundColor="#dab860ff" address="K7" content="10"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L7" content="=I7 == 1 ? K7 / 2 : 0"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M7" content="=I7 == 1 ? K7 - 2 : (I7 == 2 ? K7 - 1 : 0)"/>
         <Cell address="A8" content="forhead-platform"/>
@@ -846,6 +846,19 @@
         <Cell backgroundColor="#dab860ff" address="K9" content="2"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L9" content="=I9 == 1 ? K9 / 2 : (I9 == 2 ? (K9 - 1) / 2 + 1 : (K9 - 1) / 2)"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M9" content="=I9 == 1 ? K9 - 2 : (I9 == 2 ? K9 - 1 : 0)"/>
+        <Cell address="A10" content="driver-thumb-inner"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="B10" content="=J10 / K10 * M10 - 0.1"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="C10" content="=L10"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="D10" content="=J10 / K10 - 0.2"/>
+        <Cell backgroundColor="#dab860ff" address="E10" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="F10" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="G10" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="H10" content="keeping same 6mm"/>
+        <Cell backgroundColor="#dab860ff" address="I10" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="J10" content="44"/>
+        <Cell backgroundColor="#dab860ff" address="K10" content="6"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L10" content="=I10 == 1 ? K10 / 2 : (I10 == 2 ? (K10 - 1) / 2 + 1 : (K10 - 1) / 2)"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M10" content="=I10 == 1 ? K10 - 2 : (I10 == 2 ? K10 - 1 : 0)"/>
       </Cells>
     </Property>
     <Property name="columnWidths" type="Spreadsheet::PropertyColumnWidths" status="218103808">
@@ -855,7 +868,7 @@
         <Column name="F" width="100" />
         <Column name="G" width="100" />
         <Column name="H" width="183" />
-        <Column name="I" width="122" />
+        <Column name="I" width="172" />
         <Column name="J" width="100" />
         <Column name="L" width="167" />
         <Column name="M" width="161" />
