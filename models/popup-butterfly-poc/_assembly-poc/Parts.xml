@@ -21,7 +21,7 @@
     <Property name="FixShape" type="App::PropertyEnumeration">
       <Integer value="0"/>
     </Property>
-    <Property name="Group" type="App::PropertyLinkList" group="Base" attr="0" ro="0" hide="0" doc="" status="2097416">
+    <Property name="Group" type="App::PropertyLinkList" group="Base" attr="0" ro="0" hide="0" doc="" status="2097417">
       <LinkList count="13">
         <Link value="Link"/>
         <Link value="Link001"/>
@@ -56,7 +56,7 @@
     <Property name="Proxy" type="App::PropertyPythonObject">
       <Python  module="freecad.asm3.assembly" class="AsmPartGroup" value="null"/>
     </Property>
-    <Property name="Shape" type="Part::PropertyPartShape" status="1">
+    <Property name="Shape" type="Part::PropertyPartShape">
       <Part ElementMap="0.15.70200.4" brep="1">
 <![CDATA[
 
@@ -85,7 +85,7 @@ TShapes 0
       <Bool value="false"/>
     </Property>
     <Property name="VisibilityList" type="App::PropertyBoolList" group="Base" attr="0" ro="0" hide="0" doc="" status="2097418">
-      <BoolList value="1111111111011"/>
+      <BoolList value="1111111110011"/>
     </Property>
     <Property name="_LinkOwner" type="App::PropertyInteger" status="201326592">
       <Integer value="0"/>

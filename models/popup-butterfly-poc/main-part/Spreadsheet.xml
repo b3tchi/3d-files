@@ -1,0 +1,892 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- FreeCAD DocumentObject -->
+<Document SchemaVersion="4" FileVersion="2">
+<Object name="Spreadsheet">
+  <Properties Count="12" TransientCount="0">
+    <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
+      <ExpressionEngine count="1" cdata="1">
+        <Expressions><![CDATA[
+0:.cells.Bind.B2.ZZ2
+0:tuple(.cells, <<B>> + str(hiddenref(Part006.Variant) + 3), <<ZZ>> + str(hiddenref(Part006.Variant) + 3))
+0:
+
+]]>
+        </Expressions>
+      </ExpressionEngine>
+    </Property>
+    <Property name="Label" type="App::PropertyString" status="134217728">
+      <String value="sh"/>
+    </Property>
+    <Property name="Label2" type="App::PropertyString" status="128">
+      <String value=""/>
+    </Property>
+    <Property name="PythonMode" type="App::PropertyBool">
+      <Bool value="false"/>
+    </Property>
+    <Property name="ShowCells" type="App::PropertyEnumeration">
+      <Integer value="0"/>
+    </Property>
+    <Property name="TreeRank" type="App::PropertyInteger" status="2184">
+      <Integer value="444"/>
+    </Property>
+    <Property name="Visibility" type="App::PropertyBool" status="648">
+      <Bool value="true"/>
+    </Property>
+    <Property name="cells" type="Spreadsheet::PropertySheet" status="67108864">
+      <Cells Count="819">
+        <Cell style="bold" address="A1"/>
+        <Cell style="bold" address="B1" content="distance"/>
+        <Cell style="bold" address="C1" content="iterations"/>
+        <Cell style="bold" address="D1" content="extrusion"/>
+        <Cell style="bold" address="E1" content="angleA"/>
+        <Cell style="bold" address="F1" content="angleB"/>
+        <Cell style="bold" address="G1" content="over"/>
+        <Cell style="bold" address="H1" content="comments"/>
+        <Cell style="bold" address="I1" cdata="1"><![CDATA[
+3:variant
+1 - mirrored
+2 - both sides outer
+3 - both sides inner
+]]>
+</Cell>
+        <Cell style="bold" address="J1" content="full lenght"/>
+        <Cell style="bold" address="K1" content="total segments"/>
+        <Cell style="bold" address="L1" content="segmentns on attached side"/>
+        <Cell style="bold" address="M1" content="segments on for length"/>
+        <Cell style="bold|italic" address="A2" content="_selected"/>
+        <Cell style="bold|italic" alias="distance" address="B2" content="=.B6"/>
+        <Cell style="bold|italic" alias="iterations" address="C2" content="=.C6"/>
+        <Cell style="bold|italic" alias="extrusion" address="D2" content="=.D6"/>
+        <Cell style="bold|italic" alias="angleA" address="E2" content="=.E6"/>
+        <Cell style="bold|italic" alias="angleB" address="F2" content="=.F6"/>
+        <Cell style="bold|italic" alias="over" address="G2" content="=.G6"/>
+        <Cell style="bold|italic" address="H2" content="=.H6"/>
+        <Cell style="bold|italic" address="I2" content="=.I6"/>
+        <Cell style="bold|italic" address="J2" content="=.J6"/>
+        <Cell style="bold|italic" address="K2" content="=.K6"/>
+        <Cell style="bold|italic" address="L2" content="=.L6"/>
+        <Cell style="bold|italic" address="M2" content="=.M6"/>
+        <Cell style="bold|italic" address="N2"/>
+        <Cell style="bold|italic" address="O2"/>
+        <Cell style="bold|italic" address="P2"/>
+        <Cell style="bold|italic" address="Q2"/>
+        <Cell style="bold|italic" address="R2"/>
+        <Cell style="bold|italic" address="S2"/>
+        <Cell style="bold|italic" address="T2"/>
+        <Cell style="bold|italic" address="U2"/>
+        <Cell style="bold|italic" address="V2"/>
+        <Cell style="bold|italic" address="W2"/>
+        <Cell style="bold|italic" address="X2"/>
+        <Cell style="bold|italic" address="Y2"/>
+        <Cell style="bold|italic" address="Z2"/>
+        <Cell style="bold|italic" address="AA2"/>
+        <Cell style="bold|italic" address="AB2"/>
+        <Cell style="bold|italic" address="AC2"/>
+        <Cell style="bold|italic" address="AD2"/>
+        <Cell style="bold|italic" address="AE2"/>
+        <Cell style="bold|italic" address="AF2"/>
+        <Cell style="bold|italic" address="AG2"/>
+        <Cell style="bold|italic" address="AH2"/>
+        <Cell style="bold|italic" address="AI2"/>
+        <Cell style="bold|italic" address="AJ2"/>
+        <Cell style="bold|italic" address="AK2"/>
+        <Cell style="bold|italic" address="AL2"/>
+        <Cell style="bold|italic" address="AM2"/>
+        <Cell style="bold|italic" address="AN2"/>
+        <Cell style="bold|italic" address="AO2"/>
+        <Cell style="bold|italic" address="AP2"/>
+        <Cell style="bold|italic" address="AQ2"/>
+        <Cell style="bold|italic" address="AR2"/>
+        <Cell style="bold|italic" address="AS2"/>
+        <Cell style="bold|italic" address="AT2"/>
+        <Cell style="bold|italic" address="AU2"/>
+        <Cell style="bold|italic" address="AV2"/>
+        <Cell style="bold|italic" address="AW2"/>
+        <Cell style="bold|italic" address="AX2"/>
+        <Cell style="bold|italic" address="AY2"/>
+        <Cell style="bold|italic" address="AZ2"/>
+        <Cell style="bold|italic" address="BA2"/>
+        <Cell style="bold|italic" address="BB2"/>
+        <Cell style="bold|italic" address="BC2"/>
+        <Cell style="bold|italic" address="BD2"/>
+        <Cell style="bold|italic" address="BE2"/>
+        <Cell style="bold|italic" address="BF2"/>
+        <Cell style="bold|italic" address="BG2"/>
+        <Cell style="bold|italic" address="BH2"/>
+        <Cell style="bold|italic" address="BI2"/>
+        <Cell style="bold|italic" address="BJ2"/>
+        <Cell style="bold|italic" address="BK2"/>
+        <Cell style="bold|italic" address="BL2"/>
+        <Cell style="bold|italic" address="BM2"/>
+        <Cell style="bold|italic" address="BN2"/>
+        <Cell style="bold|italic" address="BO2"/>
+        <Cell style="bold|italic" address="BP2"/>
+        <Cell style="bold|italic" address="BQ2"/>
+        <Cell style="bold|italic" address="BR2"/>
+        <Cell style="bold|italic" address="BS2"/>
+        <Cell style="bold|italic" address="BT2"/>
+        <Cell style="bold|italic" address="BU2"/>
+        <Cell style="bold|italic" address="BV2"/>
+        <Cell style="bold|italic" address="BW2"/>
+        <Cell style="bold|italic" address="BX2"/>
+        <Cell style="bold|italic" address="BY2"/>
+        <Cell style="bold|italic" address="BZ2"/>
+        <Cell style="bold|italic" address="CA2"/>
+        <Cell style="bold|italic" address="CB2"/>
+        <Cell style="bold|italic" address="CC2"/>
+        <Cell style="bold|italic" address="CD2"/>
+        <Cell style="bold|italic" address="CE2"/>
+        <Cell style="bold|italic" address="CF2"/>
+        <Cell style="bold|italic" address="CG2"/>
+        <Cell style="bold|italic" address="CH2"/>
+        <Cell style="bold|italic" address="CI2"/>
+        <Cell style="bold|italic" address="CJ2"/>
+        <Cell style="bold|italic" address="CK2"/>
+        <Cell style="bold|italic" address="CL2"/>
+        <Cell style="bold|italic" address="CM2"/>
+        <Cell style="bold|italic" address="CN2"/>
+        <Cell style="bold|italic" address="CO2"/>
+        <Cell style="bold|italic" address="CP2"/>
+        <Cell style="bold|italic" address="CQ2"/>
+        <Cell style="bold|italic" address="CR2"/>
+        <Cell style="bold|italic" address="CS2"/>
+        <Cell style="bold|italic" address="CT2"/>
+        <Cell style="bold|italic" address="CU2"/>
+        <Cell style="bold|italic" address="CV2"/>
+        <Cell style="bold|italic" address="CW2"/>
+        <Cell style="bold|italic" address="CX2"/>
+        <Cell style="bold|italic" address="CY2"/>
+        <Cell style="bold|italic" address="CZ2"/>
+        <Cell style="bold|italic" address="DA2"/>
+        <Cell style="bold|italic" address="DB2"/>
+        <Cell style="bold|italic" address="DC2"/>
+        <Cell style="bold|italic" address="DD2"/>
+        <Cell style="bold|italic" address="DE2"/>
+        <Cell style="bold|italic" address="DF2"/>
+        <Cell style="bold|italic" address="DG2"/>
+        <Cell style="bold|italic" address="DH2"/>
+        <Cell style="bold|italic" address="DI2"/>
+        <Cell style="bold|italic" address="DJ2"/>
+        <Cell style="bold|italic" address="DK2"/>
+        <Cell style="bold|italic" address="DL2"/>
+        <Cell style="bold|italic" address="DM2"/>
+        <Cell style="bold|italic" address="DN2"/>
+        <Cell style="bold|italic" address="DO2"/>
+        <Cell style="bold|italic" address="DP2"/>
+        <Cell style="bold|italic" address="DQ2"/>
+        <Cell style="bold|italic" address="DR2"/>
+        <Cell style="bold|italic" address="DS2"/>
+        <Cell style="bold|italic" address="DT2"/>
+        <Cell style="bold|italic" address="DU2"/>
+        <Cell style="bold|italic" address="DV2"/>
+        <Cell style="bold|italic" address="DW2"/>
+        <Cell style="bold|italic" address="DX2"/>
+        <Cell style="bold|italic" address="DY2"/>
+        <Cell style="bold|italic" address="DZ2"/>
+        <Cell style="bold|italic" address="EA2"/>
+        <Cell style="bold|italic" address="EB2"/>
+        <Cell style="bold|italic" address="EC2"/>
+        <Cell style="bold|italic" address="ED2"/>
+        <Cell style="bold|italic" address="EE2"/>
+        <Cell style="bold|italic" address="EF2"/>
+        <Cell style="bold|italic" address="EG2"/>
+        <Cell style="bold|italic" address="EH2"/>
+        <Cell style="bold|italic" address="EI2"/>
+        <Cell style="bold|italic" address="EJ2"/>
+        <Cell style="bold|italic" address="EK2"/>
+        <Cell style="bold|italic" address="EL2"/>
+        <Cell style="bold|italic" address="EM2"/>
+        <Cell style="bold|italic" address="EN2"/>
+        <Cell style="bold|italic" address="EO2"/>
+        <Cell style="bold|italic" address="EP2"/>
+        <Cell style="bold|italic" address="EQ2"/>
+        <Cell style="bold|italic" address="ER2"/>
+        <Cell style="bold|italic" address="ES2"/>
+        <Cell style="bold|italic" address="ET2"/>
+        <Cell style="bold|italic" address="EU2"/>
+        <Cell style="bold|italic" address="EV2"/>
+        <Cell style="bold|italic" address="EW2"/>
+        <Cell style="bold|italic" address="EX2"/>
+        <Cell style="bold|italic" address="EY2"/>
+        <Cell style="bold|italic" address="EZ2"/>
+        <Cell style="bold|italic" address="FA2"/>
+        <Cell style="bold|italic" address="FB2"/>
+        <Cell style="bold|italic" address="FC2"/>
+        <Cell style="bold|italic" address="FD2"/>
+        <Cell style="bold|italic" address="FE2"/>
+        <Cell style="bold|italic" address="FF2"/>
+        <Cell style="bold|italic" address="FG2"/>
+        <Cell style="bold|italic" address="FH2"/>
+        <Cell style="bold|italic" address="FI2"/>
+        <Cell style="bold|italic" address="FJ2"/>
+        <Cell style="bold|italic" address="FK2"/>
+        <Cell style="bold|italic" address="FL2"/>
+        <Cell style="bold|italic" address="FM2"/>
+        <Cell style="bold|italic" address="FN2"/>
+        <Cell style="bold|italic" address="FO2"/>
+        <Cell style="bold|italic" address="FP2"/>
+        <Cell style="bold|italic" address="FQ2"/>
+        <Cell style="bold|italic" address="FR2"/>
+        <Cell style="bold|italic" address="FS2"/>
+        <Cell style="bold|italic" address="FT2"/>
+        <Cell style="bold|italic" address="FU2"/>
+        <Cell style="bold|italic" address="FV2"/>
+        <Cell style="bold|italic" address="FW2"/>
+        <Cell style="bold|italic" address="FX2"/>
+        <Cell style="bold|italic" address="FY2"/>
+        <Cell style="bold|italic" address="FZ2"/>
+        <Cell style="bold|italic" address="GA2"/>
+        <Cell style="bold|italic" address="GB2"/>
+        <Cell style="bold|italic" address="GC2"/>
+        <Cell style="bold|italic" address="GD2"/>
+        <Cell style="bold|italic" address="GE2"/>
+        <Cell style="bold|italic" address="GF2"/>
+        <Cell style="bold|italic" address="GG2"/>
+        <Cell style="bold|italic" address="GH2"/>
+        <Cell style="bold|italic" address="GI2"/>
+        <Cell style="bold|italic" address="GJ2"/>
+        <Cell style="bold|italic" address="GK2"/>
+        <Cell style="bold|italic" address="GL2"/>
+        <Cell style="bold|italic" address="GM2"/>
+        <Cell style="bold|italic" address="GN2"/>
+        <Cell style="bold|italic" address="GO2"/>
+        <Cell style="bold|italic" address="GP2"/>
+        <Cell style="bold|italic" address="GQ2"/>
+        <Cell style="bold|italic" address="GR2"/>
+        <Cell style="bold|italic" address="GS2"/>
+        <Cell style="bold|italic" address="GT2"/>
+        <Cell style="bold|italic" address="GU2"/>
+        <Cell style="bold|italic" address="GV2"/>
+        <Cell style="bold|italic" address="GW2"/>
+        <Cell style="bold|italic" address="GX2"/>
+        <Cell style="bold|italic" address="GY2"/>
+        <Cell style="bold|italic" address="GZ2"/>
+        <Cell style="bold|italic" address="HA2"/>
+        <Cell style="bold|italic" address="HB2"/>
+        <Cell style="bold|italic" address="HC2"/>
+        <Cell style="bold|italic" address="HD2"/>
+        <Cell style="bold|italic" address="HE2"/>
+        <Cell style="bold|italic" address="HF2"/>
+        <Cell style="bold|italic" address="HG2"/>
+        <Cell style="bold|italic" address="HH2"/>
+        <Cell style="bold|italic" address="HI2"/>
+        <Cell style="bold|italic" address="HJ2"/>
+        <Cell style="bold|italic" address="HK2"/>
+        <Cell style="bold|italic" address="HL2"/>
+        <Cell style="bold|italic" address="HM2"/>
+        <Cell style="bold|italic" address="HN2"/>
+        <Cell style="bold|italic" address="HO2"/>
+        <Cell style="bold|italic" address="HP2"/>
+        <Cell style="bold|italic" address="HQ2"/>
+        <Cell style="bold|italic" address="HR2"/>
+        <Cell style="bold|italic" address="HS2"/>
+        <Cell style="bold|italic" address="HT2"/>
+        <Cell style="bold|italic" address="HU2"/>
+        <Cell style="bold|italic" address="HV2"/>
+        <Cell style="bold|italic" address="HW2"/>
+        <Cell style="bold|italic" address="HX2"/>
+        <Cell style="bold|italic" address="HY2"/>
+        <Cell style="bold|italic" address="HZ2"/>
+        <Cell style="bold|italic" address="IA2"/>
+        <Cell style="bold|italic" address="IB2"/>
+        <Cell style="bold|italic" address="IC2"/>
+        <Cell style="bold|italic" address="ID2"/>
+        <Cell style="bold|italic" address="IE2"/>
+        <Cell style="bold|italic" address="IF2"/>
+        <Cell style="bold|italic" address="IG2"/>
+        <Cell style="bold|italic" address="IH2"/>
+        <Cell style="bold|italic" address="II2"/>
+        <Cell style="bold|italic" address="IJ2"/>
+        <Cell style="bold|italic" address="IK2"/>
+        <Cell style="bold|italic" address="IL2"/>
+        <Cell style="bold|italic" address="IM2"/>
+        <Cell style="bold|italic" address="IN2"/>
+        <Cell style="bold|italic" address="IO2"/>
+        <Cell style="bold|italic" address="IP2"/>
+        <Cell style="bold|italic" address="IQ2"/>
+        <Cell style="bold|italic" address="IR2"/>
+        <Cell style="bold|italic" address="IS2"/>
+        <Cell style="bold|italic" address="IT2"/>
+        <Cell style="bold|italic" address="IU2"/>
+        <Cell style="bold|italic" address="IV2"/>
+        <Cell style="bold|italic" address="IW2"/>
+        <Cell style="bold|italic" address="IX2"/>
+        <Cell style="bold|italic" address="IY2"/>
+        <Cell style="bold|italic" address="IZ2"/>
+        <Cell style="bold|italic" address="JA2"/>
+        <Cell style="bold|italic" address="JB2"/>
+        <Cell style="bold|italic" address="JC2"/>
+        <Cell style="bold|italic" address="JD2"/>
+        <Cell style="bold|italic" address="JE2"/>
+        <Cell style="bold|italic" address="JF2"/>
+        <Cell style="bold|italic" address="JG2"/>
+        <Cell style="bold|italic" address="JH2"/>
+        <Cell style="bold|italic" address="JI2"/>
+        <Cell style="bold|italic" address="JJ2"/>
+        <Cell style="bold|italic" address="JK2"/>
+        <Cell style="bold|italic" address="JL2"/>
+        <Cell style="bold|italic" address="JM2"/>
+        <Cell style="bold|italic" address="JN2"/>
+        <Cell style="bold|italic" address="JO2"/>
+        <Cell style="bold|italic" address="JP2"/>
+        <Cell style="bold|italic" address="JQ2"/>
+        <Cell style="bold|italic" address="JR2"/>
+        <Cell style="bold|italic" address="JS2"/>
+        <Cell style="bold|italic" address="JT2"/>
+        <Cell style="bold|italic" address="JU2"/>
+        <Cell style="bold|italic" address="JV2"/>
+        <Cell style="bold|italic" address="JW2"/>
+        <Cell style="bold|italic" address="JX2"/>
+        <Cell style="bold|italic" address="JY2"/>
+        <Cell style="bold|italic" address="JZ2"/>
+        <Cell style="bold|italic" address="KA2"/>
+        <Cell style="bold|italic" address="KB2"/>
+        <Cell style="bold|italic" address="KC2"/>
+        <Cell style="bold|italic" address="KD2"/>
+        <Cell style="bold|italic" address="KE2"/>
+        <Cell style="bold|italic" address="KF2"/>
+        <Cell style="bold|italic" address="KG2"/>
+        <Cell style="bold|italic" address="KH2"/>
+        <Cell style="bold|italic" address="KI2"/>
+        <Cell style="bold|italic" address="KJ2"/>
+        <Cell style="bold|italic" address="KK2"/>
+        <Cell style="bold|italic" address="KL2"/>
+        <Cell style="bold|italic" address="KM2"/>
+        <Cell style="bold|italic" address="KN2"/>
+        <Cell style="bold|italic" address="KO2"/>
+        <Cell style="bold|italic" address="KP2"/>
+        <Cell style="bold|italic" address="KQ2"/>
+        <Cell style="bold|italic" address="KR2"/>
+        <Cell style="bold|italic" address="KS2"/>
+        <Cell style="bold|italic" address="KT2"/>
+        <Cell style="bold|italic" address="KU2"/>
+        <Cell style="bold|italic" address="KV2"/>
+        <Cell style="bold|italic" address="KW2"/>
+        <Cell style="bold|italic" address="KX2"/>
+        <Cell style="bold|italic" address="KY2"/>
+        <Cell style="bold|italic" address="KZ2"/>
+        <Cell style="bold|italic" address="LA2"/>
+        <Cell style="bold|italic" address="LB2"/>
+        <Cell style="bold|italic" address="LC2"/>
+        <Cell style="bold|italic" address="LD2"/>
+        <Cell style="bold|italic" address="LE2"/>
+        <Cell style="bold|italic" address="LF2"/>
+        <Cell style="bold|italic" address="LG2"/>
+        <Cell style="bold|italic" address="LH2"/>
+        <Cell style="bold|italic" address="LI2"/>
+        <Cell style="bold|italic" address="LJ2"/>
+        <Cell style="bold|italic" address="LK2"/>
+        <Cell style="bold|italic" address="LL2"/>
+        <Cell style="bold|italic" address="LM2"/>
+        <Cell style="bold|italic" address="LN2"/>
+        <Cell style="bold|italic" address="LO2"/>
+        <Cell style="bold|italic" address="LP2"/>
+        <Cell style="bold|italic" address="LQ2"/>
+        <Cell style="bold|italic" address="LR2"/>
+        <Cell style="bold|italic" address="LS2"/>
+        <Cell style="bold|italic" address="LT2"/>
+        <Cell style="bold|italic" address="LU2"/>
+        <Cell style="bold|italic" address="LV2"/>
+        <Cell style="bold|italic" address="LW2"/>
+        <Cell style="bold|italic" address="LX2"/>
+        <Cell style="bold|italic" address="LY2"/>
+        <Cell style="bold|italic" address="LZ2"/>
+        <Cell style="bold|italic" address="MA2"/>
+        <Cell style="bold|italic" address="MB2"/>
+        <Cell style="bold|italic" address="MC2"/>
+        <Cell style="bold|italic" address="MD2"/>
+        <Cell style="bold|italic" address="ME2"/>
+        <Cell style="bold|italic" address="MF2"/>
+        <Cell style="bold|italic" address="MG2"/>
+        <Cell style="bold|italic" address="MH2"/>
+        <Cell style="bold|italic" address="MI2"/>
+        <Cell style="bold|italic" address="MJ2"/>
+        <Cell style="bold|italic" address="MK2"/>
+        <Cell style="bold|italic" address="ML2"/>
+        <Cell style="bold|italic" address="MM2"/>
+        <Cell style="bold|italic" address="MN2"/>
+        <Cell style="bold|italic" address="MO2"/>
+        <Cell style="bold|italic" address="MP2"/>
+        <Cell style="bold|italic" address="MQ2"/>
+        <Cell style="bold|italic" address="MR2"/>
+        <Cell style="bold|italic" address="MS2"/>
+        <Cell style="bold|italic" address="MT2"/>
+        <Cell style="bold|italic" address="MU2"/>
+        <Cell style="bold|italic" address="MV2"/>
+        <Cell style="bold|italic" address="MW2"/>
+        <Cell style="bold|italic" address="MX2"/>
+        <Cell style="bold|italic" address="MY2"/>
+        <Cell style="bold|italic" address="MZ2"/>
+        <Cell style="bold|italic" address="NA2"/>
+        <Cell style="bold|italic" address="NB2"/>
+        <Cell style="bold|italic" address="NC2"/>
+        <Cell style="bold|italic" address="ND2"/>
+        <Cell style="bold|italic" address="NE2"/>
+        <Cell style="bold|italic" address="NF2"/>
+        <Cell style="bold|italic" address="NG2"/>
+        <Cell style="bold|italic" address="NH2"/>
+        <Cell style="bold|italic" address="NI2"/>
+        <Cell style="bold|italic" address="NJ2"/>
+        <Cell style="bold|italic" address="NK2"/>
+        <Cell style="bold|italic" address="NL2"/>
+        <Cell style="bold|italic" address="NM2"/>
+        <Cell style="bold|italic" address="NN2"/>
+        <Cell style="bold|italic" address="NO2"/>
+        <Cell style="bold|italic" address="NP2"/>
+        <Cell style="bold|italic" address="NQ2"/>
+        <Cell style="bold|italic" address="NR2"/>
+        <Cell style="bold|italic" address="NS2"/>
+        <Cell style="bold|italic" address="NT2"/>
+        <Cell style="bold|italic" address="NU2"/>
+        <Cell style="bold|italic" address="NV2"/>
+        <Cell style="bold|italic" address="NW2"/>
+        <Cell style="bold|italic" address="NX2"/>
+        <Cell style="bold|italic" address="NY2"/>
+        <Cell style="bold|italic" address="NZ2"/>
+        <Cell style="bold|italic" address="OA2"/>
+        <Cell style="bold|italic" address="OB2"/>
+        <Cell style="bold|italic" address="OC2"/>
+        <Cell style="bold|italic" address="OD2"/>
+        <Cell style="bold|italic" address="OE2"/>
+        <Cell style="bold|italic" address="OF2"/>
+        <Cell style="bold|italic" address="OG2"/>
+        <Cell style="bold|italic" address="OH2"/>
+        <Cell style="bold|italic" address="OI2"/>
+        <Cell style="bold|italic" address="OJ2"/>
+        <Cell style="bold|italic" address="OK2"/>
+        <Cell style="bold|italic" address="OL2"/>
+        <Cell style="bold|italic" address="OM2"/>
+        <Cell style="bold|italic" address="ON2"/>
+        <Cell style="bold|italic" address="OO2"/>
+        <Cell style="bold|italic" address="OP2"/>
+        <Cell style="bold|italic" address="OQ2"/>
+        <Cell style="bold|italic" address="OR2"/>
+        <Cell style="bold|italic" address="OS2"/>
+        <Cell style="bold|italic" address="OT2"/>
+        <Cell style="bold|italic" address="OU2"/>
+        <Cell style="bold|italic" address="OV2"/>
+        <Cell style="bold|italic" address="OW2"/>
+        <Cell style="bold|italic" address="OX2"/>
+        <Cell style="bold|italic" address="OY2"/>
+        <Cell style="bold|italic" address="OZ2"/>
+        <Cell style="bold|italic" address="PA2"/>
+        <Cell style="bold|italic" address="PB2"/>
+        <Cell style="bold|italic" address="PC2"/>
+        <Cell style="bold|italic" address="PD2"/>
+        <Cell style="bold|italic" address="PE2"/>
+        <Cell style="bold|italic" address="PF2"/>
+        <Cell style="bold|italic" address="PG2"/>
+        <Cell style="bold|italic" address="PH2"/>
+        <Cell style="bold|italic" address="PI2"/>
+        <Cell style="bold|italic" address="PJ2"/>
+        <Cell style="bold|italic" address="PK2"/>
+        <Cell style="bold|italic" address="PL2"/>
+        <Cell style="bold|italic" address="PM2"/>
+        <Cell style="bold|italic" address="PN2"/>
+        <Cell style="bold|italic" address="PO2"/>
+        <Cell style="bold|italic" address="PP2"/>
+        <Cell style="bold|italic" address="PQ2"/>
+        <Cell style="bold|italic" address="PR2"/>
+        <Cell style="bold|italic" address="PS2"/>
+        <Cell style="bold|italic" address="PT2"/>
+        <Cell style="bold|italic" address="PU2"/>
+        <Cell style="bold|italic" address="PV2"/>
+        <Cell style="bold|italic" address="PW2"/>
+        <Cell style="bold|italic" address="PX2"/>
+        <Cell style="bold|italic" address="PY2"/>
+        <Cell style="bold|italic" address="PZ2"/>
+        <Cell style="bold|italic" address="QA2"/>
+        <Cell style="bold|italic" address="QB2"/>
+        <Cell style="bold|italic" address="QC2"/>
+        <Cell style="bold|italic" address="QD2"/>
+        <Cell style="bold|italic" address="QE2"/>
+        <Cell style="bold|italic" address="QF2"/>
+        <Cell style="bold|italic" address="QG2"/>
+        <Cell style="bold|italic" address="QH2"/>
+        <Cell style="bold|italic" address="QI2"/>
+        <Cell style="bold|italic" address="QJ2"/>
+        <Cell style="bold|italic" address="QK2"/>
+        <Cell style="bold|italic" address="QL2"/>
+        <Cell style="bold|italic" address="QM2"/>
+        <Cell style="bold|italic" address="QN2"/>
+        <Cell style="bold|italic" address="QO2"/>
+        <Cell style="bold|italic" address="QP2"/>
+        <Cell style="bold|italic" address="QQ2"/>
+        <Cell style="bold|italic" address="QR2"/>
+        <Cell style="bold|italic" address="QS2"/>
+        <Cell style="bold|italic" address="QT2"/>
+        <Cell style="bold|italic" address="QU2"/>
+        <Cell style="bold|italic" address="QV2"/>
+        <Cell style="bold|italic" address="QW2"/>
+        <Cell style="bold|italic" address="QX2"/>
+        <Cell style="bold|italic" address="QY2"/>
+        <Cell style="bold|italic" address="QZ2"/>
+        <Cell style="bold|italic" address="RA2"/>
+        <Cell style="bold|italic" address="RB2"/>
+        <Cell style="bold|italic" address="RC2"/>
+        <Cell style="bold|italic" address="RD2"/>
+        <Cell style="bold|italic" address="RE2"/>
+        <Cell style="bold|italic" address="RF2"/>
+        <Cell style="bold|italic" address="RG2"/>
+        <Cell style="bold|italic" address="RH2"/>
+        <Cell style="bold|italic" address="RI2"/>
+        <Cell style="bold|italic" address="RJ2"/>
+        <Cell style="bold|italic" address="RK2"/>
+        <Cell style="bold|italic" address="RL2"/>
+        <Cell style="bold|italic" address="RM2"/>
+        <Cell style="bold|italic" address="RN2"/>
+        <Cell style="bold|italic" address="RO2"/>
+        <Cell style="bold|italic" address="RP2"/>
+        <Cell style="bold|italic" address="RQ2"/>
+        <Cell style="bold|italic" address="RR2"/>
+        <Cell style="bold|italic" address="RS2"/>
+        <Cell style="bold|italic" address="RT2"/>
+        <Cell style="bold|italic" address="RU2"/>
+        <Cell style="bold|italic" address="RV2"/>
+        <Cell style="bold|italic" address="RW2"/>
+        <Cell style="bold|italic" address="RX2"/>
+        <Cell style="bold|italic" address="RY2"/>
+        <Cell style="bold|italic" address="RZ2"/>
+        <Cell style="bold|italic" address="SA2"/>
+        <Cell style="bold|italic" address="SB2"/>
+        <Cell style="bold|italic" address="SC2"/>
+        <Cell style="bold|italic" address="SD2"/>
+        <Cell style="bold|italic" address="SE2"/>
+        <Cell style="bold|italic" address="SF2"/>
+        <Cell style="bold|italic" address="SG2"/>
+        <Cell style="bold|italic" address="SH2"/>
+        <Cell style="bold|italic" address="SI2"/>
+        <Cell style="bold|italic" address="SJ2"/>
+        <Cell style="bold|italic" address="SK2"/>
+        <Cell style="bold|italic" address="SL2"/>
+        <Cell style="bold|italic" address="SM2"/>
+        <Cell style="bold|italic" address="SN2"/>
+        <Cell style="bold|italic" address="SO2"/>
+        <Cell style="bold|italic" address="SP2"/>
+        <Cell style="bold|italic" address="SQ2"/>
+        <Cell style="bold|italic" address="SR2"/>
+        <Cell style="bold|italic" address="SS2"/>
+        <Cell style="bold|italic" address="ST2"/>
+        <Cell style="bold|italic" address="SU2"/>
+        <Cell style="bold|italic" address="SV2"/>
+        <Cell style="bold|italic" address="SW2"/>
+        <Cell style="bold|italic" address="SX2"/>
+        <Cell style="bold|italic" address="SY2"/>
+        <Cell style="bold|italic" address="SZ2"/>
+        <Cell style="bold|italic" address="TA2"/>
+        <Cell style="bold|italic" address="TB2"/>
+        <Cell style="bold|italic" address="TC2"/>
+        <Cell style="bold|italic" address="TD2"/>
+        <Cell style="bold|italic" address="TE2"/>
+        <Cell style="bold|italic" address="TF2"/>
+        <Cell style="bold|italic" address="TG2"/>
+        <Cell style="bold|italic" address="TH2"/>
+        <Cell style="bold|italic" address="TI2"/>
+        <Cell style="bold|italic" address="TJ2"/>
+        <Cell style="bold|italic" address="TK2"/>
+        <Cell style="bold|italic" address="TL2"/>
+        <Cell style="bold|italic" address="TM2"/>
+        <Cell style="bold|italic" address="TN2"/>
+        <Cell style="bold|italic" address="TO2"/>
+        <Cell style="bold|italic" address="TP2"/>
+        <Cell style="bold|italic" address="TQ2"/>
+        <Cell style="bold|italic" address="TR2"/>
+        <Cell style="bold|italic" address="TS2"/>
+        <Cell style="bold|italic" address="TT2"/>
+        <Cell style="bold|italic" address="TU2"/>
+        <Cell style="bold|italic" address="TV2"/>
+        <Cell style="bold|italic" address="TW2"/>
+        <Cell style="bold|italic" address="TX2"/>
+        <Cell style="bold|italic" address="TY2"/>
+        <Cell style="bold|italic" address="TZ2"/>
+        <Cell style="bold|italic" address="UA2"/>
+        <Cell style="bold|italic" address="UB2"/>
+        <Cell style="bold|italic" address="UC2"/>
+        <Cell style="bold|italic" address="UD2"/>
+        <Cell style="bold|italic" address="UE2"/>
+        <Cell style="bold|italic" address="UF2"/>
+        <Cell style="bold|italic" address="UG2"/>
+        <Cell style="bold|italic" address="UH2"/>
+        <Cell style="bold|italic" address="UI2"/>
+        <Cell style="bold|italic" address="UJ2"/>
+        <Cell style="bold|italic" address="UK2"/>
+        <Cell style="bold|italic" address="UL2"/>
+        <Cell style="bold|italic" address="UM2"/>
+        <Cell style="bold|italic" address="UN2"/>
+        <Cell style="bold|italic" address="UO2"/>
+        <Cell style="bold|italic" address="UP2"/>
+        <Cell style="bold|italic" address="UQ2"/>
+        <Cell style="bold|italic" address="UR2"/>
+        <Cell style="bold|italic" address="US2"/>
+        <Cell style="bold|italic" address="UT2"/>
+        <Cell style="bold|italic" address="UU2"/>
+        <Cell style="bold|italic" address="UV2"/>
+        <Cell style="bold|italic" address="UW2"/>
+        <Cell style="bold|italic" address="UX2"/>
+        <Cell style="bold|italic" address="UY2"/>
+        <Cell style="bold|italic" address="UZ2"/>
+        <Cell style="bold|italic" address="VA2"/>
+        <Cell style="bold|italic" address="VB2"/>
+        <Cell style="bold|italic" address="VC2"/>
+        <Cell style="bold|italic" address="VD2"/>
+        <Cell style="bold|italic" address="VE2"/>
+        <Cell style="bold|italic" address="VF2"/>
+        <Cell style="bold|italic" address="VG2"/>
+        <Cell style="bold|italic" address="VH2"/>
+        <Cell style="bold|italic" address="VI2"/>
+        <Cell style="bold|italic" address="VJ2"/>
+        <Cell style="bold|italic" address="VK2"/>
+        <Cell style="bold|italic" address="VL2"/>
+        <Cell style="bold|italic" address="VM2"/>
+        <Cell style="bold|italic" address="VN2"/>
+        <Cell style="bold|italic" address="VO2"/>
+        <Cell style="bold|italic" address="VP2"/>
+        <Cell style="bold|italic" address="VQ2"/>
+        <Cell style="bold|italic" address="VR2"/>
+        <Cell style="bold|italic" address="VS2"/>
+        <Cell style="bold|italic" address="VT2"/>
+        <Cell style="bold|italic" address="VU2"/>
+        <Cell style="bold|italic" address="VV2"/>
+        <Cell style="bold|italic" address="VW2"/>
+        <Cell style="bold|italic" address="VX2"/>
+        <Cell style="bold|italic" address="VY2"/>
+        <Cell style="bold|italic" address="VZ2"/>
+        <Cell style="bold|italic" address="WA2"/>
+        <Cell style="bold|italic" address="WB2"/>
+        <Cell style="bold|italic" address="WC2"/>
+        <Cell style="bold|italic" address="WD2"/>
+        <Cell style="bold|italic" address="WE2"/>
+        <Cell style="bold|italic" address="WF2"/>
+        <Cell style="bold|italic" address="WG2"/>
+        <Cell style="bold|italic" address="WH2"/>
+        <Cell style="bold|italic" address="WI2"/>
+        <Cell style="bold|italic" address="WJ2"/>
+        <Cell style="bold|italic" address="WK2"/>
+        <Cell style="bold|italic" address="WL2"/>
+        <Cell style="bold|italic" address="WM2"/>
+        <Cell style="bold|italic" address="WN2"/>
+        <Cell style="bold|italic" address="WO2"/>
+        <Cell style="bold|italic" address="WP2"/>
+        <Cell style="bold|italic" address="WQ2"/>
+        <Cell style="bold|italic" address="WR2"/>
+        <Cell style="bold|italic" address="WS2"/>
+        <Cell style="bold|italic" address="WT2"/>
+        <Cell style="bold|italic" address="WU2"/>
+        <Cell style="bold|italic" address="WV2"/>
+        <Cell style="bold|italic" address="WW2"/>
+        <Cell style="bold|italic" address="WX2"/>
+        <Cell style="bold|italic" address="WY2"/>
+        <Cell style="bold|italic" address="WZ2"/>
+        <Cell style="bold|italic" address="XA2"/>
+        <Cell style="bold|italic" address="XB2"/>
+        <Cell style="bold|italic" address="XC2"/>
+        <Cell style="bold|italic" address="XD2"/>
+        <Cell style="bold|italic" address="XE2"/>
+        <Cell style="bold|italic" address="XF2"/>
+        <Cell style="bold|italic" address="XG2"/>
+        <Cell style="bold|italic" address="XH2"/>
+        <Cell style="bold|italic" address="XI2"/>
+        <Cell style="bold|italic" address="XJ2"/>
+        <Cell style="bold|italic" address="XK2"/>
+        <Cell style="bold|italic" address="XL2"/>
+        <Cell style="bold|italic" address="XM2"/>
+        <Cell style="bold|italic" address="XN2"/>
+        <Cell style="bold|italic" address="XO2"/>
+        <Cell style="bold|italic" address="XP2"/>
+        <Cell style="bold|italic" address="XQ2"/>
+        <Cell style="bold|italic" address="XR2"/>
+        <Cell style="bold|italic" address="XS2"/>
+        <Cell style="bold|italic" address="XT2"/>
+        <Cell style="bold|italic" address="XU2"/>
+        <Cell style="bold|italic" address="XV2"/>
+        <Cell style="bold|italic" address="XW2"/>
+        <Cell style="bold|italic" address="XX2"/>
+        <Cell style="bold|italic" address="XY2"/>
+        <Cell style="bold|italic" address="XZ2"/>
+        <Cell style="bold|italic" address="YA2"/>
+        <Cell style="bold|italic" address="YB2"/>
+        <Cell style="bold|italic" address="YC2"/>
+        <Cell style="bold|italic" address="YD2"/>
+        <Cell style="bold|italic" address="YE2"/>
+        <Cell style="bold|italic" address="YF2"/>
+        <Cell style="bold|italic" address="YG2"/>
+        <Cell style="bold|italic" address="YH2"/>
+        <Cell style="bold|italic" address="YI2"/>
+        <Cell style="bold|italic" address="YJ2"/>
+        <Cell style="bold|italic" address="YK2"/>
+        <Cell style="bold|italic" address="YL2"/>
+        <Cell style="bold|italic" address="YM2"/>
+        <Cell style="bold|italic" address="YN2"/>
+        <Cell style="bold|italic" address="YO2"/>
+        <Cell style="bold|italic" address="YP2"/>
+        <Cell style="bold|italic" address="YQ2"/>
+        <Cell style="bold|italic" address="YR2"/>
+        <Cell style="bold|italic" address="YS2"/>
+        <Cell style="bold|italic" address="YT2"/>
+        <Cell style="bold|italic" address="YU2"/>
+        <Cell style="bold|italic" address="YV2"/>
+        <Cell style="bold|italic" address="YW2"/>
+        <Cell style="bold|italic" address="YX2"/>
+        <Cell style="bold|italic" address="YY2"/>
+        <Cell style="bold|italic" address="YZ2"/>
+        <Cell style="bold|italic" address="ZA2"/>
+        <Cell style="bold|italic" address="ZB2"/>
+        <Cell style="bold|italic" address="ZC2"/>
+        <Cell style="bold|italic" address="ZD2"/>
+        <Cell style="bold|italic" address="ZE2"/>
+        <Cell style="bold|italic" address="ZF2"/>
+        <Cell style="bold|italic" address="ZG2"/>
+        <Cell style="bold|italic" address="ZH2"/>
+        <Cell style="bold|italic" address="ZI2"/>
+        <Cell style="bold|italic" address="ZJ2"/>
+        <Cell style="bold|italic" address="ZK2"/>
+        <Cell style="bold|italic" address="ZL2"/>
+        <Cell style="bold|italic" address="ZM2"/>
+        <Cell style="bold|italic" address="ZN2"/>
+        <Cell style="bold|italic" address="ZO2"/>
+        <Cell style="bold|italic" address="ZP2"/>
+        <Cell style="bold|italic" address="ZQ2"/>
+        <Cell style="bold|italic" address="ZR2"/>
+        <Cell style="bold|italic" address="ZS2"/>
+        <Cell style="bold|italic" address="ZT2"/>
+        <Cell style="bold|italic" address="ZU2"/>
+        <Cell style="bold|italic" address="ZV2"/>
+        <Cell style="bold|italic" address="ZW2"/>
+        <Cell style="bold|italic" address="ZX2"/>
+        <Cell style="bold|italic" address="ZY2"/>
+        <Cell style="bold|italic" address="ZZ2"/>
+        <Cell address="A3" content="basic"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="B3" content="=J3 / K3 * M3 - 0.1"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="C3" content="5"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="D3" content="=J3 / K3 - 0.2"/>
+        <Cell backgroundColor="#dab860ff" address="E3" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="F3" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="G3" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="H3" content="comm"/>
+        <Cell backgroundColor="#dab860ff" address="I3" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="J3" content="60"/>
+        <Cell backgroundColor="#dab860ff" address="K3" content="10"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L3" content="=I3 == 1 ? K3 / 2 : 0"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M3" content="=I3 == 1 ? K3 - 2 : (I3 == 2 ? K3 - 1 : 0)"/>
+        <Cell address="A4" content="original_test"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="B4" content="=J4 / K4 * M4 - 0.1"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="C4" content="=L4"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="D4" content="=J4 / K4 - 0.2"/>
+        <Cell backgroundColor="#dab860ff" address="E4" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="F4" content="0"/>
+        <Cell backgroundColor="#dab860ff" address="G4" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="H4" content="comme"/>
+        <Cell backgroundColor="#dab860ff" address="I4" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="J4" content="100"/>
+        <Cell backgroundColor="#dab860ff" address="K4" content="10"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L4" content="=I4 == 1 ? K4 / 2 : 0"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M4" content="=I4 == 1 ? K4 - 2 : (I4 == 2 ? K4 - 1 : 0)"/>
+        <Cell address="A5" content="short"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="B5" content="=J5 / K5 * M5 - 0.1"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="C5" content="=L5"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="D5" content="=J5 / K5 - 0.2"/>
+        <Cell backgroundColor="#dab860ff" address="E5" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="F5" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="G5" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="H5" content="shorter version"/>
+        <Cell backgroundColor="#dab860ff" address="I5" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="J5" content="48"/>
+        <Cell backgroundColor="#dab860ff" address="K5" content="8"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L5" content="=I5 == 1 ? K5 / 2 : 0"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M5" content="=I5 == 1 ? K5 - 2 : (I5 == 2 ? K5 - 1 : 0)"/>
+        <Cell address="A6" content="main-thumb"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="B6" content="=J6 / K6 * M6 - 0.1"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="C6" content="=L6"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="D6" content="=J6 / K6 - 0.2"/>
+        <Cell backgroundColor="#dab860ff" address="E6" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="F6" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="G6" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="H6" content="keeping same 6mm"/>
+        <Cell backgroundColor="#dab860ff" address="I6" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="J6" content="60"/>
+        <Cell backgroundColor="#dab860ff" address="K6" content="8"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L6" content="=I6 == 1 ? K6 / 2 : 0"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M6" content="=I6 == 1 ? K6 - 2 : (I6 == 2 ? K6 - 1 : 0)"/>
+        <Cell address="A7" content="main-pivot"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="B7" content="=J7 / K7 * M7 - 0.1"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="C7" content="=L7"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="D7" content="=J7 / K7 - 0.2"/>
+        <Cell backgroundColor="#dab860ff" address="E7" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="F7" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="G7" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="H7" content="keeping same 6mm"/>
+        <Cell backgroundColor="#dab860ff" address="I7" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="J7" content="75"/>
+        <Cell backgroundColor="#dab860ff" address="K7" content="10"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L7" content="=I7 == 1 ? K7 / 2 : 0"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M7" content="=I7 == 1 ? K7 - 2 : (I7 == 2 ? K7 - 1 : 0)"/>
+        <Cell address="A8" content="forhead-platform"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="B8" content="=J8 / K8 * M8 - 0.1"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="C8" content="=L8"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="D8" content="=J8 / K8 - 0.2"/>
+        <Cell backgroundColor="#dab860ff" address="E8" content="0"/>
+        <Cell backgroundColor="#dab860ff" address="F8" content="0"/>
+        <Cell backgroundColor="#dab860ff" address="G8" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="H8" content="toplevel"/>
+        <Cell backgroundColor="#dab860ff" address="I8" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="J8" content="120.8"/>
+        <Cell backgroundColor="#dab860ff" address="K8" content="12"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L8" content="=I8 == 1 ? K8 / 2 : 0"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M8" content="=I8 == 1 ? K8 - 2 : (I8 == 2 ? K8 - 1 : 0)"/>
+        <Cell address="A9" content="side-pivot"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="B9" content="=J9 / K9 * M9 - 0.1"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="C9" content="=L9"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="D9" content="=J9 / K9 - 0.2"/>
+        <Cell backgroundColor="#dab860ff" address="E9" content="0"/>
+        <Cell backgroundColor="#dab860ff" address="F9" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="G9" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="H9" content="keeping same 6mm"/>
+        <Cell backgroundColor="#dab860ff" address="I9" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="J9" content="20"/>
+        <Cell backgroundColor="#dab860ff" address="K9" content="2"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L9" content="=I9 == 1 ? K9 / 2 : (I9 == 2 ? (K9 - 1) / 2 + 1 : (K9 - 1) / 2)"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M9" content="=I9 == 1 ? K9 - 2 : (I9 == 2 ? K9 - 1 : 0)"/>
+        <Cell address="A10" content="driver-thumb-inner"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="B10" content="=J10 / K10 * M10 - 0.1"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="C10" content="=L10"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="D10" content="=J10 / K10 - 0.2"/>
+        <Cell backgroundColor="#dab860ff" address="E10" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="F10" content="90"/>
+        <Cell backgroundColor="#dab860ff" address="G10" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="H10" content="keeping same 6mm"/>
+        <Cell backgroundColor="#dab860ff" address="I10" content="1"/>
+        <Cell backgroundColor="#dab860ff" address="J10" content="44"/>
+        <Cell backgroundColor="#dab860ff" address="K10" content="6"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L10" content="=I10 == 1 ? K10 / 2 : (I10 == 2 ? (K10 - 1) / 2 + 1 : (K10 - 1) / 2)"/>
+        <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M10" content="=I10 == 1 ? K10 - 2 : (I10 == 2 ? K10 - 1 : 0)"/>
+      </Cells>
+    </Property>
+    <Property name="columnWidths" type="Spreadsheet::PropertyColumnWidths" status="218103808">
+      <ColumnInfo Count="9">
+        <Column name="A" width="173" />
+        <Column name="D" width="193" />
+        <Column name="F" width="100" />
+        <Column name="G" width="100" />
+        <Column name="H" width="183" />
+        <Column name="I" width="172" />
+        <Column name="J" width="100" />
+        <Column name="L" width="167" />
+        <Column name="M" width="161" />
+      </ColumnInfo>
+    </Property>
+    <Property name="hiddenColumns" type="App::PropertyIntegerSet" status="201326592">
+      <IntegerSet count="0">
+      </IntegerSet>
+    </Property>
+    <Property name="hiddenRows" type="App::PropertyIntegerSet" status="201326592">
+      <IntegerSet count="0">
+      </IntegerSet>
+    </Property>
+    <Property name="rowHeights" type="Spreadsheet::PropertyRowHeights" status="218103808">
+      <RowInfo Count="1">
+        <Row name="1"  height="97" />
+      </RowInfo>
+    </Property>
+  </Properties>
+</Object>
+</Document>

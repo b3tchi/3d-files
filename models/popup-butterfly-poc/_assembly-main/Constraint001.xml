@@ -8,7 +8,7 @@
   </Extensions>
   <Properties Count="24" TransientCount="0">
     <Property name="Angle" type="App::PropertyFloat" group="Constraint" attr="0" ro="0" hide="0" docID="8" status="2097152">
-      <Float value="0"/>
+      <Float value="-3.5"/>
     </Property>
     <Property name="AnglePitch" type="App::PropertyAngle" group="Constraint" attr="0" ro="0" hide="0" docID="9" status="2097152">
       <Float value="0"/>
@@ -24,8 +24,12 @@
       <Bool value="false"/>
     </Property>
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-      <ExpressionEngine count="1" cdata="1">
+      <ExpressionEngine count="2" cdata="1">
         <Expressions><![CDATA[
+0:Angle
+0:-3.5
+0:
+
 0:Offset
 0:<<sh>>.offset_pinkie
 0:
@@ -42,7 +46,7 @@
     </Property>
     <Property name="GroupMode" type="App::PropertyEnumeration" group="Base" attr="0" ro="0" hide="0" doc="" status="2097434"></Property>
     <Property name="Label" type="App::PropertyString" status="134217728">
-      <String value="PlaneCoincident"/>
+      <String value="pinkie"/>
     </Property>
     <Property name="Label2" type="App::PropertyString" status="128">
       <String value=""/>
@@ -54,7 +58,7 @@
       <Bool value="false"/>
     </Property>
     <Property name="Offset" type="App::PropertyDistance" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097152">
-      <Float value="53.71"/>
+      <Float value="60.71"/>
     </Property>
     <Property name="OffsetX" type="App::PropertyDistance" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Float value="0"/>
@@ -81,7 +85,7 @@
       <Integer value="0"/>
     </Property>
     <Property name="_LinkVersion" type="App::PropertyInteger" status="83886080">
-      <Integer value="0"/>
+      <Integer value="1"/>
     </Property>
     <Property name="_Parent" type="App::PropertyLinkHidden" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097162">
       <Link value="Constraints"/>

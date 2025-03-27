@@ -33,8 +33,8 @@
     <Property name="LinkTransform" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097418">
       <Bool value="true"/>
     </Property>
-    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Link003" sub="Body.Pad004.Edge304" shadow="Body.Pad004.;#2022;:He3,E.Edge304"/>
+    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097413">
+      <XLink file="" stamp="" name="Link003" sub="Body.Boolean003.?Edge254" shadow="Body.Boolean003.;#1c98;:H170,E.Edge254"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -45,7 +45,7 @@
     <Property name="Proxy" type="App::PropertyPythonObject">
       <Python  module="freecad.asm3.assembly" class="AsmElement" value="null"/>
     </Property>
-    <Property name="Shape" type="Part::PropertyPartShape">
+    <Property name="Shape" type="Part::PropertyPartShape" status="1">
       <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
 <![CDATA[
 
@@ -56,9 +56,9 @@ Locations 22
               0               1               0               0 
               0               0               1               0 
 1
--0.0051175582809766 6.7498617127844e-16 -0.999986905212884            11.3 
-1.82478068644746e-06 0.999999999998335 -9.33854312414338e-09 -1.916054867e-06 
-0.999986905211219 -1.82480458187153e-06 -0.00511755828096808 120.949989051174 
+0.00511755804375402 -4.0702569397249e-16 -0.999986905214098            11.3 
+1.82478068797118e-06 0.999999999998335 9.33854296700899e-09 -1.91605492790554e-06 
+0.999986905212433 -1.82480458339443e-06 0.0051175580437455 120.949989051174 
 1
               1               0               0               0 
               0               1               0               0 
@@ -162,7 +162,7 @@ Co
 +3 21 *
 Co
 
-0100000
+1100000
 +2 2 *
 
 +1 1 ]]>
@@ -170,13 +170,15 @@ Co
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="2">
 <![CDATA[
-41 PostfixCount 2
+43 PostfixCount 4
 Edge
 Vertex
+;:H7dc,V
+;:H7dc,E
 
 MapCount 1
 
-ElementMap 1 41 2
+ElementMap 1 43 2
 
 Edge
 
@@ -184,7 +186,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#4e;:X;:Hef:3,E.0 0
+;#be;:X;:He0:3,E.4 0
 
 Vertex
 
@@ -192,7 +194,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#4c;:X;:Hef:3,V.0 0
+;#bc;:X;:He0:3,V.3 0
 
 EndMap
 ]]>

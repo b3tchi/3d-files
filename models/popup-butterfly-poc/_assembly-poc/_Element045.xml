@@ -7,7 +7,7 @@
     </Extension>
   </Extensions>
   <Properties Count="19" TransientCount="1">
-    <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881024"/>
+    <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881025"/>
     <Property name="ColoredElements" type="App::PropertyLinkSubHidden" status="218103808">
       <LinkSub value="" count="0">
       </LinkSub>
@@ -33,8 +33,8 @@
     <Property name="LinkTransform" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097418">
       <Bool value="true"/>
     </Property>
-    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Binder" sub="Edge304" shadow=";#2022;:He3,E;:Hef,E;:H93:7,E;:H91:10,E;:H364:1a,E;:H360:25,E;:X;BND:0:0;:H387:3b,E;:H-7d9:46,E.Edge304"/>
+    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097413">
+      <XLink file="" stamp="" name="Binder" sub="?Edge254" shadow=";#1c98;:H170,E;:He0,E;:H93:7,E;:H91:10,E;:H364:1a,E;:H360:25,E;:X;BND:0:0;:H387:3b,E;:H-7d9:46,E.Edge254"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -45,20 +45,20 @@
     <Property name="Proxy" type="App::PropertyPythonObject">
       <Python  module="freecad.asm3.assembly" class="AsmElement" value="null"/>
     </Property>
-    <Property name="Shape" type="Part::PropertyPartShape">
-      <Part ElementMap="0.15.70200.4" brep="1">
+    <Property name="Shape" type="Part::PropertyPartShape" status="1">
+      <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 27
+Locations 26
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
 1
--0.00511755797366464 -1.81230684403147e-14 -0.999986905214457 11.3000000000002 
-1.82478069144551e-06 0.999999999998335 -9.33856138722334e-09 -1.91605483393704e-06 
-0.999986905212791 -1.82480458696298e-06 -0.00511755797365612 120.949989051175 
+0.00511755804375402 -9.3529801443925e-16 -0.999986905214098 11.3000000000001 
+1.8247806881113e-06 0.999999999998335 9.33854243944683e-09 -1.9160549300179e-06 
+0.999986905212433 -1.82480458353184e-06 0.0051175580437455 120.949989051174 
 1
               1               0               0               0 
               0               1               0               0 
@@ -144,18 +144,14 @@ Locations 27
               0               1               0               0 
               0               0               1               0 
 1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-2  3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1 0
-2  25 -1 24 -1 23 -1 22 -1 21 -1 20 -1 19 -1 18 -1 17 -1 16 -1 15 -1 14 -1 13 -1 12 -1 11 -1 10 -1 9 -1 8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
+              1 -1.65436122510606e-24 8.67361737988404e-19               0 
+1.65436122510606e-24               1 -1.56065717134028e-23 4.65868120989865e-20 
+-8.67361737988404e-19 1.56065717134028e-23               1 1.4210854715202e-14 
+2  3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 0
+2  24 -1 23 -1 22 -1 21 -1 20 -1 19 -1 18 -1 17 -1 16 -1 15 -1 14 -1 13 -1 12 -1 11 -1 10 -1 9 -1 8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
 Curve2ds 0
 Curves 1
-2 2.0499999999999998 9.9999999999999998e-17 0 0 0 1 1 0 -0 -0 1 0 1.05
+2 2.0499999999999998 9.9999999999999998e-17 0 0 0 1 1 0 0 0 1 0 1.05
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -164,7 +160,7 @@ Triangulations 0
 TShapes 4
 Ve
 1e-07
-1.10000000000002 -83.5 2.48384830108788e-14
+1.10000000000002 -83.5 3.90483823250203e-14
 0 0
 
 0101101
@@ -175,11 +171,11 @@ Ed
 0
 
 0101100
-+4 27 -4 27 *
++4 26 -4 26 *
 Co
 
 0100000
-+3 26 *
++3 25 *
 Co
 
 1100000
@@ -187,7 +183,38 @@ Co
 
 +1 1 ]]>
       </Part>
-      <ElementMap/>
+      <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
+      <ElementMap2 count="2">
+<![CDATA[
+44 PostfixCount 4
+Edge
+Vertex
+;:H7de,E
+;:H7de,V
+
+MapCount 1
+
+ElementMap 1 44 2
+
+Edge
+
+ChildCount 0
+
+NameCount 2
+0
+:1.1.3 0
+
+Vertex
+
+ChildCount 0
+
+NameCount 2
+0
+:2.1.4 0
+
+EndMap
+]]>
+      </ElementMap2>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
       <Integer value="32"/>
