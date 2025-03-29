@@ -6,23 +6,35 @@
  FreeCAD Document, see http://www.freecadweb.org for more information...
 -->
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
-<Expand />
-  <Camera extra="0" id="73" binding="0" view3d="1">
+<Expand  count="1">
+  <Expand name="Assembly" count="2">
+    <Expand name="Elements"/>
+    <Expand name="Parts" count="2">
+      <Expand name="Link002" count="1">
+        <Expand name="Body"/>
+      </Expand>
+      <Expand name="Link003" count="1">
+        <Expand name="Body"/>
+      </Expand>
+    </Expand>
+  </Expand>
+</Expand>
+  <Camera extra="0" id="19" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position -26.753933 -170.80432 46.877258
-  orientation 0.49639922 -0.7121622 0.49639982  1.9039096
-  nearDistance 69.008049
-  farDistance 198.08437
+  position -26.29295 -119.70516 9.6083832
+  orientation 0.90626943 -0.37538913 -0.19431573  2.2643135
+  nearDistance 9.2115736
+  farDistance 180.99931
   aspectRatio 1
   focalDistance 71.786949
-  height 92.632751
+  height 138.19221
 
 }
 ## overrideMode: Flat Lines]]>
   </Camera>
-  <View3D id="73"><![CDATA[
+  <View3D id="19"><![CDATA[
   <Properties Count="3" TransientCount="0">
     <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
       <Integer value="6"/>

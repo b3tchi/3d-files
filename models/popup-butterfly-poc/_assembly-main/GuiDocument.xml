@@ -7,49 +7,35 @@
 -->
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
 <Expand  count="1">
-  <Expand name="Part" count="1">
-    <Expand name="Assembly" count="2">
-      <Expand name="Constraints"/>
-      <Expand name="Parts" count="2">
-        <Expand name="Link003" count="1">
-          <Expand name="Assembly" count="1">
-            <Expand name="Parts" count="1">
-              <Expand name="Link" count="1">
-                <Expand name="Body"/>
-              </Expand>
-            </Expand>
-          </Expand>
-        </Expand>
-        <Expand name="Link004" count="1">
-          <Expand name="Assembly" count="1">
-            <Expand name="Parts" count="1">
-              <Expand name="Link" count="1">
-                <Expand name="Body" count="1">
-                  <Expand name="Pad001"/>
-                </Expand>
-              </Expand>
-            </Expand>
-          </Expand>
-        </Expand>
-      </Expand>
-    </Expand>
-  </Expand>
+  <Expand name="Part"/>
 </Expand>
-  <Camera>
+  <Camera extra="0" id="12" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position -28.282804 -81.857018 8.9859676
-  orientation 1 0 0  1.5707964
-  nearDistance -19.853273
-  farDistance 82.296455
+  position -122.28647 -170.67076 66.769501
+  orientation 0.84595221 -0.28635377 -0.44985163  1.2901654
+  nearDistance 88.542503
+  farDistance 231.59634
   aspectRatio 1
   focalDistance 100
-  height 69.536507
+  height 62.190128
 
 }
-## overrideMode: As Is
-  
-  ]]>
+## overrideMode: Flat Lines]]>
   </Camera>
+  <View3D id="12"><![CDATA[
+  <Properties Count="3" TransientCount="0">
+    <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
+      <Integer value="6"/>
+    </Property>
+    <Property name="ShowNaviCube" type="App::PropertyBool" status="1">
+      <Bool value="true"/>
+    </Property>
+    <Property name="ThumbnailView" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+  </Properties>
+]]>
+  </View3D>
 </Document>
