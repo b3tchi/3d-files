@@ -9,28 +9,48 @@
 <Expand  count="1">
   <Expand name="Part" count="1">
     <Expand name="Assembly" count="1">
-      <Expand name="Parts" count="1">
-        <Expand name="Link"/>
+      <Expand name="Parts" count="3">
+        <Expand name="Link" count="1">
+          <Expand name="Body"/>
+        </Expand>
+        <Expand name="Link003" count="1">
+          <Expand name="Assembly" count="1">
+            <Expand name="Parts" count="1">
+              <Expand name="Link" count="1">
+                <Expand name="Body"/>
+              </Expand>
+            </Expand>
+          </Expand>
+        </Expand>
+        <Expand name="Link005" count="1">
+          <Expand name="Assembly" count="1">
+            <Expand name="Parts" count="1">
+              <Expand name="Link004" count="1">
+                <Expand name="Body"/>
+              </Expand>
+            </Expand>
+          </Expand>
+        </Expand>
       </Expand>
     </Expand>
   </Expand>
 </Expand>
-  <Camera extra="0" id="34" binding="0" view3d="1">
+  <Camera extra="0" id="80" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position -34.480015 62.461369 25.492134
-  orientation -0.0027659675 0.56645566 0.82408756  3.1496401
-  nearDistance 56.227104
-  farDistance 166.12634
+  position -167.63031 -29.534832 21.514582
+  orientation -0.57281792 0.5641461 0.59465849  4.2280064
+  nearDistance 79.246849
+  farDistance 186.08728
   aspectRatio 1
-  focalDistance 73.696121
-  height 31.80969
+  focalDistance 89.939407
+  height 87.26532
 
 }
 ## overrideMode: Flat Lines]]>
   </Camera>
-  <View3D id="34"><![CDATA[
+  <View3D id="80"><![CDATA[
   <Properties Count="3" TransientCount="0">
     <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
       <Integer value="6"/>
