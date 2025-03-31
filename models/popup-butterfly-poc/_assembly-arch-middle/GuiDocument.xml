@@ -13,13 +13,16 @@
       <Expand name="Elements"/>
       <Expand name="Parts" count="1">
         <Expand name="Link" count="1">
-          <Expand name="Body"/>
+          <Expand name="Body" count="2">
+            <Expand name="Pad001"/>
+            <Expand name="Pad"/>
+          </Expand>
         </Expand>
       </Expand>
     </Expand>
   </Expand>
 </Expand>
-  <Camera extra="0" id="83" binding="0" view3d="1">
+  <Camera extra="0" id="89" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
@@ -34,7 +37,7 @@ OrthographicCamera {
 }
 ## overrideMode: Flat Lines]]>
   </Camera>
-  <View3D id="83"><![CDATA[
+  <View3D id="89"><![CDATA[
   <Properties Count="3" TransientCount="0">
     <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
       <Integer value="6"/>
