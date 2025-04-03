@@ -7,13 +7,13 @@
     </Extension>
   </Extensions>
   <Properties Count="19" TransientCount="1">
-    <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881025"/>
+    <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881024"/>
     <Property name="ColoredElements" type="App::PropertyLinkSubHidden" status="218103808">
       <LinkSub value="" count="0">
       </LinkSub>
     </Property>
     <Property name="Detach" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
-      <Bool value="false"/>
+      <Bool value="true"/>
     </Property>
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
       <ExpressionEngine count="0"></ExpressionEngine>
@@ -33,7 +33,7 @@
     <Property name="LinkTransform" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097418">
       <Bool value="true"/>
     </Property>
-    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097413">
+    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
       <XLink file="" stamp="" name="Binder" sub="?Edge254" shadow=";#1c98;:H170,E;:He0,E;:H93:7,E;:H91:10,E;:H364:1a,E;:H360:25,E;:X;BND:0:0;:H387:3b,E;:H-7d9:46,E.Edge254"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
@@ -45,7 +45,7 @@
     <Property name="Proxy" type="App::PropertyPythonObject">
       <Python  module="freecad.asm3.assembly" class="AsmElement" value="null"/>
     </Property>
-    <Property name="Shape" type="Part::PropertyPartShape" status="1">
+    <Property name="Shape" type="Part::PropertyPartShape">
       <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
 <![CDATA[
 
@@ -56,8 +56,8 @@ Locations 26
               0               1               0               0 
               0               0               1               0 
 1
-0.00511755804375402 -9.3529801443925e-16 -0.999986905214098 11.3000000000001 
-1.8247806881113e-06 0.999999999998335 9.33854243944683e-09 -1.9160549300179e-06 
+0.00511755804375402 -9.35298119234683e-16 -0.999986905214098 11.3000000000001 
+1.82478068811129e-06 0.999999999998335 9.33854243944672e-09 -1.9160549300179e-06 
 0.999986905212433 -1.82480458353184e-06 0.0051175580437455 120.949989051174 
 1
               1               0               0               0 
@@ -151,7 +151,7 @@ Locations 26
 2  24 -1 23 -1 22 -1 21 -1 20 -1 19 -1 18 -1 17 -1 16 -1 15 -1 14 -1 13 -1 12 -1 11 -1 10 -1 9 -1 8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
 Curve2ds 0
 Curves 1
-2 2.0499999999999998 9.9999999999999998e-17 0 0 0 1 1 0 0 0 1 0 1.05
+2 2.0499999999999998 9.9999999999999998e-17 0 0 0 1 1 0 -0 -0 1 0 1.05
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -178,7 +178,7 @@ Co
 +3 25 *
 Co
 
-1100000
+0100000
 +2 2 *
 
 +1 1 ]]>

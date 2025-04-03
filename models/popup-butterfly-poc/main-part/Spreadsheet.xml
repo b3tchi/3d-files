@@ -7,7 +7,7 @@
       <ExpressionEngine count="1" cdata="1">
         <Expressions><![CDATA[
 0:.cells.Bind.B2.ZZ2
-0:tuple(.cells, <<B>> + str(hiddenref(Part006.Variant) + 3), <<ZZ>> + str(hiddenref(Part006.Variant) + 3))
+0:tuple(.cells, <<B>> + str(hiddenref(Part012.Variant) + 3), <<ZZ>> + str(hiddenref(Part012.Variant) + 3))
 0:
 
 ]]>
@@ -26,8 +26,8 @@
     <Property name="ShowCells" type="App::PropertyEnumeration">
       <Integer value="0"/>
     </Property>
-    <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="444"/>
+    <Property name="TreeRank" type="App::PropertyInteger" status="2185">
+      <Integer value="824"/>
     </Property>
     <Property name="Visibility" type="App::PropertyBool" status="648">
       <Bool value="true"/>
@@ -803,8 +803,8 @@
         <Cell backgroundColor="#dab860ff" address="G6" content="1"/>
         <Cell backgroundColor="#dab860ff" address="H6" content="keeping same 6mm"/>
         <Cell backgroundColor="#dab860ff" address="I6" content="1"/>
-        <Cell backgroundColor="#dab860ff" address="J6" content="60"/>
-        <Cell backgroundColor="#dab860ff" address="K6" content="8"/>
+        <Cell backgroundColor="#dab860ff" address="J6" content="35"/>
+        <Cell backgroundColor="#dab860ff" address="K6" content="6"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L6" content="=I6 == 1 ? K6 / 2 : 0"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M6" content="=I6 == 1 ? K6 - 2 : (I6 == 2 ? K6 - 1 : 0)"/>
         <Cell address="A7" content="main-pivot"/>
@@ -816,7 +816,7 @@
         <Cell backgroundColor="#dab860ff" address="G7" content="1"/>
         <Cell backgroundColor="#dab860ff" address="H7" content="keeping same 6mm"/>
         <Cell backgroundColor="#dab860ff" address="I7" content="1"/>
-        <Cell backgroundColor="#dab860ff" address="J7" content="75"/>
+        <Cell backgroundColor="#dab860ff" address="J7" content="71"/>
         <Cell backgroundColor="#dab860ff" address="K7" content="10"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="L7" content="=I7 == 1 ? K7 / 2 : 0"/>
         <Cell style="italic" foregroundColor="#008000ff" backgroundColor="#bfbfbfff" address="M7" content="=I7 == 1 ? K7 - 2 : (I7 == 2 ? K7 - 1 : 0)"/>
