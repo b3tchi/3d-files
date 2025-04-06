@@ -39,10 +39,10 @@
         <Constrain Name="" Type="1" Value="0" First="4" FirstPos="1" Second="2" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="1" Value="0" First="4" FirstPos="2" Second="1" SecondPos="3" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="9" Value="0.6142029327967262" First="3" FirstPos="2" Second="4" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="20.64588928222656" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-        <Constrain Name="" Type="18" Value="65.8258761162601" First="2" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="32.79695129394531" LabelPosition="-2.712352275848389" IsDriving="0" IsInVirtualSpace="0" IsActive="1" />
-        <Constrain Name="" Type="9" Value="0.5251266682177643" First="-1" FirstPos="2" Second="3" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="63.66589736938477" LabelPosition="0" IsDriving="0" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="18" Value="65.8258761162602" First="2" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="32.79695129394531" LabelPosition="-2.712352275848389" IsDriving="0" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="9" Value="0.4060476592224971" First="-1" FirstPos="2" Second="3" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="63.66589736938477" LabelPosition="0" IsDriving="0" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="6" Value="32.91293805813011" First="3" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="3.199469566345215" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-        <Constrain Name="" Type="8" Value="36.5" First="2" FirstPos="1" Second="-1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="127.2608642578125" LabelPosition="2.980891227722168" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="8" Value="33" First="2" FirstPos="1" Second="-1" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="127.2608642578125" LabelPosition="2.980891227722168" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="1" Value="0" First="5" FirstPos="2" Second="6" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="1" Value="0" First="6" FirstPos="2" Second="7" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="1" Value="0" First="7" FirstPos="2" Second="8" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
@@ -91,10 +91,10 @@
       </LinkList>
     </Property>
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-      <ExpressionEngine count="6" cdata="1" xlink="1">
+      <ExpressionEngine count="7" cdata="1" xlink="1">
         <XLinks count="1" docs="1">
           <DocMap name="_alpha_dimensions" label="_alpha-dimensions" index="0"/>
-          <XLink file="_alpha-dimensions" stamp="2025-04-04T05:04:38Z" name="Sketch"/>
+          <XLink file="_alpha-dimensions" stamp="2025-04-05T16:32:49Z" name="Sketch"/>
         </XLinks>
         <Expressions><![CDATA[
 0:Constraints[10]
@@ -103,6 +103,10 @@
 
 0:Constraints[13]
 0:<<gsk>>.Constraints[<<main-lever-x>>]
+0:
+
+0:Constraints[14]
+0:<<gsk>>.Constraints[<<platform-driver-y>>]
 0:
 
 0:Constraints[1]
@@ -174,42 +178,42 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="2" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <Circle CenterX="-19.76324270662761" CenterY="-20" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1"/>
+          <Circle CenterX="-19.76324270662759" CenterY="-20" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomArcOfCircle" id="3" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="3" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <ArcOfCircle CenterX="-19.76324270662761" CenterY="-20" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="32.91293805813005" StartAngle="3.666719321807557" EndAngle="4.280922254604283"/>
+          <ArcOfCircle CenterX="-19.76324270662759" CenterY="-20" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="32.9129380581301" StartAngle="3.547640312812291" EndAngle="4.161843245609016"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="4" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="4" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-48.24150620035746" StartY="-36.49999999999998" StartZ="0" EndX="-19.76324270662761" EndY="-20" EndZ="0"/>
+          <LineSegment StartX="-50" StartY="-33" StartZ="0" EndX="-19.76324270662759" EndY="-20" EndZ="0"/>
           <Construction value="1"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="5" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="5" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-33.52755047537157" StartY="-49.89657711621182" StartZ="0" EndX="-19.76324270662761" EndY="-20" EndZ="0"/>
+          <LineSegment StartX="-36.98172535309181" StartY="-48.04969424025366" StartZ="0" EndX="-19.76324270662759" EndY="-20" EndZ="0"/>
           <Construction value="1"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="6" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="6" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="5" StartY="3.7" StartZ="0" EndX="-57.95" EndY="3.7" EndZ="0"/>
+          <LineSegment StartX="5" StartY="3.700000000000003" StartZ="0" EndX="-57.95" EndY="3.700000000000003" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="7" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="7" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-57.95" StartY="3.7" StartZ="0" EndX="-57.95" EndY="-96.30000000000001" EndZ="0"/>
+          <LineSegment StartX="-57.95" StartY="3.700000000000003" StartZ="0" EndX="-57.95" EndY="-96.30000000000001" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="8" migrated="1">
@@ -258,7 +262,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="14" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <Circle CenterX="-48.24150620035746" CenterY="-36.49999999999998" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1.05"/>
+          <Circle CenterX="-50" CenterY="-33" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="1.05"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomCircle" id="15" migrated="1">
@@ -286,7 +290,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="18" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <Circle CenterX="-2.999999999999999" CenterY="-5.999999999999998" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="8"/>
+          <Circle CenterX="-3" CenterY="-5.999999999999998" CenterZ="0" NormalX="0" NormalY="0" NormalZ="1" AngleXU="-0" Radius="8"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="19" migrated="1">
@@ -356,18 +360,18 @@ Locations 1
               0               0               1            1.85 
 Curve2ds 0
 Curves 12
-2 0 -21 0 0 0 1 1 0 -0 -0 1 0 1
-2 -19.763242706627612 -20 0 0 0 1 1 0 -0 -0 1 0 1
-2 -19.763242706627612 -20 0 0 0 1 1 0 -0 -0 1 0 32.912938058130052
-1 5 3.7000000000000002 0 -1 0 0 
-1 -57.950000000000003 3.7000000000000002 0 0 -1 0 
+2 0 -21 0 0 0 1 1 0 0 0 1 0 1
+2 -19.76324270662759 -20 0 0 0 1 1 0 0 0 1 0 1
+2 -19.76324270662759 -20 0 0 0 1 1 0 0 0 1 0 32.912938058130102
+1 5 3.7000000000000028 0 -1 0 0 
+1 -57.950000000000003 3.7000000000000028 0 0 -1 0 
 1 -57.950000000000003 -96.300000000000011 0 1 0 0 
 1 5 -96.300000000000011 0 0 1 0 
-2 -48.241506200357463 -36.499999999999979 0 0 0 1 1 0 -0 -0 1 0 1.05
-2 -49.950000000000003 -5.9999999999999982 0 0 0 1 1 0 -0 -0 1 0 8
-2 -2.9999999999999991 -88.300000000000011 0 0 0 1 1 0 -0 -0 1 0 8
-2 -49.950000000000003 -88.300000000000011 0 0 0 1 1 0 -0 -0 1 0 8
-2 -2.9999999999999987 -5.9999999999999982 0 0 0 1 1 0 -0 -0 1 0 8
+2 -50 -33 0 0 0 1 1 0 0 0 1 0 1.05
+2 -49.950000000000003 -5.9999999999999982 0 0 0 1 1 0 0 0 1 0 8
+2 -2.9999999999999991 -88.300000000000011 0 0 0 1 1 0 0 0 1 0 8
+2 -49.950000000000003 -88.300000000000011 0 0 0 1 1 0 0 0 1 0 8
+2 -3 -5.9999999999999982 0 0 0 1 1 0 0 0 1 0 8
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -412,21 +416,21 @@ Wi
 +31 0 *
 Ve
 1e-07
--48.2415062003575 -36.5 0
+-50 -33 0
 0 0
 
 0101101
 *
 Ve
 1e-07
--33.5275504753716 -49.8965771162118 0
+-36.9817253530918 -48.0496942402537 0
 0 0
 
 0101101
 *
 Ed
  1e-07 1 1 0
-1  3 0 3.66671932180756 4.28092225460428
+1  3 0 3.54764031281229 4.16184324560902
 0
 
 0101000
@@ -436,7 +440,7 @@ Wi
 0101000
 +27 0 *
 Ve
-1.00000001332268e-07
+1e-07
 5 3.7 0
 0 0
 
@@ -497,7 +501,7 @@ Wi
 +23 0 +21 0 +19 0 +18 0 *
 Ve
 1e-07
--47.1915062003575 -36.5 0
+-48.95 -33 0
 0 0
 
 0101101
@@ -658,7 +662,7 @@ EndMap
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="648">
+    <Property name="Visibility" type="App::PropertyBool" status="649">
       <Bool value="true"/>
     </Property>
   </Properties>

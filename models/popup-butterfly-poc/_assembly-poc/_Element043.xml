@@ -33,8 +33,8 @@
     <Property name="LinkTransform" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097418">
       <Bool value="true"/>
     </Property>
-    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097413">
-      <XLink file="" stamp="" name="Link003" sub="Body.Sketch.Edge7" shadow="Body.Sketch.;g7;SKT.Edge7"/>
+    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
+      <XLink file="" stamp="" name="Link003" sub="Body.Sketch.Edge10" shadow="Body.Sketch.;g27;SKT.Edge10"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -56,9 +56,9 @@ Locations 6
               0               1               0               0 
               0               0               1               0 
 1
--4.44089209850063e-16 7.59492584584801e-16              -1            11.3 
--2.40520033398602e-16               1 7.59492584584801e-16 -1.87565504288025e-14 
-              1 2.40520033398602e-16 -4.44089209850062e-16              60 
+-4.44089209850063e-16           8e-16              -1            11.3 
+         -2e-16               1           8e-16       -1.88e-14 
+              1           2e-16 -4.44089209850062e-16              60 
 1
               1               0               0               0 
               0 -4.44089209850063e-16              -1               0 
@@ -71,7 +71,7 @@ Locations 6
 2  4 -1 3 -1 0
 Curve2ds 0
 Curves 1
-2 -1.05 0 0 0 0 1 1 0 -0 -0 1 0 1.05
+2 12.272092261858607 3.7000000000000015 0 0 0 1 1 0 -0 -0 1 0 0.90000000000000002
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -80,7 +80,7 @@ Triangulations 0
 TShapes 4
 Ve
 1e-07
-0 0 0
+13.1720922618586 -1.64313007644523e-15 3.7
 0 0
 
 0101101
@@ -106,13 +106,13 @@ Co
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="2">
 <![CDATA[
-32 PostfixCount 2
+31 PostfixCount 2
 Edge
 Vertex
 
 MapCount 1
 
-ElementMap 1 32 2
+ElementMap 1 31 2
 
 Edge
 
@@ -120,7 +120,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#22d;:X;:H9b:3,E.0 0
+;#241;:X;:H9b:3,E.0 0
 
 Vertex
 
@@ -128,7 +128,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#22c;:X;:H9b:3,V.0 0
+;#240;:X;:H9b:3,V.0 0
 
 EndMap
 ]]>

@@ -21,7 +21,7 @@
     </Property>
     <Property name="ConstraintType" type="App::PropertyEnumeration" group="Base" attr="2" ro="0" hide="0" doc="" status="35651584"></Property>
     <Property name="Disabled" type="App::PropertyBool" group="Base" attr="0" ro="0" hide="0" doc="" status="2097152">
-      <Bool value="true"/>
+      <Bool value="false"/>
     </Property>
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
       <ExpressionEngine count="0"></ExpressionEngine>
@@ -46,13 +46,13 @@
       <Bool value="false"/>
     </Property>
     <Property name="Offset" type="App::PropertyDistance" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097152">
-      <Float value="33"/>
+      <Float value="0"/>
     </Property>
     <Property name="OffsetX" type="App::PropertyDistance" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097152">
-      <Float value="17"/>
+      <Float value="0"/>
     </Property>
     <Property name="OffsetY" type="App::PropertyDistance" group="Constraint" attr="0" ro="0" hide="0" doc="" status="2097152">
-      <Float value="-7"/>
+      <Float value="0"/>
     </Property>
     <Property name="Proxy" type="App::PropertyPythonObject">
       <Python  module="freecad.asm3.assembly" class="AsmConstraint" value="null"/>
