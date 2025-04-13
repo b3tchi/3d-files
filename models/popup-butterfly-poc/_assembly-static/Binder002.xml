@@ -4,26 +4,26 @@
 <Object name="Binder002">
   <Properties Count="35" TransientCount="1">
     <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881024"/>
-    <Property name="BindCopyOnChange" type="App::PropertyEnumeration">
+    <Property name="BindCopyOnChange" type="App::PropertyEnumeration" status="1">
       <Integer value="0"/>
     </Property>
-    <Property name="BindMode" type="App::PropertyEnumeration">
+    <Property name="BindMode" type="App::PropertyEnumeration" status="1">
       <Integer value="0"/>
     </Property>
-    <Property name="Cache_Parts" type="App::PropertyMatrix" group="Cache" attr="0" ro="0" hide="1" doc="" status="69206016">
+    <Property name="Cache_Parts" type="App::PropertyMatrix" group="Cache" attr="0" ro="0" hide="1" doc="" status="69206017">
       <PropertyMatrix a11="1" a12="0" a13="0" a14="0" a21="0" a22="1" a23="0" a24="0" a31="0" a32="0" a33="1" a34="0" a41="0" a42="0" a43="0" a44="1"/>
     </Property>
-    <Property name="ClaimChildren" type="App::PropertyBool" status="134217728">
+    <Property name="ClaimChildren" type="App::PropertyBool" status="134217729">
       <Bool value="false"/>
     </Property>
-    <Property name="ColoredElements" type="App::PropertyLinkSubHidden" status="218103808">
+    <Property name="ColoredElements" type="App::PropertyLinkSubHidden" status="218103809">
       <LinkSub value="" count="0">
       </LinkSub>
     </Property>
-    <Property name="Context" type="App::PropertyXLink" status="67108864">
+    <Property name="Context" type="App::PropertyXLink" status="67108865">
       <XLink file="" stamp="" name="Part" sub="Binder002."/>
     </Property>
-    <Property name="EdgeTolerance" type="App::PropertyPrecision">
+    <Property name="EdgeTolerance" type="App::PropertyPrecision" status="1">
       <Float value="1e-06"/>
     </Property>
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
@@ -32,61 +32,61 @@
     <Property name="FaceMaker" type="App::PropertyString">
       <String value=""/>
     </Property>
-    <Property name="FillStyle" type="App::PropertyEnumeration">
+    <Property name="FillStyle" type="App::PropertyEnumeration" status="1">
       <Integer value="0"/>
     </Property>
-    <Property name="FixShape" type="App::PropertyEnumeration">
+    <Property name="FixShape" type="App::PropertyEnumeration" status="1">
       <Integer value="0"/>
     </Property>
-    <Property name="Fuse" type="App::PropertyBool">
+    <Property name="Fuse" type="App::PropertyBool" status="1">
       <Bool value="false"/>
     </Property>
-    <Property name="InvalidShape" type="App::PropertyBool" status="67108864">
+    <Property name="InvalidShape" type="App::PropertyBool" status="67108865">
       <Bool value="false"/>
     </Property>
-    <Property name="Label" type="App::PropertyString" status="134217728">
+    <Property name="Label" type="App::PropertyString" status="134217729">
       <String value="Binder002(xz)"/>
     </Property>
     <Property name="Label2" type="App::PropertyString" status="128">
       <String value=""/>
     </Property>
-    <Property name="MakeFace" type="App::PropertyBool">
+    <Property name="MakeFace" type="App::PropertyBool" status="1">
       <Bool value="true"/>
     </Property>
-    <Property name="MergeEdges" type="App::PropertyBool">
+    <Property name="MergeEdges" type="App::PropertyBool" status="1">
       <Bool value="true"/>
     </Property>
-    <Property name="Offset" type="App::PropertyFloat">
+    <Property name="Offset" type="App::PropertyFloat" status="1">
       <Float value="0"/>
     </Property>
-    <Property name="OffsetFill" type="App::PropertyBool">
+    <Property name="OffsetFill" type="App::PropertyBool" status="1">
       <Bool value="false"/>
     </Property>
-    <Property name="OffsetIntersection" type="App::PropertyBool">
+    <Property name="OffsetIntersection" type="App::PropertyBool" status="1">
       <Bool value="false"/>
     </Property>
-    <Property name="OffsetJoinType" type="App::PropertyEnumeration">
+    <Property name="OffsetJoinType" type="App::PropertyEnumeration" status="1">
       <Integer value="0"/>
     </Property>
-    <Property name="OffsetOpenResult" type="App::PropertyBool">
+    <Property name="OffsetOpenResult" type="App::PropertyBool" status="1">
       <Bool value="false"/>
     </Property>
-    <Property name="Outline" type="App::PropertyBool">
+    <Property name="Outline" type="App::PropertyBool" status="1">
       <Bool value="false"/>
     </Property>
-    <Property name="PartialLoad" type="App::PropertyBool" status="1024">
+    <Property name="PartialLoad" type="App::PropertyBool" status="1025">
       <Bool value="false"/>
     </Property>
-    <Property name="Placement" type="App::PropertyPlacement" status="8388608">
+    <Property name="Placement" type="App::PropertyPlacement" status="8388609">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
     </Property>
-    <Property name="Refine" type="App::PropertyBool">
+    <Property name="Refine" type="App::PropertyBool" status="1">
       <Bool value="false"/>
     </Property>
-    <Property name="Relative" type="App::PropertyBool">
+    <Property name="Relative" type="App::PropertyBool" status="1">
       <Bool value="true"/>
     </Property>
-    <Property name="Shape" type="Part::PropertyPartShape">
+    <Property name="Shape" type="Part::PropertyPartShape" status="1">
       <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
 <![CDATA[
 
@@ -112,23 +112,23 @@ Locations 6
 2  3 -1 2 -1 0
 Curve2ds 0
 Curves 4
-2 0 1.8500000000000001 0 0 0 1 1 0 0 0 1 0 1.05
-2 -45.818489374735229 1.8500000000000001 0 0 0 1 1 0 0 0 1 0 1.05
-2 32.400787075220222 -0.10518575599316882 0 0 0 1 1 0 0 0 1 0 1.05
+2 0 1.8500000000000001 0 0 0 1 1 0 -0 -0 1 0 1.05
+2 -45.818489374735229 1.8500000000000001 0 0 0 1 1 0 -0 -0 1 0 1.05
+2 32.400787075220222 -0.10518575599316882 0 0 0 1 1 0 -0 -0 1 0 1.05
 2 34.028627847496061 4.6224071220170515 0 0 0 1 1 0 -0 -0 1 0 1.05
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 4
-1 5.1527313869952653 -9.1229483590014965e-16 2.0543053415059709 0 1 4.4408920985006262e-16 0 -4.4408920985006262e-16 1 1 0 -0 
-1 5.1527313869952653 -9.1229483590014965e-16 2.0543053415059709 0 1 4.4408920985006262e-16 0 -4.4408920985006262e-16 1 1 0 -0 
-1 5.1527313869952653 -9.1229483590014965e-16 2.0543053415059709 0 1 4.4408920985006262e-16 0 -4.4408920985006262e-16 1 1 0 -0 
-1 5.1527313869952653 -9.1229483590014965e-16 2.0543053415059709 0 1 4.4408920985006262e-16 0 -4.4408920985006262e-16 1 1 0 -0 
+1 5.1527313869952645 -9.1229483590015024e-16 2.0543053415059709 0 1 4.4408920985006301e-16 0 -4.4408920985006301e-16 1 1 0 -0 
+1 5.1527313869952645 -9.1229483590015024e-16 2.0543053415059709 0 1 4.4408920985006301e-16 0 -4.4408920985006301e-16 1 1 0 -0 
+1 5.1527313869952645 -9.1229483590015024e-16 2.0543053415059709 0 1 4.4408920985006301e-16 0 -4.4408920985006301e-16 1 1 0 -0 
+1 5.1527313869952645 -9.1229483590015024e-16 2.0543053415059709 0 1 4.4408920985006301e-16 0 -4.4408920985006301e-16 1 1 0 -0 
 Triangulations 0
 
 TShapes 17
 Ve
 1e-07
-1.05 -8.21565038222616e-16 1.85
+1.05 -8.21565038222617e-16 1.85
 0 0
 
 0101101
@@ -151,7 +151,7 @@ Fa
 -15 0 *
 Ve
 1e-07
--44.7684893747352 -8.21565038222616e-16 1.85
+-44.7684893747352 -8.21565038222617e-16 1.85
 0 0
 
 0101101
@@ -174,7 +174,7 @@ Fa
 -11 0 *
 Ve
 1e-07
-33.4507870752202 4.67118592664878e-17 -0.105185755993169
+33.4507870752202 4.6711859266488e-17 -0.105185755993169
 0 0
 
 0101101
@@ -197,7 +197,7 @@ Fa
 -7 0 *
 Ve
 1e-07
-35.0786278474961 -2.05276112642185e-15 4.62240712201705
+35.0786278474961 -2.05276112642186e-15 4.62240712201705
 0 0
 
 0101101
@@ -277,27 +277,27 @@ EndMap
 ]]>
       </ElementMap2>
     </Property>
-    <Property name="SplitEdges" type="App::PropertyBool">
+    <Property name="SplitEdges" type="App::PropertyBool" status="1">
       <Bool value="false"/>
     </Property>
-    <Property name="Support" type="App::PropertyXLinkSubList">
+    <Property name="Support" type="App::PropertyXLinkSubList" status="1">
       <XLinkSubList count="1">
         <XLink file="" stamp="" name="Parts" sub="Link.Body.Sketch015."/>
       </XLinkSubList>
     </Property>
-    <Property name="TightBound" type="App::PropertyBool">
+    <Property name="TightBound" type="App::PropertyBool" status="1">
       <Bool value="false"/>
     </Property>
-    <Property name="TreeRank" type="App::PropertyInteger" status="2184">
+    <Property name="TreeRank" type="App::PropertyInteger" status="2185">
       <Integer value="79"/>
     </Property>
-    <Property name="ValidateShape" type="App::PropertyBool">
+    <Property name="ValidateShape" type="App::PropertyBool" status="1">
       <Bool value="false"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="648">
+    <Property name="Visibility" type="App::PropertyBool" status="649">
       <Bool value="false"/>
     </Property>
-    <Property name="_Version" type="App::PropertyInteger" status="83886080">
+    <Property name="_Version" type="App::PropertyInteger" status="83886081">
       <Integer value="8"/>
     </Property>
   </Properties>

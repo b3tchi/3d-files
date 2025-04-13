@@ -78,7 +78,7 @@
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="1" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
             <GeoExtension type="Sketcher::ExternalGeometryExtension" Ref="Sketch.;g16;SKT" Flags="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-20.00000000004085" StartY="8.215650382043473e-16" StartZ="0" EndX="1.481481604059809e-12" EndY="8.215650382141338e-16" EndZ="0"/>
+          <LineSegment StartX="-20.00000000000101" StartY="8.215650382177549e-16" StartZ="0" EndX="-1.012523398458143e-12" EndY="8.215650382226159e-16" EndZ="0"/>
           <Construction value="1"/>
         </Geometry>
       </GeometryList>
@@ -100,14 +100,14 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="2" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-17.95000000004085" StartY="8.215650382053507e-16" StartZ="0" EndX="-2.049999999999997" EndY="8.215650382053507e-16" EndZ="0"/>
+          <LineSegment StartX="-17.95000000004085" StartY="8e-16" StartZ="0" EndX="-2.049999999999997" EndY="8e-16" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="3" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="3" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-2.049999999999997" StartY="8.215650382053507e-16" StartZ="0" EndX="-2.049999999999997" EndY="-96" EndZ="0"/>
+          <LineSegment StartX="-2.049999999999997" StartY="8e-16" StartZ="0" EndX="-2.049999999999997" EndY="-96" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="4" migrated="1">
@@ -184,8 +184,8 @@ Locations 1
               0               0               1               0 
 Curve2ds 0
 Curves 4
-1 -17.950000000040848 8.2156503820535067e-16 0 1 0 0 
-1 -2.0499999999999972 8.2156503820535067e-16 0 0 -1 0 
+1 -17.950000000040848 7.9999999999999998e-16 0 1 0 0 
+1 -2.0499999999999972 7.9999999999999998e-16 0 0 -1 0 
 1 -2.0499999999999972 -96 0 -1 0 0 
 1 -17.950000000040848 -96 0 0 1 0 
 Polygon3D 0
@@ -195,15 +195,15 @@ Triangulations 0
 
 TShapes 9
 Ve
-1.00000000410783e-07
--17.9500000000408 4.10782524405264e-16 0
+1.000000004e-07
+-17.9500000000408 3.99999993510064e-16 0
 0 0
 
 0101101
 *
 Ve
 1e-07
--2.05 8.21565038205351e-16 0
+-2.05 8e-16 0
 0 0
 
 0101101
@@ -307,7 +307,7 @@ EndMap
       <Bool value="false"/>
     </Property>
     <Property name="Visibility" type="App::PropertyBool" status="648">
-      <Bool value="false"/>
+      <Bool value="true"/>
     </Property>
   </Properties>
 </Object>

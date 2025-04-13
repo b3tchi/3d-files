@@ -1,41 +1,45 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!-- FreeCAD DocumentObject -->
 <Document SchemaVersion="4" FileVersion="2">
-<Object name="ElementLink009" Extensions="True">
+<Object name="Constraint" Extensions="True">
   <Extensions Count="1">
     <Extension type="App::LinkBaseExtensionPython" name="LinkBaseExtensionPython">
     </Extension>
   </Extensions>
-  <Properties Count="13" TransientCount="0">
+  <Properties Count="15" TransientCount="0">
+    <Property name="ConstraintType" type="App::PropertyEnumeration" group="Base" attr="2" ro="0" hide="0" doc="" status="35651584"></Property>
+    <Property name="Disabled" type="App::PropertyBool" group="Base" attr="0" ro="0" hide="0" doc="" status="2097152">
+      <Bool value="false"/>
+    </Property>
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
       <ExpressionEngine count="0"></ExpressionEngine>
     </Property>
+    <Property name="Group" type="App::PropertyLinkList" group="Base" attr="0" ro="0" hide="0" doc="" status="2097418">
+      <LinkList count="1">
+        <Link value="ElementLink"/>
+      </LinkList>
+    </Property>
+    <Property name="GroupMode" type="App::PropertyEnumeration" group="Base" attr="0" ro="0" hide="0" doc="" status="2097434"></Property>
     <Property name="Label" type="App::PropertyString" status="134217728">
-      <String value="_Element011"/>
+      <String value="Locked"/>
     </Property>
     <Property name="Label2" type="App::PropertyString" status="128">
       <String value=""/>
     </Property>
-    <Property name="LinkTransform" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097418">
-      <Bool value="true"/>
-    </Property>
-    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="_Element011"/>
-    </Property>
-    <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
-      <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
-    </Property>
-    <Property name="Placement" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097416">
-      <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
-    </Property>
     <Property name="Proxy" type="App::PropertyPythonObject">
-      <Python  module="freecad.asm3.assembly" class="AsmElementLink" value="null"/>
+      <Python  module="freecad.asm3.assembly" class="AsmConstraint" value="null"/>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="86"/>
+      <Integer value="28"/>
     </Property>
     <Property name="Visibility" type="App::PropertyBool" status="648">
       <Bool value="false"/>
+    </Property>
+    <Property name="VisibilityList" type="App::PropertyBoolList" group="Base" attr="0" ro="0" hide="0" doc="" status="2099082">
+      <BoolList value="0"/>
+    </Property>
+    <Property name="_ConstraintType" type="App::PropertyInteger" group="Base" attr="0" ro="0" hide="1" doc="" status="69206016">
+      <Integer value="0"/>
     </Property>
     <Property name="_LinkOwner" type="App::PropertyInteger" status="201326592">
       <Integer value="0"/>
@@ -44,7 +48,7 @@
       <Integer value="1"/>
     </Property>
     <Property name="_Parent" type="App::PropertyLinkHidden" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097162">
-      <Link value="Constraint005"/>
+      <Link value="Constraints"/>
     </Property>
   </Properties>
 </Object>
