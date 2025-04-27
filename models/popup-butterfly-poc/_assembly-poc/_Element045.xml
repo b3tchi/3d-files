@@ -13,7 +13,7 @@
       </LinkSub>
     </Property>
     <Property name="Detach" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
-      <Bool value="true"/>
+      <Bool value="false"/>
     </Property>
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
       <ExpressionEngine count="0"></ExpressionEngine>
@@ -34,7 +34,7 @@
       <Bool value="true"/>
     </Property>
     <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Binder" sub="?Edge254" shadow=";#1c98;:H170,E;:He0,E;:H93:7,E;:H91:10,E;:H364:1a,E;:H360:25,E;:X;BND:0:0;:H387:3b,E;:H-7d9:46,E.Edge254"/>
+      <XLink file="" stamp="" name="Link004" sub="Body.Sketch.Edge7" shadow="Body.Sketch.;g20;SKT.Edge7"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -50,108 +50,28 @@
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 26
+Locations 6
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
 1
-0.00511755804375402 -9.35298119234683e-16 -0.999986905214098 11.3000000000001 
-1.82478068811129e-06 0.999999999998335 9.33854243944672e-09 -1.9160549300179e-06 
-0.999986905212433 -1.82480458353184e-06 0.0051175580437455 120.949989051174 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
+-4.44089209850063e-16           8e-16              -1            11.3 
+         -2e-16               1           8e-16       -1.15e-14 
+              1           2e-16 -4.44089209850063e-16              30 
 1
               1               0               0               0 
               0 -4.44089209850063e-16              -1               0 
               0               1 -4.44089209850063e-16               0 
 1
-              1               0               0              -0 
-              0               1               0             7.3 
-              0               0               1 3.24185123190546e-15 
-1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-1
-              1               0               0              -0 
-              0               1               0              -0 
-              0               0               1              -0 
-1
-              1               0               0 1.99507077525141e-14 
-              0               1               0            59.9 
-              0               0               1 -1.99507077525141e-14 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-1
-              1               0               0               0 
-              0               1 -2.46519032881566e-32               0 
-              0 2.46519032881566e-32               1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-1
-              1               0               0              -2 
-              0              -1 -1.22464679914735e-16           -16.3 
-              0 1.22464679914735e-16              -1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-1
-              1               0               0               0 
-              0               1               0               0 
-              0               0               1               0 
-1
-              1 -1.65436122510606e-24 8.67361737988404e-19               0 
-1.65436122510606e-24               1 -1.56065717134028e-23 4.65868120989865e-20 
--8.67361737988404e-19 1.56065717134028e-23               1 1.4210854715202e-14 
-2  3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 0
-2  24 -1 23 -1 22 -1 21 -1 20 -1 19 -1 18 -1 17 -1 16 -1 15 -1 14 -1 13 -1 12 -1 11 -1 10 -1 9 -1 8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
+2  3 1 4 1 0
+2  4 -1 3 -1 0
 Curve2ds 0
 Curves 1
-2 2.0499999999999998 9.9999999999999998e-17 0 0 0 1 1 0 -0 -0 1 0 1.05
+2 -14.699999999999999 0 0 0 0 1 1 0 -0 -0 1 0 1
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -160,7 +80,7 @@ Triangulations 0
 TShapes 4
 Ve
 1e-07
-1.10000000000002 -83.5 3.90483823250203e-14
+-13.7 0 0
 0 0
 
 0101101
@@ -171,11 +91,11 @@ Ed
 0
 
 0101100
-+4 26 -4 26 *
++4 6 -4 6 *
 Co
 
 0100000
-+3 25 *
++3 5 *
 Co
 
 0100000
@@ -186,15 +106,13 @@ Co
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="2">
 <![CDATA[
-44 PostfixCount 4
+43 PostfixCount 2
 Edge
 Vertex
-;:H7de,E
-;:H7de,V
 
 MapCount 1
 
-ElementMap 1 44 2
+ElementMap 1 43 2
 
 Edge
 
@@ -202,7 +120,7 @@ ChildCount 0
 
 NameCount 2
 0
-:1.1.3 0
+;#2b;:X;:Hbaa:3,E.0 0
 
 Vertex
 
@@ -210,14 +128,14 @@ ChildCount 0
 
 NameCount 2
 0
-:2.1.4 0
+;#252;:X;:Hbaa:3,V.0 0
 
 EndMap
 ]]>
       </ElementMap2>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="32"/>
+      <Integer value="36"/>
     </Property>
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>

@@ -88,7 +88,7 @@
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="4" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
             <GeoExtension type="Sketcher::ExternalGeometryExtension" Ref="Boolean.;#ead;:Hee1,V;:Hee2,V;:Hed1:8,V;:X;BND:0:0;:Hecf:b,V;:H-138f:15,V;:H138f,V;:H,V;:H1395:5,V" Flags="0"/>
           </GeoExtensions>
-          <GeomPoint X="49.88401689064224" Y="4.030675877214251" Z="-1.97215226305253e-31"/>
+          <GeomPoint X="49.88401689064224" Y="4.030675877214249" Z="-0"/>
           <Construction value="1"/>
         </Geometry>
         <Geometry type="Part::GeomPoint" id="5" ref="Boolean.;#ea7;:Hee1,V;:Hee2,V;:Hed1:8,V;:X;BND:0:0;:Hecf:b,V;:H-138f:15,V;:H138f,V;:H,V;:H1395:5,V" migrated="1">
@@ -96,7 +96,7 @@
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="5" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
             <GeoExtension type="Sketcher::ExternalGeometryExtension" Ref="Boolean.;#ea7;:Hee1,V;:Hee2,V;:Hed1:8,V;:X;BND:0:0;:Hecf:b,V;:H-138f:15,V;:H138f,V;:H,V;:H1395:5,V" Flags="0"/>
           </GeoExtensions>
-          <GeomPoint X="29.96012292880733" Y="5.773790732167417" Z="3.944304526105059e-31"/>
+          <GeomPoint X="29.9601229288073" Y="5.773790732167422" Z="-0"/>
           <Construction value="1"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="12" ref="Boolean.;#f0d;:Hee1,E;:Hee2,E;:Hed1:8,E;:X;BND:0:0;:Hecf:b,E;:H-138f:15,E;:H138f,E;:H,E;:H1395:5,E" migrated="1">
@@ -104,7 +104,7 @@
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="12" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
             <GeoExtension type="Sketcher::ExternalGeometryExtension" Ref="Boolean.;#f0d;:Hee1,E;:Hee2,E;:Hed1:8,E;:X;BND:0:0;:Hecf:b,E;:H-138f:15,E;:H138f,E;:H,E;:H1395:5,E" Flags="0"/>
           </GeoExtensions>
-          <LineSegment StartX="9.803716212949592" StartY="13.110122806503" StartZ="-1.577721810442024e-30" EndX="29.96012292880733" EndY="5.773790732167418" EndZ="7.888609052210122e-31"/>
+          <LineSegment StartX="9.803716212949592" StartY="13.110122806503" StartZ="0" EndX="29.96012292880733" EndY="5.773790732167418" EndZ="0"/>
           <Construction value="1"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="18" ref="Boolean.;#f16;:Hee1,E;:Hee2,E;:Hed1:8,E;:X;BND:0:0;:Hecf:b,E;:H-138f:15,E;:H138f,E;:H,E;:H1395:5,E" migrated="1">
@@ -112,7 +112,7 @@
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="18" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
             <GeoExtension type="Sketcher::ExternalGeometryExtension" Ref="Boolean.;#f16;:Hee1,E;:Hee2,E;:Hed1:8,E;:X;BND:0:0;:Hecf:b,E;:H-138f:15,E;:H138f,E;:H,E;:H1395:5,E" Flags="0"/>
           </GeoExtensions>
-          <LineSegment StartX="49.88401689064224" StartY="4.030675877214251" StartZ="-1.97215226305253e-31" EndX="71.0081431927541" EndY="7.755429288169918" EndZ="3.944304526105059e-31"/>
+          <LineSegment StartX="49.88401689064224" StartY="4.030675877214251" StartZ="0" EndX="71.0081431927541" EndY="7.755429288169917" EndZ="0"/>
           <Construction value="1"/>
         </Geometry>
       </GeometryList>
@@ -235,9 +235,9 @@ Locations 1
 -3.33066907387547e-16               1 3.33066907387547e-16               0 
 Curve2ds 0
 Curves 4
-2 49.884016890642236 4.030675877214251 0 0 0 1 1 0 -0 -0 1 0 1.05
-2 29.960122928807326 5.7737907321674173 0 0 0 1 1 0 -0 -0 1 0 1.05
-2 11.166270513089156 12.614193598680782 0 0 0 1 1 0 -0 -0 1 0 1.05
+2 49.884016890642243 4.030675877214251 0 0 0 1 1 0 -0 -0 1 0 1.05
+2 29.96012292880733 5.7737907321674173 0 0 0 1 1 0 -0 -0 1 0 1.05
+2 11.16627051308916 12.61419359868078 0 0 0 1 1 0 -0 -0 1 0 1.05
 2 69.580171950886395 7.5036394305528651 0 0 0 1 1 0 -0 -0 1 0 1.05
 Polygon3D 0
 PolygonOnTriangulations 0
@@ -373,7 +373,7 @@ EndMap
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="649">
+    <Property name="Visibility" type="App::PropertyBool" status="648">
       <Bool value="true"/>
     </Property>
   </Properties>
