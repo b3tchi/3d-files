@@ -33,7 +33,7 @@
     <Property name="LinkTransform" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097418">
       <Bool value="true"/>
     </Property>
-    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097413">
+    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
       <XLink file="" stamp="" name="Link001" sub="Body.Pad037.Edge77" shadow="Body.Pad037.;#79fc;:H4b2,E.Edge77"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
@@ -50,15 +50,15 @@
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
-Locations 22
+Locations 23
 1
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
 1
 0.945518575599317 -1.33028630135051e-16 0.325568154457156 3.25250403719896e-22 
-9.57286170491954e-17               1 1.30588461790719e-16 1.62574978808589e-18 
--0.325568154457156 -9.23076272006238e-17 0.945518575599317            1.85 
+9.57286170491954e-17               1 1.30588461790718e-16 1.62574978808589e-18 
+-0.325568154457156 -9.2307627200623e-17 0.945518575599317            1.85 
 1
               1               0               0               0 
               0               1               0               0 
@@ -131,8 +131,12 @@ Locations 22
               1               0               0               0 
               0               1               0               0 
               0               0               1               0 
-2  3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 0
-2  20 -1 19 -1 18 -1 17 -1 16 -1 15 -1 14 -1 13 -1 12 -1 11 -1 10 -1 9 -1 8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
+1
+              1               0               0               0 
+              0               1               0               0 
+              0               0               1               0 
+2  3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 0
+2  21 -1 20 -1 19 -1 18 -1 17 -1 16 -1 15 -1 14 -1 13 -1 12 -1 11 -1 10 -1 9 -1 8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
 Curve2ds 0
 Curves 1
 2 2.0499999999999998 9.9999999999999998e-17 0 0 0 1 1 0 -0 -0 1 0 1.05
@@ -144,7 +148,7 @@ Triangulations 0
 TShapes 4
 Ve
 1e-07
-1.10000000000001 -79.8333333333333 1.49389743262383e-14
+1.10000000000001 -79.8333333333333 1.49389743262382e-14
 0 0
 
 0101101
@@ -155,14 +159,14 @@ Ed
 0
 
 0101100
-+4 22 -4 22 *
++4 23 -4 23 *
 Co
 
 0100000
-+3 21 *
++3 22 *
 Co
 
-0100000
+1100000
 +2 2 *
 
 +1 1 ]]>
@@ -184,7 +188,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#291;:X;:H60f:3,E.0 0
+;#39c;:X;:H60f:3,E.0 0
 
 Vertex
 
@@ -192,7 +196,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#28f;:X;:H60f:3,V.0 0
+;#39a;:X;:H60f:3,V.0 0
 
 EndMap
 ]]>

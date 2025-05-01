@@ -108,7 +108,7 @@
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="11" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
             <GeoExtension type="Sketcher::ExternalGeometryExtension" Ref="Boolean.;#1313;:Hee1,E;:Hee2,E;:Hed1:8,E;:X;BND:0:0;:Hecf:b,E;:H-138f:15,E;:H138f,E;:H,E;:H1395:5,E" Flags="0"/>
           </GeoExtensions>
-          <LineSegment StartX="29.08689387746831" StartY="1.834909024647685" StartZ="0" EndX="50.05999999999996" EndY="2.331468351712829e-14" EndZ="0"/>
+          <LineSegment StartX="29.08689387746831" StartY="1.834909024647685" StartZ="0" EndX="50.05999999999996" EndY="2.331468351712829e-14" EndZ="1.466788245645327e-30"/>
           <Construction value="1"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="13" ref="Boolean.;#1315;:Hee1,E;:Hee2,E;:Hed1:8,E;:X;BND:0:0;:Hecf:b,E;:H-138f:15,E;:H138f,E;:H,E;:H1395:5,E" migrated="1">
@@ -116,7 +116,7 @@
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="13" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
             <GeoExtension type="Sketcher::ExternalGeometryExtension" Ref="Boolean.;#1315;:Hee1,E;:Hee2,E;:Hed1:8,E;:X;BND:0:0;:Hecf:b,E;:H-138f:15,E;:H138f,E;:H,E;:H1395:5,E" Flags="0"/>
           </GeoExtensions>
-          <LineSegment StartX="50.06" StartY="1.96e-14" StartZ="0" EndX="71.70273590342184" EndY="3.816198276121086" EndZ="0"/>
+          <LineSegment StartX="50.06" StartY="1.956323991691988e-14" StartZ="4.314083075427662e-32" EndX="71.70273590342184" EndY="3.816198276121086" EndZ="0"/>
           <Construction value="1"/>
         </Geometry>
       </GeometryList>
@@ -244,7 +244,7 @@ TShapes 0
       <Bool value="false"/>
     </Property>
     <Property name="Placement" type="App::PropertyPlacement" status="8388612">
-      <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0.5" Q1="0.5" Q2="0.5" Q3="0.5000000000000003" A="2.094395102393195" Ox="0.5773502691896258" Oy="0.5773502691896258" Oz="0.5773502691896258"/>
+      <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0.4999999999999999" Q1="0.4999999999999999" Q2="0.4999999999999999" Q3="0.5000000000000003" A="2.094395102393195" Ox="0.5773502691896258" Oy="0.5773502691896258" Oz="0.5773502691896258"/>
     </Property>
     <Property name="Shape" type="Part::PropertyPartShape">
       <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
@@ -259,13 +259,13 @@ Locations 1
 Curve2ds 0
 Curves 8
 1 38 -2 0 0 1 0 
-1 32 1.5800452632782012 0 0.99619469809174555 -0.087155742747657944 0 
+1 32 1.5800452632782009 0 0.99619469809174543 -0.087155742747657819 0 
 1 32 -2 0 0 1 0 
 1 38 -2 0 -1 0 0 
-1 52 0.34207434257444075 0 0 -1 0 
+1 52 0.34207434257444069 0 0 -1 0 
 1 52 -2 0 1 0 0 
 1 58 -2 0 0 1 0 
-1 58 1.4000362268252329 0 -0.98480775301220802 -0.17364817766693069 0 
+1 58 1.4000362268252331 0 -0.98480775301220802 -0.17364817766693075 0 
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -294,7 +294,7 @@ Ed
 0101000
 +19 0 -18 0 *
 Ve
-1e-07
+1.00000000111022e-07
 32 1.5800452632782 0
 0 0
 
@@ -333,14 +333,14 @@ Wi
 0101100
 +17 0 -15 0 -13 0 -12 0 *
 Ve
-1.00000000027756e-07
+1.00000000055511e-07
 52 0.342074342574441 0
 0 0
 
 0101101
 *
 Ve
-1.00000000111022e-07
+1e-07
 52 -2 0
 0 0
 
@@ -368,7 +368,7 @@ Ed
 0101000
 +9 0 -7 0 *
 Ve
-1e-07
+1.00000000111022e-07
 58 1.40003622682523 0
 0 0
 
