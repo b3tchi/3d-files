@@ -4,7 +4,7 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.1006R14555 (Git shallow)" FileVersion="2" Uid="6e38e1f1-875a-4bca-a164-b325bd0cbf2e" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="4">
+  <StringHasher2  count="5">
 <![CDATA[
 -7.0 1:Enforce an angle offset defined as yaw-pitch-roll angle of the
 second plane performed in the order of x-y-z
@@ -14,6 +14,7 @@ You need to enable LockAngle for this to take effect.
 You need to enable LockAngle for this to take effect.
 -1.0 1:Rotation angle of the second plane about its x-axis
 You need to enable LockAngle for this to take effect.
+-1.0 0:Shape cache
 ]]>
   </StringHasher2>
   <Properties Count="21" TransientCount="3">
@@ -45,7 +46,7 @@ You need to enable LockAngle for this to take effect.
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2025-05-01T22:07:23Z"/>
+      <String value="2025-05-03T09:15:18Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -237,7 +238,7 @@ You need to enable LockAngle for this to take effect.
     <Object type="App::FeaturePython" name="Constraints" id="865" revision="335" ViewType="Gui::ViewProviderLinkPython" file="Constraints.xml" />
     <Object type="App::FeaturePython" name="Elements" id="866" revision="287" ViewType="Gui::ViewProviderLinkPython" file="Elements.xml" />
     <Object type="Part::FeaturePython" name="Parts" id="867" revision="330" ViewType="Gui::ViewProviderLinkPython" file="Parts.xml" />
-    <Object type="App::Link" name="Link" id="868" revision="2349" file="Link.xml" />
+    <Object type="App::Link" name="Link" id="868" revision="2350" file="Link.xml" />
     <Object type="App::FeaturePython" name="Constraint" id="871" revision="138" ViewType="Gui::ViewProviderLinkPython" file="Constraint.xml" />
     <Object type="App::FeaturePython" name="ElementLink" id="872" revision="431" ViewType="Gui::ViewProviderLinkPython" file="ElementLink.xml" />
     <Object type="Part::FeaturePython" name="_Element" id="873" revision="300" file="_Element.xml" />

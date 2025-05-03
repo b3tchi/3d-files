@@ -10,26 +10,52 @@
   <Expand name="Part" count="1">
     <Expand name="Assembly" count="2">
       <Expand name="Constraints"/>
-      <Expand name="Parts"/>
+      <Expand name="Parts" count="2">
+        <Expand name="Link" count="1">
+          <Expand name="Body" count="2">
+            <Expand name="Pad028"/>
+            <Expand name="Pad029"/>
+          </Expand>
+        </Expand>
+        <Expand name="Link006" count="1">
+          <Expand name="Assembly" count="1">
+            <Expand name="Parts" count="3">
+              <Expand name="Link" count="1">
+                <Expand name="Body" count="1">
+                  <Expand name="Pad002"/>
+                </Expand>
+              </Expand>
+              <Expand name="Link001" count="1">
+                <Expand name="Body" count="1">
+                  <Expand name="Pad"/>
+                </Expand>
+              </Expand>
+              <Expand name="Link002" count="1">
+                <Expand name="Body"/>
+              </Expand>
+            </Expand>
+          </Expand>
+        </Expand>
+      </Expand>
     </Expand>
   </Expand>
 </Expand>
-  <Camera extra="0" id="23" binding="0" view3d="1">
+  <Camera extra="0" id="6" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position -55.298058 -201.52744 72.456337
-  orientation 0.98414868 -0.10087751 -0.14585888  1.2251182
-  nearDistance 90.928253
-  farDistance 235.91112
+  position 89.650528 -180.01241 74.280945
+  orientation 0.90826643 0.20650063 0.36388087  1.1169363
+  nearDistance 82.677284
+  farDistance 244.74573
   aspectRatio 1
   focalDistance 112.54471
-  height 89.556656
+  height 84.2015
 
 }
 ## overrideMode: Flat Lines]]>
   </Camera>
-  <View3D id="23"><![CDATA[
+  <View3D id="6"><![CDATA[
   <Properties Count="3" TransientCount="0">
     <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
       <Integer value="6"/>
