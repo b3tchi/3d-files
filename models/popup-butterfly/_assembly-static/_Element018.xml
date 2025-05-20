@@ -13,7 +13,7 @@
       </LinkSub>
     </Property>
     <Property name="Detach" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
-      <Bool value="false"/>
+      <Bool value="true"/>
     </Property>
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
       <ExpressionEngine count="0"></ExpressionEngine>
@@ -167,7 +167,7 @@ Wi
 Fa
 0  1e-07 1 0
 
-0101000
+0111000
 +4 9 *
 Co
 
@@ -183,14 +183,17 @@ Co
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="9">
 <![CDATA[
-25 PostfixCount 3
+26 PostfixCount 6
 Edge
 Face
 Vertex
+;:H3a4,V
+;:H3a4,E
+;:H3a4,F
 
 MapCount 1
 
-ElementMap 1 25 3
+ElementMap 1 26 3
 
 Edge
 
@@ -198,10 +201,10 @@ ChildCount 0
 
 NameCount 5
 0
-;#3e1;:X;:Hb63:3,E.0 0
-;#3e2;:X;:Hb63:3,E.0 0
-;#3e3;:X;:Hb63:3,E.0 0
-;#3e4;:X;:Hb63:3,E.0 0
+;#3e1;:X;:Hb63:3,E.5 0
+;#3e2;:X;:Hb63:3,E.5 0
+;#3e3;:X;:Hb63:3,E.5 0
+;#3e4;:X;:Hb63:3,E.5 0
 
 Face
 
@@ -209,7 +212,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#3e6;:X;:Hb63:3,F.0 0
+;#3e6;:X;:Hb63:3,F.6 0
 
 Vertex
 
@@ -217,10 +220,10 @@ ChildCount 0
 
 NameCount 5
 0
-;#3dc;:X;:Hb63:3,V.0 0
-;#3dd;:X;:Hb63:3,V.0 0
-;#3de;:X;:Hb63:3,V.0 0
-;#3df;:X;:Hb63:3,V.0 0
+;#3dc;:X;:Hb63:3,V.4 0
+;#3dd;:X;:Hb63:3,V.4 0
+;#3de;:X;:Hb63:3,V.4 0
+;#3df;:X;:Hb63:3,V.4 0
 
 EndMap
 ]]>
