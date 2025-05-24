@@ -9,44 +9,28 @@
 <Expand  count="1">
   <Expand name="Part" count="1">
     <Expand name="Assembly" count="3">
-      <Expand name="Constraints" count="1">
-        <Expand name="Constraint"/>
-      </Expand>
+      <Expand name="Constraints"/>
       <Expand name="Elements"/>
-      <Expand name="Parts" count="2">
-        <Expand name="Link" count="1">
-          <Expand name="Body" count="4">
-            <Expand name="Pad"/>
-            <Expand name="Pad028"/>
-            <Expand name="Pad029"/>
-            <Expand name="Pad030"/>
-          </Expand>
-        </Expand>
-        <Expand name="Link007" count="1">
-          <Expand name="Body" count="1">
-            <Expand name="Pad030"/>
-          </Expand>
-        </Expand>
-      </Expand>
+      <Expand name="Parts"/>
     </Expand>
   </Expand>
 </Expand>
-  <Camera extra="0" id="13" binding="0" view3d="1">
+  <Camera extra="0" id="6" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position 105.55769 19.613014 13.224734
-  orientation 0.3987177 0.59591341 0.6970734  2.2687719
-  nearDistance 46.605244
-  farDistance 218.01154
+  position -147.2923 -146.52463 47.230259
+  orientation 0.84080881 -0.36937633 -0.3957293  1.6750866
+  nearDistance 84.702797
+  farDistance 253.93494
   aspectRatio 1
   focalDistance 112.54471
-  height 60.333332
+  height 107.75805
 
 }
 ## overrideMode: As Is]]>
   </Camera>
-  <View3D id="13"><![CDATA[
+  <View3D id="6"><![CDATA[
   <Properties Count="21" TransientCount="0">
     <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
       <Integer value="0"/>
@@ -60,22 +44,22 @@ OrthographicCamera {
     <Property name="HiddenLine_FaceColor" type="App::PropertyColor" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
       <PropertyColor value="4294967295"/>
     </Property>
-    <Property name="HiddenLine_FaceColorOverride" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" docID="999" status="2097153">
+    <Property name="HiddenLine_FaceColorOverride" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Bool value="true"/>
     </Property>
-    <Property name="HiddenLine_HideFace" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" docID="996" status="2097152">
+    <Property name="HiddenLine_HideFace" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Bool value="false"/>
     </Property>
-    <Property name="HiddenLine_HideSeam" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" docID="997" status="2097153">
+    <Property name="HiddenLine_HideSeam" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Bool value="true"/>
     </Property>
-    <Property name="HiddenLine_HideVertex" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" docID="995" status="2097153">
+    <Property name="HiddenLine_HideVertex" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Bool value="true"/>
     </Property>
     <Property name="HiddenLine_LineColor" type="App::PropertyColor" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
       <PropertyColor value="255"/>
     </Property>
-    <Property name="HiddenLine_LineColorOverride" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" docID="1000" status="2097153">
+    <Property name="HiddenLine_LineColorOverride" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Bool value="true"/>
     </Property>
     <Property name="HiddenLine_LineWidth" type="App::PropertyFloatConstraint" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
@@ -84,25 +68,25 @@ OrthographicCamera {
     <Property name="HiddenLine_OutlineWidth" type="App::PropertyFloatConstraint" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Float value="0"/>
     </Property>
-    <Property name="HiddenLine_PerFaceOutline" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" docID="994" status="2097152">
+    <Property name="HiddenLine_PerFaceOutline" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Bool value="false"/>
     </Property>
     <Property name="HiddenLine_PointSize" type="App::PropertyFloatConstraint" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Float value="2"/>
     </Property>
-    <Property name="HiddenLine_SceneOutline" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" docID="998" status="2097152">
+    <Property name="HiddenLine_SceneOutline" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Bool value="false"/>
     </Property>
-    <Property name="HiddenLine_Shaded" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" docID="992" status="2097152">
+    <Property name="HiddenLine_Shaded" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097152">
       <Bool value="false"/>
     </Property>
-    <Property name="HiddenLine_ShowOutline" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" docID="993" status="2097153">
+    <Property name="HiddenLine_ShowOutline" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Bool value="true"/>
     </Property>
-    <Property name="HiddenLine_Transparency" type="App::PropertyFloatConstraint" group="HiddenLine" attr="0" ro="0" hide="0" docID="1002" status="2097153">
+    <Property name="HiddenLine_Transparency" type="App::PropertyFloatConstraint" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Float value="0.4"/>
     </Property>
-    <Property name="HiddenLine_TransparencyOverride" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" docID="1001" status="2097153">
+    <Property name="HiddenLine_TransparencyOverride" type="App::PropertyBool" group="HiddenLine" attr="0" ro="0" hide="0" doc="" status="2097153">
       <Bool value="true"/>
     </Property>
     <Property name="ShowNaviCube" type="App::PropertyBool" status="1">
