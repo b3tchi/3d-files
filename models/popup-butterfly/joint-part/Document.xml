@@ -4,7 +4,7 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.1006R14555 (Git shallow)" FileVersion="2" Uid="9d071d12-845d-4529-b57f-8a14cf9c5a86" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="381">
+  <StringHasher2  count="379">
 <![CDATA[
 -18.0 0:;:G;XTR;:H22e:7,F
 -6.0 0:;:G;XTR;:H22e:7,E
@@ -384,9 +384,7 @@ e1d.0 0:;SKT;:H22e,V;:H2dd,V
 -1.28.253.253.1 ;:M#93e;FUS;:H2d4:b,V
 -1.0 0:(#14de;:M#14dd;FUS;:H255:c,V;:H,V)
 -1.28.1f.1f.1 ;:M#14dd;FUS;:H255:c,V
--9e.0 0:;I3;:H254:3,E;:H254:d,E;:H:17,E
--1.0 0:;I3;:H254:3,F;:H254:d,F;:H:17,F
--1.0 0:;I3;:H254:3,V;:H254:d,V;:H:17,V
+-a1.0 0:Shape cache
 ]]>
   </StringHasher2>
   <Properties Count="21" TransientCount="3">
@@ -418,7 +416,7 @@ e1d.0 0:;SKT;:H22e,V;:H2dd,V
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2025-05-24T13:27:56Z"/>
+      <String value="2025-05-25T15:05:14Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -462,18 +460,18 @@ e1d.0 0:;SKT;:H22e,V;:H2dd,V
   <Objects Count="70" Dependencies="1">
     <ObjectDeps Name="Body" Count="5">
       <Dep Name="Origin"/>
-      <Dep Name="Sketch"/>
       <Dep Name="Boolean"/>
+      <Dep Name="Sketch"/>
       <Dep Name="LinearPattern"/>
       <Dep Name="Pad001"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="6">
-      <Dep Name="X_Axis"/>
       <Dep Name="Y_Axis"/>
+      <Dep Name="X_Axis"/>
       <Dep Name="Z_Axis"/>
+      <Dep Name="YZ_Plane"/>
       <Dep Name="XY_Plane"/>
       <Dep Name="XZ_Plane"/>
-      <Dep Name="YZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
@@ -655,14 +653,14 @@ e1d.0 0:;SKT;:H22e,V;:H2dd,V
       <Dep Name="Boolean"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad" Count="3">
+      <Dep Name="Sketch001"/>
       <Dep Name="Spreadsheet"/>
       <Dep Name="Body001"/>
-      <Dep Name="Sketch001"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad001" Count="3">
       <Dep Name="Body"/>
-      <Dep Name="Sketch"/>
       <Dep Name="Spreadsheet"/>
+      <Dep Name="Sketch"/>
     </ObjectDeps>
     <ObjectDeps Name="Part" Count="3">
       <Dep Name="Body"/>
@@ -670,7 +668,7 @@ e1d.0 0:;SKT;:H22e,V;:H2dd,V
       <Dep Name="Origin006"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin006" Count="0"/>
-    <Object type="PartDesign::Body" name="Body" id="550" revision="943" file="Body.xml" />
+    <Object type="PartDesign::Body" name="Body" id="550" revision="964" file="Body.xml" />
     <Object type="App::Origin" name="Origin" id="551" revision="0" file="Origin.xml" />
     <Object type="App::Line" name="X_Axis" id="552" revision="1" file="X_Axis.xml" />
     <Object type="App::Line" name="Y_Axis" id="553" revision="2" file="Y_Axis.xml" />
@@ -680,7 +678,7 @@ e1d.0 0:;SKT;:H22e,V;:H2dd,V
     <Object type="App::Plane" name="YZ_Plane" id="557" revision="2" file="YZ_Plane.xml" />
     <Object type="Sketcher::SketchObject" name="Sketch" id="558" revision="2162" file="Sketch.xml" />
     <Object type="Spreadsheet::Sheet" name="Spreadsheet" id="560" revision="0" file="Spreadsheet.xml" />
-    <Object type="PartDesign::Body" name="Body001" id="561" revision="342" file="Body001.xml" />
+    <Object type="PartDesign::Body" name="Body001" id="561" revision="363" file="Body001.xml" />
     <Object type="App::Origin" name="Origin001" id="563" revision="0" file="Origin001.xml" />
     <Object type="Sketcher::SketchObject" name="Sketch001" id="564" revision="905" file="Sketch001.xml" />
     <Object type="App::Plane" name="XY_Plane001" id="565" revision="1" file="XY_Plane001.xml" />
@@ -689,9 +687,9 @@ e1d.0 0:;SKT;:H22e,V;:H2dd,V
     <Object type="App::Plane" name="YZ_Plane001" id="568" revision="2" file="YZ_Plane001.xml" />
     <Object type="App::Line" name="Y_Axis001" id="569" revision="2" file="Y_Axis001.xml" />
     <Object type="App::Line" name="Z_Axis001" id="570" revision="2" file="Z_Axis001.xml" />
-    <Object type="PartDesign::Boolean" name="Boolean" id="596" revision="751" file="Boolean.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Reference" id="597" revision="135" file="Reference.xml" />
-    <Object type="PartDesign::Body" name="Body002" id="681" revision="116" file="Body002.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean" id="596" revision="794" file="Boolean.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Reference" id="597" revision="156" file="Reference.xml" />
+    <Object type="PartDesign::Body" name="Body002" id="681" revision="137" file="Body002.xml" />
     <Object type="App::Origin" name="Origin002" id="682" revision="0" file="Origin002.xml" />
     <Object type="App::Line" name="X_Axis002" id="683" revision="1" file="X_Axis002.xml" />
     <Object type="App::Line" name="Y_Axis002" id="684" revision="2" file="Y_Axis002.xml" />
@@ -699,8 +697,8 @@ e1d.0 0:;SKT;:H22e,V;:H2dd,V
     <Object type="App::Plane" name="XY_Plane002" id="686" revision="1" file="XY_Plane002.xml" />
     <Object type="App::Plane" name="XZ_Plane002" id="687" revision="2" file="XZ_Plane002.xml" />
     <Object type="App::Plane" name="YZ_Plane002" id="688" revision="2" file="YZ_Plane002.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="BaseFeature" id="689" revision="122" file="BaseFeature.xml" />
-    <Object type="PartDesign::Body" name="Body003" id="690" revision="159" file="Body003.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="BaseFeature" id="689" revision="143" file="BaseFeature.xml" />
+    <Object type="PartDesign::Body" name="Body003" id="690" revision="180" file="Body003.xml" />
     <Object type="App::Origin" name="Origin003" id="691" revision="0" file="Origin003.xml" />
     <Object type="App::Line" name="X_Axis003" id="692" revision="1" file="X_Axis003.xml" />
     <Object type="App::Line" name="Y_Axis003" id="693" revision="2" file="Y_Axis003.xml" />
@@ -708,11 +706,11 @@ e1d.0 0:;SKT;:H22e,V;:H2dd,V
     <Object type="App::Plane" name="XY_Plane003" id="695" revision="1" file="XY_Plane003.xml" />
     <Object type="App::Plane" name="XZ_Plane003" id="696" revision="2" file="XZ_Plane003.xml" />
     <Object type="App::Plane" name="YZ_Plane003" id="697" revision="2" file="YZ_Plane003.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="BaseFeature001" id="698" revision="245" file="BaseFeature001.xml" />
-    <Object type="PartDesign::Boolean" name="Boolean001" id="699" revision="426" file="Boolean001.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Reference002" id="700" revision="118" file="Reference002.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Reference003" id="701" revision="141" file="Reference003.xml" />
-    <Object type="PartDesign::Body" name="Body004" id="702" revision="135" file="Body004.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="BaseFeature001" id="698" revision="266" file="BaseFeature001.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean001" id="699" revision="469" file="Boolean001.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Reference002" id="700" revision="139" file="Reference002.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Reference003" id="701" revision="162" file="Reference003.xml" />
+    <Object type="PartDesign::Body" name="Body004" id="702" revision="156" file="Body004.xml" />
     <Object type="App::Origin" name="Origin004" id="703" revision="0" file="Origin004.xml" />
     <Object type="App::Line" name="X_Axis004" id="704" revision="1" file="X_Axis004.xml" />
     <Object type="App::Line" name="Y_Axis004" id="705" revision="2" file="Y_Axis004.xml" />
@@ -720,8 +718,8 @@ e1d.0 0:;SKT;:H22e,V;:H2dd,V
     <Object type="App::Plane" name="XY_Plane004" id="707" revision="1" file="XY_Plane004.xml" />
     <Object type="App::Plane" name="XZ_Plane004" id="708" revision="2" file="XZ_Plane004.xml" />
     <Object type="App::Plane" name="YZ_Plane004" id="709" revision="2" file="YZ_Plane004.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="BaseFeature002" id="710" revision="240" file="BaseFeature002.xml" />
-    <Object type="PartDesign::Body" name="Body005" id="711" revision="171" file="Body005.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="BaseFeature002" id="710" revision="261" file="BaseFeature002.xml" />
+    <Object type="PartDesign::Body" name="Body005" id="711" revision="192" file="Body005.xml" />
     <Object type="App::Origin" name="Origin005" id="712" revision="0" file="Origin005.xml" />
     <Object type="App::Line" name="X_Axis005" id="713" revision="1" file="X_Axis005.xml" />
     <Object type="App::Line" name="Y_Axis005" id="714" revision="2" file="Y_Axis005.xml" />
@@ -729,16 +727,16 @@ e1d.0 0:;SKT;:H22e,V;:H2dd,V
     <Object type="App::Plane" name="XY_Plane005" id="716" revision="1" file="XY_Plane005.xml" />
     <Object type="App::Plane" name="XZ_Plane005" id="717" revision="2" file="XZ_Plane005.xml" />
     <Object type="App::Plane" name="YZ_Plane005" id="718" revision="2" file="YZ_Plane005.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="BaseFeature003" id="719" revision="133" file="BaseFeature003.xml" />
-    <Object type="PartDesign::Boolean" name="Boolean002" id="720" revision="430" file="Boolean002.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Reference004" id="721" revision="135" file="Reference004.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Reference005" id="722" revision="119" file="Reference005.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder" id="724" revision="134" file="Binder.xml" />
-    <Object type="PartDesign::SubShapeBinder" name="Binder001" id="726" revision="137" file="Binder001.xml" />
-    <Object type="PartDesign::LinearPattern" name="LinearPattern" id="727" revision="626" file="LinearPattern.xml" />
-    <Object type="PartDesign::Pad" name="Pad" id="728" revision="211" file="Pad.xml" />
-    <Object type="PartDesign::Pad" name="Pad001" id="733" revision="224" file="Pad001.xml" />
-    <Object type="App::Part" name="Part" id="734" revision="216" file="Part.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="BaseFeature003" id="719" revision="154" file="BaseFeature003.xml" />
+    <Object type="PartDesign::Boolean" name="Boolean002" id="720" revision="473" file="Boolean002.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Reference004" id="721" revision="156" file="Reference004.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Reference005" id="722" revision="140" file="Reference005.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder" id="724" revision="155" file="Binder.xml" />
+    <Object type="PartDesign::SubShapeBinder" name="Binder001" id="726" revision="158" file="Binder001.xml" />
+    <Object type="PartDesign::LinearPattern" name="LinearPattern" id="727" revision="694" file="LinearPattern.xml" />
+    <Object type="PartDesign::Pad" name="Pad" id="728" revision="273" file="Pad.xml" />
+    <Object type="PartDesign::Pad" name="Pad001" id="733" revision="286" file="Pad001.xml" />
+    <Object type="App::Part" name="Part" id="734" revision="278" file="Part.xml" />
     <Object type="App::Origin" name="Origin006" id="735" revision="0" file="Origin006.xml" />
   </Objects>
   <ObjectData Count="0">

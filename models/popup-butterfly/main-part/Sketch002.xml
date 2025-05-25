@@ -14,12 +14,11 @@
     <Property name="AttacherType" type="App::PropertyString" status="8">
       <String value="Attacher::AttachEnginePlane"/>
     </Property>
-    <Property name="AttachmentOffset" type="App::PropertyPlacement">
+    <Property name="AttachmentOffset" type="App::PropertyPlacement" status="8">
       <PropertyPlacement Px="0" Py="0" Pz="-1.85" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
     </Property>
     <Property name="AttachmentSupport" type="App::PropertyLinkSubList">
-      <LinkSubList count="1">
-        <Link obj="XY_Plane" sub=""/>
+      <LinkSubList count="0">
       </LinkSubList>
     </Property>
     <Property name="ColoredElements" type="App::PropertyLinkSubHidden" status="218103808">
@@ -184,10 +183,10 @@ TShapes 0
     <Property name="MapPathParameter" type="App::PropertyFloat" status="8">
       <Float value="0"/>
     </Property>
-    <Property name="MapReversed" type="App::PropertyBool">
+    <Property name="MapReversed" type="App::PropertyBool" status="8">
       <Bool value="false"/>
     </Property>
-    <Property name="Placement" type="App::PropertyPlacement" status="8388612">
+    <Property name="Placement" type="App::PropertyPlacement" status="8388608">
       <PropertyPlacement Px="0" Py="0" Pz="-1.85" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
     </Property>
     <Property name="Shape" type="Part::PropertyPartShape">
@@ -213,14 +212,14 @@ Triangulations 0
 
 TShapes 9
 Ve
-1e-07
+1.00000000073945e-05
 -2.05 -96 0
 0 0
 
 0101101
 *
 Ve
-1.00000000050634e-05
+1e-07
 -2.05 -25 0
 0 0
 
@@ -234,21 +233,21 @@ Ed
 0101000
 +9 0 -8 0 *
 Ve
-1.00000000050634e-05
+1.00000000073945e-05
 -27.95 -25 0
 0 0
 
 0101101
 *
 Ed
- 1.00000000050634e-05 1 1 0
+ 1e-07 1 1 0
 1  2 0 0 25.9
 0
 
 0101000
 +8 0 -6 0 *
 Ve
-1.00000000050634e-05
+1.00000000073945e-05
 -27.95 -96 0
 0 0
 
@@ -262,7 +261,7 @@ Ed
 0101000
 +4 0 -6 0 *
 Ed
- 1e-07 1 1 0
+ 1.00000000073945e-05 1 1 0
 1  4 0 0 25.9
 0
 
@@ -278,14 +277,14 @@ Wi
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="12">
 <![CDATA[
-5 PostfixCount 3
+7 PostfixCount 3
 Edge
 Vertex
 ;SKT
 
 MapCount 1
 
-ElementMap 1 5 2
+ElementMap 1 7 2
 
 Edge
 
@@ -314,12 +313,11 @@ EndMap
       </ElementMap2>
     </Property>
     <Property name="Support" type="App::PropertyLinkSubList" status="67108864">
-      <LinkSubList count="1">
-        <Link obj="XY_Plane" sub=""/>
+      <LinkSubList count="0">
       </LinkSubList>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
-      <Integer value="16"/>
+      <Integer value="1616"/>
     </Property>
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
