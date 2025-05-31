@@ -13,10 +13,18 @@
       <Expand name="Elements"/>
       <Expand name="Parts" count="3">
         <Expand name="Link" count="1">
-          <Expand name="Body"/>
+          <Expand name="Body" count="3">
+            <Expand name="Pad"/>
+            <Expand name="Pad001"/>
+            <Expand name="Pad002"/>
+          </Expand>
         </Expand>
         <Expand name="Link001" count="1">
-          <Expand name="Body"/>
+          <Expand name="Body" count="3">
+            <Expand name="Pad"/>
+            <Expand name="Pad001"/>
+            <Expand name="Pad002"/>
+          </Expand>
         </Expand>
         <Expand name="Link002" count="1">
           <Expand name="Body"/>
@@ -29,18 +37,16 @@
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position 66.526291 -114.12038 42.574104
-  orientation 0.92056364 0.22656839 0.31816563  1.3168151
-  nearDistance 118.64579
-  farDistance 159.82956
+  position 33.609303 -35.350357 4.7858448
+  orientation 0.93108118 0.2580739 0.25784877  1.6430229
+  nearDistance 26.99202
+  farDistance 68.263626
   aspectRatio 1
-  focalDistance 100
-  height 62.500301
+  focalDistance 18.370459
+  height 44.950302
 
 }
 ## overrideMode: Flat Lines
-  
-  
   ]]>
   </Camera>
 </Document>
