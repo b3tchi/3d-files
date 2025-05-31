@@ -6,34 +6,27 @@
  FreeCAD Document, see http://www.freecadweb.org for more information...
 -->
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
-<Expand />
-  <Camera extra="0" id="12" binding="0" view3d="1">
+<Expand  count="1">
+  <Expand name="Part" count="1">
+    <Expand name="Body" count="1">
+      <Expand name="Pad"/>
+    </Expand>
+  </Expand>
+</Expand>
+  <Camera>
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position -11.886223 16.786375 -1.6284666
-  orientation 0.93231672 -0.24731205 -0.26386061  1.576111
-  nearDistance -9.8885126
-  farDistance 69.83577
+  position 1.306221 0.2649231 1.719326
+  orientation -0.53869212 -0.59150684 -0.59994227  4.1417041
+  nearDistance -9.5983887
+  farDistance 1.4849806
   aspectRatio 1
   focalDistance 41.859913
-  height 58.409336
+  height 74.874207
 
 }
-## overrideMode: As Is]]>
+## overrideMode: As Is
+  ]]>
   </Camera>
-  <View3D id="12"><![CDATA[
-  <Properties Count="3" TransientCount="0">
-    <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
-      <Integer value="0"/>
-    </Property>
-    <Property name="ShowNaviCube" type="App::PropertyBool" status="1">
-      <Bool value="true"/>
-    </Property>
-    <Property name="ThumbnailView" type="App::PropertyBool" status="1">
-      <Bool value="false"/>
-    </Property>
-  </Properties>
-]]>
-  </View3D>
 </Document>
