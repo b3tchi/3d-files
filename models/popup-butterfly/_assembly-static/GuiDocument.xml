@@ -8,29 +8,12 @@
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
 <Expand  count="1">
   <Expand name="Part" count="1">
-    <Expand name="Assembly" count="1">
-      <Expand name="Parts" count="2">
-        <Expand name="Link" count="1">
-          <Expand name="Body" count="4">
-            <Expand name="Pad007"/>
-            <Expand name="Pad028"/>
-            <Expand name="Pad029"/>
-            <Expand name="Pad030"/>
-          </Expand>
-        </Expand>
-        <Expand name="Link006" count="1">
-          <Expand name="Assembly" count="1">
-            <Expand name="Parts" count="2">
-              <Expand name="Link" count="1">
-                <Expand name="Body"/>
-              </Expand>
-              <Expand name="Link001" count="1">
-                <Expand name="Body"/>
-              </Expand>
-            </Expand>
-          </Expand>
-        </Expand>
+    <Expand name="Assembly" count="3">
+      <Expand name="Constraints" count="1">
+        <Expand name="Constraint"/>
       </Expand>
+      <Expand name="Elements"/>
+      <Expand name="Parts"/>
     </Expand>
   </Expand>
 </Expand>
@@ -38,13 +21,13 @@
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position 79.415909 -110.43016 28.930412
-  orientation -0.7849344 -0.35795876 -0.50571072  4.8155956
-  nearDistance 14.910055
-  farDistance 182.7787
+  position -22.852089 -125.41398 46.710293
+  orientation -0.99847203 0.02912852 0.046960086  5.1713452
+  nearDistance -17.902582
+  farDistance 154.32903
   aspectRatio 1
-  focalDistance 62.722946
-  height 92.933006
+  focalDistance 60.005241
+  height 60.094227
 
 }
 ## overrideMode: Flat Lines]]>
