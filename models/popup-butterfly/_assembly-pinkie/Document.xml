@@ -46,7 +46,7 @@ You need to enable LockAngle for this to take effect.
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2025-05-31T17:50:19Z"/>
+      <String value="2025-06-01T07:38:37Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -87,28 +87,29 @@ You need to enable LockAngle for this to take effect.
       <Bool value="true"/>
     </Property>
   </Properties>
-  <Objects Count="22" Dependencies="1">
+  <Objects Count="23" Dependencies="1">
     <ObjectDeps Name="Assembly" Count="3">
-      <Dep Name="Elements"/>
       <Dep Name="Parts"/>
       <Dep Name="Constraints"/>
+      <Dep Name="Elements"/>
     </ObjectDeps>
     <ObjectDeps Name="Constraints" Count="3">
-      <Dep Name="Constraint002"/>
       <Dep Name="Constraint003"/>
       <Dep Name="Constraint"/>
+      <Dep Name="Constraint002"/>
     </ObjectDeps>
-    <ObjectDeps Name="Elements" Count="6">
-      <Dep Name="_Element002"/>
-      <Dep Name="_Element004"/>
-      <Dep Name="_Element001"/>
+    <ObjectDeps Name="Elements" Count="7">
       <Dep Name="_Element003"/>
+      <Dep Name="_Element004"/>
+      <Dep Name="Element001"/>
       <Dep Name="Element"/>
       <Dep Name="_Element"/>
+      <Dep Name="_Element001"/>
+      <Dep Name="_Element002"/>
     </ObjectDeps>
     <ObjectDeps Name="Parts" Count="2">
-      <Dep Name="Link001"/>
       <Dep Name="Link"/>
+      <Dep Name="Link001"/>
     </ObjectDeps>
     <ObjectDeps Name="Part" Count="2">
       <Dep Name="Origin"/>
@@ -117,68 +118,72 @@ You need to enable LockAngle for this to take effect.
     <ObjectDeps Name="Origin" Count="0"/>
     <ObjectDeps Name="Link" Count="0"/>
     <ObjectDeps Name="Constraint" Count="2">
-      <Dep Name="ElementLink"/>
       <Dep Name="Constraints"/>
+      <Dep Name="ElementLink"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink" Count="2">
-      <Dep Name="_Element"/>
       <Dep Name="Constraint"/>
+      <Dep Name="_Element"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element" Count="2">
-      <Dep Name="Elements"/>
       <Dep Name="Link"/>
+      <Dep Name="Elements"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element001" Count="1">
       <Dep Name="Elements"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element002" Count="2">
-      <Dep Name="Elements"/>
       <Dep Name="Link"/>
+      <Dep Name="Elements"/>
     </ObjectDeps>
     <ObjectDeps Name="Link001" Count="0"/>
     <ObjectDeps Name="Constraint002" Count="3">
-      <Dep Name="ElementLink004"/>
       <Dep Name="Constraints"/>
       <Dep Name="ElementLink003"/>
+      <Dep Name="ElementLink004"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink003" Count="2">
       <Dep Name="_Element003"/>
       <Dep Name="Constraint002"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element003" Count="2">
-      <Dep Name="Elements"/>
       <Dep Name="Link001"/>
+      <Dep Name="Elements"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink004" Count="2">
-      <Dep Name="_Element002"/>
       <Dep Name="Constraint002"/>
+      <Dep Name="_Element002"/>
     </ObjectDeps>
     <ObjectDeps Name="Constraint003" Count="3">
+      <Dep Name="Constraints"/>
       <Dep Name="ElementLink005"/>
       <Dep Name="ElementLink006"/>
-      <Dep Name="Constraints"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink005" Count="2">
-      <Dep Name="_Element004"/>
       <Dep Name="Constraint003"/>
+      <Dep Name="_Element004"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element004" Count="2">
-      <Dep Name="Elements"/>
       <Dep Name="Link001"/>
+      <Dep Name="Elements"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink006" Count="2">
-      <Dep Name="_Element002"/>
       <Dep Name="Constraint003"/>
+      <Dep Name="_Element002"/>
     </ObjectDeps>
     <ObjectDeps Name="Element" Count="2">
-      <Dep Name="Elements"/>
       <Dep Name="Link"/>
+      <Dep Name="Elements"/>
     </ObjectDeps>
-    <Object type="Part::FeaturePython" name="Assembly" id="2417" revision="220" ViewType="Gui::ViewProviderLinkPython" file="Assembly.xml" />
+    <ObjectDeps Name="Element001" Count="2">
+      <Dep Name="Link"/>
+      <Dep Name="Elements"/>
+    </ObjectDeps>
+    <Object type="Part::FeaturePython" name="Assembly" id="2417" revision="222" ViewType="Gui::ViewProviderLinkPython" file="Assembly.xml" />
     <Object type="App::FeaturePython" name="Constraints" id="2418" revision="101" ViewType="Gui::ViewProviderLinkPython" file="Constraints.xml" />
-    <Object type="App::FeaturePython" name="Elements" id="2419" revision="81" ViewType="Gui::ViewProviderLinkPython" file="Elements.xml" />
+    <Object type="App::FeaturePython" name="Elements" id="2419" revision="83" ViewType="Gui::ViewProviderLinkPython" file="Elements.xml" />
     <Object type="Part::FeaturePython" name="Parts" id="2420" revision="112" ViewType="Gui::ViewProviderLinkPython" file="Parts.xml" />
-    <Object type="App::Part" name="Part" id="2421" revision="117" file="Part.xml" />
+    <Object type="App::Part" name="Part" id="2421" revision="118" file="Part.xml" />
     <Object type="App::Origin" name="Origin" id="2422" revision="0" file="Origin.xml" />
     <Object type="App::Link" name="Link" id="2423" revision="399" file="Link.xml" />
     <Object type="App::FeaturePython" name="Constraint" id="2424" revision="43" ViewType="Gui::ViewProviderLinkPython" file="Constraint.xml" />
@@ -196,6 +201,7 @@ You need to enable LockAngle for this to take effect.
     <Object type="Part::FeaturePython" name="_Element004" id="2440" revision="25" file="_Element004.xml" />
     <Object type="App::FeaturePython" name="ElementLink006" id="2441" revision="157" ViewType="Gui::ViewProviderLinkPython" file="ElementLink006.xml" />
     <Object type="Part::FeaturePython" name="Element" id="2442" revision="27" file="Element.xml" />
+    <Object type="Part::FeaturePython" name="Element001" id="2443" revision="7" file="Element001.xml" />
   </Objects>
   <ObjectData Count="0">
   </ObjectData>
