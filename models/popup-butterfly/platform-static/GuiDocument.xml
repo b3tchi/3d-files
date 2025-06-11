@@ -6,50 +6,45 @@
  FreeCAD Document, see http://www.freecadweb.org for more information...
 -->
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
-<Expand  count="1">
+<Expand  count="2">
   <Expand name="Part" count="1">
-    <Expand name="Body" count="11">
+    <Expand name="Body" count="14">
       <Expand name="Boolean006"/>
       <Expand name="Pad005"/>
       <Expand name="Pad019"/>
       <Expand name="Pad035"/>
       <Expand name="Pad007"/>
       <Expand name="Pad028"/>
+      <Expand name="Pad041"/>
       <Expand name="Pad029"/>
       <Expand name="Pad030"/>
       <Expand name="Pad036"/>
+      <Expand name="Pad037"/>
       <Expand name="Pad038"/>
       <Expand name="Pad039"/>
+      <Expand name="Pad040"/>
+    </Expand>
+  </Expand>
+  <Expand name="CopyOnChangeGroup" count="1">
+    <Expand name="Part011" count="1">
+      <Expand name="Body044"/>
     </Expand>
   </Expand>
 </Expand>
-  <Camera extra="0" id="28" binding="0" view3d="1">
+  <Camera>
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position 19.130436 -94.016624 -59.204796
-  orientation 0.9916895 -0.12863179 -0.0024317259  3.1041024
-  nearDistance 55.292324
-  farDistance 79.030182
+  position 8.2953339 -4.0619049 -10.053265
+  orientation -0.0031215623 0.5961138 0.80289382  3.1500015
+  nearDistance -123.42671
+  farDistance 98.810989
   aspectRatio 1
-  focalDistance 56.984234
-  height 53.388172
+  focalDistance 72.538841
+  height 104.29982
 
 }
-## overrideMode: Flat Lines]]>
+## overrideMode: Flat Lines
+  ]]>
   </Camera>
-  <View3D id="28"><![CDATA[
-  <Properties Count="3" TransientCount="0">
-    <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
-      <Integer value="6"/>
-    </Property>
-    <Property name="ShowNaviCube" type="App::PropertyBool" status="1">
-      <Bool value="true"/>
-    </Property>
-    <Property name="ThumbnailView" type="App::PropertyBool" status="1">
-      <Bool value="false"/>
-    </Property>
-  </Properties>
-]]>
-  </View3D>
 </Document>
