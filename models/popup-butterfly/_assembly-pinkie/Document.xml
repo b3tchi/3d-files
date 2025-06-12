@@ -46,7 +46,7 @@ You need to enable LockAngle for this to take effect.
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2025-06-08T16:20:25Z"/>
+      <String value="2025-06-12T17:54:35Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -89,62 +89,62 @@ You need to enable LockAngle for this to take effect.
   </Properties>
   <Objects Count="23" Dependencies="1">
     <ObjectDeps Name="Assembly" Count="3">
+      <Dep Name="Elements"/>
       <Dep Name="Constraints"/>
       <Dep Name="Parts"/>
-      <Dep Name="Elements"/>
     </ObjectDeps>
     <ObjectDeps Name="Constraints" Count="3">
-      <Dep Name="Constraint"/>
       <Dep Name="Constraint003"/>
+      <Dep Name="Constraint"/>
       <Dep Name="Constraint002"/>
     </ObjectDeps>
     <ObjectDeps Name="Elements" Count="7">
-      <Dep Name="Element001"/>
-      <Dep Name="Element"/>
-      <Dep Name="_Element002"/>
       <Dep Name="_Element003"/>
-      <Dep Name="_Element"/>
+      <Dep Name="_Element002"/>
       <Dep Name="_Element004"/>
       <Dep Name="_Element001"/>
+      <Dep Name="Element"/>
+      <Dep Name="_Element"/>
+      <Dep Name="Element001"/>
     </ObjectDeps>
     <ObjectDeps Name="Parts" Count="2">
       <Dep Name="Link"/>
       <Dep Name="Link001"/>
     </ObjectDeps>
     <ObjectDeps Name="Part" Count="2">
-      <Dep Name="Origin"/>
       <Dep Name="Assembly"/>
+      <Dep Name="Origin"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="0"/>
     <ObjectDeps Name="Link" Count="0"/>
     <ObjectDeps Name="Constraint" Count="2">
-      <Dep Name="Constraints"/>
       <Dep Name="ElementLink"/>
+      <Dep Name="Constraints"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink" Count="2">
-      <Dep Name="Constraint"/>
       <Dep Name="_Element"/>
+      <Dep Name="Constraint"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element" Count="2">
-      <Dep Name="Link"/>
       <Dep Name="Elements"/>
+      <Dep Name="Link"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element001" Count="1">
       <Dep Name="Elements"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element002" Count="2">
-      <Dep Name="Link"/>
       <Dep Name="Elements"/>
+      <Dep Name="Link"/>
     </ObjectDeps>
     <ObjectDeps Name="Link001" Count="0"/>
     <ObjectDeps Name="Constraint002" Count="3">
       <Dep Name="Constraints"/>
-      <Dep Name="ElementLink004"/>
       <Dep Name="ElementLink003"/>
+      <Dep Name="ElementLink004"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink003" Count="2">
-      <Dep Name="Constraint002"/>
       <Dep Name="_Element003"/>
+      <Dep Name="Constraint002"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element003" Count="2">
       <Dep Name="Elements"/>
@@ -155,9 +155,9 @@ You need to enable LockAngle for this to take effect.
       <Dep Name="Constraint002"/>
     </ObjectDeps>
     <ObjectDeps Name="Constraint003" Count="3">
+      <Dep Name="ElementLink006"/>
       <Dep Name="Constraints"/>
       <Dep Name="ElementLink005"/>
-      <Dep Name="ElementLink006"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink005" Count="2">
       <Dep Name="Constraint003"/>
@@ -168,16 +168,16 @@ You need to enable LockAngle for this to take effect.
       <Dep Name="Link001"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink006" Count="2">
-      <Dep Name="_Element002"/>
       <Dep Name="Constraint003"/>
+      <Dep Name="_Element002"/>
     </ObjectDeps>
     <ObjectDeps Name="Element" Count="2">
-      <Dep Name="Link"/>
       <Dep Name="Elements"/>
+      <Dep Name="Link"/>
     </ObjectDeps>
     <ObjectDeps Name="Element001" Count="2">
-      <Dep Name="Link"/>
       <Dep Name="Elements"/>
+      <Dep Name="Link"/>
     </ObjectDeps>
     <Object type="Part::FeaturePython" name="Assembly" id="2417" revision="222" ViewType="Gui::ViewProviderLinkPython" file="Assembly.xml" />
     <Object type="App::FeaturePython" name="Constraints" id="2418" revision="101" ViewType="Gui::ViewProviderLinkPython" file="Constraints.xml" />

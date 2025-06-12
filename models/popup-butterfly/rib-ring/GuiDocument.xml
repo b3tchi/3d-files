@@ -13,23 +13,33 @@
     </Expand>
   </Expand>
 </Expand>
-  <Camera>
+  <Camera extra="0" id="47" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
   position 1.306221 0.2649231 1.719326
-  orientation -0.53869212 -0.59150684 -0.59994227  4.1417041
+  orientation -0.53869206 -0.59150678 -0.59994227  4.1417041
   nearDistance -9.5983887
-  farDistance 1.4849806
+  farDistance 1.4849826
   aspectRatio 1
   focalDistance 41.859913
   height 74.874207
 
 }
-## overrideMode: As Is
-  
-  
-  
-  ]]>
+## overrideMode: As Is]]>
   </Camera>
+  <View3D id="47"><![CDATA[
+  <Properties Count="3" TransientCount="0">
+    <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
+      <Integer value="0"/>
+    </Property>
+    <Property name="ShowNaviCube" type="App::PropertyBool" status="1">
+      <Bool value="true"/>
+    </Property>
+    <Property name="ThumbnailView" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+  </Properties>
+]]>
+  </View3D>
 </Document>
