@@ -7,7 +7,7 @@
     </Extension>
   </Extensions>
   <Properties Count="19" TransientCount="1">
-    <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881025"/>
+    <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881024"/>
     <Property name="ColoredElements" type="App::PropertyLinkSubHidden" status="218103808">
       <LinkSub value="" count="0">
       </LinkSub>
@@ -33,8 +33,8 @@
     <Property name="LinkTransform" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097418">
       <Bool value="true"/>
     </Property>
-    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097413">
-      <XLink file="" stamp="" name="Binder" sub="?Edge340" shadow=";#1397e;:H4b1,E;:H6cb,E;:H93:8,E;:H91:11,E;:H364:1b,E;:H360:26,E;:X;BND:0:0;:H387:3c,E;:H-341:47,E.Edge340"/>
+    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
+      <XLink file="" stamp="" name="Binder" sub="Edge198" shadow=";#14e51;:Hafe,E;:Hb00,E;:H93:8,E;:H91:11,E;:H364:1b,E;:H360:26,E;:X;BND:0:0;:H387:3c,E;:H-341:47,E.Edge198"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -45,8 +45,8 @@
     <Property name="Proxy" type="App::PropertyPythonObject">
       <Python  module="freecad.asm3.assembly" class="AsmElement" value="null"/>
     </Property>
-    <Property name="Shape" type="Part::PropertyPartShape" status="1">
-      <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
+    <Property name="Shape" type="Part::PropertyPartShape">
+      <Part ElementMap="0.15.70200.4" brep="1">
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
@@ -56,9 +56,9 @@ Locations 26
               0               1               0               0 
               0               0               1               0 
 1
-0.945518575593482 2.28016792319951e-19 0.325568154474103 -0.0472759287795163 
--1.73658208003034e-16               1 5.03639690877286e-16 0.149999998545747 
--0.325568154474103 -5.32738265419461e-16 0.945518575593482 1.86627840772267 
+0.945518575599317 -1.16553812731154e-16 0.325568154457156 3.63945412974349e-15 
+1.6761370978811e-16               1 -1.28784289324999e-16 -2.32364098112774e-14 
+-0.325568154457156 1.76337623959576e-16 0.945518575599317 1.85000000000002 
 1
               1               0               0               0 
               0               1               0               0 
@@ -144,14 +144,14 @@ Locations 26
               0               1               0               0 
               0               0               1               0 
 1
-              1 3.69746374427356e-18 5.55111512312578e-17 9.71445146547012e-17 
--3.69746374427356e-18               1 -9.93779851303814e-32               0 
--5.55111512312578e-17 9.91727346613009e-32               1               0 
+              1 2.2801679231995e-19 5.55111512312578e-17 9.0205620750794e-17 
+-2.2801679231995e-19               1               0               0 
+-5.55111512312578e-17 -1.2657474641739e-35               1               0 
 2  3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 0
 2  24 -1 23 -1 22 -1 21 -1 20 -1 19 -1 18 -1 17 -1 16 -1 15 -1 14 -1 13 -1 12 -1 11 -1 10 -1 9 -1 8 -1 7 -1 6 -1 5 -1 4 -1 3 -1 0
 Curve2ds 0
 Curves 1
-2 2.0499999999999998 9.9999999999999998e-17 0 0 0 1 1 0 0 0 1 0 1.05
+2 2.0499999999999998 9.9999999999999998e-17 0 0 0 1 1 0 -0 -0 1 0 1.05
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -183,38 +183,7 @@ Co
 
 +1 1 ]]>
       </Part>
-      <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
-      <ElementMap2 count="2">
-<![CDATA[
-15 PostfixCount 4
-Edge
-Vertex
-;:H382,E
-;:H382,V
-
-MapCount 1
-
-ElementMap 1 15 2
-
-Edge
-
-ChildCount 0
-
-NameCount 2
-0
-:1.1.3 0
-
-Vertex
-
-ChildCount 0
-
-NameCount 2
-0
-:2.1.4 0
-
-EndMap
-]]>
-      </ElementMap2>
+      <ElementMap/>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
       <Integer value="72"/>
