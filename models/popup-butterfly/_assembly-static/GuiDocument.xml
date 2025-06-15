@@ -13,9 +13,10 @@
         <Expand name="Constraint004"/>
       </Expand>
       <Expand name="Elements"/>
-      <Expand name="Parts" count="3">
+      <Expand name="Parts" count="4">
         <Expand name="Link" count="1">
-          <Expand name="Body" count="4">
+          <Expand name="Body" count="5">
+            <Expand name="Pad028"/>
             <Expand name="Pad029"/>
             <Expand name="Pad037"/>
             <Expand name="Pad042"/>
@@ -24,6 +25,21 @@
         </Expand>
         <Expand name="Link001" count="1">
           <Expand name="Body"/>
+        </Expand>
+        <Expand name="Link006" count="1">
+          <Expand name="Assembly" count="1">
+            <Expand name="Parts" count="1">
+              <Expand name="Link001" count="1">
+                <Expand name="Body" count="5">
+                  <Expand name="Pad"/>
+                  <Expand name="Pad002"/>
+                  <Expand name="Pad004"/>
+                  <Expand name="Pad005"/>
+                  <Expand name="Pad003"/>
+                </Expand>
+              </Expand>
+            </Expand>
+          </Expand>
         </Expand>
         <Expand name="Link008" count="1">
           <Expand name="Assembly" count="1">
@@ -42,13 +58,13 @@
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position 73.064705 -75.547867 25.695412
-  orientation 0.27453133 0.55686015 0.78392565  2.4040098
-  nearDistance -34.938454
-  farDistance 154.42587
+  position 59.011917 -106.39585 13.440941
+  orientation -0.66072291 -0.43418211 -0.61231613  4.6418138
+  nearDistance -21.07271
+  farDistance 154.56488
   aspectRatio 1
   focalDistance 51.06123
-  height 32.934006
+  height 49.050014
 
 }
 ## overrideMode: Flat Lines]]>
