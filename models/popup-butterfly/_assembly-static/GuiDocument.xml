@@ -9,14 +9,18 @@
 <Expand  count="1">
   <Expand name="Part" count="1">
     <Expand name="Assembly" count="2">
-      <Expand name="Constraints" count="1">
-        <Expand name="Constraint004"/>
-      </Expand>
+      <Expand name="Constraints"/>
       <Expand name="Parts" count="3">
         <Expand name="Link004"/>
         <Expand name="Link008" count="1">
           <Expand name="Assembly" count="1">
-            <Expand name="Parts"/>
+            <Expand name="Parts" count="1">
+              <Expand name="Link001" count="1">
+                <Expand name="Assembly" count="1">
+                  <Expand name="Parts"/>
+                </Expand>
+              </Expand>
+            </Expand>
           </Expand>
         </Expand>
         <Expand name="Link009" count="1">
@@ -41,22 +45,22 @@
     </Expand>
   </Expand>
 </Expand>
-  <Camera extra="0" id="64" binding="0" view3d="1">
+  <Camera extra="0" id="85" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position 39.82547 58.084595 15.344942
-  orientation 0.098429352 0.671197 0.7347151  2.9269328
-  nearDistance 48.764839
-  farDistance 200.8251
+  position 59.399029 3.9016724 23.918682
+  orientation 0.30352286 0.60554796 0.7356531  2.4350562
+  nearDistance 1.5538568
+  farDistance 192.09837
   aspectRatio 1
   focalDistance 51.06123
-  height 37.631435
+  height 125.14922
 
 }
 ## overrideMode: Flat Lines]]>
   </Camera>
-  <View3D id="64"><![CDATA[
+  <View3D id="85"><![CDATA[
   <Properties Count="21" TransientCount="0">
     <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
       <Integer value="6"/>

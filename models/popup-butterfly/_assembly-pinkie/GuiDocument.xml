@@ -8,54 +8,38 @@
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
 <Expand  count="1">
   <Expand name="Part" count="1">
-    <Expand name="Assembly" count="3">
-      <Expand name="Constraints" count="1">
-        <Expand name="Constraint002"/>
-      </Expand>
-      <Expand name="Elements"/>
-      <Expand name="Parts" count="2">
-        <Expand name="Link" count="1">
-          <Expand name="Body" count="4">
-            <Expand name="Pad001"/>
-            <Expand name="Pad002"/>
-            <Expand name="Pad004"/>
-            <Expand name="Pad005"/>
-          </Expand>
-        </Expand>
-        <Expand name="Link001" count="1">
-          <Expand name="Assembly" count="1">
-            <Expand name="Parts" count="1">
-              <Expand name="Link" count="1">
-                <Expand name="Body"/>
-              </Expand>
-            </Expand>
-          </Expand>
-        </Expand>
-      </Expand>
+    <Expand name="Assembly" count="1">
+      <Expand name="Parts"/>
     </Expand>
   </Expand>
 </Expand>
-  <Camera>
+  <Camera extra="0" id="82" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position 95.284653 -30.890224 -5.0587034
-  orientation 0.65595233 0.52177477 0.5454151  1.9395022
-  nearDistance 54.112965
-  farDistance 147.20898
+  position -80.108543 -65.484375 10.84662
+  orientation 0.86015952 -0.34567815 -0.3750098  1.6399349
+  nearDistance 67.155373
+  farDistance 145.4296
   aspectRatio 1
   focalDistance 100
-  height 19.658466
+  height 94.648941
 
 }
-## overrideMode: As Is
-  
-  
-  
-  
-  
-  
-  
-  ]]>
+## overrideMode: As Is]]>
   </Camera>
+  <View3D id="82"><![CDATA[
+  <Properties Count="3" TransientCount="0">
+    <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
+      <Integer value="0"/>
+    </Property>
+    <Property name="ShowNaviCube" type="App::PropertyBool" status="1">
+      <Bool value="true"/>
+    </Property>
+    <Property name="ThumbnailView" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+  </Properties>
+]]>
+  </View3D>
 </Document>
