@@ -8,14 +8,15 @@
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
 <Expand  count="1">
   <Expand name="Part" count="1">
-    <Expand name="Assembly" count="3">
+    <Expand name="Assembly" count="2">
       <Expand name="Constraints" count="1">
         <Expand name="Constraint004"/>
       </Expand>
-      <Expand name="Elements"/>
-      <Expand name="Parts" count="4">
+      <Expand name="Parts" count="5">
         <Expand name="Link" count="1">
-          <Expand name="Body" count="5">
+          <Expand name="Body" count="7">
+            <Expand name="Pad019"/>
+            <Expand name="Pad020"/>
             <Expand name="Pad028"/>
             <Expand name="Pad029"/>
             <Expand name="Pad037"/>
@@ -23,12 +24,15 @@
             <Expand name="Pad043"/>
           </Expand>
         </Expand>
-        <Expand name="Link001" count="1">
-          <Expand name="Body"/>
-        </Expand>
+        <Expand name="Link001"/>
         <Expand name="Link006" count="1">
           <Expand name="Assembly" count="1">
-            <Expand name="Parts" count="1">
+            <Expand name="Parts" count="3">
+              <Expand name="Link" count="1">
+                <Expand name="Body" count="1">
+                  <Expand name="Pad001"/>
+                </Expand>
+              </Expand>
               <Expand name="Link001" count="1">
                 <Expand name="Body" count="5">
                   <Expand name="Pad"/>
@@ -38,14 +42,50 @@
                   <Expand name="Pad003"/>
                 </Expand>
               </Expand>
+              <Expand name="Link003" count="1">
+                <Expand name="Body"/>
+              </Expand>
             </Expand>
           </Expand>
         </Expand>
         <Expand name="Link008" count="1">
           <Expand name="Assembly" count="1">
-            <Expand name="Parts" count="1">
+            <Expand name="Parts" count="2">
               <Expand name="Link" count="1">
                 <Expand name="Body"/>
+              </Expand>
+              <Expand name="Link001" count="1">
+                <Expand name="Assembly" count="1">
+                  <Expand name="Parts" count="3">
+                    <Expand name="Link" count="1">
+                      <Expand name="Body"/>
+                    </Expand>
+                    <Expand name="Link003" count="1">
+                      <Expand name="Body"/>
+                    </Expand>
+                    <Expand name="Link004" count="1">
+                      <Expand name="Body"/>
+                    </Expand>
+                  </Expand>
+                </Expand>
+              </Expand>
+            </Expand>
+          </Expand>
+        </Expand>
+        <Expand name="Link009" count="1">
+          <Expand name="Assembly" count="1">
+            <Expand name="Parts" count="2">
+              <Expand name="Link" count="1">
+                <Expand name="Body"/>
+              </Expand>
+              <Expand name="Link001" count="1">
+                <Expand name="Assembly" count="1">
+                  <Expand name="Parts" count="1">
+                    <Expand name="Link" count="1">
+                      <Expand name="Body"/>
+                    </Expand>
+                  </Expand>
+                </Expand>
               </Expand>
             </Expand>
           </Expand>
@@ -58,13 +98,13 @@
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position 59.011917 -106.39585 13.440941
-  orientation -0.66072291 -0.43418211 -0.61231613  4.6418138
-  nearDistance -21.07271
-  farDistance 154.56488
+  position 47.954132 -44.614113 39.588154
+  orientation 0.19397928 0.4078742 0.89219439  2.3390136
+  nearDistance -17.297741
+  farDistance 127.7534
   aspectRatio 1
   focalDistance 51.06123
-  height 49.050014
+  height 56.987877
 
 }
 ## overrideMode: Flat Lines]]>
