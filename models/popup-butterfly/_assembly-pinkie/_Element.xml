@@ -33,8 +33,8 @@
     <Property name="LinkTransform" type="App::PropertyBool" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097418">
       <Bool value="true"/>
     </Property>
-    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097412">
-      <XLink file="" stamp="" name="Link" sub="Body.Pad005.Face6" shadow="Body.Pad005.;#b17;:M;FUS;:H8e:7,F.Face6"/>
+    <Property name="LinkedObject" type="App::PropertyXLink" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097413">
+      <XLink file="" stamp="" name="Link" sub="Body.Pad005.?Face6" shadow="Body.Pad005.;#b17;:M;FUS;:H8e:7,F.Face6"/>
     </Property>
     <Property name="Offset" type="App::PropertyPlacement" group=" Link" attr="0" ro="0" hide="0" doc="" status="2097152">
       <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="0" Q2="0" Q3="1" A="0" Ox="0" Oy="0" Oz="1"/>
@@ -45,7 +45,7 @@
     <Property name="Proxy" type="App::PropertyPythonObject">
       <Python  module="freecad.asm3.assembly" class="AsmElement" value="null"/>
     </Property>
-    <Property name="Shape" type="Part::PropertyPartShape">
+    <Property name="Shape" type="Part::PropertyPartShape" status="1">
       <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
 <![CDATA[
 
@@ -186,7 +186,7 @@ Wi
 Fa
 0  1e-07 1 6
 
-0101000
+0111000
 +4 0 *
 Co
 
@@ -202,10 +202,13 @@ Co
       <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
       <ElementMap2 count="11">
 <![CDATA[
-1 PostfixCount 3
+1 PostfixCount 6
 Edge
 Face
 Vertex
+;:H97a,F
+;:H,E;:H:5,E;:H97a,E;:H:8,E
+;:H,V;:H:5,V;:H97a,V;:H:8,V
 
 MapCount 2
 
@@ -217,11 +220,11 @@ ChildCount 0
 
 NameCount 6
 0
-;#555;:M3#ec6;FUS;:H-98:c,E;:X;:H98:3,E.0 0
-;#c10;:M;FUS;:H8e:7,E;:X;:H98:3,E.0 0
-;#c1a;:H8e,E;:X;:H98:3,E.0 0
-;#ce0;:H8e,E;:X;:H98:3,E.0 0
-;#d05;:M;FUS;:H8e:7,E;:X;:H98:3,E.0 0
+;#555;:M3#ec6;FUS;:H-98:c,E;:X;:H98:3,E.5 0
+;#c10;:M;FUS;:H8e:7,E;:X;:H98:3,E.5 0
+;#c1a;:H8e,E;:X;:H98:3,E.5 0
+;#ce0;:H8e,E;:X;:H98:3,E.5 0
+;#d05;:M;FUS;:H8e:7,E;:X;:H98:3,E.5 0
 
 Face
 
@@ -229,7 +232,7 @@ ChildCount 0
 
 NameCount 2
 0
-;#28;:X;:H98:3,F.0 0
+;#28;:X;:H98:3,F.4 0
 
 Vertex
 
@@ -237,11 +240,11 @@ ChildCount 0
 
 NameCount 6
 0
-;#e4a;:M;FUS;:H8e:7,V;:X;:H98:3,V.0 0
-;#671;:M#ed4;FUS;:H-98:b,V;:X;:H98:3,V.0 0
-;#c06;:H8e,V;:X;:H98:3,V.0 0
-;#c0d;:H8e,V;:X;:H98:3,V.0 0
-;#cd0;:H8e,V;:X;:H98:3,V.0 0
+;#e4a;:M;FUS;:H8e:7,V;:X;:H98:3,V.6 0
+;#671;:M#ed4;FUS;:H-98:b,V;:X;:H98:3,V.6 0
+;#c06;:H8e,V;:X;:H98:3,V.6 0
+;#c0d;:H8e,V;:X;:H98:3,V.6 0
+;#cd0;:H8e,V;:X;:H98:3,V.6 0
 
 EndMap
 
@@ -250,7 +253,7 @@ ElementMap 2 1 3
 Edge
 
 ChildCount 1
-1 0 5 0 1 ;:H,E;:H:5,E 0
+1 0 5 0 1 ;:H97a,E;:H:8,E 0
 
 NameCount 0
 
@@ -260,12 +263,12 @@ ChildCount 0
 
 NameCount 2
 0
-;#28;:X;:H98:3,F.0 0
+;#28;:X;:H98:3,F.4 0
 
 Vertex
 
 ChildCount 1
-1 0 5 0 1 ;:H,V;:H:5,V 0
+1 0 5 0 1 ;:H97a,V;:H:8,V 0
 
 NameCount 0
 

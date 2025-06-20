@@ -8,20 +8,65 @@
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
 <Expand  count="1">
   <Expand name="Part" count="1">
-    <Expand name="Assembly"/>
+    <Expand name="Assembly" count="2">
+      <Expand name="Constraints"/>
+      <Expand name="Parts" count="4">
+        <Expand name="Link" count="1">
+          <Expand name="Body" count="2">
+            <Expand name="Pad018"/>
+            <Expand name="Pad043"/>
+          </Expand>
+        </Expand>
+        <Expand name="Link004"/>
+        <Expand name="Link008" count="1">
+          <Expand name="Assembly" count="1">
+            <Expand name="Parts" count="2">
+              <Expand name="Link" count="1">
+                <Expand name="Body" count="1">
+                  <Expand name="Pad002"/>
+                </Expand>
+              </Expand>
+              <Expand name="Link001" count="1">
+                <Expand name="Assembly" count="1">
+                  <Expand name="Parts"/>
+                </Expand>
+              </Expand>
+            </Expand>
+          </Expand>
+        </Expand>
+        <Expand name="Link009" count="1">
+          <Expand name="Assembly" count="1">
+            <Expand name="Parts" count="2">
+              <Expand name="Link" count="1">
+                <Expand name="Body"/>
+              </Expand>
+              <Expand name="Link001" count="1">
+                <Expand name="Assembly" count="1">
+                  <Expand name="Parts" count="1">
+                    <Expand name="Link" count="1">
+                      <Expand name="Body"/>
+                    </Expand>
+                  </Expand>
+                </Expand>
+              </Expand>
+            </Expand>
+          </Expand>
+        </Expand>
+      </Expand>
+    </Expand>
   </Expand>
 </Expand>
   <Camera extra="0" id="91" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position 51.48156 -39.567722 10.056091
-  orientation -0.19591302 -0.52421206 -0.8287459  3.7423096
-  nearDistance -37.588181
-  farDistance 147.91116
+  position 4.857151 -1.0216064 11.592012
+  orientation -0.0031682819 0.56457019 0.82537907  3.150857
+  nearDistance -18.490854
+  farDistance 153.37367
   aspectRatio 1
   focalDistance 51.06123
-  height 234.19954
+  height 125.56714
 
 }
 ## overrideMode: Flat Lines]]>
