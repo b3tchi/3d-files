@@ -110,7 +110,7 @@
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="10" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
             <GeoExtension type="Sketcher::ExternalGeometryExtension" Ref="Boolean.;#f1c;:Hee1,E;:Hee2,E;:Hed1:8,E;:X;BND:0:0;:Hecf:b,E;:H-138f:15,E;:H138f,E;:H,E;:H1395:5,E" Flags="0"/>
           </GeoExtensions>
-          <LineSegment StartX="82.65094702978533" StartY="12.94356999674426" StartZ="0" EndX="62.73337426286405" EndY="3.655853283669423" EndZ="0"/>
+          <LineSegment StartX="82.65094702978533" StartY="12.94356999674426" StartZ="-7.888609052210118e-31" EndX="62.73337426286405" EndY="3.655853283669423" EndZ="9.860761315262648e-31"/>
           <Construction value="1"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="11" ref="Boolean.;#f17;:Hee1,E;:Hee2,E;:Hed1:8,E;:X;BND:0:0;:Hecf:b,E;:H-138f:15,E;:H138f,E;:H,E;:H1395:5,E" migrated="1">
@@ -118,7 +118,7 @@
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="11" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
             <GeoExtension type="Sketcher::ExternalGeometryExtension" Ref="Boolean.;#f17;:Hee1,E;:Hee2,E;:Hed1:8,E;:X;BND:0:0;:Hecf:b,E;:H-138f:15,E;:H138f,E;:H,E;:H1395:5,E" Flags="0"/>
           </GeoExtensions>
-          <LineSegment StartX="21.02689387746831" StartY="1.834909024647678" StartZ="0" EndX="34.49999999999996" EndY="0.6561649764444462" EndZ="0"/>
+          <LineSegment StartX="21.02689387746831" StartY="1.834909024647678" StartZ="-9.860761315262648e-32" EndX="34.49999999999996" EndY="0.6561649764444462" EndZ="3.944304526105059e-31"/>
           <Construction value="1"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="25" ref="Boolean.;#f1e;:Hee1,E;:Hee2,E;:Hed1:8,E;:X;BND:0:0;:Hecf:b,E;:H-138f:15,E;:H138f,E;:H,E;:H1395:5,E" migrated="1">
@@ -126,7 +126,7 @@
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="25" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000010" geometryLayer="0"/>
             <GeoExtension type="Sketcher::ExternalGeometryExtension" Ref="Boolean.;#f1e;:Hee1,E;:Hee2,E;:Hed1:8,E;:X;BND:0:0;:Hecf:b,E;:H-138f:15,E;:H138f,E;:H,E;:H1395:5,E" Flags="0"/>
           </GeoExtensions>
-          <LineSegment StartX="62.73337426286407" StartY="3.655853283669436" StartZ="0" EndX="49.49999999999998" EndY="1.322452355313502" EndZ="0"/>
+          <LineSegment StartX="62.73337426286407" StartY="3.655853283669436" StartZ="-1.97215226305253e-31" EndX="49.49999999999998" EndY="1.322452355313502" EndZ="1.380506584136771e-30"/>
           <Construction value="1"/>
         </Geometry>
       </GeometryList>
@@ -262,7 +262,7 @@ TShapes 0
       <Bool value="false"/>
     </Property>
     <Property name="Placement" type="App::PropertyPlacement" status="8388612">
-      <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0.5" Q1="0.5" Q2="0.5" Q3="0.5000000000000003" A="2.094395102393195" Ox="0.5773502691896258" Oy="0.5773502691896258" Oz="0.5773502691896258"/>
+      <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0.4999999999999999" Q1="0.4999999999999999" Q2="0.4999999999999999" Q3="0.5000000000000003" A="2.094395102393195" Ox="0.5773502691896258" Oy="0.5773502691896258" Oz="0.5773502691896258"/>
     </Property>
     <Property name="Shape" type="Part::PropertyPartShape">
       <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
@@ -279,11 +279,11 @@ Curves 8
 1 38 0.34995465410370968 0 0 -1 0 
 1 38 -1.8500000000000001 0 -1 0 0 
 1 32 -1.8500000000000001 0 0 1 0 
-1 32 0.87488663525925092 0 0.99619469809174555 -0.087155742747657736 0 
+1 32 0.87488663525925092 0 0.99619469809174543 -0.087155742747657722 0 
 1 52 1.763269807084668 0 0 -1 0 
 1 52 -1.8500000000000001 0 1 0 0 
 1 58 -1.8500000000000001 0 0 1 0 
-1 58 2.8212316913354538 0 -0.98480775301220824 -0.17364817766692975 0 
+1 58 2.8212316913354538 0 -0.98480775301220813 -0.17364817766692972 0 
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -291,56 +291,56 @@ Triangulations 0
 
 TShapes 19
 Ve
-1.00000004440892e-07
+1.00000000027756e-07
 38 0.34995465410371 0
 0 0
 
 0101101
 *
 Ve
-1.0000000577316e-07
+1e-07
 38 -1.85 0
 0 0
 
 0101101
 *
 Ed
- 1.00000004440892e-07 1 1 0
+ 1e-07 1 1 0
 1  1 0 0 2.19995465410371
 0
 
 0101000
 +19 0 -18 0 *
 Ve
-1.0000000577316e-07
+1e-07
 32 -1.85 0
 0 0
 
 0101101
 *
 Ed
- 1.0000000577316e-07 1 1 0
+ 1e-07 1 1 0
 1  2 0 0 6
 0
 
 0101000
 +18 0 -16 0 *
 Ve
-1.00000004440892e-07
+1.00000000055511e-07
 32 0.874886635259251 0
 0 0
 
 0101101
 *
 Ed
- 1.00000004440892e-07 1 1 0
+ 1e-07 1 1 0
 1  3 0 0 2.72488663525925
 0
 
 0101000
 +16 0 -14 0 *
 Ed
- 1.00000004440892e-07 1 1 0
+ 1e-07 1 1 0
 1  4 0 0 6.02291902526008
 0
 
@@ -351,56 +351,56 @@ Wi
 0101100
 +17 0 +15 0 +13 0 +12 0 *
 Ve
-1.00000004440892e-07
+1e-07
 52 1.76326980708467 0
 0 0
 
 0101101
 *
 Ve
-1.0000000577316e-07
+1.00000000111022e-07
 52 -1.85 0
 0 0
 
 0101101
 *
 Ed
- 1.00000004440892e-07 1 1 0
+ 1e-07 1 1 0
 1  5 0 0 3.61326980708467
 0
 
 0101000
 +10 0 -9 0 *
 Ve
-1.0000000577316e-07
+1e-07
 58 -1.85 0
 0 0
 
 0101101
 *
 Ed
- 1.0000000577316e-07 1 1 0
+ 1e-07 1 1 0
 1  6 0 0 6
 0
 
 0101000
 +9 0 -7 0 *
 Ve
-1.00000004440892e-07
+1.00000000222045e-07
 58 2.82123169133545 0
 0 0
 
 0101101
 *
 Ed
- 1.00000004440892e-07 1 1 0
+ 1e-07 1 1 0
 1  7 0 0 4.67123169133545
 0
 
 0101000
 +7 0 -5 0 *
 Ed
- 1.00000004440892e-07 1 1 0
+ 1e-07 1 1 0
 1  8 0 0 6.09255967131447
 0
 
@@ -412,7 +412,7 @@ Wi
 +8 0 +6 0 +4 0 +3 0 *
 Co
 
-0100000
+1100000
 +11 0 +2 0 *
 
 +1 1 ]]>

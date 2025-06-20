@@ -7,9 +7,17 @@
 -->
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
 <Expand  count="1">
-  <Expand name="Part"/>
+  <Expand name="Part" count="1">
+    <Expand name="Assembly" count="1">
+      <Expand name="Parts" count="1">
+        <Expand name="Link" count="1">
+          <Expand name="Body"/>
+        </Expand>
+      </Expand>
+    </Expand>
+  </Expand>
 </Expand>
-  <Camera extra="0" id="84" binding="0" view3d="1">
+  <Camera>
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
@@ -22,20 +30,7 @@ OrthographicCamera {
   height 52.205048
 
 }
-## overrideMode: Flat Lines]]>
+## overrideMode: Flat Lines
+  ]]>
   </Camera>
-  <View3D id="84"><![CDATA[
-  <Properties Count="3" TransientCount="0">
-    <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
-      <Integer value="6"/>
-    </Property>
-    <Property name="ShowNaviCube" type="App::PropertyBool" status="1">
-      <Bool value="true"/>
-    </Property>
-    <Property name="ThumbnailView" type="App::PropertyBool" status="1">
-      <Bool value="false"/>
-    </Property>
-  </Properties>
-]]>
-  </View3D>
 </Document>
