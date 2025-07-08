@@ -8,20 +8,35 @@
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
 <Expand  count="1">
   <Expand name="Part" count="1">
-    <Expand name="Assembly" count="3">
+    <Expand name="Assembly" count="2">
       <Expand name="Constraints"/>
-      <Expand name="Elements"/>
-      <Expand name="Parts" count="2">
-        <Expand name="Link" count="1">
-          <Expand name="Body"/>
+      <Expand name="Parts" count="3">
+        <Expand name="Link002" count="1">
+          <Expand name="Assembly" count="1">
+            <Expand name="Parts" count="2">
+              <Expand name="Link" count="1">
+                <Expand name="Body"/>
+              </Expand>
+              <Expand name="Link004" count="1">
+                <Expand name="Body"/>
+              </Expand>
+            </Expand>
+          </Expand>
         </Expand>
         <Expand name="Link003" count="1">
           <Expand name="Assembly" count="1">
             <Expand name="Parts" count="1">
               <Expand name="Link" count="1">
-                <Expand name="Body" count="1">
-                  <Expand name="Pad002"/>
-                </Expand>
+                <Expand name="Body"/>
+              </Expand>
+            </Expand>
+          </Expand>
+        </Expand>
+        <Expand name="Link007" count="1">
+          <Expand name="Assembly" count="1">
+            <Expand name="Parts" count="1">
+              <Expand name="Link" count="1">
+                <Expand name="Body"/>
               </Expand>
             </Expand>
           </Expand>
@@ -34,16 +49,17 @@
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position 27.023727 -114.49654 -28.380253
-  orientation 0.99357671 0.097948983 0.056669589  2.0981576
-  nearDistance 28.050375
-  farDistance 138.73802
+  position 90.85405 -14.426886 12.966166
+  orientation -0.49158123 -0.5786798 -0.65075147  4.1515799
+  nearDistance 55.545296
+  farDistance 151.30923
   aspectRatio 1
   focalDistance 64.106293
-  height 196.11618
+  height 16.616278
 
 }
 ## overrideMode: As Is
+  
   ]]>
   </Camera>
 </Document>

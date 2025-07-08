@@ -6,32 +6,62 @@
  FreeCAD Document, see http://www.freecadweb.org for more information...
 -->
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
-<Expand  count="1">
+<Expand  count="3">
   <Expand name="Part" count="1">
-    <Expand name="Body" count="6">
-      <Expand name="Pad"/>
+    <Expand name="Body" count="17">
       <Expand name="Boolean006"/>
+      <Expand name="Pad005"/>
+      <Expand name="Pad018"/>
+      <Expand name="Pad019"/>
+      <Expand name="Pad035"/>
       <Expand name="Pad007"/>
-      <Expand name="Pad020"/>
-      <Expand name="Pad021"/>
-      <Expand name="Pad022"/>
+      <Expand name="Pad028"/>
+      <Expand name="Pad041"/>
+      <Expand name="Pad029"/>
+      <Expand name="Pad030"/>
+      <Expand name="Pad036"/>
+      <Expand name="Pad037"/>
+      <Expand name="Pad038"/>
+      <Expand name="Pad039"/>
+      <Expand name="Pad040"/>
+      <Expand name="Pad042"/>
+      <Expand name="Pad043"/>
     </Expand>
   </Expand>
+  <Expand name="CopyOnChangeGroup" count="1">
+    <Expand name="Part011" count="1">
+      <Expand name="Body044"/>
+    </Expand>
+  </Expand>
+  <Expand name="Part012"/>
 </Expand>
-  <Camera>
+  <Camera extra="0" id="92" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position -14.726967 -165.27609 89.236298
-  orientation 0.99433643 -0.044101216 -0.096697733  0.86008883
-  nearDistance 99.833252
-  farDistance 284.21042
+  position 36.885223 -14.026728 19.92477
+  orientation 0.12998426 0.36757576 0.92086494  2.51197
+  nearDistance -110.26737
+  farDistance 116.11752
   aspectRatio 1
-  focalDistance 100
-  height 98.677162
+  focalDistance 55.159119
+  height 42.310623
 
 }
-## overrideMode: Flat Lines
-  ]]>
+## overrideMode: Flat Lines]]>
   </Camera>
+  <View3D id="92"><![CDATA[
+  <Properties Count="3" TransientCount="0">
+    <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
+      <Integer value="6"/>
+    </Property>
+    <Property name="ShowNaviCube" type="App::PropertyBool" status="1">
+      <Bool value="true"/>
+    </Property>
+    <Property name="ThumbnailView" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+  </Properties>
+]]>
+  </View3D>
 </Document>
