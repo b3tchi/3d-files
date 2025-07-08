@@ -1,0 +1,38 @@
+* Notes for exporting freecad fcstd to folder
+testing options to migrate to main freecad from linkstage3
+
+* in [[freecad]] to export binary file as folder
+** there are binary files all are linked in =GuiDocument.xml= from tags =<MaterialList>= =<ColorList>=
+#+BEGIN_SRC
+search:
+<(ColorList|MaterialList) file="?(.*)"/>
+replace:
+<$1 file=""/>
+#+END_SRC
+** there are some other files but they are text [[https://wiki.freecad.org/File_Format_FCStd][manual]]
+** using zip command bring errors but there is utility inside freecad to un/pack files under =Tools= > =Document utility...= it has extract and build options [[https://wiki.freecad.org/Std_ProjectUtil][manual]]
+*** in freecad repository there is responsible [[https://github.com/FreeCAD/FreeCAD/blob/47c1565edfce18f3aeb87e8d8f436dda473d174f/src/Ext/freecad/project_utility.py][project_utility.py]]
+*** it's installed under python site packages and could referenced from [[python]]
+
+#+BEGIN_SRC python
+# manjaro package path /usr/lib/python3.13/site-packages/freecad/project_utility.py'
+from freecad import project_utility
+
+filename = '/home/jan/Documents/test/project.fcstd'
+output = '/home/jan/Documents/test/project2'
+
+project_utility.extractDocument(filename,output)
+
+folder = '/home/jan/Documents/test/project2/'
+outpath = '/home/jan/Documents/test/'
+
+project_utility.createDocument()
+
+#+END_SRC
+
+calling script directly from 
+#+BEGIN_SRC nu
+let filename = '/home/jan/Documents/test/project.fcstd'
+let output = '/home/jan/Documents/test/project2'
+python -c $"from freecad import project_utility; project_utility.extractDocument\('($filename)','($output)')"
+#+END_SRC
