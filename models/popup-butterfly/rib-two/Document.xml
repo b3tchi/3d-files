@@ -748,7 +748,7 @@ cc0.0 0:;SKT;:Heda,E
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2025-06-20T15:21:24Z"/>
+      <String value="2025-07-03T22:02:22Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -796,23 +796,23 @@ cc0.0 0:;SKT;:Heda,E
     </ObjectDeps>
     <ObjectDeps Name="Origin" Count="0"/>
     <ObjectDeps Name="Body" Count="9">
-      <Dep Name="Pad"/>
-      <Dep Name="Chamfer"/>
-      <Dep Name="Sketch001"/>
       <Dep Name="Sketch002"/>
-      <Dep Name="Sketch"/>
+      <Dep Name="Pad003"/>
       <Dep Name="Pad001"/>
       <Dep Name="Sketch004"/>
+      <Dep Name="Sketch"/>
+      <Dep Name="Sketch001"/>
+      <Dep Name="Pad"/>
       <Dep Name="Origin001"/>
-      <Dep Name="Pad003"/>
+      <Dep Name="Chamfer"/>
     </ObjectDeps>
     <ObjectDeps Name="Origin001" Count="6">
+      <Dep Name="Y_Axis"/>
+      <Dep Name="X_Axis"/>
+      <Dep Name="Z_Axis"/>
+      <Dep Name="XZ_Plane"/>
       <Dep Name="XY_Plane"/>
       <Dep Name="YZ_Plane"/>
-      <Dep Name="XZ_Plane"/>
-      <Dep Name="Y_Axis"/>
-      <Dep Name="Z_Axis"/>
-      <Dep Name="X_Axis"/>
     </ObjectDeps>
     <ObjectDeps Name="X_Axis" Count="0"/>
     <ObjectDeps Name="Y_Axis" Count="0"/>
@@ -824,34 +824,34 @@ cc0.0 0:;SKT;:Heda,E
       <Dep Name="YZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="Sketch001" Count="2">
-      <Dep Name="YZ_Plane"/>
       <Dep Name="Sketch"/>
+      <Dep Name="YZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad" Count="2">
       <Dep Name="Sketch001"/>
       <Dep Name="Body"/>
     </ObjectDeps>
     <ObjectDeps Name="Sketch002" Count="2">
-      <Dep Name="YZ_Plane"/>
       <Dep Name="Sketch"/>
+      <Dep Name="YZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad001" Count="3">
-      <Dep Name="Pad"/>
       <Dep Name="Sketch002"/>
+      <Dep Name="Pad"/>
       <Dep Name="Body"/>
     </ObjectDeps>
     <ObjectDeps Name="Sketch004" Count="2">
-      <Dep Name="YZ_Plane"/>
       <Dep Name="Sketch"/>
+      <Dep Name="YZ_Plane"/>
     </ObjectDeps>
     <ObjectDeps Name="Pad003" Count="3">
       <Dep Name="Pad001"/>
-      <Dep Name="Body"/>
       <Dep Name="Sketch004"/>
+      <Dep Name="Body"/>
     </ObjectDeps>
     <ObjectDeps Name="Chamfer" Count="2">
-      <Dep Name="Body"/>
       <Dep Name="Pad003"/>
+      <Dep Name="Body"/>
     </ObjectDeps>
     <Object type="App::Part" name="Part" id="3791" revision="751" file="Part.xml" />
     <Object type="App::Origin" name="Origin" id="3792" revision="0" file="Origin.xml" />
@@ -864,11 +864,11 @@ cc0.0 0:;SKT;:Heda,E
     <Object type="App::Plane" name="XZ_Plane" id="3799" revision="2" file="XZ_Plane.xml" />
     <Object type="App::Plane" name="YZ_Plane" id="3800" revision="2" file="YZ_Plane.xml" />
     <Object type="Sketcher::SketchObject" name="Sketch" id="3801" revision="1928" file="Sketch.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch001" id="3802" revision="1177" file="Sketch001.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch001" id="3802" revision="1178" file="Sketch001.xml" />
     <Object type="PartDesign::Pad" name="Pad" id="3803" revision="116" file="Pad.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch002" id="3804" revision="1494" file="Sketch002.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch002" id="3804" revision="1495" file="Sketch002.xml" />
     <Object type="PartDesign::Pad" name="Pad001" id="3805" revision="198" file="Pad001.xml" />
-    <Object type="Sketcher::SketchObject" name="Sketch004" id="3808" revision="1801" file="Sketch004.xml" />
+    <Object type="Sketcher::SketchObject" name="Sketch004" id="3808" revision="1802" file="Sketch004.xml" />
     <Object type="PartDesign::Pad" name="Pad003" id="3809" revision="109" file="Pad003.xml" />
     <Object type="PartDesign::Chamfer" name="Chamfer" id="3810" revision="79" file="Chamfer.xml" />
   </Objects>

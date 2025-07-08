@@ -4,7 +4,7 @@
 -->
 <Document SchemaVersion="4" ProgramVersion="2024.1006R14555 (Git shallow)" FileVersion="2" Uid="b5790207-0765-4493-9118-5836a4ec1d4c" StringHasher="1">
   <StringHasher saveall="0" threshold="0" count="0" new="1"/>
-  <StringHasher2  count="5">
+  <StringHasher2  count="4">
 <![CDATA[
 -7.0 1:Enforce an angle offset defined as yaw-pitch-roll angle of the
 second plane performed in the order of x-y-z
@@ -14,7 +14,6 @@ You need to enable LockAngle for this to take effect.
 You need to enable LockAngle for this to take effect.
 -1.0 1:Rotation angle of the second plane about its x-axis
 You need to enable LockAngle for this to take effect.
--5.0 0:Shape cache
 ]]>
   </StringHasher2>
   <Properties Count="21" TransientCount="3">
@@ -46,7 +45,7 @@ You need to enable LockAngle for this to take effect.
       <String value=""/>
     </Property>
     <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-      <String value="2025-06-20T15:21:25Z"/>
+      <String value="2025-07-03T22:02:22Z"/>
     </Property>
     <Property name="License" type="App::PropertyString" status="1">
       <String value="All rights reserved"/>
@@ -95,24 +94,24 @@ You need to enable LockAngle for this to take effect.
     <ObjectDeps Name="Origin" Count="0"/>
     <ObjectDeps Name="Assembly" Count="3">
       <Dep Name="Constraints"/>
-      <Dep Name="Parts"/>
       <Dep Name="Elements"/>
+      <Dep Name="Parts"/>
     </ObjectDeps>
     <ObjectDeps Name="Constraints" Count="3">
-      <Dep Name="Constraint"/>
-      <Dep Name="Constraint002"/>
       <Dep Name="Constraint001"/>
+      <Dep Name="Constraint002"/>
+      <Dep Name="Constraint"/>
     </ObjectDeps>
     <ObjectDeps Name="Elements" Count="4">
-      <Dep Name="_Element003"/>
+      <Dep Name="_Element"/>
       <Dep Name="_Element001"/>
       <Dep Name="_Element002"/>
-      <Dep Name="_Element"/>
+      <Dep Name="_Element003"/>
     </ObjectDeps>
     <ObjectDeps Name="Parts" Count="4">
+      <Dep Name="Link002"/>
       <Dep Name="Link001"/>
       <Dep Name="Link003"/>
-      <Dep Name="Link002"/>
       <Dep Name="Link"/>
     </ObjectDeps>
     <ObjectDeps Name="Link" Count="0"/>
@@ -124,33 +123,33 @@ You need to enable LockAngle for this to take effect.
       <Dep Name="ElementLink"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink" Count="2">
-      <Dep Name="Constraint"/>
       <Dep Name="_Element"/>
+      <Dep Name="Constraint"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element" Count="2">
       <Dep Name="Link002"/>
       <Dep Name="Elements"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink001" Count="2">
-      <Dep Name="Constraint"/>
       <Dep Name="_Element001"/>
+      <Dep Name="Constraint"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element001" Count="2">
-      <Dep Name="Link"/>
       <Dep Name="Elements"/>
+      <Dep Name="Link"/>
     </ObjectDeps>
     <ObjectDeps Name="Constraint001" Count="3">
-      <Dep Name="ElementLink002"/>
-      <Dep Name="ElementLink003"/>
       <Dep Name="Constraints"/>
+      <Dep Name="ElementLink003"/>
+      <Dep Name="ElementLink002"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink002" Count="2">
-      <Dep Name="_Element002"/>
       <Dep Name="Constraint001"/>
+      <Dep Name="_Element002"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element002" Count="2">
-      <Dep Name="Link001"/>
       <Dep Name="Elements"/>
+      <Dep Name="Link001"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink003" Count="2">
       <Dep Name="Constraint001"/>
@@ -158,9 +157,9 @@ You need to enable LockAngle for this to take effect.
     </ObjectDeps>
     <ObjectDeps Name="Link003" Count="0"/>
     <ObjectDeps Name="Constraint002" Count="3">
-      <Dep Name="ElementLink004"/>
-      <Dep Name="ElementLink005"/>
       <Dep Name="Constraints"/>
+      <Dep Name="ElementLink005"/>
+      <Dep Name="ElementLink004"/>
     </ObjectDeps>
     <ObjectDeps Name="ElementLink004" Count="2">
       <Dep Name="_Element002"/>
@@ -171,8 +170,8 @@ You need to enable LockAngle for this to take effect.
       <Dep Name="Constraint002"/>
     </ObjectDeps>
     <ObjectDeps Name="_Element003" Count="2">
-      <Dep Name="Link003"/>
       <Dep Name="Elements"/>
+      <Dep Name="Link003"/>
     </ObjectDeps>
     <Object type="App::Part" name="Part" id="2114" revision="368" file="Part.xml" />
     <Object type="App::Origin" name="Origin" id="2115" revision="0" file="Origin.xml" />
