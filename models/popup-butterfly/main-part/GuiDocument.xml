@@ -6,9 +6,9 @@
  FreeCAD Document, see http://www.freecadweb.org for more information...
 -->
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
-<Expand  count="2">
+<Expand  count="3">
   <Expand name="Part" count="1">
-    <Expand name="Body" count="8">
+    <Expand name="Body" count="11">
       <Expand name="Pad"/>
       <Expand name="Boolean003"/>
       <Expand name="Pad027"/>
@@ -16,7 +16,17 @@
       <Expand name="Pad038"/>
       <Expand name="Pad063"/>
       <Expand name="Pad064"/>
+      <Expand name="Pad065"/>
       <Expand name="Pad066"/>
+      <Expand name="Pad067"/>
+      <Expand name="Pad068"/>
+    </Expand>
+  </Expand>
+  <Expand name="Link" count="1">
+    <Expand name="CopyOnChangeGroup" count="1">
+      <Expand name="Part031" count="1">
+        <Expand name="Body115"/>
+      </Expand>
     </Expand>
   </Expand>
   <Expand name="Link001" count="1">
@@ -27,20 +37,33 @@
     </Expand>
   </Expand>
 </Expand>
-  <Camera>
+  <Camera extra="0" id="8" binding="0" view3d="1">
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position 40.714027 7.3540268 21.817183
-  orientation -3.090862e-008 0.70710677 0.70710677  3.1415927
-  nearDistance 7.3466644
-  farDistance 115.46939
+  position 19.895342 -55.40501 23.412758
+  orientation 0.67129564 0.25942391 0.69430614  1.0157927
+  nearDistance -19.885719
+  farDistance 63.050606
   aspectRatio 1
-  focalDistance 54.869644
-  height 158.08131
+  focalDistance 35.108761
+  height 88.523354
 
 }
-## overrideMode: Flat Lines
-  ]]>
+## overrideMode: Flat Lines]]>
   </Camera>
+  <View3D id="8"><![CDATA[
+  <Properties Count="3" TransientCount="0">
+    <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
+      <Integer value="6"/>
+    </Property>
+    <Property name="ShowNaviCube" type="App::PropertyBool" status="1">
+      <Bool value="true"/>
+    </Property>
+    <Property name="ThumbnailView" type="App::PropertyBool" status="1">
+      <Bool value="false"/>
+    </Property>
+  </Properties>
+]]>
+  </View3D>
 </Document>
