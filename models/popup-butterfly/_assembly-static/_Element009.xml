@@ -7,7 +7,7 @@
     </Extension>
   </Extensions>
   <Properties Count="19" TransientCount="1">
-    <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881024"/>
+    <_Property name="_ElementMapVersion" type="App::PropertyString" status="234881025"/>
     <Property name="ColoredElements" type="App::PropertyLinkSubHidden" status="218103808">
       <LinkSub value="" count="0">
       </LinkSub>
@@ -45,8 +45,8 @@
     <Property name="Proxy" type="App::PropertyPythonObject">
       <Python  module="freecad.asm3.assembly" class="AsmElement" value="null"/>
     </Property>
-    <Property name="Shape" type="Part::PropertyPartShape">
-      <Part ElementMap="0.15.70200.4" brep="1">
+    <Property name="Shape" type="Part::PropertyPartShape" status="1">
+      <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
 <![CDATA[
 
 CASCADE Topology V1, (c) Matra-Datavision
@@ -56,8 +56,8 @@ Locations 27
               0               1               0               0 
               0               0               1               0 
 1
-0.945518575599317 -1.16553812731155e-16 0.325568154457156 3.63945412974349e-15 
-1.6761370978811e-16               1 -1.28784289324999e-16 -2.32364098112775e-14 
+0.945518575599317 -1.16553812731154e-16 0.325568154457156 3.63945412974349e-15 
+1.6761370978811e-16               1 -1.28784289325e-16 -2.32364098112775e-14 
 -0.325568154457156 1.76337623959576e-16 0.945518575599317 1.85000000000002 
 1
               1               0               0               0 
@@ -182,12 +182,43 @@ Co
 -3 26 *
 Co
 
-0100000
+1100000
 +2 2 *
 
 +1 1 ]]>
       </Part>
-      <ElementMap/>
+      <ElementMap new="1" count="1"><Element key="Dummy" value="Dummy"/></ElementMap>
+      <ElementMap2 count="2">
+<![CDATA[
+15 PostfixCount 4
+Edge
+Vertex
+;:H382,E
+;:H382,V
+
+MapCount 1
+
+ElementMap 1 15 2
+
+Edge
+
+ChildCount 0
+
+NameCount 2
+0
+:1.1.3 0
+
+Vertex
+
+ChildCount 0
+
+NameCount 2
+0
+:2.1.4 0
+
+EndMap
+]]>
+      </ElementMap2>
     </Property>
     <Property name="TreeRank" type="App::PropertyInteger" status="2184">
       <Integer value="72"/>
