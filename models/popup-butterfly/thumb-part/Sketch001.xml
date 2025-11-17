@@ -37,7 +37,7 @@
         <Constrain Name="" Type="3" Value="0" First="1" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="3" Value="0" First="3" FirstPos="0" Second="-2000" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="13" Value="0" First="0" FirstPos="1" Second="-3" SecondPos="0" Third="-2000" ThirdPos="0" LabelDistance="10" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
-        <Constrain Name="" Type="8" Value="102" First="3" FirstPos="1" Second="3" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="12.03670787811279" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
+        <Constrain Name="" Type="8" Value="109.4" First="3" FirstPos="1" Second="3" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="12.03670787811279" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="7" Value="2.05" First="0" FirstPos="2" Second="-3" SecondPos="2" Third="-2000" ThirdPos="0" LabelDistance="1.456875562667847" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
         <Constrain Name="" Type="7" Value="2.05" First="-3" FirstPos="1" Second="0" SecondPos="1" Third="-2000" ThirdPos="0" LabelDistance="1.456875562667847" LabelPosition="0" IsDriving="1" IsInVirtualSpace="0" IsActive="1" />
       </ConstraintList>
@@ -47,7 +47,15 @@
       </LinkList>
     </Property>
     <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-      <ExpressionEngine count="0"></ExpressionEngine>
+      <ExpressionEngine count="1" cdata="1">
+        <Expressions><![CDATA[
+0:Constraints[9]
+0:111.72 - 2.32 mm
+0:
+
+]]>
+        </Expressions>
+      </ExpressionEngine>
     </Property>
     <Property name="ExternalBSplineMaxDegree" type="App::PropertyInteger">
       <Integer value="5"/>
@@ -100,28 +108,28 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="2" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-17.95000000000032" StartY="7.771561172376096e-16" StartZ="0" EndX="-2.049999999999997" EndY="7.771561172376096e-16" EndZ="0"/>
+          <LineSegment StartX="-17.95000000000032" StartY="8.881784197001252e-16" StartZ="0" EndX="-2.049999999999997" EndY="8.881784197001252e-16" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="3" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="3" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-2.049999999999997" StartY="7.771561172376096e-16" StartZ="0" EndX="-2.049999999999997" EndY="-102" EndZ="0"/>
+          <LineSegment StartX="-2.049999999999997" StartY="8.881784197001252e-16" StartZ="0" EndX="-2.049999999999997" EndY="-109.4" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="4" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="4" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-2.049999999999997" StartY="-102" StartZ="0" EndX="-17.95000000000032" EndY="-102" EndZ="0"/>
+          <LineSegment StartX="-2.049999999999997" StartY="-109.4" StartZ="0" EndX="-17.95000000000032" EndY="-109.4" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="5" migrated="1">
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="5" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-17.95000000000032" StartY="-102" StartZ="0" EndX="-17.95000000000032" EndY="0" EndZ="0"/>
+          <LineSegment StartX="-17.95000000000032" StartY="-109.4" StartZ="0" EndX="-17.95000000000032" EndY="0" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
       </GeometryList>
@@ -184,10 +192,10 @@ Locations 1
               0               0               1               0 
 Curve2ds 0
 Curves 4
-1 -17.950000000000315 7.7715611723760958e-16 0 1 0 0 
-1 -2.0499999999999972 7.7715611723760958e-16 0 0 -1 0 
-1 -2.0499999999999972 -102 0 -1 0 0 
-1 -17.950000000000315 -102 0 0 1 0 
+1 -17.950000000000319 8.8817841970012523e-16 0 1 0 0 
+1 -2.0499999999999972 8.8817841970012523e-16 0 0 -1 0 
+1 -2.0499999999999972 -109.40000000000001 0 -1 0 0 
+1 -17.950000000000319 -109.40000000000001 0 0 1 0 
 Polygon3D 0
 PolygonOnTriangulations 0
 Surfaces 0
@@ -195,15 +203,15 @@ Triangulations 0
 
 TShapes 9
 Ve
-1.00000000388578e-07
--17.9500000000003 3.88578058618805e-16 0
+1.00000000444089e-07
+-17.9500000000003 4.44089209850063e-16 0
 0 0
 
 0101101
 *
 Ve
 1e-07
--2.05 7.7715611723761e-16 0
+-2.05 8.88178419700125e-16 0
 0 0
 
 0101101
@@ -217,21 +225,21 @@ Ed
 +9 0 -8 0 *
 Ve
 1e-07
--2.05 -102 0
+-2.05 -109.4 0
 0 0
 
 0101101
 *
 Ed
  1e-07 1 1 0
-1  2 0 0 102
+1  2 0 0 109.4
 0
 
 0101000
 +8 0 -6 0 *
 Ve
 1e-07
--17.9500000000003 -102 0
+-17.9500000000003 -109.4 0
 0 0
 
 0101101
@@ -245,7 +253,7 @@ Ed
 +6 0 -4 0 *
 Ed
  1e-07 1 1 0
-1  4 0 0 102
+1  4 0 0 109.4
 0
 
 0101000
@@ -306,8 +314,8 @@ EndMap
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="648">
-      <Bool value="true"/>
+    <Property name="Visibility" type="App::PropertyBool" status="649">
+      <Bool value="false"/>
     </Property>
   </Properties>
 </Object>
