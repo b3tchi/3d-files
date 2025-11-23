@@ -8,9 +8,13 @@
 <Document SchemaVersion="1" FileVersion="2" Split="1" HasExpansion="1">
 <Expand  count="1">
   <Expand name="Part" count="1">
-    <Expand name="Assembly" count="2">
+    <Expand name="Assembly" count="3">
       <Expand name="Constraints"/>
-      <Expand name="Parts" count="3">
+      <Expand name="Elements"/>
+      <Expand name="Parts" count="4">
+        <Expand name="Link" count="1">
+          <Expand name="Body"/>
+        </Expand>
         <Expand name="Link002" count="1">
           <Expand name="Assembly" count="1">
             <Expand name="Parts" count="2">
@@ -25,8 +29,11 @@
         </Expand>
         <Expand name="Link003" count="1">
           <Expand name="Assembly" count="1">
-            <Expand name="Parts" count="1">
+            <Expand name="Parts" count="2">
               <Expand name="Link" count="1">
+                <Expand name="Body"/>
+              </Expand>
+              <Expand name="Link004" count="1">
                 <Expand name="Body"/>
               </Expand>
             </Expand>
@@ -49,16 +56,24 @@
 <![CDATA[
 OrthographicCamera {
   viewportMapping ADJUST_CAMERA
-  position 90.85405 -14.426886 12.966166
-  orientation -0.49158123 -0.5786798 -0.65075147  4.1515799
-  nearDistance 55.545296
-  farDistance 151.30923
+  position 46.011436 -112.54757 -7.3241901
+  orientation -0.90911674 -0.29253402 -0.29653069  4.6307726
+  nearDistance 12.630767
+  farDistance 145.33311
   aspectRatio 1
   focalDistance 64.106293
-  height 16.616278
+  height 28.513748
 
 }
 ## overrideMode: As Is
+  
+  
+  
+  
+  
+  
+  
+  
   
   ]]>
   </Camera>
