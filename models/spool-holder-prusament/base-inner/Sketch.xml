@@ -374,7 +374,7 @@
           <GeoExtensions count="1">
             <GeoExtension type="Sketcher::SketchGeometryExtension" id="31" internalGeometryType="0" geometryModeFlags="00000000000000000000000000000000" geometryLayer="0"/>
           </GeoExtensions>
-          <LineSegment StartX="-17.40192378864669" StartY="21.5" StartZ="0" EndX="-91.18341525664765" EndY="21.5" EndZ="0"/>
+          <LineSegment StartX="-17.40192378864669" StartY="21.5" StartZ="0" EndX="-91.18341525664763" EndY="21.5" EndZ="0"/>
           <Construction value="0"/>
         </Geometry>
         <Geometry type="Part::GeomLineSegment" id="33" migrated="1">
@@ -507,7 +507,7 @@ TShapes 0
       <Bool value="true"/>
     </Property>
     <Property name="Placement" type="App::PropertyPlacement" status="8388612">
-      <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="1" Q2="0" Q3="0" A="3.141592653589793" Ox="0" Oy="1" Oz="0"/>
+      <PropertyPlacement Px="0" Py="0" Pz="0" Q0="0" Q1="1" Q2="0" Q3="6.123233995736766e-17" A="3.141592653589793" Ox="0" Oy="1" Oz="0"/>
     </Property>
     <Property name="Shape" type="Part::PropertyPartShape">
       <Part HasherIndex="0" ElementMap="1.15.70200.4" brep="1">
@@ -523,9 +523,9 @@ Curve2ds 0
 Curves 26
 1 -91.183415256647649 21.5 0 0 -1 0 
 1 -91.183415256647649 -21.5 0 1 0 0 
-1 -17.401923788646688 -21.5 0 0.8660254037844386 -0.5 0 
+1 -17.401923788646688 -21.5 0 0.86602540378443871 -0.50000000000000011 0 
 1 -7.8756443470178574 -27.000000000000004 0 1 0 0 
-1 7.8756443470178361 -27.000000000000004 0 0.8660254037844386 0.5 0 
+1 7.8756443470178361 -27.000000000000004 0 0.86602540378443871 0.50000000000000011 0 
 1 17.401923788646666 -21.5 0 1 0 0 
 1 91.183415256647635 -21.5 0 0 1 0 
 1 91.183415256647635 21.499999999999996 0 -1 0 0 
@@ -538,7 +538,7 @@ Curves 26
 1 3.1556022157059041e-16 -20 0 -0.8660254037844386 0.50000000000000011 0 
 1 3.1556022157059041e-16 -20 0 0.86602540378443871 0.5 0 
 1 17.320508075688771 9.9999999999999982 0 0 -1 0 
-1 3.5527136788005009e-15 20 0 0.86602540378443849 -0.50000000000000022 0 
+1 3.5527136788005009e-15 20 0 0.8660254037844386 -0.50000000000000033 0 
 1 -81.183415256647649 10 0 1 0 0 
 1 -27.320508075688771 10 0 0 -1 0 
 1 -27.320508075688771 -10 0 -1 0 0 
@@ -1110,7 +1110,7 @@ EndMap
     <Property name="ValidateShape" type="App::PropertyBool">
       <Bool value="false"/>
     </Property>
-    <Property name="Visibility" type="App::PropertyBool" status="648">
+    <Property name="Visibility" type="App::PropertyBool" status="649">
       <Bool value="true"/>
     </Property>
   </Properties>
